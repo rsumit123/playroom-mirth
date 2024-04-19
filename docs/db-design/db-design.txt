@@ -1,0 +1,67 @@
+@startuml
+
+title <size :18> Charade Chat Database Schema </size> 
+
+skinparam linetype ortho
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+
+legend top right
+|= symbol |= relation |
+| ll--ll | one to one |
+| ll--l<| one to one or many |
+| ll--o<| one to 0 or many |
+| ll--ol| one to 0 or one |
+| lo--<| one or 0 to many |
+endlegend
+
+entity "Users" {
+  *user_id : INTEGER <<pk>>
+  ---
+  *username : TEXT
+  *password : TEXT
+  *email : TEXT
+  *created_at : DATETIME
+  *updated_at : DATETIME
+}
+
+entity "Rooms" {
+  *room_id : INTEGER <<pk>>
+  ---
+  *room_code : TEXT
+  *max_players : INTEGER
+  *created_at : DATETIME
+}
+
+entity "Rounds" {
+  *round_id : INTEGER <<pk>>
+  ---
+  *room_id : INTEGER <<fk>>
+  *describer_id : INTEGER <<fk>>
+  *word_id : INTEGER <<fk>>
+  *start_time : DATETIME
+  *end_time : DATETIME
+}
+
+entity "Words" {
+  *word_id : INTEGER <<pk>>
+  ---
+  *word : TEXT
+  *difficulty : INTEGER
+  *type : TEXT
+}
+
+entity "Scores" {
+  *score_id : INTEGER <<pk>>
+  ---
+  *room_id : INTEGER <<fk>>
+  *user_id : INTEGER <<fk>>
+  *total_points : INTEGER
+}
+
+Users |o--o{ Rooms : "participates"
+Rooms ||--o{ Rounds : "hosts"
+Rooms ||--o{ Scores : "scores"
+Rounds }o--|| Words : "uses"
+
+@enduml
