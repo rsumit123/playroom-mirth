@@ -28,6 +28,7 @@ entity "Users" {
 entity "Rooms" {
   *room_id : INTEGER <<pk>>
   ---
+  *user_id : INTEGER <<fk>>
   *room_code : TEXT
   *max_players : INTEGER
   *created_at : DATETIME
@@ -37,7 +38,7 @@ entity "Rounds" {
   *round_id : INTEGER <<pk>>
   ---
   *room_id : INTEGER <<fk>>
-  *describer_id : INTEGER <<fk>>
+  *describer_user_id : INTEGER <<fk>>
   *word_id : INTEGER <<fk>>
   *start_time : DATETIME
   *end_time : DATETIME
@@ -62,6 +63,8 @@ entity "Scores" {
 Users |o--o{ Rooms : "participates"
 Rooms ||--o{ Rounds : "hosts"
 Rooms ||--o{ Scores : "scores"
-Rounds }o--|| Words : "uses"
+Rounds }o--o{ Words : "uses"
+Rounds ||-|| Users : ""
+Users ||-o{ Scores: ""
 
 @enduml
