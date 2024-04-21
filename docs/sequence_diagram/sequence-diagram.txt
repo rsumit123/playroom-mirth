@@ -1,0 +1,43 @@
+@startuml
+User -> App : Visits webpage
+App -> User: Login/Signup page
+User -> App: Signs up
+App -> User: Create Join Room
+alt create room
+User -> App: Create Room
+App -> User: Room created, invite code (Room page)
+User -> App: starts the game (enough players joined)
+
+end
+
+alt Join room
+User -> App: Enters invite code
+App -> User: Signup/login
+App -> User: Room page with code
+end
+
+App -> App: Choose a random describer
+alt Describer view
+App -> App: Show words to describe and a timer/word.
+User -> User: Starts describing (on call)
+App -> App: Shows guessed words of all users\nVerifies if guess is correct
+App -> App: switches to next word
+App -> App: Show leaderboard after a round
+
+end
+
+alt Guesser screen
+App -> App: Guess screen\nDescriber name, Word letters\nWord box, Timer
+User -> App: Types guessed word
+App -> App: Shows guessed words of all users\nVerifies if guess is correct
+alt Guess is correct
+App -> App: switches to next word
+App -> App: Show leaderboard after a round
+
+end
+
+end
+
+
+
+@enduml
