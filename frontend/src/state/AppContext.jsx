@@ -180,7 +180,6 @@ export function AppProvider({ children }) {
     socket.on('room:lobby_update', (payload) => {
       setLobby(payload)
       setRoom(payload.room)
-      if (payload.self_player_id) setSelfPlayerId(payload.self_player_id)
     })
     socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload })))
     socket.on('error', (payload) => {

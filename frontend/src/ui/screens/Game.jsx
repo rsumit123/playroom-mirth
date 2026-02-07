@@ -3,7 +3,7 @@ import TimerSweep from '../components/TimerSweep.jsx'
 import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import Scoreboard from '../components/Scoreboard.jsx'
 
-export default function Game({ game, onSend, onRejoin }) {
+export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const [message, setMessage] = useState('')
   const [confettiKey, setConfettiKey] = useState(0)
   const [remaining, setRemaining] = useState(null)
@@ -77,7 +77,7 @@ export default function Game({ game, onSend, onRejoin }) {
             <div className="flex items-center justify-between">
               <div className="space-y-1">
                 <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Round {turn?.round_index || 1}</div>
-                <div className="font-display text-2xl">Describer: {describerId}</div>
+                <div className="font-display text-2xl">Describer: {playerNames[describerId] || `Player ${describerId}`}</div>
               </div>
               <div className="flex items-center gap-2">
                 <div className="h-12 w-12 rounded-full border border-black/10 flex items-center justify-center font-semibold pulse-ring">
@@ -106,7 +106,7 @@ export default function Game({ game, onSend, onRejoin }) {
                 {chatItems.length === 0 && <div className="text-sm text-slate/60">No messages yet.</div>}
                 {chatItems.map((m, idx) => (
                   <div key={idx} className="text-sm">
-                    <strong>Player {m.player_id}:</strong> {m.message}
+                    <strong>{playerNames[m.player_id] || `Player ${m.player_id}`}:</strong> {m.message}
                   </div>
                 ))}
                 <div ref={chatEndRef} />
@@ -153,7 +153,7 @@ export default function Game({ game, onSend, onRejoin }) {
 
             <div className="card p-4 space-y-3">
               <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Scoreboard</div>
-              <Scoreboard scores={game?.scores || {}} />
+              <Scoreboard scores={game?.scores || {}} playerNames={playerNames} />
             </div>
 
           </div>

@@ -47,6 +47,7 @@ class LobbyPlayer(BaseModel):
     score: int
     connected: bool
     in_game: bool
+    display_name: str = "Player"
 
     class Config:
         from_attributes = True

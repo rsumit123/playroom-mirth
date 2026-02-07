@@ -1,11 +1,11 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import RoundEnd from '../screens/RoundEnd.jsx'
 import { useApp } from '../../state/AppContext.jsx'
 
 export default function RoundEndPage() {
   const navigate = useNavigate()
-  const { game, room } = useApp()
+  const { game, room, lobby } = useApp()
   const turnRef = useRef(game?.turn)
 
   useEffect(() => {
@@ -22,5 +22,13 @@ export default function RoundEndPage() {
     }
   }, [game?.turn])
 
-  return <RoundEnd scores={game?.scores || {}} onContinue={() => navigate('/game')} />
+  const playerNames = useMemo(() => {
+    const map = {}
+    for (const p of lobby?.players || []) {
+      map[p.id] = p.display_name || `Player ${p.id}`
+    }
+    return map
+  }, [lobby?.players])
+
+  return <RoundEnd scores={game?.scores || {}} playerNames={playerNames} onContinue={() => navigate('/game')} />
 }

@@ -72,7 +72,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
                 {players.map((p, idx) => (
                   <div key={p.id} className="flex items-center justify-between rounded-xl border border-black/5 px-4 py-3">
                     <div>
-                      <div className="font-semibold">{idx + 1}. Player {p.id} {p.id === selfPlayerId ? '(You)' : ''} {p.id === lobby?.host_player_id ? '(Host)' : ''}</div>
+                      <div className="font-semibold">{idx + 1}. {p.display_name || `Player ${p.id}`} {p.id === selfPlayerId ? '(You)' : ''} {p.id === lobby?.host_player_id ? '(Host)' : ''}</div>
                       <div className="text-xs text-slate/60">
                         {p.user_id ? 'Registered' : 'Guest'} · {p.in_game ? 'Active' : 'Waiting for next game'}
                       </div>

@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 from app.models.guest import Guest
 from app.models.room import Room
 from app.models.room_player import RoomPlayer
+from app.models.user import User
 from app.schemas.room import LobbyState, LobbyPlayer, RoomOut, RoomCreateRequest, RoomCreateGuestRequest
 from app.services.rooms import generate_room_code, next_join_order
 
@@ -43,9 +44,27 @@ def lobby_state(db: Session, room: Room, self_player_id: int | None = None) -> L
             host_player_id = p.id
             break
 
+    # Look up user emails for display names
+    user_ids = [p.user_id for p in players if p.user_id]
+    user_map = {}
+    if user_ids:
+        users = db.query(User).filter(User.id.in_(user_ids)).all()
+        user_map = {u.id: u.email.split("@")[0] for u in users}
+
+    lobby_players = []
+    guest_counter = 0
+    for p in players:
+        lp = LobbyPlayer.model_validate(p)
+        if p.user_id and p.user_id in user_map:
+            lp.display_name = user_map[p.user_id]
+        else:
+            guest_counter += 1
+            lp.display_name = f"Guest {guest_counter}"
+        lobby_players.append(lp)
+
     return LobbyState(
         room=RoomOut.model_validate(room),
-        players=[LobbyPlayer.model_validate(p) for p in players],
+        players=lobby_players,
         self_player_id=self_player_id,
         host_player_id=host_player_id,
     )

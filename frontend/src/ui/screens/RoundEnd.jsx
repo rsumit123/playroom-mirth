@@ -1,6 +1,6 @@
 import Scoreboard from '../components/Scoreboard.jsx'
 
-export default function RoundEnd({ scores, onContinue }) {
+export default function RoundEnd({ scores, playerNames, onContinue }) {
   return (
     <div className="min-h-screen page py-10">
       <div className="page-inner grid gap-6 lg:grid-cols-[2fr_1fr] items-start">
@@ -9,7 +9,7 @@ export default function RoundEnd({ scores, onContinue }) {
             <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Round Complete</div>
             <div className="font-display text-3xl">Leaderboard</div>
           </div>
-          <Scoreboard scores={scores} />
+          <Scoreboard scores={scores} playerNames={playerNames} />
         </div>
         <div className="space-y-6">
           <div className="card p-6 space-y-3">
