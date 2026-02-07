@@ -31,6 +31,7 @@ from app.models.room_player import RoomPlayer
 from app.models.word import Word
 from sqlalchemy import func as sa_func
 import time
+import random
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
 
@@ -360,6 +361,19 @@ def _hint_contains_target(hint: str, target: str) -> bool:
 
 
 def _select_word(db, difficulty: int, history_ids: list[int]) -> Word | None:
+    if difficulty == 0:
+        # Mixed mode: 20% easy, 50% medium, 30% hard
+        roll = random.random()
+        pick_diff = 1 if roll < 0.2 else (2 if roll < 0.7 else 3)
+        word = (
+            db.query(Word)
+            .filter(Word.active.is_(True), Word.difficulty == pick_diff, ~Word.id.in_(history_ids))
+            .order_by(sa_func.random())
+            .first()
+        )
+        if word:
+            return word
+        return db.query(Word).filter(Word.active.is_(True), ~Word.id.in_(history_ids)).order_by(sa_func.random()).first()
     word = (
         db.query(Word)
         .filter(Word.active.is_(True), Word.difficulty == difficulty, ~Word.id.in_(history_ids))

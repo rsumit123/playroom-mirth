@@ -7,7 +7,7 @@ export default function Home({ onCreate, onJoin, onRejoin, onLeaveRoom, loadingC
   const [tab, setTab] = useState('create')
   const [rounds, setRounds] = useState(3)
   const [timer, setTimer] = useState(60)
-  const [difficulty, setDifficulty] = useState(2)
+  const [difficulty, setDifficulty] = useState(0)
   const [maxPlayers, setMaxPlayers] = useState(20)
   const [roomCode, setRoomCode] = useState('')
 

@@ -1,4 +1,5 @@
 const LEVELS = [
+  { value: 0, label: 'Mixed' },
   { value: 1, label: 'Easy' },
   { value: 2, label: 'Medium' },
   { value: 3, label: 'Hard' },
