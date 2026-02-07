@@ -5,7 +5,7 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function RoundEndPage() {
   const navigate = useNavigate()
-  const { game, room, lobby, roomRestoreStatus } = useApp()
+  const { game, room, lobby, selfPlayerId, roomRestoreStatus } = useApp()
   const turnRef = useRef(game?.turn)
 
   useEffect(() => {
@@ -16,6 +16,7 @@ export default function RoundEndPage() {
     }
   }, [room, roomRestoreStatus])
 
+  // Auto-navigate to game when new turn starts
   useEffect(() => {
     if (game?.turn && game.turn !== turnRef.current) {
       turnRef.current = game.turn
@@ -31,5 +32,14 @@ export default function RoundEndPage() {
     return map
   }, [lobby?.players])
 
-  return <RoundEnd scores={game?.scores || {}} playerNames={playerNames} onContinue={() => navigate('/game')} />
+  const isHost = selfPlayerId && lobby?.host_player_id && String(selfPlayerId) === String(lobby.host_player_id)
+
+  return (
+    <RoundEnd
+      scores={game?.scores || {}}
+      playerNames={playerNames}
+      isHost={isHost}
+      onContinue={() => navigate('/game')}
+    />
+  )
 }

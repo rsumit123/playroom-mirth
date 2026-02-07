@@ -286,7 +286,7 @@ export function AppProvider({ children }) {
     socket.off('game:reconnect_grace')
     socket.off('disconnect')
     socket.off('connect')
-    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload })))
+    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, word: null, lastGuess: null, roundEnd: null, gameEnd: null })))
     socket.on('game:new_word', (payload) => setGame((g) => ({ ...g, word: payload.word })))
     socket.on('chat:message', (payload) => {
       setGame((g) => ({ ...g, messages: [...(g.messages || []), payload] }))

@@ -102,18 +102,27 @@ async def _advance_turn(room_code: str) -> None:
 
         start_turn(state)
         with SessionLocal() as db:
+            word = _select_word(db, state.difficulty, state.word_history_ids)
+            if word:
+                state.current_word_id = word.id
+                state.current_word_text = word.text
+                state.word_history_ids.append(word.id)
             _save_state(db, state)
 
+        describer_id = state.player_order[state.describer_index]
         await sio.emit(
             "game:turn_start",
             {
-                "describer_id": state.player_order[state.describer_index],
+                "describer_id": describer_id,
                 "turn_seconds": state.turn_seconds,
                 "turn_start_ts": int(state.turn_start_ts),
                 "round_index": state.round_index,
             },
             room=room_code,
         )
+        describer_sid = PLAYER_TO_SID.get(describer_id)
+        if describer_sid and state.current_word_text:
+            await sio.emit("game:new_word", {"word": state.current_word_text}, to=describer_sid)
         await _schedule_turn_timer(state)
 
 @sio.event
