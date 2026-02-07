@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, useCallback } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import CircularTimer from '../components/CircularTimer.jsx'
 import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import ChatBubble from '../components/ChatBubble.jsx'
@@ -10,7 +10,7 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const [confettiKey, setConfettiKey] = useState(0)
   const [remaining, setRemaining] = useState(null)
   const [showScoreboard, setShowScoreboard] = useState(false)
-  const [viewHeight, setViewHeight] = useState(null)
+  const [viewport, setViewport] = useState(null)
   const { alerts, addAlert, removeAlert } = useGameAlerts()
   const turn = game?.turn
   const describerId = turn?.describer_id
@@ -21,21 +21,20 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const prevWordRef = useRef(null)
   const timedUpRef = useRef(false)
 
-  // Track visual viewport height to handle mobile keyboard
+  // Track visual viewport height + offset to handle mobile keyboard
   useEffect(() => {
     const vv = window.visualViewport
     if (!vv) return
-    const onResize = () => setViewHeight(vv.height)
+    const onResize = () => {
+      setViewport({ height: vv.height, offsetTop: vv.offsetTop })
+    }
     vv.addEventListener('resize', onResize)
+    vv.addEventListener('scroll', onResize)
     onResize()
-    return () => vv.removeEventListener('resize', onResize)
-  }, [])
-
-  // Scroll input into view when keyboard opens
-  const handleInputFocus = useCallback(() => {
-    setTimeout(() => {
-      inputRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
-    }, 300)
+    return () => {
+      vv.removeEventListener('resize', onResize)
+      vv.removeEventListener('scroll', onResize)
+    }
   }, [])
 
   useEffect(() => {
@@ -108,12 +107,13 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
     }
   }
 
-  const shellStyle = viewHeight ? { height: `${viewHeight}px` } : undefined
+  const shellStyle = viewport
+    ? { position: 'fixed', top: `${viewport.offsetTop}px`, left: 0, right: 0, height: `${viewport.height}px` }
+    : { height: '100dvh' }
 
   return (
-    <div className="flex flex-col overflow-hidden relative" style={shellStyle || { height: '100dvh' }}>
+    <div className="flex flex-col overflow-hidden relative" style={shellStyle}>
       <ConfettiBurst trigger={confettiKey} />
-      <GameAlerts alerts={alerts} onRemove={removeAlert} />
 
       {/* Reconnecting bar */}
       {game?.reconnecting && (
@@ -180,6 +180,9 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
             <div ref={chatEndRef} />
           </div>
 
+          {/* Game alerts - above input so visible when keyboard is open */}
+          <GameAlerts alerts={alerts} onRemove={removeAlert} />
+
           {/* Input bar */}
           <div className="border-t border-black/5 bg-white/80 backdrop-blur px-3 py-2.5 shrink-0 safe-area-bottom">
             {role === 'describer' ? (
@@ -195,7 +198,6 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  onFocus={handleInputFocus}
                 />
                 <button
                   className="bg-accent text-white rounded-xl px-4 py-2.5 text-sm font-semibold touch-target shrink-0 transition active:scale-95"

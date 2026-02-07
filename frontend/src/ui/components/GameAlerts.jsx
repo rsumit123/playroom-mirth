@@ -49,7 +49,7 @@ export default function GameAlerts({ alerts, onRemove }) {
   if (alerts.length === 0) return null
 
   return (
-    <div className="absolute top-2 left-0 right-0 z-20 flex flex-col items-center gap-1.5 pointer-events-none px-4">
+    <div className="shrink-0 flex flex-col items-center gap-1.5 px-4 py-1.5">
       {alerts.map((alert) => (
         <AlertItem key={alert.id} alert={alert} onDone={onRemove} />
       ))}
