@@ -68,6 +68,14 @@ export default {
           "0%": { transform: "scale(0) rotate(-15deg)" },
           "50%": { transform: "scale(1.2) rotate(5deg)" },
           "100%": { transform: "scale(1) rotate(0)" }
+        },
+        "alert-in": {
+          "0%": { transform: "translateY(-100%) scale(0.95)", opacity: "0" },
+          "100%": { transform: "translateY(0) scale(1)", opacity: "1" }
+        },
+        "alert-out": {
+          "0%": { transform: "translateY(0) scale(1)", opacity: "1" },
+          "100%": { transform: "translateY(-100%) scale(0.95)", opacity: "0" }
         }
       },
       animation: {
@@ -79,7 +87,9 @@ export default {
         "countdown-shake": "countdown-shake 0.3s ease-in-out",
         "slide-up": "slide-up 0.3s ease-out",
         "scale-in": "scale-in 0.3s ease-out",
-        "trophy-bounce": "trophy-bounce 0.5s ease-out"
+        "trophy-bounce": "trophy-bounce 0.5s ease-out",
+        "alert-in": "alert-in 0.35s ease-out forwards",
+        "alert-out": "alert-out 0.3s ease-in forwards"
       }
     }
   },

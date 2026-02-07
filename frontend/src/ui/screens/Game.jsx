@@ -3,6 +3,7 @@ import CircularTimer from '../components/CircularTimer.jsx'
 import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import ChatBubble from '../components/ChatBubble.jsx'
 import Scoreboard from '../components/Scoreboard.jsx'
+import GameAlerts, { useGameAlerts } from '../components/GameAlerts.jsx'
 
 export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const [message, setMessage] = useState('')
@@ -10,11 +11,15 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const [remaining, setRemaining] = useState(null)
   const [showScoreboard, setShowScoreboard] = useState(false)
   const [viewHeight, setViewHeight] = useState(null)
+  const { alerts, addAlert, removeAlert } = useGameAlerts()
   const turn = game?.turn
   const describerId = turn?.describer_id
   const lastGuess = game?.lastGuess
   const role = game?.selfPlayerId && describerId && String(game.selfPlayerId) === String(describerId) ? 'describer' : 'guesser'
   const inputRef = useRef(null)
+  const prevTurnRef = useRef(null)
+  const prevWordRef = useRef(null)
+  const timedUpRef = useRef(false)
 
   // Track visual viewport height to handle mobile keyboard
   useEffect(() => {
@@ -49,6 +54,41 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
     return () => clearInterval(id)
   }, [turn])
 
+  // Alert: new turn / new describer
+  useEffect(() => {
+    if (!turn?.describer_id || !turn?.turn_start_ts) return
+    const prev = prevTurnRef.current
+    if (prev?.describer_id === turn.describer_id && prev?.turn_start_ts === turn.turn_start_ts) return
+    const isFirst = !prev
+    prevTurnRef.current = turn
+    timedUpRef.current = false
+    if (isFirst) return
+    const isDescriber = game?.selfPlayerId && String(game.selfPlayerId) === String(turn.describer_id)
+    if (isDescriber) {
+      addAlert('Your turn to describe!', 'accent', '\u{1F3A4}')
+    } else {
+      const name = playerNames[turn.describer_id] || 'Someone'
+      addAlert(`${name} is now describing`, 'info', '\u{1F4AC}')
+    }
+  }, [turn?.describer_id, turn?.turn_start_ts])
+
+  // Alert: time's up
+  useEffect(() => {
+    if (remaining === 0 && !timedUpRef.current) {
+      timedUpRef.current = true
+      addAlert("Time's up!", 'warning', '\u23F0')
+    }
+  }, [remaining])
+
+  // Alert: new word (describer only, after first word)
+  useEffect(() => {
+    if (role !== 'describer' || !game?.word) return
+    if (prevWordRef.current && prevWordRef.current !== game.word) {
+      addAlert('Next word!', 'success', '\u2728')
+    }
+    prevWordRef.current = game.word
+  }, [game?.word, role])
+
   const chatItems = useMemo(() => game?.messages || [], [game?.messages])
   const chatEndRef = useRef(null)
 
@@ -71,8 +111,9 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const shellStyle = viewHeight ? { height: `${viewHeight}px` } : undefined
 
   return (
-    <div className="flex flex-col overflow-hidden" style={shellStyle || { height: '100dvh' }}>
+    <div className="flex flex-col overflow-hidden relative" style={shellStyle || { height: '100dvh' }}>
       <ConfettiBurst trigger={confettiKey} />
+      <GameAlerts alerts={alerts} onRemove={removeAlert} />
 
       {/* Reconnecting bar */}
       {game?.reconnecting && (

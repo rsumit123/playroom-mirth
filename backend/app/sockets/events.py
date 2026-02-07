@@ -29,6 +29,7 @@ from app.services.game_state import (
 )
 from app.models.room_player import RoomPlayer
 from app.models.word import Word
+from sqlalchemy import func as sa_func
 import time
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
@@ -334,11 +335,12 @@ def _select_word(db, difficulty: int, history_ids: list[int]) -> Word | None:
     word = (
         db.query(Word)
         .filter(Word.active.is_(True), Word.difficulty == difficulty, ~Word.id.in_(history_ids))
+        .order_by(sa_func.random())
         .first()
     )
     if word:
         return word
-    return db.query(Word).filter(Word.active.is_(True), ~Word.id.in_(history_ids)).first()
+    return db.query(Word).filter(Word.active.is_(True), ~Word.id.in_(history_ids)).order_by(sa_func.random()).first()
 
 
 @sio.on("game:start")
