@@ -1,13 +1,20 @@
-export default function Logo() {
+export default function Logo({ compact = false, onClick, className = '' }) {
+  const Wrapper = onClick ? 'button' : 'div'
+  const sizeClasses = compact ? 'h-9 w-9 text-lg' : 'h-11 w-11 text-xl'
+  const titleClasses = compact ? 'text-lg' : 'text-2xl'
   return (
-    <div className="flex items-center gap-3">
-      <div className="h-11 w-11 rounded-xl bg-accent text-white flex items-center justify-center font-display text-xl shadow-soft">
+    <Wrapper
+      type={onClick ? 'button' : undefined}
+      className={`flex items-center gap-3 text-left ${className}`}
+      onClick={onClick}
+    >
+      <div className={`${sizeClasses} rounded-xl bg-accent text-white flex items-center justify-center font-display shadow-soft`}>
         CC
       </div>
-      <div>
-        <div className="font-display text-2xl">Charade Chat</div>
+      <div className={compact ? 'hidden sm:block' : ''}>
+        <div className={`font-display ${titleClasses}`}>Charade Chat</div>
         <div className="text-xs uppercase tracking-[0.25em] text-slate/60">Play. Guess. Repeat.</div>
       </div>
-    </div>
+    </Wrapper>
   )
 }

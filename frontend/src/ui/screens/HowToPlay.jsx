@@ -1,7 +1,7 @@
 export default function HowToPlay({ onClose }) {
   return (
-    <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center p-6 z-50">
-      <div className="card p-6 w-full max-w-xl space-y-5">
+    <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-end sm:items-center justify-center p-4 sm:p-6 z-50">
+      <div className="card p-6 w-full max-w-xl space-y-5 rounded-t-3xl sm:rounded-xl">
         <div className="flex items-center justify-between">
           <h2 className="font-display text-2xl">How to Play</h2>
           <button className="text-sm text-slate/70" onClick={onClose}>Close</button>

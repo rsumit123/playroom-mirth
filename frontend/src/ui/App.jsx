@@ -46,6 +46,8 @@ function AppShell() {
             navigate('/')
           }}
           onProfile={() => navigate('/home')}
+          onHome={() => navigate('/home')}
+          onHowTo={() => navigate('/how-to')}
         />
       )}
       <Routes>

@@ -39,12 +39,32 @@ body {
   @apply rounded-xl border border-black/10 px-5 py-3 font-semibold text-slate/80 hover:border-accent hover:text-accent;
 }
 
+.btn-ghost-sm {
+  @apply rounded-xl border border-black/10 px-3 py-2 text-xs font-semibold text-slate/80 hover:border-accent hover:text-accent;
+}
+
 .section-title {
   @apply font-display text-3xl md:text-4xl;
 }
 
 .subtle {
   @apply text-slate/70;
+}
+
+.page {
+  @apply w-full;
+}
+
+.page-inner {
+  @apply max-w-7xl mx-auto px-6 sm:px-8;
+}
+
+.section-stack {
+  @apply space-y-8;
+}
+
+.grid-2 {
+  @apply grid gap-6 lg:grid-cols-2;
 }
 
 .hero-card {

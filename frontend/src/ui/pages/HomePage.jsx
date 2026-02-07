@@ -35,7 +35,7 @@ export default function HomePage() {
 
   return (
     <>
-      <Home onCreate={handleCreate} onJoin={handleJoin} onHowTo={() => navigate('/how-to')} />
+      <Home onCreate={handleCreate} onJoin={handleJoin} />
       <Toast message={toast} onClose={() => setToast(null)} />
     </>
   )
