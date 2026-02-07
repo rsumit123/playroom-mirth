@@ -67,8 +67,11 @@ export function joinRoom(token, guestToken, roomCode) {
   })
 }
 
-export function getRoom(roomCode) {
-  return request(`/rooms/${roomCode}`)
+export function getRoom(roomCode, token, guestToken) {
+  const params = guestToken ? `?guest_token=${encodeURIComponent(guestToken)}` : ''
+  return request(`/rooms/${roomCode}${params}`, {
+    headers: token ? { Authorization: `Bearer ${token}` } : undefined
+  })
 }
 
 export function updateRoomSettings(token, roomCode, payload) {

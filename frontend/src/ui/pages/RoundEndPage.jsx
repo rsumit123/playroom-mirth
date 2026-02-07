@@ -5,15 +5,16 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function RoundEndPage() {
   const navigate = useNavigate()
-  const { game, room, lobby } = useApp()
+  const { game, room, lobby, roomRestoreStatus } = useApp()
   const turnRef = useRef(game?.turn)
 
   useEffect(() => {
+    if (roomRestoreStatus !== 'done') return
     if (!room?.code) {
       navigate('/home', { replace: true })
       return
     }
-  }, [room])
+  }, [room, roomRestoreStatus])
 
   useEffect(() => {
     if (game?.turn && game.turn !== turnRef.current) {

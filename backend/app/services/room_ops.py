@@ -138,6 +138,26 @@ def create_room_for_guest(db: Session, payload: RoomCreateGuestRequest) -> Lobby
 def join_room(db: Session, room: Room, user_id: int | None, guest: Guest | None) -> LobbyState:
     ensure_user_can_join(db, user_id, guest)
 
+    # Check if user/guest already has a player in this room
+    existing_rp = None
+    if user_id:
+        existing_rp = (
+            db.query(RoomPlayer)
+            .filter(RoomPlayer.room_id == room.id, RoomPlayer.user_id == user_id)
+            .first()
+        )
+    elif guest:
+        existing_rp = (
+            db.query(RoomPlayer)
+            .filter(RoomPlayer.room_id == room.id, RoomPlayer.guest_id == guest.id)
+            .first()
+        )
+
+    if existing_rp:
+        existing_rp.connected = True
+        db.commit()
+        return lobby_state(db, room, self_player_id=existing_rp.id)
+
     current_count = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).count()
     if current_count >= room.max_players:
         raise HTTPException(status_code=409, detail="Room is full")

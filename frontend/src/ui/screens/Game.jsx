@@ -105,36 +105,43 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
               <div className="flex-1 space-y-3 overflow-y-auto">
                 {chatItems.length === 0 && <div className="text-sm text-slate/60">No messages yet.</div>}
                 {chatItems.map((m, idx) => (
-                  <div key={idx} className="text-sm">
-                    <strong>{playerNames[m.player_id] || `Player ${m.player_id}`}:</strong> {m.message}
+                  <div key={idx} className={`text-sm flex items-center gap-2 ${m.correct ? 'text-emerald-600 font-semibold' : ''}`}>
+                    {m.correct && <span className="text-emerald-500">&#10003;</span>}
+                    <span><strong>{playerNames[m.player_id] || `Player ${m.player_id}`}:</strong> {m.message}</span>
                   </div>
                 ))}
                 <div ref={chatEndRef} />
               </div>
-              <div className="pt-4 flex flex-col gap-3 sm:flex-row">
-                <input
-                  className="flex-1 rounded-xl border border-black/10 px-4 py-3"
-                  placeholder="Type your guess..."
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' && message.trim()) {
+              {role === 'describer' ? (
+                <div className="pt-4 text-sm text-slate/60 text-center">
+                  You are describing — watch the guesses above
+                </div>
+              ) : (
+                <div className="pt-4 flex flex-col gap-3 sm:flex-row">
+                  <input
+                    className="flex-1 rounded-xl border border-black/10 px-4 py-3"
+                    placeholder="Type your guess..."
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' && message.trim()) {
+                        onSend(message)
+                        setMessage('')
+                      }
+                    }}
+                  />
+                  <button
+                    className="btn-primary glow-chip sm:w-auto w-full"
+                    onClick={() => {
+                      if (!message.trim()) return
                       onSend(message)
                       setMessage('')
-                    }
-                  }}
-                />
-                <button
-                  className="btn-primary glow-chip sm:w-auto w-full"
-                  onClick={() => {
-                    if (!message.trim()) return
-                    onSend(message)
-                    setMessage('')
-                  }}
-                >
-                  Send
-                </button>
-              </div>
+                    }}
+                  >
+                    Send
+                  </button>
+                </div>
+              )}
             </div>
           </div>
 

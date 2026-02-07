@@ -5,15 +5,16 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function GamePage() {
   const navigate = useNavigate()
-  const { room, lobby, game, emitChat, emitRoomJoin, selfPlayerId } = useApp()
+  const { room, lobby, game, emitChat, emitRoomJoin, selfPlayerId, roomRestoreStatus } = useApp()
   const navigatedRef = useRef(false)
 
   useEffect(() => {
+    if (roomRestoreStatus !== 'done') return
     if (!room?.code) {
       navigate('/home', { replace: true })
       return
     }
-  }, [room])
+  }, [room, roomRestoreStatus])
 
   useEffect(() => {
     if (game?.gameEnd && !navigatedRef.current) {

@@ -18,6 +18,7 @@ export function AppProvider({ children }) {
   const [lobby, setLobby] = useState(null)
   const [selfPlayerId, setSelfPlayerId] = useState(null)
   const [game, setGame] = useState({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
+  const [roomRestoreStatus, setRoomRestoreStatus] = useState('pending') // 'pending' | 'done'
   const [ui, setUi] = useState({ loading: 0, toast: null, loadingKeys: {} })
 
   useEffect(() => {
@@ -27,6 +28,39 @@ export function AppProvider({ children }) {
       localStorage.removeItem('charade_auth')
     }
   }, [auth])
+
+  // Persist room code and selfPlayerId to sessionStorage
+  useEffect(() => {
+    if (room?.code && selfPlayerId) {
+      sessionStorage.setItem('charade_room', JSON.stringify({ code: room.code, selfPlayerId }))
+    } else if (!room) {
+      sessionStorage.removeItem('charade_room')
+    }
+  }, [room?.code, selfPlayerId])
+
+  // Restore room state on mount (page refresh)
+  useEffect(() => {
+    async function restoreRoom() {
+      try {
+        const saved = sessionStorage.getItem('charade_room')
+        if (!saved) { setRoomRestoreStatus('done'); return }
+        const { code } = JSON.parse(saved)
+        if (!code) { setRoomRestoreStatus('done'); return }
+        if (!(auth.token || auth.guestToken)) { setRoomRestoreStatus('done'); return }
+        const res = await api.getRoom(code, auth.token, auth.guestToken)
+        if (res?.room) {
+          setRoom(res.room)
+          setLobby(res)
+          if (res.self_player_id) setSelfPlayerId(res.self_player_id)
+        }
+      } catch {
+        sessionStorage.removeItem('charade_room')
+      } finally {
+        setRoomRestoreStatus('done')
+      }
+    }
+    restoreRoom()
+  }, [])
 
   const startLoading = (key) =>
     setUi((u) => ({
@@ -48,11 +82,13 @@ export function AppProvider({ children }) {
     setLobby(null)
     setSelfPlayerId(null)
     setGame({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
+    sessionStorage.removeItem('charade_room')
     resetSocket()
   }
 
   function logout() {
     localStorage.removeItem('charade_auth')
+    sessionStorage.removeItem('charade_room')
     setAuth({ token: null, guestToken: null, user: null })
     setRoom(null)
     setLobby(null)
@@ -217,7 +253,12 @@ export function AppProvider({ children }) {
     socket.on('chat:message', (payload) => {
       setGame((g) => ({ ...g, messages: [...(g.messages || []), payload] }))
     })
-    socket.on('game:correct_guess', (payload) => setGame((g) => ({ ...g, lastGuess: payload, scores: payload.scores || g.scores })))
+    socket.on('game:correct_guess', (payload) => setGame((g) => ({
+      ...g,
+      lastGuess: payload,
+      scores: payload.scores || g.scores,
+      messages: [...(g.messages || []), { player_id: payload.guesser_id, message: payload.word, correct: true }]
+    })))
     socket.on('game:round_end', (payload) => setGame((g) => ({ ...g, roundEnd: payload })))
     socket.on('game:game_end', (payload) => setGame((g) => ({ ...g, gameEnd: payload })))
     socket.on('game:player_removed', (payload) => {
@@ -273,6 +314,7 @@ export function AppProvider({ children }) {
     game,
     ui,
     selfPlayerId,
+    roomRestoreStatus,
     logout,
     login,
     register,
@@ -288,7 +330,7 @@ export function AppProvider({ children }) {
     emitChat,
     clearToast,
     leaveRoom
-  }), [auth, room, lobby, game, ui])
+  }), [auth, room, lobby, game, ui, roomRestoreStatus])
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }

@@ -5,14 +5,22 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function LobbyPage() {
   const navigate = useNavigate()
-  const { lobby, game, leaveRoom, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui } = useApp()
+  const { lobby, game, leaveRoom, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui, roomRestoreStatus, bindLobbyEvents } = useApp()
+
+  // Re-bind socket events when room is restored from refresh
+  useEffect(() => {
+    if (roomRestoreStatus === 'done' && lobby?.room?.code) {
+      bindLobbyEvents(lobby.room.code)
+    }
+  }, [roomRestoreStatus, lobby?.room?.code])
 
   useEffect(() => {
+    if (roomRestoreStatus !== 'done') return // wait for restore attempt
     if (!lobby?.room) {
       navigate('/home', { replace: true })
       return
     }
-  }, [lobby])
+  }, [lobby, roomRestoreStatus])
 
   useEffect(() => {
     if (game?.turn) {

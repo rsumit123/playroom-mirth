@@ -1,8 +1,9 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_db, get_current_user_optional
 from app.models.room import Room
+from app.models.room_player import RoomPlayer
 from app.schemas.room import RoomCreateRequest, RoomCreateGuestRequest, RoomJoinRequest, RoomUpdateRequest, LobbyState
 from app.services.room_ops import (
     resolve_guest,
@@ -49,11 +50,28 @@ def join_room(
 
 
 @router.get("/{room_code}", response_model=LobbyState)
-def get_room(room_code: str, db: Session = Depends(get_db)):
+def get_room(
+    room_code: str,
+    guest_token: str | None = Query(default=None),
+    db: Session = Depends(get_db),
+    user=Depends(get_current_user_optional),
+):
     room = db.query(Room).filter(Room.code == room_code).first()
     if not room:
         raise HTTPException(status_code=404, detail="Room not found")
-    return lobby_state(db, room)
+    # Resolve self_player_id from auth
+    self_player_id = None
+    if user:
+        rp = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id, RoomPlayer.user_id == user.id).first()
+        if rp:
+            self_player_id = rp.id
+    elif guest_token:
+        guest = resolve_guest(db, guest_token)
+        if guest:
+            rp = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id, RoomPlayer.guest_id == guest.id).first()
+            if rp:
+                self_player_id = rp.id
+    return lobby_state(db, room, self_player_id=self_player_id)
 
 
 @router.put("/{room_code}/settings", response_model=LobbyState)
