@@ -8,21 +8,21 @@ export default function HomePage() {
 
   async function handleCreate(payload) {
     try {
-      await createRoom(payload)
-      bindLobbyEvents()
+      const res = await createRoom(payload)
+      bindLobbyEvents(res.room.code)
       navigate('/lobby')
     } catch {
-      // errors surfaced via toast in GamePage or future global toast
+      // errors surfaced via toast
     }
   }
 
   async function handleJoin(roomCode) {
     try {
       await joinRoom(roomCode)
-      bindLobbyEvents()
+      bindLobbyEvents(roomCode)
       navigate('/lobby')
     } catch {
-      // errors surfaced via toast in GamePage or future global toast
+      // errors surfaced via toast
     }
   }
 

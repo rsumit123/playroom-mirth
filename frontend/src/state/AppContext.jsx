@@ -147,7 +147,7 @@ export function AppProvider({ children }) {
     }
   }
 
-  function bindLobbyEvents() {
+  function bindLobbyEvents(roomCode) {
     const socket = connectSocket()
     socket.on('room:lobby_update', (payload) => {
       setLobby(payload)
@@ -159,6 +159,16 @@ export function AppProvider({ children }) {
       setGame((g) => ({ ...g, error: { ...payload, message } }))
       showToast(message)
     })
+    if (roomCode) {
+      const data = auth.token
+        ? { room_code: roomCode, token: auth.token }
+        : { room_code: roomCode, guest_token: auth.guestToken }
+      if (socket.connected) {
+        socket.emit('room:register', data)
+      } else {
+        socket.once('connect', () => socket.emit('room:register', data))
+      }
+    }
   }
 
   function startGameSocket() {
