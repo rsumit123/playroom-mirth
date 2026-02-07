@@ -11,6 +11,7 @@ from app.services.room_ops import (
     create_room_for_user,
     create_room_for_guest,
     join_room as join_room_op,
+    lobby_state as build_lobby_state,
 )
 import asyncio
 
@@ -204,6 +205,11 @@ async def room_register(sid, data):
             task.cancel()
         except RuntimeError:
             pass
+    with SessionLocal() as db2:
+        room2 = db2.query(Room).filter(Room.code == room_code).first()
+        if room2:
+            lobby = build_lobby_state(db2, room2, self_player_id=rp.id)
+            await sio.emit("room:lobby_update", lobby.model_dump(), room=room_code)
     return {"ok": True}
 
 
