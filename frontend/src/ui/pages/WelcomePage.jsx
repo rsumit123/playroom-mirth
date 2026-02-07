@@ -8,8 +8,8 @@ export default function WelcomePage() {
 
   return (
     <Welcome
-      onGuest={async () => {
-        await ensureGuest()
+      onGuest={async (displayName) => {
+        await ensureGuest(displayName)
         navigate('/home')
       }}
       onSignIn={() => navigate('/auth')}

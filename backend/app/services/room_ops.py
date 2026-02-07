@@ -51,12 +51,21 @@ def lobby_state(db: Session, room: Room, self_player_id: int | None = None) -> L
         users = db.query(User).filter(User.id.in_(user_ids)).all()
         user_map = {u.id: u.email.split("@")[0] for u in users}
 
+    # Look up guest display names
+    guest_ids = [p.guest_id for p in players if p.guest_id]
+    guest_name_map = {}
+    if guest_ids:
+        guests = db.query(Guest).filter(Guest.id.in_(guest_ids)).all()
+        guest_name_map = {g.id: g.display_name for g in guests if g.display_name}
+
     lobby_players = []
     guest_counter = 0
     for p in players:
         lp = LobbyPlayer.model_validate(p)
         if p.user_id and p.user_id in user_map:
             lp.display_name = user_map[p.user_id]
+        elif p.guest_id and p.guest_id in guest_name_map:
+            lp.display_name = guest_name_map[p.guest_id]
         else:
             guest_counter += 1
             lp.display_name = f"Guest {guest_counter}"
@@ -175,3 +184,73 @@ def join_room(db: Session, room: Room, user_id: int | None, guest: Guest | None)
     db.commit()
 
     return lobby_state(db, room, self_player_id=rp.id)
+
+
+def get_active_rooms(db: Session, user_id: int | None, guest: Guest | None) -> list[dict]:
+    """Return rooms where user/guest has an active RoomPlayer."""
+    if user_id:
+        room_players = (
+            db.query(RoomPlayer)
+            .filter(
+                RoomPlayer.user_id == user_id,
+                (RoomPlayer.in_game.is_(True) | RoomPlayer.connected.is_(True)),
+            )
+            .all()
+        )
+    elif guest:
+        room_players = (
+            db.query(RoomPlayer)
+            .filter(
+                RoomPlayer.guest_id == guest.id,
+                (RoomPlayer.in_game.is_(True) | RoomPlayer.connected.is_(True)),
+            )
+            .all()
+        )
+    else:
+        return []
+
+    if not room_players:
+        return []
+
+    room_ids = [rp.room_id for rp in room_players]
+    rooms = db.query(Room).filter(Room.id.in_(room_ids)).all()
+    room_map = {r.id: r for r in rooms}
+
+    result = []
+    for rp in room_players:
+        room = room_map.get(rp.room_id)
+        if not room:
+            continue
+        player_count = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).count()
+        result.append({
+            "room_code": room.code,
+            "room_status": room.status,
+            "player_count": player_count,
+            "max_players": room.max_players,
+        })
+    return result
+
+
+def leave_room_by_code(db: Session, room_code: str, user_id: int | None, guest: Guest | None) -> bool:
+    """Remove the user/guest from a room."""
+    room = db.query(Room).filter(Room.code == room_code).first()
+    if not room:
+        raise HTTPException(status_code=404, detail="Room not found")
+
+    rp = None
+    if user_id:
+        rp = db.query(RoomPlayer).filter(
+            RoomPlayer.room_id == room.id, RoomPlayer.user_id == user_id
+        ).first()
+    elif guest:
+        rp = db.query(RoomPlayer).filter(
+            RoomPlayer.room_id == room.id, RoomPlayer.guest_id == guest.id
+        ).first()
+
+    if not rp:
+        raise HTTPException(status_code=404, detail="Player not in room")
+
+    rp.in_game = False
+    rp.connected = False
+    db.commit()
+    return True

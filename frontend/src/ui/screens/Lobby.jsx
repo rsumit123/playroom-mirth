@@ -11,7 +11,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
   const minPlayers = 2
   const maxPlayers = roomMeta?.max_players ?? 20
   const canStart = players.length >= minPlayers
-  const isHost = selfPlayerId && lobby?.host_player_id && selfPlayerId === lobby.host_player_id
+  const isHost = selfPlayerId && lobby?.host_player_id && String(selfPlayerId) === String(lobby.host_player_id)
   const [settings, setSettings] = useState({
     rounds: lobby?.room?.rounds_total ?? 3,
     difficulty: lobby?.room?.difficulty ?? 2,
@@ -78,9 +78,9 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
                   <div className="min-w-0 flex-1">
                     <div className="font-medium text-sm truncate">
                       {name}
-                      {p.id === selfPlayerId && <span className="text-accent ml-1 text-xs">(You)</span>}
+                      {String(p.id) === String(selfPlayerId) && <span className="text-accent ml-1 text-xs">(You)</span>}
                     </div>
-                    {p.id === lobby?.host_player_id && <span className="badge-host text-[10px]">Host</span>}
+                    {String(p.id) === String(lobby?.host_player_id) && <span className="badge-host text-[10px]">Host</span>}
                   </div>
                   <div className={`h-2 w-2 rounded-full shrink-0 ${p.in_game ? 'bg-correct animate-pulse' : 'bg-slate/20'}`} />
                 </div>

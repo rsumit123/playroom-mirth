@@ -5,12 +5,16 @@ from app.api.deps import get_db, get_current_user_optional
 from app.models.room import Room
 from app.models.room_player import RoomPlayer
 from app.schemas.room import RoomCreateRequest, RoomCreateGuestRequest, RoomJoinRequest, RoomUpdateRequest, LobbyState
+from typing import List
+
 from app.services.room_ops import (
     resolve_guest,
     create_room_for_user,
     create_room_for_guest,
     join_room as join_room_op,
     lobby_state,
+    get_active_rooms,
+    leave_room_by_code,
 )
 
 router = APIRouter(prefix="/rooms", tags=["rooms"])
@@ -47,6 +51,32 @@ def join_room(
     if not user and not guest:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication required")
     return join_room_op(db, room, user.id if user else None, guest)
+
+
+@router.get("/active", response_model=List[dict])
+def get_active_rooms_endpoint(
+    guest_token: str | None = Query(default=None),
+    db: Session = Depends(get_db),
+    user=Depends(get_current_user_optional),
+):
+    guest = resolve_guest(db, guest_token)
+    if not user and not guest:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication required")
+    return get_active_rooms(db, user.id if user else None, guest)
+
+
+@router.post("/{room_code}/leave", status_code=200)
+def leave_room_endpoint(
+    room_code: str,
+    guest_token: str | None = Query(default=None),
+    db: Session = Depends(get_db),
+    user=Depends(get_current_user_optional),
+):
+    guest = resolve_guest(db, guest_token)
+    if not user and not guest:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication required")
+    leave_room_by_code(db, room_code, user.id if user else None, guest)
+    return {"ok": True}
 
 
 @router.get("/{room_code}", response_model=LobbyState)

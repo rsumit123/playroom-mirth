@@ -40,8 +40,33 @@ export function loginUser(email, password) {
   })
 }
 
-export function createGuest() {
-  return request('/guest', { method: 'POST' })
+export function createGuest(displayName) {
+  return request('/guest', {
+    method: 'POST',
+    body: JSON.stringify(displayName ? { display_name: displayName } : {})
+  })
+}
+
+export function updateGuestName(guestToken, displayName) {
+  return request(`/guest?guest_token=${encodeURIComponent(guestToken)}`, {
+    method: 'PATCH',
+    body: JSON.stringify({ display_name: displayName })
+  })
+}
+
+export function getActiveRooms(token, guestToken) {
+  const params = guestToken ? `?guest_token=${encodeURIComponent(guestToken)}` : ''
+  return request(`/rooms/active${params}`, {
+    headers: token ? { Authorization: `Bearer ${token}` } : undefined
+  })
+}
+
+export function leaveRoomApi(token, guestToken, roomCode) {
+  const params = guestToken ? `?guest_token=${encodeURIComponent(guestToken)}` : ''
+  return request(`/rooms/${roomCode}/leave${params}`, {
+    method: 'POST',
+    headers: token ? { Authorization: `Bearer ${token}` } : undefined
+  })
 }
 
 export function createRoom(token, payload) {

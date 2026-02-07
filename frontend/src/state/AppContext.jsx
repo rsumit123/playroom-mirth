@@ -9,9 +9,9 @@ export function AppProvider({ children }) {
   const [auth, setAuth] = useState(() => {
     try {
       const saved = localStorage.getItem('charade_auth')
-      return saved ? JSON.parse(saved) : { token: null, guestToken: null, user: null }
+      return saved ? JSON.parse(saved) : { token: null, guestToken: null, guestDisplayName: null, user: null }
     } catch {
-      return { token: null, guestToken: null, user: null }
+      return { token: null, guestToken: null, guestDisplayName: null, user: null }
     }
   })
   const [room, setRoom] = useState(null)
@@ -19,6 +19,7 @@ export function AppProvider({ children }) {
   const [selfPlayerId, setSelfPlayerId] = useState(null)
   const [game, setGame] = useState({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
   const [roomRestoreStatus, setRoomRestoreStatus] = useState('pending') // 'pending' | 'done'
+  const [activeRooms, setActiveRooms] = useState([])
   const [ui, setUi] = useState({ loading: 0, toast: null, loadingKeys: {} })
 
   useEffect(() => {
@@ -89,7 +90,7 @@ export function AppProvider({ children }) {
   function logout() {
     localStorage.removeItem('charade_auth')
     sessionStorage.removeItem('charade_room')
-    setAuth({ token: null, guestToken: null, user: null })
+    setAuth({ token: null, guestToken: null, guestDisplayName: null, user: null })
     setRoom(null)
     setLobby(null)
     setSelfPlayerId(null)
@@ -126,12 +127,24 @@ export function AppProvider({ children }) {
     }
   }
 
-  async function ensureGuest() {
-    if (auth.guestToken) return auth.guestToken
+  async function ensureGuest(displayName) {
+    if (auth.guestToken) {
+      if (displayName && !auth.guestDisplayName) {
+        try {
+          await api.updateGuestName(auth.guestToken, displayName)
+          setAuth((prev) => ({ ...prev, guestDisplayName: displayName }))
+        } catch { /* non-critical */ }
+      }
+      return auth.guestToken
+    }
     startLoading('guest')
     try {
-      const res = await api.createGuest()
-      setAuth((prev) => ({ ...prev, guestToken: res.guest_token }))
+      const res = await api.createGuest(displayName)
+      setAuth((prev) => ({
+        ...prev,
+        guestToken: res.guest_token,
+        guestDisplayName: res.display_name || displayName || null,
+      }))
       return res.guest_token
     } catch (err) {
       showToast(formatError(err?.message))
@@ -205,6 +218,31 @@ export function AppProvider({ children }) {
       throw err
     } finally {
       stopLoading('save_settings')
+    }
+  }
+
+  async function fetchActiveRooms() {
+    if (!auth.token && !auth.guestToken) {
+      setActiveRooms([])
+      return
+    }
+    try {
+      const rooms = await api.getActiveRooms(auth.token, auth.guestToken)
+      setActiveRooms(rooms || [])
+    } catch {
+      setActiveRooms([])
+    }
+  }
+
+  async function leaveActiveRoom(roomCode) {
+    startLoading('leave_room')
+    try {
+      await api.leaveRoomApi(auth.token, auth.guestToken, roomCode)
+      await fetchActiveRooms()
+    } catch (err) {
+      showToast(formatError(err?.message))
+    } finally {
+      stopLoading('leave_room')
     }
   }
 
@@ -328,9 +366,12 @@ export function AppProvider({ children }) {
     emitRoomJoin,
     emitGameStart,
     emitChat,
+    activeRooms,
+    fetchActiveRooms,
+    leaveActiveRoom,
     clearToast,
     leaveRoom
-  }), [auth, room, lobby, game, ui, roomRestoreStatus])
+  }), [auth, room, lobby, game, ui, roomRestoreStatus, selfPlayerId, activeRooms])
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }

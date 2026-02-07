@@ -44,6 +44,8 @@ function AppShell() {
         <TopBar
           userEmail={auth?.user?.email}
           isAuthed={Boolean(auth?.token)}
+          isGuest={Boolean(auth?.guestToken && !auth?.token)}
+          guestDisplayName={auth?.guestDisplayName}
           onLogin={() => navigate('/auth')}
           onLogout={() => {
             logout()

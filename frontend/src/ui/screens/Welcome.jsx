@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import Logo from '../components/Logo.jsx'
 import Spinner from '../components/Spinner.jsx'
 
 export default function Welcome({ onGuest, onSignIn, onHowTo, loadingGuest }) {
+  const [name, setName] = useState('')
+
   return (
     <div className="game-shell">
       <div className="flex-1 flex flex-col items-center justify-center page-narrow py-8 text-center">
@@ -25,9 +28,19 @@ export default function Welcome({ onGuest, onSignIn, onHowTo, loadingGuest }) {
         </div>
 
         <div className="w-full space-y-3 max-w-xs">
+          <input
+            className="w-full rounded-xl border border-black/10 px-4 py-3 text-sm text-center touch-target outline-none focus:border-accent transition"
+            placeholder="Enter your name"
+            maxLength={30}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && name.trim()) onGuest(name.trim())
+            }}
+          />
           <button
             className="btn-primary w-full text-lg py-4 touch-target flex items-center justify-center gap-2"
-            onClick={onGuest}
+            onClick={() => onGuest(name.trim() || undefined)}
             disabled={loadingGuest}
           >
             {loadingGuest ? <Spinner size={18} /> : null}

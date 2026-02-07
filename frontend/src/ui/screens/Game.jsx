@@ -12,7 +12,7 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const turn = game?.turn
   const describerId = turn?.describer_id
   const lastGuess = game?.lastGuess
-  const role = game?.selfPlayerId === describerId ? 'describer' : 'guesser'
+  const role = game?.selfPlayerId && describerId && String(game.selfPlayerId) === String(describerId) ? 'describer' : 'guesser'
 
   useEffect(() => {
     if (lastGuess?.word) setConfettiKey((k) => k + 1)
