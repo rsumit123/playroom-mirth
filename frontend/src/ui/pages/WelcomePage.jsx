@@ -4,7 +4,7 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function WelcomePage() {
   const navigate = useNavigate()
-  const { ensureGuest } = useApp()
+  const { ensureGuest, ui } = useApp()
 
   return (
     <Welcome
@@ -14,6 +14,7 @@ export default function WelcomePage() {
       }}
       onSignIn={() => navigate('/auth')}
       onHowTo={() => navigate('/how-to')}
+      loadingGuest={Boolean(ui?.loadingKeys?.guest)}
     />
   )
 }

@@ -4,7 +4,7 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function LobbyPage() {
   const navigate = useNavigate()
-  const { lobby, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId } = useApp()
+  const { lobby, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui } = useApp()
 
   async function handleStart() {
     if (!lobby?.room?.code) return
@@ -22,6 +22,7 @@ export default function LobbyPage() {
         if (!lobby?.room?.code) return
         saveRoomSettings(lobby.room.code, payload)
       }}
+      loadingSave={Boolean(ui?.loadingKeys?.save_settings)}
       selfPlayerId={selfPlayerId}
     />
   )

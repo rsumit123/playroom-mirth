@@ -1,13 +1,10 @@
 import { useNavigate } from 'react-router-dom'
 import Home from '../screens/Home.jsx'
 import { useApp } from '../../state/AppContext.jsx'
-import Toast from '../components/Toast.jsx'
-import { useEffect, useState } from 'react'
 
 export default function HomePage() {
   const navigate = useNavigate()
-  const { createRoom, joinRoom, bindLobbyEvents, game } = useApp()
-  const [toast, setToast] = useState(null)
+  const { createRoom, joinRoom, bindLobbyEvents, ui } = useApp()
 
   async function handleCreate(payload) {
     try {
@@ -29,14 +26,12 @@ export default function HomePage() {
     }
   }
 
-  useEffect(() => {
-    if (game?.error?.message) setToast(game.error.message)
-  }, [game?.error])
-
   return (
-    <>
-      <Home onCreate={handleCreate} onJoin={handleJoin} />
-      <Toast message={toast} onClose={() => setToast(null)} />
-    </>
+    <Home
+      onCreate={handleCreate}
+      onJoin={handleJoin}
+      loadingCreate={Boolean(ui?.loadingKeys?.create_room)}
+      loadingJoin={Boolean(ui?.loadingKeys?.join_room)}
+    />
   )
 }

@@ -11,6 +11,8 @@ import GameEndPage from './pages/GameEndPage.jsx'
 import HowToPage from './pages/HowToPage.jsx'
 import AdminWordsPage from './pages/AdminWordsPage.jsx'
 import TopBar from './components/TopBar.jsx'
+import Toast from './components/Toast.jsx'
+import LoadingOverlay from './components/LoadingOverlay.jsx'
 
 export default function App() {
   return (
@@ -29,13 +31,15 @@ export default function App() {
 function AppShell() {
   const navigate = useNavigate()
   const location = useLocation()
-  const { auth, logout } = useApp()
+  const { auth, logout, ui, clearToast } = useApp()
 
   const path = location.pathname
   const showTopBar = ['/home', '/lobby', '/game', '/round-end', '/game-end'].includes(path)
 
   return (
     <>
+      <LoadingOverlay active={ui?.loading > 0} />
+      <Toast message={ui?.toast} onClose={clearToast} />
       {showTopBar && (
         <TopBar
           userEmail={auth?.user?.email}

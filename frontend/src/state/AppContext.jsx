@@ -11,6 +11,22 @@ export function AppProvider({ children }) {
   const [lobby, setLobby] = useState(null)
   const [selfPlayerId, setSelfPlayerId] = useState(null)
   const [game, setGame] = useState({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
+  const [ui, setUi] = useState({ loading: 0, toast: null, loadingKeys: {} })
+
+  const startLoading = (key) =>
+    setUi((u) => ({
+      ...u,
+      loading: u.loading + 1,
+      loadingKeys: key ? { ...u.loadingKeys, [key]: true } : u.loadingKeys
+    }))
+  const stopLoading = (key) =>
+    setUi((u) => ({
+      ...u,
+      loading: Math.max(0, u.loading - 1),
+      loadingKeys: key ? { ...u.loadingKeys, [key]: false } : u.loadingKeys
+    }))
+  const showToast = (message) => setUi((u) => ({ ...u, toast: message }))
+  const clearToast = () => setUi((u) => ({ ...u, toast: null }))
 
   function logout() {
     setAuth({ token: null, guestToken: null, user: null })
@@ -18,27 +34,55 @@ export function AppProvider({ children }) {
     setLobby(null)
     setSelfPlayerId(null)
     setGame({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
+    setUi({ loading: 0, toast: null, loadingKeys: {} })
     resetSocket()
   }
 
   async function login(email, password) {
-    const res = await api.loginUser(email, password)
-    setAuth((prev) => ({ ...prev, token: res.access_token, user: { email } }))
+    startLoading('login')
+    try {
+      const res = await api.loginUser(email, password)
+      setAuth((prev) => ({ ...prev, token: res.access_token, user: { email } }))
+      return res
+    } catch (err) {
+      showToast(formatError(err?.message))
+      throw err
+    } finally {
+      stopLoading('login')
+    }
   }
 
   async function register(email, password) {
-    await api.registerUser(email, password)
-    await login(email, password)
+    startLoading('register')
+    try {
+      await api.registerUser(email, password)
+      const res = await api.loginUser(email, password)
+      setAuth((prev) => ({ ...prev, token: res.access_token, user: { email } }))
+    } catch (err) {
+      showToast(formatError(err?.message))
+      throw err
+    } finally {
+      stopLoading('register')
+    }
   }
 
   async function ensureGuest() {
     if (auth.guestToken) return auth.guestToken
-    const res = await api.createGuest()
-    setAuth((prev) => ({ ...prev, guestToken: res.guest_token }))
-    return res.guest_token
+    startLoading('guest')
+    try {
+      const res = await api.createGuest()
+      setAuth((prev) => ({ ...prev, guestToken: res.guest_token }))
+      return res.guest_token
+    } catch (err) {
+      showToast(formatError(err?.message))
+      throw err
+    } finally {
+      stopLoading('guest')
+    }
   }
 
   async function createRoom(payload) {
+    startLoading('create_room')
     try {
       if (auth.token) {
         const res = await api.createRoom(auth.token, payload)
@@ -53,12 +97,17 @@ export function AppProvider({ children }) {
       setSelfPlayerId(res.self_player_id || null)
       return res
     } catch (err) {
-      setGame((g) => ({ ...g, error: { message: formatError(err?.message) } }))
+      const message = formatError(err?.message)
+      setGame((g) => ({ ...g, error: { message } }))
+      showToast(message)
       throw err
+    } finally {
+      stopLoading('create_room')
     }
   }
 
   async function joinRoom(roomCode) {
+    startLoading('join_room')
     try {
       const res = await api.joinRoom(auth.token, auth.guestToken, roomCode)
       setRoom(res.room)
@@ -66,24 +115,35 @@ export function AppProvider({ children }) {
       setSelfPlayerId(res.self_player_id || null)
       return res
     } catch (err) {
-      setGame((g) => ({ ...g, error: { message: formatError(err?.message) } }))
+      const message = formatError(err?.message)
+      setGame((g) => ({ ...g, error: { message } }))
+      showToast(message)
       throw err
+    } finally {
+      stopLoading('join_room')
     }
   }
 
   async function saveRoomSettings(roomCode, payload) {
     if (!auth.token) {
-      setGame((g) => ({ ...g, error: { message: formatError('Authentication required') } }))
+      const message = formatError('Authentication required')
+      setGame((g) => ({ ...g, error: { message } }))
+      showToast(message)
       return null
     }
+    startLoading('save_settings')
     try {
       const res = await api.updateRoomSettings(auth.token, roomCode, payload)
       setLobby(res)
       setRoom(res.room)
       return res
     } catch (err) {
-      setGame((g) => ({ ...g, error: { message: formatError(err?.message) } }))
+      const message = formatError(err?.message)
+      setGame((g) => ({ ...g, error: { message } }))
+      showToast(message)
       throw err
+    } finally {
+      stopLoading('save_settings')
     }
   }
 
@@ -95,7 +155,9 @@ export function AppProvider({ children }) {
       if (payload.self_player_id) setSelfPlayerId(payload.self_player_id)
     })
     socket.on('error', (payload) => {
-      setGame((g) => ({ ...g, error: { ...payload, message: formatError(payload?.message) } }))
+      const message = formatError(payload?.message)
+      setGame((g) => ({ ...g, error: { ...payload, message } }))
+      showToast(message)
     })
   }
 
@@ -118,7 +180,11 @@ export function AppProvider({ children }) {
         })
       }
     })
-    socket.on('error', (payload) => setGame((g) => ({ ...g, error: { ...payload, message: formatError(payload?.message) } })))
+    socket.on('error', (payload) => {
+      const message = formatError(payload?.message)
+      setGame((g) => ({ ...g, error: { ...payload, message } }))
+      showToast(message)
+    })
     socket.on('game:reconnect_grace', (payload) => {
       if (payload?.player_id && payload.player_id === selfPlayerId) {
         setGame((g) => ({ ...g, reconnecting: true, reconnectGrace: payload }))
@@ -156,6 +222,7 @@ export function AppProvider({ children }) {
     room,
     lobby,
     game,
+    ui,
     selfPlayerId,
     logout,
     login,
@@ -169,8 +236,9 @@ export function AppProvider({ children }) {
     emitRoomCreate,
     emitRoomJoin,
     emitGameStart,
-    emitChat
-  }), [auth, room, lobby, game])
+    emitChat,
+    clearToast
+  }), [auth, room, lobby, game, ui])
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }

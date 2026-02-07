@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import StatPill from '../components/StatPill.jsx'
+import Spinner from '../components/Spinner.jsx'
 
-export default function Home({ onCreate, onJoin }) {
+export default function Home({ onCreate, onJoin, loadingCreate, loadingJoin }) {
   const [rounds, setRounds] = useState('3')
   const [timer, setTimer] = useState('60')
   const [difficulty, setDifficulty] = useState('2')
@@ -64,7 +65,7 @@ export default function Home({ onCreate, onJoin }) {
                 </label>
               </div>
               <button
-                className="btn-primary w-full transition-transform active:scale-[0.98] glow-chip"
+                className="btn-primary w-full transition-transform active:scale-[0.98] glow-chip flex items-center justify-center gap-2"
                 onClick={() =>
                   onCreate({
                     rounds_total: Math.max(1, Number(rounds)),
@@ -73,7 +74,9 @@ export default function Home({ onCreate, onJoin }) {
                     max_players: Math.min(20, Math.max(2, Number(maxPlayers)))
                   })
                 }
+                disabled={loadingCreate}
               >
+                {loadingCreate ? <Spinner size={18} /> : null}
                 Create Room
               </button>
             </div>
@@ -89,7 +92,10 @@ export default function Home({ onCreate, onJoin }) {
                   onChange={(e) => setRoomCode(e.target.value.toUpperCase())}
                 />
               </label>
-              <button className="btn-ghost w-full transition-transform active:scale-[0.98]" onClick={() => onJoin(roomCode)}>Join Room</button>
+              <button className="btn-ghost w-full transition-transform active:scale-[0.98] flex items-center justify-center gap-2" onClick={() => onJoin(roomCode)} disabled={loadingJoin}>
+                {loadingJoin ? <Spinner size={18} /> : null}
+                Join Room
+              </button>
               <div className="flex flex-wrap gap-3 pt-4">
                 <StatPill label="Active Rooms" value="12" />
                 <StatPill label="Players" value="67" />

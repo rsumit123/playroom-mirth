@@ -4,7 +4,7 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function AuthPage() {
   const navigate = useNavigate()
-  const { login, register } = useApp()
+  const { login, register, ui } = useApp()
 
   async function handleDone(mode, email, password) {
     if (mode === 'signin') await login(email, password)
@@ -12,5 +12,11 @@ export default function AuthPage() {
     navigate('/home')
   }
 
-  return <Auth onBack={() => navigate('/')} onDone={handleDone} />
+  return (
+    <Auth
+      onBack={() => navigate('/')}
+      onDone={handleDone}
+      loading={ui?.loadingKeys?.login || ui?.loadingKeys?.register}
+    />
+  )
 }

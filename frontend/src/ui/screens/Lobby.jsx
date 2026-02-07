@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import Spinner from '../components/Spinner.jsx'
 
-export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPlayerId }) {
+export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPlayerId, loadingSave }) {
   const code = lobby?.room?.code || '------'
   const players = lobby?.players || []
   const roomMeta = lobby?.room
@@ -133,7 +134,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
                 />
               </div>
               <button
-                className="btn-ghost w-full"
+                className="btn-ghost w-full flex items-center justify-center gap-2"
                 onClick={() =>
                   onSaveSettings?.({
                     rounds_total: Number(settings.rounds),
@@ -141,7 +142,9 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
                     turn_seconds: Number(settings.timer)
                   })
                 }
+                disabled={loadingSave}
               >
+                {loadingSave ? <Spinner size={18} /> : null}
                 Save Settings
               </button>
               <button

@@ -1,6 +1,7 @@
 import Logo from '../components/Logo.jsx'
+import Spinner from '../components/Spinner.jsx'
 
-export default function Welcome({ onGuest, onSignIn, onHowTo }) {
+export default function Welcome({ onGuest, onSignIn, onHowTo, loadingGuest }) {
   return (
     <div className="min-h-screen page py-10 flex flex-col justify-between">
       <div className="page-inner space-y-10">
@@ -30,7 +31,10 @@ export default function Welcome({ onGuest, onSignIn, onHowTo }) {
               </div>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 max-w-md">
-              <button className="btn-primary" onClick={onGuest}>Play as Guest</button>
+              <button className="btn-primary flex items-center justify-center gap-2" onClick={onGuest} disabled={loadingGuest}>
+                {loadingGuest ? <Spinner size={18} /> : null}
+                Play as Guest
+              </button>
               <button className="btn-ghost" onClick={onSignIn}>Sign In</button>
             </div>
           </div>

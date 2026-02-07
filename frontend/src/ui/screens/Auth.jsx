@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import Logo from '../components/Logo.jsx'
+import Spinner from '../components/Spinner.jsx'
 
-export default function Auth({ onBack, onDone }) {
+export default function Auth({ onBack, onDone, loading }) {
   const [mode, setMode] = useState('signin')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const isLoading = Boolean(loading)
 
   return (
     <div className="min-h-screen page py-10">
@@ -42,7 +44,8 @@ export default function Auth({ onBack, onDone }) {
               <div className="text-xs text-slate/60">Use at least 6 characters.</div>
             </div>
           </div>
-          <button className="btn-primary mt-6 w-full" onClick={() => onDone(mode, email, password)}>
+          <button className="btn-primary mt-6 w-full flex items-center justify-center gap-2" onClick={() => onDone(mode, email, password)} disabled={isLoading}>
+            {isLoading ? <Spinner size={18} /> : null}
             {mode === 'signin' ? 'Sign In' : 'Create Account'}
           </button>
         </div>
