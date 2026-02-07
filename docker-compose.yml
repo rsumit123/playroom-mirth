@@ -8,8 +8,8 @@ services:
     ports:
       - "8005:8005"
     environment:
-      - DATABASE_URL=sqlite:///./charade.db
+      - DATABASE_URL=sqlite:///./data/charade.db
       - JWT_SECRET_KEY=${JWT_SECRET_KEY:-dev-secret-change}
     volumes:
-      - ./backend/data:/app
+      - ./backend/data:/app/data
     restart: unless-stopped
