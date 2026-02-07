@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, useCallback } from 'react'
 import CircularTimer from '../components/CircularTimer.jsx'
 import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import ChatBubble from '../components/ChatBubble.jsx'
@@ -9,10 +9,29 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const [confettiKey, setConfettiKey] = useState(0)
   const [remaining, setRemaining] = useState(null)
   const [showScoreboard, setShowScoreboard] = useState(false)
+  const [viewHeight, setViewHeight] = useState(null)
   const turn = game?.turn
   const describerId = turn?.describer_id
   const lastGuess = game?.lastGuess
   const role = game?.selfPlayerId && describerId && String(game.selfPlayerId) === String(describerId) ? 'describer' : 'guesser'
+  const inputRef = useRef(null)
+
+  // Track visual viewport height to handle mobile keyboard
+  useEffect(() => {
+    const vv = window.visualViewport
+    if (!vv) return
+    const onResize = () => setViewHeight(vv.height)
+    vv.addEventListener('resize', onResize)
+    onResize()
+    return () => vv.removeEventListener('resize', onResize)
+  }, [])
+
+  // Scroll input into view when keyboard opens
+  const handleInputFocus = useCallback(() => {
+    setTimeout(() => {
+      inputRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+    }, 300)
+  }, [])
 
   useEffect(() => {
     if (lastGuess?.word) setConfettiKey((k) => k + 1)
@@ -49,8 +68,10 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
     }
   }
 
+  const shellStyle = viewHeight ? { height: `${viewHeight}px` } : undefined
+
   return (
-    <div className="game-shell">
+    <div className="flex flex-col overflow-hidden" style={shellStyle || { height: '100dvh' }}>
       <ConfettiBurst trigger={confettiKey} />
 
       {/* Reconnecting bar */}
@@ -127,11 +148,13 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
             ) : (
               <div className="flex items-center gap-2">
                 <input
+                  ref={inputRef}
                   className="flex-1 bg-accent/5 rounded-xl px-4 py-2.5 text-sm outline-none placeholder:text-slate/40 touch-target"
                   placeholder="Type your guess..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   onKeyDown={handleKeyDown}
+                  onFocus={handleInputFocus}
                 />
                 <button
                   className="bg-accent text-white rounded-xl px-4 py-2.5 text-sm font-semibold touch-target shrink-0 transition active:scale-95"
