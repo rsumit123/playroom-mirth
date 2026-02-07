@@ -43,6 +43,14 @@ export function AppProvider({ children }) {
   const showToast = (message) => setUi((u) => ({ ...u, toast: message }))
   const clearToast = () => setUi((u) => ({ ...u, toast: null }))
 
+  function leaveRoom() {
+    setRoom(null)
+    setLobby(null)
+    setSelfPlayerId(null)
+    setGame({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
+    resetSocket()
+  }
+
   function logout() {
     localStorage.removeItem('charade_auth')
     setAuth({ token: null, guestToken: null, user: null })
@@ -166,6 +174,9 @@ export function AppProvider({ children }) {
 
   function bindLobbyEvents(roomCode) {
     const socket = connectSocket()
+    socket.off('room:lobby_update')
+    socket.off('game:turn_start')
+    socket.off('error')
     socket.on('room:lobby_update', (payload) => {
       setLobby(payload)
       setRoom(payload.room)
@@ -191,6 +202,17 @@ export function AppProvider({ children }) {
 
   function startGameSocket() {
     const socket = connectSocket()
+    socket.off('game:turn_start')
+    socket.off('game:new_word')
+    socket.off('chat:message')
+    socket.off('game:correct_guess')
+    socket.off('game:round_end')
+    socket.off('game:game_end')
+    socket.off('game:player_removed')
+    socket.off('error')
+    socket.off('game:reconnect_grace')
+    socket.off('disconnect')
+    socket.off('connect')
     socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload })))
     socket.on('game:new_word', (payload) => setGame((g) => ({ ...g, word: payload.word })))
     socket.on('chat:message', (payload) => {
@@ -265,7 +287,8 @@ export function AppProvider({ children }) {
     emitRoomJoin,
     emitGameStart,
     emitChat,
-    clearToast
+    clearToast,
+    leaveRoom
   }), [auth, room, lobby, game, ui])
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>

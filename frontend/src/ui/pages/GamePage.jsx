@@ -9,6 +9,13 @@ export default function GamePage() {
   const navigatedRef = useRef(false)
 
   useEffect(() => {
+    if (!room?.code) {
+      navigate('/home', { replace: true })
+      return
+    }
+  }, [room])
+
+  useEffect(() => {
     if (game?.gameEnd && !navigatedRef.current) {
       navigatedRef.current = true
       navigate('/game-end')

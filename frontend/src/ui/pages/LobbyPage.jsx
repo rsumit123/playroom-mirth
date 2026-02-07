@@ -5,7 +5,14 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function LobbyPage() {
   const navigate = useNavigate()
-  const { lobby, game, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui } = useApp()
+  const { lobby, game, leaveRoom, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui } = useApp()
+
+  useEffect(() => {
+    if (!lobby?.room) {
+      navigate('/home', { replace: true })
+      return
+    }
+  }, [lobby])
 
   useEffect(() => {
     if (game?.turn) {
@@ -25,7 +32,7 @@ export default function LobbyPage() {
     <Lobby
       lobby={lobby}
       onStart={handleStart}
-      onLeave={() => navigate('/home')}
+      onLeave={() => { leaveRoom(); navigate('/home') }}
       onSaveSettings={(payload) => {
         if (!lobby?.room?.code) return
         saveRoomSettings(lobby.room.code, payload)

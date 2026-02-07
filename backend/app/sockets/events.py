@@ -109,6 +109,7 @@ async def _advance_turn(room_code: str) -> None:
                 "describer_id": state.player_order[state.describer_index],
                 "turn_seconds": state.turn_seconds,
                 "turn_start_ts": int(state.turn_start_ts),
+                "round_index": state.round_index,
             },
             room=room_code,
         )
@@ -407,6 +408,7 @@ async def game_start(sid, data):
             "describer_id": state.player_order[state.describer_index],
             "turn_seconds": state.turn_seconds,
             "turn_start_ts": int(state.turn_start_ts),
+            "round_index": state.round_index,
         },
         room=room_code_val,
     )

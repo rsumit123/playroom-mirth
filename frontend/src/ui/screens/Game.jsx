@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import TimerSweep from '../components/TimerSweep.jsx'
 import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import Scoreboard from '../components/Scoreboard.jsx'
@@ -42,6 +42,11 @@ export default function Game({ game, onSend, onRejoin }) {
   }, [game?.reconnectGrace])
 
   const chatItems = useMemo(() => game?.messages || [], [game?.messages])
+  const chatEndRef = useRef(null)
+
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [chatItems])
 
   return (
     <div className="min-h-screen page py-10">
@@ -71,7 +76,7 @@ export default function Game({ game, onSend, onRejoin }) {
           <div className="space-y-6">
             <div className="flex items-center justify-between">
               <div className="space-y-1">
-                <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Round {game?.roundIndex || 1}</div>
+                <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Round {turn?.round_index || 1}</div>
                 <div className="font-display text-2xl">Describer: {describerId}</div>
               </div>
               <div className="flex items-center gap-2">
@@ -104,6 +109,7 @@ export default function Game({ game, onSend, onRejoin }) {
                     <strong>Player {m.player_id}:</strong> {m.message}
                   </div>
                 ))}
+                <div ref={chatEndRef} />
               </div>
               <div className="pt-4 flex flex-col gap-3 sm:flex-row">
                 <input
