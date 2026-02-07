@@ -1,0 +1,86 @@
+import asyncio
+import json
+import time
+from dataclasses import dataclass, field
+from typing import Dict, List, Optional
+
+
+@dataclass
+class RoomGameState:
+    room_id: int
+    room_code: str
+    rounds_total: int
+    turn_seconds: int
+    difficulty: int
+    status: str = "active"
+    round_index: int = 1
+    describer_index: int = 0
+    turn_start_ts: float = 0.0
+    player_order: List[int] = field(default_factory=list)  # room_player ids in order
+    scores: Dict[int, int] = field(default_factory=dict)
+    current_word_id: Optional[int] = None
+    current_word_text: Optional[str] = None
+    word_history_ids: List[int] = field(default_factory=list)
+    task: Optional[asyncio.Task] = None
+    lock: asyncio.Lock = field(default_factory=asyncio.Lock)
+
+
+ROOM_STATES: Dict[str, RoomGameState] = {}
+SID_TO_PLAYER: Dict[str, int] = {}
+PLAYER_TO_SID: Dict[int, str] = {}
+PLAYER_TO_ROOM: Dict[int, str] = {}
+PLAYER_GRACE_TASKS: Dict[int, asyncio.Task] = {}
+
+
+def start_turn(state: RoomGameState) -> None:
+    state.turn_start_ts = time.time()
+
+
+def serialize_state(state: RoomGameState) -> str:
+    payload = {
+        "room_id": state.room_id,
+        "room_code": state.room_code,
+        "rounds_total": state.rounds_total,
+        "turn_seconds": state.turn_seconds,
+        "difficulty": state.difficulty,
+        "status": state.status,
+        "round_index": state.round_index,
+        "describer_index": state.describer_index,
+        "turn_start_ts": state.turn_start_ts,
+        "player_order": state.player_order,
+        "scores": state.scores,
+        "current_word_id": state.current_word_id,
+        "current_word_text": state.current_word_text,
+        "word_history_ids": state.word_history_ids,
+    }
+    return json.dumps(payload)
+
+
+def deserialize_state(raw: str) -> RoomGameState:
+    data = json.loads(raw)
+    return RoomGameState(
+        room_id=data["room_id"],
+        room_code=data["room_code"],
+        rounds_total=data["rounds_total"],
+        turn_seconds=data["turn_seconds"],
+        difficulty=data["difficulty"],
+        status=data.get("status", "active"),
+        round_index=data.get("round_index", 1),
+        describer_index=data.get("describer_index", 0),
+        turn_start_ts=data.get("turn_start_ts", 0.0),
+        player_order=data.get("player_order", []),
+        scores=data.get("scores", {}),
+        current_word_id=data.get("current_word_id"),
+        current_word_text=data.get("current_word_text"),
+        word_history_ids=data.get("word_history_ids", []),
+    )
+
+
+async def cancel_all_timers() -> None:
+    tasks = []
+    for state in ROOM_STATES.values():
+        if state.task and not state.task.done():
+            state.task.cancel()
+            tasks.append(state.task)
+    if tasks:
+        await asyncio.gather(*tasks, return_exceptions=True)

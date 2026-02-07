@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: "Manrope", system-ui, -apple-system, sans-serif;
+}
+
+.bg-texture {
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(44, 110, 106, 0.08), transparent 35%),
+    radial-gradient(circle at 90% 0%, rgba(44, 110, 106, 0.05), transparent 40%),
+    linear-gradient(180deg, #f6f4f1 0%, #ece8e2 100%);
+}
+
+.noise::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card {
+  @apply bg-white/80 backdrop-blur border border-black/5 rounded-xl shadow-soft;
+}
+
+.btn-primary {
+  @apply rounded-xl bg-accent text-white px-5 py-3 font-semibold shadow-soft transition hover:shadow-hover hover:bg-accentLight;
+}
+
+.btn-ghost {
+  @apply rounded-xl border border-black/10 px-5 py-3 font-semibold text-slate/80 hover:border-accent hover:text-accent;
+}
+
+.section-title {
+  @apply font-display text-3xl md:text-4xl;
+}
+
+.subtle {
+  @apply text-slate/70;
+}
+
+.hero-card {
+  @apply card p-6 relative overflow-hidden;
+}
+
+.hero-card::after {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(circle, rgba(44, 110, 106, 0.08), transparent 60%);
+  transform: rotate(12deg);
+  pointer-events: none;
+}
+
+.pulse-ring {
+  position: relative;
+}
+
+.pulse-ring::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 999px;
+  border: 1px solid rgba(44, 110, 106, 0.25);
+  animation: pulse 2.5s ease-out infinite;
+}
+
+.glow-chip {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-chip::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(44, 110, 106, 0.2), transparent);
+  animation: sweep 2.8s ease-in-out infinite;
+  opacity: 0.6;
+}

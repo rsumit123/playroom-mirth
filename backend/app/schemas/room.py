@@ -1,0 +1,58 @@
+from typing import Optional, List
+
+from pydantic import BaseModel
+
+
+class RoomCreateRequest(BaseModel):
+    rounds_total: int
+    difficulty: int
+    turn_seconds: int
+    max_players: int = 20
+
+
+class RoomCreateGuestRequest(RoomCreateRequest):
+    guest_token: str
+
+
+class RoomUpdateRequest(BaseModel):
+    rounds_total: int
+    difficulty: int
+    turn_seconds: int
+
+
+class RoomJoinRequest(BaseModel):
+    room_code: str
+    guest_token: Optional[str] = None
+
+
+class RoomOut(BaseModel):
+    id: int
+    code: str
+    status: str
+    max_players: int
+    min_players: int
+    rounds_total: int
+    difficulty: int
+    turn_seconds: int
+
+    class Config:
+        from_attributes = True
+
+
+class LobbyPlayer(BaseModel):
+    id: int
+    user_id: Optional[int]
+    guest_id: Optional[int]
+    join_order: int
+    score: int
+    connected: bool
+    in_game: bool
+
+    class Config:
+        from_attributes = True
+
+
+class LobbyState(BaseModel):
+    room: RoomOut
+    players: List[LobbyPlayer]
+    self_player_id: int | None = None
