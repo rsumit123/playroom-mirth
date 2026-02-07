@@ -34,7 +34,7 @@ function AppShell() {
   const { auth, logout, ui, clearToast } = useApp()
 
   const path = location.pathname
-  const showTopBar = ['/home', '/lobby', '/game', '/round-end', '/game-end'].includes(path)
+  const showTopBar = ['/home', '/lobby'].includes(path)
 
   return (
     <>
@@ -49,7 +49,6 @@ function AppShell() {
             logout()
             navigate('/')
           }}
-          onProfile={() => navigate('/home')}
           onHome={() => navigate('/home')}
           onHowTo={() => navigate('/how-to')}
         />

@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import Spinner from '../components/Spinner.jsx'
+import PlayerAvatar from '../components/PlayerAvatar.jsx'
+import DifficultySelector from '../components/DifficultySelector.jsx'
+import RangeSlider from '../components/RangeSlider.jsx'
 
 export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPlayerId, loadingSave }) {
   const code = lobby?.room?.code || '------'
@@ -14,175 +17,139 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
     difficulty: lobby?.room?.difficulty ?? 2,
     timer: lobby?.room?.turn_seconds ?? 60
   })
+  const [copied, setCopied] = useState(false)
+
+  function handleCopy() {
+    navigator.clipboard?.writeText?.(code)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
+
+  function handleShare() {
+    const payload = { title: 'Charade Chat', text: `Join my room: ${code}`, url: window.location.href }
+    if (navigator.share) {
+      navigator.share(payload)
+    } else {
+      handleCopy()
+    }
+  }
 
   return (
-    <div className="min-h-screen page py-10 section-stack">
-        <div className="page-inner flex items-center justify-between">
-          <div>
-            <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Room Code</div>
-            <div className="font-display text-3xl">{code}</div>
-          </div>
-          <div className="flex items-center gap-2">
-            <button
-              className="btn-ghost"
-              onClick={() => navigator.clipboard?.writeText?.(code)}
-            >
-              Copy
+    <div className="game-shell py-6">
+      <div className="page-medium space-y-6">
+
+        {/* Room code hero */}
+        <div className="card p-6 text-center space-y-3">
+          <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Room Code</div>
+          <div className="font-display text-4xl sm:text-5xl tracking-[0.2em] text-accent">{code}</div>
+          <div className="flex items-center justify-center gap-3">
+            <button className="btn-ghost-sm touch-target" onClick={handleCopy}>
+              {copied ? 'Copied!' : 'Copy'}
             </button>
-            <button
-              className="btn-ghost"
-              onClick={() => {
-                const payload = { title: 'Charade Chat', text: `Join my room: ${code}`, url: window.location.href }
-                if (navigator.share) {
-                  navigator.share(payload)
-                } else {
-                  navigator.clipboard?.writeText?.(code)
-                }
-              }}
-            >
+            <button className="btn-ghost-sm touch-target" onClick={handleShare}>
               Share
             </button>
-            <button className="btn-ghost" onClick={onLeave}>Leave</button>
+            <button className="btn-ghost-sm touch-target text-danger/70 hover:text-danger hover:border-danger/30" onClick={onLeave}>
+              Leave
+            </button>
           </div>
         </div>
-      <div className="page-inner">
-        <div className="grid gap-6 lg:grid-cols-[2.2fr_1fr] items-start">
-          <div className="space-y-6">
-            <div className="card px-4 py-3 flex items-center justify-between animate-pop">
-              <div className="text-sm text-slate/70">Lobby is live</div>
-              <div className="text-xs uppercase tracking-[0.3em] text-slate/60">{players.length} players</div>
-            </div>
-            {lobby?.room?.status === 'active' && (
-              <div className="card px-4 py-3 flex items-center justify-between">
-                <div className="text-sm text-slate/70">Game in progress</div>
-                <div className="text-xs text-slate/50">You’ll join the next round</div>
-              </div>
-            )}
 
-            <div className="card p-6 space-y-6">
-              <div className="flex items-center justify-between">
-                <h2 className="font-display text-2xl">Players</h2>
-                <div className="text-sm text-slate/60">Join order locked</div>
-              </div>
-              <div className="text-xs text-slate/60">Players who join after the game starts will wait for the next game.</div>
-              <div className="space-y-3">
-                {players.length === 0 && (
-                  <div className="text-sm text-slate/60">Waiting for players...</div>
-                )}
-                {players.map((p, idx) => (
-                  <div key={p.id} className="flex items-center justify-between rounded-xl border border-black/5 px-4 py-3">
-                    <div>
-                      <div className="font-semibold">{idx + 1}. {p.display_name || `Player ${p.id}`} {p.id === selfPlayerId ? '(You)' : ''} {p.id === lobby?.host_player_id ? '(Host)' : ''}</div>
-                      <div className="text-xs text-slate/60">
-                        {p.user_id ? 'Registered' : 'Guest'} · {p.in_game ? 'Active' : 'Waiting for next game'}
-                      </div>
+        {/* Game in progress alert */}
+        {lobby?.room?.status === 'active' && (
+          <div className="card px-4 py-3 flex items-center justify-between animate-pop">
+            <span className="text-sm text-slate/70">Game in progress</span>
+            <span className="text-xs text-slate/50">You'll join the next round</span>
+          </div>
+        )}
+
+        {/* Players */}
+        <div className="card p-5 space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="font-semibold">Players</h2>
+            <span className="badge bg-accent/10 text-accent">{players.length} / {maxPlayers}</span>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {players.map((p) => {
+              const name = p.display_name || `Player ${p.id}`
+              return (
+                <div key={p.id} className="flex items-center gap-2.5 rounded-xl border border-black/5 px-3 py-2.5">
+                  <PlayerAvatar name={name} size="md" />
+                  <div className="min-w-0 flex-1">
+                    <div className="font-medium text-sm truncate">
+                      {name}
+                      {p.id === selfPlayerId && <span className="text-accent ml-1 text-xs">(You)</span>}
                     </div>
-                    <div className={`h-2 w-2 rounded-full ${p.in_game ? 'bg-accent animate-glow' : 'bg-slate/30'}`} />
+                    {p.id === lobby?.host_player_id && <span className="badge-host text-[10px]">Host</span>}
                   </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-6">
-            <div className="card p-5 space-y-3">
-              <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Room Snapshot</div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="text-slate/70">Status</span>
-                <span className="font-semibold capitalize">{roomMeta?.status ?? 'lobby'}</span>
-              </div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="text-slate/70">Players</span>
-                <span className="font-semibold">{players.length}/{maxPlayers}</span>
-              </div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="text-slate/70">Rounds</span>
-                <span className="font-semibold">{roomMeta?.rounds_total ?? settings.rounds}</span>
-              </div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="text-slate/70">Difficulty</span>
-                <span className="font-semibold">{roomMeta?.difficulty ?? settings.difficulty}</span>
-              </div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="text-slate/70">Timer</span>
-                <span className="font-semibold">{roomMeta?.turn_seconds ?? settings.timer}s</span>
-              </div>
-            </div>
-
-            {isHost ? (
-              <div className="card p-6 space-y-4">
-                <h2 className="font-display text-2xl">Settings</h2>
-                <div className="space-y-3">
-                  <label className="text-xs text-slate/60">Rounds</label>
-                  <input
-                    className="rounded-xl border border-black/10 px-4 py-3 text-sm"
-                    value={settings.rounds}
-                    onChange={(e) => setSettings((s) => ({ ...s, rounds: e.target.value }))}
-                    placeholder="Enter rounds"
-                  />
-                  <label className="text-xs text-slate/60">Difficulty (1-3)</label>
-                  <input
-                    className="rounded-xl border border-black/10 px-4 py-3 text-sm"
-                    value={settings.difficulty}
-                    onChange={(e) => setSettings((s) => ({ ...s, difficulty: e.target.value }))}
-                    placeholder="Enter difficulty"
-                  />
-                  <label className="text-xs text-slate/60">Timer (30-120s)</label>
-                  <input
-                    className="rounded-xl border border-black/10 px-4 py-3 text-sm"
-                    value={settings.timer}
-                    onChange={(e) => setSettings((s) => ({ ...s, timer: e.target.value }))}
-                    placeholder="Enter timer"
-                  />
+                  <div className={`h-2 w-2 rounded-full shrink-0 ${p.in_game ? 'bg-correct animate-pulse' : 'bg-slate/20'}`} />
                 </div>
-                <button
-                  className="btn-ghost w-full flex items-center justify-center gap-2"
-                  onClick={() =>
-                    onSaveSettings?.({
-                      rounds_total: Number(settings.rounds),
-                      difficulty: Number(settings.difficulty),
-                      turn_seconds: Number(settings.timer)
-                    })
-                  }
-                  disabled={loadingSave}
-                >
-                  {loadingSave ? <Spinner size={18} /> : null}
-                  Save Settings
-                </button>
-                <button
-                  className={`w-full ${canStart ? 'btn-primary' : 'btn-ghost'}`}
-                  onClick={onStart}
-                  disabled={!canStart}
-                >
-                  Start Game
-                </button>
-                <div className="text-xs text-slate/60">
-                  {canStart ? 'Ready to launch' : `Waiting for ${minPlayers}+ players`}
-                </div>
+              )
+            })}
+            {/* Empty slots */}
+            {players.length < minPlayers && Array.from({ length: minPlayers - players.length }).map((_, i) => (
+              <div key={`empty-${i}`} className="flex items-center gap-2.5 rounded-xl border-2 border-dashed border-black/10 px-3 py-2.5">
+                <div className="h-9 w-9 rounded-full bg-mist flex items-center justify-center text-slate/30 shrink-0">?</div>
+                <div className="text-sm text-slate/40">Waiting...</div>
               </div>
-            ) : (
-              <div className="card p-6 space-y-4">
-                <h2 className="font-display text-2xl">Game Status</h2>
-                <div className="text-sm text-slate/70">
-                  {canStart
-                    ? 'Waiting for host to start the game...'
-                    : `Waiting for ${minPlayers}+ players to join...`}
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="h-2 w-2 rounded-full bg-accent animate-glow" />
-                  <span className="text-xs text-slate/60">Ready</span>
-                </div>
-              </div>
-            )}
-
-            <div className="card p-5 space-y-2">
-              <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Host Notes</div>
-              <p className="text-sm text-slate/70">
-                Late joiners will sit out until the next game. Share the code early if you want everyone to start together.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
+
+        {/* Settings (host only) */}
+        {isHost && (
+          <div className="card p-5 space-y-4">
+            <h2 className="font-semibold">Game Settings</h2>
+            <RangeSlider label="Rounds" value={Number(settings.rounds)} min={1} max={10}
+              onChange={(v) => setSettings((s) => ({ ...s, rounds: v }))} />
+            <RangeSlider label="Timer" value={Number(settings.timer)} min={30} max={120} step={10} unit="s"
+              onChange={(v) => setSettings((s) => ({ ...s, timer: v }))} />
+            <div className="space-y-2">
+              <span className="text-xs text-slate/60 font-medium">Difficulty</span>
+              <DifficultySelector value={Number(settings.difficulty)}
+                onChange={(v) => setSettings((s) => ({ ...s, difficulty: v }))} />
+            </div>
+            <button
+              className="btn-ghost w-full touch-target flex items-center justify-center gap-2"
+              onClick={() =>
+                onSaveSettings?.({
+                  rounds_total: Number(settings.rounds),
+                  difficulty: Number(settings.difficulty),
+                  turn_seconds: Number(settings.timer)
+                })
+              }
+              disabled={loadingSave}
+            >
+              {loadingSave ? <Spinner size={18} /> : null}
+              Save Settings
+            </button>
+          </div>
+        )}
+
+        {/* Non-host waiting state */}
+        {!isHost && (
+          <div className="card p-5">
+            <div className="flex items-center justify-center gap-2">
+              <div className="h-2 w-2 rounded-full bg-accent animate-pulse" />
+              <span className="text-sm text-slate/60">
+                {canStart ? 'Waiting for host to start...' : `Need ${minPlayers}+ players`}
+              </span>
+            </div>
+          </div>
+        )}
+
+        {/* Start button — sticky */}
+        {isHost && (
+          <div className="sticky bottom-4 z-10">
+            <button
+              className={`w-full py-4 text-lg touch-target rounded-xl font-semibold transition ${canStart ? 'btn-primary animate-glow' : 'btn-ghost opacity-60 cursor-not-allowed'}`}
+              onClick={onStart}
+              disabled={!canStart}
+            >
+              {canStart ? 'Start Game' : `Need ${minPlayers - players.length} more player(s)`}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   )

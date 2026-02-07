@@ -27,22 +27,25 @@ body {
   z-index: 0;
 }
 
+/* ── Cards ── */
 .card {
   @apply bg-white/80 backdrop-blur border border-black/5 rounded-xl shadow-soft;
 }
 
+/* ── Buttons ── */
 .btn-primary {
-  @apply rounded-xl bg-accent text-white px-5 py-3 font-semibold shadow-soft transition hover:shadow-hover hover:bg-accentLight;
+  @apply rounded-xl bg-accent text-white px-5 py-3 font-semibold shadow-soft transition hover:shadow-hover hover:bg-accentLight active:scale-[0.98];
 }
 
 .btn-ghost {
-  @apply rounded-xl border border-black/10 px-5 py-3 font-semibold text-slate/80 hover:border-accent hover:text-accent;
+  @apply rounded-xl border border-black/10 px-5 py-3 font-semibold text-slate/80 transition hover:border-accent hover:text-accent active:scale-[0.98];
 }
 
 .btn-ghost-sm {
-  @apply rounded-xl border border-black/10 px-3 py-2 text-xs font-semibold text-slate/80 hover:border-accent hover:text-accent;
+  @apply rounded-xl border border-black/10 px-3 py-2 text-xs font-semibold text-slate/80 transition hover:border-accent hover:text-accent active:scale-[0.98];
 }
 
+/* ── Typography ── */
 .section-title {
   @apply font-display text-3xl md:text-4xl;
 }
@@ -51,12 +54,26 @@ body {
   @apply text-slate/70;
 }
 
+/* ── Layout ── */
 .page {
   @apply w-full;
 }
 
 .page-inner {
   @apply max-w-7xl mx-auto px-6 sm:px-8;
+}
+
+.page-narrow {
+  @apply max-w-lg mx-auto px-4 sm:px-6;
+}
+
+.page-medium {
+  @apply max-w-2xl mx-auto px-4 sm:px-6;
+}
+
+.game-shell {
+  min-height: 100dvh;
+  @apply flex flex-col;
 }
 
 .section-stack {
@@ -67,6 +84,64 @@ body {
   @apply grid gap-6 lg:grid-cols-2;
 }
 
+/* ── Touch targets (44px minimum) ── */
+.touch-target {
+  @apply min-h-[44px] min-w-[44px];
+}
+
+/* ── Badges ── */
+.badge {
+  @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold;
+}
+
+.badge-describer {
+  @apply badge bg-purple/10 text-purple;
+}
+
+.badge-guesser {
+  @apply badge bg-accent/10 text-accent;
+}
+
+.badge-host {
+  @apply badge bg-gold/10 text-gold;
+}
+
+/* ── Segmented Control ── */
+.segmented {
+  @apply flex rounded-xl bg-mist p-1 gap-1;
+}
+
+.segmented-option {
+  @apply flex-1 text-center py-2.5 px-3 rounded-lg text-sm font-medium transition-all cursor-pointer text-slate/60;
+}
+
+.segmented-option-active {
+  @apply flex-1 text-center py-2.5 px-3 rounded-lg text-sm font-medium cursor-pointer bg-white text-ink shadow-sm;
+}
+
+/* ── Chat Bubbles ── */
+.chat-bubble {
+  @apply rounded-2xl px-3 py-2 text-sm max-w-[85%] animate-slide-up;
+}
+
+.chat-bubble-other {
+  @apply chat-bubble bg-white border border-black/5;
+}
+
+.chat-bubble-self {
+  @apply chat-bubble bg-accent/10 text-ink ml-auto;
+}
+
+.chat-bubble-correct {
+  @apply chat-bubble bg-correct/10 text-correct font-semibold border border-correct/20;
+}
+
+/* ── iOS safe area ── */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+/* ── Legacy (kept for backward compat) ── */
 .hero-card {
   @apply card p-6 relative overflow-hidden;
 }
@@ -105,4 +180,13 @@ body {
   background: linear-gradient(120deg, transparent, rgba(44, 110, 106, 0.2), transparent);
   animation: sweep 2.8s ease-in-out infinite;
   opacity: 0.6;
+}
+
+/* ── Range slider styling ── */
+input[type="range"] {
+  @apply w-full h-2 rounded-full appearance-none bg-mist cursor-pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply appearance-none w-5 h-5 rounded-full bg-accent shadow-sm border-2 border-white cursor-pointer;
 }

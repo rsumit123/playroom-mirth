@@ -8,7 +8,14 @@ export default {
         fog: "#F6F4F1",
         mist: "#ECE8E2",
         accent: "#2C6E6A",
-        accentLight: "#3F8E88"
+        accentLight: "#3F8E88",
+        accentDark: "#1F524F",
+        gold: "#D4A843",
+        silver: "#A0A5A5",
+        bronze: "#B87333",
+        correct: "#16A34A",
+        danger: "#EF4444",
+        purple: "#7C3AED"
       },
       fontFamily: {
         display: ["Playfair Display", "serif"],
@@ -43,6 +50,24 @@ export default {
         sweep: {
           "0%": { transform: "translateX(-120%)" },
           "100%": { transform: "translateX(120%)" }
+        },
+        "countdown-shake": {
+          "0%, 100%": { transform: "translateX(0)" },
+          "25%": { transform: "translateX(-2px)" },
+          "75%": { transform: "translateX(2px)" }
+        },
+        "slide-up": {
+          "0%": { transform: "translateY(12px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" }
+        },
+        "scale-in": {
+          "0%": { transform: "scale(0.8)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" }
+        },
+        "trophy-bounce": {
+          "0%": { transform: "scale(0) rotate(-15deg)" },
+          "50%": { transform: "scale(1.2) rotate(5deg)" },
+          "100%": { transform: "scale(1) rotate(0)" }
         }
       },
       animation: {
@@ -50,7 +75,11 @@ export default {
         glow: "glow 2.8s ease-in-out infinite",
         pop: "pop 300ms ease-out",
         pulse: "pulse 2.6s ease-out infinite",
-        sweep: "sweep 2.2s ease-in-out infinite"
+        sweep: "sweep 2.2s ease-in-out infinite",
+        "countdown-shake": "countdown-shake 0.3s ease-in-out",
+        "slide-up": "slide-up 0.3s ease-out",
+        "scale-in": "scale-in 0.3s ease-out",
+        "trophy-bounce": "trophy-bounce 0.5s ease-out"
       }
     }
   },

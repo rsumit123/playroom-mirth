@@ -3,56 +3,46 @@ import Spinner from '../components/Spinner.jsx'
 
 export default function Welcome({ onGuest, onSignIn, onHowTo, loadingGuest }) {
   return (
-    <div className="min-h-screen page py-10 flex flex-col justify-between">
-      <div className="page-inner space-y-10">
-        <Logo />
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-          <div className="space-y-6">
-            <h1 className="section-title">Bring words to life together.</h1>
-            <p className="subtle text-lg">
-              A refined, fast-paced charades room where every hint matters. Smooth lobbies,
-              elegant gameplay, and a leaderboard that keeps the energy high.
-            </p>
-            <div className="grid gap-3 sm:grid-cols-3">
-              <div className="card p-4">
-                <div className="text-xs uppercase tracking-[0.3em] text-slate/60">1</div>
-                <div className="font-semibold">Describe</div>
-                <div className="text-xs text-slate/60">Give clean, quick hints.</div>
-              </div>
-              <div className="card p-4">
-                <div className="text-xs uppercase tracking-[0.3em] text-slate/60">2</div>
-                <div className="font-semibold">Guess</div>
-                <div className="text-xs text-slate/60">Race to the right word.</div>
-              </div>
-              <div className="card p-4">
-                <div className="text-xs uppercase tracking-[0.3em] text-slate/60">3</div>
-                <div className="font-semibold">Rotate</div>
-                <div className="text-xs text-slate/60">Everyone gets a turn.</div>
-              </div>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2 max-w-md">
-              <button className="btn-primary flex items-center justify-center gap-2" onClick={onGuest} disabled={loadingGuest}>
-                {loadingGuest ? <Spinner size={18} /> : null}
-                Play as Guest
-              </button>
-              <button className="btn-ghost" onClick={onSignIn}>Sign In</button>
-            </div>
-          </div>
-          <div className="space-y-4">
-            <div className="hero-card animate-floaty glow-chip">
-              <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Live Word</div>
-              <div className="font-display text-3xl mt-2">Umbrella</div>
-              <div className="text-sm text-slate/70 mt-2">Describe without saying it.</div>
-            </div>
-            <div className="card p-5 space-y-2">
-              <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Experience</div>
-              <p className="text-sm text-slate/70">Mobile-first rooms, desktop-ready layouts, and a clean scoreboard view built for longer sessions.</p>
-            </div>
-          </div>
+    <div className="game-shell">
+      <div className="flex-1 flex flex-col items-center justify-center page-narrow py-8 text-center">
+        <div className="mb-8">
+          <Logo />
+        </div>
+
+        <h1 className="font-display text-4xl sm:text-5xl mb-3">
+          Describe. Guess. <span className="text-accent">Win.</span>
+        </h1>
+        <p className="text-slate/60 text-base mb-8 max-w-sm">
+          The multiplayer word game where every hint counts. Play with friends in seconds.
+        </p>
+
+        <div className="flex items-center gap-3 mb-10 text-sm flex-wrap justify-center">
+          <span className="badge bg-accent/10 text-accent">1. Describe</span>
+          <span className="text-slate/30">&rarr;</span>
+          <span className="badge bg-accent/10 text-accent">2. Guess</span>
+          <span className="text-slate/30">&rarr;</span>
+          <span className="badge bg-accent/10 text-accent">3. Score</span>
+        </div>
+
+        <div className="w-full space-y-3 max-w-xs">
+          <button
+            className="btn-primary w-full text-lg py-4 touch-target flex items-center justify-center gap-2"
+            onClick={onGuest}
+            disabled={loadingGuest}
+          >
+            {loadingGuest ? <Spinner size={18} /> : null}
+            Play Now
+          </button>
+          <button className="btn-ghost w-full touch-target" onClick={onSignIn}>
+            Sign In
+          </button>
         </div>
       </div>
-      <div className="page-inner">
-        <button className="text-sm text-slate/70 underline" onClick={onHowTo}>How to play</button>
+
+      <div className="page-narrow pb-6 text-center">
+        <button className="text-sm text-accent font-medium underline underline-offset-4" onClick={onHowTo}>
+          How to Play
+        </button>
       </div>
     </div>
   )
