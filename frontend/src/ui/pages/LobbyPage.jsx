@@ -1,10 +1,18 @@
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Lobby from '../screens/Lobby.jsx'
 import { useApp } from '../../state/AppContext.jsx'
 
 export default function LobbyPage() {
   const navigate = useNavigate()
-  const { lobby, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui } = useApp()
+  const { lobby, game, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui } = useApp()
+
+  useEffect(() => {
+    if (game?.turn) {
+      startGameSocket()
+      navigate('/game')
+    }
+  }, [game?.turn])
 
   async function handleStart() {
     if (!lobby?.room?.code) return

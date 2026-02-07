@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState } from 'react'
+import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 import * as api from '../lib/api.js'
 import { formatError } from '../lib/errors.js'
 import { connectSocket, getSocket, resetSocket } from '../lib/socket.js'
@@ -6,12 +6,27 @@ import { connectSocket, getSocket, resetSocket } from '../lib/socket.js'
 const AppContext = createContext(null)
 
 export function AppProvider({ children }) {
-  const [auth, setAuth] = useState({ token: null, guestToken: null, user: null })
+  const [auth, setAuth] = useState(() => {
+    try {
+      const saved = localStorage.getItem('charade_auth')
+      return saved ? JSON.parse(saved) : { token: null, guestToken: null, user: null }
+    } catch {
+      return { token: null, guestToken: null, user: null }
+    }
+  })
   const [room, setRoom] = useState(null)
   const [lobby, setLobby] = useState(null)
   const [selfPlayerId, setSelfPlayerId] = useState(null)
   const [game, setGame] = useState({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
   const [ui, setUi] = useState({ loading: 0, toast: null, loadingKeys: {} })
+
+  useEffect(() => {
+    if (auth.token || auth.guestToken) {
+      localStorage.setItem('charade_auth', JSON.stringify(auth))
+    } else {
+      localStorage.removeItem('charade_auth')
+    }
+  }, [auth])
 
   const startLoading = (key) =>
     setUi((u) => ({
@@ -29,6 +44,7 @@ export function AppProvider({ children }) {
   const clearToast = () => setUi((u) => ({ ...u, toast: null }))
 
   function logout() {
+    localStorage.removeItem('charade_auth')
     setAuth({ token: null, guestToken: null, user: null })
     setRoom(null)
     setLobby(null)
@@ -88,6 +104,7 @@ export function AppProvider({ children }) {
         const res = await api.createRoom(auth.token, payload)
         setRoom(res.room)
         setLobby(res)
+        setSelfPlayerId(res.self_player_id || null)
         return res
       }
       const guestToken = await ensureGuest()
@@ -154,6 +171,7 @@ export function AppProvider({ children }) {
       setRoom(payload.room)
       if (payload.self_player_id) setSelfPlayerId(payload.self_player_id)
     })
+    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload })))
     socket.on('error', (payload) => {
       const message = formatError(payload?.message)
       setGame((g) => ({ ...g, error: { ...payload, message } }))
@@ -217,7 +235,7 @@ export function AppProvider({ children }) {
   }
 
   function emitGameStart(roomCode) {
-    const socket = getSocket()
+    const socket = connectSocket()
     const data = auth.token ? { room_code: roomCode, token: auth.token } : { room_code: roomCode, guest_token: auth.guestToken }
     return socket.emit('game:start', data)
   }

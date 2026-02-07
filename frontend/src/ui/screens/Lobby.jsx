@@ -8,6 +8,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
   const minPlayers = 2
   const maxPlayers = roomMeta?.max_players ?? 20
   const canStart = players.length >= minPlayers
+  const isHost = selfPlayerId && lobby?.host_player_id && selfPlayerId === lobby.host_player_id
   const [settings, setSettings] = useState({
     rounds: lobby?.room?.rounds_total ?? 3,
     difficulty: lobby?.room?.difficulty ?? 2,
@@ -71,7 +72,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
                 {players.map((p, idx) => (
                   <div key={p.id} className="flex items-center justify-between rounded-xl border border-black/5 px-4 py-3">
                     <div>
-                      <div className="font-semibold">{idx + 1}. Player {p.id} {p.id === selfPlayerId ? '(You)' : ''}</div>
+                      <div className="font-semibold">{idx + 1}. Player {p.id} {p.id === selfPlayerId ? '(You)' : ''} {p.id === lobby?.host_player_id ? '(Host)' : ''}</div>
                       <div className="text-xs text-slate/60">
                         {p.user_id ? 'Registered' : 'Guest'} · {p.in_game ? 'Active' : 'Waiting for next game'}
                       </div>
@@ -108,56 +109,71 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
               </div>
             </div>
 
-            <div className="card p-6 space-y-4">
-              <h2 className="font-display text-2xl">Settings</h2>
-              <div className="space-y-3">
-                <label className="text-xs text-slate/60">Rounds</label>
-                <input
-                  className="rounded-xl border border-black/10 px-4 py-3 text-sm"
-                  value={settings.rounds}
-                  onChange={(e) => setSettings((s) => ({ ...s, rounds: e.target.value }))}
-                  placeholder="Enter rounds"
-                />
-                <label className="text-xs text-slate/60">Difficulty (1-3)</label>
-                <input
-                  className="rounded-xl border border-black/10 px-4 py-3 text-sm"
-                  value={settings.difficulty}
-                  onChange={(e) => setSettings((s) => ({ ...s, difficulty: e.target.value }))}
-                  placeholder="Enter difficulty"
-                />
-                <label className="text-xs text-slate/60">Timer (30-120s)</label>
-                <input
-                  className="rounded-xl border border-black/10 px-4 py-3 text-sm"
-                  value={settings.timer}
-                  onChange={(e) => setSettings((s) => ({ ...s, timer: e.target.value }))}
-                  placeholder="Enter timer"
-                />
+            {isHost ? (
+              <div className="card p-6 space-y-4">
+                <h2 className="font-display text-2xl">Settings</h2>
+                <div className="space-y-3">
+                  <label className="text-xs text-slate/60">Rounds</label>
+                  <input
+                    className="rounded-xl border border-black/10 px-4 py-3 text-sm"
+                    value={settings.rounds}
+                    onChange={(e) => setSettings((s) => ({ ...s, rounds: e.target.value }))}
+                    placeholder="Enter rounds"
+                  />
+                  <label className="text-xs text-slate/60">Difficulty (1-3)</label>
+                  <input
+                    className="rounded-xl border border-black/10 px-4 py-3 text-sm"
+                    value={settings.difficulty}
+                    onChange={(e) => setSettings((s) => ({ ...s, difficulty: e.target.value }))}
+                    placeholder="Enter difficulty"
+                  />
+                  <label className="text-xs text-slate/60">Timer (30-120s)</label>
+                  <input
+                    className="rounded-xl border border-black/10 px-4 py-3 text-sm"
+                    value={settings.timer}
+                    onChange={(e) => setSettings((s) => ({ ...s, timer: e.target.value }))}
+                    placeholder="Enter timer"
+                  />
+                </div>
+                <button
+                  className="btn-ghost w-full flex items-center justify-center gap-2"
+                  onClick={() =>
+                    onSaveSettings?.({
+                      rounds_total: Number(settings.rounds),
+                      difficulty: Number(settings.difficulty),
+                      turn_seconds: Number(settings.timer)
+                    })
+                  }
+                  disabled={loadingSave}
+                >
+                  {loadingSave ? <Spinner size={18} /> : null}
+                  Save Settings
+                </button>
+                <button
+                  className={`w-full ${canStart ? 'btn-primary' : 'btn-ghost'}`}
+                  onClick={onStart}
+                  disabled={!canStart}
+                >
+                  Start Game
+                </button>
+                <div className="text-xs text-slate/60">
+                  {canStart ? 'Ready to launch' : `Waiting for ${minPlayers}+ players`}
+                </div>
               </div>
-              <button
-                className="btn-ghost w-full flex items-center justify-center gap-2"
-                onClick={() =>
-                  onSaveSettings?.({
-                    rounds_total: Number(settings.rounds),
-                    difficulty: Number(settings.difficulty),
-                    turn_seconds: Number(settings.timer)
-                  })
-                }
-                disabled={loadingSave}
-              >
-                {loadingSave ? <Spinner size={18} /> : null}
-                Save Settings
-              </button>
-              <button
-                className={`w-full ${canStart ? 'btn-primary' : 'btn-ghost'}`}
-                onClick={onStart}
-                disabled={!canStart}
-              >
-                Start Game
-              </button>
-              <div className="text-xs text-slate/60">
-                {canStart ? 'Ready to launch' : `Waiting for ${minPlayers}+ players`}
+            ) : (
+              <div className="card p-6 space-y-4">
+                <h2 className="font-display text-2xl">Game Status</h2>
+                <div className="text-sm text-slate/70">
+                  {canStart
+                    ? 'Waiting for host to start the game...'
+                    : `Waiting for ${minPlayers}+ players to join...`}
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 rounded-full bg-accent animate-glow" />
+                  <span className="text-xs text-slate/60">Ready</span>
+                </div>
               </div>
-            </div>
+            )}
 
             <div className="card p-5 space-y-2">
               <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Host Notes</div>

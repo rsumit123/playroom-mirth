@@ -34,10 +34,20 @@ def lobby_state(db: Session, room: Room, self_player_id: int | None = None) -> L
         .order_by(RoomPlayer.join_order.asc())
         .all()
     )
+    host_player_id = None
+    for p in players:
+        if room.host_user_id and p.user_id == room.host_user_id:
+            host_player_id = p.id
+            break
+        if room.host_guest_id and p.guest_id == room.host_guest_id:
+            host_player_id = p.id
+            break
+
     return LobbyState(
         room=RoomOut.model_validate(room),
         players=[LobbyPlayer.model_validate(p) for p in players],
         self_player_id=self_player_id,
+        host_player_id=host_player_id,
     )
 
 

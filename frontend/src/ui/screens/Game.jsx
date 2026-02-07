@@ -3,7 +3,7 @@ import TimerSweep from '../components/TimerSweep.jsx'
 import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import Scoreboard from '../components/Scoreboard.jsx'
 
-export default function Game({ game, onSend, onRoundEnd, onGameEnd, onRejoin }) {
+export default function Game({ game, onSend, onRejoin }) {
   const [message, setMessage] = useState('')
   const [confettiKey, setConfettiKey] = useState(0)
   const [remaining, setRemaining] = useState(null)
@@ -86,7 +86,7 @@ export default function Game({ game, onSend, onRoundEnd, onGameEnd, onRejoin }) 
                 <div className="font-semibold text-ink">{lastGuess.word}</div>
               </div>
             )}
-            <TimerSweep />
+            <TimerSweep remaining={remaining ?? (turn?.turn_seconds || 60)} total={turn?.turn_seconds || 60} />
 
             <div className="card p-6 space-y-4">
               <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Your Word</div>
@@ -111,6 +111,12 @@ export default function Game({ game, onSend, onRoundEnd, onGameEnd, onRejoin }) 
                   placeholder="Type your guess..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && message.trim()) {
+                      onSend(message)
+                      setMessage('')
+                    }
+                  }}
                 />
                 <button
                   className="btn-primary glow-chip sm:w-auto w-full"
@@ -144,13 +150,6 @@ export default function Game({ game, onSend, onRoundEnd, onGameEnd, onRejoin }) 
               <Scoreboard scores={game?.scores || {}} />
             </div>
 
-            <div className="card p-4 space-y-3 hidden md:block">
-              <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Developer</div>
-              <div className="flex flex-col gap-3">
-                <button className="btn-ghost" onClick={onRoundEnd}>Simulate Round End</button>
-                <button className="btn-ghost" onClick={onGameEnd}>Simulate Game End</button>
-              </div>
-            </div>
           </div>
         </div>
       </div>

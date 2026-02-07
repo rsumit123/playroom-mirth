@@ -56,3 +56,4 @@ class LobbyState(BaseModel):
     room: RoomOut
     players: List[LobbyPlayer]
     self_player_id: int | None = None
+    host_player_id: int | None = None
