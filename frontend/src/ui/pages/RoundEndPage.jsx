@@ -5,7 +5,7 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function RoundEndPage() {
   const navigate = useNavigate()
-  const { game, room, lobby, selfPlayerId, roomRestoreStatus } = useApp()
+  const { game, room, lobby, selfPlayerId, roomRestoreStatus, emitNextRound } = useApp()
   const turnRef = useRef(game?.turn)
 
   useEffect(() => {
@@ -34,12 +34,16 @@ export default function RoundEndPage() {
 
   const isHost = selfPlayerId && lobby?.host_player_id && String(selfPlayerId) === String(lobby.host_player_id)
 
+  function handleNextRound() {
+    if (room?.code) emitNextRound(room.code)
+  }
+
   return (
     <RoundEnd
       scores={game?.scores || {}}
       playerNames={playerNames}
       isHost={isHost}
-      onContinue={() => navigate('/game')}
+      onContinue={handleNextRound}
     />
   )
 }

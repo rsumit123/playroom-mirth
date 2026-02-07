@@ -340,6 +340,12 @@ export function AppProvider({ children }) {
     return socket.emit('game:start', data)
   }
 
+  function emitNextRound(roomCode) {
+    const socket = connectSocket()
+    const data = auth.token ? { room_code: roomCode, token: auth.token } : { room_code: roomCode, guest_token: auth.guestToken }
+    return socket.emit('game:next_round', data)
+  }
+
   function emitChat(roomCode, message) {
     const socket = getSocket()
     return socket.emit('chat:message', { room_code: roomCode, message })
@@ -365,6 +371,7 @@ export function AppProvider({ children }) {
     emitRoomCreate,
     emitRoomJoin,
     emitGameStart,
+    emitNextRound,
     emitChat,
     activeRooms,
     fetchActiveRooms,

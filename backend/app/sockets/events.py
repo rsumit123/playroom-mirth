@@ -75,16 +75,45 @@ async def _schedule_turn_timer(state: RoomGameState) -> None:
     state.task = asyncio.create_task(_timer())
 
 
+async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
+    """Select a word, emit turn_start + new_word, schedule timer."""
+    start_turn(state)
+    with SessionLocal() as db:
+        word = _select_word(db, state.difficulty, state.word_history_ids)
+        if word:
+            state.current_word_id = word.id
+            state.current_word_text = word.text
+            state.word_history_ids.append(word.id)
+        _save_state(db, state)
+
+    describer_id = state.player_order[state.describer_index]
+    await sio.emit(
+        "game:turn_start",
+        {
+            "describer_id": describer_id,
+            "turn_seconds": state.turn_seconds,
+            "turn_start_ts": int(state.turn_start_ts),
+            "round_index": state.round_index,
+        },
+        room=room_code,
+    )
+    describer_sid = PLAYER_TO_SID.get(describer_id)
+    if describer_sid and state.current_word_text:
+        await sio.emit("game:new_word", {"word": state.current_word_text}, to=describer_sid)
+    await _schedule_turn_timer(state)
+
+
 async def _advance_turn(room_code: str) -> None:
     state = ROOM_STATES.get(room_code)
     if not state:
         return
     async with state.lock:
         state.describer_index += 1
+        round_ended = False
         if state.describer_index >= len(state.player_order):
             state.describer_index = 0
             state.round_index += 1
-            await sio.emit("game:round_end", {"round_index": state.round_index - 1}, room=room_code)
+            round_ended = True
 
         if state.round_index > state.rounds_total:
             if state.task and not state.task.done():
@@ -95,35 +124,25 @@ async def _advance_turn(room_code: str) -> None:
                 room = db.query(Room).filter(Room.code == room_code).first()
                 if room:
                     room.status = "lobby"
-                    # allow all room players to participate in next game
                     db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: True})
                     db.commit()
             return
 
-        start_turn(state)
-        with SessionLocal() as db:
-            word = _select_word(db, state.difficulty, state.word_history_ids)
-            if word:
-                state.current_word_id = word.id
-                state.current_word_text = word.text
-                state.word_history_ids.append(word.id)
-            _save_state(db, state)
+        if round_ended:
+            # Pause at round boundary — wait for host to trigger next round
+            if state.task and not state.task.done():
+                state.task.cancel()
+            with SessionLocal() as db:
+                _save_state(db, state)
+            await sio.emit(
+                "game:round_end",
+                {"round_index": state.round_index - 1, "scores": state.scores},
+                room=room_code,
+            )
+            return
 
-        describer_id = state.player_order[state.describer_index]
-        await sio.emit(
-            "game:turn_start",
-            {
-                "describer_id": describer_id,
-                "turn_seconds": state.turn_seconds,
-                "turn_start_ts": int(state.turn_start_ts),
-                "round_index": state.round_index,
-            },
-            room=room_code,
-        )
-        describer_sid = PLAYER_TO_SID.get(describer_id)
-        if describer_sid and state.current_word_text:
-            await sio.emit("game:new_word", {"word": state.current_word_text}, to=describer_sid)
-        await _schedule_turn_timer(state)
+        # Same round, next player — start immediately
+        await _emit_next_turn(state, room_code)
 
 @sio.event
 async def connect(sid, environ, auth):
@@ -497,6 +516,44 @@ async def game_turn_end(sid, data):
         return {"ok": False}
 
     await _advance_turn(room_code)
+    return {"ok": True}
+
+
+@sio.on("game:next_round")
+async def game_next_round(sid, data):
+    """Host triggers the next round after the round-end screen."""
+    room_code = data.get("room_code")
+    if not room_code:
+        await emit_error(sid, "room_code required", code="BAD_REQUEST")
+        return {"ok": False}
+
+    state = ROOM_STATES.get(room_code)
+    if not state:
+        await emit_error(sid, "Game not active", code="BAD_REQUEST")
+        return {"ok": False}
+
+    # Verify host
+    with SessionLocal() as db:
+        room = db.query(Room).filter(Room.code == room_code).first()
+        if not room:
+            await emit_error(sid, "Room not found", code="NOT_FOUND")
+            return {"ok": False}
+        token = data.get("token")
+        guest_token = data.get("guest_token")
+        user = get_user_from_token(db, token)
+        guest = resolve_guest(db, guest_token)
+        if user and room.host_user_id != user.id:
+            await emit_error(sid, "Only host can continue", code="FORBIDDEN")
+            return {"ok": False}
+        if guest and room.host_guest_id != guest.id:
+            await emit_error(sid, "Only host can continue", code="FORBIDDEN")
+            return {"ok": False}
+        if not user and not guest:
+            await emit_error(sid, "Authentication required", code="UNAUTHORIZED")
+            return {"ok": False}
+
+    async with state.lock:
+        await _emit_next_turn(state, room_code)
     return {"ok": True}
 
 
