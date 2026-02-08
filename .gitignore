@@ -25,6 +25,7 @@ __pycache__/
 # Env files
 .env
 .env.*
+.oauth
 
 # OS
 .DS_Store

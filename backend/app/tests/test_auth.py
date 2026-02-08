@@ -1,25 +1,52 @@
-def test_register_and_login(client):
-    register_res = client.post("/register", json={"email": "a@example.com", "password": "secret"})
-    assert register_res.status_code == 201
-    assert register_res.json()["email"] == "a@example.com"
+from unittest.mock import patch
 
-    login_res = client.post(
-        "/token",
-        data={"username": "a@example.com", "password": "secret"},
-        headers={"Content-Type": "application/x-www-form-urlencoded"},
-    )
-    assert login_res.status_code == 200
-    body = login_res.json()
+
+def test_google_login_creates_user(client):
+    mock_token_info = {
+        "sub": "google-123",
+        "email": "test@gmail.com",
+        "name": "Test User",
+        "picture": "https://lh3.googleusercontent.com/photo.jpg",
+    }
+
+    with patch("app.services.auth.google_id_token.verify_oauth2_token", return_value=mock_token_info):
+        res = client.post("/auth/google", json={"id_token": "fake-token"})
+
+    assert res.status_code == 200
+    body = res.json()
     assert body["access_token"]
     assert body["token_type"] == "bearer"
+    assert body["user"]["email"] == "test@gmail.com"
+    assert body["user"]["display_name"] == "Test User"
+    assert body["user"]["avatar_url"] == "https://lh3.googleusercontent.com/photo.jpg"
 
 
-def test_register_duplicate_email(client):
-    first = client.post("/register", json={"email": "dup@example.com", "password": "secret"})
-    assert first.status_code == 201
+def test_google_login_returns_existing_user(client):
+    mock_token_info = {
+        "sub": "google-456",
+        "email": "existing@gmail.com",
+        "name": "Existing User",
+        "picture": "https://lh3.googleusercontent.com/existing.jpg",
+    }
 
-    second = client.post("/register", json={"email": "dup@example.com", "password": "secret"})
-    assert second.status_code == 400
+    with patch("app.services.auth.google_id_token.verify_oauth2_token", return_value=mock_token_info):
+        # First login creates user
+        res1 = client.post("/auth/google", json={"id_token": "fake-token-1"})
+        user_id_1 = res1.json()["user"]["id"]
+
+        # Second login returns same user
+        res2 = client.post("/auth/google", json={"id_token": "fake-token-2"})
+        user_id_2 = res2.json()["user"]["id"]
+
+    assert user_id_1 == user_id_2
+
+
+def test_google_login_invalid_token(client):
+    with patch("app.services.auth.google_id_token.verify_oauth2_token", side_effect=ValueError("Invalid token")):
+        res = client.post("/auth/google", json={"id_token": "bad-token"})
+
+    assert res.status_code == 401
+    assert res.json()["detail"] == "Invalid Google token"
 
 
 def test_guest_token_creation(client):

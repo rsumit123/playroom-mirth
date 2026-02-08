@@ -13,8 +13,8 @@ describe('animation components', () => {
   })
 
   it('renders Welcome with PlayRoom branding', () => {
-    const { getByText } = render(<Welcome onGuest={() => {}} onSignIn={() => {}} onHowTo={() => {}} />)
-    expect(getByText('Play Now')).toBeInTheDocument()
+    const { getByText } = render(<Welcome onGuest={() => {}} onGoogleLogin={() => {}} onHowTo={() => {}} />)
+    expect(getByText('Play as Guest')).toBeInTheDocument()
   })
 
   it('formats known errors', () => {

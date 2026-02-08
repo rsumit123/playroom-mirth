@@ -1,17 +1,22 @@
-def register_and_login(client, email: str):
-    reg = client.post("/register", json={"email": email, "password": "secret"})
-    assert reg.status_code == 201
-    login = client.post(
-        "/token",
-        data={"username": email, "password": "secret"},
-        headers={"Content-Type": "application/x-www-form-urlencoded"},
-    )
-    assert login.status_code == 200
-    return login.json()["access_token"]
+from app.db.session import SessionLocal
+from app.models.user import User
+from app.services.auth import create_access_token
+
+
+def create_user_and_token(email: str):
+    db = SessionLocal()
+    try:
+        user = User(email=email, google_id=f"google-{email}")
+        db.add(user)
+        db.commit()
+        db.refresh(user)
+        return create_access_token(str(user.id))
+    finally:
+        db.close()
 
 
 def test_admin_word_crud(client):
-    token = register_and_login(client, "admin@example.com")
+    token = create_user_and_token("admin@example.com")
     headers = {"Authorization": f"Bearer {token}"}
 
     create = client.post("/admin/words", json={"text": "testword", "difficulty": 2}, headers=headers)

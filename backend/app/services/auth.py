@@ -1,20 +1,21 @@
 from datetime import datetime, timedelta
-from passlib.context import CryptContext
+from typing import Optional
 from jose import jwt
 
-from app.core.config import JWT_SECRET_KEY, JWT_ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
+from google.oauth2 import id_token as google_id_token
+from google.auth.transport import requests as google_requests
 
-# NOTE: Using pbkdf2_sha256 for test/runtime stability on Py3.13.
-# Switch back to bcrypt once the bcrypt backend is stable in the target runtime.
-pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
-
-
-def hash_password(password: str) -> str:
-    return pwd_context.hash(password)
+from app.core.config import JWT_SECRET_KEY, JWT_ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES, GOOGLE_CLIENT_ID
 
 
-def verify_password(plain_password: str, hashed_password: str) -> bool:
-    return pwd_context.verify(plain_password, hashed_password)
+def verify_google_token(token: str) -> Optional[dict]:
+    try:
+        id_info = google_id_token.verify_oauth2_token(
+            token, google_requests.Request(), GOOGLE_CLIENT_ID
+        )
+        return id_info
+    except Exception:
+        return None
 
 
 def create_access_token(subject: str) -> str:

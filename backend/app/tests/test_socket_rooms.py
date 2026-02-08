@@ -4,7 +4,7 @@ import pytest
 from app.db.session import SessionLocal
 from app.models.user import User
 from app.models.word import Word
-from app.services.auth import create_access_token, hash_password
+from app.services.auth import create_access_token
 from app.sockets.events import sio
 
 
@@ -12,7 +12,7 @@ from app.sockets.events import sio
 async def test_socket_room_create_with_user():
     db = SessionLocal()
     try:
-        user = User(email="sock@example.com", password_hash=hash_password("secret"))
+        user = User(email="sock@example.com", google_id="google-sock-1")
         db.add(user)
         db.add(Word(text="apple", difficulty=1, active=True))
         db.commit()
@@ -85,7 +85,7 @@ async def test_socket_room_create_with_guest_and_join():
 async def test_disconnect_sets_connected_false():
     db = SessionLocal()
     try:
-        user = User(email="disc@example.com", password_hash=hash_password("secret"))
+        user = User(email="disc@example.com", google_id="google-disc-1")
         db.add(user)
         db.add(Word(text="grace", difficulty=1, active=True))
         db.commit()
@@ -120,7 +120,7 @@ async def test_disconnect_sets_connected_false():
 async def test_disconnect_removes_after_grace(monkeypatch):
     db = SessionLocal()
     try:
-        user = User(email="disc2@example.com", password_hash=hash_password("secret"))
+        user = User(email="disc2@example.com", google_id="google-disc-2")
         db.add(user)
         db.add(Word(text="grace2", difficulty=1, active=True))
         db.commit()

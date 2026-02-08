@@ -1,9 +1,24 @@
 import pytest
+from unittest.mock import patch
 from pydantic import ValidationError
 
 from app.db.session import SessionLocal
 from app.models.room import Room
+from app.models.user import User
 from app.schemas.room import RoomCreateRequest, RoomCreateGuestRequest, RoomOut
+from app.services.auth import create_access_token
+
+
+def create_user_and_token(email: str):
+    db = SessionLocal()
+    try:
+        user = User(email=email, google_id=f"google-{email}")
+        db.add(user)
+        db.commit()
+        db.refresh(user)
+        return create_access_token(str(user.id))
+    finally:
+        db.close()
 
 
 # ---------------------------------------------------------------------------
@@ -189,15 +204,7 @@ def test_room_model_query_by_game_type():
 
 def test_room_create_via_api_default_game_type(client):
     """Creating a room via POST /rooms should default game_type to 'charades'."""
-    # Register and login
-    reg = client.post("/register", json={"email": "gametype@example.com", "password": "secret"})
-    assert reg.status_code == 201
-    login = client.post(
-        "/token",
-        data={"username": "gametype@example.com", "password": "secret"},
-        headers={"Content-Type": "application/x-www-form-urlencoded"},
-    )
-    token = login.json()["access_token"]
+    token = create_user_and_token("gametype@example.com")
 
     create = client.post(
         "/rooms",
@@ -211,14 +218,7 @@ def test_room_create_via_api_default_game_type(client):
 
 def test_room_create_via_api_with_scribble(client):
     """Creating a room with game_type='scribble' should persist correctly."""
-    reg = client.post("/register", json={"email": "scribble@example.com", "password": "secret"})
-    assert reg.status_code == 201
-    login = client.post(
-        "/token",
-        data={"username": "scribble@example.com", "password": "secret"},
-        headers={"Content-Type": "application/x-www-form-urlencoded"},
-    )
-    token = login.json()["access_token"]
+    token = create_user_and_token("scribble@example.com")
 
     create = client.post(
         "/rooms",

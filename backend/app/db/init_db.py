@@ -24,3 +24,13 @@ def init_db() -> None:
     if "game_type" not in word_columns:
         with engine.begin() as conn:
             conn.execute(text("ALTER TABLE words ADD COLUMN game_type VARCHAR(20) DEFAULT 'charades' NOT NULL"))
+
+    # Manual migration: add Google auth columns to users if missing
+    user_columns = [col["name"] for col in inspector.get_columns("users")]
+    with engine.begin() as conn:
+        if "google_id" not in user_columns:
+            conn.execute(text("ALTER TABLE users ADD COLUMN google_id VARCHAR(255)"))
+        if "display_name" not in user_columns:
+            conn.execute(text("ALTER TABLE users ADD COLUMN display_name VARCHAR(255)"))
+        if "avatar_url" not in user_columns:
+            conn.execute(text("ALTER TABLE users ADD COLUMN avatar_url VARCHAR(512)"))

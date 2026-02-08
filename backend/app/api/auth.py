@@ -1,34 +1,62 @@
 from fastapi import APIRouter, Depends, HTTPException, status
-from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_db
 from app.models.user import User
-from app.schemas.auth import RegisterRequest, TokenResponse
-from app.schemas.user import UserOut
-from app.services.auth import hash_password, verify_password, create_access_token
+from app.schemas.auth import GoogleAuthRequest, GoogleAuthResponse, GoogleUserInfo
+from app.services.auth import create_access_token, verify_google_token
 
 router = APIRouter(tags=["auth"])
 
 
-@router.post("/register", response_model=UserOut, status_code=201)
-def register(payload: RegisterRequest, db: Session = Depends(get_db)):
-    existing = db.query(User).filter(User.email == payload.email).first()
-    if existing:
-        raise HTTPException(status_code=400, detail="Email already registered")
+@router.post("/auth/google", response_model=GoogleAuthResponse)
+def google_login(payload: GoogleAuthRequest, db: Session = Depends(get_db)):
+    token_info = verify_google_token(payload.id_token)
+    if not token_info:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid Google token",
+        )
 
-    user = User(email=payload.email, password_hash=hash_password(payload.password))
-    db.add(user)
+    google_id = token_info["sub"]
+    email = token_info.get("email", "")
+    name = token_info.get("name")
+    picture = token_info.get("picture")
+
+    # Find existing user by google_id or email
+    user = db.query(User).filter(User.google_id == google_id).first()
+    if not user and email:
+        user = db.query(User).filter(User.email == email).first()
+        if user:
+            # Link existing email user to Google account
+            user.google_id = google_id
+
+    if not user:
+        # Create new user
+        user = User(
+            email=email,
+            google_id=google_id,
+            display_name=name,
+            avatar_url=picture,
+        )
+        db.add(user)
+    else:
+        # Update profile info from Google
+        if name:
+            user.display_name = name
+        if picture:
+            user.avatar_url = picture
+
     db.commit()
     db.refresh(user)
-    return user
 
-
-@router.post("/token", response_model=TokenResponse)
-def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
-    user = db.query(User).filter(User.email == form_data.username).first()
-    if not user or not verify_password(form_data.password, user.password_hash):
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
-
-    token = create_access_token(subject=str(user.id))
-    return TokenResponse(access_token=token)
+    access_token = create_access_token(subject=str(user.id))
+    return GoogleAuthResponse(
+        access_token=access_token,
+        user=GoogleUserInfo(
+            id=user.id,
+            email=user.email,
+            display_name=user.display_name,
+            avatar_url=user.avatar_url,
+        ),
+    )

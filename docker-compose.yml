@@ -10,6 +10,7 @@ services:
     environment:
       - DATABASE_URL=sqlite:///./data/charade.db
       - JWT_SECRET_KEY=${JWT_SECRET_KEY:-dev-secret-change}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
     volumes:
       - ./backend/data:/app/data
     restart: unless-stopped

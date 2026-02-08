@@ -16,27 +16,10 @@ async function request(path, options = {}) {
   return res.json()
 }
 
-export function registerUser(email, password) {
-  return request('/register', {
+export function loginWithGoogle(idToken) {
+  return request('/auth/google', {
     method: 'POST',
-    body: JSON.stringify({ email, password })
-  })
-}
-
-export function loginUser(email, password) {
-  const body = new URLSearchParams()
-  body.set('username', email)
-  body.set('password', password)
-  return fetch(`${API_BASE}/token`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body
-  }).then(async (res) => {
-    if (!res.ok) {
-      const text = await res.text()
-      throw new Error(text || `Login failed: ${res.status}`)
-    }
-    return res.json()
+    body: JSON.stringify({ id_token: idToken })
   })
 }
 

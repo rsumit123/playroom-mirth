@@ -1,17 +1,22 @@
-def register_and_login(client, email: str):
-    reg = client.post("/register", json={"email": email, "password": "secret"})
-    assert reg.status_code == 201
-    login = client.post(
-        "/token",
-        data={"username": email, "password": "secret"},
-        headers={"Content-Type": "application/x-www-form-urlencoded"},
-    )
-    assert login.status_code == 200
-    return login.json()["access_token"]
+from app.db.session import SessionLocal
+from app.models.user import User
+from app.services.auth import create_access_token
+
+
+def create_user_and_token(email: str):
+    db = SessionLocal()
+    try:
+        user = User(email=email, google_id=f"google-{email}")
+        db.add(user)
+        db.commit()
+        db.refresh(user)
+        return create_access_token(str(user.id))
+    finally:
+        db.close()
 
 
 def test_create_and_join_room(client):
-    token = register_and_login(client, "host@example.com")
+    token = create_user_and_token("host@example.com")
     create = client.post(
         "/rooms",
         json={"rounds_total": 2, "difficulty": 1, "turn_seconds": 60, "max_players": 20},
@@ -50,7 +55,7 @@ def test_guest_can_create_room(client):
 
 
 def test_join_requires_auth_or_guest(client):
-    token = register_and_login(client, "host2@example.com")
+    token = create_user_and_token("host2@example.com")
     create = client.post(
         "/rooms",
         json={"rounds_total": 1, "difficulty": 1, "turn_seconds": 60, "max_players": 20},
@@ -63,7 +68,7 @@ def test_join_requires_auth_or_guest(client):
 
 
 def test_join_active_room_sets_waiting(client):
-    token = register_and_login(client, "host6@example.com")
+    token = create_user_and_token("host6@example.com")
     create = client.post(
         "/rooms",
         json={"rounds_total": 1, "difficulty": 1, "turn_seconds": 60, "max_players": 20},
@@ -72,7 +77,6 @@ def test_join_active_room_sets_waiting(client):
     room_code = create.json()["room"]["code"]
 
     # manually set room status to active
-    from app.db.session import SessionLocal
     from app.models.room import Room
     db = SessionLocal()
     try:
@@ -90,7 +94,7 @@ def test_join_active_room_sets_waiting(client):
 
 
 def test_get_room_state(client):
-    token = register_and_login(client, "host3@example.com")
+    token = create_user_and_token("host3@example.com")
     create = client.post(
         "/rooms",
         json={"rounds_total": 1, "difficulty": 1, "turn_seconds": 60, "max_players": 20},
@@ -103,7 +107,7 @@ def test_get_room_state(client):
 
 
 def test_update_room_settings_requires_host(client):
-    token = register_and_login(client, "host4@example.com")
+    token = create_user_and_token("host4@example.com")
     create = client.post(
         "/rooms",
         json={"rounds_total": 1, "difficulty": 1, "turn_seconds": 60, "max_players": 20},
@@ -112,7 +116,7 @@ def test_update_room_settings_requires_host(client):
     room_code = create.json()["room"]["code"]
 
     # Another user should not update
-    token2 = register_and_login(client, "user2@example.com")
+    token2 = create_user_and_token("user2@example.com")
     res = client.put(
         f"/rooms/{room_code}/settings",
         json={"rounds_total": 2, "difficulty": 2, "turn_seconds": 45},
@@ -122,7 +126,7 @@ def test_update_room_settings_requires_host(client):
 
 
 def test_update_room_settings_success(client):
-    token = register_and_login(client, "host5@example.com")
+    token = create_user_and_token("host5@example.com")
     create = client.post(
         "/rooms",
         json={"rounds_total": 1, "difficulty": 1, "turn_seconds": 60, "max_players": 20},

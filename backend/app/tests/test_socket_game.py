@@ -5,7 +5,7 @@ from app.db.session import SessionLocal
 from app.models.user import User
 from app.models.word import Word
 from app.models.room_state import RoomState
-from app.services.auth import create_access_token, hash_password
+from app.services.auth import create_access_token
 from app.sockets.events import sio
 from app.services.game_state import ROOM_STATES
 
@@ -14,8 +14,8 @@ from app.services.game_state import ROOM_STATES
 async def test_game_start_and_correct_guess_flow():
     db = SessionLocal()
     try:
-        host = User(email="hostgame@example.com", password_hash=hash_password("secret"))
-        guest = User(email="guestgame@example.com", password_hash=hash_password("secret"))
+        host = User(email="hostgame@example.com", google_id="google-host-1")
+        guest = User(email="guestgame@example.com", google_id="google-guest-1")
         db.add(host)
         db.add(guest)
         db.add(Word(text="orange", difficulty=1, active=True))
@@ -72,8 +72,8 @@ async def test_game_start_and_correct_guess_flow():
 async def test_turn_timer_advances_describer():
     db = SessionLocal()
     try:
-        host = User(email="timerhost@example.com", password_hash=hash_password("secret"))
-        guest = User(email="timerguest@example.com", password_hash=hash_password("secret"))
+        host = User(email="timerhost@example.com", google_id="google-timer-host")
+        guest = User(email="timerguest@example.com", google_id="google-timer-guest")
         db.add(host)
         db.add(guest)
         db.add(Word(text="pear", difficulty=1, active=True))
@@ -108,8 +108,8 @@ async def test_turn_timer_advances_describer():
 async def test_game_end_resets_in_game():
     db = SessionLocal()
     try:
-        host = User(email="endhost@example.com", password_hash=hash_password("secret"))
-        guest = User(email="endguest@example.com", password_hash=hash_password("secret"))
+        host = User(email="endhost@example.com", google_id="google-end-host")
+        guest = User(email="endguest@example.com", google_id="google-end-guest")
         db.add(host)
         db.add(guest)
         db.add(Word(text="finish", difficulty=1, active=True))

@@ -1,9 +1,33 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Logo from '../components/Logo.jsx'
 import Spinner from '../components/Spinner.jsx'
 
-export default function Welcome({ onGuest, onSignIn, onHowTo, loadingGuest }) {
+const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID
+
+export default function Welcome({ onGuest, onGoogleLogin, onHowTo, loadingGuest, loadingGoogle }) {
   const [name, setName] = useState('')
+  const googleBtnRef = useRef(null)
+
+  useEffect(() => {
+    if (!GOOGLE_CLIENT_ID || !window.google?.accounts?.id) return
+    window.google.accounts.id.initialize({
+      client_id: GOOGLE_CLIENT_ID,
+      callback: (response) => {
+        if (response.credential) {
+          onGoogleLogin?.(response.credential)
+        }
+      },
+    })
+    if (googleBtnRef.current) {
+      window.google.accounts.id.renderButton(googleBtnRef.current, {
+        type: 'standard',
+        theme: 'outline',
+        size: 'large',
+        width: 320,
+        text: 'continue_with',
+      })
+    }
+  }, [onGoogleLogin])
 
   return (
     <div className="game-shell">
@@ -27,7 +51,25 @@ export default function Welcome({ onGuest, onSignIn, onHowTo, loadingGuest }) {
           <span className="badge bg-accent/10 text-accent">More soon</span>
         </div>
 
-        <div className="w-full space-y-3 max-w-xs">
+        <div className="w-full space-y-4 max-w-xs">
+          {/* Google Sign-In button */}
+          <div className="flex justify-center">
+            <div ref={googleBtnRef} data-testid="google-signin-btn" />
+          </div>
+          {loadingGoogle && (
+            <div className="flex justify-center">
+              <Spinner size={20} />
+            </div>
+          )}
+
+          {/* Divider */}
+          <div className="flex items-center gap-3">
+            <div className="flex-1 h-px bg-black/10" />
+            <span className="text-xs text-slate/40 uppercase tracking-wider">or</span>
+            <div className="flex-1 h-px bg-black/10" />
+          </div>
+
+          {/* Guest play */}
           <input
             className="w-full rounded-xl border border-black/10 px-4 py-3 text-sm text-center touch-target outline-none focus:border-accent transition"
             placeholder="Enter your name"
@@ -39,16 +81,16 @@ export default function Welcome({ onGuest, onSignIn, onHowTo, loadingGuest }) {
             }}
           />
           <button
-            className="btn-primary w-full text-lg py-4 touch-target flex items-center justify-center gap-2"
+            className="btn-ghost w-full py-3 touch-target flex items-center justify-center gap-2 border border-black/10 rounded-xl"
             onClick={() => onGuest(name.trim() || undefined)}
             disabled={loadingGuest}
           >
             {loadingGuest ? <Spinner size={18} /> : null}
-            Play Now
+            Play as Guest
           </button>
-          <button className="btn-ghost w-full touch-target" onClick={onSignIn}>
-            Sign In
-          </button>
+          <p className="text-[11px] text-slate/40 leading-tight">
+            Guest progress is not saved across devices. Sign in with Google for a persistent account.
+          </p>
         </div>
       </div>
 

@@ -1,7 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import Home from '../ui/screens/Home.jsx'
-import Auth from '../ui/screens/Auth.jsx'
 import Game from '../ui/screens/Game.jsx'
 import Lobby from '../ui/screens/Lobby.jsx'
 import RoundEnd from '../ui/screens/RoundEnd.jsx'
@@ -22,18 +21,6 @@ describe('UI screens', () => {
     expect(onSelectGame).toHaveBeenCalledWith('charades')
   })
 
-  it('renders Auth and calls onDone with inputs', () => {
-    const onDone = vi.fn()
-    render(<Auth onBack={() => {}} onDone={onDone} />)
-
-    fireEvent.change(screen.getByPlaceholderText('you@example.com'), { target: { value: 'a@example.com' } })
-    fireEvent.change(screen.getByPlaceholderText('6+ characters'), { target: { value: 'secret' } })
-    const signInButtons = screen.getAllByRole('button', { name: 'Sign In' })
-    fireEvent.click(signInButtons[1])
-
-    expect(onDone).toHaveBeenCalledWith('signin', 'a@example.com', 'secret')
-  })
-
   it('shows correct guess banner when lastGuess is set', () => {
     const game = { lastGuess: { word: 'umbrella' }, turn: { turn_seconds: 60 }, selfPlayerId: 2 }
     render(<Game game={game} onSend={() => {}} onRejoin={() => {}} />)
@@ -51,7 +38,6 @@ describe('UI screens', () => {
   it('renders scoreboard entries', () => {
     const game = { scores: { 1: 10, 2: 5 }, turn: { turn_seconds: 60 }, selfPlayerId: 2 }
     render(<Game game={game} onSend={() => {}} onRejoin={() => {}} />)
-    // Scoreboard renders player names and scores in separate elements
     expect(screen.getAllByText('Player 1').length).toBeGreaterThan(0)
     expect(screen.getAllByText('10').length).toBeGreaterThan(0)
   })
@@ -114,14 +100,14 @@ describe('UI screens', () => {
     expect(screen.getByPlaceholderText('Search words')).toBeInTheDocument()
   })
 
-  it('renders top bar login/logout states', () => {
-    render(<TopBar isAuthed={false} onLogin={() => {}} />)
-    expect(screen.getByText('Login')).toBeInTheDocument()
+  it('renders top bar guest state', () => {
+    render(<TopBar isAuthed={false} isGuest guestDisplayName="TestGuest" />)
+    expect(screen.getByText('TestGuest')).toBeInTheDocument()
   })
 
-  it('renders top bar authed state', () => {
-    render(<TopBar isAuthed userEmail="me@example.com" onLogout={() => {}} onProfile={() => {}} />)
+  it('renders top bar authed state with display name', () => {
+    render(<TopBar isAuthed userDisplayName="John" userEmail="me@example.com" onLogout={() => {}} />)
     expect(screen.getByText('Logout')).toBeInTheDocument()
-    expect(screen.getByText('me@example.com')).toBeInTheDocument()
+    expect(screen.getByText('John')).toBeInTheDocument()
   })
 })

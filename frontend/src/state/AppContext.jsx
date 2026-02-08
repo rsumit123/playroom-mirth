@@ -99,31 +99,25 @@ export function AppProvider({ children }) {
     resetSocket()
   }
 
-  async function login(email, password) {
+  async function loginWithGoogle(idToken) {
     startLoading('login')
     try {
-      const res = await api.loginUser(email, password)
-      setAuth((prev) => ({ ...prev, token: res.access_token, user: { email } }))
+      const res = await api.loginWithGoogle(idToken)
+      setAuth((prev) => ({
+        ...prev,
+        token: res.access_token,
+        user: {
+          email: res.user.email,
+          display_name: res.user.display_name,
+          avatar_url: res.user.avatar_url,
+        },
+      }))
       return res
     } catch (err) {
       showToast(formatError(err?.message))
       throw err
     } finally {
       stopLoading('login')
-    }
-  }
-
-  async function register(email, password) {
-    startLoading('register')
-    try {
-      await api.registerUser(email, password)
-      const res = await api.loginUser(email, password)
-      setAuth((prev) => ({ ...prev, token: res.access_token, user: { email } }))
-    } catch (err) {
-      showToast(formatError(err?.message))
-      throw err
-    } finally {
-      stopLoading('register')
     }
   }
 
@@ -379,8 +373,7 @@ export function AppProvider({ children }) {
     selfPlayerId,
     roomRestoreStatus,
     logout,
-    login,
-    register,
+    loginWithGoogle,
     ensureGuest,
     createRoom,
     joinRoom,

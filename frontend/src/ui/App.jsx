@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-ro
 import { AppProvider } from '../state/AppContext.jsx'
 import { useApp } from '../state/AppContext.jsx'
 import WelcomePage from './pages/WelcomePage.jsx'
-import AuthPage from './pages/AuthPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import GameSetupPage from './pages/GameSetupPage.jsx'
 import LobbyPage from './pages/LobbyPage.jsx'
@@ -45,10 +44,11 @@ function AppShell() {
       {showTopBar && (
         <TopBar
           userEmail={auth?.user?.email}
+          userDisplayName={auth?.user?.display_name}
+          userAvatarUrl={auth?.user?.avatar_url}
           isAuthed={Boolean(auth?.token)}
           isGuest={Boolean(auth?.guestToken && !auth?.token)}
           guestDisplayName={auth?.guestDisplayName}
-          onLogin={() => navigate('/auth')}
           onLogout={() => {
             logout()
             navigate('/')
@@ -59,7 +59,6 @@ function AppShell() {
       )}
       <Routes>
         <Route path="/" element={<WelcomePage />} />
-        <Route path="/auth" element={<AuthPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/play/:gameType" element={<GameSetupPage />} />
         <Route path="/lobby" element={<LobbyPage />} />
