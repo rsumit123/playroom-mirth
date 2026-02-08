@@ -5,6 +5,7 @@ from app.api.auth import router as auth_router
 from app.api.admin import router as admin_router
 from app.api.guest import router as guest_router
 from app.api.rooms import router as rooms_router
+from app.api.game_history import router as game_history_router
 import asyncio
 
 from app.db.init_db import init_db
@@ -33,6 +34,7 @@ fastapi_app.include_router(auth_router)
 fastapi_app.include_router(admin_router)
 fastapi_app.include_router(guest_router)
 fastapi_app.include_router(rooms_router)
+fastapi_app.include_router(game_history_router)
 
 
 @fastapi_app.on_event("startup")

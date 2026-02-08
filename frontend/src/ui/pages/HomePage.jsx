@@ -5,10 +5,11 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function HomePage() {
   const navigate = useNavigate()
-  const { joinRoom, bindLobbyEvents, ui, activeRooms, fetchActiveRooms, leaveActiveRoom } = useApp()
+  const { joinRoom, bindLobbyEvents, ui, activeRooms, fetchActiveRooms, leaveActiveRoom, auth, gameHistory, fetchGameHistory } = useApp()
 
   useEffect(() => {
     fetchActiveRooms()
+    fetchGameHistory()
   }, [])
 
   function handleSelectGame(gameType) {
@@ -32,6 +33,8 @@ export default function HomePage() {
       onLeaveRoom={leaveActiveRoom}
       loadingLeave={Boolean(ui?.loadingKeys?.leave_room)}
       activeRooms={activeRooms}
+      gameHistory={gameHistory}
+      isSignedIn={Boolean(auth?.token)}
     />
   )
 }

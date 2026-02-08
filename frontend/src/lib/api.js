@@ -113,3 +113,9 @@ export function updateAdminWord(token, wordId, payload) {
     body: JSON.stringify(payload)
   })
 }
+
+export function getGameHistory(token) {
+  return request('/game-history', {
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}

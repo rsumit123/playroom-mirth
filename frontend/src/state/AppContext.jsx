@@ -20,6 +20,7 @@ export function AppProvider({ children }) {
   const [game, setGame] = useState({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
   const [roomRestoreStatus, setRoomRestoreStatus] = useState('pending') // 'pending' | 'done'
   const [activeRooms, setActiveRooms] = useState([])
+  const [gameHistory, setGameHistory] = useState([])
   const [ui, setUi] = useState({ loading: 0, toast: null, loadingKeys: {} })
 
   useEffect(() => {
@@ -240,6 +241,19 @@ export function AppProvider({ children }) {
     }
   }
 
+  async function fetchGameHistory() {
+    if (!auth.token) {
+      setGameHistory([])
+      return
+    }
+    try {
+      const history = await api.getGameHistory(auth.token)
+      setGameHistory(history || [])
+    } catch {
+      setGameHistory([])
+    }
+  }
+
   function bindLobbyEvents(roomCode) {
     const socket = connectSocket()
     socket.off('room:lobby_update')
@@ -391,9 +405,11 @@ export function AppProvider({ children }) {
     activeRooms,
     fetchActiveRooms,
     leaveActiveRoom,
+    gameHistory,
+    fetchGameHistory,
     clearToast,
     leaveRoom
-  }), [auth, room, lobby, game, ui, roomRestoreStatus, selfPlayerId, activeRooms])
+  }), [auth, room, lobby, game, ui, roomRestoreStatus, selfPlayerId, activeRooms, gameHistory])
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }

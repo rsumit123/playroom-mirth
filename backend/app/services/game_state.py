@@ -72,7 +72,7 @@ def deserialize_state(raw: str) -> RoomGameState:
         describer_index=data.get("describer_index", 0),
         turn_start_ts=data.get("turn_start_ts", 0.0),
         player_order=data.get("player_order", []),
-        scores=data.get("scores", {}),
+        scores={int(k): v for k, v in data.get("scores", {}).items()},
         current_word_id=data.get("current_word_id"),
         current_word_text=data.get("current_word_text"),
         word_history_ids=data.get("word_history_ids", []),

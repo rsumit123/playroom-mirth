@@ -28,6 +28,7 @@ from app.services.game_state import (
     deserialize_state,
 )
 from app.models.room_player import RoomPlayer
+from app.models.game_history import GameHistory
 from app.models.word import Word
 from sqlalchemy import func as sa_func
 import time
@@ -61,6 +62,26 @@ def _save_state(db, state: RoomGameState) -> None:
     else:
         db.add(RoomState(room_id=state.room_id, state_json=payload))
     db.commit()
+
+
+def _save_game_history(db, state: RoomGameState) -> None:
+    """Persist game results for signed-in users."""
+    player_ids = state.player_order
+    players = db.query(RoomPlayer).filter(RoomPlayer.id.in_(player_ids)).all()
+    max_score = max(state.scores.values(), default=0)
+    player_count = len(player_ids)
+    for rp in players:
+        if rp.user_id is None:
+            continue
+        score = state.scores.get(rp.id, 0)
+        db.add(GameHistory(
+            user_id=rp.user_id,
+            room_code=state.room_code,
+            game_type=state.game_type,
+            score=score,
+            player_count=player_count,
+            is_winner=(score == max_score and max_score > 0),
+        ))
 
 
 async def _schedule_turn_timer(state: RoomGameState) -> None:
@@ -123,6 +144,7 @@ async def _advance_turn(room_code: str) -> None:
             await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
             ROOM_STATES.pop(room_code, None)
             with SessionLocal() as db:
+                _save_game_history(db, state)
                 room = db.query(Room).filter(Room.code == room_code).first()
                 if room:
                     room.status = "lobby"

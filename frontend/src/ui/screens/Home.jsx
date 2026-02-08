@@ -1,4 +1,4 @@
-export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave, activeRooms = [] }) {
+export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave, activeRooms = [], gameHistory = [], isSignedIn = false }) {
   return (
     <div className="game-shell py-6">
       <div className="page-medium space-y-6">
@@ -91,7 +91,49 @@ export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave
               </div>
             </div>
           </button>
+
+          {/* More Games Coming Soon */}
+          <div className="rounded-2xl border-2 border-dashed border-slate/20 p-6 flex items-start gap-4 opacity-70">
+            <div className="h-12 w-12 rounded-xl bg-slate/5 flex items-center justify-center text-2xl shrink-0">
+              &#127922;
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="font-display text-xl mb-1 text-slate/50">More Games Coming Soon</div>
+              <p className="text-sm text-slate/40">
+                We're cooking up new party games. Stay tuned!
+              </p>
+            </div>
+          </div>
         </div>
+
+        {/* Recent Games */}
+        {isSignedIn && gameHistory.length > 0 && (
+          <div className="card p-5 space-y-4 animate-pop">
+            <h2 className="font-semibold">Recent Games</h2>
+            <div className="space-y-2">
+              {gameHistory.map((g) => (
+                <div key={g.id} className="flex items-center justify-between rounded-xl border border-black/5 px-4 py-3">
+                  <div className="flex items-center gap-3 min-w-0 flex-1">
+                    <span className="text-lg">
+                      {g.game_type === 'scribble' ? '\u270F\uFE0F' : '\uD83D\uDCAC'}
+                    </span>
+                    <span className="badge bg-accent/10 text-accent text-[10px]">
+                      {g.game_type === 'scribble' ? 'Scribble' : 'Charades'}
+                    </span>
+                    {g.is_winner && (
+                      <span className="text-sm" title="Winner!">&#127942;</span>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-4 text-xs text-slate/50 shrink-0">
+                    <span>{g.player_count} players</span>
+                    <span>{new Date(g.played_at).toLocaleDateString()}</span>
+                    <span className="font-semibold text-sm text-slate/80">{g.score} pts</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )
