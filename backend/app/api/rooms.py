@@ -108,6 +108,7 @@ def get_room(
 def update_room_settings(
     room_code: str,
     payload: RoomUpdateRequest,
+    guest_token: str | None = Query(default=None),
     db: Session = Depends(get_db),
     user=Depends(get_current_user_optional),
 ):
@@ -115,8 +116,12 @@ def update_room_settings(
     if not room:
         raise HTTPException(status_code=404, detail="Room not found")
 
+    guest = resolve_guest(db, guest_token)
     if user:
         if room.host_user_id != user.id:
+            raise HTTPException(status_code=403, detail="Only host can update settings")
+    elif guest:
+        if room.host_guest_id != guest.id:
             raise HTTPException(status_code=403, detail="Only host can update settings")
     else:
         raise HTTPException(status_code=401, detail="Authentication required")

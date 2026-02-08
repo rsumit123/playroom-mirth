@@ -194,7 +194,7 @@ export function AppProvider({ children }) {
   }
 
   async function saveRoomSettings(roomCode, payload) {
-    if (!auth.token) {
+    if (!auth.token && !auth.guestToken) {
       const message = formatError('Authentication required')
       setGame((g) => ({ ...g, error: { message } }))
       showToast(message)
@@ -202,7 +202,7 @@ export function AppProvider({ children }) {
     }
     startLoading('save_settings')
     try {
-      const res = await api.updateRoomSettings(auth.token, roomCode, payload)
+      const res = await api.updateRoomSettings(auth.token, auth.guestToken, roomCode, payload)
       setLobby(res)
       setRoom(res.room)
       return res

@@ -82,10 +82,11 @@ export function getRoom(roomCode, token, guestToken) {
   })
 }
 
-export function updateRoomSettings(token, roomCode, payload) {
-  return request(`/rooms/${roomCode}/settings`, {
+export function updateRoomSettings(token, guestToken, roomCode, payload) {
+  const params = guestToken ? `?guest_token=${encodeURIComponent(guestToken)}` : ''
+  return request(`/rooms/${roomCode}/settings${params}`, {
     method: 'PUT',
-    headers: { Authorization: `Bearer ${token}` },
+    headers: token ? { Authorization: `Bearer ${token}` } : undefined,
     body: JSON.stringify(payload)
   })
 }

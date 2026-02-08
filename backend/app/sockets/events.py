@@ -264,6 +264,23 @@ async def room_register(sid, data):
         if room2:
             lobby = build_lobby_state(db2, room2, self_player_id=rp.id)
             await sio.emit("room:lobby_update", lobby.model_dump(), room=room_code)
+    # If a game is active, send current turn state to the reconnecting player
+    state = ROOM_STATES.get(room_code)
+    if state and rp.id in state.player_order:
+        describer_id = state.player_order[state.describer_index]
+        await sio.emit(
+            "game:turn_start",
+            {
+                "describer_id": describer_id,
+                "turn_seconds": state.turn_seconds,
+                "turn_start_ts": int(state.turn_start_ts),
+                "round_index": state.round_index,
+                "game_type": state.game_type,
+            },
+            to=sid,
+        )
+        if rp.id == describer_id and state.current_word_text:
+            await sio.emit("game:new_word", {"word": state.current_word_text}, to=sid)
     return {"ok": True}
 
 
