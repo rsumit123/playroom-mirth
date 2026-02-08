@@ -150,6 +150,9 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
         <div className="bg-correct/10 border-b border-correct/20 px-4 py-2 text-center animate-pop shrink-0">
           <span className="text-correct font-semibold text-sm">
             &#10003; {playerNames[lastGuess.guesser_id] || 'Someone'} guessed &ldquo;{lastGuess.word}&rdquo;
+            {lastGuess.points_awarded && (
+              <span className="ml-2 text-xs font-bold text-correct/80">+{lastGuess.points_awarded}</span>
+            )}
           </span>
         </div>
       )}
@@ -219,7 +222,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
         {/* Desktop sidebar */}
         <div className="hidden lg:block w-72 border-l border-black/5 overflow-y-auto p-4 space-y-4 shrink-0">
           <div className="text-xs uppercase tracking-wider text-slate/50 mb-2">Scoreboard</div>
-          <Scoreboard scores={game?.scores || {}} playerNames={playerNames} />
+          <Scoreboard scores={game?.scores || {}} playerNames={playerNames} guessedPlayerIds={game?.guessedPlayerIds || []} />
         </div>
       </div>
 
@@ -240,7 +243,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
           >
             <div className="w-10 h-1 rounded-full bg-slate/20 mx-auto mb-4" />
             <div className="text-xs uppercase tracking-wider text-slate/50 mb-3">Scoreboard</div>
-            <Scoreboard scores={game?.scores || {}} playerNames={playerNames} />
+            <Scoreboard scores={game?.scores || {}} playerNames={playerNames} guessedPlayerIds={game?.guessedPlayerIds || []} />
           </div>
         </div>
       )}

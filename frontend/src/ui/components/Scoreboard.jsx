@@ -6,7 +6,8 @@ const RANK_STYLES = {
   2: { bg: 'bg-bronze/10', border: 'border-bronze/20', medal: '\u{1F949}' },
 }
 
-export default function Scoreboard({ scores = {}, playerNames = {}, highlight }) {
+export default function Scoreboard({ scores = {}, playerNames = {}, highlight, guessedPlayerIds = [] }) {
+  const guessedSet = new Set(guessedPlayerIds.map(String))
   const entries = Object.entries(scores)
     .map(([playerId, score]) => ({ playerId, score, name: playerNames[playerId] || `Player ${playerId}` }))
     .sort((a, b) => b.score - a.score)
@@ -33,7 +34,12 @@ export default function Scoreboard({ scores = {}, playerNames = {}, highlight })
             </span>
             <PlayerAvatar name={row.name} size="sm" />
             <div className="flex-1 min-w-0">
-              <div className="font-medium text-sm truncate">{row.name}</div>
+              <div className="font-medium text-sm truncate flex items-center gap-1.5">
+                {row.name}
+                {guessedSet.has(String(row.playerId)) && (
+                  <span className="text-correct text-xs font-semibold">&#10003;</span>
+                )}
+              </div>
             </div>
             <div className="font-display text-lg font-semibold text-ink">{row.score}</div>
           </div>

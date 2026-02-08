@@ -294,7 +294,7 @@ export function AppProvider({ children }) {
     socket.off('game:reconnect_grace')
     socket.off('disconnect')
     socket.off('connect')
-    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, word: null, lastGuess: null, roundEnd: null, gameEnd: null, scribbleStrokes: [] })))
+    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, word: null, lastGuess: null, roundEnd: null, gameEnd: null, scribbleStrokes: [], guessedPlayerIds: [] })))
     socket.on('game:new_word', (payload) => setGame((g) => ({ ...g, word: payload.word })))
     socket.on('chat:message', (payload) => {
       setGame((g) => ({ ...g, messages: [...(g.messages || []), payload] }))
@@ -304,7 +304,9 @@ export function AppProvider({ children }) {
       lastGuess: payload,
       scores: payload.scores || g.scores,
       messages: [...(g.messages || []), { player_id: payload.guesser_id, message: payload.word, correct: true }],
-      scribbleStrokes: [],
+      guessedPlayerIds: [...(g.guessedPlayerIds || []), payload.guesser_id],
+      // For scribble, keep the drawing on correct guess (same word continues)
+      scribbleStrokes: g.turn?.game_type === 'scribble' ? (g.scribbleStrokes || []) : [],
     })))
     socket.on('game:round_end', (payload) => setGame((g) => ({ ...g, roundEnd: payload })))
     socket.on('game:game_end', (payload) => setGame((g) => ({ ...g, gameEnd: payload })))

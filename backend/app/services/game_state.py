@@ -2,7 +2,7 @@ import asyncio
 import json
 import time
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Set
 
 
 @dataclass
@@ -22,6 +22,7 @@ class RoomGameState:
     current_word_id: Optional[int] = None
     current_word_text: Optional[str] = None
     word_history_ids: List[int] = field(default_factory=list)
+    guessed_players: Set[int] = field(default_factory=set)
     task: Optional[asyncio.Task] = None
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
 
@@ -35,6 +36,7 @@ PLAYER_GRACE_TASKS: Dict[int, asyncio.Task] = {}
 
 def start_turn(state: RoomGameState) -> None:
     state.turn_start_ts = time.time()
+    state.guessed_players = set()
 
 
 def serialize_state(state: RoomGameState) -> str:
@@ -54,6 +56,7 @@ def serialize_state(state: RoomGameState) -> str:
         "current_word_id": state.current_word_id,
         "current_word_text": state.current_word_text,
         "word_history_ids": state.word_history_ids,
+        "guessed_players": list(state.guessed_players),
     }
     return json.dumps(payload)
 
@@ -76,6 +79,7 @@ def deserialize_state(raw: str) -> RoomGameState:
         current_word_id=data.get("current_word_id"),
         current_word_text=data.get("current_word_text"),
         word_history_ids=data.get("word_history_ids", []),
+        guessed_players=set(data.get("guessed_players", [])),
     )
 
 

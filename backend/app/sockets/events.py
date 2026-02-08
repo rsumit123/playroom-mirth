@@ -131,6 +131,12 @@ async def _advance_turn(room_code: str) -> None:
     if not state:
         return
     async with state.lock:
+        # Award scribble drawer bonus for any guesses this turn
+        if state.game_type == "scribble" and state.guessed_players:
+            describer_id = state.player_order[state.describer_index]
+            num_guessed = len(state.guessed_players)
+            state.scores[describer_id] = state.scores.get(describer_id, 0) + 3 * num_guessed
+
         state.describer_index += 1
         round_ended = False
         if state.describer_index >= len(state.player_order):
@@ -400,6 +406,18 @@ def _hint_contains_target(hint: str, target: str) -> bool:
     return False
 
 
+def _scribble_guess_score(elapsed: float) -> int:
+    if elapsed < 5:
+        return 15
+    if elapsed < 10:
+        return 12
+    if elapsed < 20:
+        return 10
+    if elapsed < 30:
+        return 7
+    return 5
+
+
 def _select_word(db, difficulty: int, history_ids: list[int], game_type: str = "charades") -> Word | None:
     base = db.query(Word).filter(Word.active.is_(True), Word.game_type == game_type, ~Word.id.in_(history_ids))
     if difficulty == 0:
@@ -529,25 +547,52 @@ async def chat_message(sid, data):
         await sio.emit("chat:message", {"player_id": player_id, "message": message}, room=room_code)
         return {"ok": True}
 
+    # Scribble: prevent double-guessing
+    if state.game_type == "scribble" and player_id in state.guessed_players:
+        await sio.emit("chat:message", {"player_id": player_id, "message": message}, room=room_code)
+        return {"ok": True, "correct": False}
+
     # Guessing
     if _normalize_word(message) == _normalize_word(target):
-        state.scores[player_id] = state.scores.get(player_id, 0) + 10
-        state.scores[describer_id] = state.scores.get(describer_id, 0) + 5
-        await sio.emit(
-            "game:correct_guess",
-            {"guesser_id": player_id, "word": target, "scores": state.scores},
-            room=room_code,
-        )
-        with SessionLocal() as db:
-            word = _select_word(db, state.difficulty, state.word_history_ids, state.game_type)
-            if word:
-                state.current_word_id = word.id
-                state.current_word_text = word.text
-                state.word_history_ids.append(word.id)
-            _save_state(db, state)
-        describer_sid = PLAYER_TO_SID.get(describer_id)
-        if describer_sid and state.current_word_text:
-            await sio.emit("game:new_word", {"word": state.current_word_text}, to=describer_sid)
+        if state.game_type == "scribble":
+            elapsed = time.time() - state.turn_start_ts
+            points = _scribble_guess_score(elapsed)
+            state.scores[player_id] = state.scores.get(player_id, 0) + points
+            # No per-guess drawer bonus for scribble; awarded at turn end
+            await sio.emit(
+                "game:correct_guess",
+                {"guesser_id": player_id, "word": target, "scores": state.scores, "points_awarded": points},
+                room=room_code,
+            )
+            # Track guesser; keep the same word/drawing
+            state.guessed_players.add(player_id)
+            non_describers = set(state.player_order) - {describer_id}
+            all_guessed = state.guessed_players >= non_describers
+            with SessionLocal() as db:
+                _save_state(db, state)
+            if all_guessed:
+                # Drawer bonus is awarded in _advance_turn
+                await _advance_turn(room_code)
+        else:
+            # Charades: flat scoring
+            state.scores[player_id] = state.scores.get(player_id, 0) + 10
+            state.scores[describer_id] = state.scores.get(describer_id, 0) + 5
+            await sio.emit(
+                "game:correct_guess",
+                {"guesser_id": player_id, "word": target, "scores": state.scores},
+                room=room_code,
+            )
+            with SessionLocal() as db:
+                word = _select_word(db, state.difficulty, state.word_history_ids, state.game_type)
+                if word:
+                    state.current_word_id = word.id
+                    state.current_word_text = word.text
+                    state.word_history_ids.append(word.id)
+                _save_state(db, state)
+            describer_sid = PLAYER_TO_SID.get(describer_id)
+            if describer_sid and state.current_word_text:
+                await sio.emit("game:new_word", {"word": state.current_word_text}, to=describer_sid)
+
         return {"ok": True, "correct": True}
 
     await sio.emit("chat:message", {"player_id": player_id, "message": message}, room=room_code)
