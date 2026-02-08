@@ -25,7 +25,8 @@ export default function LobbyPage() {
   useEffect(() => {
     if (game?.turn) {
       startGameSocket()
-      navigate('/game')
+      const gameType = game.turn.game_type || lobby?.room?.game_type || 'charades'
+      navigate(gameType === 'scribble' ? '/scribble' : '/game')
     }
   }, [game?.turn])
 
@@ -33,7 +34,8 @@ export default function LobbyPage() {
     if (!lobby?.room?.code) return
     startGameSocket()
     emitGameStart(lobby.room.code)
-    navigate('/game')
+    const gameType = lobby?.room?.game_type || 'charades'
+    navigate(gameType === 'scribble' ? '/scribble' : '/game')
   }
 
   return (

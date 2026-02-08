@@ -1,0 +1,187 @@
+import { useRef, useEffect, useState, useCallback } from 'react'
+
+const COLORS = ['#000000', '#e74c3c', '#3498db', '#27ae60', '#f39c12']
+const BRUSH_WIDTH = 4
+const ERASER_WIDTH = 20
+
+export default function DrawingCanvas({ onStroke, onClear }) {
+  const canvasRef = useRef(null)
+  const [color, setColor] = useState(COLORS[0])
+  const [isErasing, setIsErasing] = useState(false)
+  const drawing = useRef(false)
+  const points = useRef([])
+  const strokesRef = useRef([])
+
+  const getPos = useCallback((e) => {
+    const canvas = canvasRef.current
+    if (!canvas) return null
+    const rect = canvas.getBoundingClientRect()
+    const x = (e.clientX - rect.left) / rect.width
+    const y = (e.clientY - rect.top) / rect.height
+    return { x, y }
+  }, [])
+
+  const resizeCanvas = useCallback(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const parent = canvas.parentElement
+    const w = parent.clientWidth
+    const h = parent.clientHeight
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width = w
+      canvas.height = h
+      redrawAll()
+    }
+  }, [])
+
+  useEffect(() => {
+    resizeCanvas()
+    window.addEventListener('resize', resizeCanvas)
+    return () => window.removeEventListener('resize', resizeCanvas)
+  }, [resizeCanvas])
+
+  function redrawAll() {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d')
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    for (const s of strokesRef.current) {
+      drawStroke(ctx, s, canvas.width, canvas.height)
+    }
+  }
+
+  function drawStroke(ctx, stroke, w, h) {
+    if (!stroke.points || stroke.points.length < 2) return
+    ctx.beginPath()
+    ctx.strokeStyle = stroke.eraser ? '#FFFFFF' : stroke.color
+    ctx.lineWidth = stroke.eraser ? ERASER_WIDTH : stroke.width
+    ctx.lineCap = 'round'
+    ctx.lineJoin = 'round'
+    ctx.moveTo(stroke.points[0].x * w, stroke.points[0].y * h)
+    for (let i = 1; i < stroke.points.length; i++) {
+      ctx.lineTo(stroke.points[i].x * w, stroke.points[i].y * h)
+    }
+    ctx.stroke()
+  }
+
+  function handlePointerDown(e) {
+    e.preventDefault()
+    const canvas = canvasRef.current
+    if (!canvas) return
+    canvas.setPointerCapture(e.pointerId)
+    drawing.current = true
+    const pos = getPos(e)
+    if (pos) points.current = [pos]
+  }
+
+  function handlePointerMove(e) {
+    if (!drawing.current) return
+    e.preventDefault()
+    const pos = getPos(e)
+    if (!pos) return
+    points.current.push(pos)
+    // Draw live
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d')
+    const pts = points.current
+    if (pts.length < 2) return
+    const prev = pts[pts.length - 2]
+    const curr = pts[pts.length - 1]
+    ctx.beginPath()
+    ctx.strokeStyle = isErasing ? '#FFFFFF' : color
+    ctx.lineWidth = isErasing ? ERASER_WIDTH : BRUSH_WIDTH
+    ctx.lineCap = 'round'
+    ctx.lineJoin = 'round'
+    ctx.moveTo(prev.x * canvas.width, prev.y * canvas.height)
+    ctx.lineTo(curr.x * canvas.width, curr.y * canvas.height)
+    ctx.stroke()
+  }
+
+  function handlePointerUp(e) {
+    if (!drawing.current) return
+    drawing.current = false
+    const stroke = {
+      points: points.current,
+      color: color,
+      width: BRUSH_WIDTH,
+      eraser: isErasing,
+    }
+    strokesRef.current.push(stroke)
+    onStroke?.(stroke)
+    points.current = []
+  }
+
+  function handleClear() {
+    strokesRef.current = []
+    const canvas = canvasRef.current
+    if (canvas) {
+      const ctx = canvas.getContext('2d')
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+    }
+    onClear?.()
+  }
+
+  function handleUndo() {
+    strokesRef.current.pop()
+    redrawAll()
+  }
+
+  return (
+    <div className="flex flex-col h-full">
+      {/* Canvas area */}
+      <div className="flex-1 bg-white rounded-xl border border-black/10 overflow-hidden relative touch-none">
+        <canvas
+          ref={canvasRef}
+          className="absolute inset-0 w-full h-full cursor-crosshair"
+          onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
+          onPointerUp={handlePointerUp}
+          onPointerCancel={handlePointerUp}
+        />
+      </div>
+
+      {/* Toolbar */}
+      <div className="flex items-center justify-between gap-2 pt-2 px-1">
+        <div className="flex items-center gap-1.5">
+          {COLORS.map((c) => (
+            <button
+              key={c}
+              type="button"
+              className={`h-8 w-8 rounded-full border-2 transition touch-target ${
+                !isErasing && color === c ? 'border-accent scale-110' : 'border-transparent'
+              }`}
+              style={{ backgroundColor: c }}
+              onClick={() => { setColor(c); setIsErasing(false) }}
+            />
+          ))}
+        </div>
+        <div className="flex items-center gap-1.5">
+          <button
+            type="button"
+            className={`h-8 px-3 rounded-lg text-xs font-medium border transition touch-target ${
+              isErasing ? 'bg-accent text-white border-accent' : 'bg-white border-black/10 text-slate/70'
+            }`}
+            onClick={() => setIsErasing(!isErasing)}
+          >
+            Eraser
+          </button>
+          <button
+            type="button"
+            className="h-8 px-3 rounded-lg text-xs font-medium border border-black/10 bg-white text-slate/70 touch-target"
+            onClick={handleUndo}
+          >
+            Undo
+          </button>
+          <button
+            type="button"
+            className="h-8 px-3 rounded-lg text-xs font-medium border border-danger/20 bg-white text-danger/70 touch-target"
+            onClick={handleClear}
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}

@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 
 from app.models.word import Word
 
-WORDS = {
+CHARADES_WORDS = {
     1: [
         # === EASY (200 words) — common objects, animals, actions ===
         "apple", "chair", "river", "pencil", "cloud", "window", "pillow", "garden", "coffee", "mirror",
@@ -109,16 +109,92 @@ WORDS = {
     ],
 }
 
+# Scribble words — drawable/visual things only (no overlap with charades words)
+SCRIBBLE_WORDS = {
+    1: [
+        # === EASY (100 words) — simple drawable objects ===
+        "smiley", "rainbow", "pizza slice", "stick figure", "snowman",
+        "sunshine", "raindrop", "lollipop", "cupcake", "ice cream",
+        "hotdog", "french fries", "donut", "watermelon", "strawberry",
+        "pineapple", "mushroom", "cactus", "palm tree", "sunflower",
+        "daisy", "tulip", "butterfly", "ladybug", "caterpillar",
+        "snail", "bee", "owl", "penguin", "whale",
+        "octopus", "starfish", "crab", "seashell", "jellyfish",
+        "goldfish", "shark", "bat", "bunny", "bear",
+        "panda", "elephant", "giraffe", "kangaroo", "koala",
+        "flamingo", "peacock", "swan", "duck", "chick",
+        "bicycle", "rocket", "helicopter", "sailboat", "submarine",
+        "hot air balloon", "school bus", "fire truck", "ambulance", "tractor",
+        "castle", "church", "windmill", "barn", "teepee",
+        "volcano", "mountain", "waterfall", "desert", "beach",
+        "campfire", "tent", "fishing rod", "kite", "skateboard",
+        "basketball", "soccer ball", "baseball bat", "tennis racket", "bowling pin",
+        "trophy", "medal", "crown", "diamond ring", "treasure chest",
+        "magic wand", "wizard hat", "pirate flag", "anchor", "compass",
+        "hourglass", "alarm clock", "television", "laptop", "headphones",
+        "microphone", "camera", "binoculars", "magnifying glass", "light bulb",
+    ],
+    2: [
+        # === MEDIUM (100 words) — multi-part scenes, actions, less obvious ===
+        "roller coaster", "ferris wheel", "merry go round", "water slide", "trampoline",
+        "surfing", "skiing", "snowboarding", "parachute", "scuba diving",
+        "fishing", "camping", "hiking", "rock climbing", "horseback riding",
+        "juggling", "tightrope walker", "magician", "ballerina", "cheerleader",
+        "astronaut", "robot", "alien", "dragon", "mermaid",
+        "unicorn", "werewolf", "vampire", "ghost", "zombie",
+        "scarecrow", "jack o lantern", "christmas tree", "snowglobe", "gingerbread house",
+        "birthday cake", "wedding cake", "breakfast table", "picnic", "barbecue grill",
+        "sushi", "taco", "hamburger", "pancakes", "popcorn",
+        "cotton candy", "chocolate fountain", "fruit basket", "salad bowl", "soup pot",
+        "stethoscope", "microscope", "telescope", "test tube", "beaker",
+        "globe", "bookshelf", "grand piano", "drum set", "electric guitar",
+        "film projector", "movie theater", "stage curtain", "spotlight", "disco ball",
+        "lighthouse", "bridge", "skyscraper", "igloo", "treehouse",
+        "birdhouse", "doghouse", "aquarium", "terrarium", "greenhouse",
+        "garden shed", "mailbox", "street lamp", "traffic light", "stop sign",
+        "fire hydrant", "park bench", "swing set", "seesaw", "sandbox",
+        "pirate ship", "viking ship", "canoe", "jet ski", "cruise ship",
+        "space shuttle", "satellite dish", "radio tower", "solar panel", "wind turbine",
+        "oil rig", "crane", "bulldozer", "forklift", "steam engine",
+    ],
+    3: [
+        # === HARD (60 words) — abstract concepts, complex scenes ===
+        "time travel", "black hole", "solar system", "northern lights", "coral reef",
+        "food chain", "water cycle", "photosynthesis", "evolution", "gravity",
+        "electricity", "magnetism", "ecosystem", "climate change", "recycling",
+        "rush hour", "traffic jam", "assembly line", "construction site", "farmers market",
+        "flea market", "garage sale", "lemonade stand", "food truck", "drive through",
+        "escape room", "haunted house", "corn maze", "obstacle course", "treasure hunt",
+        "spelling bee", "science fair", "talent show", "fashion show", "red carpet",
+        "graduation ceremony", "wedding reception", "surprise party", "baby shower", "family reunion",
+        "pillow fight", "food fight", "snowball fight", "tug of war", "hide and seek",
+        "musical chairs", "freeze tag", "capture the flag", "relay race", "marathon",
+        "opera singer", "orchestra pit", "puppet show", "shadow puppet", "ventriloquist",
+        "sword swallower", "fire breather", "snake charmer", "fortune teller", "time capsule",
+    ],
+}
+
 
 def seed_words(db: Session) -> int:
     existing_texts = {w.text for w in db.query(Word.text).all()}
     inserted = 0
-    for difficulty, words in WORDS.items():
+
+    # Seed charades words
+    for difficulty, words in CHARADES_WORDS.items():
         for text in words:
             if text not in existing_texts:
-                db.add(Word(text=text, difficulty=difficulty, active=True))
+                db.add(Word(text=text, difficulty=difficulty, active=True, game_type="charades"))
                 existing_texts.add(text)
                 inserted += 1
+
+    # Seed scribble words
+    for difficulty, words in SCRIBBLE_WORDS.items():
+        for text in words:
+            if text not in existing_texts:
+                db.add(Word(text=text, difficulty=difficulty, active=True, game_type="scribble"))
+                existing_texts.add(text)
+                inserted += 1
+
     if inserted > 0:
         db.commit()
     return inserted

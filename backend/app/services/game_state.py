@@ -12,6 +12,7 @@ class RoomGameState:
     rounds_total: int
     turn_seconds: int
     difficulty: int
+    game_type: str = "charades"
     status: str = "active"
     round_index: int = 1
     describer_index: int = 0
@@ -43,6 +44,7 @@ def serialize_state(state: RoomGameState) -> str:
         "rounds_total": state.rounds_total,
         "turn_seconds": state.turn_seconds,
         "difficulty": state.difficulty,
+        "game_type": state.game_type,
         "status": state.status,
         "round_index": state.round_index,
         "describer_index": state.describer_index,
@@ -64,6 +66,7 @@ def deserialize_state(raw: str) -> RoomGameState:
         rounds_total=data["rounds_total"],
         turn_seconds=data["turn_seconds"],
         difficulty=data["difficulty"],
+        game_type=data.get("game_type", "charades"),
         status=data.get("status", "active"),
         round_index=data.get("round_index", 1),
         describer_index=data.get("describer_index", 0),

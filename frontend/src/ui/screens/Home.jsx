@@ -1,16 +1,4 @@
-import { useState } from 'react'
-import Spinner from '../components/Spinner.jsx'
-import DifficultySelector from '../components/DifficultySelector.jsx'
-import RangeSlider from '../components/RangeSlider.jsx'
-
-export default function Home({ onCreate, onJoin, onRejoin, onLeaveRoom, loadingCreate, loadingJoin, loadingLeave, activeRooms = [] }) {
-  const [tab, setTab] = useState('create')
-  const [rounds, setRounds] = useState(3)
-  const [timer, setTimer] = useState(60)
-  const [difficulty, setDifficulty] = useState(0)
-  const [maxPlayers, setMaxPlayers] = useState(20)
-  const [roomCode, setRoomCode] = useState('')
-
+export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave, activeRooms = [] }) {
   return (
     <div className="game-shell py-6">
       <div className="page-medium space-y-6">
@@ -26,7 +14,12 @@ export default function Home({ onCreate, onJoin, onRejoin, onLeaveRoom, loadingC
               {activeRooms.map((ar) => (
                 <div key={ar.room_code} className="flex items-center justify-between rounded-xl border border-black/5 px-4 py-3">
                   <div className="min-w-0 flex-1">
-                    <div className="font-display text-lg tracking-wider">{ar.room_code}</div>
+                    <div className="flex items-center gap-2">
+                      <div className="font-display text-lg tracking-wider">{ar.room_code}</div>
+                      <span className="badge bg-accent/10 text-accent text-[10px]">
+                        {ar.game_type === 'scribble' ? 'Scribble' : 'Charades'}
+                      </span>
+                    </div>
                     <div className="text-xs text-slate/50">
                       {ar.player_count}/{ar.max_players} players
                       <span className="mx-1">&middot;</span>
@@ -56,82 +49,49 @@ export default function Home({ onCreate, onJoin, onRejoin, onLeaveRoom, loadingC
           </div>
         )}
 
-        <div className="segmented">
-          <button
-            className={tab === 'create' ? 'segmented-option-active' : 'segmented-option'}
-            onClick={() => setTab('create')}
-          >
-            Create Room
-          </button>
-          <button
-            className={tab === 'join' ? 'segmented-option-active' : 'segmented-option'}
-            onClick={() => setTab('join')}
-          >
-            Join Room
-          </button>
+        {/* Game Selector */}
+        <div>
+          <h2 className="font-display text-2xl mb-1">Choose a Game</h2>
+          <p className="text-sm text-slate/60 mb-4">Pick a game and create or join a room</p>
         </div>
 
-        {tab === 'create' ? (
-          <div className="card p-6 space-y-6 animate-pop">
-            <div>
-              <h2 className="font-display text-2xl mb-1">Create a Room</h2>
-              <p className="text-sm text-slate/60">Configure your game and invite friends</p>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {/* Charades card */}
+          <button
+            className="card p-6 text-left hover:shadow-hover transition group"
+            onClick={() => onSelectGame('charades')}
+          >
+            <div className="flex items-start gap-4">
+              <div className="h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center text-2xl shrink-0">
+                &#128172;
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="font-display text-xl mb-1 group-hover:text-accent transition">Charades</div>
+                <p className="text-sm text-slate/60">
+                  Describe words with hints — no saying the word! Others guess in the chat.
+                </p>
+              </div>
             </div>
+          </button>
 
-            <RangeSlider label="Rounds" value={rounds} min={1} max={10} onChange={setRounds} />
-            <RangeSlider label="Timer" value={timer} min={30} max={120} step={10} unit="s" onChange={setTimer} />
-
-            <div className="space-y-2">
-              <span className="text-xs text-slate/60 font-medium">Difficulty</span>
-              <DifficultySelector value={difficulty} onChange={setDifficulty} />
+          {/* Scribble card */}
+          <button
+            className="card p-6 text-left hover:shadow-hover transition group"
+            onClick={() => onSelectGame('scribble')}
+          >
+            <div className="flex items-start gap-4">
+              <div className="h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center text-2xl shrink-0">
+                &#9999;&#65039;
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="font-display text-xl mb-1 group-hover:text-accent transition">Scribble</div>
+                <p className="text-sm text-slate/60">
+                  Draw the word on a canvas — others try to guess what you're sketching!
+                </p>
+              </div>
             </div>
-
-            <RangeSlider label="Max Players" value={maxPlayers} min={2} max={20} onChange={setMaxPlayers} />
-
-            <button
-              className="btn-primary w-full py-3.5 text-base touch-target flex items-center justify-center gap-2"
-              onClick={() =>
-                onCreate({
-                  rounds_total: rounds,
-                  difficulty: difficulty,
-                  turn_seconds: timer,
-                  max_players: maxPlayers
-                })
-              }
-              disabled={loadingCreate}
-            >
-              {loadingCreate ? <Spinner size={18} /> : null}
-              Create Room
-            </button>
-          </div>
-        ) : (
-          <div className="card p-6 space-y-6 animate-pop">
-            <div>
-              <h2 className="font-display text-2xl mb-1">Join a Room</h2>
-              <p className="text-sm text-slate/60">Enter the code shared by your host</p>
-            </div>
-
-            <input
-              className="w-full rounded-xl border-2 border-accent/20 focus:border-accent px-4 py-4 text-center font-display text-2xl tracking-[0.3em] uppercase touch-target outline-none transition"
-              placeholder="ABCDEF"
-              maxLength={6}
-              value={roomCode}
-              onChange={(e) => setRoomCode(e.target.value.toUpperCase())}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && roomCode.trim()) onJoin(roomCode)
-              }}
-            />
-
-            <button
-              className="btn-primary w-full py-3.5 text-base touch-target flex items-center justify-center gap-2"
-              onClick={() => onJoin(roomCode)}
-              disabled={loadingJoin || !roomCode.trim()}
-            >
-              {loadingJoin ? <Spinner size={18} /> : null}
-              Join Room
-            </button>
-          </div>
-        )}
+          </button>
+        </div>
       </div>
     </div>
   )

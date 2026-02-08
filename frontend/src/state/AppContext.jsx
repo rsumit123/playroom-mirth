@@ -286,7 +286,7 @@ export function AppProvider({ children }) {
     socket.off('game:reconnect_grace')
     socket.off('disconnect')
     socket.off('connect')
-    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, word: null, lastGuess: null, roundEnd: null, gameEnd: null })))
+    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, word: null, lastGuess: null, roundEnd: null, gameEnd: null, scribbleStrokes: [] })))
     socket.on('game:new_word', (payload) => setGame((g) => ({ ...g, word: payload.word })))
     socket.on('chat:message', (payload) => {
       setGame((g) => ({ ...g, messages: [...(g.messages || []), payload] }))
@@ -299,6 +299,15 @@ export function AppProvider({ children }) {
     })))
     socket.on('game:round_end', (payload) => setGame((g) => ({ ...g, roundEnd: payload })))
     socket.on('game:game_end', (payload) => setGame((g) => ({ ...g, gameEnd: payload })))
+    // Scribble events
+    socket.off('scribble:draw')
+    socket.off('scribble:clear')
+    socket.on('scribble:draw', (payload) => {
+      setGame((g) => ({ ...g, scribbleStrokes: [...(g.scribbleStrokes || []), payload] }))
+    })
+    socket.on('scribble:clear', () => {
+      setGame((g) => ({ ...g, scribbleStrokes: [] }))
+    })
     socket.on('game:player_removed', (payload) => {
       setGame((g) => ({ ...g, removed: payload }))
       if (payload?.player_id) {
@@ -351,6 +360,16 @@ export function AppProvider({ children }) {
     return socket.emit('chat:message', { room_code: roomCode, message })
   }
 
+  function emitScribbleDraw(roomCode, stroke) {
+    const socket = getSocket()
+    return socket.emit('scribble:draw', { room_code: roomCode, ...stroke })
+  }
+
+  function emitScribbleClear(roomCode) {
+    const socket = getSocket()
+    return socket.emit('scribble:clear', { room_code: roomCode })
+  }
+
   const value = useMemo(() => ({
     auth,
     room,
@@ -373,6 +392,8 @@ export function AppProvider({ children }) {
     emitGameStart,
     emitNextRound,
     emitChat,
+    emitScribbleDraw,
+    emitScribbleClear,
     activeRooms,
     fetchActiveRooms,
     leaveActiveRoom,

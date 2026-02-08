@@ -1,0 +1,236 @@
+import pytest
+from pydantic import ValidationError
+
+from app.db.session import SessionLocal
+from app.models.room import Room
+from app.schemas.room import RoomCreateRequest, RoomCreateGuestRequest, RoomOut
+
+
+# ---------------------------------------------------------------------------
+# Schema-level tests for RoomCreateRequest
+# ---------------------------------------------------------------------------
+
+
+def test_room_create_request_default_game_type():
+    """RoomCreateRequest should default game_type to 'charades'."""
+    req = RoomCreateRequest(rounds_total=3, difficulty=1, turn_seconds=60)
+    assert req.game_type == "charades"
+
+
+def test_room_create_request_explicit_charades():
+    """Explicitly passing game_type='charades' should work."""
+    req = RoomCreateRequest(
+        rounds_total=2, difficulty=2, turn_seconds=45, game_type="charades"
+    )
+    assert req.game_type == "charades"
+
+
+def test_room_create_request_scribble():
+    """Passing game_type='scribble' should be accepted."""
+    req = RoomCreateRequest(
+        rounds_total=1, difficulty=1, turn_seconds=90, game_type="scribble"
+    )
+    assert req.game_type == "scribble"
+
+
+def test_room_create_request_custom_game_type():
+    """Any string is accepted (schema does not restrict to enum)."""
+    req = RoomCreateRequest(
+        rounds_total=1, difficulty=1, turn_seconds=60, game_type="trivia"
+    )
+    assert req.game_type == "trivia"
+
+
+def test_room_create_request_max_players_default():
+    """max_players should default to 20."""
+    req = RoomCreateRequest(rounds_total=1, difficulty=1, turn_seconds=60)
+    assert req.max_players == 20
+
+
+def test_room_create_request_missing_required_fields():
+    """Omitting required fields should raise ValidationError."""
+    with pytest.raises(ValidationError):
+        RoomCreateRequest(difficulty=1, turn_seconds=60)  # missing rounds_total
+
+    with pytest.raises(ValidationError):
+        RoomCreateRequest(rounds_total=1, turn_seconds=60)  # missing difficulty
+
+    with pytest.raises(ValidationError):
+        RoomCreateRequest(rounds_total=1, difficulty=1)  # missing turn_seconds
+
+
+def test_room_create_guest_request_inherits_game_type():
+    """RoomCreateGuestRequest extends RoomCreateRequest and keeps game_type default."""
+    req = RoomCreateGuestRequest(
+        guest_token="abc123",
+        rounds_total=2,
+        difficulty=1,
+        turn_seconds=60,
+    )
+    assert req.game_type == "charades"
+    assert req.guest_token == "abc123"
+
+
+def test_room_create_guest_request_with_scribble():
+    """RoomCreateGuestRequest should accept game_type='scribble'."""
+    req = RoomCreateGuestRequest(
+        guest_token="abc123",
+        rounds_total=2,
+        difficulty=1,
+        turn_seconds=60,
+        game_type="scribble",
+    )
+    assert req.game_type == "scribble"
+
+
+# ---------------------------------------------------------------------------
+# Schema-level tests for RoomOut
+# ---------------------------------------------------------------------------
+
+
+def test_room_out_default_game_type():
+    """RoomOut should default game_type to 'charades'."""
+    out = RoomOut(
+        id=1,
+        code="ABCDEF",
+        status="lobby",
+        max_players=20,
+        min_players=2,
+        rounds_total=3,
+        difficulty=1,
+        turn_seconds=60,
+    )
+    assert out.game_type == "charades"
+
+
+def test_room_out_preserves_game_type():
+    """RoomOut should preserve an explicit game_type."""
+    out = RoomOut(
+        id=1,
+        code="ABCDEF",
+        status="lobby",
+        max_players=20,
+        min_players=2,
+        rounds_total=3,
+        difficulty=1,
+        turn_seconds=60,
+        game_type="scribble",
+    )
+    assert out.game_type == "scribble"
+
+
+# ---------------------------------------------------------------------------
+# Model-level tests for Room (database)
+# ---------------------------------------------------------------------------
+
+
+def test_room_model_default_game_type():
+    """Room ORM model should default game_type to 'charades'."""
+    db = SessionLocal()
+    try:
+        room = Room(
+            code="TSTGAM",
+            host_user_id=None,
+            host_guest_id=None,
+            rounds_total=2,
+            difficulty=1,
+            turn_seconds=60,
+        )
+        db.add(room)
+        db.commit()
+        db.refresh(room)
+
+        assert room.game_type == "charades"
+        assert room.status == "lobby"
+    finally:
+        db.close()
+
+
+def test_room_model_scribble_game_type():
+    """Room ORM model should persist game_type='scribble' correctly."""
+    db = SessionLocal()
+    try:
+        room = Room(
+            code="SCRBTL",
+            host_user_id=None,
+            host_guest_id=None,
+            rounds_total=1,
+            difficulty=2,
+            turn_seconds=90,
+            game_type="scribble",
+        )
+        db.add(room)
+        db.commit()
+        db.refresh(room)
+
+        assert room.game_type == "scribble"
+    finally:
+        db.close()
+
+
+def test_room_model_query_by_game_type():
+    """Should be able to query rooms by game_type."""
+    db = SessionLocal()
+    try:
+        db.add(Room(code="CHR001", rounds_total=1, difficulty=1, turn_seconds=60, game_type="charades"))
+        db.add(Room(code="SCR001", rounds_total=1, difficulty=1, turn_seconds=60, game_type="scribble"))
+        db.add(Room(code="CHR002", rounds_total=1, difficulty=1, turn_seconds=60, game_type="charades"))
+        db.commit()
+
+        charades_rooms = db.query(Room).filter(Room.game_type == "charades").all()
+        scribble_rooms = db.query(Room).filter(Room.game_type == "scribble").all()
+
+        assert len(charades_rooms) == 2
+        assert len(scribble_rooms) == 1
+        assert scribble_rooms[0].code == "SCR001"
+    finally:
+        db.close()
+
+
+def test_room_create_via_api_default_game_type(client):
+    """Creating a room via POST /rooms should default game_type to 'charades'."""
+    # Register and login
+    reg = client.post("/register", json={"email": "gametype@example.com", "password": "secret"})
+    assert reg.status_code == 201
+    login = client.post(
+        "/token",
+        data={"username": "gametype@example.com", "password": "secret"},
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+    )
+    token = login.json()["access_token"]
+
+    create = client.post(
+        "/rooms",
+        json={"rounds_total": 2, "difficulty": 1, "turn_seconds": 60, "max_players": 10},
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    assert create.status_code == 201
+    room_data = create.json()["room"]
+    assert room_data["game_type"] == "charades"
+
+
+def test_room_create_via_api_with_scribble(client):
+    """Creating a room with game_type='scribble' should persist correctly."""
+    reg = client.post("/register", json={"email": "scribble@example.com", "password": "secret"})
+    assert reg.status_code == 201
+    login = client.post(
+        "/token",
+        data={"username": "scribble@example.com", "password": "secret"},
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+    )
+    token = login.json()["access_token"]
+
+    create = client.post(
+        "/rooms",
+        json={
+            "rounds_total": 2,
+            "difficulty": 1,
+            "turn_seconds": 60,
+            "max_players": 10,
+            "game_type": "scribble",
+        },
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    assert create.status_code == 201
+    room_data = create.json()["room"]
+    assert room_data["game_type"] == "scribble"

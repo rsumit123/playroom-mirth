@@ -5,30 +5,14 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function HomePage() {
   const navigate = useNavigate()
-  const { createRoom, joinRoom, bindLobbyEvents, ui, activeRooms, fetchActiveRooms, leaveActiveRoom } = useApp()
+  const { joinRoom, bindLobbyEvents, ui, activeRooms, fetchActiveRooms, leaveActiveRoom } = useApp()
 
   useEffect(() => {
     fetchActiveRooms()
   }, [])
 
-  async function handleCreate(payload) {
-    try {
-      const res = await createRoom(payload)
-      bindLobbyEvents(res.room.code)
-      navigate('/lobby')
-    } catch {
-      // errors surfaced via toast
-    }
-  }
-
-  async function handleJoin(roomCode) {
-    try {
-      await joinRoom(roomCode)
-      bindLobbyEvents(roomCode)
-      navigate('/lobby')
-    } catch {
-      // errors surfaced via toast
-    }
+  function handleSelectGame(gameType) {
+    navigate(`/play/${gameType}`)
   }
 
   async function handleRejoin(roomCode) {
@@ -43,12 +27,9 @@ export default function HomePage() {
 
   return (
     <Home
-      onCreate={handleCreate}
-      onJoin={handleJoin}
+      onSelectGame={handleSelectGame}
       onRejoin={handleRejoin}
       onLeaveRoom={leaveActiveRoom}
-      loadingCreate={Boolean(ui?.loadingKeys?.create_room)}
-      loadingJoin={Boolean(ui?.loadingKeys?.join_room)}
       loadingLeave={Boolean(ui?.loadingKeys?.leave_room)}
       activeRooms={activeRooms}
     />

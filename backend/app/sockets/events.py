@@ -80,7 +80,7 @@ async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
     """Select a word, emit turn_start + new_word, schedule timer."""
     start_turn(state)
     with SessionLocal() as db:
-        word = _select_word(db, state.difficulty, state.word_history_ids)
+        word = _select_word(db, state.difficulty, state.word_history_ids, state.game_type)
         if word:
             state.current_word_id = word.id
             state.current_word_text = word.text
@@ -95,6 +95,7 @@ async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
             "turn_seconds": state.turn_seconds,
             "turn_start_ts": int(state.turn_start_ts),
             "round_index": state.round_index,
+            "game_type": state.game_type,
         },
         room=room_code,
     )
@@ -360,29 +361,20 @@ def _hint_contains_target(hint: str, target: str) -> bool:
     return False
 
 
-def _select_word(db, difficulty: int, history_ids: list[int]) -> Word | None:
+def _select_word(db, difficulty: int, history_ids: list[int], game_type: str = "charades") -> Word | None:
+    base = db.query(Word).filter(Word.active.is_(True), Word.game_type == game_type, ~Word.id.in_(history_ids))
     if difficulty == 0:
         # Mixed mode: 20% easy, 50% medium, 30% hard
         roll = random.random()
         pick_diff = 1 if roll < 0.2 else (2 if roll < 0.7 else 3)
-        word = (
-            db.query(Word)
-            .filter(Word.active.is_(True), Word.difficulty == pick_diff, ~Word.id.in_(history_ids))
-            .order_by(sa_func.random())
-            .first()
-        )
+        word = base.filter(Word.difficulty == pick_diff).order_by(sa_func.random()).first()
         if word:
             return word
-        return db.query(Word).filter(Word.active.is_(True), ~Word.id.in_(history_ids)).order_by(sa_func.random()).first()
-    word = (
-        db.query(Word)
-        .filter(Word.active.is_(True), Word.difficulty == difficulty, ~Word.id.in_(history_ids))
-        .order_by(sa_func.random())
-        .first()
-    )
+        return base.order_by(sa_func.random()).first()
+    word = base.filter(Word.difficulty == difficulty).order_by(sa_func.random()).first()
     if word:
         return word
-    return db.query(Word).filter(Word.active.is_(True), ~Word.id.in_(history_ids)).order_by(sa_func.random()).first()
+    return base.order_by(sa_func.random()).first()
 
 
 @sio.on("game:start")
@@ -423,7 +415,7 @@ async def game_start(sid, data):
             await emit_error(sid, "Not enough players", code="BAD_REQUEST")
             return {"ok": False, "error": "BAD_REQUEST"}
 
-        word = _select_word(db, room.difficulty, [])
+        word = _select_word(db, room.difficulty, [], room.game_type)
         if not word:
             await emit_error(sid, "No words available", code="NO_WORDS")
             return {"ok": False, "error": "NO_WORDS"}
@@ -434,6 +426,7 @@ async def game_start(sid, data):
             rounds_total=room.rounds_total,
             turn_seconds=room.turn_seconds,
             difficulty=room.difficulty,
+            game_type=room.game_type,
             player_order=[p.id for p in players],
             scores={p.id: p.score for p in players},
             current_word_id=word.id,
@@ -453,6 +446,7 @@ async def game_start(sid, data):
             "turn_seconds": state.turn_seconds,
             "turn_start_ts": int(state.turn_start_ts),
             "round_index": state.round_index,
+            "game_type": state.game_type,
         },
         room=room_code_val,
     )
@@ -486,6 +480,10 @@ async def chat_message(sid, data):
     target = state.current_word_text or ""
 
     if player_id == describer_id:
+        if state.game_type == "scribble":
+            # In scribble, the drawer can't send chat messages
+            await emit_error(sid, "Drawer cannot chat", code="FORBIDDEN")
+            return {"ok": False, "error": "FORBIDDEN"}
         if _hint_contains_target(message, target):
             await emit_error(sid, "Hint contains target word", code="HINT_BLOCKED")
             return {"ok": False, "error": "HINT_BLOCKED"}
@@ -502,7 +500,7 @@ async def chat_message(sid, data):
             room=room_code,
         )
         with SessionLocal() as db:
-            word = _select_word(db, state.difficulty, state.word_history_ids)
+            word = _select_word(db, state.difficulty, state.word_history_ids, state.game_type)
             if word:
                 state.current_word_id = word.id
                 state.current_word_text = word.text
@@ -569,6 +567,44 @@ async def game_next_round(sid, data):
     async with state.lock:
         await _emit_next_turn(state, room_code)
     return {"ok": True}
+
+
+@sio.on("scribble:draw")
+async def scribble_draw(sid, data):
+    """Relay drawing data from drawer to all other players in the room."""
+    room_code = data.get("room_code")
+    if not room_code:
+        return
+    state = ROOM_STATES.get(room_code)
+    if not state or state.game_type != "scribble":
+        return
+    player_id = SID_TO_PLAYER.get(sid)
+    describer_id = state.player_order[state.describer_index]
+    if player_id != describer_id:
+        return
+    # Relay to everyone except the drawer
+    await sio.emit(
+        "scribble:draw",
+        {"points": data.get("points", []), "color": data.get("color", "#000000"), "width": data.get("width", 3)},
+        room=room_code,
+        skip_sid=sid,
+    )
+
+
+@sio.on("scribble:clear")
+async def scribble_clear(sid, data):
+    """Drawer clears the canvas; relay to room."""
+    room_code = data.get("room_code")
+    if not room_code:
+        return
+    state = ROOM_STATES.get(room_code)
+    if not state or state.game_type != "scribble":
+        return
+    player_id = SID_TO_PLAYER.get(sid)
+    describer_id = state.player_order[state.describer_index]
+    if player_id != describer_id:
+        return
+    await sio.emit("scribble:clear", {}, room=room_code, skip_sid=sid)
 
 
 def restore_game_states() -> None:

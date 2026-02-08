@@ -13,18 +13,18 @@ export default function Welcome({ onGuest, onSignIn, onHowTo, loadingGuest }) {
         </div>
 
         <h1 className="font-display text-4xl sm:text-5xl mb-3">
-          Describe. Guess. <span className="text-accent">Win.</span>
+          Play. Laugh. <span className="text-accent">Win.</span>
         </h1>
         <p className="text-slate/60 text-base mb-8 max-w-sm">
-          The multiplayer word game where every hint counts. Play with friends in seconds.
+          Party games with friends — charades, drawing, and more. Jump in and play in seconds.
         </p>
 
         <div className="flex items-center gap-3 mb-10 text-sm flex-wrap justify-center">
-          <span className="badge bg-accent/10 text-accent">1. Describe</span>
-          <span className="text-slate/30">&rarr;</span>
-          <span className="badge bg-accent/10 text-accent">2. Guess</span>
-          <span className="text-slate/30">&rarr;</span>
-          <span className="badge bg-accent/10 text-accent">3. Score</span>
+          <span className="badge bg-accent/10 text-accent">Charades</span>
+          <span className="text-slate/30">&middot;</span>
+          <span className="badge bg-accent/10 text-accent">Scribble</span>
+          <span className="text-slate/30">&middot;</span>
+          <span className="badge bg-accent/10 text-accent">More soon</span>
         </div>
 
         <div className="w-full space-y-3 max-w-xs">

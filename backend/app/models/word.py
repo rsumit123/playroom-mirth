@@ -11,3 +11,4 @@ class Word(Base):
     text: Mapped[str] = mapped_column(String(128), unique=True, nullable=False)
     difficulty: Mapped[int] = mapped_column(Integer, default=1, nullable=False)
     active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
+    game_type: Mapped[str] = mapped_column(String(20), default="charades", nullable=False)

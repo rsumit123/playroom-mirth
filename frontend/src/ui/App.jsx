@@ -4,8 +4,10 @@ import { useApp } from '../state/AppContext.jsx'
 import WelcomePage from './pages/WelcomePage.jsx'
 import AuthPage from './pages/AuthPage.jsx'
 import HomePage from './pages/HomePage.jsx'
+import GameSetupPage from './pages/GameSetupPage.jsx'
 import LobbyPage from './pages/LobbyPage.jsx'
 import GamePage from './pages/GamePage.jsx'
+import ScribbleGamePage from './pages/ScribbleGamePage.jsx'
 import RoundEndPage from './pages/RoundEndPage.jsx'
 import GameEndPage from './pages/GameEndPage.jsx'
 import HowToPage from './pages/HowToPage.jsx'
@@ -34,7 +36,7 @@ function AppShell() {
   const { auth, logout, ui, clearToast } = useApp()
 
   const path = location.pathname
-  const showTopBar = ['/home', '/lobby'].includes(path)
+  const showTopBar = path === '/home' || path === '/lobby' || path.startsWith('/play/')
 
   return (
     <>
@@ -59,8 +61,10 @@ function AppShell() {
         <Route path="/" element={<WelcomePage />} />
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/home" element={<HomePage />} />
+        <Route path="/play/:gameType" element={<GameSetupPage />} />
         <Route path="/lobby" element={<LobbyPage />} />
         <Route path="/game" element={<GamePage />} />
+        <Route path="/scribble" element={<ScribbleGamePage />} />
         <Route path="/round-end" element={<RoundEndPage />} />
         <Route path="/game-end" element={<GameEndPage />} />
         <Route path="/how-to" element={<HowToPage />} />

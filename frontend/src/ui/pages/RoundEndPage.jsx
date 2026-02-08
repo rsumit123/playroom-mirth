@@ -20,7 +20,8 @@ export default function RoundEndPage() {
   useEffect(() => {
     if (game?.turn && game.turn !== turnRef.current) {
       turnRef.current = game.turn
-      navigate('/game')
+      const gameType = game.turn.game_type || room?.game_type || 'charades'
+      navigate(gameType === 'scribble' ? '/scribble' : '/game')
     }
   }, [game?.turn])
 

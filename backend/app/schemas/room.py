@@ -8,6 +8,7 @@ class RoomCreateRequest(BaseModel):
     difficulty: int
     turn_seconds: int
     max_players: int = 20
+    game_type: str = "charades"
 
 
 class RoomCreateGuestRequest(RoomCreateRequest):
@@ -34,6 +35,7 @@ class RoomOut(BaseModel):
     rounds_total: int
     difficulty: int
     turn_seconds: int
+    game_type: str = "charades"
 
     class Config:
         from_attributes = True

@@ -89,6 +89,7 @@ def create_room_for_user(db: Session, user_id: int, payload: RoomCreateRequest) 
         rounds_total=payload.rounds_total,
         difficulty=payload.difficulty,
         turn_seconds=payload.turn_seconds,
+        game_type=payload.game_type,
     )
     db.add(room)
     db.commit()
@@ -124,6 +125,7 @@ def create_room_for_guest(db: Session, payload: RoomCreateGuestRequest) -> Lobby
         rounds_total=payload.rounds_total,
         difficulty=payload.difficulty,
         turn_seconds=payload.turn_seconds,
+        game_type=payload.game_type,
     )
     db.add(room)
     db.commit()
@@ -227,6 +229,7 @@ def get_active_rooms(db: Session, user_id: int | None, guest: Guest | None) -> l
             "room_status": room.status,
             "player_count": player_count,
             "max_players": room.max_players,
+            "game_type": room.game_type,
         })
     return result
 
