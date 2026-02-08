@@ -10,3 +10,10 @@ afterEach(() => {
 
 // jsdom doesn't implement scrollIntoView
 Element.prototype.scrollIntoView = () => {}
+
+// jsdom doesn't implement ResizeObserver
+global.ResizeObserver = class ResizeObserver {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+}

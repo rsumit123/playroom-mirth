@@ -23,12 +23,10 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
       <div className="page-medium space-y-6">
 
         {/* Back + Title */}
-        <div className="flex items-center gap-3">
-          <button className="btn-ghost-sm touch-target" onClick={onBack}>&larr; Back</button>
-          <div>
-            <h2 className="font-display text-2xl">{label}</h2>
-            <p className="text-xs text-slate/50">Create or join a room</p>
-          </div>
+        <div className="relative text-center py-1">
+          <button className="btn-ghost-sm touch-target absolute left-0 top-1/2 -translate-y-1/2" onClick={onBack}>&larr; Back</button>
+          <h2 className="font-display text-2xl">{label}</h2>
+          <p className="text-xs text-slate/50">Create or join a room</p>
         </div>
 
         <div className="segmented">

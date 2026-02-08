@@ -161,7 +161,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
           {/* Canvas area */}
           <div className="flex-1 p-3 min-h-0">
             {role === 'drawer' ? (
-              <DrawingCanvas onStroke={onStroke} onClear={onClear} />
+              <DrawingCanvas key={game?.word || turn?.turn_start_ts || ''} onStroke={onStroke} onClear={onClear} />
             ) : (
               <CanvasViewer strokes={game?.scribbleStrokes || []} />
             )}

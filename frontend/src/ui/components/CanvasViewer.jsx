@@ -13,6 +13,7 @@ export default function CanvasViewer({ strokes = [] }) {
     const parent = canvas.parentElement
     const w = parent.clientWidth
     const h = parent.clientHeight
+    if (w === 0 || h === 0) return
     if (canvas.width !== w || canvas.height !== h) {
       canvas.width = w
       canvas.height = h
@@ -23,10 +24,15 @@ export default function CanvasViewer({ strokes = [] }) {
     }
   }, [strokes])
 
+  // Use ResizeObserver to detect all size changes (including mobile keyboard)
   useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const parent = canvas.parentElement
     resizeCanvas()
-    window.addEventListener('resize', resizeCanvas)
-    return () => window.removeEventListener('resize', resizeCanvas)
+    const ro = new ResizeObserver(() => resizeCanvas())
+    ro.observe(parent)
+    return () => ro.disconnect()
   }, [resizeCanvas])
 
   // Draw new strokes incrementally

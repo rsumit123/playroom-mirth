@@ -27,6 +27,7 @@ export default function DrawingCanvas({ onStroke, onClear }) {
     const parent = canvas.parentElement
     const w = parent.clientWidth
     const h = parent.clientHeight
+    if (w === 0 || h === 0) return
     if (canvas.width !== w || canvas.height !== h) {
       canvas.width = w
       canvas.height = h
@@ -34,10 +35,15 @@ export default function DrawingCanvas({ onStroke, onClear }) {
     }
   }, [])
 
+  // Use ResizeObserver to detect all size changes (including mobile keyboard)
   useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const parent = canvas.parentElement
     resizeCanvas()
-    window.addEventListener('resize', resizeCanvas)
-    return () => window.removeEventListener('resize', resizeCanvas)
+    const ro = new ResizeObserver(() => resizeCanvas())
+    ro.observe(parent)
+    return () => ro.disconnect()
   }, [resizeCanvas])
 
   function redrawAll() {
@@ -142,13 +148,13 @@ export default function DrawingCanvas({ onStroke, onClear }) {
       </div>
 
       {/* Toolbar */}
-      <div className="flex items-center justify-between gap-2 pt-2 px-1">
-        <div className="flex items-center gap-1.5">
+      <div className="flex items-center flex-wrap gap-2 pt-2 px-1">
+        <div className="flex items-center gap-1">
           {COLORS.map((c) => (
             <button
               key={c}
               type="button"
-              className={`h-8 w-8 rounded-full border-2 transition touch-target ${
+              className={`h-7 w-7 rounded-full border-2 transition ${
                 !isErasing && color === c ? 'border-accent scale-110' : 'border-transparent'
               }`}
               style={{ backgroundColor: c }}
@@ -156,10 +162,10 @@ export default function DrawingCanvas({ onStroke, onClear }) {
             />
           ))}
         </div>
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1 ml-auto">
           <button
             type="button"
-            className={`h-8 px-3 rounded-lg text-xs font-medium border transition touch-target ${
+            className={`h-7 px-2 rounded-lg text-[11px] font-medium border transition ${
               isErasing ? 'bg-accent text-white border-accent' : 'bg-white border-black/10 text-slate/70'
             }`}
             onClick={() => setIsErasing(!isErasing)}
@@ -168,14 +174,14 @@ export default function DrawingCanvas({ onStroke, onClear }) {
           </button>
           <button
             type="button"
-            className="h-8 px-3 rounded-lg text-xs font-medium border border-black/10 bg-white text-slate/70 touch-target"
+            className="h-7 px-2 rounded-lg text-[11px] font-medium border border-black/10 bg-white text-slate/70"
             onClick={handleUndo}
           >
             Undo
           </button>
           <button
             type="button"
-            className="h-8 px-3 rounded-lg text-xs font-medium border border-danger/20 bg-white text-danger/70 touch-target"
+            className="h-7 px-2 rounded-lg text-[11px] font-medium border border-danger/20 bg-white text-danger/70"
             onClick={handleClear}
           >
             Clear
