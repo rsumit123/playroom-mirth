@@ -225,7 +225,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
 
       {/* Mobile scoreboard FAB */}
       <button
-        className="lg:hidden fixed bottom-20 right-4 z-30 h-12 w-12 rounded-full bg-accent text-white shadow-hover flex items-center justify-center text-lg touch-target"
+        className="lg:hidden fixed bottom-20 left-4 z-30 h-12 w-12 rounded-full bg-accent text-white shadow-hover flex items-center justify-center text-lg touch-target"
         onClick={() => setShowScoreboard(true)}
       >
         &#127942;

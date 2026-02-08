@@ -289,7 +289,8 @@ export function AppProvider({ children }) {
       ...g,
       lastGuess: payload,
       scores: payload.scores || g.scores,
-      messages: [...(g.messages || []), { player_id: payload.guesser_id, message: payload.word, correct: true }]
+      messages: [...(g.messages || []), { player_id: payload.guesser_id, message: payload.word, correct: true }],
+      scribbleStrokes: [],
     })))
     socket.on('game:round_end', (payload) => setGame((g) => ({ ...g, roundEnd: payload })))
     socket.on('game:game_end', (payload) => setGame((g) => ({ ...g, gameEnd: payload })))
