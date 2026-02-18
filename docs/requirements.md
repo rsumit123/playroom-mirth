@@ -1,134 +1,109 @@
-# Charade Chat (FastAPI Edition) Requirements
+# PlayRoom — Requirements
 
 ## 1. Scope and Goals
-- Build a real-time web-based multiplayer charades/guessing game.
-- Support registered and guest users.
-- Target MVP scale: 100 concurrent users, up to 20 players per room.
-- Deliver reliable real-time gameplay, score tracking, and room lifecycle.
+- Real-time web-based multiplayer party game platform.
+- Two games: **Charades** (word guessing via chat hints) and **Scribble** (word guessing via drawing).
+- Support Google Sign-In users and anonymous guest users.
+- Target: up to 20 players per room, reliable real-time gameplay.
 
 ## 2. Technology Stack
-- Frontend: React (SPA) with `socket.io-client`.
-- Styling: CSS Modules or Tailwind.
-- Backend: FastAPI (ASGI) served by `uvicorn`.
-- Real-time: `python-socketio` integrated with FastAPI.
-- Database: SQLite3.
-- ORM: SQLAlchemy.
-- Validation: Pydantic.
-- Auth: OAuth2PasswordBearer + JWT (python-jose), password hashing with passlib + bcrypt.
-- Hosting: Docker container.
+- **Frontend**: React 18 + Vite SPA, Tailwind CSS, `socket.io-client`.
+- **Backend**: FastAPI (ASGI) + `python-socketio`, served by Uvicorn.
+- **Database**: SQLite via SQLAlchemy ORM.
+- **Validation**: Pydantic v2 schemas.
+- **Auth**: Google Sign-In (OAuth) for registered users, server-issued guest tokens (JWT).
+- **Deployment**: Vercel (frontend), GCP VM + Docker + nginx (backend).
 
 ## 3. Functional Requirements
 
-### 3.1 Authentication and User Management (REST)
-- `POST /register`: Create a new user.
-- `POST /token`: Login and return a JWT.
-- Passwords must be hashed using bcrypt.
-- JWT is required to authenticate Socket connections.
+### 3.1 Authentication
+
+#### Google Sign-In
+- `POST /auth/google` — exchange Google ID token for a JWT.
+- JWT is used for all authenticated REST calls and included in Socket.IO event payloads.
+- New users are auto-created on first sign-in (display name and avatar from Google profile).
 
 #### Guest Mode
-- Guests are allowed to play one full match total.
-- Guest identity must be durable across refresh (cookie + server-side record).
+- `POST /guest` — create a guest identity with a display name. Returns a guest token.
+- `PATCH /guest` — update guest display name.
+- Guest tokens are stored in localStorage. No match limits — guests can play unlimited games.
+- Display name is required (frontend disables "Play as Guest" when name is empty).
 
-#### Concurrent Game Limit
-- A registered user may participate in at most 3 active games simultaneously.
-- The server must enforce this on join/start.
+### 3.2 Room Management
 
-### 3.2 Room Management (Socket + REST)
-- Create Room: Generates unique 6-character room code.
-- Join Room: Requires room code and valid auth (registered or guest).
-- Room Capacity: Max 20 players.
-- Minimum to Start: 2 players (including host).
-- Host can start the game without reaching max players.
-- Late joiners are not allowed mid-game; they join the lobby and wait for the next game.
+- **Create Room**: Generates a unique 6-character room code.
+  - `POST /rooms` (signed-in) or `POST /rooms/guest` (guest).
+- **Join Room**: `POST /rooms/join` with room code and auth token.
+- **Room Capacity**: Max 20 players.
+- **Minimum to Start**: 2 players.
+- **Late Join**: Not allowed mid-game; players join the lobby and wait.
+- **Leave Room**: `POST /rooms/{code}/leave`.
+- **Active Rooms**: `GET /rooms/active` lists rooms the user is currently in.
 
 ### 3.3 Game Configuration
-- Host selects:
-  - Number of rounds.
-  - Difficulty (1-3).
-  - Turn timer (30s-120s).
+Host selects before starting:
+- **Game type**: Charades or Scribble.
+- **Number of rounds** (1+).
+- **Difficulty**: 0 (mixed), 1 (easy), 2 (medium), 3 (hard).
+- **Turn timer**: configurable duration per turn.
+- Settings can be changed in the lobby via `PUT /rooms/{code}/settings`.
 
 ### 3.4 Game Loop
-#### Turn
-- A turn is a timed window (30-120 seconds).
-- Multiple words can be guessed within a single turn.
-- After each correct guess, the describer immediately receives a new word.
-- The turn ends only when the timer expires.
+
+#### Charades
+- **Turn**: One player is the describer, others guess via chat.
+  - Describer sends chat hints (without saying the word). Hints containing the word are blocked.
+  - First correct guesser earns points; describer gets a new word immediately.
+  - Multiple words can be guessed per turn.
+  - Turn ends when the timer expires or the host force-ends it.
+- **Scoring**: +10 guesser, +5 describer per correct guess.
+
+#### Scribble
+- **Turn**: One player is the drawer, others guess via chat.
+  - Drawer draws on a shared canvas; strokes are broadcast in real-time.
+  - Each guesser can guess once (first correct guess counts).
+  - Speed-based scoring: +15 (<5s), +12 (<10s), +10 (<20s), +7 (<30s), +5 (30s+).
+  - Drawer bonus: +3 per correct guess, awarded at turn end.
+  - Turn auto-ends when all guessers have guessed correctly, or when the timer expires.
 
 #### Round
-- A round ends when every player has been describer at least once.
-- Describer order is fixed based on join sequence.
+- One round = every player has been describer/drawer once.
+- Describer order follows join sequence.
+- `game:round_end` is broadcast at round boundaries.
+- Host triggers next round with `game:next_round`.
 
 #### Game End
-- The game ends after all rounds are completed.
-
-#### Describer Selection
-- Describer rotation follows join order.
-- The server tracks describer index per round and turn.
-
-#### Correct Guess Handling
-- First correct guesser gets points (see scoring).
-- Server broadcasts `correct_guess` and the correct word to all players.
-- A new word is immediately assigned to the describer and announced to them only.
+- Game ends after all configured rounds are completed.
+- `game:game_end` is broadcast with final scores and leaderboard.
 
 ### 3.5 Hint and Guess Validation
-- All chat messages go through the backend.
-- Hint blocking rules:
-  - Block if the hint contains the target word as an exact or partial match.
-  - Allow plural/singular variations (e.g., `cat` vs `cats`).
-  - Do not allow phonetic matching.
-- Guess validation rule:
-  - `message.lower().strip() == target_word` for a correct guess.
+- All messages flow through the server.
+- **Hint blocking**: Block if the message contains the target word as a substring (case-insensitive).
+- **Guess validation**: `message.lower().strip() == target_word` for a correct guess.
 
-### 3.6 Scoring System
-- First correct guesser: +10 points.
-- Describer: +5 points for each correct guess elicited.
-- Scoreboard is broadcast to the room after every turn switch.
+### 3.6 Word Management
+- Words stored in the database with a difficulty field (1-3).
+- If the selected difficulty bucket is exhausted, the system pulls from another bucket.
+- Word history tracked per room to prevent immediate repeats.
 
-### 3.7 Lobby State
-- Real-time updates of connected players in lobby.
-- Host can adjust settings before game start.
-
-### 3.8 Word Management
-- Words are stored in DB with a difficulty field.
-- Minimum initial dataset: 100 words.
-- If the selected difficulty bucket is exhausted during a game, the system pulls from another difficulty bucket.
-
-### 3.9 Reconnect Handling
-- Grace period: 60 seconds.
-- Player can reconnect and resume their slot within the grace period.
+### 3.7 Reconnect Handling
+- Grace period on disconnect (configurable, default 60s).
+- Player can reconnect within the grace period and resume their slot.
 - If grace period expires, player is removed from the active game.
 
-## 4. Persistence and Recovery
-- Game state must survive UI refresh.
-- Game state should be recoverable after server restart.
-- The system must persist:
-  - Room configuration (rounds, difficulty, timer).
-  - Player list and join order.
-  - Current round and describer index.
-  - Current word.
-  - Scores.
-  - Turn start timestamp and duration for timer recovery.
+### 3.8 Game History
+- `GET /game-history` — returns recent game results for signed-in users.
+- Tracks game type, scores, player count, date, and outcome.
 
-## 5. Non-Functional Requirements
-- Concurrency target: 100 concurrent users.
+## 4. Non-Functional Requirements
 - Room size: max 20 players.
-- Reliable real-time updates with minimal latency for chat and gameplay.
-- Docker-based deployment.
+- Reliable real-time updates with minimal latency.
+- Docker-based backend deployment behind nginx reverse proxy with SSL.
+- Frontend deployed as static SPA with client-side routing.
+- All REST calls have a 15-second timeout on the frontend.
 
-## 6. Event and API Considerations (High-Level)
-- REST endpoints for registration and login.
-- Socket events for:
-  - Room create/join.
-  - Lobby updates.
-  - Game start.
-  - Turn start/end.
-  - New word to describer.
-  - Chat/guess messages.
-  - Scoreboard updates.
-  - Player reconnect handling.
-
-## 7. Future Enhancements (Out of Scope for MVP)
+## 5. Future Enhancements (Out of Scope)
 - Spectator mode.
-- Dynamic word generation.
+- Dynamic word generation (AI-generated words).
 - Advanced anti-cheat and moderation tools.
-- More sophisticated hint filtering (NLP/phonetics).
+- Additional game modes beyond Charades and Scribble.

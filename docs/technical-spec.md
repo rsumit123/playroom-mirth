@@ -1,105 +1,97 @@
-# Charade Chat (FastAPI Edition) Technical Spec
+# PlayRoom — Technical Specification
 
 ## 1. Architecture Overview
-- Frontend: React SPA with `socket.io-client`.
-- Backend: FastAPI (ASGI) + `python-socketio`.
-- DB: SQLite3 via SQLAlchemy.
-- Auth: JWT for REST and Socket auth.
-- Deployment: Docker container.
 
 ### 1.1 Runtime Components
-- ASGI app hosting FastAPI routes.
-- Socket.IO server mounted on the ASGI app.
-- SQLAlchemy session factory for DB access.
-- In-memory cache for active room state, backed by DB snapshots.
+- **Frontend**: React 18 SPA built with Vite, served via Vercel CDN.
+- **Backend**: FastAPI ASGI app with `python-socketio` mounted, served by Uvicorn.
+- **Database**: SQLite file via SQLAlchemy ORM (persisted via Docker volume).
+- **Reverse Proxy**: nginx with WebSocket support and Let's Encrypt SSL.
 
 ### 1.2 Core Flows
-- Auth flow: REST login returns JWT, stored by client.
-- Socket connect: client sends JWT in handshake auth payload.
-- Room flow: create/join room, lobby updates, game start.
-- Game loop: timed turns, multiple word guesses per turn, scoring, rotation.
-- Persistence: periodic room state snapshots and deterministic recovery on restart.
+- **Auth**: Google Sign-In → `POST /auth/google` → JWT. Guest → `POST /guest` → guest token.
+- **Socket connect**: Client connects to Socket.IO, then emits `room:register` with room code + auth token.
+- **Room flow**: Create/join room via REST, lobby updates via Socket.IO, host starts game.
+- **Game loop**: Timed turns with describer rotation, chat-based guessing, real-time scoring.
+- **Scribble flow**: Drawing strokes broadcast via `scribble:draw`, guessing via `chat:message`.
 
 ## 2. Data Model (SQLAlchemy)
 
-### 2.1 Users
-- `users`
-- Fields:
-  - `id` (PK, int)
-  - `email` (unique, indexed)
-  - `password_hash`
-  - `created_at`
+### 2.1 Users (`users`)
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | Integer, PK | Auto-increment |
+| `email` | String, unique, indexed | From Google profile |
+| `google_id` | String, unique, nullable | Google sub ID |
+| `display_name` | String | From Google profile |
+| `avatar_url` | String, nullable | Google profile picture |
+| `password_hash` | String | Set to `""` for Google users (legacy column) |
+| `created_at` | DateTime | Auto-set |
 
-### 2.2 Guests
-- `guests`
-- Fields:
-  - `id` (PK, int)
-  - `guest_token` (unique, indexed)
-  - `matches_played` (int)
-  - `created_at`
+### 2.2 Guests (`guests`)
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | Integer, PK | Auto-increment |
+| `guest_token` | String, unique, indexed | JWT-like token |
+| `display_name` | String | User-chosen name |
+| `created_at` | DateTime | Auto-set |
 
-### 2.3 Rooms
-- `rooms`
-- Fields:
-  - `id` (PK, int)
-  - `code` (unique, 6 chars)
-  - `host_user_id` (nullable FK users.id)
-  - `host_guest_id` (nullable FK guests.id)
-  - `status` (enum: `lobby`, `active`, `finished`)
-  - `max_players` (int, default 20)
-  - `min_players` (int, default 2)
-  - `rounds_total` (int)
-  - `difficulty` (int, 1-3)
-  - `turn_seconds` (int, 30-120)
-  - `created_at`
+### 2.3 Rooms (`rooms`)
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | Integer, PK | Auto-increment |
+| `code` | String, unique | 6-character room code |
+| `host_user_id` | Integer, FK → users.id, nullable | |
+| `host_guest_id` | Integer, FK → guests.id, nullable | |
+| `status` | String | `lobby`, `active`, `finished` |
+| `game_type` | String | `charades` or `scribble` |
+| `rounds_total` | Integer | Configured by host |
+| `difficulty` | Integer | 0=mixed, 1-3 |
+| `turn_seconds` | Integer | Turn duration |
+| `created_at` | DateTime | Auto-set |
 
-### 2.4 Room Players
-- `room_players`
-- Fields:
-  - `id` (PK, int)
-  - `room_id` (FK rooms.id)
-  - `user_id` (nullable FK users.id)
-  - `guest_id` (nullable FK guests.id)
-  - `join_order` (int)
-  - `score` (int)
-  - `connected` (bool)
-  - `last_seen_at`
-  - `in_game` (bool)
+### 2.4 Room Players (`room_players`)
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | Integer, PK | Auto-increment |
+| `room_id` | Integer, FK → rooms.id | |
+| `user_id` | Integer, FK → users.id, nullable | |
+| `guest_id` | Integer, FK → guests.id, nullable | |
+| `join_order` | Integer | Determines describer rotation |
+| `score` | Integer | Current game score |
+| `connected` | Boolean | Socket connection status |
+| `last_seen_at` | DateTime | For disconnect grace |
+| `in_game` | Boolean | Active in current game |
 
-### 2.5 Words
-- `words`
-- Fields:
-  - `id` (PK, int)
-  - `text` (unique)
-  - `difficulty` (int, 1-3)
-  - `active` (bool)
+### 2.5 Words (`words`)
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | Integer, PK | Auto-increment |
+| `text` | String, unique | The word |
+| `difficulty` | Integer | 1-3 |
+| `active` | Boolean | Can be selected |
 
-### 2.6 Room State Snapshots
-- `room_state`
-- Fields:
-  - `room_id` (PK, FK rooms.id)
-  - `state_json` (JSON text)
-  - `updated_at`
-
-### 2.7 Room Events (Optional for audit)
-- `room_events`
-- Fields:
-  - `id` (PK, int)
-  - `room_id` (FK rooms.id)
-  - `event_type` (string)
-  - `payload_json` (JSON text)
-  - `created_at`
+### 2.6 Game History (`game_history`)
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | Integer, PK | Auto-increment |
+| `user_id` | Integer, FK → users.id | Signed-in user |
+| `room_code` | String | Room where game was played |
+| `game_type` | String | `charades` or `scribble` |
+| `score` | Integer | Player's final score |
+| `rank` | Integer | Leaderboard position |
+| `player_count` | Integer | Total players |
+| `created_at` | DateTime | When game ended |
 
 ## 3. In-Memory Game State
-- Maintain active room state in memory for low-latency access.
-- Periodically snapshot to `room_state` and on key transitions.
-- On restart, rebuild in-memory state from DB snapshots.
 
-### 3.1 Room State Schema (JSON)
-```
+Active room state is maintained in memory (Python dict) for low-latency access during gameplay:
+
+```json
 {
   "room_id": 1,
   "status": "active",
+  "game_type": "charades",
   "round_index": 1,
   "rounds_total": 3,
   "turn_start_ts": 1700000000,
@@ -110,165 +102,155 @@
   "current_word_text": "umbrella",
   "word_history_ids": [12, 14, 55],
   "player_order": [8, 10, 11],
-  "scores": {"8": 20, "10": 10, "11": 0}
+  "scores": {"8": 20, "10": 10, "11": 0},
+  "guessed_players": [8]
 }
 ```
 
+Key differences by game type:
+- **Charades**: `guessed_players` not tracked per-turn (multiple words per turn, any guesser can guess any word).
+- **Scribble**: `guessed_players` tracks who has guessed the current word (each guesser can only guess once). Turn auto-ends when all guessers are in this set.
+
 ## 4. Auth and Identity
-- REST uses OAuth2PasswordBearer.
-- Socket handshake must include JWT in `auth.token`.
-- Guest identity is stored as a durable cookie `guest_token`.
-- Guests are blocked after `matches_played >= 1`.
-- Registered users are blocked if active games >= 3.
+
+### Google Sign-In
+- Frontend uses Google Identity Services (`accounts.google.com/gsi/client`).
+- Google ID token sent to `POST /auth/google`, verified server-side.
+- Server returns a JWT containing `user_id`, `email`, `display_name`.
+
+### Guest Auth
+- `POST /guest` creates a guest record and returns a guest token.
+- Guest token is a JWT containing `guest_id` and `display_name`.
+- Stored in `localStorage` on the frontend.
+
+### Socket.IO Auth
+- Auth tokens are NOT sent in connection headers.
+- Instead, tokens are included in Socket.IO event payloads (e.g., `room:register` payload contains `guest_token` or JWT).
+- Server extracts identity from the payload on each event.
 
 ## 5. Game Logic Details
 
 ### 5.1 Turn Timing
-- Timer runs on the server.
-- Store `turn_start_ts` and `turn_seconds` to recover remaining time.
-- On restart, remaining time = `turn_seconds - (now - turn_start_ts)`.
+- Timer runs on the server using `asyncio` tasks.
+- `turn_start_ts` stored for timer recovery on reconnect.
+- Remaining time sent to clients on reconnect: `turn_seconds - (now - turn_start_ts)`.
 
-### 5.2 Word Selection
-- Filter by selected difficulty.
-- If bucket exhausted, pull from another difficulty bucket.
-- Prevent immediate repeats by tracking `word_history_ids` per room.
+### 5.2 Scoring
 
-### 5.3 Guess Validation
-- Correct guess when `message.lower().strip() == target_word`.
-- The first correct guess wins.
+#### Charades
+| Event | Points |
+|-------|--------|
+| Correct guess (guesser) | +10 |
+| Correct guess (describer) | +5 |
 
-### 5.4 Hint Filtering
-- Block if hint contains the target word as exact or partial match.
-- Allow plural/singular variations.
-- No phonetic matching.
+#### Scribble (speed-based)
+| Guess Time | Guesser Points |
+|------------|---------------|
+| < 5 seconds | +15 |
+| < 10 seconds | +12 |
+| < 20 seconds | +10 |
+| < 30 seconds | +7 |
+| 30+ seconds | +5 |
 
-### 5.5 Rotation
-- Describer order follows `join_order`.
-- One round ends when all players have been describer at least once.
-- Next round begins with same order.
+Drawer bonus: +3 per correct guess, awarded at turn end.
 
-### 5.6 Disconnect and Reconnect
-- Grace period: 60 seconds.
-- If reconnects within grace period, resume slot and role.
-- If grace period expires, remove from active game and skip if they were describer.
+### 5.3 Describer/Drawer Rotation
+- Order follows `join_order` in `room_players`.
+- One round = every active player has been describer/drawer once.
+- Next round repeats the same order.
 
-## 6. REST API Spec
+### 5.4 Disconnect and Reconnect
+- On disconnect, a grace period timer starts (default 60s).
+- `game:reconnect_grace` broadcast to room with countdown.
+- If player reconnects, they resume their slot.
+- If grace expires, `game:player_removed` broadcast; player skipped if they were next describer.
 
-### 6.1 Register
-- `POST /register`
-- Request:
-```
-{ "email": "user@example.com", "password": "secret" }
-```
-- Response:
-```
-{ "id": 1, "email": "user@example.com" }
-```
+## 6. REST API
 
-### 6.2 Login
-- `POST /token`
-- Request:
-```
-{ "username": "user@example.com", "password": "secret" }
-```
-- Response:
-```
-{ "access_token": "JWT", "token_type": "bearer" }
-```
+| Method | Path | Auth | Description |
+|--------|------|------|-------------|
+| POST | `/auth/google` | — | Exchange Google ID token for JWT |
+| POST | `/guest` | — | Create guest identity |
+| PATCH | `/guest` | guest_token | Update guest display name |
+| POST | `/rooms` | JWT | Create room (signed-in user) |
+| POST | `/rooms/guest` | guest_token | Create room (guest) |
+| POST | `/rooms/join` | JWT/guest | Join existing room |
+| GET | `/rooms/{code}` | JWT/guest | Get room lobby state |
+| PUT | `/rooms/{code}/settings` | host only | Update room settings |
+| GET | `/rooms/active` | JWT/guest | List user's active rooms |
+| POST | `/rooms/{code}/leave` | JWT/guest | Leave a room |
+| GET | `/game-history` | JWT | Get recent game history |
 
-## 7. Socket.IO Event Spec
+## 7. Socket.IO Events
 
-### 7.1 Connection
-- Client connects with `auth.token = JWT` or `guest_token` cookie.
-- Server validates and sets identity.
+### 7.1 Room Events
 
-### 7.2 Room Events
-- `room:create`
-  - Request:
-  ```
-  { "rounds_total": 3, "difficulty": 2, "turn_seconds": 60 }
-  ```
-  - Response:
-  ```
-  { "room_code": "A1B2C3" }
-  ```
+| Event | Direction | Payload | Description |
+|-------|-----------|---------|-------------|
+| `room:register` | client → server | `{room_code, guest_token/token}` | Register socket with a room |
+| `room:lobby_update` | server → room | `{players, settings, host_id}` | Broadcast lobby state |
 
-- `room:join`
-  - Request:
-  ```
-  { "room_code": "A1B2C3" }
-  ```
-  - Response:
-  ```
-  { "room_id": 1, "players": [...] }
-  ```
+### 7.2 Game Events
 
-- `room:lobby_update`
-  - Broadcast:
-  ```
-  { "players": [...], "settings": {...} }
-  ```
+| Event | Direction | Payload | Description |
+|-------|-----------|---------|-------------|
+| `game:start` | client → server | `{room_code, token}` | Host starts the game |
+| `game:turn_start` | server → room | `{describer_id, turn_seconds, round, turn}` | New turn begins |
+| `game:new_word` | server → describer | `{word}` | Secret word for current turn |
+| `chat:message` | bidirectional | `{message, room_code, token}` | Chat messages and guesses |
+| `game:correct_guess` | server → room | `{guesser_id, word, scores}` | Correct guess notification |
+| `game:turn_end` | client → server | `{room_code, token}` | Host force-ends turn |
+| `game:round_end` | server → room | `{round, scores}` | Round boundary |
+| `game:next_round` | client → server | `{room_code, token}` | Host continues to next round |
+| `game:game_end` | server → room | `{scores, leaderboard}` | Final scores |
 
-### 7.3 Game Events
-- `game:start`
-  - Host only.
-  - Broadcasts initial round state.
+### 7.3 Scribble Events
 
-- `game:turn_start`
-  - Broadcast:
-  ```
-  { "describer_id": 10, "turn_seconds": 60, "turn_start_ts": 1700000000 }
-  ```
+| Event | Direction | Payload | Description |
+|-------|-----------|---------|-------------|
+| `scribble:draw` | bidirectional | `{strokes, room_code}` | Drawing stroke data |
+| `scribble:clear` | bidirectional | `{room_code}` | Clear canvas |
 
-- `game:new_word`
-  - Sent to describer only:
-  ```
-  { "word": "umbrella" }
-  ```
+### 7.4 Connection Events
 
-- `chat:message`
-  - Client sends:
-  ```
-  { "message": "Is it a thing you carry?" }
-  ```
-  - Server broadcasts filtered messages.
+| Event | Direction | Payload | Description |
+|-------|-----------|---------|-------------|
+| `game:reconnect_grace` | server → room | `{player_id, seconds}` | Disconnect grace period |
+| `game:player_removed` | server → room | `{player_id}` | Player removed after grace |
 
-- `game:correct_guess`
-  - Broadcast:
-  ```
-  { "guesser_id": 8, "word": "umbrella", "scores": {...} }
-  ```
+## 8. Frontend State Management
 
-- `game:turn_end`
-  - Broadcast turn end and next describer.
+### AppContext (React Context)
+- **Auth state**: `user`, `guestToken`, `isGuest` — persisted in `localStorage`.
+- **Room state**: `roomCode`, `selfPlayerId` — persisted in `sessionStorage`.
+- **Lobby state**: `players`, `settings`, `isHost`.
+- **Game state**: `gameStarted`, `currentDescriber`, `scores`, `round`, `word`, `timeLeft`.
+- **Socket**: Single `socket.io-client` instance, managed in context.
 
-- `game:round_end`
-  - Broadcast round summary.
+### Key Patterns
+- Socket listeners: Always `socket.off(event)` before `socket.on(event)` to prevent duplicates.
+- `selfPlayerId`: Set only from REST responses, never from broadcast events.
+- Route guards: Redirect to welcome if no auth, redirect to lobby/game if active room.
 
-- `game:game_end`
-  - Broadcast final summary.
+## 9. Deployment
 
-### 7.4 Errors
-- `error`
-  - Example payload:
-  ```
-  { "code": "ROOM_FULL", "message": "Room is full" }
-  ```
+### Frontend (Vercel)
+- Build with `VITE_API_BASE` and `VITE_SOCKET_URL` env vars.
+- Deploy using Vercel v13 API with inline base64 files (file upload API times out).
+- Must include `vercel.json` with SPA rewrites.
+- Aliases: `playroom.skdev.one`, `charade-chat.skdev.one`.
 
-## 8. Concurrency and Limits
-- Max 20 players per room.
-- Target 100 concurrent users.
-- Server enforces 3 active game limit per registered user.
-- Guests limited to 1 full match total.
+### Backend (GCP VM + Docker)
+- GCP `e2-small` VM in `us-east1-d`.
+- Docker Compose runs the FastAPI app on port 8005.
+- nginx reverse proxy with WebSocket support (`Upgrade` + `Connection` headers).
+- SSL via Let's Encrypt + Certbot (auto-renewing).
+- Domain: `charade-api.skdev.one`.
 
-## 9. Observability (Minimal)
-- Structured logs for:
-  - Room creation and join.
-  - Game start/end.
-  - Turn start/end.
-  - Errors and disconnects.
+## 10. Testing
 
-## 10. Out of Scope
-- Spectator mode.
-- Dynamic word generation.
-- Advanced anti-cheat or moderation tools.
+### Automated Stress Test (`backend/stress_test.py`)
+- Simulates N concurrent players (2-10) playing a full game via Socket.IO + REST.
+- Supports both Charades and Scribble game types.
+- Validates: turn count, describer rotation, score consistency, round boundaries, game end, no errors, non-negative scores.
+- See README.md for usage and CLI options.
