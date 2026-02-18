@@ -4,10 +4,16 @@ async function request(path, options = {}) {
   const { headers, ...rest } = options
   const res = await fetch(`${API_BASE}${path}`, {
     ...rest,
+    signal: AbortSignal.timeout(15000),
     headers: {
       'Content-Type': 'application/json',
       ...(headers || {})
     }
+  }).catch(err => {
+    if (err.name === 'TimeoutError' || err.name === 'AbortError') {
+      throw new Error('Request timed out. Please check your connection and try again.')
+    }
+    throw new Error('Unable to reach the server. Please try again later.')
   })
   if (!res.ok) {
     const text = await res.text()

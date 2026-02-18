@@ -81,9 +81,9 @@ export default function Welcome({ onGuest, onGoogleLogin, onHowTo, loadingGuest,
             }}
           />
           <button
-            className="btn-ghost w-full py-3 touch-target flex items-center justify-center gap-2 border border-black/10 rounded-xl"
-            onClick={() => onGuest(name.trim() || undefined)}
-            disabled={loadingGuest}
+            className="btn-ghost w-full py-3 touch-target flex items-center justify-center gap-2 border border-black/10 rounded-xl disabled:opacity-40"
+            onClick={() => onGuest(name.trim())}
+            disabled={loadingGuest || !name.trim()}
           >
             {loadingGuest ? <Spinner size={18} /> : null}
             Play as Guest

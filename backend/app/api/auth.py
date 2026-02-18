@@ -38,6 +38,7 @@ def google_login(payload: GoogleAuthRequest, db: Session = Depends(get_db)):
             google_id=google_id,
             display_name=name,
             avatar_url=picture,
+            password_hash="",
         )
         db.add(user)
     else:
