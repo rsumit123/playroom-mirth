@@ -88,7 +88,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
             <h2 className="font-semibold">Players</h2>
             <span className="badge bg-accent/10 text-accent">{players.length} / {maxPlayers}</span>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pb-2">
             {players.map((p) => {
               const name = p.display_name || `Player ${p.id}`
               return (

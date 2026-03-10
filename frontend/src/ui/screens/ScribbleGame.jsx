@@ -196,7 +196,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
           </div>
 
           {/* Chat messages (compact) */}
-          <div className="max-h-28 overflow-y-auto px-4 py-1 space-y-1 border-t border-black/5 shrink-0">
+          <div className="max-h-32 overflow-y-auto px-4 py-1 space-y-1 border-t border-black/5 shrink-0">
             {chatItems.length === 0 && (
               <div className="text-center text-xs text-slate/40 py-2">
                 {role === 'drawer' ? 'Guesses will appear here' : 'Guess what is being drawn!'}
