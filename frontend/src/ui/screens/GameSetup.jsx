@@ -1,18 +1,21 @@
 import { useState } from 'react'
 import Spinner from '../components/Spinner.jsx'
 import DifficultySelector from '../components/DifficultySelector.jsx'
+import TriviaCategorySelector from '../components/TriviaCategorySelector.jsx'
 import RangeSlider from '../components/RangeSlider.jsx'
 
 const GAME_LABELS = {
   charades: 'Charades',
   scribble: 'Scribble',
+  trivia: 'Trivia',
 }
 
 export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onBack, loadingCreate, loadingJoin }) {
   const [tab, setTab] = useState('create')
   const [rounds, setRounds] = useState(3)
   const [timer, setTimer] = useState(120)
-  const [difficulty, setDifficulty] = useState(0)
+  const [difficulty, setDifficulty] = useState(gameType === 'trivia' ? 1 : 0)
+  const [triviaCategory, setTriviaCategory] = useState('math')
   const [maxPlayers, setMaxPlayers] = useState(20)
   const [roomCode, setRoomCode] = useState('')
 
@@ -46,12 +49,21 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
 
         {tab === 'create' ? (
           <div className="card p-6 space-y-6 animate-pop">
-            <RangeSlider label="Rounds" value={rounds} min={1} max={10} onChange={setRounds} />
-            <RangeSlider label="Timer" value={timer} min={30} max={120} step={10} unit="s" onChange={setTimer} />
+            <RangeSlider label="Rounds" value={rounds} min={1} max={gameType === 'trivia' ? 5 : 10} onChange={setRounds} />
+            {gameType !== 'trivia' && (
+              <RangeSlider label="Timer" value={timer} min={30} max={120} step={10} unit="s" onChange={setTimer} />
+            )}
+
+            {gameType === 'trivia' && (
+              <div className="space-y-2">
+                <span className="text-xs text-slate/60 font-medium">Category</span>
+                <TriviaCategorySelector value={triviaCategory} onChange={setTriviaCategory} />
+              </div>
+            )}
 
             <div className="space-y-2">
               <span className="text-xs text-slate/60 font-medium">Difficulty</span>
-              <DifficultySelector value={difficulty} onChange={setDifficulty} />
+              <DifficultySelector value={difficulty} onChange={setDifficulty} hideMixed={gameType === 'trivia'} />
             </div>
 
             <RangeSlider label="Max Players" value={maxPlayers} min={2} max={20} onChange={setMaxPlayers} />
@@ -62,9 +74,10 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
                 onCreate({
                   rounds_total: rounds,
                   difficulty: difficulty,
-                  turn_seconds: timer,
+                  turn_seconds: gameType === 'trivia' ? 0 : timer,
                   max_players: maxPlayers,
                   game_type: gameType,
+                  trivia_category: gameType === 'trivia' ? triviaCategory : 'math',
                 })
               }
               disabled={loadingCreate}

@@ -35,10 +35,24 @@ export default function HowToPlay({ onClose }) {
           </div>
         </div>
 
+        <div className="space-y-2">
+          <h3 className="font-display text-lg text-accent">Trivia</h3>
+          <div className="space-y-3 text-sm text-slate/80">
+            <div>
+              <div className="font-semibold text-ink">1. Answer</div>
+              <div>Everyone answers the same multiple-choice question at the same time.</div>
+            </div>
+            <div>
+              <div className="font-semibold text-ink">2. Score</div>
+              <div>Answer correctly and quickly for maximum points. 10 questions per round.</div>
+            </div>
+          </div>
+        </div>
+
         <div className="space-y-3 text-sm text-slate/80">
           <div>
-            <div className="font-semibold text-ink">Turns &amp; Rounds</div>
-            <div>Turns rotate so everyone gets a chance. Play multiple rounds to crown the winner!</div>
+            <div className="font-semibold text-ink">Rounds</div>
+            <div>Play multiple rounds and compete for the highest score. The top scorer wins!</div>
           </div>
         </div>
 

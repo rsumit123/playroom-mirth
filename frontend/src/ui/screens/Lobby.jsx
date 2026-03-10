@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Spinner from '../components/Spinner.jsx'
+import { playSound } from '../../lib/sounds.js'
 import PlayerAvatar from '../components/PlayerAvatar.jsx'
 import DifficultySelector from '../components/DifficultySelector.jsx'
+import TriviaCategorySelector from '../components/TriviaCategorySelector.jsx'
 import RangeSlider from '../components/RangeSlider.jsx'
 
 export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPlayerId, loadingSave }) {
@@ -15,21 +17,32 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
   const [settings, setSettings] = useState({
     rounds: lobby?.room?.rounds_total ?? 3,
     difficulty: lobby?.room?.difficulty ?? 2,
-    timer: lobby?.room?.turn_seconds ?? 60
+    timer: lobby?.room?.turn_seconds ?? 60,
+    triviaCategory: lobby?.room?.trivia_category ?? 'math',
   })
   const [copied, setCopied] = useState(false)
+  const prevPlayerCountRef = useRef(players.length)
+
+  useEffect(() => {
+    if (players.length > prevPlayerCountRef.current) {
+      playSound('player-join')
+    }
+    prevPlayerCountRef.current = players.length
+  }, [players.length])
+
+  const inviteUrl = `${window.location.origin}/join/${code}`
 
   function handleCopy() {
-    navigator.clipboard?.writeText?.(code)
+    navigator.clipboard?.writeText?.(inviteUrl)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
 
   const gameType = roomMeta?.game_type || 'charades'
-  const gameLabel = gameType === 'scribble' ? 'Scribble' : 'Charades'
+  const gameLabel = gameType === 'scribble' ? 'Scribble' : gameType === 'trivia' ? 'Trivia' : 'Charades'
 
   function handleShare() {
-    const payload = { title: 'PlayRoom', text: `Join my ${gameLabel} room: ${code}`, url: window.location.href }
+    const payload = { title: 'PlayRoom', text: `Join my ${gameLabel} room!`, url: inviteUrl }
     if (navigator.share) {
       navigator.share(payload)
     } else {
@@ -106,14 +119,25 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
         {isHost && (
           <div className="card p-5 space-y-4">
             <h2 className="font-semibold">Game Settings</h2>
-            <RangeSlider label="Rounds" value={Number(settings.rounds)} min={1} max={10}
+            <RangeSlider label="Rounds" value={Number(settings.rounds)} min={1} max={gameType === 'trivia' ? 5 : 10}
               onChange={(v) => setSettings((s) => ({ ...s, rounds: v }))} />
-            <RangeSlider label="Timer" value={Number(settings.timer)} min={30} max={120} step={10} unit="s"
-              onChange={(v) => setSettings((s) => ({ ...s, timer: v }))} />
+            {gameType !== 'trivia' && (
+              <RangeSlider label="Timer" value={Number(settings.timer)} min={30} max={120} step={10} unit="s"
+                onChange={(v) => setSettings((s) => ({ ...s, timer: v }))} />
+            )}
+            {gameType === 'trivia' && (
+              <div className="space-y-2">
+                <span className="text-xs text-slate/60 font-medium">Category</span>
+                <TriviaCategorySelector
+                  value={settings.triviaCategory}
+                  onChange={(v) => setSettings((s) => ({ ...s, triviaCategory: v }))}
+                />
+              </div>
+            )}
             <div className="space-y-2">
               <span className="text-xs text-slate/60 font-medium">Difficulty</span>
               <DifficultySelector value={Number(settings.difficulty)}
-                onChange={(v) => setSettings((s) => ({ ...s, difficulty: v }))} />
+                onChange={(v) => setSettings((s) => ({ ...s, difficulty: v }))} hideMixed={gameType === 'trivia'} />
             </div>
             <button
               className="btn-ghost w-full touch-target flex items-center justify-center gap-2"
@@ -121,7 +145,8 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
                 onSaveSettings?.({
                   rounds_total: Number(settings.rounds),
                   difficulty: Number(settings.difficulty),
-                  turn_seconds: Number(settings.timer)
+                  turn_seconds: Number(settings.timer),
+                  trivia_category: settings.triviaCategory,
                 })
               }
               disabled={loadingSave}

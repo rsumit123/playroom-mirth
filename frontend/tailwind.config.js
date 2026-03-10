@@ -76,6 +76,14 @@ export default {
         "alert-out": {
           "0%": { transform: "translateY(0) scale(1)", opacity: "1" },
           "100%": { transform: "translateY(-100%) scale(0.95)", opacity: "0" }
+        },
+        "word-pulse": {
+          "0%, 100%": { boxShadow: "0 0 0 0 rgba(44, 110, 106, 0.05)", borderColor: "rgba(44, 110, 106, 0.2)" },
+          "50%": { boxShadow: "0 0 24px 4px rgba(44, 110, 106, 0.12)", borderColor: "rgba(44, 110, 106, 0.45)" }
+        },
+        "input-glow": {
+          "0%, 100%": { boxShadow: "inset 0 0 0 1.5px rgba(44, 110, 106, 0.2), 0 0 0 0 rgba(44, 110, 106, 0)" },
+          "50%": { boxShadow: "inset 0 0 0 2.5px rgba(44, 110, 106, 0.55), 0 0 16px 0 rgba(44, 110, 106, 0.15)" }
         }
       },
       animation: {
@@ -89,7 +97,9 @@ export default {
         "scale-in": "scale-in 0.3s ease-out",
         "trophy-bounce": "trophy-bounce 0.5s ease-out",
         "alert-in": "alert-in 0.35s ease-out forwards",
-        "alert-out": "alert-out 0.3s ease-in forwards"
+        "alert-out": "alert-out 0.3s ease-in forwards",
+        "word-pulse": "word-pulse 2.5s ease-in-out infinite",
+        "input-glow": "input-glow 2s ease-in-out infinite"
       }
     }
   },

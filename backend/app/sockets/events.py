@@ -30,6 +30,7 @@ from app.services.game_state import (
 from app.models.room_player import RoomPlayer
 from app.models.game_history import GameHistory
 from app.models.word import Word
+from app.services.trivia import generate_round_questions, generate_gk_round_questions
 from sqlalchemy import func as sa_func
 import time
 import random
@@ -109,6 +110,7 @@ async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
         _save_state(db, state)
 
     describer_id = state.player_order[state.describer_index]
+    hint = _generate_hint(state.current_word_text) if state.current_word_text else None
     await sio.emit(
         "game:turn_start",
         {
@@ -117,6 +119,7 @@ async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
             "turn_start_ts": int(state.turn_start_ts),
             "round_index": state.round_index,
             "game_type": state.game_type,
+            "hint": hint,
         },
         room=room_code,
     )
@@ -150,6 +153,8 @@ async def _advance_turn(room_code: str) -> None:
             await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
             ROOM_STATES.pop(room_code, None)
             with SessionLocal() as db:
+                # Delete persisted game state so it's not restored on restart
+                db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
                 _save_game_history(db, state)
                 room = db.query(Room).filter(Room.code == room_code).first()
                 if room:
@@ -273,20 +278,42 @@ async def room_register(sid, data):
     # If a game is active, send current turn state to the reconnecting player
     state = ROOM_STATES.get(room_code)
     if state and rp.id in state.player_order:
-        describer_id = state.player_order[state.describer_index]
-        await sio.emit(
-            "game:turn_start",
-            {
-                "describer_id": describer_id,
-                "turn_seconds": state.turn_seconds,
-                "turn_start_ts": int(state.turn_start_ts),
+        if state.game_type == "trivia":
+            # Trivia reconnection: send navigation trigger + current question
+            await sio.emit("game:turn_start", {
+                "game_type": "trivia",
                 "round_index": state.round_index,
-                "game_type": state.game_type,
-            },
-            to=sid,
-        )
-        if rp.id == describer_id and state.current_word_text:
-            await sio.emit("game:new_word", {"word": state.current_word_text}, to=sid)
+                "turn_seconds": 0,
+                "turn_start_ts": int(state.question_start_ts),
+                "describer_id": -1,
+            }, to=sid)
+            if state.trivia_questions and state.current_question_index < len(state.trivia_questions):
+                q = state.trivia_questions[state.current_question_index]
+                await sio.emit("trivia:question", {
+                    "question_index": state.current_question_index,
+                    "total_questions": len(state.trivia_questions),
+                    "question_text": q["question"],
+                    "options": q["options"],
+                    "time_seconds": q["time_seconds"],
+                    "round_index": state.round_index,
+                }, to=sid)
+        else:
+            describer_id = state.player_order[state.describer_index]
+            hint = _generate_hint(state.current_word_text) if state.current_word_text else None
+            await sio.emit(
+                "game:turn_start",
+                {
+                    "describer_id": describer_id,
+                    "turn_seconds": state.turn_seconds,
+                    "turn_start_ts": int(state.turn_start_ts),
+                    "round_index": state.round_index,
+                    "game_type": state.game_type,
+                    "hint": hint,
+                },
+                to=sid,
+            )
+            if rp.id == describer_id and state.current_word_text:
+                await sio.emit("game:new_word", {"word": state.current_word_text}, to=sid)
     return {"ok": True}
 
 
@@ -418,6 +445,17 @@ def _scribble_guess_score(elapsed: float) -> int:
     return 5
 
 
+def _generate_hint(word: str) -> str:
+    """Generate a hangman-style hint: first letter revealed, rest as underscores."""
+    parts = []
+    for w in word.split(' '):
+        if not w:
+            continue
+        chars = [w[0].upper()] + ['_'] * (len(w) - 1)
+        parts.append(' '.join(chars))
+    return '  '.join(parts)
+
+
 def _select_word(db, difficulty: int, history_ids: list[int], game_type: str = "charades") -> Word | None:
     base = db.query(Word).filter(Word.active.is_(True), Word.game_type == game_type, ~Word.id.in_(history_ids))
     if difficulty == 0:
@@ -432,6 +470,154 @@ def _select_word(db, difficulty: int, history_ids: list[int], game_type: str = "
     if word:
         return word
     return base.order_by(sa_func.random()).first()
+
+
+# ── Trivia helpers ──────────────────────────────────────────────────
+
+async def _trivia_start_round(state: RoomGameState, room_code: str) -> None:
+    """Generate questions for this round and send the first one."""
+    if state.trivia_category == "general_knowledge":
+        questions = generate_gk_round_questions(
+            state.difficulty, count=10, used_ids=state.used_question_ids
+        )
+        for q in questions:
+            if "id" in q:
+                state.used_question_ids.add(q["id"])
+    else:
+        questions = generate_round_questions(state.difficulty, count=10)
+    state.trivia_questions = questions
+    state.current_question_index = 0
+    state.player_answers = {}
+    with SessionLocal() as db:
+        _save_state(db, state)
+    await _trivia_send_question(state, room_code)
+
+
+async def _trivia_send_question(state: RoomGameState, room_code: str) -> None:
+    """Emit current question to all players and start per-question timer."""
+    q = state.trivia_questions[state.current_question_index]
+    state.player_answers = {}
+    state.question_start_ts = time.time()
+    state.question_time_seconds = q["time_seconds"]
+
+    await sio.emit("trivia:question", {
+        "question_index": state.current_question_index,
+        "total_questions": len(state.trivia_questions),
+        "question_text": q["question"],
+        "options": q["options"],
+        "time_seconds": q["time_seconds"],
+        "round_index": state.round_index,
+    }, room=room_code)
+
+    # Schedule question timer
+    if state.task and not state.task.done():
+        state.task.cancel()
+
+    async def _timer():
+        remaining = state.question_time_seconds - (time.time() - state.question_start_ts)
+        if remaining > 0:
+            await asyncio.sleep(remaining)
+        await _trivia_question_timeout(room_code)
+
+    state.task = asyncio.create_task(_timer())
+
+
+async def _trivia_resolve_question(state: RoomGameState, room_code: str) -> None:
+    """Score the current question and emit results. Caller MUST hold state.lock."""
+    q = state.trivia_questions[state.current_question_index]
+    correct_index = q["correct_index"]
+
+    player_results = []
+    for pid in state.player_order:
+        answer = state.player_answers.get(pid)
+        if answer and answer["answer_index"] == correct_index:
+            time_taken = answer["timestamp"] - state.question_start_ts
+            speed_bonus = max(0, int(100 * (1 - time_taken / state.question_time_seconds)))
+            points = 100 + speed_bonus
+            state.scores[pid] = state.scores.get(pid, 0) + points
+            player_results.append({
+                "player_id": pid,
+                "answer_index": answer["answer_index"],
+                "correct": True,
+                "points": points,
+                "time_taken": round(time_taken, 1),
+            })
+        else:
+            player_results.append({
+                "player_id": pid,
+                "answer_index": answer["answer_index"] if answer else -1,
+                "correct": False,
+                "points": 0,
+                "time_taken": None,
+            })
+
+    await sio.emit("trivia:question_result", {
+        "question_index": state.current_question_index,
+        "correct_index": correct_index,
+        "player_results": player_results,
+        "scores": state.scores,
+    }, room=room_code)
+
+    with SessionLocal() as db:
+        _save_state(db, state)
+
+    # Pause 4 seconds to show results, then advance
+    async def _advance_after_pause():
+        await asyncio.sleep(4)
+        await _trivia_advance(room_code)
+
+    state.task = asyncio.create_task(_advance_after_pause())
+
+
+async def _trivia_question_timeout(room_code: str) -> None:
+    """Timer-triggered: acquire lock and resolve the current question."""
+    state = ROOM_STATES.get(room_code)
+    if not state:
+        return
+    async with state.lock:
+        await _trivia_resolve_question(state, room_code)
+
+
+async def _trivia_advance(room_code: str) -> None:
+    """Move to next question or end the round/game."""
+    state = ROOM_STATES.get(room_code)
+    if not state:
+        return
+    async with state.lock:
+        state.current_question_index += 1
+
+        if state.current_question_index >= len(state.trivia_questions):
+            # Round complete
+            state.round_index += 1
+            state.current_question_index = 0
+
+            if state.round_index > state.rounds_total:
+                # Game over
+                if state.task and not state.task.done():
+                    state.task.cancel()
+                await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+                ROOM_STATES.pop(room_code, None)
+                with SessionLocal() as db:
+                    db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
+                    _save_game_history(db, state)
+                    room = db.query(Room).filter(Room.code == room_code).first()
+                    if room:
+                        room.status = "lobby"
+                        db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: True})
+                        db.commit()
+                return
+
+            # Round end — wait for host to continue
+            with SessionLocal() as db:
+                _save_state(db, state)
+            await sio.emit("game:round_end", {
+                "round_index": state.round_index - 1,
+                "scores": state.scores,
+            }, room=room_code)
+            return
+
+        # Next question in same round
+        await _trivia_send_question(state, room_code)
 
 
 @sio.on("game:start")
@@ -472,6 +658,35 @@ async def game_start(sid, data):
             await emit_error(sid, "Not enough players", code="BAD_REQUEST")
             return {"ok": False, "error": "BAD_REQUEST"}
 
+        # Trivia: skip word selection, use question generator
+        if room.game_type == "trivia":
+            state = RoomGameState(
+                room_id=room.id,
+                room_code=room.code,
+                rounds_total=room.rounds_total,
+                turn_seconds=0,
+                difficulty=room.difficulty,
+                game_type="trivia",
+                trivia_category=room.trivia_category,
+                player_order=[p.id for p in players],
+                scores={p.id: p.score for p in players},
+            )
+            ROOM_STATES[room.code] = state
+            room.status = "active"
+            _save_state(db, state)
+
+            # Emit game:turn_start as navigation trigger for frontend
+            await sio.emit("game:turn_start", {
+                "game_type": "trivia",
+                "round_index": 1,
+                "turn_seconds": 0,
+                "turn_start_ts": int(time.time()),
+                "describer_id": -1,
+            }, room=room.code)
+
+            await _trivia_start_round(state, room.code)
+            return {"ok": True}
+
         word = _select_word(db, room.difficulty, [], room.game_type)
         if not word:
             await emit_error(sid, "No words available", code="NO_WORDS")
@@ -496,6 +711,7 @@ async def game_start(sid, data):
         _save_state(db, state)
 
     room_code_val = state.room_code
+    hint = _generate_hint(state.current_word_text) if state.current_word_text else None
     await sio.emit(
         "game:turn_start",
         {
@@ -504,6 +720,7 @@ async def game_start(sid, data):
             "turn_start_ts": int(state.turn_start_ts),
             "round_index": state.round_index,
             "game_type": state.game_type,
+            "hint": hint,
         },
         room=room_code_val,
     )
@@ -559,11 +776,14 @@ async def chat_message(sid, data):
             points = _scribble_guess_score(elapsed)
             state.scores[player_id] = state.scores.get(player_id, 0) + points
             # No per-guess drawer bonus for scribble; awarded at turn end
-            await sio.emit(
-                "game:correct_guess",
-                {"guesser_id": player_id, "word": target, "scores": state.scores, "points_awarded": points},
-                room=room_code,
-            )
+            # Send word only to guesser + drawer; hide from remaining guessers
+            base_payload = {"guesser_id": player_id, "scores": state.scores, "points_awarded": points}
+            guesser_sid = PLAYER_TO_SID.get(player_id)
+            drawer_sid = PLAYER_TO_SID.get(describer_id)
+            privileged = [s for s in [guesser_sid, drawer_sid] if s]
+            for psid in privileged:
+                await sio.emit("game:correct_guess", {**base_payload, "word": target}, to=psid)
+            await sio.emit("game:correct_guess", base_payload, room=room_code, skip_sid=privileged if privileged else None)
             # Track guesser; keep the same word/drawing
             state.guessed_players.add(player_id)
             non_describers = set(state.player_order) - {describer_id}
@@ -577,11 +797,14 @@ async def chat_message(sid, data):
             # Charades: flat scoring
             state.scores[player_id] = state.scores.get(player_id, 0) + 10
             state.scores[describer_id] = state.scores.get(describer_id, 0) + 5
-            await sio.emit(
-                "game:correct_guess",
-                {"guesser_id": player_id, "word": target, "scores": state.scores},
-                room=room_code,
-            )
+            # Send word only to guesser + describer; hide from other guessers
+            base_payload = {"guesser_id": player_id, "scores": state.scores}
+            guesser_sid = PLAYER_TO_SID.get(player_id)
+            describer_sid = PLAYER_TO_SID.get(describer_id)
+            privileged = [s for s in [guesser_sid, describer_sid] if s]
+            for psid in privileged:
+                await sio.emit("game:correct_guess", {**base_payload, "word": target}, to=psid)
+            await sio.emit("game:correct_guess", base_payload, room=room_code, skip_sid=privileged if privileged else None)
             with SessionLocal() as db:
                 word = _select_word(db, state.difficulty, state.word_history_ids, state.game_type)
                 if word:
@@ -592,6 +815,9 @@ async def chat_message(sid, data):
             describer_sid = PLAYER_TO_SID.get(describer_id)
             if describer_sid and state.current_word_text:
                 await sio.emit("game:new_word", {"word": state.current_word_text}, to=describer_sid)
+            # Send updated hint to guessers (new word after correct guess)
+            if state.current_word_text:
+                await sio.emit("game:hint", {"hint": _generate_hint(state.current_word_text)}, room=room_code, skip_sid=describer_sid)
 
         return {"ok": True, "correct": True}
 
@@ -648,8 +874,65 @@ async def game_next_round(sid, data):
             await emit_error(sid, "Authentication required", code="UNAUTHORIZED")
             return {"ok": False}
 
+    if state.game_type == "trivia":
+        async with state.lock:
+            # Emit turn_start as navigation trigger (RoundEndPage watches game.turn)
+            await sio.emit("game:turn_start", {
+                "game_type": "trivia",
+                "round_index": state.round_index,
+                "turn_seconds": 0,
+                "turn_start_ts": int(time.time()),
+                "describer_id": -1,
+            }, room=room_code)
+            await _trivia_start_round(state, room_code)
+        return {"ok": True}
+
     async with state.lock:
         await _emit_next_turn(state, room_code)
+    return {"ok": True}
+
+
+@sio.on("trivia:answer")
+async def trivia_answer(sid, data):
+    """Player submits an answer to the current trivia question."""
+    room_code = data.get("room_code")
+    answer_index = data.get("answer_index")
+    if room_code is None or answer_index is None:
+        await emit_error(sid, "Invalid answer data", code="BAD_REQUEST")
+        return {"ok": False}
+
+    state = ROOM_STATES.get(room_code)
+    if not state or state.game_type != "trivia":
+        await emit_error(sid, "Not a trivia game", code="BAD_REQUEST")
+        return {"ok": False}
+
+    player_id = SID_TO_PLAYER.get(sid)
+    if not player_id or player_id not in state.player_order:
+        await emit_error(sid, "Not in game", code="FORBIDDEN")
+        return {"ok": False}
+
+    # Lock the entire answer-record + all-answered-check to prevent race
+    # where two simultaneous answers both trigger _trivia_resolve_question
+    async with state.lock:
+        if player_id in state.player_answers:
+            return {"ok": False, "error": "ALREADY_ANSWERED"}
+
+        state.player_answers[player_id] = {
+            "answer_index": answer_index,
+            "timestamp": time.time(),
+        }
+
+        await sio.emit("trivia:answer_update", {
+            "answered_count": len(state.player_answers),
+            "total_players": len(state.player_order),
+        }, room=room_code)
+
+        # If all players answered, cancel the timer and resolve immediately
+        if len(state.player_answers) >= len(state.player_order):
+            if state.task and not state.task.done():
+                state.task.cancel()
+            await _trivia_resolve_question(state, room_code)
+
     return {"ok": True}
 
 
@@ -695,10 +978,19 @@ def restore_game_states() -> None:
     with SessionLocal() as db:
         rows = db.query(RoomState).all()
         for row in rows:
+            # Only restore states for rooms that are still active
+            room = db.query(Room).filter(Room.id == row.room_id).first()
+            if not room or room.status != "active":
+                db.delete(row)
+                continue
             state = deserialize_state(row.state_json)
             ROOM_STATES[state.room_code] = state
+        db.commit()
 
 
 async def schedule_restored_states() -> None:
     for state in list(ROOM_STATES.values()):
-        await _schedule_turn_timer(state)
+        if state.game_type == "trivia" and state.trivia_questions:
+            await _trivia_send_question(state, state.room_code)
+        else:
+            await _schedule_turn_timer(state)

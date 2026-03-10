@@ -6,6 +6,7 @@ import Scoreboard from '../components/Scoreboard.jsx'
 import DrawingCanvas from '../components/DrawingCanvas.jsx'
 import CanvasViewer from '../components/CanvasViewer.jsx'
 import GameAlerts, { useGameAlerts } from '../components/GameAlerts.jsx'
+import { playSound } from '../../lib/sounds.js'
 
 export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin, playerNames = {} }) {
   const [message, setMessage] = useState('')
@@ -22,6 +23,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
   const prevTurnRef = useRef(null)
   const prevWordRef = useRef(null)
   const timedUpRef = useRef(false)
+  const tickPlayedRef = useRef(false)
 
   // Track visual viewport for mobile keyboard
   useEffect(() => {
@@ -38,7 +40,10 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
   }, [])
 
   useEffect(() => {
-    if (lastGuess?.word) setConfettiKey((k) => k + 1)
+    if (lastGuess) {
+      setConfettiKey((k) => k + 1)
+      playSound('correct-guess')
+    }
   }, [lastGuess])
 
   // Timer countdown
@@ -62,7 +67,9 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
     const isFirst = !prev
     prevTurnRef.current = turn
     timedUpRef.current = false
+    tickPlayedRef.current = false
     if (isFirst) return
+    playSound('turn-start')
     const isDrawer = game?.selfPlayerId && String(game.selfPlayerId) === String(turn.describer_id)
     if (isDrawer) {
       addAlert('Your turn to draw!', 'accent', '\u{1F3A8}')
@@ -72,11 +79,20 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
     }
   }, [turn?.describer_id, turn?.turn_start_ts])
 
+  // Sound: tick at 10 seconds
+  useEffect(() => {
+    if (remaining === 10 && !tickPlayedRef.current) {
+      tickPlayedRef.current = true
+      playSound('tick')
+    }
+  }, [remaining])
+
   // Alert: time's up
   useEffect(() => {
     if (remaining === 0 && !timedUpRef.current) {
       timedUpRef.current = true
       addAlert("Time's up!", 'warning', '\u23F0')
+      playSound('times-up')
     }
   }, [remaining])
 
@@ -85,6 +101,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
     if (role !== 'drawer' || !game?.word) return
     if (prevWordRef.current && prevWordRef.current !== game.word) {
       addAlert('Next word!', 'success', '\u2728')
+      playSound('correct-guess')
     }
     prevWordRef.current = game.word
   }, [game?.word, role])
@@ -140,16 +157,24 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
           <div className="font-display text-2xl text-accent">{game?.word || '...'}</div>
         </div>
       ) : (
-        <div className="bg-mist/50 border-b border-black/5 px-4 py-2 text-center text-sm text-slate/50 shrink-0">
-          <span className="font-medium text-ink">{playerNames[describerId] || 'Someone'}</span> is drawing...
+        <div className="bg-mist/50 border-b border-black/5 px-4 py-2 text-center shrink-0">
+          <div className="text-sm text-slate/50">
+            <span className="font-medium text-ink">{playerNames[describerId] || 'Someone'}</span> is drawing...
+          </div>
+          {game?.hint && (
+            <div className="font-mono text-lg sm:text-xl tracking-[0.25em] text-ink/70 mt-1.5 select-none">
+              {game.hint}
+            </div>
+          )}
         </div>
       )}
 
       {/* Correct guess flash */}
-      {lastGuess?.word && (
+      {lastGuess && (
         <div className="bg-correct/10 border-b border-correct/20 px-4 py-2 text-center animate-pop shrink-0">
           <span className="text-correct font-semibold text-sm">
-            &#10003; {playerNames[lastGuess.guesser_id] || 'Someone'} guessed &ldquo;{lastGuess.word}&rdquo;
+            &#10003; {playerNames[lastGuess.guesser_id] || 'Someone'}{' '}
+            {lastGuess.word ? <>guessed &ldquo;{lastGuess.word}&rdquo;</> : <>guessed correctly!</>}
             {lastGuess.points_awarded && (
               <span className="ml-2 text-xs font-bold text-correct/80">+{lastGuess.points_awarded}</span>
             )}
@@ -202,7 +227,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
               <div className="flex items-center gap-2">
                 <input
                   ref={inputRef}
-                  className="flex-1 bg-accent/5 rounded-xl px-4 py-2.5 text-sm outline-none placeholder:text-slate/40 touch-target"
+                  className="flex-1 bg-white rounded-xl px-4 py-3 sm:py-2.5 text-base sm:text-sm outline-none placeholder:text-slate/40 touch-target animate-input-glow"
                   placeholder="Type your guess..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}

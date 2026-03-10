@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave, activeRooms = [], gameHistory = [], isSignedIn = false }) {
+  const [showHistory, setShowHistory] = useState(false)
+
   return (
     <div className="game-shell py-6">
       <div className="page-medium space-y-6">
@@ -17,7 +21,7 @@ export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave
                     <div className="flex items-center gap-2">
                       <div className="font-display text-lg tracking-wider">{ar.room_code}</div>
                       <span className="badge bg-accent/10 text-accent text-[10px]">
-                        {ar.game_type === 'scribble' ? 'Scribble' : 'Charades'}
+                        {ar.game_type === 'scribble' ? 'Scribble' : ar.game_type === 'trivia' ? 'Trivia' : 'Charades'}
                       </span>
                     </div>
                     <div className="text-xs text-slate/50">
@@ -92,46 +96,62 @@ export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave
             </div>
           </button>
 
-          {/* More Games Coming Soon */}
-          <div className="rounded-2xl border-2 border-dashed border-slate/20 p-6 flex items-start gap-4 opacity-70">
-            <div className="h-12 w-12 rounded-xl bg-slate/5 flex items-center justify-center text-2xl shrink-0">
-              &#127922;
+          {/* Trivia card */}
+          <button
+            className="card p-6 text-left hover:shadow-hover transition group"
+            onClick={() => onSelectGame('trivia')}
+          >
+            <div className="flex items-start gap-4">
+              <div className="h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center text-2xl shrink-0">
+                &#129504;
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="font-display text-xl mb-1 group-hover:text-accent transition">Trivia</div>
+                <p className="text-sm text-slate/60">
+                  Race to answer trivia questions — math or general knowledge! All players compete at the same time.
+                </p>
+              </div>
             </div>
-            <div className="flex-1 min-w-0">
-              <div className="font-display text-xl mb-1 text-slate/50">More Games Coming Soon</div>
-              <p className="text-sm text-slate/40">
-                We're cooking up new party games. Stay tuned!
-              </p>
-            </div>
-          </div>
+          </button>
         </div>
 
-        {/* Recent Games */}
+        {/* Recent Games (collapsible) */}
         {isSignedIn && gameHistory.length > 0 && (
-          <div className="card p-5 space-y-4 animate-pop">
-            <h2 className="font-semibold">Recent Games</h2>
-            <div className="space-y-2">
-              {gameHistory.map((g) => (
-                <div key={g.id} className="flex items-center justify-between rounded-xl border border-black/5 px-4 py-3">
-                  <div className="flex items-center gap-3 min-w-0 flex-1">
-                    <span className="text-lg">
-                      {g.game_type === 'scribble' ? '\u270F\uFE0F' : '\uD83D\uDCAC'}
-                    </span>
-                    <span className="badge bg-accent/10 text-accent text-[10px]">
-                      {g.game_type === 'scribble' ? 'Scribble' : 'Charades'}
-                    </span>
-                    {g.is_winner && (
-                      <span className="text-sm" title="Winner!">&#127942;</span>
-                    )}
+          <div className="card overflow-hidden animate-pop">
+            <button
+              className="w-full px-5 py-4 flex items-center justify-between text-left"
+              onClick={() => setShowHistory((v) => !v)}
+            >
+              <div className="flex items-center gap-2">
+                <h2 className="font-semibold">Recent Games</h2>
+                <span className="badge bg-accent/10 text-accent text-[10px]">{gameHistory.length}</span>
+              </div>
+              <span className={`text-slate/40 transition-transform duration-200 ${showHistory ? 'rotate-180' : ''}`}>&#9662;</span>
+            </button>
+            {showHistory && (
+              <div className="px-5 pb-5 space-y-2">
+                {gameHistory.map((g) => (
+                  <div key={g.id} className="flex items-center justify-between rounded-xl border border-black/5 px-4 py-3">
+                    <div className="flex items-center gap-3 min-w-0 flex-1">
+                      <span className="text-lg">
+                        {g.game_type === 'scribble' ? '\u270F\uFE0F' : g.game_type === 'trivia' ? '\uD83E\uDDE0' : '\uD83D\uDCAC'}
+                      </span>
+                      <span className="badge bg-accent/10 text-accent text-[10px]">
+                        {g.game_type === 'scribble' ? 'Scribble' : g.game_type === 'trivia' ? 'Trivia' : 'Charades'}
+                      </span>
+                      {g.is_winner && (
+                        <span className="text-sm" title="Winner!">&#127942;</span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-4 text-xs text-slate/50 shrink-0">
+                      <span>{g.player_count} players</span>
+                      <span>{new Date(g.played_at).toLocaleDateString()}</span>
+                      <span className="font-semibold text-sm text-slate/80">{g.score} pts</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-4 text-xs text-slate/50 shrink-0">
-                    <span>{g.player_count} players</span>
-                    <span>{new Date(g.played_at).toLocaleDateString()}</span>
-                    <span className="font-semibold text-sm text-slate/80">{g.score} pts</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </div>

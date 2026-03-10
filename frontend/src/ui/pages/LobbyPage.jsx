@@ -26,7 +26,7 @@ export default function LobbyPage() {
     if (game?.turn) {
       startGameSocket()
       const gameType = game.turn.game_type || lobby?.room?.game_type || 'charades'
-      navigate(gameType === 'scribble' ? '/scribble' : '/game')
+      navigate(gameType === 'scribble' ? '/scribble' : gameType === 'trivia' ? '/trivia' : '/game')
     }
   }, [game?.turn])
 
@@ -35,7 +35,7 @@ export default function LobbyPage() {
     startGameSocket()
     emitGameStart(lobby.room.code)
     const gameType = lobby?.room?.game_type || 'charades'
-    navigate(gameType === 'scribble' ? '/scribble' : '/game')
+    navigate(gameType === 'scribble' ? '/scribble' : gameType === 'trivia' ? '/trivia' : '/game')
   }
 
   return (

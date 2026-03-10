@@ -1,0 +1,2732 @@
+[
+  {
+    "id": "sci_1_001",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What planet is closest to the Sun?",
+    "options": [
+      "Venus",
+      "Mercury",
+      "Mars",
+      "Earth"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_1_002",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What gas do plants absorb from the air during photosynthesis?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_1_003",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the chemical formula of water?",
+    "options": [
+      "CO2",
+      "H2O",
+      "NaCl",
+      "O2"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_1_004",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the largest planet in our solar system?",
+    "options": [
+      "Saturn",
+      "Neptune",
+      "Jupiter",
+      "Uranus"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_1_005",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the boiling point of water at sea level in degrees Celsius?",
+    "options": [
+      "90",
+      "100",
+      "110",
+      "120"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_1_006",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which organ is the largest in the human body?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_1_007",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many bones are in the adult human body?",
+    "options": [
+      "186",
+      "196",
+      "206",
+      "216"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_1_008",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What type of blood cells carry oxygen throughout the body?",
+    "options": [
+      "White blood cells",
+      "Red blood cells",
+      "Platelets",
+      "Plasma cells"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_1_009",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the process by which plants convert sunlight into energy?",
+    "options": [
+      "Respiration",
+      "Fermentation",
+      "Photosynthesis",
+      "Transpiration"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_1_010",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many legs does a spider have?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_1_011",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Argon"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_1_012",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many planets are in our solar system?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_1_013",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the largest ocean on Earth?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_1_014",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What force keeps us on the ground and makes objects fall?",
+    "options": [
+      "Magnetism",
+      "Friction",
+      "Gravity",
+      "Inertia"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_1_015",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many chambers does the human heart have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_001",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the hardest natural substance on Earth?",
+    "options": [
+      "Quartz",
+      "Topaz",
+      "Diamond",
+      "Corundum"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_002",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What element has the atomic number 79?",
+    "options": [
+      "Silver",
+      "Platinum",
+      "Copper",
+      "Gold"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_2_003",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which planet is the hottest in our solar system?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_2_004",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the chemical symbol for sodium?",
+    "options": [
+      "So",
+      "Sd",
+      "Na",
+      "S"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_005",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What cell organelle is known as the 'powerhouse of the cell'?",
+    "options": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondria",
+      "Golgi apparatus"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_006",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the pH value of pure water at 25 degrees Celsius?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_007",
+    "category": "science",
+    "difficulty": 2,
+    "question": "How many chromosomes do human body cells contain?",
+    "options": [
+      "23",
+      "44",
+      "46",
+      "48"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_008",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the smallest bone in the human body?",
+    "options": [
+      "Malleus",
+      "Incus",
+      "Stapes",
+      "Hyoid"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_009",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the chemical symbol for iron?",
+    "options": [
+      "Ir",
+      "In",
+      "I",
+      "Fe"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_2_010",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What does DNA stand for?",
+    "options": [
+      "Deoxyribonucleic acid",
+      "Dinitrogen acid",
+      "Dynamic nucleic acid",
+      "Deoxynitric acid"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_2_011",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What metal is liquid at room temperature?",
+    "options": [
+      "Lead",
+      "Mercury",
+      "Gallium",
+      "Tin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_2_012",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the SI unit of force?",
+    "options": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Pascal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_013",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What primarily causes tides on Earth?",
+    "options": [
+      "Wind patterns",
+      "Earth's rotation",
+      "The Moon's gravitational pull",
+      "The Sun's heat"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_014",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the largest bone in the human body?",
+    "options": [
+      "Tibia",
+      "Humerus",
+      "Femur",
+      "Pelvis"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_2_015",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Approximately what percentage of Earth's surface is covered by water?",
+    "options": [
+      "51%",
+      "61%",
+      "71%",
+      "81%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_3_001",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the approximate speed of light in a vacuum in km/s?",
+    "options": [
+      "150,000",
+      "200,000",
+      "300,000",
+      "400,000"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_3_002",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the most abundant element in Earth's crust by weight?",
+    "options": [
+      "Silicon",
+      "Iron",
+      "Aluminum",
+      "Oxygen"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_3_003",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the value of absolute zero in degrees Celsius?",
+    "options": [
+      "-173.15",
+      "-273.15",
+      "-373.15",
+      "-473.15"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_3_004",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is Avogadro's number approximately equal to?",
+    "options": [
+      "6.022 x 10^20",
+      "6.022 x 10^23",
+      "6.022 x 10^26",
+      "6.022 x 10^29"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_3_005",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the nearest star to Earth after the Sun?",
+    "options": [
+      "Alpha Centauri A",
+      "Barnard's Star",
+      "Sirius",
+      "Proxima Centauri"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_3_006",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the approximate speed of sound in air at 20 degrees Celsius?",
+    "options": [
+      "243 m/s",
+      "343 m/s",
+      "443 m/s",
+      "543 m/s"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_3_007",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the most electronegative element on the periodic table?",
+    "options": [
+      "Chlorine",
+      "Oxygen",
+      "Nitrogen",
+      "Fluorine"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_3_008",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is Earth's inner core primarily composed of?",
+    "options": [
+      "Magnesium and silicon",
+      "Iron and nickel",
+      "Copper and zinc",
+      "Lead and tin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_3_009",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the SI unit of electrical resistance?",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Farad"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_3_010",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Approximately how long does light from the Sun take to reach Earth?",
+    "options": [
+      "2 minutes",
+      "8 minutes",
+      "15 minutes",
+      "30 minutes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_3_011",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which group of elements on the periodic table are known as the noble gases?",
+    "options": [
+      "Group 1",
+      "Group 14",
+      "Group 17",
+      "Group 18"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_3_012",
+    "category": "science",
+    "difficulty": 3,
+    "question": "A light-year is a unit of what?",
+    "options": [
+      "Time",
+      "Speed",
+      "Distance",
+      "Energy"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_3_013",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the largest desert on Earth by area?",
+    "options": [
+      "Sahara Desert",
+      "Gobi Desert",
+      "Arabian Desert",
+      "Antarctic Desert"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_3_014",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the approximate value of Planck's constant in joule-seconds?",
+    "options": [
+      "6.626 x 10^-20",
+      "6.626 x 10^-27",
+      "6.626 x 10^-34",
+      "6.626 x 10^-41"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_3_015",
+    "category": "science",
+    "difficulty": 3,
+    "question": "On the Mohs hardness scale, what mineral represents a hardness of 1?",
+    "options": [
+      "Gypsum",
+      "Calcite",
+      "Quartz",
+      "Talc"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "hist_1_001",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who was the first Prime Minister of India?",
+    "options": [
+      "Sardar Vallabhbhai Patel",
+      "Jawaharlal Nehru",
+      "Rajendra Prasad",
+      "B. R. Ambedkar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_1_002",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year did India gain independence from British rule?",
+    "options": [
+      "1942",
+      "1945",
+      "1947",
+      "1950"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_1_003",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who is known as the Father of the Indian Constitution?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "B. R. Ambedkar",
+      "Rajendra Prasad"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_1_004",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who built the Taj Mahal?",
+    "options": [
+      "Akbar",
+      "Shah Jahan",
+      "Jahangir",
+      "Aurangzeb"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_1_005",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Mahatma Gandhi led the famous Salt March to which destination?",
+    "options": [
+      "Sabarmati",
+      "Champaran",
+      "Dandi",
+      "Porbandar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_1_006",
+    "category": "history",
+    "difficulty": 1,
+    "question": "On which date is India's Republic Day celebrated?",
+    "options": [
+      "15 August",
+      "26 January",
+      "2 October",
+      "14 November"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_1_007",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which Mughal emperor was also known as Akbar the Great?",
+    "options": [
+      "Babur",
+      "Humayun",
+      "Akbar",
+      "Aurangzeb"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_1_008",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The Indian national flag was designed by which freedom fighter?",
+    "options": [
+      "Bhagat Singh",
+      "Pingali Venkayya",
+      "Subhas Chandra Bose",
+      "Bal Gangadhar Tilak"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_1_009",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which ancient civilization had major cities at Harappa and Mohenjo-daro?",
+    "options": [
+      "Mesopotamian Civilization",
+      "Indus Valley Civilization",
+      "Egyptian Civilization",
+      "Chinese Civilization"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_1_010",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year did World War II end?",
+    "options": [
+      "1943",
+      "1944",
+      "1945",
+      "1946"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_1_011",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which pharaoh built the Great Pyramid of Giza?",
+    "options": [
+      "Ramesses II",
+      "Tutankhamun",
+      "Khufu",
+      "Cleopatra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_1_012",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The Quit India Movement was launched in which year?",
+    "options": [
+      "1940",
+      "1942",
+      "1944",
+      "1946"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_2_001",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who founded the Maurya Empire?",
+    "options": [
+      "Ashoka",
+      "Bindusara",
+      "Chandragupta Maurya",
+      "Bimbisara"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_2_002",
+    "category": "history",
+    "difficulty": 2,
+    "question": "In which year did the Jallianwala Bagh massacre take place?",
+    "options": [
+      "1915",
+      "1917",
+      "1919",
+      "1921"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_2_003",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who is known as the 'Tiger of Mysore'?",
+    "options": [
+      "Hyder Ali",
+      "Tipu Sultan",
+      "Shivaji",
+      "Maharana Pratap"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_2_004",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Indian National Congress was founded in which year?",
+    "options": [
+      "1875",
+      "1880",
+      "1885",
+      "1890"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_2_005",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which war led Emperor Ashoka to embrace Buddhism and non-violence?",
+    "options": [
+      "Battle of Hydaspes",
+      "Kalinga War",
+      "Battle of Takshashila",
+      "War of Pataliputra"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_2_006",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who gave the slogan 'Do or Die' during the Indian freedom struggle?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Bal Gangadhar Tilak",
+      "Mahatma Gandhi",
+      "Lala Lajpat Rai"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_2_007",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Partition of Bengal in 1905 was ordered by which Viceroy?",
+    "options": [
+      "Lord Mountbatten",
+      "Lord Curzon",
+      "Lord Dalhousie",
+      "Lord Ripon"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_2_008",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Subhas Chandra Bose was the leader of which military force?",
+    "options": [
+      "Indian National Army (Azad Hind Fauj)",
+      "Royal Indian Navy",
+      "Indian Legion",
+      "Hindustan Socialist Republican Association"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "hist_2_009",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Rani Lakshmibai, a key figure in the 1857 revolt, was the queen of which princely state?",
+    "options": [
+      "Gwalior",
+      "Jhansi",
+      "Lucknow",
+      "Kanpur"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_2_010",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The French Revolution began in which year?",
+    "options": [
+      "1776",
+      "1789",
+      "1804",
+      "1815"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_2_011",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which Mughal emperor's wife was Mumtaz Mahal, in whose memory the Taj Mahal was built?",
+    "options": [
+      "Akbar",
+      "Jahangir",
+      "Shah Jahan",
+      "Humayun"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_2_012",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The assassination of Archduke Franz Ferdinand in 1914 triggered which major conflict?",
+    "options": [
+      "Franco-Prussian War",
+      "World War I",
+      "World War II",
+      "Napoleonic Wars"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_3_001",
+    "category": "history",
+    "difficulty": 3,
+    "question": "In which year was the Battle of Plassey fought?",
+    "options": [
+      "1707",
+      "1739",
+      "1757",
+      "1764"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_3_002",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Who was the last Mughal Emperor of India?",
+    "options": [
+      "Aurangzeb",
+      "Shah Alam II",
+      "Bahadur Shah Zafar",
+      "Muhammad Shah"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_3_003",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Rowlatt Act, which allowed detention without trial, was passed in which year?",
+    "options": [
+      "1909",
+      "1915",
+      "1919",
+      "1923"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_3_004",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which Mughal emperor founded the syncretic religion 'Din-i-Ilahi'?",
+    "options": [
+      "Babur",
+      "Akbar",
+      "Shah Jahan",
+      "Aurangzeb"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_3_005",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Vijayanagara Empire was founded in 1336 by which pair of brothers?",
+    "options": [
+      "Harihara I and Bukka Raya I",
+      "Krishna Deva and Achyuta Raya",
+      "Rama Raya and Tirumala",
+      "Deva Raya I and Deva Raya II"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "hist_3_006",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Bhagat Singh, Rajguru, and Sukhdev were executed by the British in which year?",
+    "options": [
+      "1929",
+      "1930",
+      "1931",
+      "1932"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_3_007",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Battle of Haldighati in 1576 was fought between Maharana Pratap and the Mughal forces led by whom?",
+    "options": [
+      "Akbar",
+      "Man Singh I of Amber",
+      "Birbal",
+      "Todar Mal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_3_008",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The famous poet Kalidasa is traditionally associated with the court of which Gupta emperor?",
+    "options": [
+      "Samudragupta",
+      "Chandragupta I",
+      "Chandragupta II (Vikramaditya)",
+      "Kumaragupta I"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_3_009",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The First Battle of Panipat in 1526 was fought between Babur and which Sultan of Delhi?",
+    "options": [
+      "Sikandar Lodi",
+      "Ibrahim Lodi",
+      "Ala-ud-din Khilji",
+      "Firoz Shah Tughlaq"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_3_010",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Who was the temporary president of the Indian Constituent Assembly when it first convened in December 1946?",
+    "options": [
+      "Rajendra Prasad",
+      "B. R. Ambedkar",
+      "Sachchidananda Sinha",
+      "Jawaharlal Nehru"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_3_011",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Treaty of Versailles, which ended World War I, was signed in which year?",
+    "options": [
+      "1917",
+      "1918",
+      "1919",
+      "1920"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_3_012",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Indian Rebellion of 1857 began in which city after sepoys refused to use greased cartridges?",
+    "options": [
+      "Delhi",
+      "Lucknow",
+      "Meerut",
+      "Kanpur"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_1_001",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of India?",
+    "options": [
+      "Mumbai",
+      "New Delhi",
+      "Kolkata",
+      "Chennai"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_1_002",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the largest continent in the world by area?",
+    "options": [
+      "Africa",
+      "North America",
+      "Asia",
+      "Europe"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_1_003",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the longest river in India?",
+    "options": [
+      "Yamuna",
+      "Brahmaputra",
+      "Godavari",
+      "Ganga"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_1_004",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "How many states are there in India?",
+    "options": [
+      "25",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_1_005",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the smallest state in India by area?",
+    "options": [
+      "Sikkim",
+      "Tripura",
+      "Goa",
+      "Mizoram"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_1_006",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the largest ocean in the world?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_1_007",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Mount Everest, the highest mountain in the world, is located on the border of which two countries?",
+    "options": [
+      "India and China",
+      "Nepal and China",
+      "India and Nepal",
+      "Pakistan and China"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_1_008",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the largest country in the world by area?",
+    "options": [
+      "Canada",
+      "China",
+      "United States",
+      "Russia"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_1_009",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "The Thar Desert is primarily located in which Indian state?",
+    "options": [
+      "Gujarat",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Maharashtra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_1_010",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Indian state is known as the 'Land of Five Rivers'?",
+    "options": [
+      "Haryana",
+      "Punjab",
+      "Uttar Pradesh",
+      "Himachal Pradesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_1_011",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the highest peak in India?",
+    "options": [
+      "Nanda Devi",
+      "Mount Everest",
+      "Kangchenjunga",
+      "K2"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_1_012",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "The Great Barrier Reef is located off the coast of which country?",
+    "options": [
+      "New Zealand",
+      "Indonesia",
+      "Australia",
+      "Philippines"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_2_001",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Indian state has the longest coastline?",
+    "options": [
+      "Maharashtra",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Gujarat"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_2_002",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which is the deepest ocean in the world?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Southern Ocean"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_2_003",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which is the largest state in India by area?",
+    "options": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Maharashtra",
+      "Rajasthan"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_2_004",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Indian river is known as the 'Sorrow of Bihar'?",
+    "options": [
+      "Ganga",
+      "Son",
+      "Kosi",
+      "Gandak"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_2_005",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Jim Corbett National Park, India's first national park, is located in which state?",
+    "options": [
+      "Madhya Pradesh",
+      "Uttarakhand",
+      "Himachal Pradesh",
+      "Assam"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_2_006",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Kaziranga National Park, famous for the one-horned rhinoceros, is in which Indian state?",
+    "options": [
+      "West Bengal",
+      "Odisha",
+      "Assam",
+      "Meghalaya"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_2_007",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which is the smallest country in the world by area?",
+    "options": [
+      "Monaco",
+      "San Marino",
+      "Vatican City",
+      "Liechtenstein"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_2_008",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "What is the capital of Australia?",
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Brisbane"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_2_009",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "How many countries share a land border with India?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_2_010",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which is the largest hot desert in the world?",
+    "options": [
+      "Arabian Desert",
+      "Gobi Desert",
+      "Kalahari Desert",
+      "Sahara Desert"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_2_011",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Palk Strait separates India from which country?",
+    "options": [
+      "Maldives",
+      "Sri Lanka",
+      "Myanmar",
+      "Bangladesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_2_012",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Mount Kilimanjaro, the highest mountain in Africa, is located in which country?",
+    "options": [
+      "Kenya",
+      "Ethiopia",
+      "Tanzania",
+      "Uganda"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_3_001",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which Indian state shares borders with the most other states and union territories?",
+    "options": [
+      "Madhya Pradesh",
+      "Assam",
+      "Chhattisgarh",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_3_002",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which country has the most time zones in the world?",
+    "options": [
+      "Russia",
+      "United States",
+      "France",
+      "United Kingdom"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_3_003",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which is the largest freshwater lake in India?",
+    "options": [
+      "Dal Lake",
+      "Chilika Lake",
+      "Loktak Lake",
+      "Wular Lake"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_3_004",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "How many Indian states does the Tropic of Cancer pass through?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_3_005",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which Indian state is known as the 'Spice Garden of India'?",
+    "options": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Kerala",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_3_006",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Danube River flows through how many countries?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_3_007",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Chilika Lake, one of the largest coastal lagoons in the world, is located in which Indian state?",
+    "options": [
+      "Andhra Pradesh",
+      "West Bengal",
+      "Tamil Nadu",
+      "Odisha"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_3_008",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which is the only country in the world that spans all four hemispheres?",
+    "options": [
+      "Indonesia",
+      "Kiribati",
+      "Maldives",
+      "Fiji"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_3_009",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "What is the capital of Myanmar?",
+    "options": [
+      "Yangon",
+      "Mandalay",
+      "Naypyidaw",
+      "Bago"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_3_010",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which country shares the longest land border with India?",
+    "options": [
+      "China",
+      "Pakistan",
+      "Nepal",
+      "Bangladesh"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_3_011",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Valley of Flowers National Park, a UNESCO World Heritage Site, is located in which Indian state?",
+    "options": [
+      "Himachal Pradesh",
+      "Sikkim",
+      "Jammu & Kashmir",
+      "Uttarakhand"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_3_012",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which major Indian river flows westward into the Arabian Sea?",
+    "options": [
+      "Godavari",
+      "Krishna",
+      "Kaveri",
+      "Narmada"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "spo_1_001",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "How many players are there in a cricket team?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_1_002",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which country has won the most ODI Cricket World Cups?",
+    "options": [
+      "India",
+      "Australia",
+      "West Indies",
+      "England"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "spo_1_003",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "How many overs does each team get in a T20 cricket match?",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "50"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_1_004",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Who is known as the 'God of Cricket'?",
+    "options": [
+      "Virat Kohli",
+      "MS Dhoni",
+      "Sachin Tendulkar",
+      "Kapil Dev"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_1_005",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "In which sport has India won the most Olympic gold medals?",
+    "options": [
+      "Shooting",
+      "Wrestling",
+      "Badminton",
+      "Hockey"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "spo_1_006",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which team won the first ever IPL season in 2008?",
+    "options": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Kolkata Knight Riders"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_1_007",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "How many overs does each team get in an ODI cricket match?",
+    "options": [
+      "20",
+      "40",
+      "50",
+      "60"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_1_008",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which Indian cricketer is nicknamed 'Captain Cool'?",
+    "options": [
+      "Virat Kohli",
+      "Rohit Sharma",
+      "MS Dhoni",
+      "Sourav Ganguly"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_1_009",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Neeraj Chopra won India's first Olympic gold in athletics. What is his event?",
+    "options": [
+      "Shot Put",
+      "Discus Throw",
+      "Javelin Throw",
+      "Hammer Throw"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_1_010",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which IPL team does Virat Kohli play for?",
+    "options": [
+      "Mumbai Indians",
+      "Chennai Super Kings",
+      "Royal Challengers Bengaluru",
+      "Delhi Capitals"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_2_001",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Who holds the record for the most runs in Test cricket?",
+    "options": [
+      "Ricky Ponting",
+      "Brian Lara",
+      "Sachin Tendulkar",
+      "Kumar Sangakkara"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_2_002",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "In which year did India first win the ODI Cricket World Cup?",
+    "options": [
+      "1975",
+      "1979",
+      "1983",
+      "1987"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_2_003",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Who captained India to victory in the 2011 ODI World Cup?",
+    "options": [
+      "Virat Kohli",
+      "Sourav Ganguly",
+      "Rahul Dravid",
+      "MS Dhoni"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "spo_2_004",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Which bowler holds the record for the most wickets in Test cricket?",
+    "options": [
+      "Shane Warne",
+      "Anil Kumble",
+      "Muttiah Muralitharan",
+      "James Anderson"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_2_005",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "PV Sindhu won a silver medal at the 2016 Rio Olympics in which sport?",
+    "options": [
+      "Tennis",
+      "Table Tennis",
+      "Badminton",
+      "Shooting"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_2_006",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "How many Olympic gold medals has the Indian men's hockey team won?",
+    "options": [
+      "5",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_2_007",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Who was the first cricketer to score a double century (200 runs) in an ODI match?",
+    "options": [
+      "Virender Sehwag",
+      "Rohit Sharma",
+      "Sachin Tendulkar",
+      "Chris Gayle"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_2_008",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Which team did India defeat in the final of the inaugural 2007 T20 World Cup?",
+    "options": [
+      "Sri Lanka",
+      "Australia",
+      "South Africa",
+      "Pakistan"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "spo_2_009",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Who is the all-time highest run scorer in IPL history?",
+    "options": [
+      "Rohit Sharma",
+      "Virat Kohli",
+      "Suresh Raina",
+      "David Warner"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "spo_2_010",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Abhinav Bindra won India's first individual Olympic gold medal in 2008 in which sport?",
+    "options": [
+      "Wrestling",
+      "Boxing",
+      "Shooting",
+      "Archery"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_3_001",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Who was the first Indian cricketer to score a Test double century?",
+    "options": [
+      "Vijay Hazare",
+      "Polly Umrigar",
+      "Sunil Gavaskar",
+      "Vijay Manjrekar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "spo_3_002",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "The first IPL final in 2008 was held at which venue?",
+    "options": [
+      "Wankhede Stadium, Mumbai",
+      "M.A. Chidambaram Stadium, Chennai",
+      "DY Patil Stadium, Navi Mumbai",
+      "Eden Gardens, Kolkata"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_3_003",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Anil Kumble took all 10 wickets in a Test innings in 1999 against which team?",
+    "options": [
+      "Australia",
+      "England",
+      "Sri Lanka",
+      "Pakistan"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "spo_3_004",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Who was the first Indian batsman to score a triple century in Test cricket?",
+    "options": [
+      "Sachin Tendulkar",
+      "Rahul Dravid",
+      "Virender Sehwag",
+      "VVS Laxman"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_3_005",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Which Indian sprinter finished fourth in the 400m at the 1960 Rome Olympics, missing a medal by 0.1 seconds?",
+    "options": [
+      "P.T. Usha",
+      "Milkha Singh",
+      "Hima Das",
+      "Sriram Singh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "spo_3_006",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Who was the first batsman to score 10,000 runs in Test cricket?",
+    "options": [
+      "Sachin Tendulkar",
+      "Allan Border",
+      "Sunil Gavaskar",
+      "Viv Richards"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_3_007",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Which team won the first season of the Pro Kabaddi League in 2014?",
+    "options": [
+      "U Mumba",
+      "Patna Pirates",
+      "Jaipur Pink Panthers",
+      "Bengaluru Bulls"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_3_008",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Who holds the record for the most catches by a non-wicketkeeper in Test cricket?",
+    "options": [
+      "Jacques Kallis",
+      "Ricky Ponting",
+      "Rahul Dravid",
+      "Mahela Jayawardene"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_3_009",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Leander Paes won a bronze medal for India at the 1996 Atlanta Olympics in which sport?",
+    "options": [
+      "Badminton",
+      "Table Tennis",
+      "Tennis",
+      "Squash"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "spo_3_010",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "How many times has Mary Kom won the World Amateur Boxing Championship?",
+    "options": [
+      "Four",
+      "Five",
+      "Six",
+      "Seven"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_1_001",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who is popularly known as the 'King of Bollywood'?",
+    "options": [
+      "Amitabh Bachchan",
+      "Shah Rukh Khan",
+      "Aamir Khan",
+      "Salman Khan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_1_002",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who hosts the Indian TV quiz show 'Kaun Banega Crorepati'?",
+    "options": [
+      "Shah Rukh Khan",
+      "Salman Khan",
+      "Amitabh Bachchan",
+      "Aamir Khan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_1_003",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which singer is known as the 'Nightingale of India'?",
+    "options": [
+      "Asha Bhosle",
+      "Shreya Ghoshal",
+      "Lata Mangeshkar",
+      "Sunidhi Chauhan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_1_004",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which 1975 Bollywood film, directed by Ramesh Sippy, is often called the greatest Hindi film ever made?",
+    "options": [
+      "Deewar",
+      "Sholay",
+      "Don",
+      "Zanjeer"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_1_005",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Bollywood film has been screened daily at Mumbai's Maratha Mandir theatre since its 1995 release?",
+    "options": [
+      "Kuch Kuch Hota Hai",
+      "Hum Aapke Hain Koun",
+      "Dilwale Dulhania Le Jayenge",
+      "Kabhi Khushi Kabhie Gham"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_1_006",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Indian classical dance form originated in the temples of Tamil Nadu?",
+    "options": [
+      "Kathak",
+      "Odissi",
+      "Bharatanatyam",
+      "Kathakali"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_1_007",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which 2009 Bollywood film starring Aamir Khan is a comedy-drama about the Indian education system?",
+    "options": [
+      "PK",
+      "Dangal",
+      "Taare Zameen Par",
+      "3 Idiots"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_1_008",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who directed the iconic Bollywood film 'Dilwale Dulhania Le Jayenge' (1995)?",
+    "options": [
+      "Yash Chopra",
+      "Aditya Chopra",
+      "Karan Johar",
+      "Sanjay Leela Bhansali"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_1_009",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Indian TV serial based on the Hindu epic aired on Doordarshan starting in 1987 and was created by Ramanand Sagar?",
+    "options": [
+      "Mahabharat",
+      "Ramayan",
+      "Chanakya",
+      "Shaktimaan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_1_010",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which award is the highest honor in Indian cinema, presented annually by the Government of India?",
+    "options": [
+      "Filmfare Award",
+      "National Film Award",
+      "Dadasaheb Phalke Award",
+      "IIFA Award"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_2_001",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Who composed the music for the 1992 Tamil film 'Roja', marking his debut as a film composer?",
+    "options": [
+      "Ilaiyaraaja",
+      "A.R. Rahman",
+      "Harris Jayaraj",
+      "Yuvan Shankar Raja"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_2_002",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which was the first Indian film to be nominated for the Academy Award for Best Foreign Language Film?",
+    "options": [
+      "Lagaan",
+      "Salaam Bombay!",
+      "Mother India",
+      "Guide"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_2_003",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which 2002 Bollywood film, directed by Sanjay Leela Bhansali, is based on Sarat Chandra Chattopadhyay's Bengali novel about a man's descent into alcoholism?",
+    "options": [
+      "Black",
+      "Bajirao Mastani",
+      "Devdas",
+      "Hum Dil De Chuke Sanam"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_2_004",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which Indian classical dance form, originating from North India, is characterized by intricate footwork and rapid spins (chakkars)?",
+    "options": [
+      "Bharatanatyam",
+      "Kathakali",
+      "Kathak",
+      "Kuchipudi"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_2_005",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which Aamir Khan-starrer became the highest-grossing Indian film worldwide, earning over 2,000 crore rupees?",
+    "options": [
+      "PK",
+      "3 Idiots",
+      "Lagaan",
+      "Dangal"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_2_006",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Who produced and directed the 1988 Doordarshan TV serial 'Mahabharat' that ran for 94 episodes?",
+    "options": [
+      "Ramanand Sagar",
+      "B.R. Chopra",
+      "Shyam Benegal",
+      "Gulzar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_2_007",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which Indian sitar maestro taught George Harrison of The Beatles and popularized Indian classical music in the West?",
+    "options": [
+      "Vilayat Khan",
+      "Ravi Shankar",
+      "Nikhil Banerjee",
+      "Bismillah Khan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_2_008",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Who was the first Indian to win an Academy Award (Oscar)?",
+    "options": [
+      "Satyajit Ray",
+      "A.R. Rahman",
+      "Bhanu Athaiya",
+      "Gulzar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_2_009",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which 1960 Bollywood epic, directed by K. Asif, tells the love story of Prince Salim and Anarkali?",
+    "options": [
+      "Pakeezah",
+      "Umrao Jaan",
+      "Mughal-e-Azam",
+      "Jodhaa Akbar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_2_010",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "The song 'Naatu Naatu' from the film 'RRR' won the Oscar for Best Original Song. Who composed it?",
+    "options": [
+      "A.R. Rahman",
+      "S.S. Thaman",
+      "M.M. Keeravani",
+      "Devi Sri Prasad"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_3_001",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In which year was 'Raja Harishchandra', considered the first full-length Indian feature film, released?",
+    "options": [
+      "1910",
+      "1913",
+      "1920",
+      "1931"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_3_002",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Who directed the 1955 Bengali film 'Pather Panchali', the first part of the acclaimed Apu Trilogy?",
+    "options": [
+      "Ritwik Ghatak",
+      "Mrinal Sen",
+      "Satyajit Ray",
+      "Bimal Roy"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_3_003",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which 1931 film, directed by Ardeshir Irani, was India's first sound film (talkie)?",
+    "options": [
+      "Raja Harishchandra",
+      "Alam Ara",
+      "Kisan Kanya",
+      "Devdas"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_3_004",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Vishal Bhardwaj directed a trilogy of Bollywood films adapted from Shakespeare. Which Shakespeare play was 'Omkara' (2006) based on?",
+    "options": [
+      "Hamlet",
+      "Macbeth",
+      "King Lear",
+      "Othello"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_3_005",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which Bollywood composer was nicknamed 'Pancham' and was known for revolutionizing Hindi film music from the 1960s to 1990s?",
+    "options": [
+      "S.D. Burman",
+      "R.D. Burman",
+      "Shankar Jaikishan",
+      "Madan Mohan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_3_006",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In which year did Rabindranath Tagore win the Nobel Prize in Literature, becoming the first Asian Nobel laureate?",
+    "options": [
+      "1910",
+      "1913",
+      "1920",
+      "1925"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_3_007",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which Indian filmmaker received an Honorary Academy Award for Lifetime Achievement in 1992, just 24 days before his death?",
+    "options": [
+      "Guru Dutt",
+      "Bimal Roy",
+      "Satyajit Ray",
+      "V. Shantaram"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_3_008",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which was India's first indigenously produced Technicolor film, directed by Sohrab Modi in 1953?",
+    "options": [
+      "Aan",
+      "Jhansi Ki Rani",
+      "Mughal-e-Azam",
+      "Mother India"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_3_009",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which Indian TV serial, first broadcast on Doordarshan in 1984, is considered India's first soap opera?",
+    "options": [
+      "Buniyaad",
+      "Hum Log",
+      "Ramayan",
+      "Nukkad"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_3_010",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which Indian lyricist shared the Academy Award for Best Original Song with A.R. Rahman for 'Jai Ho' from 'Slumdog Millionaire'?",
+    "options": [
+      "Javed Akhtar",
+      "Prasoon Joshi",
+      "Gulzar",
+      "Irshad Kamil"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_1_001",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What does CPU stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Program Utility",
+      "Computer Processing Unit"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_1_002",
+    "category": "general",
+    "difficulty": 1,
+    "question": "How many bits are in a byte?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "16"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_1_003",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the currency of Japan?",
+    "options": [
+      "Yuan",
+      "Won",
+      "Yen",
+      "Ringgit"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_1_004",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_1_005",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What does USB stand for?",
+    "options": [
+      "Universal System Bus",
+      "Ultra Serial Bus",
+      "Unified Serial Board",
+      "Universal Serial Bus"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_1_006",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the chemical symbol for gold?",
+    "options": [
+      "Go",
+      "Gd",
+      "Au",
+      "Ag"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_1_007",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What does RAM stand for in computing?",
+    "options": [
+      "Read Access Memory",
+      "Random Access Memory",
+      "Rapid Active Memory",
+      "Run Application Memory"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_1_008",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Who painted the Mona Lisa?",
+    "options": [
+      "Michelangelo",
+      "Raphael",
+      "Leonardo da Vinci",
+      "Donatello"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_1_009",
+    "category": "general",
+    "difficulty": 1,
+    "question": "How many planets are in our solar system?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_1_010",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the largest ocean on Earth?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_1_011",
+    "category": "general",
+    "difficulty": 1,
+    "question": "At what temperature does water boil in degrees Celsius?",
+    "options": [
+      "90",
+      "95",
+      "100",
+      "110"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_2_001",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Who co-founded Microsoft along with Paul Allen?",
+    "options": [
+      "Steve Jobs",
+      "Bill Gates",
+      "Mark Zuckerberg",
+      "Larry Page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_2_002",
+    "category": "general",
+    "difficulty": 2,
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Tech Modern Language",
+      "Hyper Transfer Markup Language",
+      "Home Text Markup Language"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_2_003",
+    "category": "general",
+    "difficulty": 2,
+    "question": "What is the largest organ in the human body?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Heart",
+      "Skin"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_2_004",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Who is credited with inventing the World Wide Web?",
+    "options": [
+      "Bill Gates",
+      "Steve Jobs",
+      "Tim Berners-Lee",
+      "Vint Cerf"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_2_005",
+    "category": "general",
+    "difficulty": 2,
+    "question": "What does CSS stand for in web development?",
+    "options": [
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Creative Style System",
+      "Coded Style Sheets"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_2_006",
+    "category": "general",
+    "difficulty": 2,
+    "question": "What is the smallest country in the world by area?",
+    "options": [
+      "Monaco",
+      "San Marino",
+      "Vatican City",
+      "Liechtenstein"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_2_007",
+    "category": "general",
+    "difficulty": 2,
+    "question": "In what year was the first iPhone released?",
+    "options": [
+      "2005",
+      "2006",
+      "2007",
+      "2008"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_2_008",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Who created the Python programming language?",
+    "options": [
+      "James Gosling",
+      "Guido van Rossum",
+      "Brendan Eich",
+      "Dennis Ritchie"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_2_009",
+    "category": "general",
+    "difficulty": 2,
+    "question": "What does API stand for in software development?",
+    "options": [
+      "Application Programming Interface",
+      "Automated Program Integration",
+      "Application Process Interface",
+      "Advanced Programming Integration"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_2_010",
+    "category": "general",
+    "difficulty": 2,
+    "question": "How many bones are in an adult human body?",
+    "options": [
+      "186",
+      "196",
+      "206",
+      "216"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_2_011",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which company owns the Android operating system?",
+    "options": [
+      "Apple",
+      "Samsung",
+      "Google",
+      "Microsoft"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_3_001",
+    "category": "general",
+    "difficulty": 3,
+    "question": "In which year was the first email sent?",
+    "options": [
+      "1969",
+      "1971",
+      "1975",
+      "1981"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_3_002",
+    "category": "general",
+    "difficulty": 3,
+    "question": "What programming language was created by James Gosling?",
+    "options": [
+      "C++",
+      "Python",
+      "Java",
+      "Ruby"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_3_003",
+    "category": "general",
+    "difficulty": 3,
+    "question": "What is the most spoken language in the world by number of native speakers?",
+    "options": [
+      "English",
+      "Spanish",
+      "Hindi",
+      "Mandarin Chinese"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_3_004",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Who created the Linux kernel?",
+    "options": [
+      "Richard Stallman",
+      "Linus Torvalds",
+      "Ken Thompson",
+      "Andrew Tanenbaum"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_3_005",
+    "category": "general",
+    "difficulty": 3,
+    "question": "What does HTTP stand for?",
+    "options": [
+      "Hyper Text Transfer Protocol",
+      "High Tech Transfer Process",
+      "Hyper Terminal Transfer Protocol",
+      "Home Text Transfer Protocol"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_3_006",
+    "category": "general",
+    "difficulty": 3,
+    "question": "What is the largest desert in the world by area?",
+    "options": [
+      "Sahara",
+      "Gobi",
+      "Arabian",
+      "Antarctic"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_3_007",
+    "category": "general",
+    "difficulty": 3,
+    "question": "In what year was Google founded?",
+    "options": [
+      "1996",
+      "1998",
+      "2000",
+      "2002"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_3_008",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Who developed the C programming language?",
+    "options": [
+      "Bjarne Stroustrup",
+      "Ken Thompson",
+      "Dennis Ritchie",
+      "Brian Kernighan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_3_009",
+    "category": "general",
+    "difficulty": 3,
+    "question": "What does DNS stand for in networking?",
+    "options": [
+      "Digital Network Service",
+      "Domain Name System",
+      "Data Network Security",
+      "Dynamic Name Server"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_3_010",
+    "category": "general",
+    "difficulty": 3,
+    "question": "What is the most abundant element in the universe?",
+    "options": [
+      "Oxygen",
+      "Carbon",
+      "Helium",
+      "Hydrogen"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_3_011",
+    "category": "general",
+    "difficulty": 3,
+    "question": "In what year was Wikipedia launched?",
+    "options": [
+      "1999",
+      "2001",
+      "2003",
+      "2005"
+    ],
+    "correct_index": 1
+  }
+]

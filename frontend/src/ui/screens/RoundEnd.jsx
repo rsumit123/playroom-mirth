@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react'
 import Scoreboard from '../components/Scoreboard.jsx'
 import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import PlayerAvatar from '../components/PlayerAvatar.jsx'
+import { playSound } from '../../lib/sounds.js'
 
 export default function RoundEnd({ scores, playerNames, isHost, onContinue }) {
   const [confettiKey, setConfettiKey] = useState(0)
 
   useEffect(() => {
     setConfettiKey((k) => k + 1)
+    playSound('round-end')
   }, [])
 
   const entries = Object.entries(scores || {})

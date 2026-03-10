@@ -4,6 +4,7 @@ import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import ChatBubble from '../components/ChatBubble.jsx'
 import Scoreboard from '../components/Scoreboard.jsx'
 import GameAlerts, { useGameAlerts } from '../components/GameAlerts.jsx'
+import { playSound } from '../../lib/sounds.js'
 
 export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const [message, setMessage] = useState('')
@@ -20,6 +21,7 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   const prevTurnRef = useRef(null)
   const prevWordRef = useRef(null)
   const timedUpRef = useRef(false)
+  const tickPlayedRef = useRef(false)
 
   // Track visual viewport height + offset to handle mobile keyboard
   useEffect(() => {
@@ -38,7 +40,10 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   }, [])
 
   useEffect(() => {
-    if (lastGuess?.word) setConfettiKey((k) => k + 1)
+    if (lastGuess) {
+      setConfettiKey((k) => k + 1)
+      playSound('correct-guess')
+    }
   }, [lastGuess])
 
   useEffect(() => {
@@ -61,7 +66,9 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
     const isFirst = !prev
     prevTurnRef.current = turn
     timedUpRef.current = false
+    tickPlayedRef.current = false
     if (isFirst) return
+    playSound('turn-start')
     const isDescriber = game?.selfPlayerId && String(game.selfPlayerId) === String(turn.describer_id)
     if (isDescriber) {
       addAlert('Your turn to describe!', 'accent', '\u{1F3A4}')
@@ -71,11 +78,20 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
     }
   }, [turn?.describer_id, turn?.turn_start_ts])
 
+  // Sound: tick at 10 seconds
+  useEffect(() => {
+    if (remaining === 10 && !tickPlayedRef.current) {
+      tickPlayedRef.current = true
+      playSound('tick')
+    }
+  }, [remaining])
+
   // Alert: time's up
   useEffect(() => {
     if (remaining === 0 && !timedUpRef.current) {
       timedUpRef.current = true
       addAlert("Time's up!", 'warning', '\u23F0')
+      playSound('times-up')
     }
   }, [remaining])
 
@@ -84,6 +100,7 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
     if (role !== 'describer' || !game?.word) return
     if (prevWordRef.current && prevWordRef.current !== game.word) {
       addAlert('Next word!', 'success', '\u2728')
+      playSound('correct-guess')
     }
     prevWordRef.current = game.word
   }, [game?.word, role])
@@ -136,23 +153,32 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
         <CircularTimer remaining={remaining ?? (turn?.turn_seconds || 60)} total={turn?.turn_seconds || 60} size={48} />
       </div>
 
-      {/* Word bar */}
+      {/* Word / info bar */}
       {role === 'describer' ? (
-        <div className="bg-accent/5 border-b border-accent/10 px-4 py-2.5 text-center shrink-0">
-          <div className="text-[10px] uppercase tracking-wider text-accent/60 mb-0.5">Your word</div>
-          <div className="font-display text-2xl text-accent">{game?.word || '...'}</div>
+        <div className="bg-accent/5 border-b border-accent/10 px-4 py-3 text-center shrink-0 animate-word-pulse">
+          <div className="text-[10px] uppercase tracking-widest text-accent/50 mb-1">&#127908; Describe this word</div>
+          <div key={game?.word} className="font-display text-3xl sm:text-4xl text-accent animate-pop">{game?.word || '...'}</div>
+          <div className="text-[10px] text-slate/40 mt-1">Don&apos;t say the word!</div>
         </div>
       ) : (
-        <div className="bg-mist/50 border-b border-black/5 px-4 py-2 text-center text-sm text-slate/50 shrink-0">
-          <span className="font-medium text-ink">{playerNames[describerId] || 'Someone'}</span> is describing...
+        <div className="bg-mist/50 border-b border-black/5 px-4 py-2 text-center shrink-0">
+          <div className="text-sm text-slate/50">
+            <span className="font-medium text-ink">{playerNames[describerId] || 'Someone'}</span> is describing...
+          </div>
+          {game?.hint && (
+            <div className="font-mono text-lg sm:text-xl tracking-[0.25em] text-ink/70 mt-1.5 select-none">
+              {game.hint}
+            </div>
+          )}
         </div>
       )}
 
       {/* Correct guess flash */}
-      {lastGuess?.word && (
+      {lastGuess && (
         <div className="bg-correct/10 border-b border-correct/20 px-4 py-2 text-center animate-pop shrink-0">
           <span className="text-correct font-semibold text-sm">
-            &#10003; {playerNames[lastGuess.guesser_id] || 'Someone'} guessed &ldquo;{lastGuess.word}&rdquo;
+            &#10003; {playerNames[lastGuess.guesser_id] || 'Someone'}{' '}
+            {lastGuess.word ? <>guessed &ldquo;{lastGuess.word}&rdquo;</> : <>guessed correctly!</>}
           </span>
         </div>
       )}
@@ -164,8 +190,9 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
         <div className="flex-1 flex flex-col min-h-0">
           <div className="flex-1 overflow-y-auto px-4 py-3 space-y-2">
             {chatItems.length === 0 && (
-              <div className="text-center text-sm text-slate/40 py-8">
-                {role === 'describer' ? 'Guesses will appear here' : 'Waiting for hints...'}
+              <div className="text-center text-slate/40 py-8">
+                <div className="text-2xl mb-2">&#128172;</div>
+                <div className="text-sm">{role === 'describer' ? 'Guesses will appear here' : 'Waiting for clues...'}</div>
               </div>
             )}
             {chatItems.map((m, idx) => (
@@ -187,13 +214,13 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
           <div className="border-t border-black/5 bg-white/80 backdrop-blur px-3 py-2.5 shrink-0 safe-area-bottom">
             {role === 'describer' ? (
               <div className="text-sm text-slate/50 text-center py-1.5">
-                You are describing &mdash; watch the guesses above
+                Give clues out loud &mdash; guesses appear above
               </div>
             ) : (
               <div className="flex items-center gap-2">
                 <input
                   ref={inputRef}
-                  className="flex-1 bg-accent/5 rounded-xl px-4 py-2.5 text-sm outline-none placeholder:text-slate/40 touch-target"
+                  className="flex-1 bg-white rounded-xl px-4 py-3 sm:py-2.5 text-base sm:text-sm outline-none placeholder:text-slate/40 touch-target animate-input-glow"
                   placeholder="Type your guess..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}

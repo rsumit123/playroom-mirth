@@ -9,6 +9,7 @@ class RoomCreateRequest(BaseModel):
     turn_seconds: int
     max_players: int = 20
     game_type: str = "charades"
+    trivia_category: str = "math"
 
 
 class RoomCreateGuestRequest(RoomCreateRequest):
@@ -19,6 +20,7 @@ class RoomUpdateRequest(BaseModel):
     rounds_total: int
     difficulty: int
     turn_seconds: int
+    trivia_category: str = "math"
 
 
 class RoomJoinRequest(BaseModel):
@@ -36,6 +38,7 @@ class RoomOut(BaseModel):
     difficulty: int
     turn_seconds: int
     game_type: str = "charades"
+    trivia_category: str = "math"
 
     class Config:
         from_attributes = True

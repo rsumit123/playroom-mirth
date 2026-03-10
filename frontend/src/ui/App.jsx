@@ -7,10 +7,12 @@ import GameSetupPage from './pages/GameSetupPage.jsx'
 import LobbyPage from './pages/LobbyPage.jsx'
 import GamePage from './pages/GamePage.jsx'
 import ScribbleGamePage from './pages/ScribbleGamePage.jsx'
+import TriviaGamePage from './pages/TriviaGamePage.jsx'
 import RoundEndPage from './pages/RoundEndPage.jsx'
 import GameEndPage from './pages/GameEndPage.jsx'
 import HowToPage from './pages/HowToPage.jsx'
 import AdminWordsPage from './pages/AdminWordsPage.jsx'
+import JoinPage from './pages/JoinPage.jsx'
 import TopBar from './components/TopBar.jsx'
 import Toast from './components/Toast.jsx'
 import LoadingOverlay from './components/LoadingOverlay.jsx'
@@ -64,9 +66,11 @@ function AppShell() {
         <Route path="/lobby" element={<LobbyPage />} />
         <Route path="/game" element={<GamePage />} />
         <Route path="/scribble" element={<ScribbleGamePage />} />
+        <Route path="/trivia" element={<TriviaGamePage />} />
         <Route path="/round-end" element={<RoundEndPage />} />
         <Route path="/game-end" element={<GameEndPage />} />
         <Route path="/how-to" element={<HowToPage />} />
+        <Route path="/join/:roomCode" element={<JoinPage />} />
         <Route path="/admin/words" element={<AdminWordsPage />} />
       </Routes>
     </>

@@ -21,7 +21,7 @@ export default function RoundEndPage() {
     if (game?.turn && game.turn !== turnRef.current) {
       turnRef.current = game.turn
       const gameType = game.turn.game_type || room?.game_type || 'charades'
-      navigate(gameType === 'scribble' ? '/scribble' : '/game')
+      navigate(gameType === 'scribble' ? '/scribble' : gameType === 'trivia' ? '/trivia' : '/game')
     }
   }, [game?.turn])
 

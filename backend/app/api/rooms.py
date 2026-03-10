@@ -129,5 +129,6 @@ def update_room_settings(
     room.rounds_total = payload.rounds_total
     room.difficulty = payload.difficulty
     room.turn_seconds = payload.turn_seconds
+    room.trivia_category = payload.trivia_category
     db.commit()
     return lobby_state(db, room)

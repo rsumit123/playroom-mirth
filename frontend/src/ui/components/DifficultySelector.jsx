@@ -5,10 +5,11 @@ const LEVELS = [
   { value: 3, label: 'Hard' },
 ]
 
-export default function DifficultySelector({ value, onChange }) {
+export default function DifficultySelector({ value, onChange, hideMixed = false }) {
+  const levels = hideMixed ? LEVELS.filter((l) => l.value !== 0) : LEVELS
   return (
     <div className="segmented">
-      {LEVELS.map((lvl) => (
+      {levels.map((lvl) => (
         <button
           key={lvl.value}
           type="button"

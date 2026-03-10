@@ -7,5 +7,6 @@ export function formatError(message) {
   if (message.includes('Active game limit')) return 'Active game limit reached. Leave a room from the home screen first.'
   if (message.includes('Hint contains target')) return 'Hint blocked: avoid using the word or partials.'
   if (message.includes('Room already in game')) return 'Game already started. Please wait for the next one.'
+  if (message.includes('not found') || message.includes('Not found')) return 'Room not found. Check the code and try again.'
   return message
 }

@@ -9,24 +9,36 @@ export default function Welcome({ onGuest, onGoogleLogin, onHowTo, loadingGuest,
   const googleBtnRef = useRef(null)
 
   useEffect(() => {
-    if (!GOOGLE_CLIENT_ID || !window.google?.accounts?.id) return
-    window.google.accounts.id.initialize({
-      client_id: GOOGLE_CLIENT_ID,
-      callback: (response) => {
-        if (response.credential) {
-          onGoogleLogin?.(response.credential)
-        }
-      },
-    })
-    if (googleBtnRef.current) {
-      window.google.accounts.id.renderButton(googleBtnRef.current, {
-        type: 'standard',
-        theme: 'outline',
-        size: 'large',
-        width: 320,
-        text: 'continue_with',
+    if (!GOOGLE_CLIENT_ID) return
+
+    function tryRenderButton() {
+      if (!window.google?.accounts?.id) return false
+      window.google.accounts.id.initialize({
+        client_id: GOOGLE_CLIENT_ID,
+        callback: (response) => {
+          if (response.credential) {
+            onGoogleLogin?.(response.credential)
+          }
+        },
       })
+      if (googleBtnRef.current) {
+        window.google.accounts.id.renderButton(googleBtnRef.current, {
+          type: 'standard',
+          theme: 'outline',
+          size: 'large',
+          width: 320,
+          text: 'continue_with',
+        })
+      }
+      return true
     }
+
+    // SDK may not be loaded yet (async defer script) — poll until available
+    if (tryRenderButton()) return
+    const interval = setInterval(() => {
+      if (tryRenderButton()) clearInterval(interval)
+    }, 200)
+    return () => clearInterval(interval)
   }, [onGoogleLogin])
 
   return (
@@ -40,7 +52,7 @@ export default function Welcome({ onGuest, onGoogleLogin, onHowTo, loadingGuest,
           Play. Laugh. <span className="text-accent">Win.</span>
         </h1>
         <p className="text-slate/60 text-base mb-8 max-w-sm">
-          Party games with friends — charades, drawing, and more. Jump in and play in seconds.
+          Multiplayer party games — play with friends in seconds.
         </p>
 
         <div className="flex items-center gap-3 mb-10 text-sm flex-wrap justify-center">
@@ -48,7 +60,7 @@ export default function Welcome({ onGuest, onGoogleLogin, onHowTo, loadingGuest,
           <span className="text-slate/30">&middot;</span>
           <span className="badge bg-accent/10 text-accent">Scribble</span>
           <span className="text-slate/30">&middot;</span>
-          <span className="badge bg-accent/10 text-accent">More soon</span>
+          <span className="badge bg-accent/10 text-accent">Trivia</span>
         </div>
 
         <div className="w-full space-y-4 max-w-xs">

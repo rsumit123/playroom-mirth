@@ -124,7 +124,7 @@ export function AppProvider({ children }) {
 
   async function ensureGuest(displayName) {
     if (auth.guestToken) {
-      if (displayName && !auth.guestDisplayName) {
+      if (displayName && displayName !== auth.guestDisplayName) {
         try {
           await api.updateGuestName(auth.guestToken, displayName)
           setAuth((prev) => ({ ...prev, guestDisplayName: displayName }))
@@ -255,15 +255,30 @@ export function AppProvider({ children }) {
   }
 
   function bindLobbyEvents(roomCode) {
+    // Reset game turn so stale data from a previous game doesn't trigger auto-navigation
+    // (backend catch-up in room:register will re-set turn if a game is actually active)
+    setGame((g) => ({ ...g, turn: null, word: null, lastGuess: null, roundEnd: null, gameEnd: null, messages: [] }))
     const socket = connectSocket()
     socket.off('room:lobby_update')
     socket.off('game:turn_start')
     socket.off('error')
+    socket.off('connect')
     socket.on('room:lobby_update', (payload) => {
       setLobby(payload)
       setRoom(payload.room)
     })
-    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload })))
+    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, hint: payload.hint || null })))
+    // Pre-register trivia listeners so non-host players don't miss the first question
+    socket.off('trivia:question')
+    socket.off('trivia:answer_update')
+    socket.off('trivia:question_result')
+    socket.on('trivia:question', (payload) => setGame((g) => ({
+      ...g, trivia: payload, triviaResult: null, triviaAnswered: false, triviaAnswerCount: null,
+    })))
+    socket.on('trivia:answer_update', (payload) => setGame((g) => ({ ...g, triviaAnswerCount: payload })))
+    socket.on('trivia:question_result', (payload) => setGame((g) => ({
+      ...g, triviaResult: payload, scores: payload.scores || g.scores,
+    })))
     socket.on('error', (payload) => {
       const message = formatError(payload?.message)
       setGame((g) => ({ ...g, error: { ...payload, message } }))
@@ -273,10 +288,10 @@ export function AppProvider({ children }) {
       const data = auth.token
         ? { room_code: roomCode, token: auth.token }
         : { room_code: roomCode, guest_token: auth.guestToken }
+      // Re-register on every (re)connection so the socket stays in the room
+      socket.on('connect', () => socket.emit('room:register', data))
       if (socket.connected) {
         socket.emit('room:register', data)
-      } else {
-        socket.once('connect', () => socket.emit('room:register', data))
       }
     }
   }
@@ -294,22 +309,35 @@ export function AppProvider({ children }) {
     socket.off('game:reconnect_grace')
     socket.off('disconnect')
     socket.off('connect')
-    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, word: null, lastGuess: null, roundEnd: null, gameEnd: null, scribbleStrokes: [], guessedPlayerIds: [] })))
+    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, hint: payload.hint || null, word: null, lastGuess: null, roundEnd: null, gameEnd: null, scribbleStrokes: [], guessedPlayerIds: [] })))
     socket.on('game:new_word', (payload) => setGame((g) => ({ ...g, word: payload.word })))
     socket.on('chat:message', (payload) => {
       setGame((g) => ({ ...g, messages: [...(g.messages || []), payload] }))
     })
+    socket.off('game:hint')
+    socket.on('game:hint', (payload) => setGame((g) => ({ ...g, hint: payload.hint })))
     socket.on('game:correct_guess', (payload) => setGame((g) => ({
       ...g,
       lastGuess: payload,
       scores: payload.scores || g.scores,
-      messages: [...(g.messages || []), { player_id: payload.guesser_id, message: payload.word, correct: true }],
+      messages: [...(g.messages || []), { player_id: payload.guesser_id, message: payload.word || null, correct: true }],
       guessedPlayerIds: [...(g.guessedPlayerIds || []), payload.guesser_id],
       // For scribble, keep the drawing on correct guess (same word continues)
       scribbleStrokes: g.turn?.game_type === 'scribble' ? (g.scribbleStrokes || []) : [],
     })))
     socket.on('game:round_end', (payload) => setGame((g) => ({ ...g, roundEnd: payload })))
     socket.on('game:game_end', (payload) => setGame((g) => ({ ...g, gameEnd: payload })))
+    // Trivia events
+    socket.off('trivia:question')
+    socket.off('trivia:answer_update')
+    socket.off('trivia:question_result')
+    socket.on('trivia:question', (payload) => setGame((g) => ({
+      ...g, trivia: payload, triviaResult: null, triviaAnswered: false, triviaAnswerCount: null,
+    })))
+    socket.on('trivia:answer_update', (payload) => setGame((g) => ({ ...g, triviaAnswerCount: payload })))
+    socket.on('trivia:question_result', (payload) => setGame((g) => ({
+      ...g, triviaResult: payload, scores: payload.scores || g.scores,
+    })))
     // Scribble events
     socket.off('scribble:draw')
     socket.off('scribble:clear')
@@ -339,7 +367,16 @@ export function AppProvider({ children }) {
       }
     })
     socket.on('disconnect', () => setGame((g) => ({ ...g, reconnecting: true, reconnectGrace: { expires_at: Math.floor(Date.now() / 1000) + 60 } })))
-    socket.on('connect', () => setGame((g) => ({ ...g, reconnecting: false, reconnectGrace: null })))
+    socket.on('connect', () => {
+      setGame((g) => ({ ...g, reconnecting: false, reconnectGrace: null }))
+      // Re-register in room on reconnect so we keep receiving broadcasts
+      if (room?.code) {
+        const regData = auth.token
+          ? { room_code: room.code, token: auth.token }
+          : { room_code: room.code, guest_token: auth.guestToken }
+        socket.emit('room:register', regData)
+      }
+    })
   }
 
   function emitRoomCreate(payload) {
@@ -381,6 +418,12 @@ export function AppProvider({ children }) {
     return socket.emit('scribble:clear', { room_code: roomCode })
   }
 
+  function emitTriviaAnswer(roomCode, answerIndex) {
+    setGame((g) => ({ ...g, triviaAnswered: true }))
+    const socket = getSocket()
+    return socket.emit('trivia:answer', { room_code: roomCode, answer_index: answerIndex })
+  }
+
   const value = useMemo(() => ({
     auth,
     room,
@@ -404,6 +447,7 @@ export function AppProvider({ children }) {
     emitChat,
     emitScribbleDraw,
     emitScribbleClear,
+    emitTriviaAnswer,
     activeRooms,
     fetchActiveRooms,
     leaveActiveRoom,

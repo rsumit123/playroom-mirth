@@ -23,6 +23,14 @@ class RoomGameState:
     current_word_text: Optional[str] = None
     word_history_ids: List[int] = field(default_factory=list)
     guessed_players: Set[int] = field(default_factory=set)
+    # Trivia-specific fields
+    trivia_questions: List[dict] = field(default_factory=list)
+    current_question_index: int = 0
+    player_answers: Dict[int, dict] = field(default_factory=dict)
+    question_start_ts: float = 0.0
+    question_time_seconds: int = 0
+    trivia_category: str = "math"
+    used_question_ids: Set[str] = field(default_factory=set)
     task: Optional[asyncio.Task] = None
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
 
@@ -57,6 +65,13 @@ def serialize_state(state: RoomGameState) -> str:
         "current_word_text": state.current_word_text,
         "word_history_ids": state.word_history_ids,
         "guessed_players": list(state.guessed_players),
+        "trivia_questions": state.trivia_questions,
+        "current_question_index": state.current_question_index,
+        "player_answers": {str(k): v for k, v in state.player_answers.items()},
+        "question_start_ts": state.question_start_ts,
+        "question_time_seconds": state.question_time_seconds,
+        "trivia_category": state.trivia_category,
+        "used_question_ids": list(state.used_question_ids),
     }
     return json.dumps(payload)
 
@@ -80,6 +95,13 @@ def deserialize_state(raw: str) -> RoomGameState:
         current_word_text=data.get("current_word_text"),
         word_history_ids=data.get("word_history_ids", []),
         guessed_players=set(data.get("guessed_players", [])),
+        trivia_questions=data.get("trivia_questions", []),
+        current_question_index=data.get("current_question_index", 0),
+        player_answers={int(k): v for k, v in data.get("player_answers", {}).items()},
+        question_start_ts=data.get("question_start_ts", 0.0),
+        question_time_seconds=data.get("question_time_seconds", 0),
+        trivia_category=data.get("trivia_category", "math"),
+        used_question_ids=set(data.get("used_question_ids", [])),
     )
 
 

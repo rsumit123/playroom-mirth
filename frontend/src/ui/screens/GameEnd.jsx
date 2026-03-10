@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react'
 import Scoreboard from '../components/Scoreboard.jsx'
 import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import PlayerAvatar from '../components/PlayerAvatar.jsx'
+import { playSound } from '../../lib/sounds.js'
 
 export default function GameEnd({ scores, playerNames, onHome }) {
   const [confettiKey, setConfettiKey] = useState(0)
 
   useEffect(() => {
     setConfettiKey((k) => k + 1)
+    playSound('game-end')
   }, [])
 
   const entries = Object.entries(scores || {})
