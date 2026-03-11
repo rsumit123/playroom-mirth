@@ -179,14 +179,21 @@ def generate_gk_round_questions(
     difficulty: int,
     count: int = 10,
     used_ids: set[str] | None = None,
+    subcategory: str | None = None,
 ) -> list[dict]:
     """Select `count` GK questions, excluding previously used IDs.
 
     difficulty=0 means mixed: 20% easy, 50% medium, 30% hard.
+    subcategory filters to a specific category (e.g. "science", "history").
+    None means all categories (general knowledge mix).
     Returns list of dicts matching the trivia question format.
     """
     all_questions = _load_gk_questions()
     used = used_ids or set()
+
+    # Filter by subcategory if specified
+    if subcategory:
+        all_questions = [q for q in all_questions if q.get("category") == subcategory]
 
     # Filter out already-used questions
     available = [q for q in all_questions if q["id"] not in used]

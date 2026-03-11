@@ -15,7 +15,7 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
   const [rounds, setRounds] = useState(3)
   const [timer, setTimer] = useState(120)
   const [difficulty, setDifficulty] = useState(gameType === 'trivia' ? 1 : 0)
-  const [triviaCategory, setTriviaCategory] = useState('math')
+  const [triviaCategory, setTriviaCategory] = useState('general_knowledge')
   const [maxPlayers, setMaxPlayers] = useState(20)
   const [roomCode, setRoomCode] = useState('')
 

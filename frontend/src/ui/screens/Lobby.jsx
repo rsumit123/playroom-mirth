@@ -18,10 +18,22 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
     rounds: lobby?.room?.rounds_total ?? 3,
     difficulty: lobby?.room?.difficulty ?? 2,
     timer: lobby?.room?.turn_seconds ?? 60,
-    triviaCategory: lobby?.room?.trivia_category ?? 'math',
+    triviaCategory: lobby?.room?.trivia_category ?? 'general_knowledge',
   })
   const [copied, setCopied] = useState(false)
   const prevPlayerCountRef = useRef(players.length)
+
+  // Sync settings from server when lobby updates (so non-hosts see host changes)
+  useEffect(() => {
+    if (!roomMeta) return
+    setSettings((s) => ({
+      ...s,
+      rounds: roomMeta.rounds_total ?? s.rounds,
+      difficulty: roomMeta.difficulty ?? s.difficulty,
+      timer: roomMeta.turn_seconds ?? s.timer,
+      triviaCategory: roomMeta.trivia_category ?? s.triviaCategory,
+    }))
+  }, [roomMeta?.rounds_total, roomMeta?.difficulty, roomMeta?.turn_seconds, roomMeta?.trivia_category])
 
   useEffect(() => {
     if (players.length > prevPlayerCountRef.current) {
@@ -115,6 +127,21 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
           </div>
         </div>
 
+        {/* Trivia category picker (visible to all) */}
+        {gameType === 'trivia' && (
+          <div className="card p-5 space-y-3">
+            <div className="flex items-center justify-between">
+              <h2 className="font-semibold">Category</h2>
+              {!isHost && <span className="text-[10px] text-slate/40">Host picks</span>}
+            </div>
+            <TriviaCategorySelector
+              value={settings.triviaCategory}
+              onChange={(v) => setSettings((s) => ({ ...s, triviaCategory: v }))}
+              readOnly={!isHost}
+            />
+          </div>
+        )}
+
         {/* Settings (host only) */}
         {isHost && (
           <div className="card p-5 space-y-4">
@@ -124,15 +151,6 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
             {gameType !== 'trivia' && (
               <RangeSlider label="Timer" value={Number(settings.timer)} min={30} max={120} step={10} unit="s"
                 onChange={(v) => setSettings((s) => ({ ...s, timer: v }))} />
-            )}
-            {gameType === 'trivia' && (
-              <div className="space-y-2">
-                <span className="text-xs text-slate/60 font-medium">Category</span>
-                <TriviaCategorySelector
-                  value={settings.triviaCategory}
-                  onChange={(v) => setSettings((s) => ({ ...s, triviaCategory: v }))}
-                />
-              </div>
             )}
             <div className="space-y-2">
               <span className="text-xs text-slate/60 font-medium">Difficulty</span>

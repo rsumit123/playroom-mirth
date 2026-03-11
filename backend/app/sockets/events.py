@@ -545,9 +545,12 @@ def _select_word(db, difficulty: int, history_ids: list[int], game_type: str = "
 
 async def _trivia_start_round(state: RoomGameState, room_code: str) -> None:
     """Generate questions for this round and send the first one."""
-    if state.trivia_category == "general_knowledge":
+    _GK_SUBCATEGORIES = {"science", "history", "geography", "sports", "entertainment", "general"}
+    if state.trivia_category == "general_knowledge" or state.trivia_category in _GK_SUBCATEGORIES:
+        subcategory = state.trivia_category if state.trivia_category in _GK_SUBCATEGORIES else None
         questions = generate_gk_round_questions(
-            state.difficulty, count=10, used_ids=state.used_question_ids
+            state.difficulty, count=10, used_ids=state.used_question_ids,
+            subcategory=subcategory,
         )
         for q in questions:
             if "id" in q:
