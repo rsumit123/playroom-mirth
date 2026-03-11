@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom'
 import { AppProvider } from '../state/AppContext.jsx'
 import { useApp } from '../state/AppContext.jsx'
@@ -36,7 +37,15 @@ function AppShell() {
   const location = useLocation()
   const { auth, logout, ui, clearToast } = useApp()
 
+  // Redirect to welcome screen when auth is cleared (e.g. expired session)
+  const isAuthed = Boolean(auth?.token || auth?.guestToken)
   const path = location.pathname
+  useEffect(() => {
+    if (!isAuthed && path !== '/' && path !== '/how-to' && !path.startsWith('/join/')) {
+      navigate('/', { replace: true })
+    }
+  }, [isAuthed])
+
   const showTopBar = path === '/home' || path === '/lobby' || path.startsWith('/play/')
 
   return (
