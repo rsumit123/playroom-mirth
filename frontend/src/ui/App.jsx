@@ -35,7 +35,12 @@ export default function App() {
 function AppShell() {
   const navigate = useNavigate()
   const location = useLocation()
-  const { auth, logout, ui, clearToast } = useApp()
+  const { auth, logout, ui, clearToast, fetchActiveRooms } = useApp()
+
+  // Validate JWT on mount — if expired, fetchActiveRooms will get 401 → logout
+  useEffect(() => {
+    if (auth?.token) fetchActiveRooms()
+  }, [])
 
   // Redirect to welcome screen when auth is cleared (e.g. expired session)
   const isAuthed = Boolean(auth?.token || auth?.guestToken)
