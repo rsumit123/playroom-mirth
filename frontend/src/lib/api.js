@@ -137,3 +137,40 @@ export function fetchAdminStats(token) {
     headers: { Authorization: `Bearer ${token}` }
   })
 }
+
+export function adminCloseRoom(token, roomCode) {
+  return request(`/admin/rooms/${roomCode}/close`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
+
+export function adminCleanupRooms(token) {
+  return request('/admin/rooms/cleanup', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
+
+export function fetchAdminQuestions(token, params = {}) {
+  const query = new URLSearchParams(params).toString()
+  const path = query ? `/admin/questions?${query}` : '/admin/questions'
+  return request(path, {
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
+
+export function createAdminQuestion(token, payload) {
+  return request('/admin/questions', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}` },
+    body: JSON.stringify(payload)
+  })
+}
+
+export function deleteAdminQuestion(token, questionId) {
+  return request(`/admin/questions/${encodeURIComponent(questionId)}`, {
+    method: 'DELETE',
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
