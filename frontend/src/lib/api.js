@@ -131,3 +131,9 @@ export function getGameHistory(token) {
     headers: { Authorization: `Bearer ${token}` }
   })
 }
+
+export function fetchAdminStats(token) {
+  return request('/admin/stats', {
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}

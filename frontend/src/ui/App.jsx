@@ -13,6 +13,7 @@ import RoundEndPage from './pages/RoundEndPage.jsx'
 import GameEndPage from './pages/GameEndPage.jsx'
 import HowToPage from './pages/HowToPage.jsx'
 import AdminWordsPage from './pages/AdminWordsPage.jsx'
+import AdminDashboardPage from './pages/AdminDashboardPage.jsx'
 import JoinPage from './pages/JoinPage.jsx'
 import TopBar from './components/TopBar.jsx'
 import Toast from './components/Toast.jsx'
@@ -46,7 +47,7 @@ function AppShell() {
   const isAuthed = Boolean(auth?.token || auth?.guestToken)
   const path = location.pathname
   useEffect(() => {
-    if (!isAuthed && path !== '/' && path !== '/how-to' && !path.startsWith('/join/')) {
+    if (!isAuthed && path !== '/' && path !== '/how-to' && !path.startsWith('/join/') && !path.startsWith('/admin')) {
       navigate('/', { replace: true })
     }
   }, [isAuthed])
@@ -85,6 +86,7 @@ function AppShell() {
         <Route path="/game-end" element={<GameEndPage />} />
         <Route path="/how-to" element={<HowToPage />} />
         <Route path="/join/:roomCode" element={<JoinPage />} />
+        <Route path="/admin" element={<AdminDashboardPage />} />
         <Route path="/admin/words" element={<AdminWordsPage />} />
       </Routes>
     </>
