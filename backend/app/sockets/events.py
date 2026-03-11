@@ -85,6 +85,22 @@ def _save_game_history(db, state: RoomGameState) -> None:
         ))
 
 
+async def _auto_end_game(state: RoomGameState, room_code: str) -> None:
+    """End game when no connected players remain. Caller MUST hold state.lock."""
+    if state.task and not state.task.done():
+        state.task.cancel()
+    await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+    ROOM_STATES.pop(room_code, None)
+    with SessionLocal() as db:
+        db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
+        _save_game_history(db, state)
+        room = db.query(Room).filter(Room.code == room_code).first()
+        if room:
+            room.status = "lobby"
+            db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: False})
+            db.commit()
+
+
 async def _schedule_turn_timer(state: RoomGameState) -> None:
     if state.task and not state.task.done():
         state.task.cancel()
@@ -100,6 +116,24 @@ async def _schedule_turn_timer(state: RoomGameState) -> None:
 
 async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
     """Select a word, emit turn_start + new_word, schedule timer."""
+    # Skip disconnected describers
+    for _ in range(len(state.player_order)):
+        describer_id = state.player_order[state.describer_index]
+        if PLAYER_TO_SID.get(describer_id):
+            break  # connected
+        # Disconnected — skip to next player
+        state.describer_index += 1
+        if state.describer_index >= len(state.player_order):
+            state.describer_index = 0
+            state.round_index += 1
+        if state.round_index > state.rounds_total:
+            await _auto_end_game(state, room_code)
+            return
+    else:
+        # All players disconnected
+        await _auto_end_game(state, room_code)
+        return
+
     start_turn(state)
     with SessionLocal() as db:
         word = _select_word(db, state.difficulty, state.word_history_ids, state.game_type)
@@ -134,6 +168,11 @@ async def _advance_turn(room_code: str) -> None:
     if not state:
         return
     async with state.lock:
+        # Safety: if no players are connected, end the game
+        if not any(PLAYER_TO_SID.get(pid) for pid in state.player_order):
+            await _auto_end_game(state, room_code)
+            return
+
         # Award scribble drawer bonus for any guesses this turn
         if state.game_type == "scribble" and state.guessed_players:
             describer_id = state.player_order[state.describer_index]
@@ -211,7 +250,33 @@ async def disconnect(sid):
                 if rp and not rp.connected:
                     rp.in_game = False
                     db.commit()
+                else:
+                    return  # player reconnected
             await sio.emit("game:player_removed", {"player_id": player_id}, room=room_code)
+            # Clean up in-memory game state
+            state = ROOM_STATES.get(room_code)
+            if not state or player_id not in state.player_order:
+                return
+            async with state.lock:
+                if player_id not in state.player_order:
+                    return
+                idx = state.player_order.index(player_id)
+                was_describer = (idx == state.describer_index)
+                state.player_order.remove(player_id)
+                if not state.player_order:
+                    await _auto_end_game(state, room_code)
+                    return
+                if was_describer:
+                    if state.task and not state.task.done():
+                        state.task.cancel()
+                    if state.describer_index >= len(state.player_order):
+                        state.describer_index = 0
+                    if state.game_type != "trivia":
+                        await _emit_next_turn(state, room_code)
+                elif idx < state.describer_index:
+                    state.describer_index -= 1
+                with SessionLocal() as db:
+                    _save_state(db, state)
         task = asyncio.create_task(_remove_after_grace())
         PLAYER_GRACE_TASKS[player_id] = task
     SID_TO_PLAYER.pop(sid, None)
@@ -271,6 +336,10 @@ async def room_register(sid, data):
         except RuntimeError:
             pass
     with SessionLocal() as db2:
+        rp2 = db2.query(RoomPlayer).filter(RoomPlayer.id == rp.id).first()
+        if rp2:
+            rp2.connected = True
+            db2.commit()
         room2 = db2.query(Room).filter(Room.code == room_code).first()
         if room2:
             lobby = build_lobby_state(db2, room2, self_player_id=rp.id)

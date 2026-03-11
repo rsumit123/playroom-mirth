@@ -15,6 +15,11 @@ async function request(path, options = {}) {
     }
     throw new Error('Unable to reach the server. Please try again later.')
   })
+  if (res.status === 401) {
+    const err = new Error('Session expired. Please sign in again.')
+    err.status = 401
+    throw err
+  }
   if (!res.ok) {
     const text = await res.text()
     throw new Error(text || `Request failed: ${res.status}`)

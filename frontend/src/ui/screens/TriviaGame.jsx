@@ -143,6 +143,9 @@ export default function TriviaGame({ game, onAnswer, playerNames = {} }) {
                       className += `${colors.bg} ${colors.border} hover:shadow-hover active:scale-[0.97] cursor-pointer`
                     }
 
+                    // Collect players who picked this option (result phase only)
+                    const pickers = result?.player_results?.filter((r) => r.answer_index === i) || []
+
                     return (
                       <button
                         key={i}
@@ -151,6 +154,23 @@ export default function TriviaGame({ game, onAnswer, playerNames = {} }) {
                         disabled={answered || !!result}
                       >
                         {opt}
+                        {result && pickers.length > 0 && (
+                          <div className="flex items-center justify-center gap-1 mt-2 flex-wrap">
+                            {pickers.map((r) => {
+                              const name = playerNames[r.player_id] || `P${r.player_id}`
+                              const isSelf = String(r.player_id) === String(game?.selfPlayerId)
+                              return (
+                                <span
+                                  key={r.player_id}
+                                  className={`inline-flex items-center gap-0.5 text-[10px] rounded-full px-1.5 py-0.5 ${isSelf ? 'bg-accent/15 text-accent font-bold' : 'bg-black/5 text-slate/60'}`}
+                                >
+                                  <PlayerAvatar name={name} size="xs" />
+                                  {name}
+                                </span>
+                              )
+                            })}
+                          </div>
+                        )}
                       </button>
                     )
                   })}

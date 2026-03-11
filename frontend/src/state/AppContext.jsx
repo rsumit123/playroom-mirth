@@ -79,6 +79,15 @@ export function AppProvider({ children }) {
   const showToast = (message) => setUi((u) => ({ ...u, toast: message }))
   const clearToast = () => setUi((u) => ({ ...u, toast: null }))
 
+  function handleApiError(err) {
+    if (err?.status === 401) {
+      logout()
+      showToast('Session expired. Please sign in again.')
+      return true
+    }
+    return false
+  }
+
   function leaveRoom() {
     setRoom(null)
     setLobby(null)
@@ -166,6 +175,7 @@ export function AppProvider({ children }) {
       setSelfPlayerId(res.self_player_id || null)
       return res
     } catch (err) {
+      if (handleApiError(err)) throw err
       const message = formatError(err?.message)
       setGame((g) => ({ ...g, error: { message } }))
       showToast(message)
@@ -184,6 +194,7 @@ export function AppProvider({ children }) {
       setSelfPlayerId(res.self_player_id || null)
       return res
     } catch (err) {
+      if (handleApiError(err)) throw err
       const message = formatError(err?.message)
       setGame((g) => ({ ...g, error: { message } }))
       showToast(message)
@@ -207,6 +218,7 @@ export function AppProvider({ children }) {
       setRoom(res.room)
       return res
     } catch (err) {
+      if (handleApiError(err)) throw err
       const message = formatError(err?.message)
       setGame((g) => ({ ...g, error: { message } }))
       showToast(message)
@@ -224,7 +236,8 @@ export function AppProvider({ children }) {
     try {
       const rooms = await api.getActiveRooms(auth.token, auth.guestToken)
       setActiveRooms(rooms || [])
-    } catch {
+    } catch (err) {
+      if (handleApiError(err)) return
       setActiveRooms([])
     }
   }
@@ -249,7 +262,8 @@ export function AppProvider({ children }) {
     try {
       const history = await api.getGameHistory(auth.token)
       setGameHistory(history || [])
-    } catch {
+    } catch (err) {
+      if (handleApiError(err)) return
       setGameHistory([])
     }
   }
