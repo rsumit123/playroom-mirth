@@ -24,6 +24,7 @@ router = APIRouter(prefix="/admin", tags=["admin"])
 @router.get("/words", response_model=list[WordOut])
 def list_words(
     q: str | None = Query(default=None),
+    game_type: str | None = Query(default=None),
     limit: int = Query(default=50, ge=1, le=200),
     offset: int = Query(default=0, ge=0),
     db: Session = Depends(get_db),
@@ -32,15 +33,19 @@ def list_words(
     query = db.query(Word)
     if q:
         query = query.filter(Word.text.contains(q))
+    if game_type:
+        query = query.filter(Word.game_type == game_type)
     return query.order_by(Word.id.asc()).offset(offset).limit(limit).all()
 
 
 @router.post("/words", response_model=WordOut, status_code=201)
 def create_word(payload: WordCreateRequest, db: Session = Depends(get_db), _user=Depends(get_current_user)):
-    existing = db.query(Word).filter(Word.text == payload.text).first()
+    existing = db.query(Word).filter(
+        Word.text == payload.text, Word.game_type == payload.game_type
+    ).first()
     if existing:
-        raise HTTPException(status_code=400, detail="Word already exists")
-    word = Word(text=payload.text, difficulty=payload.difficulty, active=True)
+        raise HTTPException(status_code=400, detail="Word already exists for this game type")
+    word = Word(text=payload.text, difficulty=payload.difficulty, game_type=payload.game_type, active=True)
     db.add(word)
     db.commit()
     db.refresh(word)
@@ -63,9 +68,25 @@ def update_word(
         word.difficulty = payload.difficulty
     if payload.active is not None:
         word.active = payload.active
+    if payload.game_type is not None:
+        word.game_type = payload.game_type
     db.commit()
     db.refresh(word)
     return word
+
+
+@router.delete("/words/{word_id}")
+def delete_word(
+    word_id: int,
+    db: Session = Depends(get_db),
+    _user=Depends(get_current_user),
+):
+    word = db.query(Word).filter(Word.id == word_id).first()
+    if not word:
+        raise HTTPException(status_code=404, detail="Word not found")
+    db.delete(word)
+    db.commit()
+    return {"ok": True}
 
 
 @router.get("/stats")
@@ -139,6 +160,13 @@ def get_stats(db: Session = Depends(get_db), _user=Depends(get_current_user)):
         for g in recent
     ]
 
+    # Word counts by game type
+    word_counts = {}
+    for gt in ["charades", "scribble"]:
+        word_counts[gt] = db.query(Word).filter(
+            Word.game_type == gt, Word.active.is_(True)
+        ).count()
+
     return {
         "active_rooms": active_rooms,
         "totals": {
@@ -146,6 +174,8 @@ def get_stats(db: Session = Depends(get_db), _user=Depends(get_current_user)):
             "connected_players": connected_total,
             "in_memory_games": len(ROOM_STATES),
             "total_questions": len(questions),
+            "charades_words": word_counts.get("charades", 0),
+            "scribble_words": word_counts.get("scribble", 0),
         },
         "question_pool": category_counts,
         "recent_games": recent_games,

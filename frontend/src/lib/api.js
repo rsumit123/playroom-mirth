@@ -126,6 +126,13 @@ export function updateAdminWord(token, wordId, payload) {
   })
 }
 
+export function deleteAdminWord(token, wordId) {
+  return request(`/admin/words/${wordId}`, {
+    method: 'DELETE',
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
+
 export function getGameHistory(token) {
   return request('/game-history', {
     headers: { Authorization: `Bearer ${token}` }
