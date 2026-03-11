@@ -6,6 +6,9 @@ const CATEGORIES = [
   { value: 'geography', label: 'Geography', icon: '🌍' },
   { value: 'sports', label: 'Sports', icon: '⚽' },
   { value: 'entertainment', label: 'Entertainment', icon: '🎬' },
+  { value: 'mythology', label: 'Mythology', icon: '🛕' },
+  { value: 'food', label: 'Food & Cuisine', icon: '🍛' },
+  { value: 'politics', label: 'Politics', icon: '🏛️' },
   { value: 'math', label: 'Math', icon: '🔢' },
 ]
 

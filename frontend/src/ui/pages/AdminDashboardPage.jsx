@@ -3,8 +3,8 @@ import { useApp } from '../../state/AppContext.jsx'
 import * as api from '../../lib/api.js'
 
 const GAME_LABELS = { charades: 'Charades', scribble: 'Scribble', trivia: 'Trivia' }
-const CAT_ICONS = { science: '🔬', history: '📜', geography: '🌍', sports: '⚽', entertainment: '🎬', general: '💡' }
-const CATEGORIES = ['science', 'history', 'geography', 'sports', 'entertainment', 'general']
+const CAT_ICONS = { science: '🔬', history: '📜', geography: '🌍', sports: '⚽', entertainment: '🎬', general: '💡', mythology: '🛕', food: '🍛', politics: '🏛️' }
+const CATEGORIES = ['science', 'history', 'geography', 'sports', 'entertainment', 'general', 'mythology', 'food', 'politics']
 const DIFFICULTIES = [{ value: 1, label: 'Easy' }, { value: 2, label: 'Medium' }, { value: 3, label: 'Hard' }]
 const TABS = [
   { id: 'overview', label: 'Overview' },

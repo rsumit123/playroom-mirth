@@ -1,0 +1,962 @@
+[
+  {
+    "id": "food_easy_001",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian sweet is round, spongy, and soaked in sugar syrup?",
+    "options": ["Barfi", "Rasgulla", "Peda", "Halwa"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_002",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the main ingredient in a traditional Dal?",
+    "options": ["Rice", "Lentils", "Wheat", "Chickpeas"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_003",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which city is most famous for its Hyderabadi Biryani?",
+    "options": ["Mumbai", "Delhi", "Hyderabad", "Lucknow"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_004",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Paneer is a type of Indian what?",
+    "options": ["Bread", "Cheese", "Pickle", "Spice"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_005",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which popular Indian street food consists of fried dough balls filled with spiced water?",
+    "options": ["Samosa", "Vada Pav", "Pani Puri", "Kachori"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_006",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the Indian flatbread commonly made from wheat flour and cooked on a tawa?",
+    "options": ["Naan", "Roti", "Paratha", "Puri"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_007",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which spice gives turmeric its bright yellow color?",
+    "options": ["Saffron", "Paprika", "Curcumin", "Annatto"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_008",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Masala Dosa is a famous dish from which part of India?",
+    "options": ["North India", "South India", "East India", "West India"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_009",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the traditional Indian yogurt-based drink called?",
+    "options": ["Sharbat", "Lassi", "Jaljeera", "Thandai"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_010",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian dish consists of rice cooked with spices and meat or vegetables in layers?",
+    "options": ["Pulao", "Biryani", "Khichdi", "Fried Rice"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_011",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Gulab Jamun is typically made from which dairy product?",
+    "options": ["Paneer", "Curd", "Khoya (dried whole milk)", "Cream"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_012",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'ghee' in Indian cooking?",
+    "options": ["Mustard oil", "Coconut milk", "Clarified butter", "Sesame oil"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_013",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian snack is a deep-fried triangular pastry filled with spiced potatoes?",
+    "options": ["Pakora", "Samosa", "Kachori", "Bhaji"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_014",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Chai in India is typically made by boiling tea leaves with what?",
+    "options": ["Water only", "Milk and water", "Coconut milk", "Juice"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_015",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which leaf is commonly used to serve food in South Indian meals?",
+    "options": ["Neem leaf", "Banana leaf", "Teak leaf", "Peepal leaf"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_016",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the popular Mumbai street food made with a bread roll and a spiced potato patty?",
+    "options": ["Pav Bhaji", "Vada Pav", "Dabeli", "Misal Pav"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_017",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which spice is known as 'Haldi' in Hindi?",
+    "options": ["Cumin", "Turmeric", "Coriander", "Chili"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_018",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Chole Bhature is a popular dish from which region of India?",
+    "options": ["South India", "East India", "North India", "Northeast India"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_019",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'Raita' in Indian cuisine?",
+    "options": ["A type of bread", "A yogurt-based condiment", "A rice dish", "A lentil soup"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_020",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which festival is most associated with eating sweets like Ladoo and Barfi in India?",
+    "options": ["Holi", "Eid", "Diwali", "Pongal"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_021",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Idli is a steamed cake made primarily from which ingredients?",
+    "options": ["Wheat and milk", "Rice and urad dal batter", "Corn and butter", "Semolina and sugar"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_022",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the name of the Indian spice mix commonly used in curries?",
+    "options": ["Garam Masala", "Chaat Masala", "Pav Bhaji Masala", "Tandoori Masala"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_easy_023",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian bread is deep-fried and puffs up into a round ball?",
+    "options": ["Roti", "Naan", "Puri", "Kulcha"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_024",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Butter Chicken is believed to have originated in which city?",
+    "options": ["Mumbai", "Delhi", "Amritsar", "Jaipur"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_025",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which South Indian chutney is commonly served with Idli and Dosa?",
+    "options": ["Mint chutney", "Tamarind chutney", "Coconut chutney", "Tomato ketchup"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_026",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What does 'Tandoori' refer to in Indian cooking?",
+    "options": ["A type of spice", "A clay oven", "A cooking pot", "A marinade"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_027",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Jalebi is a popular Indian sweet that is typically what shape?",
+    "options": ["Round ball", "Square", "Spiral/pretzel-like", "Triangular"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_028",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which oil is most commonly used in South Indian cooking?",
+    "options": ["Mustard oil", "Coconut oil", "Sunflower oil", "Ghee"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_029",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Rajma Chawal is a popular combination of kidney beans with what?",
+    "options": ["Bread", "Rice", "Roti", "Naan"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_030",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'Aam' in Hindi, a fruit widely used in Indian cuisine?",
+    "options": ["Banana", "Apple", "Mango", "Guava"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_031",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which state is famous for its 'Rosogolla' (Rasgulla)?",
+    "options": ["Punjab", "West Bengal", "Tamil Nadu", "Gujarat"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_032",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What type of food is 'Papad' (Papadum)?",
+    "options": ["A curry", "A thin crispy disc/wafer", "A sweet", "A beverage"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_033",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Sambar is a lentil-based stew popular in which part of India?",
+    "options": ["North India", "South India", "Northeast India", "West India"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_034",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian pickle is known as 'Achaar'?",
+    "options": ["Chutney", "Murabba", "Achaar", "Raita"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_035",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Pav Bhaji originated in which Indian city?",
+    "options": ["Delhi", "Kolkata", "Mumbai", "Chennai"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_036",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the main grain used in making traditional Uttapam?",
+    "options": ["Wheat", "Rice", "Millet", "Corn"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_037",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian dessert is essentially fried milk dumplings in sugar syrup?",
+    "options": ["Kheer", "Gulab Jamun", "Rasmalai", "Sandesh"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_038",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Aloo Gobi is a vegetarian dish made with potatoes and what?",
+    "options": ["Peas", "Spinach", "Cauliflower", "Eggplant"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_039",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the common name for 'Dahi' in English?",
+    "options": ["Milk", "Butter", "Yogurt", "Cream"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_040",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which leaf-wrapped betel nut preparation is commonly eaten after meals in India?",
+    "options": ["Mukhwas", "Paan", "Supari", "Churan"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_041",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Palak Paneer is a dish made with paneer and which green vegetable?",
+    "options": ["Fenugreek leaves", "Spinach", "Mustard greens", "Coriander"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_042",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which grain is used to make the South Indian dish 'Upma'?",
+    "options": ["Rice", "Semolina (Rava/Suji)", "Wheat flour", "Oats"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_043",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'Jeera' called in English?",
+    "options": ["Coriander", "Cumin", "Mustard", "Fennel"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_044",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian state is known as the 'Spice Garden of India'?",
+    "options": ["Tamil Nadu", "Karnataka", "Kerala", "Andhra Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_045",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Kheer is an Indian dessert similar to what Western dish?",
+    "options": ["Cake", "Rice pudding", "Ice cream", "Custard"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_046",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the main ingredient in 'Chana Masala'?",
+    "options": ["Green peas", "Kidney beans", "Chickpeas", "Black lentils"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_047",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which city is famous for its 'Tunday Kababi' kebabs?",
+    "options": ["Delhi", "Lucknow", "Hyderabad", "Bhopal"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_048",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Bhelpuri is a type of Indian what?",
+    "options": ["Curry", "Chaat (snack)", "Bread", "Sweet"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_049",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the traditional Indian thali?",
+    "options": ["A cooking vessel", "A platter with multiple dishes", "A type of curry", "A festival sweet"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_050",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which spice is known as 'Elaichi' in Hindi and is used to flavor Indian tea?",
+    "options": ["Cinnamon", "Clove", "Cardamom", "Star Anise"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_001",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Litti Chokha is a famous dish from which Indian state?",
+    "options": ["Uttar Pradesh", "Madhya Pradesh", "Bihar", "Jharkhand"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_002",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Indian bread is traditionally cooked by slapping it on the inside wall of a tandoor?",
+    "options": ["Roti", "Paratha", "Naan", "Phulka"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_003",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Appam, a lacy rice pancake, is a staple breakfast in which state?",
+    "options": ["Karnataka", "Kerala", "Tamil Nadu", "Andhra Pradesh"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_004",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Rajasthani dish is made from dried lentil dumplings cooked in a yogurt-based curry?",
+    "options": ["Dal Baati Churma", "Gatte ki Sabzi", "Ker Sangri", "Laal Maas"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_005",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is 'Dum Pukht' style of cooking?",
+    "options": ["Stir-frying at high heat", "Slow cooking in a sealed pot", "Deep frying in ghee", "Grilling over charcoal"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_006",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Modak, a sweet dumpling offered to Lord Ganesha, is particularly popular in which state?",
+    "options": ["Gujarat", "Maharashtra", "Karnataka", "Goa"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_007",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which fermented rice dish is a staple in many parts of Odisha and West Bengal?",
+    "options": ["Poha", "Panta Bhat", "Upma", "Sabudana Khichdi"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_008",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Dhokla, a steamed savory cake, is a traditional snack from which state?",
+    "options": ["Rajasthan", "Maharashtra", "Gujarat", "Madhya Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_009",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which spice, called 'Hing' in Hindi, has a strong pungent smell and is used in Indian cooking?",
+    "options": ["Asafoetida", "Fenugreek", "Mustard seed", "Nigella seed"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_medium_010",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What type of flour is traditionally used to make Makki di Roti, a Punjabi winter staple?",
+    "options": ["Wheat flour", "Rice flour", "Cornmeal (maize flour)", "Millet flour"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_011",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Bisi Bele Bath is a signature rice dish from which state?",
+    "options": ["Kerala", "Karnataka", "Tamil Nadu", "Andhra Pradesh"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_012",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Indian sweet is made by curdling milk with lemon or vinegar and then shaping the fresh cheese into balls?",
+    "options": ["Gulab Jamun", "Rasgulla", "Jalebi", "Ladoo"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_013",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Misal Pav, a spicy sprouted lentil curry served with bread, is from which state?",
+    "options": ["Gujarat", "Goa", "Maharashtra", "Karnataka"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_014",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which technique involves tempering spices in hot oil or ghee, known as 'Tadka' or 'Chaunk'?",
+    "options": ["Bhunao", "Baghar/Tadka", "Dum", "Dhungar"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_015",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Chettinad cuisine, known for its spicy dishes, originates from which state?",
+    "options": ["Kerala", "Karnataka", "Tamil Nadu", "Andhra Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_016",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Goan dish is a tangy pork curry made with vinegar and spices?",
+    "options": ["Xacuti", "Vindaloo", "Sorpotel", "Cafreal"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_017",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Poha, a flattened rice breakfast dish, is especially popular in which two states?",
+    "options": ["Punjab and Haryana", "Maharashtra and Madhya Pradesh", "Tamil Nadu and Kerala", "West Bengal and Odisha"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_018",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is the key souring agent used in traditional Sambar?",
+    "options": ["Lemon juice", "Tamarind", "Vinegar", "Tomato"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_019",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Mughlai dish features boiled eggs wrapped in spiced minced meat and fried?",
+    "options": ["Seekh Kebab", "Nargisi Kofta", "Shami Kebab", "Galouti Kebab"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_020",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Sandesh is a famous Bengali sweet made primarily from which ingredient?",
+    "options": ["Khoya", "Chenna (fresh cottage cheese)", "Condensed milk", "Besan (gram flour)"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_021",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Kanda Poha is a breakfast dish particularly beloved in which Indian city?",
+    "options": ["Delhi", "Indore", "Chennai", "Kolkata"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_022",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which North Indian dish consists of black lentils slow-cooked overnight with butter and cream?",
+    "options": ["Chana Dal", "Dal Makhani", "Moong Dal Tadka", "Masoor Dal"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_023",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Puttu, a cylindrical steamed rice cake, is a traditional breakfast in which state?",
+    "options": ["Tamil Nadu", "Karnataka", "Kerala", "Andhra Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_024",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which state's cuisine prominently features bamboo shoot as an ingredient?",
+    "options": ["Rajasthan", "Nagaland", "Gujarat", "Punjab"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_025",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Thalipeeth is a multi-grain flatbread from which state?",
+    "options": ["Rajasthan", "Gujarat", "Maharashtra", "Madhya Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_026",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is 'Chaas' in Indian cuisine?",
+    "options": ["Sweetened milk", "Buttermilk", "Coconut water", "Sugarcane juice"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_027",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Kosha Mangsho, a slow-cooked mutton curry, is a specialty of which cuisine?",
+    "options": ["Kashmiri", "Hyderabadi", "Bengali", "Rajasthani"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_028",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Indian spice is the world's most expensive by weight?",
+    "options": ["Cardamom", "Vanilla", "Saffron", "Black pepper"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_029",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Makki di Roti is traditionally paired with which Punjabi dish?",
+    "options": ["Palak Paneer", "Sarson da Saag", "Rajma", "Chole"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_030",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Mughlai dish, whose name means 'nine gems', uses nine key vegetables, fruits, and nuts in a creamy curry?",
+    "options": ["Shahi Paneer", "Malai Kofta", "Navratan Korma", "Dum Aloo"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_031",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Bebinca is a traditional layered dessert from which Indian state?",
+    "options": ["Kerala", "Goa", "Maharashtra", "Karnataka"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_032",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which state is known for its 'Laal Maas', a fiery red meat curry?",
+    "options": ["Punjab", "Rajasthan", "Madhya Pradesh", "Uttar Pradesh"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_033",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Rasam, a tangy soup, is a staple in South Indian meals. What is its primary souring agent?",
+    "options": ["Lime", "Tamarind", "Vinegar", "Raw mango"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_034",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which city is known as the 'Street Food Capital of India'?",
+    "options": ["Mumbai", "Kolkata", "Delhi", "Lucknow"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_035",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Macher Jhol is a famous fish curry from which Indian state?",
+    "options": ["Kerala", "Goa", "West Bengal", "Odisha"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_036",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is the name of the yogurt-based Rajasthani curry made without any green vegetable?",
+    "options": ["Kadhi", "Gatte ki Sabzi", "Papad ki Sabzi", "Ker Sangri"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_medium_037",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Maharashtrian snack is a spicy mixture of puffed rice, sev, onions, and chutneys?",
+    "options": ["Poha", "Bhel Puri", "Misal Pav", "Sabudana Vada"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_038",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Indian state is famous for the sweet called 'Mysore Pak'?",
+    "options": ["Kerala", "Andhra Pradesh", "Karnataka", "Tamil Nadu"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_039",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is 'Panch Phoron', used widely in Bengali and Odia cooking?",
+    "options": ["A five-spice blend", "A type of curry paste", "A rice dish", "A dessert"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_medium_040",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Undhiyu, a mixed vegetable dish cooked upside-down in an earthen pot, is from which state?",
+    "options": ["Rajasthan", "Maharashtra", "Gujarat", "Madhya Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_001",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which natural coloring agent, derived from a plant root, gives traditional Kashmiri Rogan Josh its distinctive deep red color?",
+    "options": ["Kashmiri chili", "Ratanjot (Alkanet root)", "Saffron", "Deghi Mirch"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_002",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The restaurant 'Moti Mahal' in Delhi is credited with popularizing which dish in the 1950s?",
+    "options": ["Biryani", "Butter Chicken", "Nihari", "Seekh Kebab"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_003",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Jadoh is a traditional pork and rice dish from which Northeastern Indian community?",
+    "options": ["Naga", "Mizo", "Khasi", "Bodo"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_004",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which ancient Indian text contains detailed references to food preparation and dietary guidelines?",
+    "options": ["Arthashastra", "Manasollasa", "Ramayana", "Mahabharata"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_005",
+    "category": "food",
+    "difficulty": 3,
+    "question": "What is 'Dhungar' technique in Indian cooking?",
+    "options": ["Slow roasting in sand", "Smoking food with charcoal and ghee", "Cooking in banana leaves", "Fermenting in clay pots"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_006",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Pitha, a type of rice cake, is traditionally made during Bihu festival in which state?",
+    "options": ["West Bengal", "Odisha", "Assam", "Manipur"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_007",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which Portuguese-influenced Indian dish gets its name from a garlic-wine vinegar marinade ('vinha d'alhos')?",
+    "options": ["Sorpotel", "Vindaloo", "Xacuti", "Cafreal"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_008",
+    "category": "food",
+    "difficulty": 3,
+    "question": "In traditional Kashmiri Wazwan feast, how many courses are traditionally served?",
+    "options": ["12", "24", "36", "48"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_009",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which region of India is credited with the origin of the 'Dum' style of cooking, using slow fire and sealed vessels?",
+    "options": ["Hyderabad", "Lucknow (Awadh)", "Delhi", "Bhopal"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_010",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Siddu is a steamed wheat bread stuffed with poppy seeds, traditional to which region?",
+    "options": ["Ladakh", "Himachal Pradesh", "Uttarakhand", "Nepal border region"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_011",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which traditional Indian cheese from the Jammu region is made by the nomadic Gujjar community?",
+    "options": ["Kalari", "Chhurpi", "Bandel", "Churkam"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_012",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Moplah cuisine of Kerala is influenced by which community's trading heritage?",
+    "options": ["Jewish", "Syrian Christian", "Arab Muslim", "Portuguese"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_013",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which variety of rice, grown in the foothills of the Himalayas, is known for its distinctive aroma and is considered the finest Basmati?",
+    "options": ["Sona Masuri", "Gobindobhog", "Dehradun Basmati", "Ambemohar"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_014",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Kundan Kaliya is a royal Awadhi dish where meat is cooked with which precious material's leaf?",
+    "options": ["Silver (Chandi Varak)", "Gold (Sone ka Varak)", "Copper", "Bronze"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_015",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which GI-tagged sweet from Odisha is made from chhena and is the official 'state sweet'?",
+    "options": ["Rasgulla", "Chhena Poda", "Rasabali", "Khaja"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_016",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Naatu Kozhi Curry uses which specific type of chicken that is native to India?",
+    "options": ["Broiler chicken", "Country/Desi chicken", "Tandoori chicken", "Silkie chicken"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_017",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which Indian state's traditional 'Smoked Pork with Bamboo Shoot' (Vawksa Rep) is a delicacy?",
+    "options": ["Nagaland", "Mizoram", "Manipur", "Arunachal Pradesh"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_018",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Akhuni (fermented soybean) is a key ingredient in the cuisine of which Northeastern state?",
+    "options": ["Assam", "Meghalaya", "Nagaland", "Tripura"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_019",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which ruler is historically credited with the development of Lucknowi (Awadhi) cuisine after moving the capital to Lucknow?",
+    "options": ["Nawab Wajid Ali Shah", "Emperor Akbar", "Tipu Sultan", "Nawab Asaf-ud-Daulah"],
+    "correct_index": 3
+  },
+  {
+    "id": "food_hard_020",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Gavthi Misal, Puneri Misal, and Kolhapuri Misal are regional variations found in which state?",
+    "options": ["Gujarat", "Karnataka", "Maharashtra", "Goa"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_021",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which spice, derived from the dried stigma of Crocus sativus, is extensively cultivated in Kashmir?",
+    "options": ["Turmeric", "Saffron (Kesar)", "Red chili", "Mace"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_022",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Erissery, a pumpkin and cowpea curry with coconut, is a traditional dish served during which Kerala festival's Sadya?",
+    "options": ["Vishu", "Onam", "Thrissur Pooram", "Theyyam"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_023",
+    "category": "food",
+    "difficulty": 3,
+    "question": "What is 'Mahua', used in tribal cuisines of Central India?",
+    "options": ["A wild mushroom", "A tree whose flowers are used to make alcohol and food", "A type of millet", "A forest tuber"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_024",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Galouti Kebab was reportedly created for which Nawab of Lucknow who had lost his teeth?",
+    "options": ["Nawab Shuja-ud-Daulah", "Nawab Wajid Ali Shah", "Nawab Asaf-ud-Daulah", "Nawab Saadat Ali Khan"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_025",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which rare Manipuri dish is made by fermenting fish in an earthen pot for months to create a condiment called 'Ngari'?",
+    "options": ["Iromba", "Eromba", "Ngari", "Hawaijar"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_026",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Dalma, a lentil and vegetable dish associated with Jagannath Temple, is from which state?",
+    "options": ["West Bengal", "Odisha", "Jharkhand", "Chhattisgarh"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_027",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which Indian city was designated as a UNESCO Creative City of Gastronomy in 2019?",
+    "options": ["Lucknow", "Jaipur", "Hyderabad", "Chennai"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_028",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Pathiri, a thin rice-flour flatbread, is part of which Kerala Muslim community's cuisine?",
+    "options": ["Moplah", "Konkani", "Bohra", "Nawayath"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_029",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which traditional Coorgi (Kodava) dish from Karnataka consists of steamed rice flour dumplings typically served with pork curry?",
+    "options": ["Nool Puttu", "Kadambuttu", "Akki Rotti", "Ragi Mudde"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_030",
+    "category": "food",
+    "difficulty": 3,
+    "question": "India's only high-altitude high-quality high-priced high-aroma tea called 'Temi Tea' is grown in which state?",
+    "options": ["Darjeeling (West Bengal)", "Sikkim", "Assam", "Arunachal Pradesh"],
+    "correct_index": 1
+  }
+]

@@ -4822,7 +4822,7 @@
     "options": [
       "Pronghorn Antelope",
       "Cheetah",
-      "Thomson’s Gazelle",
+      "Thomson\u2019s Gazelle",
       "Lion"
     ],
     "difficulty": 1,
@@ -4860,7 +4860,7 @@
   },
   {
     "id": "otdb_ani_1_011",
-    "question": "The Kākāpō is a large, flightless, nocturnal parrot native to which country?",
+    "question": "The K\u0101k\u0101p\u014d is a large, flightless, nocturnal parrot native to which country?",
     "options": [
       "Australia",
       "Madagascar",
@@ -5520,7 +5520,7 @@
     "id": "otdb_comp_1_010",
     "question": "The C programming language was created by this American computer scientist. ",
     "options": [
-      "al-Khwārizmī",
+      "al-Khw\u0101rizm\u012b",
       "Tim Berners Lee",
       "Dennis Ritchie",
       "Willis Ware"
@@ -6543,7 +6543,7 @@
     "question": "CMOS is tech used for constructing integrated circuits. What does CMOS stand for?",
     "options": [
       "Complementary magnetic-ohms-semiconductor",
-      "Complementary metal–oxide–semiconductor",
+      "Complementary metal\u2013oxide\u2013semiconductor",
       "Computer-made operating system",
       "Computer-made oscillating static"
     ],
@@ -6960,7 +6960,7 @@
   },
   {
     "id": "otdb_math_1_006",
-    "question": "How many sides does a Möbius strip have?",
+    "question": "How many sides does a M\u00f6bius strip have?",
     "options": [
       "4",
       "3",
@@ -7072,7 +7072,7 @@
   },
   {
     "id": "otdb_math_2_004",
-    "question": "What is the area of a circle with a diameter of 20 inches if π= 3.1415?",
+    "question": "What is the area of a circle with a diameter of 20 inches if \u03c0= 3.1415?",
     "options": [
       "380.1215 Inches",
       "1256.6 Inches",
@@ -7215,7 +7215,7 @@
     "question": "What is the only Millennium Prize Problem that has been solved so far?",
     "options": [
       "Fermat's conjecture",
-      "Poincaré conjecture",
+      "Poincar\u00e9 conjecture",
       "P vs. NP problem",
       "Riemann Hypothesis"
     ],
@@ -7240,7 +7240,7 @@
   },
   {
     "id": "otdb_math_3_006",
-    "question": "What is the fourth digit of π?",
+    "question": "What is the fourth digit of \u03c0?",
     "options": [
       "3",
       "1",
@@ -7942,10 +7942,10 @@
     "id": "otdb_sci_2_007",
     "question": "At what temperature does water boil?",
     "options": [
-      "200°F",
-      "181°F",
-      "178°F",
-      "212°F"
+      "200\u00b0F",
+      "181\u00b0F",
+      "178\u00b0F",
+      "212\u00b0F"
     ],
     "difficulty": 2,
     "category": "science",
@@ -7958,7 +7958,7 @@
     "options": [
       "James Watt",
       "Albert Einstein",
-      "Wilhelm Conrad Röntgen",
+      "Wilhelm Conrad R\u00f6ntgen",
       "Thomas Alva Edison"
     ],
     "difficulty": 2,
@@ -8558,9 +8558,9 @@
     "id": "otdb_sci_3_001",
     "question": "The core of the Sun can reach which temperature?",
     "options": [
-      "27° Million F (15° Million C)",
-      "8° Billion F (°4.4 Billion C)",
-      "938,000° F (521093.3° C)",
+      "27\u00b0 Million F (15\u00b0 Million C)",
+      "8\u00b0 Billion F (\u00b04.4 Billion C)",
+      "938,000\u00b0 F (521093.3\u00b0 C)",
       "Absolute Zero (Both F and C)"
     ],
     "difficulty": 3,
@@ -8990,7 +8990,7 @@
   },
   {
     "id": "otdb_sci_3_033",
-    "question": "Which of the following liquids is least viscous? Assume temperature is 25°C.",
+    "question": "Which of the following liquids is least viscous? Assume temperature is 25\u00b0C.",
     "options": [
       "Water",
       "Acetone",
@@ -9202,9 +9202,9 @@
     "id": "otdb_sci_3_049",
     "question": "Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?",
     "options": [
-      "Triassic–Jurassic",
-      "Permian–Triassic",
-      "Ordovician–Silurian",
+      "Triassic\u2013Jurassic",
+      "Permian\u2013Triassic",
+      "Ordovician\u2013Silurian",
       "Cretaceous-Paleogene"
     ],
     "difficulty": 3,
@@ -22119,6 +22119,5206 @@
       "Ion thruster",
       "Cryogenic engine",
       "Ramjet engine"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_001",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many heads did Ravana have?",
+    "options": [
+      "5",
+      "10",
+      "7",
+      "12"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_002",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who killed Ravana in the Ramayana?",
+    "options": [
+      "Lakshmana",
+      "Hanuman",
+      "Rama",
+      "Bharata"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_003",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Rama's wife?",
+    "options": [
+      "Draupadi",
+      "Sita",
+      "Radha",
+      "Rukmini"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_004",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god has an elephant head?",
+    "options": [
+      "Kartikeya",
+      "Hanuman",
+      "Ganesha",
+      "Shiva"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_005",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is known as the 'Destroyer' in the Hindu Trinity (Trimurti)?",
+    "options": [
+      "Brahma",
+      "Vishnu",
+      "Shiva",
+      "Indra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_006",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which festival celebrates Lord Rama's return to Ayodhya?",
+    "options": [
+      "Holi",
+      "Diwali",
+      "Navratri",
+      "Pongal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_007",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who carried the Sanjeevani mountain to save Lakshmana?",
+    "options": [
+      "Sugriva",
+      "Jambavan",
+      "Hanuman",
+      "Angada"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_008",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which holy book contains the Bhagavad Gita?",
+    "options": [
+      "Ramayana",
+      "Mahabharata",
+      "Vedas",
+      "Upanishads"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_009",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the king of all gods (Devas) in Hindu mythology?",
+    "options": [
+      "Agni",
+      "Varuna",
+      "Indra",
+      "Surya"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_010",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many brothers did Lord Rama have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_011",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which animal is the vehicle (vahana) of Lord Shiva?",
+    "options": [
+      "Eagle",
+      "Bull",
+      "Lion",
+      "Elephant"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_012",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who wrote the epic Ramayana?",
+    "options": [
+      "Vyasa",
+      "Valmiki",
+      "Tulsidas",
+      "Kalidasa"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_013",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Krishna's childhood village?",
+    "options": [
+      "Mathura",
+      "Vrindavan",
+      "Dwarka",
+      "Gokul"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "myth_easy_014",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which goddess is worshipped during Navratri?",
+    "options": [
+      "Saraswati",
+      "Lakshmi",
+      "Durga",
+      "Parvati"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_015",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What weapon did Lord Rama use to kill Ravana?",
+    "options": [
+      "Sudarshan Chakra",
+      "Trishul",
+      "Brahmastra",
+      "Vajra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_016",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the monkey god in Hindu mythology?",
+    "options": [
+      "Ganesha",
+      "Hanuman",
+      "Jambavan",
+      "Nandi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_017",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which river is considered the holiest in Hinduism?",
+    "options": [
+      "Yamuna",
+      "Godavari",
+      "Ganga",
+      "Narmada"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_018",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many Pandava brothers were there in the Mahabharata?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_019",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god holds the Sudarshan Chakra?",
+    "options": [
+      "Shiva",
+      "Brahma",
+      "Vishnu",
+      "Indra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_020",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Ganesha's mother?",
+    "options": [
+      "Lakshmi",
+      "Saraswati",
+      "Parvati",
+      "Durga"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_021",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god is known as the 'Preserver' in the Hindu Trinity?",
+    "options": [
+      "Brahma",
+      "Shiva",
+      "Vishnu",
+      "Indra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_022",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the holy scripture spoken by Lord Krishna to Arjuna on the battlefield?",
+    "options": [
+      "Vedas",
+      "Upanishads",
+      "Bhagavad Gita",
+      "Puranas"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_023",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which festival celebrates the victory of good over evil by burning effigies of Ravana?",
+    "options": [
+      "Diwali",
+      "Dussehra",
+      "Holi",
+      "Baisakhi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_024",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the vehicle (vahana) of Goddess Saraswati?",
+    "options": [
+      "Owl",
+      "Lion",
+      "Swan",
+      "Peacock"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_025",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the father of Lord Ganesha?",
+    "options": [
+      "Vishnu",
+      "Brahma",
+      "Shiva",
+      "Indra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_026",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In the Ramayana, who was Rama's loyal brother who accompanied him to exile?",
+    "options": [
+      "Bharata",
+      "Shatrughna",
+      "Lakshmana",
+      "Vibhishana"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_027",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which color is Lord Krishna most commonly depicted in?",
+    "options": [
+      "Red",
+      "White",
+      "Blue",
+      "Yellow"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_028",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What instrument does Lord Krishna play?",
+    "options": [
+      "Sitar",
+      "Veena",
+      "Flute",
+      "Mridangam"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_029",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the goddess of wealth and prosperity?",
+    "options": [
+      "Saraswati",
+      "Lakshmi",
+      "Durga",
+      "Kali"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_030",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the bridge built by Lord Rama's army to Lanka?",
+    "options": [
+      "Setu Bandha",
+      "Ram Setu",
+      "Lanka Bridge",
+      "Hanuman Setu"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_031",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the goddess of knowledge and learning?",
+    "options": [
+      "Lakshmi",
+      "Parvati",
+      "Saraswati",
+      "Durga"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_032",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many Kauravas were there in the Mahabharata?",
+    "options": [
+      "50",
+      "100",
+      "105",
+      "200"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_033",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which demon king ruled over Lanka in the Ramayana?",
+    "options": [
+      "Kumbhakarna",
+      "Ravana",
+      "Meghanada",
+      "Vibhishana"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_034",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is Lord Shiva's trident called?",
+    "options": [
+      "Vajra",
+      "Sudarshan Chakra",
+      "Trishul",
+      "Pinaka"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_035",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which bird is the vehicle (vahana) of Lord Vishnu?",
+    "options": [
+      "Peacock",
+      "Swan",
+      "Garuda",
+      "Crow"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_036",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Janmashtami celebrates the birth of which god?",
+    "options": [
+      "Rama",
+      "Shiva",
+      "Krishna",
+      "Ganesha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_037",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was the eldest of the Pandava brothers?",
+    "options": [
+      "Arjuna",
+      "Bhima",
+      "Yudhishthira",
+      "Nakula"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_038",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Ganesh Chaturthi celebrates the birth of which god?",
+    "options": [
+      "Kartikeya",
+      "Krishna",
+      "Ganesha",
+      "Hanuman"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_039",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the serpent on which Lord Vishnu rests?",
+    "options": [
+      "Vasuki",
+      "Takshaka",
+      "Shesha (Ananta)",
+      "Kalia"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_040",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which Pandava was known as the greatest archer?",
+    "options": [
+      "Bhima",
+      "Yudhishthira",
+      "Arjuna",
+      "Sahadeva"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_041",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the vehicle (vahana) of Goddess Durga?",
+    "options": [
+      "Elephant",
+      "Swan",
+      "Lion/Tiger",
+      "Owl"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_042",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the creator god in the Hindu Trinity (Trimurti)?",
+    "options": [
+      "Vishnu",
+      "Shiva",
+      "Brahma",
+      "Indra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_043",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What was the name of Arjuna's bow?",
+    "options": [
+      "Sharanga",
+      "Pinaka",
+      "Gandiva",
+      "Kodanda"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_044",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god is depicted with a third eye on his forehead?",
+    "options": [
+      "Vishnu",
+      "Brahma",
+      "Shiva",
+      "Ganesha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_045",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the sacred river that is said to flow from Lord Shiva's hair?",
+    "options": [
+      "Yamuna",
+      "Ganga",
+      "Saraswati",
+      "Godavari"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_046",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is Lord Rama's father?",
+    "options": [
+      "Janaka",
+      "Vasudeva",
+      "Dasharatha",
+      "Pandu"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_047",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the holy text of the Sikhs that includes works of Hindu saints?",
+    "options": [
+      "Vedas",
+      "Guru Granth Sahib",
+      "Bhagavad Gita",
+      "Quran"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_048",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which festival involves playing with colors and is associated with Krishna's playfulness?",
+    "options": [
+      "Diwali",
+      "Navratri",
+      "Holi",
+      "Pongal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_049",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many years were Rama and Sita exiled to the forest?",
+    "options": [
+      "7 years",
+      "12 years",
+      "14 years",
+      "20 years"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_050",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was Sita's father?",
+    "options": [
+      "Dasharatha",
+      "Janaka",
+      "Drupada",
+      "Pandu"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_051",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which avatar of Vishnu is depicted as a fish?",
+    "options": [
+      "Kurma",
+      "Varaha",
+      "Matsya",
+      "Narasimha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_052",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Shiva's consort?",
+    "options": [
+      "Lakshmi",
+      "Saraswati",
+      "Parvati",
+      "Radha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_053",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was the strongest of the Pandava brothers?",
+    "options": [
+      "Arjuna",
+      "Yudhishthira",
+      "Bhima",
+      "Nakula"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_054",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god rides a peacock?",
+    "options": [
+      "Ganesha",
+      "Kartikeya (Murugan)",
+      "Krishna",
+      "Brahma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_055",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the kingdom where Lord Rama was prince?",
+    "options": [
+      "Hastinapur",
+      "Ayodhya",
+      "Mithila",
+      "Dwarka"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_056",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What did the Samudra Manthan (Churning of the Ocean) produce?",
+    "options": [
+      "Gold",
+      "Weapons",
+      "Amrit (Nectar of Immortality)",
+      "Gems only"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_057",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is Lord Krishna's elder brother?",
+    "options": [
+      "Arjuna",
+      "Balarama",
+      "Uddhava",
+      "Satyaki"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_058",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What animal is Nandi, who guards Shiva's temples?",
+    "options": [
+      "Lion",
+      "Elephant",
+      "Bull",
+      "Serpent"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_059",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which city is Lord Krishna most associated with as a king?",
+    "options": [
+      "Mathura",
+      "Vrindavan",
+      "Dwarka",
+      "Gokul"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_060",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the god of fire in Hindu mythology?",
+    "options": [
+      "Vayu",
+      "Agni",
+      "Varuna",
+      "Surya"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_001",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was Arjuna's charioteer in the Kurukshetra war?",
+    "options": [
+      "Shalya",
+      "Drona",
+      "Krishna",
+      "Bhishma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_002",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the bow that Lord Rama broke to win Sita's hand in marriage?",
+    "options": [
+      "Gandiva",
+      "Sharanga",
+      "Pinaka (Shiva Dhanush)",
+      "Kodanda"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_003",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the teacher (guru) of the Pandavas and Kauravas?",
+    "options": [
+      "Bhishma",
+      "Vidura",
+      "Dronacharya",
+      "Kripacharya"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_004",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which demon did Lord Krishna kill as a child by sucking the life out of her?",
+    "options": [
+      "Tataka",
+      "Putana",
+      "Holika",
+      "Surpanakha"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_005",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "How many main avatars (Dashavatara) does Lord Vishnu have?",
+    "options": [
+      "7",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_006",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the grandfather figure who lay on a bed of arrows in the Mahabharata?",
+    "options": [
+      "Drona",
+      "Bhishma",
+      "Kripa",
+      "Vidura"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_007",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of Ravana's brother who joined Rama's side?",
+    "options": [
+      "Kumbhakarna",
+      "Vibhishana",
+      "Indrajit",
+      "Maricha"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_008",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Pandava went to heaven in his mortal body?",
+    "options": [
+      "Arjuna",
+      "Bhima",
+      "Yudhishthira",
+      "Nakula"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_009",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the half-man, half-lion avatar of Vishnu called?",
+    "options": [
+      "Varaha",
+      "Vamana",
+      "Narasimha",
+      "Parashurama"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_010",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who wrote the Mahabharata?",
+    "options": [
+      "Valmiki",
+      "Vyasa",
+      "Tulsidas",
+      "Kalidasa"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_011",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What was the name of the dice game that led to the Pandavas' exile?",
+    "options": [
+      "Chaturanga",
+      "Dyut Krida",
+      "Pachisi",
+      "Shatranj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_012",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was Karna's real mother in the Mahabharata?",
+    "options": [
+      "Gandhari",
+      "Draupadi",
+      "Kunti",
+      "Madri"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_013",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the boar avatar of Lord Vishnu called?",
+    "options": [
+      "Matsya",
+      "Kurma",
+      "Varaha",
+      "Narasimha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_014",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which sage cursed King Parikshit, leading to his death by snakebite?",
+    "options": [
+      "Vishwamitra",
+      "Shringi (son of Shamika)",
+      "Durvasa",
+      "Narada"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_015",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the wife of all five Pandava brothers?",
+    "options": [
+      "Subhadra",
+      "Kunti",
+      "Draupadi",
+      "Gandhari"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_016",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the turtle avatar of Lord Vishnu called?",
+    "options": [
+      "Matsya",
+      "Kurma",
+      "Varaha",
+      "Vamana"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_017",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who killed Karna in the Mahabharata war?",
+    "options": [
+      "Bhima",
+      "Krishna",
+      "Arjuna",
+      "Yudhishthira"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_018",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the vehicle (vahana) of Goddess Lakshmi?",
+    "options": [
+      "Swan",
+      "Owl",
+      "Lion",
+      "Elephant"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_019",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which city is considered the abode of Lord Shiva?",
+    "options": [
+      "Varanasi (Kashi)",
+      "Ayodhya",
+      "Haridwar",
+      "Mathura"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_medium_020",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What was the name of Ravana's son who defeated Indra?",
+    "options": [
+      "Atikaya",
+      "Akshayakumara",
+      "Indrajit (Meghanada)",
+      "Kumbhakarna"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_021",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "How many chapters (Kandas) are there in Valmiki's Ramayana?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "12"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_022",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the devoted wife of Lord Rama in Tulsidas's Ramcharitmanas?",
+    "options": [
+      "Mandodari",
+      "Ahalya",
+      "Sita",
+      "Urmila"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_023",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which goddess is depicted standing on the chest of Lord Shiva?",
+    "options": [
+      "Durga",
+      "Parvati",
+      "Kali",
+      "Lakshmi"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_024",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What weapon did Indra give to Arjuna?",
+    "options": [
+      "Brahmastra",
+      "Pashupatastra",
+      "Vajra",
+      "Sudarshan Chakra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_025",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is considered the author of Yoga Sutras?",
+    "options": [
+      "Vyasa",
+      "Patanjali",
+      "Shankaracharya",
+      "Narada"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_026",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What was the real name of Bhishma in the Mahabharata?",
+    "options": [
+      "Shantanu",
+      "Devavrata",
+      "Drona",
+      "Vichitravirya"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_027",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Pandava was known for his sense of dharma (righteousness)?",
+    "options": [
+      "Arjuna",
+      "Bhima",
+      "Yudhishthira",
+      "Sahadeva"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_028",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Ramayana, what golden animal lured Sita leading to her abduction?",
+    "options": [
+      "Golden Elephant",
+      "Golden Horse",
+      "Golden Deer",
+      "Golden Swan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_029",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the divine weapon given by Lord Shiva to Arjuna?",
+    "options": [
+      "Brahmastra",
+      "Narayanastra",
+      "Pashupatastra",
+      "Agneyastra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_030",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is the god of death in Hindu mythology?",
+    "options": [
+      "Agni",
+      "Vayu",
+      "Yama",
+      "Kubera"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_031",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which sage is known for his extreme anger and curses in Hindu mythology?",
+    "options": [
+      "Narada",
+      "Vasishtha",
+      "Durvasa",
+      "Vishwamitra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_032",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the forest where the Pandavas spent their exile?",
+    "options": [
+      "Naimisha",
+      "Dandaka",
+      "Kamyaka",
+      "Chitrakoot"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_033",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is Kartikeya (Murugan) the son of?",
+    "options": [
+      "Vishnu and Lakshmi",
+      "Brahma and Saraswati",
+      "Shiva and Parvati",
+      "Indra and Shachi"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_034",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which mountain did gods and demons use as a churning rod during Samudra Manthan?",
+    "options": [
+      "Mount Kailash",
+      "Mount Meru",
+      "Mount Mandara",
+      "Mount Vindhya"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_035",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the vehicle (vahana) of Lord Brahma?",
+    "options": [
+      "Garuda",
+      "Swan (Hamsa)",
+      "Bull",
+      "Elephant"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_036",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who killed Duryodhana in the Mahabharata?",
+    "options": [
+      "Arjuna",
+      "Yudhishthira",
+      "Bhima",
+      "Krishna"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_037",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which demon was killed by Goddess Durga, giving her the name 'Mahishasuramardini'?",
+    "options": [
+      "Raktabija",
+      "Shumbha",
+      "Mahishasura",
+      "Chanda"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_038",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the serpent king used as a rope during the Samudra Manthan?",
+    "options": [
+      "Shesha",
+      "Vasuki",
+      "Takshaka",
+      "Kalia"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_039",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was Abhimanyu's father?",
+    "options": [
+      "Bhima",
+      "Yudhishthira",
+      "Arjuna",
+      "Nakula"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_040",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What was the capital city of the Kauravas?",
+    "options": [
+      "Indraprastha",
+      "Hastinapura",
+      "Dwarka",
+      "Virata"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_041",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which sage's ashram did Rama visit during his exile, who had been turned to stone by a curse?",
+    "options": [
+      "Agastya",
+      "Bharadwaja",
+      "Gautama (wife Ahalya)",
+      "Vishwamitra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_042",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is the god of wind in Hindu mythology?",
+    "options": [
+      "Agni",
+      "Indra",
+      "Vayu",
+      "Surya"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_043",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the city built for the Pandavas by the architect Maya?",
+    "options": [
+      "Hastinapura",
+      "Indraprastha",
+      "Dwaraka",
+      "Mathura"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_044",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which avatar of Vishnu is a dwarf who covered the universe in three steps?",
+    "options": [
+      "Parashurama",
+      "Narasimha",
+      "Vamana",
+      "Kurma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_045",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was Ravana's wife?",
+    "options": [
+      "Tara",
+      "Mandodari",
+      "Surpanakha",
+      "Shurpanakhi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_046",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the weapon that never misses its target, given to Rama by sage Vishwamitra?",
+    "options": [
+      "Pashupatastra",
+      "Brahmastra",
+      "Agneyastra",
+      "Narayanastra"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_047",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Kaurava prince was known for his unwavering friendship with Karna?",
+    "options": [
+      "Dushasana",
+      "Duryodhana",
+      "Vikarna",
+      "Yuyutsu"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_048",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the mother of the Kauravas?",
+    "options": [
+      "Kunti",
+      "Gandhari",
+      "Madri",
+      "Satyavati"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_049",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the vehicle (vahana) of Yama, the god of death?",
+    "options": [
+      "Horse",
+      "Buffalo",
+      "Goat",
+      "Crow"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_050",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In which sacred text does Lord Vishnu describe his Vishwarupa (universal form)?",
+    "options": [
+      "Rig Veda",
+      "Bhagavad Gita",
+      "Upanishads",
+      "Ramayana"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_001",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which Upanishad contains the dialogue between Nachiketa and Yama?",
+    "options": [
+      "Chandogya Upanishad",
+      "Mundaka Upanishad",
+      "Katha Upanishad",
+      "Brihadaranyaka Upanishad"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_002",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "How many parvas (books) are there in the Mahabharata?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "24"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_003",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was the architect of Lanka according to Hindu mythology?",
+    "options": [
+      "Maya",
+      "Vishwakarma",
+      "Tvashtar",
+      "Shukracharya"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_004",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What was the name of the Chakravyuha formation that trapped Abhimanyu?",
+    "options": [
+      "Padmavyuha",
+      "Garudavyuha",
+      "Makaravyuha",
+      "Sarpavyuha"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_hard_005",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which sage is credited with composing the Gayatri Mantra?",
+    "options": [
+      "Vasishtha",
+      "Vishwamitra",
+      "Atri",
+      "Bharadwaja"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_006",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Mahabharata, who was the only warrior who fought on both sides of the Kurukshetra war?",
+    "options": [
+      "Shalya",
+      "Yuyutsu",
+      "Vikarna",
+      "Ashwatthama"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_007",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the 10th and final avatar of Lord Vishnu, yet to appear?",
+    "options": [
+      "Krishna",
+      "Buddha",
+      "Kalki",
+      "Parashurama"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_008",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who is the guru (teacher) of the Asuras (demons)?",
+    "options": [
+      "Brihaspati",
+      "Shukracharya",
+      "Dronacharya",
+      "Vasishtha"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_009",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "How many chapters does the Bhagavad Gita have?",
+    "options": [
+      "12",
+      "15",
+      "18",
+      "21"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_010",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which Veda is the oldest and considered the most sacred?",
+    "options": [
+      "Yajur Veda",
+      "Sama Veda",
+      "Atharva Veda",
+      "Rig Veda"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "myth_hard_011",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who narrated the Bhagavad Gita to the blind king Dhritarashtra?",
+    "options": [
+      "Vyasa",
+      "Vidura",
+      "Sanjaya",
+      "Narada"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_012",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What was the name of Bhishma's father?",
+    "options": [
+      "Pandu",
+      "Shantanu",
+      "Pratipa",
+      "Vichitravirya"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_013",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which demon king was granted a boon that he could not be killed by any god, demon, or human, leading Vishnu to take the Narasimha avatar?",
+    "options": [
+      "Hiranyaksha",
+      "Hiranyakashipu",
+      "Ravana",
+      "Mahishasura"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_014",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the discourse between Bhishma and Yudhishthira on dharma, given while Bhishma lay on a bed of arrows?",
+    "options": [
+      "Anu Gita",
+      "Shanti Parva",
+      "Vidura Niti",
+      "Yaksha Prashna"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_015",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "How many total Puranas (Mahapuranas) are there in Hindu tradition?",
+    "options": [
+      "12",
+      "16",
+      "18",
+      "24"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_016",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was Dronacharya's son who survived the Mahabharata war?",
+    "options": [
+      "Abhimanyu",
+      "Ashwatthama",
+      "Drupada",
+      "Shikhandi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_017",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In which Yuga (era) are we currently living according to Hindu cosmology?",
+    "options": [
+      "Satya Yuga",
+      "Treta Yuga",
+      "Dvapara Yuga",
+      "Kali Yuga"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "myth_hard_018",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the celestial weapon that can only be used once and summons a divine army, used by Ashwatthama?",
+    "options": [
+      "Brahmastra",
+      "Narayanastra",
+      "Brahmasira",
+      "Pashupatastra"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_019",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who dictated the Mahabharata while Vyasa narrated it?",
+    "options": [
+      "Narada",
+      "Ganesha",
+      "Saraswati",
+      "Brahma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_020",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which lake did Bhima visit to fetch the Saugandhika lotus flower for Draupadi?",
+    "options": [
+      "Manasarovar",
+      "Kubera's garden lake",
+      "Bindu Sarovar",
+      "Pampa Sarovar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_021",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the fire sacrifice performed by King Dasharatha to obtain sons?",
+    "options": [
+      "Ashwamedha Yagna",
+      "Putrakameshti Yagna",
+      "Rajasuya Yagna",
+      "Vajapeya Yagna"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_022",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was the king of Kishkindha whom Rama helped regain his kingdom from his brother Vali?",
+    "options": [
+      "Jambavan",
+      "Hanuman",
+      "Sugriva",
+      "Angada"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_023",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Mahabharata, who was the incarnation of Dharma (god of righteousness)?",
+    "options": [
+      "Arjuna",
+      "Karna",
+      "Yudhishthira",
+      "Bhishma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_024",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What was the condition placed on Ganesha by Vyasa for writing the Mahabharata?",
+    "options": [
+      "He must write without stopping",
+      "He must write with his tusk",
+      "He must understand every verse before writing it",
+      "He must finish in one night"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_025",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which river goddess was Bhishma's mother?",
+    "options": [
+      "Yamuna",
+      "Saraswati",
+      "Ganga",
+      "Kaveri"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_026",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the divine architect of the gods in Hindu mythology?",
+    "options": [
+      "Maya",
+      "Vishwakarma",
+      "Tvashtar",
+      "Shilpi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_027",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who among the Pandavas was the son of the wind god Vayu?",
+    "options": [
+      "Arjuna",
+      "Yudhishthira",
+      "Bhima",
+      "Nakula"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_028",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the sacred text that contains the dialogue between King Janaka and Sage Yajnavalkya?",
+    "options": [
+      "Chandogya Upanishad",
+      "Brihadaranyaka Upanishad",
+      "Isha Upanishad",
+      "Mandukya Upanishad"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_029",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was the mother of Ravana?",
+    "options": [
+      "Sumati",
+      "Kaikesi",
+      "Surasa",
+      "Tadaka"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_030",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In which Parva of the Mahabharata is the Bhagavad Gita found?",
+    "options": [
+      "Udyoga Parva",
+      "Drona Parva",
+      "Bhishma Parva",
+      "Shanti Parva"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_031",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What was the name of the monkey king whom Rama killed to help Sugriva?",
+    "options": [
+      "Angada",
+      "Nala",
+      "Vali",
+      "Jambavan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_032",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "How many days did the Kurukshetra war last?",
+    "options": [
+      "14 days",
+      "18 days",
+      "21 days",
+      "30 days"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_033",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who is the guru (teacher) of the Devas (gods)?",
+    "options": [
+      "Shukracharya",
+      "Brihaspati",
+      "Vyasa",
+      "Narada"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_034",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which Pandava twin was the son of the Ashwini Kumaras (divine physicians)?",
+    "options": [
+      "Arjuna and Bhima",
+      "Yudhishthira and Arjuna",
+      "Nakula and Sahadeva",
+      "Bhima and Yudhishthira"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_035",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What philosophical concept does the phrase 'Tat Tvam Asi' (That Thou Art) represent?",
+    "options": [
+      "Karma",
+      "Dharma",
+      "Atman-Brahman identity",
+      "Maya"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_036",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which incarnation of Vishnu is associated with the legend of King Bali and three steps?",
+    "options": [
+      "Parashurama",
+      "Narasimha",
+      "Vamana",
+      "Rama"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_037",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the demon whom Lord Shiva killed in the form of Nataraja (cosmic dancer)?",
+    "options": [
+      "Andhaka",
+      "Apasmara",
+      "Jalandhara",
+      "Tripurasura"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_038",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In which Upanishad does the analogy of two birds on a tree appear, representing the Atman and Jiva?",
+    "options": [
+      "Katha Upanishad",
+      "Mundaka Upanishad",
+      "Taittiriya Upanishad",
+      "Aitareya Upanishad"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_039",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was the sage who swallowed the entire ocean in Hindu mythology?",
+    "options": [
+      "Vishwamitra",
+      "Agastya",
+      "Vasishtha",
+      "Durvasa"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_040",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the sacred mountain that is considered Lord Shiva's abode?",
+    "options": [
+      "Mount Meru",
+      "Mount Mandara",
+      "Mount Kailash",
+      "Mount Vindhya"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_001",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian sweet is round, spongy, and soaked in sugar syrup?",
+    "options": [
+      "Barfi",
+      "Rasgulla",
+      "Peda",
+      "Halwa"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_002",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the main ingredient in a traditional Dal?",
+    "options": [
+      "Rice",
+      "Lentils",
+      "Wheat",
+      "Chickpeas"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_003",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which city is most famous for its Hyderabadi Biryani?",
+    "options": [
+      "Mumbai",
+      "Delhi",
+      "Hyderabad",
+      "Lucknow"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_004",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Paneer is a type of Indian what?",
+    "options": [
+      "Bread",
+      "Cheese",
+      "Pickle",
+      "Spice"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_005",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which popular Indian street food consists of fried dough balls filled with spiced water?",
+    "options": [
+      "Samosa",
+      "Vada Pav",
+      "Pani Puri",
+      "Kachori"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_006",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the Indian flatbread commonly made from wheat flour and cooked on a tawa?",
+    "options": [
+      "Naan",
+      "Roti",
+      "Paratha",
+      "Puri"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_007",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which spice gives turmeric its bright yellow color?",
+    "options": [
+      "Saffron",
+      "Paprika",
+      "Curcumin",
+      "Annatto"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_008",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Masala Dosa is a famous dish from which part of India?",
+    "options": [
+      "North India",
+      "South India",
+      "East India",
+      "West India"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_009",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the traditional Indian yogurt-based drink called?",
+    "options": [
+      "Sharbat",
+      "Lassi",
+      "Jaljeera",
+      "Thandai"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_010",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian dish consists of rice cooked with spices and meat or vegetables in layers?",
+    "options": [
+      "Pulao",
+      "Biryani",
+      "Khichdi",
+      "Fried Rice"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_011",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Gulab Jamun is typically made from which dairy product?",
+    "options": [
+      "Paneer",
+      "Curd",
+      "Khoya (dried whole milk)",
+      "Cream"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_012",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'ghee' in Indian cooking?",
+    "options": [
+      "Mustard oil",
+      "Coconut milk",
+      "Clarified butter",
+      "Sesame oil"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_013",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian snack is a deep-fried triangular pastry filled with spiced potatoes?",
+    "options": [
+      "Pakora",
+      "Samosa",
+      "Kachori",
+      "Bhaji"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_014",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Chai in India is typically made by boiling tea leaves with what?",
+    "options": [
+      "Water only",
+      "Milk and water",
+      "Coconut milk",
+      "Juice"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_015",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which leaf is commonly used to serve food in South Indian meals?",
+    "options": [
+      "Neem leaf",
+      "Banana leaf",
+      "Teak leaf",
+      "Peepal leaf"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_016",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the popular Mumbai street food made with a bread roll and a spiced potato patty?",
+    "options": [
+      "Pav Bhaji",
+      "Vada Pav",
+      "Dabeli",
+      "Misal Pav"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_017",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which spice is known as 'Haldi' in Hindi?",
+    "options": [
+      "Cumin",
+      "Turmeric",
+      "Coriander",
+      "Chili"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_018",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Chole Bhature is a popular dish from which region of India?",
+    "options": [
+      "South India",
+      "East India",
+      "North India",
+      "Northeast India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_019",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'Raita' in Indian cuisine?",
+    "options": [
+      "A type of bread",
+      "A yogurt-based condiment",
+      "A rice dish",
+      "A lentil soup"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_020",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which festival is most associated with eating sweets like Ladoo and Barfi in India?",
+    "options": [
+      "Holi",
+      "Eid",
+      "Diwali",
+      "Pongal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_021",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Idli is a steamed cake made primarily from which ingredients?",
+    "options": [
+      "Wheat and milk",
+      "Rice and urad dal batter",
+      "Corn and butter",
+      "Semolina and sugar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_022",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the name of the Indian spice mix commonly used in curries?",
+    "options": [
+      "Garam Masala",
+      "Chaat Masala",
+      "Pav Bhaji Masala",
+      "Tandoori Masala"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "food_easy_023",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian bread is deep-fried and puffs up into a round ball?",
+    "options": [
+      "Roti",
+      "Naan",
+      "Puri",
+      "Kulcha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_024",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Butter Chicken is believed to have originated in which city?",
+    "options": [
+      "Mumbai",
+      "Delhi",
+      "Amritsar",
+      "Jaipur"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_025",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which South Indian chutney is commonly served with Idli and Dosa?",
+    "options": [
+      "Mint chutney",
+      "Tamarind chutney",
+      "Coconut chutney",
+      "Tomato ketchup"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_026",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What does 'Tandoori' refer to in Indian cooking?",
+    "options": [
+      "A type of spice",
+      "A clay oven",
+      "A cooking pot",
+      "A marinade"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_027",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Jalebi is a popular Indian sweet that is typically what shape?",
+    "options": [
+      "Round ball",
+      "Square",
+      "Spiral/pretzel-like",
+      "Triangular"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_028",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which oil is most commonly used in South Indian cooking?",
+    "options": [
+      "Mustard oil",
+      "Coconut oil",
+      "Sunflower oil",
+      "Ghee"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_029",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Rajma Chawal is a popular combination of kidney beans with what?",
+    "options": [
+      "Bread",
+      "Rice",
+      "Roti",
+      "Naan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_030",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'Aam' in Hindi, a fruit widely used in Indian cuisine?",
+    "options": [
+      "Banana",
+      "Apple",
+      "Mango",
+      "Guava"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_031",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which state is famous for its 'Rosogolla' (Rasgulla)?",
+    "options": [
+      "Punjab",
+      "West Bengal",
+      "Tamil Nadu",
+      "Gujarat"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_032",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What type of food is 'Papad' (Papadum)?",
+    "options": [
+      "A curry",
+      "A thin crispy disc/wafer",
+      "A sweet",
+      "A beverage"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_033",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Sambar is a lentil-based stew popular in which part of India?",
+    "options": [
+      "North India",
+      "South India",
+      "Northeast India",
+      "West India"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_034",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian pickle is known as 'Achaar'?",
+    "options": [
+      "Chutney",
+      "Murabba",
+      "Achaar",
+      "Raita"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_035",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Pav Bhaji originated in which Indian city?",
+    "options": [
+      "Delhi",
+      "Kolkata",
+      "Mumbai",
+      "Chennai"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_036",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the main grain used in making traditional Uttapam?",
+    "options": [
+      "Wheat",
+      "Rice",
+      "Millet",
+      "Corn"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_037",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian dessert is essentially fried milk dumplings in sugar syrup?",
+    "options": [
+      "Kheer",
+      "Gulab Jamun",
+      "Rasmalai",
+      "Sandesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_038",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Aloo Gobi is a vegetarian dish made with potatoes and what?",
+    "options": [
+      "Peas",
+      "Spinach",
+      "Cauliflower",
+      "Eggplant"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_039",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the common name for 'Dahi' in English?",
+    "options": [
+      "Milk",
+      "Butter",
+      "Yogurt",
+      "Cream"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_040",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which leaf-wrapped betel nut preparation is commonly eaten after meals in India?",
+    "options": [
+      "Mukhwas",
+      "Paan",
+      "Supari",
+      "Churan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_041",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Palak Paneer is a dish made with paneer and which green vegetable?",
+    "options": [
+      "Fenugreek leaves",
+      "Spinach",
+      "Mustard greens",
+      "Coriander"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_042",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which grain is used to make the South Indian dish 'Upma'?",
+    "options": [
+      "Rice",
+      "Semolina (Rava/Suji)",
+      "Wheat flour",
+      "Oats"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_043",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'Jeera' called in English?",
+    "options": [
+      "Coriander",
+      "Cumin",
+      "Mustard",
+      "Fennel"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_044",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian state is known as the 'Spice Garden of India'?",
+    "options": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Kerala",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_045",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Kheer is an Indian dessert similar to what Western dish?",
+    "options": [
+      "Cake",
+      "Rice pudding",
+      "Ice cream",
+      "Custard"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_046",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the main ingredient in 'Chana Masala'?",
+    "options": [
+      "Green peas",
+      "Kidney beans",
+      "Chickpeas",
+      "Black lentils"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_047",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which city is famous for its 'Tunday Kababi' kebabs?",
+    "options": [
+      "Delhi",
+      "Lucknow",
+      "Hyderabad",
+      "Bhopal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_048",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Bhelpuri is a type of Indian what?",
+    "options": [
+      "Curry",
+      "Chaat (snack)",
+      "Bread",
+      "Sweet"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_049",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the traditional Indian thali?",
+    "options": [
+      "A cooking vessel",
+      "A platter with multiple dishes",
+      "A type of curry",
+      "A festival sweet"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_050",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which spice is known as 'Elaichi' in Hindi and is used to flavor Indian tea?",
+    "options": [
+      "Cinnamon",
+      "Clove",
+      "Cardamom",
+      "Star Anise"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_001",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Litti Chokha is a famous dish from which Indian state?",
+    "options": [
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Bihar",
+      "Jharkhand"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_002",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Indian bread is traditionally cooked by slapping it on the inside wall of a tandoor?",
+    "options": [
+      "Roti",
+      "Paratha",
+      "Naan",
+      "Phulka"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_003",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Appam, a lacy rice pancake, is a staple breakfast in which state?",
+    "options": [
+      "Karnataka",
+      "Kerala",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_004",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Rajasthani dish is made from dried lentil dumplings cooked in a yogurt-based curry?",
+    "options": [
+      "Dal Baati Churma",
+      "Gatte ki Sabzi",
+      "Ker Sangri",
+      "Laal Maas"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_005",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is 'Dum Pukht' style of cooking?",
+    "options": [
+      "Stir-frying at high heat",
+      "Slow cooking in a sealed pot",
+      "Deep frying in ghee",
+      "Grilling over charcoal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_006",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Modak, a sweet dumpling offered to Lord Ganesha, is particularly popular in which state?",
+    "options": [
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Goa"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_007",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which fermented rice dish is a staple in many parts of Odisha and West Bengal?",
+    "options": [
+      "Poha",
+      "Panta Bhat",
+      "Upma",
+      "Sabudana Khichdi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_008",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Dhokla, a steamed savory cake, is a traditional snack from which state?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Gujarat",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_009",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which spice, called 'Hing' in Hindi, has a strong pungent smell and is used in Indian cooking?",
+    "options": [
+      "Asafoetida",
+      "Fenugreek",
+      "Mustard seed",
+      "Nigella seed"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "food_medium_010",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What type of flour is traditionally used to make Makki di Roti, a Punjabi winter staple?",
+    "options": [
+      "Wheat flour",
+      "Rice flour",
+      "Cornmeal (maize flour)",
+      "Millet flour"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_011",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Bisi Bele Bath is a signature rice dish from which state?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_012",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Indian sweet is made by curdling milk with lemon or vinegar and then shaping the fresh cheese into balls?",
+    "options": [
+      "Gulab Jamun",
+      "Rasgulla",
+      "Jalebi",
+      "Ladoo"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_013",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Misal Pav, a spicy sprouted lentil curry served with bread, is from which state?",
+    "options": [
+      "Gujarat",
+      "Goa",
+      "Maharashtra",
+      "Karnataka"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_014",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which technique involves tempering spices in hot oil or ghee, known as 'Tadka' or 'Chaunk'?",
+    "options": [
+      "Bhunao",
+      "Baghar/Tadka",
+      "Dum",
+      "Dhungar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_015",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Chettinad cuisine, known for its spicy dishes, originates from which state?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_016",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Goan dish is a tangy pork curry made with vinegar and spices?",
+    "options": [
+      "Xacuti",
+      "Vindaloo",
+      "Sorpotel",
+      "Cafreal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_017",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Poha, a flattened rice breakfast dish, is especially popular in which two states?",
+    "options": [
+      "Punjab and Haryana",
+      "Maharashtra and Madhya Pradesh",
+      "Tamil Nadu and Kerala",
+      "West Bengal and Odisha"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_018",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is the key souring agent used in traditional Sambar?",
+    "options": [
+      "Lemon juice",
+      "Tamarind",
+      "Vinegar",
+      "Tomato"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_019",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Mughlai dish features boiled eggs wrapped in spiced minced meat and fried?",
+    "options": [
+      "Seekh Kebab",
+      "Nargisi Kofta",
+      "Shami Kebab",
+      "Galouti Kebab"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_020",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Sandesh is a famous Bengali sweet made primarily from which ingredient?",
+    "options": [
+      "Khoya",
+      "Chenna (fresh cottage cheese)",
+      "Condensed milk",
+      "Besan (gram flour)"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_021",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Kanda Poha is a breakfast dish particularly beloved in which Indian city?",
+    "options": [
+      "Delhi",
+      "Indore",
+      "Chennai",
+      "Kolkata"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_022",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which North Indian dish consists of black lentils slow-cooked overnight with butter and cream?",
+    "options": [
+      "Chana Dal",
+      "Dal Makhani",
+      "Moong Dal Tadka",
+      "Masoor Dal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_023",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Puttu, a cylindrical steamed rice cake, is a traditional breakfast in which state?",
+    "options": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Kerala",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_024",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which state's cuisine prominently features bamboo shoot as an ingredient?",
+    "options": [
+      "Rajasthan",
+      "Nagaland",
+      "Gujarat",
+      "Punjab"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_025",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Thalipeeth is a multi-grain flatbread from which state?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Maharashtra",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_026",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is 'Chaas' in Indian cuisine?",
+    "options": [
+      "Sweetened milk",
+      "Buttermilk",
+      "Coconut water",
+      "Sugarcane juice"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_027",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Kosha Mangsho, a slow-cooked mutton curry, is a specialty of which cuisine?",
+    "options": [
+      "Kashmiri",
+      "Hyderabadi",
+      "Bengali",
+      "Rajasthani"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_028",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Indian spice is the world's most expensive by weight?",
+    "options": [
+      "Cardamom",
+      "Vanilla",
+      "Saffron",
+      "Black pepper"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_029",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Makki di Roti is traditionally paired with which Punjabi dish?",
+    "options": [
+      "Palak Paneer",
+      "Sarson da Saag",
+      "Rajma",
+      "Chole"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_030",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Mughlai dish, whose name means 'nine gems', uses nine key vegetables, fruits, and nuts in a creamy curry?",
+    "options": [
+      "Shahi Paneer",
+      "Malai Kofta",
+      "Navratan Korma",
+      "Dum Aloo"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_031",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Bebinca is a traditional layered dessert from which Indian state?",
+    "options": [
+      "Kerala",
+      "Goa",
+      "Maharashtra",
+      "Karnataka"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_032",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which state is known for its 'Laal Maas', a fiery red meat curry?",
+    "options": [
+      "Punjab",
+      "Rajasthan",
+      "Madhya Pradesh",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_033",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Rasam, a tangy soup, is a staple in South Indian meals. What is its primary souring agent?",
+    "options": [
+      "Lime",
+      "Tamarind",
+      "Vinegar",
+      "Raw mango"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_034",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which city is known as the 'Street Food Capital of India'?",
+    "options": [
+      "Mumbai",
+      "Kolkata",
+      "Delhi",
+      "Lucknow"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_035",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Macher Jhol is a famous fish curry from which Indian state?",
+    "options": [
+      "Kerala",
+      "Goa",
+      "West Bengal",
+      "Odisha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_036",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is the name of the yogurt-based Rajasthani curry made without any green vegetable?",
+    "options": [
+      "Kadhi",
+      "Gatte ki Sabzi",
+      "Papad ki Sabzi",
+      "Ker Sangri"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "food_medium_037",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Maharashtrian snack is a spicy mixture of puffed rice, sev, onions, and chutneys?",
+    "options": [
+      "Poha",
+      "Bhel Puri",
+      "Misal Pav",
+      "Sabudana Vada"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_038",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Indian state is famous for the sweet called 'Mysore Pak'?",
+    "options": [
+      "Kerala",
+      "Andhra Pradesh",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_039",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is 'Panch Phoron', used widely in Bengali and Odia cooking?",
+    "options": [
+      "A five-spice blend",
+      "A type of curry paste",
+      "A rice dish",
+      "A dessert"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "food_medium_040",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Undhiyu, a mixed vegetable dish cooked upside-down in an earthen pot, is from which state?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Gujarat",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_001",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which natural coloring agent, derived from a plant root, gives traditional Kashmiri Rogan Josh its distinctive deep red color?",
+    "options": [
+      "Kashmiri chili",
+      "Ratanjot (Alkanet root)",
+      "Saffron",
+      "Deghi Mirch"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_002",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The restaurant 'Moti Mahal' in Delhi is credited with popularizing which dish in the 1950s?",
+    "options": [
+      "Biryani",
+      "Butter Chicken",
+      "Nihari",
+      "Seekh Kebab"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_003",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Jadoh is a traditional pork and rice dish from which Northeastern Indian community?",
+    "options": [
+      "Naga",
+      "Mizo",
+      "Khasi",
+      "Bodo"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_004",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which ancient Indian text contains detailed references to food preparation and dietary guidelines?",
+    "options": [
+      "Arthashastra",
+      "Manasollasa",
+      "Ramayana",
+      "Mahabharata"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_005",
+    "category": "food",
+    "difficulty": 3,
+    "question": "What is 'Dhungar' technique in Indian cooking?",
+    "options": [
+      "Slow roasting in sand",
+      "Smoking food with charcoal and ghee",
+      "Cooking in banana leaves",
+      "Fermenting in clay pots"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_006",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Pitha, a type of rice cake, is traditionally made during Bihu festival in which state?",
+    "options": [
+      "West Bengal",
+      "Odisha",
+      "Assam",
+      "Manipur"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_007",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which Portuguese-influenced Indian dish gets its name from a garlic-wine vinegar marinade ('vinha d'alhos')?",
+    "options": [
+      "Sorpotel",
+      "Vindaloo",
+      "Xacuti",
+      "Cafreal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_008",
+    "category": "food",
+    "difficulty": 3,
+    "question": "In traditional Kashmiri Wazwan feast, how many courses are traditionally served?",
+    "options": [
+      "12",
+      "24",
+      "36",
+      "48"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_009",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which region of India is credited with the origin of the 'Dum' style of cooking, using slow fire and sealed vessels?",
+    "options": [
+      "Hyderabad",
+      "Lucknow (Awadh)",
+      "Delhi",
+      "Bhopal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_010",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Siddu is a steamed wheat bread stuffed with poppy seeds, traditional to which region?",
+    "options": [
+      "Ladakh",
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Nepal border region"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_011",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which traditional Indian cheese from the Jammu region is made by the nomadic Gujjar community?",
+    "options": [
+      "Kalari",
+      "Chhurpi",
+      "Bandel",
+      "Churkam"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_012",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Moplah cuisine of Kerala is influenced by which community's trading heritage?",
+    "options": [
+      "Jewish",
+      "Syrian Christian",
+      "Arab Muslim",
+      "Portuguese"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_013",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which variety of rice, grown in the foothills of the Himalayas, is known for its distinctive aroma and is considered the finest Basmati?",
+    "options": [
+      "Sona Masuri",
+      "Gobindobhog",
+      "Dehradun Basmati",
+      "Ambemohar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_014",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Kundan Kaliya is a royal Awadhi dish where meat is cooked with which precious material's leaf?",
+    "options": [
+      "Silver (Chandi Varak)",
+      "Gold (Sone ka Varak)",
+      "Copper",
+      "Bronze"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_015",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which GI-tagged sweet from Odisha is made from chhena and is the official 'state sweet'?",
+    "options": [
+      "Rasgulla",
+      "Chhena Poda",
+      "Rasabali",
+      "Khaja"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_016",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Naatu Kozhi Curry uses which specific type of chicken that is native to India?",
+    "options": [
+      "Broiler chicken",
+      "Country/Desi chicken",
+      "Tandoori chicken",
+      "Silkie chicken"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_017",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which Indian state's traditional 'Smoked Pork with Bamboo Shoot' (Vawksa Rep) is a delicacy?",
+    "options": [
+      "Nagaland",
+      "Mizoram",
+      "Manipur",
+      "Arunachal Pradesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_018",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Akhuni (fermented soybean) is a key ingredient in the cuisine of which Northeastern state?",
+    "options": [
+      "Assam",
+      "Meghalaya",
+      "Nagaland",
+      "Tripura"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_019",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which ruler is historically credited with the development of Lucknowi (Awadhi) cuisine after moving the capital to Lucknow?",
+    "options": [
+      "Nawab Wajid Ali Shah",
+      "Emperor Akbar",
+      "Tipu Sultan",
+      "Nawab Asaf-ud-Daulah"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "food_hard_020",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Gavthi Misal, Puneri Misal, and Kolhapuri Misal are regional variations found in which state?",
+    "options": [
+      "Gujarat",
+      "Karnataka",
+      "Maharashtra",
+      "Goa"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_021",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which spice, derived from the dried stigma of Crocus sativus, is extensively cultivated in Kashmir?",
+    "options": [
+      "Turmeric",
+      "Saffron (Kesar)",
+      "Red chili",
+      "Mace"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_022",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Erissery, a pumpkin and cowpea curry with coconut, is a traditional dish served during which Kerala festival's Sadya?",
+    "options": [
+      "Vishu",
+      "Onam",
+      "Thrissur Pooram",
+      "Theyyam"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_023",
+    "category": "food",
+    "difficulty": 3,
+    "question": "What is 'Mahua', used in tribal cuisines of Central India?",
+    "options": [
+      "A wild mushroom",
+      "A tree whose flowers are used to make alcohol and food",
+      "A type of millet",
+      "A forest tuber"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_024",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Galouti Kebab was reportedly created for which Nawab of Lucknow who had lost his teeth?",
+    "options": [
+      "Nawab Shuja-ud-Daulah",
+      "Nawab Wajid Ali Shah",
+      "Nawab Asaf-ud-Daulah",
+      "Nawab Saadat Ali Khan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_025",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which rare Manipuri dish is made by fermenting fish in an earthen pot for months to create a condiment called 'Ngari'?",
+    "options": [
+      "Iromba",
+      "Eromba",
+      "Ngari",
+      "Hawaijar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_026",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Dalma, a lentil and vegetable dish associated with Jagannath Temple, is from which state?",
+    "options": [
+      "West Bengal",
+      "Odisha",
+      "Jharkhand",
+      "Chhattisgarh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_027",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which Indian city was designated as a UNESCO Creative City of Gastronomy in 2019?",
+    "options": [
+      "Lucknow",
+      "Jaipur",
+      "Hyderabad",
+      "Chennai"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_028",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Pathiri, a thin rice-flour flatbread, is part of which Kerala Muslim community's cuisine?",
+    "options": [
+      "Moplah",
+      "Konkani",
+      "Bohra",
+      "Nawayath"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_029",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Which traditional Coorgi (Kodava) dish from Karnataka consists of steamed rice flour dumplings typically served with pork curry?",
+    "options": [
+      "Nool Puttu",
+      "Kadambuttu",
+      "Akki Rotti",
+      "Ragi Mudde"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_030",
+    "category": "food",
+    "difficulty": 3,
+    "question": "India's only high-altitude high-quality high-priced high-aroma tea called 'Temi Tea' is grown in which state?",
+    "options": [
+      "Darjeeling (West Bengal)",
+      "Sikkim",
+      "Assam",
+      "Arunachal Pradesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_001",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first Prime Minister of India?",
+    "options": [
+      "Sardar Vallabhbhai Patel",
+      "Jawaharlal Nehru",
+      "Rajendra Prasad",
+      "B.R. Ambedkar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_002",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is known as the 'Father of the Indian Constitution'?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "B.R. Ambedkar",
+      "Sardar Patel"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_003",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many states are there in India?",
+    "options": [
+      "26",
+      "28",
+      "29",
+      "30"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_004",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the national emblem of India?",
+    "options": [
+      "Peacock",
+      "Tiger",
+      "Lion Capital of Ashoka",
+      "Lotus"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_005",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the capital of India?",
+    "options": [
+      "Mumbai",
+      "Kolkata",
+      "New Delhi",
+      "Chennai"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_006",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first President of India?",
+    "options": [
+      "S. Radhakrishnan",
+      "Rajendra Prasad",
+      "Zakir Husain",
+      "V.V. Giri"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_007",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Parliament consists of how many houses?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_008",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What are the two houses of the Indian Parliament called?",
+    "options": [
+      "Senate and House",
+      "Lok Sabha and Rajya Sabha",
+      "Upper House and Lower House",
+      "Vidhan Sabha and Vidhan Parishad"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_009",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "On which date is Republic Day celebrated in India?",
+    "options": [
+      "15 August",
+      "26 January",
+      "2 October",
+      "14 November"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_010",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "On which date is Independence Day celebrated in India?",
+    "options": [
+      "26 January",
+      "15 August",
+      "2 October",
+      "14 November"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_011",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first woman Prime Minister of India?",
+    "options": [
+      "Pratibha Patil",
+      "Sonia Gandhi",
+      "Indira Gandhi",
+      "Sarojini Naidu"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_012",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the minimum voting age in India?",
+    "options": [
+      "16 years",
+      "18 years",
+      "21 years",
+      "25 years"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_013",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body conducts elections in India?",
+    "options": [
+      "Supreme Court",
+      "Election Commission of India",
+      "Parliament",
+      "President"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_014",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the supreme commander of the Indian Armed Forces?",
+    "options": [
+      "Prime Minister",
+      "Chief of Defence Staff",
+      "President",
+      "Defence Minister"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_015",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many Union Territories does India have?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_016",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What does GST stand for?",
+    "options": [
+      "General Sales Tax",
+      "Goods and Services Tax",
+      "Government Service Tax",
+      "Gross Sales Tariff"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_017",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Constitution was adopted on which date?",
+    "options": [
+      "15 August 1947",
+      "26 January 1950",
+      "26 November 1949",
+      "2 October 1950"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_018",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "When did the Indian Constitution come into effect?",
+    "options": [
+      "26 November 1949",
+      "15 August 1947",
+      "26 January 1950",
+      "1 January 1950"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_019",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which political party did Jawaharlal Nehru belong to?",
+    "options": [
+      "BJP",
+      "Communist Party",
+      "Indian National Congress",
+      "Janata Party"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_020",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who appoints the Prime Minister of India?",
+    "options": [
+      "Chief Justice of India",
+      "Speaker of Lok Sabha",
+      "President of India",
+      "Vice President"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_021",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the term of office for the President of India?",
+    "options": [
+      "4 years",
+      "5 years",
+      "6 years",
+      "7 years"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_022",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the maximum term of the Lok Sabha?",
+    "options": [
+      "4 years",
+      "5 years",
+      "6 years",
+      "No fixed term"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_023",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was Mahatma Gandhi?",
+    "options": [
+      "First President of India",
+      "Father of the Nation",
+      "First Chief Justice",
+      "First Governor-General"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_024",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which is the largest state of India by area?",
+    "options": [
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Rajasthan",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_025",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the national anthem of India?",
+    "options": [
+      "Vande Mataram",
+      "Jana Gana Mana",
+      "Sare Jahan Se Achha",
+      "Jai Hind"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_026",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who wrote the national anthem 'Jana Gana Mana'?",
+    "options": [
+      "Bankim Chandra Chatterjee",
+      "Rabindranath Tagore",
+      "Sarojini Naidu",
+      "Subhas Chandra Bose"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_027",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "In which year did India gain independence from British rule?",
+    "options": [
+      "1945",
+      "1946",
+      "1947",
+      "1950"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_028",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Rajya Sabha is also known as the:",
+    "options": [
+      "House of the People",
+      "Council of States",
+      "House of Elders",
+      "Upper Chamber"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_029",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the national flower of India?",
+    "options": [
+      "Rose",
+      "Sunflower",
+      "Lotus",
+      "Jasmine"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_030",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the head of state in India?",
+    "options": [
+      "Prime Minister",
+      "President",
+      "Chief Justice",
+      "Speaker of Lok Sabha"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_031",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Indian leader is called the 'Iron Man of India'?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Subhas Chandra Bose",
+      "B.R. Ambedkar",
+      "Sardar Vallabhbhai Patel"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_032",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many members can be elected to the Lok Sabha?",
+    "options": [
+      "245",
+      "500",
+      "543",
+      "552"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_033",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Supreme Court of India is located in which city?",
+    "options": [
+      "Mumbai",
+      "Kolkata",
+      "New Delhi",
+      "Chennai"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_034",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state has the largest population in India?",
+    "options": [
+      "Maharashtra",
+      "Bihar",
+      "Uttar Pradesh",
+      "West Bengal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_035",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What color is NOT present in the Indian national flag?",
+    "options": [
+      "Saffron",
+      "White",
+      "Red",
+      "Green"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_036",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is in the center of the Indian national flag?",
+    "options": [
+      "Star",
+      "Sun",
+      "Ashoka Chakra",
+      "Lotus"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_037",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which document is the supreme law of India?",
+    "options": [
+      "Indian Penal Code",
+      "Constitution of India",
+      "Vedas",
+      "Parliamentary Acts"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_038",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Narendra Modi became Prime Minister of India in which year?",
+    "options": [
+      "2012",
+      "2013",
+      "2014",
+      "2015"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_039",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the currency of India?",
+    "options": [
+      "Dollar",
+      "Rupee",
+      "Taka",
+      "Ringgit"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_040",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the current President of India (as of 2024)?",
+    "options": [
+      "Ram Nath Kovind",
+      "Pratibha Patil",
+      "Droupadi Murmu",
+      "Pranab Mukherjee"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_041",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Preamble of the Indian Constitution begins with which words?",
+    "options": [
+      "We the Citizens",
+      "We the People",
+      "We the Nation",
+      "We the Republic"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_042",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which is the largest Union Territory of India by area?",
+    "options": [
+      "Delhi",
+      "Puducherry",
+      "Ladakh",
+      "Chandigarh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_043",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Jammu & Kashmir was reorganized into Union Territories in which year?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_044",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The President of India resides in which official residence?",
+    "options": [
+      "Red Fort",
+      "Rashtrapati Bhavan",
+      "Parliament House",
+      "India Gate"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_045",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which city is the capital of Maharashtra?",
+    "options": [
+      "Pune",
+      "Nagpur",
+      "Mumbai",
+      "Aurangabad"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_046",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Tricolor Indian flag was designed by whom?",
+    "options": [
+      "Mahatma Gandhi",
+      "Pingali Venkayya",
+      "Jawaharlal Nehru",
+      "Rabindranath Tagore"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_047",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the official language of the Indian Union according to the Constitution?",
+    "options": [
+      "English",
+      "Hindi",
+      "Sanskrit",
+      "Urdu"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_048",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which institution is the highest court of appeal in India?",
+    "options": [
+      "High Court",
+      "District Court",
+      "Supreme Court",
+      "Tribunal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_049",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the minimum age to become the President of India?",
+    "options": [
+      "25 years",
+      "30 years",
+      "35 years",
+      "40 years"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_050",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Vice President of India is the ex-officio chairman of which body?",
+    "options": [
+      "Lok Sabha",
+      "Rajya Sabha",
+      "Supreme Court",
+      "NITI Aayog"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_051",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which city is the capital of Karnataka?",
+    "options": [
+      "Mysuru",
+      "Bengaluru",
+      "Mangaluru",
+      "Hubli"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_052",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Atal Bihari Vajpayee belonged to which political party?",
+    "options": [
+      "Indian National Congress",
+      "Janata Dal",
+      "Bharatiya Janata Party",
+      "Communist Party"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_053",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who administers the oath of office to the President of India?",
+    "options": [
+      "Prime Minister",
+      "Vice President",
+      "Chief Justice of India",
+      "Speaker of Lok Sabha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_054",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India follows which type of government system?",
+    "options": [
+      "Presidential",
+      "Parliamentary",
+      "Monarchy",
+      "Military"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_055",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the motto inscribed below the national emblem of India?",
+    "options": [
+      "Jai Hind",
+      "Vande Mataram",
+      "Satyameva Jayate",
+      "Ahimsa Paramo Dharma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_001",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Indian Constitution abolishes untouchability?",
+    "options": [
+      "Article 14",
+      "Article 15",
+      "Article 17",
+      "Article 21"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_002",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first woman Chief Minister of an Indian state?",
+    "options": [
+      "Indira Gandhi",
+      "Sucheta Kripalani",
+      "Jayalalithaa",
+      "Mayawati"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_003",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "How many Fundamental Rights are guaranteed by the Indian Constitution?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_004",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which part of the Indian Constitution deals with Directive Principles of State Policy?",
+    "options": [
+      "Part III",
+      "Part IV",
+      "Part V",
+      "Part VI"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_005",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 73rd Constitutional Amendment is related to which institution?",
+    "options": [
+      "Supreme Court",
+      "Election Commission",
+      "Panchayati Raj",
+      "Comptroller and Auditor General"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_006",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first Chief Election Commissioner of India?",
+    "options": [
+      "T.N. Seshan",
+      "Sukumar Sen",
+      "K.V.K. Sundaram",
+      "S.P. Sen Verma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_007",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Emergency in India (1975-77) was declared under which article?",
+    "options": [
+      "Article 352",
+      "Article 356",
+      "Article 360",
+      "Article 370"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_008",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 370 of the Indian Constitution was related to the special status of which region?",
+    "options": [
+      "Northeast India",
+      "Jammu and Kashmir",
+      "Goa",
+      "Sikkim"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_009",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "How many languages are recognized in the Eighth Schedule of the Indian Constitution?",
+    "options": [
+      "18",
+      "20",
+      "22",
+      "24"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_010",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Rajya Sabha can have a maximum of how many members?",
+    "options": [
+      "235",
+      "240",
+      "245",
+      "250"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_011",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the President of India during the 1975 Emergency?",
+    "options": [
+      "V.V. Giri",
+      "Fakhruddin Ali Ahmed",
+      "Neelam Sanjiva Reddy",
+      "Zail Singh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_012",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The GST was implemented in India on which date?",
+    "options": [
+      "1 April 2017",
+      "1 July 2017",
+      "1 January 2018",
+      "1 April 2018"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_013",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 32 of the Indian Constitution, called the 'heart and soul' of the Constitution, deals with:",
+    "options": [
+      "Right to Equality",
+      "Right to Freedom",
+      "Right to Constitutional Remedies",
+      "Right against Exploitation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_014",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Seventh Schedule of the Indian Constitution divides subjects into how many lists?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_015",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first woman President of India?",
+    "options": [
+      "Indira Gandhi",
+      "Sarojini Naidu",
+      "Pratibha Patil",
+      "Droupadi Murmu"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_016",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional body audits the accounts of the Government of India?",
+    "options": [
+      "Finance Commission",
+      "Planning Commission",
+      "Comptroller and Auditor General",
+      "Reserve Bank of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_017",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The term of a member of the Rajya Sabha is how many years?",
+    "options": [
+      "4 years",
+      "5 years",
+      "6 years",
+      "Lifetime"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_018",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Constitution provides the Right to Life and Personal Liberty?",
+    "options": [
+      "Article 14",
+      "Article 19",
+      "Article 21",
+      "Article 25"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_019",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "NITI Aayog replaced which body in 2015?",
+    "options": [
+      "Finance Commission",
+      "Planning Commission",
+      "Law Commission",
+      "Election Commission"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_020",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the longest-serving Prime Minister of India?",
+    "options": [
+      "Indira Gandhi",
+      "Jawaharlal Nehru",
+      "Manmohan Singh",
+      "Narendra Modi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_021",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The concept of Fundamental Duties was added by which constitutional amendment?",
+    "options": [
+      "42nd Amendment",
+      "44th Amendment",
+      "52nd Amendment",
+      "73rd Amendment"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_022",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state was the first to be formed on a linguistic basis in independent India?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Karnataka"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_023",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The President can nominate how many members to the Rajya Sabha?",
+    "options": [
+      "2",
+      "6",
+      "10",
+      "12"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_024",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 356 of the Indian Constitution deals with:",
+    "options": [
+      "National Emergency",
+      "President's Rule in States",
+      "Financial Emergency",
+      "Martial Law"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_025",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first non-Congress Prime Minister of India to complete a full 5-year term?",
+    "options": [
+      "Morarji Desai",
+      "V.P. Singh",
+      "Atal Bihari Vajpayee",
+      "Narendra Modi"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_026",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Election Commission of India was established on which date?",
+    "options": [
+      "15 August 1947",
+      "26 January 1950",
+      "25 January 1950",
+      "26 November 1949"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_027",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the minimum age to become a member of the Lok Sabha?",
+    "options": [
+      "18 years",
+      "21 years",
+      "25 years",
+      "30 years"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_028",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Indian state has the most seats in the Lok Sabha?",
+    "options": [
+      "Maharashtra",
+      "Bihar",
+      "Uttar Pradesh",
+      "West Bengal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_029",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Right to Education was added as a Fundamental Right under which article?",
+    "options": [
+      "Article 21",
+      "Article 21A",
+      "Article 45",
+      "Article 51A"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_030",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first Governor-General of independent India?",
+    "options": [
+      "Lord Mountbatten",
+      "C. Rajagopalachari",
+      "Jawaharlal Nehru",
+      "Rajendra Prasad"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_031",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the Concurrent List in the Indian Constitution?",
+    "options": [
+      "List of subjects on which only the Centre can legislate",
+      "List of subjects on which only States can legislate",
+      "List of subjects on which both Centre and States can legislate",
+      "List of subjects reserved for Union Territories"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_032",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Preamble of the Indian Constitution describes India as:",
+    "options": [
+      "Sovereign Democratic Republic",
+      "Sovereign Socialist Secular Democratic Republic",
+      "Sovereign Secular Republic",
+      "Socialist Democratic Republic"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_033",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the last Viceroy of British India?",
+    "options": [
+      "Lord Irwin",
+      "Lord Wavell",
+      "Lord Mountbatten",
+      "Lord Curzon"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_034",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 44 of the Indian Constitution calls for a Uniform Civil Code and is part of:",
+    "options": [
+      "Fundamental Rights",
+      "Directive Principles of State Policy",
+      "Fundamental Duties",
+      "Emergency Provisions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_035",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 42nd Amendment to the Indian Constitution is often called:",
+    "options": [
+      "Mini Constitution",
+      "New Constitution",
+      "People's Amendment",
+      "Freedom Amendment"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_036",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Prime Minister introduced the economic liberalization policy in 1991?",
+    "options": [
+      "Rajiv Gandhi",
+      "V.P. Singh",
+      "P.V. Narasimha Rao",
+      "Atal Bihari Vajpayee"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_037",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Telangana became a separate state by being carved out from which state?",
+    "options": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Maharashtra"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_038",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 101st Constitutional Amendment is associated with:",
+    "options": [
+      "Right to Education",
+      "Goods and Services Tax",
+      "Anti-Defection Law",
+      "Panchayati Raj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_039",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the chairman of the Constituent Assembly of India?",
+    "options": [
+      "B.R. Ambedkar",
+      "Rajendra Prasad",
+      "Jawaharlal Nehru",
+      "Sardar Patel"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_040",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The first general elections of independent India were held in which year?",
+    "options": [
+      "1950",
+      "1951-52",
+      "1953",
+      "1955"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_041",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article deals with the amendment procedure of the Indian Constitution?",
+    "options": [
+      "Article 352",
+      "Article 356",
+      "Article 368",
+      "Article 370"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_042",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The concept of 'Basic Structure' of the Constitution was laid down in which case?",
+    "options": [
+      "Golaknath Case",
+      "Kesavananda Bharati Case",
+      "Minerva Mills Case",
+      "Maneka Gandhi Case"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_043",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Sikkim became a full state of India in which year?",
+    "options": [
+      "1971",
+      "1973",
+      "1975",
+      "1977"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_044",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Attorney General of India is appointed by whom?",
+    "options": [
+      "Chief Justice of India",
+      "Prime Minister",
+      "President of India",
+      "Law Minister"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_045",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is a 'Money Bill' in the Indian Parliament?",
+    "options": [
+      "A bill related to currency printing",
+      "A bill that deals with taxation, borrowing, or expenditure",
+      "A bill related to banking regulations",
+      "A bill to set the annual budget"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_001",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional amendment introduced the anti-defection law in India?",
+    "options": [
+      "44th Amendment",
+      "52nd Amendment",
+      "61st Amendment",
+      "73rd Amendment"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_002",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who chaired the Drafting Committee of the Constituent Assembly?",
+    "options": [
+      "Rajendra Prasad",
+      "Jawaharlal Nehru",
+      "B.R. Ambedkar",
+      "K.M. Munshi"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_003",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indian Constitution originally had how many articles?",
+    "options": [
+      "350",
+      "370",
+      "395",
+      "400"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_004",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Ninth Schedule of the Indian Constitution was added by which amendment?",
+    "options": [
+      "1st Amendment",
+      "7th Amendment",
+      "24th Amendment",
+      "42nd Amendment"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_005",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The doctrine of 'Basic Structure' was propounded in the Kesavananda Bharati case in which year?",
+    "options": [
+      "1967",
+      "1971",
+      "1973",
+      "1976"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_006",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indian Constitution borrowed the concept of Directive Principles of State Policy from which country's constitution?",
+    "options": [
+      "USA",
+      "UK",
+      "Ireland",
+      "France"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_007",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution provides for the establishment of a Finance Commission?",
+    "options": [
+      "Article 260",
+      "Article 270",
+      "Article 280",
+      "Article 290"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_008",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who was the first Speaker of the Lok Sabha?",
+    "options": [
+      "G.V. Mavalankar",
+      "M.A. Ayyangar",
+      "Hukam Singh",
+      "Sardar Patel"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_009",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 44th Amendment Act of 1978 replaced the term 'internal disturbance' with which term for declaring a National Emergency?",
+    "options": [
+      "Civil War",
+      "Internal Conflict",
+      "Armed Rebellion",
+      "Insurrection"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_010",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Sarkaria Commission was set up to review the relationship between:",
+    "options": [
+      "Legislature and Judiciary",
+      "Centre and States",
+      "President and Prime Minister",
+      "Lok Sabha and Rajya Sabha"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_011",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "How many members were originally in the Constituent Assembly when it first met?",
+    "options": [
+      "289",
+      "299",
+      "310",
+      "389"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_012",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The concept of 'Judicial Review' in the Indian Constitution is borrowed from which country?",
+    "options": [
+      "United Kingdom",
+      "Canada",
+      "United States of America",
+      "Australia"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_013",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional amendment lowered the voting age from 21 to 18 years?",
+    "options": [
+      "52nd Amendment",
+      "56th Amendment",
+      "61st Amendment",
+      "73rd Amendment"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_014",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Tenth Schedule of the Indian Constitution deals with which subject?",
+    "options": [
+      "Languages",
+      "Land Reforms",
+      "Anti-Defection",
+      "Panchayati Raj"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_015",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who served as the interim Prime Minister of India twice, for brief periods after the death of sitting PMs?",
+    "options": [
+      "Morarji Desai",
+      "Gulzarilal Nanda",
+      "Charan Singh",
+      "Lal Bahadur Shastri"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_016",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The concept of Concurrent List in the Indian Constitution was borrowed from which country?",
+    "options": [
+      "USA",
+      "Canada",
+      "Australia",
+      "South Africa"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_017",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution empowers the Supreme Court to issue writs?",
+    "options": [
+      "Article 13",
+      "Article 21",
+      "Article 32",
+      "Article 226"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_018",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The first Backward Classes Commission was chaired by:",
+    "options": [
+      "B.P. Mandal",
+      "Kaka Kalelkar",
+      "Rajinder Sachar",
+      "M.N. Srinivas"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_019",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 343 of the Indian Constitution specifies the official language of the Union as:",
+    "options": [
+      "Hindi in Devanagari script",
+      "Hindi and English",
+      "English only",
+      "All Eighth Schedule languages"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_020",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Constituent Assembly took how many years, months, and days to complete the Constitution?",
+    "options": [
+      "2 years, 10 months, 18 days",
+      "2 years, 11 months, 18 days",
+      "3 years, 1 month, 18 days",
+      "3 years, 11 months, 18 days"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_021",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 91st Constitutional Amendment Act of 2003 is related to:",
+    "options": [
+      "Limiting the size of the Council of Ministers",
+      "GST implementation",
+      "Right to Education",
+      "Abolition of Privy Purses"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_022",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which commission recommended the creation of All India Services?",
+    "options": [
+      "Sarkaria Commission",
+      "Rajamannar Committee",
+      "Sardar Patel's recommendation in Constituent Assembly",
+      "Shah Commission"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_023",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Inter-State Council is established under which article of the Indian Constitution?",
+    "options": [
+      "Article 261",
+      "Article 263",
+      "Article 280",
+      "Article 312"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_024",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who was the first Indian and last Governor-General of independent India?",
+    "options": [
+      "Rajendra Prasad",
+      "C. Rajagopalachari",
+      "Jawaharlal Nehru",
+      "S. Radhakrishnan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_025",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 'Objectives Resolution' in the Constituent Assembly was moved by:",
+    "options": [
+      "B.R. Ambedkar",
+      "Rajendra Prasad",
+      "Jawaharlal Nehru",
+      "Sardar Patel"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_026",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule of the Indian Constitution contains provisions relating to the administration of Tribal Areas in Assam, Meghalaya, Tripura, and Mizoram?",
+    "options": [
+      "Fifth Schedule",
+      "Sixth Schedule",
+      "Eighth Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_027",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The first session of the Constituent Assembly was held on which date?",
+    "options": [
+      "9 December 1946",
+      "26 January 1947",
+      "15 August 1947",
+      "26 November 1949"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_028",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 'Right to Property' was removed from Fundamental Rights by which constitutional amendment?",
+    "options": [
+      "42nd Amendment",
+      "44th Amendment",
+      "52nd Amendment",
+      "61st Amendment"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_029",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under the Indian Constitution, which writ is issued to a lower court or tribunal to prevent it from exceeding its jurisdiction?",
+    "options": [
+      "Habeas Corpus",
+      "Mandamus",
+      "Prohibition",
+      "Certiorari"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_030",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The words 'Socialist' and 'Secular' were added to the Preamble of the Indian Constitution by which amendment?",
+    "options": [
+      "1st Amendment",
+      "25th Amendment",
+      "42nd Amendment",
+      "44th Amendment"
     ],
     "correct_index": 2
   }

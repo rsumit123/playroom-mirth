@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "myth_easy_001",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many heads did Ravana have?",
+    "options": ["5", "10", "7", "12"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_002",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who killed Ravana in the Ramayana?",
+    "options": ["Lakshmana", "Hanuman", "Rama", "Bharata"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_003",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Rama's wife?",
+    "options": ["Draupadi", "Sita", "Radha", "Rukmini"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_004",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god has an elephant head?",
+    "options": ["Kartikeya", "Hanuman", "Ganesha", "Shiva"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_005",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is known as the 'Destroyer' in the Hindu Trinity (Trimurti)?",
+    "options": ["Brahma", "Vishnu", "Shiva", "Indra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_006",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which festival celebrates Lord Rama's return to Ayodhya?",
+    "options": ["Holi", "Diwali", "Navratri", "Pongal"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_007",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who carried the Sanjeevani mountain to save Lakshmana?",
+    "options": ["Sugriva", "Jambavan", "Hanuman", "Angada"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_008",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which holy book contains the Bhagavad Gita?",
+    "options": ["Ramayana", "Mahabharata", "Vedas", "Upanishads"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_009",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the king of all gods (Devas) in Hindu mythology?",
+    "options": ["Agni", "Varuna", "Indra", "Surya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_010",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many brothers did Lord Rama have?",
+    "options": ["2", "3", "4", "5"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_011",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which animal is the vehicle (vahana) of Lord Shiva?",
+    "options": ["Eagle", "Bull", "Lion", "Elephant"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_012",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who wrote the epic Ramayana?",
+    "options": ["Vyasa", "Valmiki", "Tulsidas", "Kalidasa"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_013",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Krishna's childhood village?",
+    "options": ["Mathura", "Vrindavan", "Dwarka", "Gokul"],
+    "correct_index": 3
+  },
+  {
+    "id": "myth_easy_014",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which goddess is worshipped during Navratri?",
+    "options": ["Saraswati", "Lakshmi", "Durga", "Parvati"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_015",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What weapon did Lord Rama use to kill Ravana?",
+    "options": ["Sudarshan Chakra", "Trishul", "Brahmastra", "Vajra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_016",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the monkey god in Hindu mythology?",
+    "options": ["Ganesha", "Hanuman", "Jambavan", "Nandi"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_017",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which river is considered the holiest in Hinduism?",
+    "options": ["Yamuna", "Godavari", "Ganga", "Narmada"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_018",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many Pandava brothers were there in the Mahabharata?",
+    "options": ["3", "4", "5", "7"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_019",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god holds the Sudarshan Chakra?",
+    "options": ["Shiva", "Brahma", "Vishnu", "Indra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_020",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Ganesha's mother?",
+    "options": ["Lakshmi", "Saraswati", "Parvati", "Durga"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_021",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god is known as the 'Preserver' in the Hindu Trinity?",
+    "options": ["Brahma", "Shiva", "Vishnu", "Indra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_022",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the holy scripture spoken by Lord Krishna to Arjuna on the battlefield?",
+    "options": ["Vedas", "Upanishads", "Bhagavad Gita", "Puranas"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_023",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which festival celebrates the victory of good over evil by burning effigies of Ravana?",
+    "options": ["Diwali", "Dussehra", "Holi", "Baisakhi"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_024",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the vehicle (vahana) of Goddess Saraswati?",
+    "options": ["Owl", "Lion", "Swan", "Peacock"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_025",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the father of Lord Ganesha?",
+    "options": ["Vishnu", "Brahma", "Shiva", "Indra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_026",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In the Ramayana, who was Rama's loyal brother who accompanied him to exile?",
+    "options": ["Bharata", "Shatrughna", "Lakshmana", "Vibhishana"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_027",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which color is Lord Krishna most commonly depicted in?",
+    "options": ["Red", "White", "Blue", "Yellow"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_028",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What instrument does Lord Krishna play?",
+    "options": ["Sitar", "Veena", "Flute", "Mridangam"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_029",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the goddess of wealth and prosperity?",
+    "options": ["Saraswati", "Lakshmi", "Durga", "Kali"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_030",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the bridge built by Lord Rama's army to Lanka?",
+    "options": ["Setu Bandha", "Ram Setu", "Lanka Bridge", "Hanuman Setu"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_031",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the goddess of knowledge and learning?",
+    "options": ["Lakshmi", "Parvati", "Saraswati", "Durga"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_032",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many Kauravas were there in the Mahabharata?",
+    "options": ["50", "100", "105", "200"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_033",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which demon king ruled over Lanka in the Ramayana?",
+    "options": ["Kumbhakarna", "Ravana", "Meghanada", "Vibhishana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_034",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is Lord Shiva's trident called?",
+    "options": ["Vajra", "Sudarshan Chakra", "Trishul", "Pinaka"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_035",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which bird is the vehicle (vahana) of Lord Vishnu?",
+    "options": ["Peacock", "Swan", "Garuda", "Crow"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_036",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Janmashtami celebrates the birth of which god?",
+    "options": ["Rama", "Shiva", "Krishna", "Ganesha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_037",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was the eldest of the Pandava brothers?",
+    "options": ["Arjuna", "Bhima", "Yudhishthira", "Nakula"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_038",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Ganesh Chaturthi celebrates the birth of which god?",
+    "options": ["Kartikeya", "Krishna", "Ganesha", "Hanuman"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_039",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the serpent on which Lord Vishnu rests?",
+    "options": ["Vasuki", "Takshaka", "Shesha (Ananta)", "Kalia"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_040",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which Pandava was known as the greatest archer?",
+    "options": ["Bhima", "Yudhishthira", "Arjuna", "Sahadeva"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_041",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the vehicle (vahana) of Goddess Durga?",
+    "options": ["Elephant", "Swan", "Lion/Tiger", "Owl"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_042",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the creator god in the Hindu Trinity (Trimurti)?",
+    "options": ["Vishnu", "Shiva", "Brahma", "Indra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_043",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What was the name of Arjuna's bow?",
+    "options": ["Sharanga", "Pinaka", "Gandiva", "Kodanda"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_044",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god is depicted with a third eye on his forehead?",
+    "options": ["Vishnu", "Brahma", "Shiva", "Ganesha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_045",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the sacred river that is said to flow from Lord Shiva's hair?",
+    "options": ["Yamuna", "Ganga", "Saraswati", "Godavari"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_046",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is Lord Rama's father?",
+    "options": ["Janaka", "Vasudeva", "Dasharatha", "Pandu"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_047",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the holy text of the Sikhs that includes works of Hindu saints?",
+    "options": ["Vedas", "Guru Granth Sahib", "Bhagavad Gita", "Quran"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_048",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which festival involves playing with colors and is associated with Krishna's playfulness?",
+    "options": ["Diwali", "Navratri", "Holi", "Pongal"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_049",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many years were Rama and Sita exiled to the forest?",
+    "options": ["7 years", "12 years", "14 years", "20 years"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_050",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was Sita's father?",
+    "options": ["Dasharatha", "Janaka", "Drupada", "Pandu"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_051",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which avatar of Vishnu is depicted as a fish?",
+    "options": ["Kurma", "Varaha", "Matsya", "Narasimha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_052",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Shiva's consort?",
+    "options": ["Lakshmi", "Saraswati", "Parvati", "Radha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_053",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was the strongest of the Pandava brothers?",
+    "options": ["Arjuna", "Yudhishthira", "Bhima", "Nakula"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_054",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god rides a peacock?",
+    "options": ["Ganesha", "Kartikeya (Murugan)", "Krishna", "Brahma"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_055",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the kingdom where Lord Rama was prince?",
+    "options": ["Hastinapur", "Ayodhya", "Mithila", "Dwarka"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_056",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What did the Samudra Manthan (Churning of the Ocean) produce?",
+    "options": ["Gold", "Weapons", "Amrit (Nectar of Immortality)", "Gems only"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_057",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is Lord Krishna's elder brother?",
+    "options": ["Arjuna", "Balarama", "Uddhava", "Satyaki"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_058",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What animal is Nandi, who guards Shiva's temples?",
+    "options": ["Lion", "Elephant", "Bull", "Serpent"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_059",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which city is Lord Krishna most associated with as a king?",
+    "options": ["Mathura", "Vrindavan", "Dwarka", "Gokul"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_060",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the god of fire in Hindu mythology?",
+    "options": ["Vayu", "Agni", "Varuna", "Surya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_001",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was Arjuna's charioteer in the Kurukshetra war?",
+    "options": ["Shalya", "Drona", "Krishna", "Bhishma"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_002",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the bow that Lord Rama broke to win Sita's hand in marriage?",
+    "options": ["Gandiva", "Sharanga", "Pinaka (Shiva Dhanush)", "Kodanda"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_003",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the teacher (guru) of the Pandavas and Kauravas?",
+    "options": ["Bhishma", "Vidura", "Dronacharya", "Kripacharya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_004",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which demon did Lord Krishna kill as a child by sucking the life out of her?",
+    "options": ["Tataka", "Putana", "Holika", "Surpanakha"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_005",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "How many main avatars (Dashavatara) does Lord Vishnu have?",
+    "options": ["7", "8", "10", "12"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_006",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the grandfather figure who lay on a bed of arrows in the Mahabharata?",
+    "options": ["Drona", "Bhishma", "Kripa", "Vidura"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_007",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of Ravana's brother who joined Rama's side?",
+    "options": ["Kumbhakarna", "Vibhishana", "Indrajit", "Maricha"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_008",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Pandava went to heaven in his mortal body?",
+    "options": ["Arjuna", "Bhima", "Yudhishthira", "Nakula"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_009",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the half-man, half-lion avatar of Vishnu called?",
+    "options": ["Varaha", "Vamana", "Narasimha", "Parashurama"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_010",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who wrote the Mahabharata?",
+    "options": ["Valmiki", "Vyasa", "Tulsidas", "Kalidasa"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_011",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What was the name of the dice game that led to the Pandavas' exile?",
+    "options": ["Chaturanga", "Dyut Krida", "Pachisi", "Shatranj"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_012",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was Karna's real mother in the Mahabharata?",
+    "options": ["Gandhari", "Draupadi", "Kunti", "Madri"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_013",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the boar avatar of Lord Vishnu called?",
+    "options": ["Matsya", "Kurma", "Varaha", "Narasimha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_014",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which sage cursed King Parikshit, leading to his death by snakebite?",
+    "options": ["Vishwamitra", "Shringi (son of Shamika)", "Durvasa", "Narada"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_015",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the wife of all five Pandava brothers?",
+    "options": ["Subhadra", "Kunti", "Draupadi", "Gandhari"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_016",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the turtle avatar of Lord Vishnu called?",
+    "options": ["Matsya", "Kurma", "Varaha", "Vamana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_017",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who killed Karna in the Mahabharata war?",
+    "options": ["Bhima", "Krishna", "Arjuna", "Yudhishthira"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_018",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the vehicle (vahana) of Goddess Lakshmi?",
+    "options": ["Swan", "Owl", "Lion", "Elephant"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_019",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which city is considered the abode of Lord Shiva?",
+    "options": ["Varanasi (Kashi)", "Ayodhya", "Haridwar", "Mathura"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_medium_020",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What was the name of Ravana's son who defeated Indra?",
+    "options": ["Atikaya", "Akshayakumara", "Indrajit (Meghanada)", "Kumbhakarna"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_021",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "How many chapters (Kandas) are there in Valmiki's Ramayana?",
+    "options": ["5", "7", "9", "12"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_022",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the devoted wife of Lord Rama in Tulsidas's Ramcharitmanas?",
+    "options": ["Mandodari", "Ahalya", "Sita", "Urmila"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_023",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which goddess is depicted standing on the chest of Lord Shiva?",
+    "options": ["Durga", "Parvati", "Kali", "Lakshmi"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_024",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What weapon did Indra give to Arjuna?",
+    "options": ["Brahmastra", "Pashupatastra", "Vajra", "Sudarshan Chakra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_025",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is considered the author of Yoga Sutras?",
+    "options": ["Vyasa", "Patanjali", "Shankaracharya", "Narada"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_026",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What was the real name of Bhishma in the Mahabharata?",
+    "options": ["Shantanu", "Devavrata", "Drona", "Vichitravirya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_027",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Pandava was known for his sense of dharma (righteousness)?",
+    "options": ["Arjuna", "Bhima", "Yudhishthira", "Sahadeva"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_028",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Ramayana, what golden animal lured Sita leading to her abduction?",
+    "options": ["Golden Elephant", "Golden Horse", "Golden Deer", "Golden Swan"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_029",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the divine weapon given by Lord Shiva to Arjuna?",
+    "options": ["Brahmastra", "Narayanastra", "Pashupatastra", "Agneyastra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_030",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is the god of death in Hindu mythology?",
+    "options": ["Agni", "Vayu", "Yama", "Kubera"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_031",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which sage is known for his extreme anger and curses in Hindu mythology?",
+    "options": ["Narada", "Vasishtha", "Durvasa", "Vishwamitra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_032",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the forest where the Pandavas spent their exile?",
+    "options": ["Naimisha", "Dandaka", "Kamyaka", "Chitrakoot"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_033",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is Kartikeya (Murugan) the son of?",
+    "options": ["Vishnu and Lakshmi", "Brahma and Saraswati", "Shiva and Parvati", "Indra and Shachi"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_034",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which mountain did gods and demons use as a churning rod during Samudra Manthan?",
+    "options": ["Mount Kailash", "Mount Meru", "Mount Mandara", "Mount Vindhya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_035",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the vehicle (vahana) of Lord Brahma?",
+    "options": ["Garuda", "Swan (Hamsa)", "Bull", "Elephant"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_036",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who killed Duryodhana in the Mahabharata?",
+    "options": ["Arjuna", "Yudhishthira", "Bhima", "Krishna"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_037",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which demon was killed by Goddess Durga, giving her the name 'Mahishasuramardini'?",
+    "options": ["Raktabija", "Shumbha", "Mahishasura", "Chanda"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_038",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the serpent king used as a rope during the Samudra Manthan?",
+    "options": ["Shesha", "Vasuki", "Takshaka", "Kalia"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_039",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was Abhimanyu's father?",
+    "options": ["Bhima", "Yudhishthira", "Arjuna", "Nakula"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_040",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What was the capital city of the Kauravas?",
+    "options": ["Indraprastha", "Hastinapura", "Dwarka", "Virata"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_041",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which sage's ashram did Rama visit during his exile, who had been turned to stone by a curse?",
+    "options": ["Agastya", "Bharadwaja", "Gautama (wife Ahalya)", "Vishwamitra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_042",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is the god of wind in Hindu mythology?",
+    "options": ["Agni", "Indra", "Vayu", "Surya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_043",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the city built for the Pandavas by the architect Maya?",
+    "options": ["Hastinapura", "Indraprastha", "Dwaraka", "Mathura"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_044",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which avatar of Vishnu is a dwarf who covered the universe in three steps?",
+    "options": ["Parashurama", "Narasimha", "Vamana", "Kurma"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_045",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was Ravana's wife?",
+    "options": ["Tara", "Mandodari", "Surpanakha", "Shurpanakhi"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_046",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the weapon that never misses its target, given to Rama by sage Vishwamitra?",
+    "options": ["Pashupatastra", "Brahmastra", "Agneyastra", "Narayanastra"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_047",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Kaurava prince was known for his unwavering friendship with Karna?",
+    "options": ["Dushasana", "Duryodhana", "Vikarna", "Yuyutsu"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_048",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the mother of the Kauravas?",
+    "options": ["Kunti", "Gandhari", "Madri", "Satyavati"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_049",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the vehicle (vahana) of Yama, the god of death?",
+    "options": ["Horse", "Buffalo", "Goat", "Crow"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_050",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In which sacred text does Lord Vishnu describe his Vishwarupa (universal form)?",
+    "options": ["Rig Veda", "Bhagavad Gita", "Upanishads", "Ramayana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_001",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which Upanishad contains the dialogue between Nachiketa and Yama?",
+    "options": ["Chandogya Upanishad", "Mundaka Upanishad", "Katha Upanishad", "Brihadaranyaka Upanishad"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_002",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "How many parvas (books) are there in the Mahabharata?",
+    "options": ["14", "16", "18", "24"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_003",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was the architect of Lanka according to Hindu mythology?",
+    "options": ["Maya", "Vishwakarma", "Tvashtar", "Shukracharya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_004",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What was the name of the Chakravyuha formation that trapped Abhimanyu?",
+    "options": ["Padmavyuha", "Garudavyuha", "Makaravyuha", "Sarpavyuha"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_hard_005",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which sage is credited with composing the Gayatri Mantra?",
+    "options": ["Vasishtha", "Vishwamitra", "Atri", "Bharadwaja"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_006",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Mahabharata, who was the only warrior who fought on both sides of the Kurukshetra war?",
+    "options": ["Shalya", "Yuyutsu", "Vikarna", "Ashwatthama"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_007",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the 10th and final avatar of Lord Vishnu, yet to appear?",
+    "options": ["Krishna", "Buddha", "Kalki", "Parashurama"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_008",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who is the guru (teacher) of the Asuras (demons)?",
+    "options": ["Brihaspati", "Shukracharya", "Dronacharya", "Vasishtha"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_009",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "How many chapters does the Bhagavad Gita have?",
+    "options": ["12", "15", "18", "21"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_010",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which Veda is the oldest and considered the most sacred?",
+    "options": ["Yajur Veda", "Sama Veda", "Atharva Veda", "Rig Veda"],
+    "correct_index": 3
+  },
+  {
+    "id": "myth_hard_011",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who narrated the Bhagavad Gita to the blind king Dhritarashtra?",
+    "options": ["Vyasa", "Vidura", "Sanjaya", "Narada"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_012",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What was the name of Bhishma's father?",
+    "options": ["Pandu", "Shantanu", "Pratipa", "Vichitravirya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_013",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which demon king was granted a boon that he could not be killed by any god, demon, or human, leading Vishnu to take the Narasimha avatar?",
+    "options": ["Hiranyaksha", "Hiranyakashipu", "Ravana", "Mahishasura"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_014",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the discourse between Bhishma and Yudhishthira on dharma, given while Bhishma lay on a bed of arrows?",
+    "options": ["Anu Gita", "Shanti Parva", "Vidura Niti", "Yaksha Prashna"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_015",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "How many total Puranas (Mahapuranas) are there in Hindu tradition?",
+    "options": ["12", "16", "18", "24"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_016",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was Dronacharya's son who survived the Mahabharata war?",
+    "options": ["Abhimanyu", "Ashwatthama", "Drupada", "Shikhandi"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_017",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In which Yuga (era) are we currently living according to Hindu cosmology?",
+    "options": ["Satya Yuga", "Treta Yuga", "Dvapara Yuga", "Kali Yuga"],
+    "correct_index": 3
+  },
+  {
+    "id": "myth_hard_018",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the celestial weapon that can only be used once and summons a divine army, used by Ashwatthama?",
+    "options": ["Brahmastra", "Narayanastra", "Brahmasira", "Pashupatastra"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_019",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who dictated the Mahabharata while Vyasa narrated it?",
+    "options": ["Narada", "Ganesha", "Saraswati", "Brahma"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_020",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which lake did Bhima visit to fetch the Saugandhika lotus flower for Draupadi?",
+    "options": ["Manasarovar", "Kubera's garden lake", "Bindu Sarovar", "Pampa Sarovar"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_021",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the fire sacrifice performed by King Dasharatha to obtain sons?",
+    "options": ["Ashwamedha Yagna", "Putrakameshti Yagna", "Rajasuya Yagna", "Vajapeya Yagna"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_022",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was the king of Kishkindha whom Rama helped regain his kingdom from his brother Vali?",
+    "options": ["Jambavan", "Hanuman", "Sugriva", "Angada"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_023",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Mahabharata, who was the incarnation of Dharma (god of righteousness)?",
+    "options": ["Arjuna", "Karna", "Yudhishthira", "Bhishma"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_024",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What was the condition placed on Ganesha by Vyasa for writing the Mahabharata?",
+    "options": ["He must write without stopping", "He must write with his tusk", "He must understand every verse before writing it", "He must finish in one night"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_025",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which river goddess was Bhishma's mother?",
+    "options": ["Yamuna", "Saraswati", "Ganga", "Kaveri"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_026",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the divine architect of the gods in Hindu mythology?",
+    "options": ["Maya", "Vishwakarma", "Tvashtar", "Shilpi"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_027",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who among the Pandavas was the son of the wind god Vayu?",
+    "options": ["Arjuna", "Yudhishthira", "Bhima", "Nakula"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_028",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the sacred text that contains the dialogue between King Janaka and Sage Yajnavalkya?",
+    "options": ["Chandogya Upanishad", "Brihadaranyaka Upanishad", "Isha Upanishad", "Mandukya Upanishad"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_029",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was the mother of Ravana?",
+    "options": ["Sumati", "Kaikesi", "Surasa", "Tadaka"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_030",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In which Parva of the Mahabharata is the Bhagavad Gita found?",
+    "options": ["Udyoga Parva", "Drona Parva", "Bhishma Parva", "Shanti Parva"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_031",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What was the name of the monkey king whom Rama killed to help Sugriva?",
+    "options": ["Angada", "Nala", "Vali", "Jambavan"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_032",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "How many days did the Kurukshetra war last?",
+    "options": ["14 days", "18 days", "21 days", "30 days"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_033",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who is the guru (teacher) of the Devas (gods)?",
+    "options": ["Shukracharya", "Brihaspati", "Vyasa", "Narada"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_034",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which Pandava twin was the son of the Ashwini Kumaras (divine physicians)?",
+    "options": ["Arjuna and Bhima", "Yudhishthira and Arjuna", "Nakula and Sahadeva", "Bhima and Yudhishthira"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_035",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What philosophical concept does the phrase 'Tat Tvam Asi' (That Thou Art) represent?",
+    "options": ["Karma", "Dharma", "Atman-Brahman identity", "Maya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_036",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Which incarnation of Vishnu is associated with the legend of King Bali and three steps?",
+    "options": ["Parashurama", "Narasimha", "Vamana", "Rama"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_037",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the demon whom Lord Shiva killed in the form of Nataraja (cosmic dancer)?",
+    "options": ["Andhaka", "Apasmara", "Jalandhara", "Tripurasura"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_038",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In which Upanishad does the analogy of two birds on a tree appear, representing the Atman and Jiva?",
+    "options": ["Katha Upanishad", "Mundaka Upanishad", "Taittiriya Upanishad", "Aitareya Upanishad"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_039",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "Who was the sage who swallowed the entire ocean in Hindu mythology?",
+    "options": ["Vishwamitra", "Agastya", "Vasishtha", "Durvasa"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_040",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "What is the name of the sacred mountain that is considered Lord Shiva's abode?",
+    "options": ["Mount Meru", "Mount Mandara", "Mount Kailash", "Mount Vindhya"],
+    "correct_index": 2
+  }
+]

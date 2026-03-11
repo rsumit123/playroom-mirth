@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "pol_easy_001",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first Prime Minister of India?",
+    "options": ["Sardar Vallabhbhai Patel", "Jawaharlal Nehru", "Rajendra Prasad", "B.R. Ambedkar"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_002",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is known as the 'Father of the Indian Constitution'?",
+    "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "B.R. Ambedkar", "Sardar Patel"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_003",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many states are there in India?",
+    "options": ["26", "28", "29", "30"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_004",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the national emblem of India?",
+    "options": ["Peacock", "Tiger", "Lion Capital of Ashoka", "Lotus"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_005",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the capital of India?",
+    "options": ["Mumbai", "Kolkata", "New Delhi", "Chennai"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_006",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first President of India?",
+    "options": ["S. Radhakrishnan", "Rajendra Prasad", "Zakir Husain", "V.V. Giri"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_007",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Parliament consists of how many houses?",
+    "options": ["1", "2", "3", "4"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_008",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What are the two houses of the Indian Parliament called?",
+    "options": ["Senate and House", "Lok Sabha and Rajya Sabha", "Upper House and Lower House", "Vidhan Sabha and Vidhan Parishad"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_009",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "On which date is Republic Day celebrated in India?",
+    "options": ["15 August", "26 January", "2 October", "14 November"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_010",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "On which date is Independence Day celebrated in India?",
+    "options": ["26 January", "15 August", "2 October", "14 November"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_011",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first woman Prime Minister of India?",
+    "options": ["Pratibha Patil", "Sonia Gandhi", "Indira Gandhi", "Sarojini Naidu"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_012",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the minimum voting age in India?",
+    "options": ["16 years", "18 years", "21 years", "25 years"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_013",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body conducts elections in India?",
+    "options": ["Supreme Court", "Election Commission of India", "Parliament", "President"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_014",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the supreme commander of the Indian Armed Forces?",
+    "options": ["Prime Minister", "Chief of Defence Staff", "President", "Defence Minister"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_015",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many Union Territories does India have?",
+    "options": ["6", "7", "8", "9"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_016",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What does GST stand for?",
+    "options": ["General Sales Tax", "Goods and Services Tax", "Government Service Tax", "Gross Sales Tariff"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_017",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Constitution was adopted on which date?",
+    "options": ["15 August 1947", "26 January 1950", "26 November 1949", "2 October 1950"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_018",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "When did the Indian Constitution come into effect?",
+    "options": ["26 November 1949", "15 August 1947", "26 January 1950", "1 January 1950"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_019",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which political party did Jawaharlal Nehru belong to?",
+    "options": ["BJP", "Communist Party", "Indian National Congress", "Janata Party"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_020",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who appoints the Prime Minister of India?",
+    "options": ["Chief Justice of India", "Speaker of Lok Sabha", "President of India", "Vice President"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_021",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the term of office for the President of India?",
+    "options": ["4 years", "5 years", "6 years", "7 years"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_022",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the maximum term of the Lok Sabha?",
+    "options": ["4 years", "5 years", "6 years", "No fixed term"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_023",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was Mahatma Gandhi?",
+    "options": ["First President of India", "Father of the Nation", "First Chief Justice", "First Governor-General"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_024",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which is the largest state of India by area?",
+    "options": ["Madhya Pradesh", "Maharashtra", "Rajasthan", "Uttar Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_025",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the national anthem of India?",
+    "options": ["Vande Mataram", "Jana Gana Mana", "Sare Jahan Se Achha", "Jai Hind"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_026",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who wrote the national anthem 'Jana Gana Mana'?",
+    "options": ["Bankim Chandra Chatterjee", "Rabindranath Tagore", "Sarojini Naidu", "Subhas Chandra Bose"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_027",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "In which year did India gain independence from British rule?",
+    "options": ["1945", "1946", "1947", "1950"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_028",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Rajya Sabha is also known as the:",
+    "options": ["House of the People", "Council of States", "House of Elders", "Upper Chamber"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_029",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the national flower of India?",
+    "options": ["Rose", "Sunflower", "Lotus", "Jasmine"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_030",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the head of state in India?",
+    "options": ["Prime Minister", "President", "Chief Justice", "Speaker of Lok Sabha"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_031",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Indian leader is called the 'Iron Man of India'?",
+    "options": ["Jawaharlal Nehru", "Subhas Chandra Bose", "B.R. Ambedkar", "Sardar Vallabhbhai Patel"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_032",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many members can be elected to the Lok Sabha?",
+    "options": ["245", "500", "543", "552"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_033",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Supreme Court of India is located in which city?",
+    "options": ["Mumbai", "Kolkata", "New Delhi", "Chennai"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_034",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state has the largest population in India?",
+    "options": ["Maharashtra", "Bihar", "Uttar Pradesh", "West Bengal"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_035",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What color is NOT present in the Indian national flag?",
+    "options": ["Saffron", "White", "Red", "Green"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_036",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is in the center of the Indian national flag?",
+    "options": ["Star", "Sun", "Ashoka Chakra", "Lotus"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_037",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which document is the supreme law of India?",
+    "options": ["Indian Penal Code", "Constitution of India", "Vedas", "Parliamentary Acts"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_038",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Narendra Modi became Prime Minister of India in which year?",
+    "options": ["2012", "2013", "2014", "2015"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_039",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the currency of India?",
+    "options": ["Dollar", "Rupee", "Taka", "Ringgit"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_040",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the current President of India (as of 2024)?",
+    "options": ["Ram Nath Kovind", "Pratibha Patil", "Droupadi Murmu", "Pranab Mukherjee"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_041",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Preamble of the Indian Constitution begins with which words?",
+    "options": ["We the Citizens", "We the People", "We the Nation", "We the Republic"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_042",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which is the largest Union Territory of India by area?",
+    "options": ["Delhi", "Puducherry", "Ladakh", "Chandigarh"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_043",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Jammu & Kashmir was reorganized into Union Territories in which year?",
+    "options": ["2017", "2018", "2019", "2020"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_044",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The President of India resides in which official residence?",
+    "options": ["Red Fort", "Rashtrapati Bhavan", "Parliament House", "India Gate"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_045",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which city is the capital of Maharashtra?",
+    "options": ["Pune", "Nagpur", "Mumbai", "Aurangabad"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_046",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Tricolor Indian flag was designed by whom?",
+    "options": ["Mahatma Gandhi", "Pingali Venkayya", "Jawaharlal Nehru", "Rabindranath Tagore"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_047",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the official language of the Indian Union according to the Constitution?",
+    "options": ["English", "Hindi", "Sanskrit", "Urdu"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_048",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which institution is the highest court of appeal in India?",
+    "options": ["High Court", "District Court", "Supreme Court", "Tribunal"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_049",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the minimum age to become the President of India?",
+    "options": ["25 years", "30 years", "35 years", "40 years"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_050",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Vice President of India is the ex-officio chairman of which body?",
+    "options": ["Lok Sabha", "Rajya Sabha", "Supreme Court", "NITI Aayog"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_051",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which city is the capital of Karnataka?",
+    "options": ["Mysuru", "Bengaluru", "Mangaluru", "Hubli"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_052",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Atal Bihari Vajpayee belonged to which political party?",
+    "options": ["Indian National Congress", "Janata Dal", "Bharatiya Janata Party", "Communist Party"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_053",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who administers the oath of office to the President of India?",
+    "options": ["Prime Minister", "Vice President", "Chief Justice of India", "Speaker of Lok Sabha"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_054",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India follows which type of government system?",
+    "options": ["Presidential", "Parliamentary", "Monarchy", "Military"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_055",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the motto inscribed below the national emblem of India?",
+    "options": ["Jai Hind", "Vande Mataram", "Satyameva Jayate", "Ahimsa Paramo Dharma"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_001",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Indian Constitution abolishes untouchability?",
+    "options": ["Article 14", "Article 15", "Article 17", "Article 21"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_002",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first woman Chief Minister of an Indian state?",
+    "options": ["Indira Gandhi", "Sucheta Kripalani", "Jayalalithaa", "Mayawati"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_003",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "How many Fundamental Rights are guaranteed by the Indian Constitution?",
+    "options": ["5", "6", "7", "8"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_004",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which part of the Indian Constitution deals with Directive Principles of State Policy?",
+    "options": ["Part III", "Part IV", "Part V", "Part VI"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_005",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 73rd Constitutional Amendment is related to which institution?",
+    "options": ["Supreme Court", "Election Commission", "Panchayati Raj", "Comptroller and Auditor General"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_006",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first Chief Election Commissioner of India?",
+    "options": ["T.N. Seshan", "Sukumar Sen", "K.V.K. Sundaram", "S.P. Sen Verma"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_007",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Emergency in India (1975-77) was declared under which article?",
+    "options": ["Article 352", "Article 356", "Article 360", "Article 370"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_008",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 370 of the Indian Constitution was related to the special status of which region?",
+    "options": ["Northeast India", "Jammu and Kashmir", "Goa", "Sikkim"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_009",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "How many languages are recognized in the Eighth Schedule of the Indian Constitution?",
+    "options": ["18", "20", "22", "24"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_010",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Rajya Sabha can have a maximum of how many members?",
+    "options": ["235", "240", "245", "250"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_011",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the President of India during the 1975 Emergency?",
+    "options": ["V.V. Giri", "Fakhruddin Ali Ahmed", "Neelam Sanjiva Reddy", "Zail Singh"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_012",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The GST was implemented in India on which date?",
+    "options": ["1 April 2017", "1 July 2017", "1 January 2018", "1 April 2018"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_013",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 32 of the Indian Constitution, called the 'heart and soul' of the Constitution, deals with:",
+    "options": ["Right to Equality", "Right to Freedom", "Right to Constitutional Remedies", "Right against Exploitation"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_014",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Seventh Schedule of the Indian Constitution divides subjects into how many lists?",
+    "options": ["2", "3", "4", "5"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_015",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first woman President of India?",
+    "options": ["Indira Gandhi", "Sarojini Naidu", "Pratibha Patil", "Droupadi Murmu"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_016",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional body audits the accounts of the Government of India?",
+    "options": ["Finance Commission", "Planning Commission", "Comptroller and Auditor General", "Reserve Bank of India"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_017",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The term of a member of the Rajya Sabha is how many years?",
+    "options": ["4 years", "5 years", "6 years", "Lifetime"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_018",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Constitution provides the Right to Life and Personal Liberty?",
+    "options": ["Article 14", "Article 19", "Article 21", "Article 25"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_019",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "NITI Aayog replaced which body in 2015?",
+    "options": ["Finance Commission", "Planning Commission", "Law Commission", "Election Commission"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_020",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the longest-serving Prime Minister of India?",
+    "options": ["Indira Gandhi", "Jawaharlal Nehru", "Manmohan Singh", "Narendra Modi"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_021",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The concept of Fundamental Duties was added by which constitutional amendment?",
+    "options": ["42nd Amendment", "44th Amendment", "52nd Amendment", "73rd Amendment"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_022",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state was the first to be formed on a linguistic basis in independent India?",
+    "options": ["Kerala", "Tamil Nadu", "Andhra Pradesh", "Karnataka"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_023",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The President can nominate how many members to the Rajya Sabha?",
+    "options": ["2", "6", "10", "12"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_024",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 356 of the Indian Constitution deals with:",
+    "options": ["National Emergency", "President's Rule in States", "Financial Emergency", "Martial Law"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_025",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first non-Congress Prime Minister of India to complete a full 5-year term?",
+    "options": ["Morarji Desai", "V.P. Singh", "Atal Bihari Vajpayee", "Narendra Modi"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_026",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Election Commission of India was established on which date?",
+    "options": ["15 August 1947", "26 January 1950", "25 January 1950", "26 November 1949"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_027",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the minimum age to become a member of the Lok Sabha?",
+    "options": ["18 years", "21 years", "25 years", "30 years"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_028",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Indian state has the most seats in the Lok Sabha?",
+    "options": ["Maharashtra", "Bihar", "Uttar Pradesh", "West Bengal"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_029",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Right to Education was added as a Fundamental Right under which article?",
+    "options": ["Article 21", "Article 21A", "Article 45", "Article 51A"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_030",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first Governor-General of independent India?",
+    "options": ["Lord Mountbatten", "C. Rajagopalachari", "Jawaharlal Nehru", "Rajendra Prasad"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_031",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the Concurrent List in the Indian Constitution?",
+    "options": ["List of subjects on which only the Centre can legislate", "List of subjects on which only States can legislate", "List of subjects on which both Centre and States can legislate", "List of subjects reserved for Union Territories"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_032",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Preamble of the Indian Constitution describes India as:",
+    "options": ["Sovereign Democratic Republic", "Sovereign Socialist Secular Democratic Republic", "Sovereign Secular Republic", "Socialist Democratic Republic"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_033",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the last Viceroy of British India?",
+    "options": ["Lord Irwin", "Lord Wavell", "Lord Mountbatten", "Lord Curzon"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_034",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 44 of the Indian Constitution calls for a Uniform Civil Code and is part of:",
+    "options": ["Fundamental Rights", "Directive Principles of State Policy", "Fundamental Duties", "Emergency Provisions"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_035",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 42nd Amendment to the Indian Constitution is often called:",
+    "options": ["Mini Constitution", "New Constitution", "People's Amendment", "Freedom Amendment"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_036",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Prime Minister introduced the economic liberalization policy in 1991?",
+    "options": ["Rajiv Gandhi", "V.P. Singh", "P.V. Narasimha Rao", "Atal Bihari Vajpayee"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_037",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Telangana became a separate state by being carved out from which state?",
+    "options": ["Karnataka", "Andhra Pradesh", "Tamil Nadu", "Maharashtra"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_038",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 101st Constitutional Amendment is associated with:",
+    "options": ["Right to Education", "Goods and Services Tax", "Anti-Defection Law", "Panchayati Raj"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_039",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the chairman of the Constituent Assembly of India?",
+    "options": ["B.R. Ambedkar", "Rajendra Prasad", "Jawaharlal Nehru", "Sardar Patel"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_040",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The first general elections of independent India were held in which year?",
+    "options": ["1950", "1951-52", "1953", "1955"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_041",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article deals with the amendment procedure of the Indian Constitution?",
+    "options": ["Article 352", "Article 356", "Article 368", "Article 370"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_042",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The concept of 'Basic Structure' of the Constitution was laid down in which case?",
+    "options": ["Golaknath Case", "Kesavananda Bharati Case", "Minerva Mills Case", "Maneka Gandhi Case"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_043",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Sikkim became a full state of India in which year?",
+    "options": ["1971", "1973", "1975", "1977"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_044",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Attorney General of India is appointed by whom?",
+    "options": ["Chief Justice of India", "Prime Minister", "President of India", "Law Minister"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_045",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is a 'Money Bill' in the Indian Parliament?",
+    "options": ["A bill related to currency printing", "A bill that deals with taxation, borrowing, or expenditure", "A bill related to banking regulations", "A bill to set the annual budget"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_001",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional amendment introduced the anti-defection law in India?",
+    "options": ["44th Amendment", "52nd Amendment", "61st Amendment", "73rd Amendment"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_002",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who chaired the Drafting Committee of the Constituent Assembly?",
+    "options": ["Rajendra Prasad", "Jawaharlal Nehru", "B.R. Ambedkar", "K.M. Munshi"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_003",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indian Constitution originally had how many articles?",
+    "options": ["350", "370", "395", "400"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_004",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Ninth Schedule of the Indian Constitution was added by which amendment?",
+    "options": ["1st Amendment", "7th Amendment", "24th Amendment", "42nd Amendment"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_005",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The doctrine of 'Basic Structure' was propounded in the Kesavananda Bharati case in which year?",
+    "options": ["1967", "1971", "1973", "1976"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_006",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indian Constitution borrowed the concept of Directive Principles of State Policy from which country's constitution?",
+    "options": ["USA", "UK", "Ireland", "France"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_007",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution provides for the establishment of a Finance Commission?",
+    "options": ["Article 260", "Article 270", "Article 280", "Article 290"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_008",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who was the first Speaker of the Lok Sabha?",
+    "options": ["G.V. Mavalankar", "M.A. Ayyangar", "Hukam Singh", "Sardar Patel"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_009",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 44th Amendment Act of 1978 replaced the term 'internal disturbance' with which term for declaring a National Emergency?",
+    "options": ["Civil War", "Internal Conflict", "Armed Rebellion", "Insurrection"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_010",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Sarkaria Commission was set up to review the relationship between:",
+    "options": ["Legislature and Judiciary", "Centre and States", "President and Prime Minister", "Lok Sabha and Rajya Sabha"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_011",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "How many members were originally in the Constituent Assembly when it first met?",
+    "options": ["289", "299", "310", "389"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_012",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The concept of 'Judicial Review' in the Indian Constitution is borrowed from which country?",
+    "options": ["United Kingdom", "Canada", "United States of America", "Australia"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_013",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional amendment lowered the voting age from 21 to 18 years?",
+    "options": ["52nd Amendment", "56th Amendment", "61st Amendment", "73rd Amendment"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_014",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Tenth Schedule of the Indian Constitution deals with which subject?",
+    "options": ["Languages", "Land Reforms", "Anti-Defection", "Panchayati Raj"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_015",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who served as the interim Prime Minister of India twice, for brief periods after the death of sitting PMs?",
+    "options": ["Morarji Desai", "Gulzarilal Nanda", "Charan Singh", "Lal Bahadur Shastri"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_016",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The concept of Concurrent List in the Indian Constitution was borrowed from which country?",
+    "options": ["USA", "Canada", "Australia", "South Africa"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_017",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution empowers the Supreme Court to issue writs?",
+    "options": ["Article 13", "Article 21", "Article 32", "Article 226"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_018",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The first Backward Classes Commission was chaired by:",
+    "options": ["B.P. Mandal", "Kaka Kalelkar", "Rajinder Sachar", "M.N. Srinivas"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_019",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 343 of the Indian Constitution specifies the official language of the Union as:",
+    "options": ["Hindi in Devanagari script", "Hindi and English", "English only", "All Eighth Schedule languages"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_020",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Constituent Assembly took how many years, months, and days to complete the Constitution?",
+    "options": ["2 years, 10 months, 18 days", "2 years, 11 months, 18 days", "3 years, 1 month, 18 days", "3 years, 11 months, 18 days"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_021",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 91st Constitutional Amendment Act of 2003 is related to:",
+    "options": ["Limiting the size of the Council of Ministers", "GST implementation", "Right to Education", "Abolition of Privy Purses"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_022",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which commission recommended the creation of All India Services?",
+    "options": ["Sarkaria Commission", "Rajamannar Committee", "Sardar Patel's recommendation in Constituent Assembly", "Shah Commission"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_023",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Inter-State Council is established under which article of the Indian Constitution?",
+    "options": ["Article 261", "Article 263", "Article 280", "Article 312"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_024",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who was the first Indian and last Governor-General of independent India?",
+    "options": ["Rajendra Prasad", "C. Rajagopalachari", "Jawaharlal Nehru", "S. Radhakrishnan"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_025",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 'Objectives Resolution' in the Constituent Assembly was moved by:",
+    "options": ["B.R. Ambedkar", "Rajendra Prasad", "Jawaharlal Nehru", "Sardar Patel"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_026",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule of the Indian Constitution contains provisions relating to the administration of Tribal Areas in Assam, Meghalaya, Tripura, and Mizoram?",
+    "options": ["Fifth Schedule", "Sixth Schedule", "Eighth Schedule", "Tenth Schedule"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_027",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The first session of the Constituent Assembly was held on which date?",
+    "options": ["9 December 1946", "26 January 1947", "15 August 1947", "26 November 1949"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_028",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 'Right to Property' was removed from Fundamental Rights by which constitutional amendment?",
+    "options": ["42nd Amendment", "44th Amendment", "52nd Amendment", "61st Amendment"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_029",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under the Indian Constitution, which writ is issued to a lower court or tribunal to prevent it from exceeding its jurisdiction?",
+    "options": ["Habeas Corpus", "Mandamus", "Prohibition", "Certiorari"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_030",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The words 'Socialist' and 'Secular' were added to the Preamble of the Indian Constitution by which amendment?",
+    "options": ["1st Amendment", "25th Amendment", "42nd Amendment", "44th Amendment"],
+    "correct_index": 2
+  }
+]

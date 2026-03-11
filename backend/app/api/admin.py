@@ -227,6 +227,7 @@ _GK_DATA_PATH = Path(__file__).parent.parent / "data" / "gk_questions.json"
 _CATEGORY_PREFIXES = {
     "science": "sci", "history": "hist", "geography": "geo",
     "sports": "spt", "entertainment": "ent", "general": "gen",
+    "mythology": "myth", "food": "food", "politics": "pol",
 }
 
 
