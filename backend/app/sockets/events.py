@@ -1,3 +1,4 @@
+import logging
 import socketio
 from jose import jwt, JWTError
 
@@ -975,7 +976,7 @@ async def game_next_round(sid, data):
 @sio.on("game:play_again")
 async def game_play_again(sid, data):
     """Player votes to play again after game ends."""
-    logger = _logger
+    logger = logging.getLogger(__name__)
 
     room_code = data.get("room_code")
     if not room_code:
