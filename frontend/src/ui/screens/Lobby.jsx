@@ -209,7 +209,12 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
           <div className="sticky bottom-4 z-10">
             <button
               className={`w-full py-4 text-lg touch-target rounded-xl font-semibold transition ${canStart ? 'btn-primary animate-glow' : 'btn-ghost opacity-60 cursor-not-allowed'}`}
-              onClick={onStart}
+              onClick={() => onStart({
+                rounds_total: Number(settings.rounds),
+                difficulty: Number(settings.difficulty),
+                turn_seconds: Number(settings.timer),
+                trivia_category: settings.triviaCategory,
+              })}
               disabled={!canStart}
             >
               {canStart ? 'Start Game' : `Need ${minPlayers - players.length} more player(s)`}

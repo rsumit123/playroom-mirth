@@ -155,21 +155,7 @@ export default function TriviaGame({ game, onAnswer, playerNames = {} }) {
                       >
                         {opt}
                         {result && pickers.length > 0 && (
-                          <div className="flex items-center justify-center gap-1 mt-2 flex-wrap">
-                            {pickers.map((r) => {
-                              const name = playerNames[r.player_id] || `P${r.player_id}`
-                              const isSelf = String(r.player_id) === String(game?.selfPlayerId)
-                              return (
-                                <span
-                                  key={r.player_id}
-                                  className={`inline-flex items-center gap-0.5 text-[10px] rounded-full px-1.5 py-0.5 ${isSelf ? 'bg-accent/15 text-accent font-bold' : 'bg-black/5 text-slate/60'}`}
-                                >
-                                  <PlayerAvatar name={name} size="xs" />
-                                  {name}
-                                </span>
-                              )
-                            })}
-                          </div>
+                          <PickerAvatars pickers={pickers} playerNames={playerNames} selfPlayerId={game?.selfPlayerId} />
                         )}
                       </button>
                     )
@@ -261,6 +247,68 @@ export default function TriviaGame({ game, onAnswer, playerNames = {} }) {
           </div>
         </>
       )}
+    </div>
+  )
+}
+
+const MAX_CHIPS_WITH_NAME = 3
+const MAX_AVATARS_ONLY = 6
+
+function PickerAvatars({ pickers, playerNames, selfPlayerId }) {
+  // Sort self first so you always see your own chip
+  const sorted = pickers.slice().sort((a, b) => {
+    const aIsSelf = String(a.player_id) === String(selfPlayerId)
+    const bIsSelf = String(b.player_id) === String(selfPlayerId)
+    return aIsSelf ? -1 : bIsSelf ? 1 : 0
+  })
+
+  // Few players: show avatar + name chips
+  if (sorted.length <= MAX_CHIPS_WITH_NAME) {
+    return (
+      <div className="flex items-center justify-center gap-1 mt-2 flex-wrap">
+        {sorted.map((r) => {
+          const name = playerNames[r.player_id] || `P${r.player_id}`
+          const isSelf = String(r.player_id) === String(selfPlayerId)
+          return (
+            <span
+              key={r.player_id}
+              className={`inline-flex items-center gap-0.5 text-[10px] rounded-full px-1.5 py-0.5 ${isSelf ? 'bg-accent/15 text-accent font-bold' : 'bg-black/5 text-slate/60'}`}
+            >
+              <PlayerAvatar name={name} size="xs" />
+              {name}
+            </span>
+          )
+        })}
+      </div>
+    )
+  }
+
+  // Many players: stacked overlapping avatars + overflow count
+  const visible = sorted.slice(0, MAX_AVATARS_ONLY)
+  const overflow = sorted.length - MAX_AVATARS_ONLY
+
+  return (
+    <div className="flex items-center justify-center mt-2">
+      <div className="flex items-center -space-x-1.5">
+        {visible.map((r) => {
+          const name = playerNames[r.player_id] || `P${r.player_id}`
+          const isSelf = String(r.player_id) === String(selfPlayerId)
+          return (
+            <div
+              key={r.player_id}
+              className={`rounded-full ring-2 ring-white ${isSelf ? 'ring-accent' : ''}`}
+              title={name}
+            >
+              <PlayerAvatar name={name} size="xs" />
+            </div>
+          )
+        })}
+        {overflow > 0 && (
+          <div className="h-4 w-4 rounded-full bg-black/10 ring-2 ring-white flex items-center justify-center text-[8px] font-bold text-slate/60">
+            +{overflow}
+          </div>
+        )}
+      </div>
     </div>
   )
 }
