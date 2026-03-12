@@ -446,22 +446,36 @@ export function AppProvider({ children }) {
 
   async function emitPlayAgain(roomCode) {
     if (!roomCode) return
-    const socket = connectSocket()
-    // Wait for actual connection if socket is not yet connected
-    if (!socket.connected) {
-      await new Promise((resolve) => {
-        const onConnect = () => { clearTimeout(timer); resolve() }
-        const timer = setTimeout(() => { socket.off('connect', onConnect); resolve() }, 5000)
-        socket.once('connect', onConnect)
-      })
+    try {
+      const res = await api.playAgainVote(auth.token, auth.guestToken, roomCode)
+      setGame((g) => ({ ...g, playAgain: { voted: res.voted, total: res.total } }))
+      if (res.status === 'ready') {
+        setGame((g) => ({ ...g, playAgain: { ready: true } }))
+        return
+      }
+      // Poll for updates since socket may be dead
+      let attempts = 0
+      const poll = setInterval(async () => {
+        attempts++
+        if (attempts > 15) { // 30 seconds max
+          clearInterval(poll)
+          setGame((g) => ({ ...g, playAgain: { expired: true, voted: res.voted, total: res.total } }))
+          return
+        }
+        try {
+          const status = await api.playAgainStatus(roomCode)
+          if (status.status === 'none') {
+            // Vote completed (ready) or expired — check by trying to detect ready
+            clearInterval(poll)
+            setGame((g) => ({ ...g, playAgain: { ready: true } }))
+          } else {
+            setGame((g) => ({ ...g, playAgain: { voted: status.voted, total: status.total } }))
+          }
+        } catch { /* ignore poll errors */ }
+      }, 2000)
+    } catch (err) {
+      setGame((g) => ({ ...g, error: { message: err.message } }))
     }
-    if (!socket.connected) return // still not connected after timeout
-    // Re-register in room (socket may have a new SID after reconnect)
-    const data = auth.token ? { room_code: roomCode, token: auth.token } : { room_code: roomCode, guest_token: auth.guestToken }
-    socket.emit('room:register', data)
-    // Small delay to let server process registration before play_again
-    await new Promise((r) => setTimeout(r, 200))
-    socket.emit('game:play_again', data)
   }
 
   const value = useMemo(() => ({

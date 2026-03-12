@@ -1,3 +1,5 @@
+import asyncio
+import logging
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
@@ -16,6 +18,8 @@ from app.services.room_ops import (
     get_active_rooms,
     leave_room_by_code,
 )
+
+_logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/rooms", tags=["rooms"])
 
@@ -132,3 +136,104 @@ def update_room_settings(
     room.trivia_category = payload.trivia_category
     db.commit()
     return lobby_state(db, room)
+
+
+# ── Play-again vote tracking (shared with socket handler) ──────────────
+# Import here to share state with the socket handler
+from app.sockets.events import PLAY_AGAIN_VOTES, sio
+
+
+@router.post("/{room_code}/play-again")
+async def play_again_vote(
+    room_code: str,
+    guest_token: str | None = Query(default=None),
+    db: Session = Depends(get_db),
+    user=Depends(get_current_user_optional),
+):
+    """REST endpoint for play-again votes — bypasses socket."""
+    room = db.query(Room).filter(Room.code == room_code).first()
+    if not room:
+        raise HTTPException(status_code=404, detail="Room not found")
+
+    guest = resolve_guest(db, guest_token)
+    if not user and not guest:
+        raise HTTPException(status_code=401, detail="Authentication required")
+
+    if user:
+        rp = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id, RoomPlayer.user_id == user.id).first()
+    else:
+        rp = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id, RoomPlayer.guest_id == guest.id).first()
+
+    if not rp:
+        raise HTTPException(status_code=403, detail="Not in this room")
+
+    player_id = rp.id
+    all_players = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).all()
+    total = len(all_players)
+
+    _logger.info(f"[play_again REST] player_id={player_id} total={total}")
+
+    # Initialize vote tracking for this room if needed
+    if room_code not in PLAY_AGAIN_VOTES:
+        PLAY_AGAIN_VOTES[room_code] = {"player_ids": set(), "total": total}
+
+        # Start 30-second timeout
+        async def _play_again_timeout():
+            await asyncio.sleep(30)
+            votes = PLAY_AGAIN_VOTES.pop(room_code, None)
+            if votes:
+                voted = len(votes["player_ids"])
+                await sio.emit("game:play_again_expired", {
+                    "voted": voted,
+                    "total": votes["total"],
+                }, room=room_code)
+
+        PLAY_AGAIN_VOTES[room_code]["task"] = asyncio.ensure_future(_play_again_timeout())
+
+    votes = PLAY_AGAIN_VOTES[room_code]
+    votes["player_ids"].add(player_id)
+    votes["total"] = total
+    voted = len(votes["player_ids"])
+
+    _logger.info(f"[play_again REST] voted={voted}/{total}")
+
+    if voted >= total:
+        # All players agreed
+        task = votes.get("task")
+        if task and not task.done():
+            task.cancel()
+        PLAY_AGAIN_VOTES.pop(room_code, None)
+
+        # Re-enable in_game for all players so game:start can find them
+        db.query(RoomPlayer).filter(
+            RoomPlayer.room_id == room.id,
+        ).update({RoomPlayer.in_game: True})
+        db.commit()
+
+        _logger.info(f"[play_again REST] ALL voted — ready for {room_code}")
+        await sio.emit("game:play_again_ready", {"room_code": room_code}, room=room_code)
+        return {"ok": True, "status": "ready", "voted": voted, "total": total}
+    else:
+        _logger.info(f"[play_again REST] waiting — {voted}/{total}")
+        await sio.emit("game:play_again_update", {"voted": voted, "total": total}, room=room_code)
+        return {"ok": True, "status": "waiting", "voted": voted, "total": total}
+
+
+@router.get("/{room_code}/play-again")
+def play_again_status(
+    room_code: str,
+    db: Session = Depends(get_db),
+):
+    """Poll play-again vote status."""
+    room = db.query(Room).filter(Room.code == room_code).first()
+    if not room:
+        raise HTTPException(status_code=404, detail="Room not found")
+
+    votes = PLAY_AGAIN_VOTES.get(room_code)
+    if not votes:
+        # No active vote — either completed (ready) or never started
+        return {"status": "none", "voted": 0, "total": 0}
+
+    voted = len(votes["player_ids"])
+    total = votes["total"]
+    return {"status": "waiting", "voted": voted, "total": total}

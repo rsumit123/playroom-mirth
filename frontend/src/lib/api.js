@@ -181,3 +181,15 @@ export function deleteAdminQuestion(token, questionId) {
     headers: { Authorization: `Bearer ${token}` }
   })
 }
+
+export function playAgainVote(token, guestToken, roomCode) {
+  const params = guestToken ? `?guest_token=${encodeURIComponent(guestToken)}` : ''
+  return request(`/rooms/${roomCode}/play-again${params}`, {
+    method: 'POST',
+    headers: token ? { Authorization: `Bearer ${token}` } : undefined
+  })
+}
+
+export function playAgainStatus(roomCode) {
+  return request(`/rooms/${roomCode}/play-again`)
+}
