@@ -1,0 +1,802 @@
+[
+  {
+    "id": "sci_easy_080",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which process do plants use to make food using sunlight?",
+    "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_easy_081",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the closest planet to the Sun?",
+    "options": ["Venus", "Earth", "Mercury", "Mars"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_082",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the chemical symbol for water?",
+    "options": ["WO", "H2O", "CO2", "NaCl"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_easy_083",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which Indian space organization launched the Chandrayaan missions?",
+    "options": ["DRDO", "ISRO", "HAL", "BARC"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_easy_084",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Who is known as the 'Father of the Indian Space Programme'?",
+    "options": ["Homi Bhabha", "APJ Abdul Kalam", "Vikram Sarabhai", "C.V. Raman"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_085",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the unit of electric current?",
+    "options": ["Volt", "Watt", "Ampere", "Ohm"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_086",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many planets are there in our Solar System?",
+    "options": ["7", "8", "9", "10"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_easy_087",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which gas do humans breathe in to survive?",
+    "options": ["Carbon dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_088",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the largest organ in the human body?",
+    "options": ["Liver", "Heart", "Skin", "Lung"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_089",
+    "category": "science",
+    "difficulty": 1,
+    "question": "C.V. Raman won the Nobel Prize in Physics in which year?",
+    "options": ["1921", "1925", "1930", "1935"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_090",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What does DNA stand for?",
+    "options": ["Deoxyribonucleic Acid", "Dinitrogen Acid", "Dynamic Nucleic Atom", "Deoxynitrogenous Acid"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_easy_091",
+    "category": "science",
+    "difficulty": 1,
+    "question": "India's first satellite was named after which ancient Indian mathematician?",
+    "options": ["Brahmagupta", "Aryabhata", "Bhaskaracharya", "Ramanujan"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_easy_092",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_093",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What force keeps us on the ground?",
+    "options": ["Magnetism", "Friction", "Gravity", "Tension"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_094",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which is the largest planet in the Solar System?",
+    "options": ["Saturn", "Uranus", "Neptune", "Jupiter"],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_easy_095",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Go", "Gd", "Au", "Ag"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_096",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which scientist is known as the 'Missile Man of India'?",
+    "options": ["Vikram Sarabhai", "Homi Bhabha", "APJ Abdul Kalam", "C.V. Raman"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_097",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many bones are in the adult human body?",
+    "options": ["186", "206", "226", "256"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_easy_098",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the speed of light approximately?",
+    "options": ["3 lakh km/s", "3 lakh km/h", "30,000 km/s", "3 crore km/s"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_easy_099",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which vitamin is produced when skin is exposed to sunlight?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_easy_100",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the full form of ISRO?",
+    "options": ["Indian Space Research Organisation", "Indian Science Research Office", "International Space Research Organisation", "Indian Satellite Research Organisation"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_easy_101",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Jupiter", "Mars", "Saturn"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_102",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the chemical formula of common salt?",
+    "options": ["KCl", "NaCl", "CaCl2", "MgCl2"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_easy_103",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which organ purifies blood in the human body?",
+    "options": ["Heart", "Lungs", "Kidneys", "Liver"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_104",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the boiling point of water at standard pressure?",
+    "options": ["90°C", "100°C", "110°C", "120°C"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_easy_105",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Chandrayaan-3 successfully landed on the Moon in which year?",
+    "options": ["2019", "2021", "2023", "2024"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_106",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the SI unit of force?",
+    "options": ["Joule", "Watt", "Newton", "Pascal"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_107",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which gas is responsible for global warming?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_108",
+    "category": "science",
+    "difficulty": 1,
+    "question": "How many chambers does the human heart have?",
+    "options": ["2", "3", "4", "5"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_109",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which planet has the most moons in our Solar System?",
+    "options": ["Jupiter", "Saturn", "Neptune", "Uranus"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_easy_110",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What is the hardest natural substance on Earth?",
+    "options": ["Iron", "Gold", "Quartz", "Diamond"],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_easy_111",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which type of blood vessel carries blood away from the heart?",
+    "options": ["Vein", "Capillary", "Artery", "Lymph vessel"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_easy_112",
+    "category": "science",
+    "difficulty": 1,
+    "question": "What does PSLV stand for in ISRO's rocket programme?",
+    "options": ["Polar Satellite Launch Vehicle", "Planetary Space Launch Vessel", "Polar Space Lift Vehicle", "Primary Satellite Launch Vehicle"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_easy_113",
+    "category": "science",
+    "difficulty": 1,
+    "question": "Which element has the atomic number 1?",
+    "options": ["Helium", "Oxygen", "Hydrogen", "Carbon"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_083",
+    "category": "science",
+    "difficulty": 2,
+    "question": "India's Mangalyaan (Mars Orbiter Mission) successfully entered Mars orbit in which year?",
+    "options": ["2012", "2013", "2014", "2016"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_084",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Chandrayaan-1, India's first lunar mission, was launched in which year?",
+    "options": ["2005", "2006", "2008", "2010"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_085",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What scientific phenomenon did C.V. Raman discover in 1928?",
+    "options": ["Photoelectric effect", "Raman scattering of light", "Doppler effect", "Compton scattering"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_086",
+    "category": "science",
+    "difficulty": 2,
+    "question": "India's first nuclear research reactor, Apsara, was commissioned in which year?",
+    "options": ["1948", "1952", "1956", "1962"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_087",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Satyendra Nath Bose collaborated with Albert Einstein to describe the behaviour of which type of particles?",
+    "options": ["Fermions", "Leptons", "Quarks", "Bosons"],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_medium_088",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the atomic number of carbon?",
+    "options": ["4", "6", "8", "12"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_089",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which Indian-origin scientist won the Nobel Prize in Chemistry in 2009 for ribosome structure studies?",
+    "options": ["Amartya Sen", "Venkatraman Ramakrishnan", "Subrahmanyan Chandrasekhar", "Har Gobind Khorana"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_090",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the Chandrasekhar Limit, named after Indian astrophysicist S. Chandrasekhar?",
+    "options": ["Maximum brightness of a supernova", "Maximum mass of a stable white dwarf (~1.4 solar masses)", "Minimum mass required for nuclear fusion", "Speed limit for particles in a neutron star"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_091",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is pH of pure water at 25°C?",
+    "options": ["5", "6", "7", "8"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_092",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which Indian mathematician is associated with the Hardy-Ramanujan number 1729?",
+    "options": ["Bhaskara", "Brahmagupta", "Srinivasa Ramanujan", "Aryabhata"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_093",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the name of ISRO's navigation satellite system, similar to GPS?",
+    "options": ["GSAT", "NavIC", "INSAT", "IRNSS-A"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_094",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which layer of the Earth's atmosphere contains the ozone layer?",
+    "options": ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_095",
+    "category": "science",
+    "difficulty": 2,
+    "question": "India's Pokhran-II nuclear tests were conducted in which year?",
+    "options": ["1994", "1996", "1998", "2000"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_096",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What does the acronym BARC stand for?",
+    "options": ["Bhabha Atomic Research Centre", "Bangalore Advanced Research Centre", "Bose Atomic Research Corporation", "Board of Atomic Research and Control"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_medium_097",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which type of cell does not have a nucleus?",
+    "options": ["Muscle cell", "Nerve cell", "Red blood cell", "Liver cell"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_098",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which gas is used in MRI machines as a coolant for superconducting magnets?",
+    "options": ["Nitrogen", "Argon", "Helium", "Neon"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_099",
+    "category": "science",
+    "difficulty": 2,
+    "question": "How many chromosomes does a normal human cell contain?",
+    "options": ["23", "44", "46", "48"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_100",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the name of India's planned first crewed spaceflight mission?",
+    "options": ["Chandrayaan-4", "Aditya-L2", "Gaganyaan", "Vyomanauts"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_101",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which scientist developed the ionisation equation used to interpret stellar spectra?",
+    "options": ["Meghnad Saha", "Satyendra Nath Bose", "C.V. Raman", "Jagadish Chandra Bose"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_medium_102",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which of the following is NOT a noble gas?",
+    "options": ["Argon", "Neon", "Fluorine", "Krypton"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_103",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the SI unit of pressure?",
+    "options": ["Newton", "Joule", "Pascal", "Bar"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_104",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which Indian-born scientist won the Nobel Prize in Physics in 1983 for work on white dwarf stars?",
+    "options": ["Har Gobind Khorana", "Satyendra Nath Bose", "Subrahmanyan Chandrasekhar", "C.V. Raman"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_105",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the process by which a solid directly converts to a gas without passing through the liquid state?",
+    "options": ["Evaporation", "Condensation", "Sublimation", "Deposition"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_106",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the full form of GSLV as used by ISRO?",
+    "options": ["Geostationary Satellite Launch Vessel", "Geosynchronous Satellite Launch Vehicle", "Global Space Launch Vehicle", "Ground Space Lift Vehicle"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_107",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which Indian mission was the first in the world to soft-land near the lunar south pole?",
+    "options": ["Chandrayaan-1", "Chandrayaan-2", "Chandrayaan-3", "Mangalyaan"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_108",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the main function of ribosomes in a cell?",
+    "options": ["Energy production", "Protein synthesis", "DNA replication", "Lipid storage"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_109",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Har Gobind Khorana shared the Nobel Prize in Physiology or Medicine in 1968 for deciphering what?",
+    "options": ["Structure of DNA", "The genetic code and its function in protein synthesis", "Discovery of insulin", "Mechanism of nerve impulse"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_110",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which country launched India's first satellite Aryabhata in 1975?",
+    "options": ["USA", "France", "Soviet Union", "UK"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_111",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the approximate half-life of Carbon-14, used in radiocarbon dating?",
+    "options": ["570 years", "1,600 years", "5,730 years", "14,000 years"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_112",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which law states that every action has an equal and opposite reaction?",
+    "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Conservation of Energy"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_113",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the name of ISRO's solar observation mission launched in 2023?",
+    "options": ["Surya-1", "Aditya-L1", "SolEx-1", "Helios-1"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_medium_114",
+    "category": "science",
+    "difficulty": 2,
+    "question": "Which type of radiation has the highest penetrating power?",
+    "options": ["Alpha radiation", "Beta radiation", "Gamma radiation", "Ultraviolet radiation"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_medium_115",
+    "category": "science",
+    "difficulty": 2,
+    "question": "What is the smallest unit of matter that retains the chemical properties of an element?",
+    "options": ["Molecule", "Atom", "Proton", "Electron"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_hard_081",
+    "category": "science",
+    "difficulty": 3,
+    "question": "In which year did Satyendra Nath Bose publish his landmark paper on quantum statistics that he sent to Einstein?",
+    "options": ["1920", "1924", "1926", "1930"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_hard_082",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Chandrayaan-3's Vikram lander touched down on the Moon on 23 August 2023 at what approximate IST time?",
+    "options": ["12:33 IST", "15:02 IST", "18:04 IST", "20:30 IST"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_083",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Meghnad Saha's ionization equation was first published in approximately which year?",
+    "options": ["1910", "1915", "1920", "1928"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_084",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the Chandrasekhar Limit for the maximum mass of a white dwarf star expressed in solar masses?",
+    "options": ["0.8", "1.0", "1.4", "2.0"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_085",
+    "category": "science",
+    "difficulty": 3,
+    "question": "India's first nuclear reactor Apsara went critical on which date?",
+    "options": ["15 August 1947", "4 August 1956", "26 January 1960", "19 April 1975"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_hard_086",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Mangalyaan was launched from Sriharikota on which date in 2013?",
+    "options": ["5 November", "15 November", "5 October", "15 October"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_hard_087",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the Hardy-Ramanujan number, the smallest number expressible as the sum of two cubes in two different ways?",
+    "options": ["1089", "1456", "1729", "2197"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_088",
+    "category": "science",
+    "difficulty": 3,
+    "question": "India's Aryabhata satellite was launched from which Soviet launch site?",
+    "options": ["Baikonur Cosmodrome", "Kapustin Yar", "Plesetsk Cosmodrome", "Vostochny Cosmodrome"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_hard_089",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Homi Bhabha died in a plane crash on which mountain in 1966?",
+    "options": ["Mont Blanc", "Matterhorn", "Monte Rosa", "Eiger"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_hard_090",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the process by which certain bacteria convert atmospheric nitrogen into ammonia called?",
+    "options": ["Denitrification", "Nitrification", "Nitrogen fixation", "Ammonification"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_091",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which ISRO launch vehicle carried Chandrayaan-3 to space?",
+    "options": ["PSLV-C53", "GSLV-Mk II", "LVM3-M4", "SSLV-D2"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_092",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Vikram Sarabhai established the Physical Research Laboratory (PRL) in Ahmedabad in which year?",
+    "options": ["1945", "1947", "1950", "1962"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_hard_093",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which organ of the human body produces the hormone insulin?",
+    "options": ["Liver", "Kidney", "Pancreas", "Thyroid"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_094",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the chemical name of the compound commonly known as baking soda?",
+    "options": ["Sodium carbonate", "Sodium bicarbonate", "Calcium carbonate", "Potassium bicarbonate"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_hard_095",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which Indian Air Force pilot became the first Indian to visit the International Space Station in 2025?",
+    "options": ["Prasanth Balakrishnan Nair", "Ajit Krishnan", "Angad Pratap", "Shubhanshu Shukla"],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_hard_096",
+    "category": "science",
+    "difficulty": 3,
+    "question": "The Raman Effect involves the inelastic scattering of which type of electromagnetic radiation?",
+    "options": ["X-rays", "Microwave radiation", "Photons (visible/near-visible light)", "Gamma rays"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_097",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Venkatraman Ramakrishnan's Nobel Prize-winning work used which technique to study ribosome structure?",
+    "options": ["Electron microscopy", "NMR spectroscopy", "X-ray crystallography", "Mass spectrometry"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_098",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the approximate distance from Earth to the L1 Lagrange point where ISRO's Aditya-L1 solar observatory is positioned?",
+    "options": ["150,000 km", "750,000 km", "1.5 million km", "15 million km"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_099",
+    "category": "science",
+    "difficulty": 3,
+    "question": "In molecular biology, what does the term 'codon' refer to?",
+    "options": ["A sequence of three nucleotides in mRNA that codes for one amino acid", "A type of enzyme that copies DNA", "The non-coding region of a gene", "A structural component of ribosomes"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_hard_100",
+    "category": "science",
+    "difficulty": 3,
+    "question": "ISRO's first successful PSLV launch occurred in which year?",
+    "options": ["1992", "1993", "1994", "1996"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_101",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the name of the quantum phenomenon predicted by Satyendra Nath Bose and Einstein where bosons at near-absolute-zero temperature occupy the same quantum state?",
+    "options": ["Fermi-Dirac condensate", "Bose-Einstein condensate", "Planck condensate", "de Broglie condensate"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_hard_102",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which element has the highest electronegativity on the Pauling scale?",
+    "options": ["Oxygen", "Chlorine", "Nitrogen", "Fluorine"],
+    "correct_index": 3
+  },
+  {
+    "id": "sci_hard_103",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the name of the humanoid robot ISRO developed to fly on Gaganyaan's uncrewed test missions?",
+    "options": ["Vyomamitra", "Robonaut", "Astrobot", "Anumitra"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_hard_104",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which Indian scientist founded the Tata Institute of Fundamental Research (TIFR) in 1945?",
+    "options": ["Vikram Sarabhai", "Meghnad Saha", "Homi Jehangir Bhabha", "C.V. Raman"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_105",
+    "category": "science",
+    "difficulty": 3,
+    "question": "In the human immune system, which cells are primarily responsible for producing antibodies?",
+    "options": ["T-lymphocytes", "Natural killer cells", "B-lymphocytes", "Macrophages"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_106",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which enzyme is responsible for unwinding the DNA double helix during replication?",
+    "options": ["DNA polymerase", "Ligase", "Helicase", "Primase"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_107",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the approximate orbital period of Mangalyaan (Mars Orbiter Mission) around Mars?",
+    "options": ["24 hours", "48 hours", "76.7 hours", "120 hours"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_108",
+    "category": "science",
+    "difficulty": 3,
+    "question": "The Saha Institute of Nuclear Physics, named after Meghnad Saha, is located in which Indian city?",
+    "options": ["Mumbai", "Chennai", "Kolkata", "Hyderabad"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_109",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which subatomic particle was predicted to exist by Paul Dirac and experimentally confirmed to exist in the same class as those Bose described?",
+    "options": ["Neutron", "Muon", "Positron", "Gluon"],
+    "correct_index": 2
+  },
+  {
+    "id": "sci_hard_110",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the approximate weight of the Chandrayaan-3 Vikram lander at lift-off?",
+    "options": ["500 kg", "1,749 kg", "3,900 kg", "6,000 kg"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_hard_111",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Har Gobind Khorana was born in Raipur, which was then in which region of British India?",
+    "options": ["Bengal", "Punjab", "Madras Presidency", "Bombay Presidency"],
+    "correct_index": 1
+  },
+  {
+    "id": "sci_hard_112",
+    "category": "science",
+    "difficulty": 3,
+    "question": "What is the name of the first Indian satellite for remote sensing, launched in 1988?",
+    "options": ["IRS-1A", "INSAT-1A", "ROHINI-1", "RESOURCESAT-1"],
+    "correct_index": 0
+  },
+  {
+    "id": "sci_hard_113",
+    "category": "science",
+    "difficulty": 3,
+    "question": "Which property of a radioactive element is defined as the time taken for half of its atoms to decay?",
+    "options": ["Decay constant", "Activity", "Half-life", "Binding energy"],
+    "correct_index": 2
+  }
+]

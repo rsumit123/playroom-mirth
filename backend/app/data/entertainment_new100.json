@@ -1,0 +1,802 @@
+[
+  {
+    "id": "ent_easy_075",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who directed the 2009 Bollywood film '3 Idiots' starring Aamir Khan?",
+    "options": ["Karan Johar", "Rajkumar Hirani", "Farhan Akhtar", "Sanjay Leela Bhansali"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_076",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Indian film was the first to receive an Oscar nomination for Best Foreign Language Film?",
+    "options": ["Salaam Bombay!", "Lagaan", "Mother India", "Guide"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_077",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Shah Rukh Khan and Kajol film holds the record for the longest continuous theatrical run at a Mumbai cinema?",
+    "options": ["Kuch Kuch Hota Hai", "Devdas", "Dilwale Dulhania Le Jayenge", "Mohabbatein"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_078",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Telugu film directed by SS Rajamouli became a massive pan-India blockbuster in 2015?",
+    "options": ["Magadheera", "Baahubali: The Beginning", "Eega", "Sye Raa Narasimha Reddy"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_079",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "AR Rahman won two Oscar Awards in 2009 for which Hollywood film set in India?",
+    "options": ["The Namesake", "Life of Pi", "Slumdog Millionaire", "The Jungle Book"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_080",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who directed Dangal (2016), the biographical sports drama starring Aamir Khan?",
+    "options": ["Nitesh Tiwari", "Ashutosh Gowariker", "Kabir Khan", "Sooraj Barjatya"],
+    "correct_index": 0
+  },
+  {
+    "id": "ent_easy_081",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "What is the real name of Tamil superstar Rajinikanth?",
+    "options": ["Rajesh Sharma", "Shivaji Rao Gaekwad", "Suresh Kumar Nair", "Vijay Bhaskar"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_082",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Bollywood film was the first major lead role of Salman Khan, released in 1989?",
+    "options": ["Tere Naam", "Biwi Ho To Aisi", "Maine Pyar Kiya", "Baaghi"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_083",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Deepika Padukone made her Bollywood debut in which 2007 film opposite Shah Rukh Khan?",
+    "options": ["Love Aaj Kal", "Chennai Express", "Om Shanti Om", "Cocktail"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_084",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Aamir Khan film is based on the true story of wrestlers Geeta Phogat and Babita Kumari?",
+    "options": ["Lagaan", "PK", "Dangal", "Rang De Basanti"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_085",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who directed the 2001 Bollywood classic Dil Chahta Hai in his directorial debut?",
+    "options": ["Zoya Akhtar", "Farhan Akhtar", "Anurag Kashyap", "Imtiaz Ali"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_086",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which was the debut Bollywood film of Shah Rukh Khan, released in 1992?",
+    "options": ["Baazigar", "Darr", "Deewana", "Raju Ban Gaya Gentleman"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_087",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In the 2009 Bollywood film 'Kaminey', who played both lead roles (twin brothers Charlie and Guddu)?",
+    "options": ["Ranveer Singh", "Ranbir Kapoor", "Arjun Kapoor", "Shahid Kapoor"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_easy_088",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which iconic 1975 Bollywood film directed by Ramesh Sippy features Amitabh Bachchan as Jai and Dharmendra as Veeru?",
+    "options": ["Deewar", "Sholay", "Don", "Zanjeer"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_089",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which 2022 Telugu film directed by SS Rajamouli won the Oscar for Best Original Song ('Naatu Naatu')?",
+    "options": ["Pushpa", "Baahubali 2", "RRR", "KGF Chapter 2"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_090",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who composed the music for Roja (1992) — his first film as a composer?",
+    "options": ["Ilaiyaraaja", "AR Rahman", "Shankar-Ehsaan-Loy", "Vishal Bhardwaj"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_091",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Bollywood actress played the title role in the 2012 thriller Kahaani, set in Kolkata?",
+    "options": ["Priyanka Chopra", "Kangana Ranaut", "Vidya Balan", "Rani Mukerji"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_092",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "KGF: Chapter 1 (2018), starring Yash, is primarily a film in which Indian language?",
+    "options": ["Tamil", "Telugu", "Kannada", "Malayalam"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_093",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who plays the villain Gabbar Singh in the 1975 Bollywood classic Sholay?",
+    "options": ["Sanjeev Kumar", "Amjad Khan", "Dharmendra", "Pran"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_094",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Karan Johar-directed 2001 film starred both Amitabh Bachchan and Shah Rukh Khan as father and son?",
+    "options": ["Mohabbatein", "Kabhi Khushi Kabhie Gham", "My Name Is Khan", "Kuch Kuch Hota Hai"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_095",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Indian OTT web series starring Saif Ali Khan and Nawazuddin Siddiqui was Netflix India's first original series (2018)?",
+    "options": ["Mirzapur", "Delhi Crime", "Sacred Games", "Scam 1992"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_096",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Bollywood film released in 2001 was directed by Ashutosh Gowariker and received an Oscar nomination for Best Foreign Language Film?",
+    "options": ["Swades", "Lagaan", "Jodha Akbar", "Mohenjo Daro"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_097",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In the film Taare Zameen Par (2007), Aamir Khan plays a teacher who helps a child with which learning disability?",
+    "options": ["Autism", "ADHD", "Dyslexia", "Down syndrome"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_098",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Bollywood actor played the role of Bhashkor Banerjee in the 2015 film Piku, opposite Deepika Padukone?",
+    "options": ["Naseeruddin Shah", "Irrfan Khan", "Anupam Kher", "Amitabh Bachchan"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_easy_099",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which 2013 Malayalam crime thriller starring Mohanlal was directed by Jeethu Joseph and later remade in multiple languages?",
+    "options": ["Drishyam", "Oppam", "Lucifer", "Pulimurugan"],
+    "correct_index": 0
+  },
+  {
+    "id": "ent_easy_100",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which legendary Bollywood singer was born as Abhas Kumar Ganguly and is known for songs like 'Mere Sapnon Ki Rani'?",
+    "options": ["Manna Dey", "Mohammed Rafi", "Mukesh", "Kishore Kumar"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_easy_101",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who directed the 2011 road comedy drama Zindagi Na Milegi Dobara starring Hrithik Roshan, Farhan Akhtar and Abhay Deol?",
+    "options": ["Farhan Akhtar", "Imtiaz Ali", "Zoya Akhtar", "Dibakar Banerjee"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_102",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Amazon Prime Video series set in Uttar Pradesh features Pankaj Tripathi as the crime lord Kaleen Bhaiya?",
+    "options": ["Panchayat", "Breathe", "Mirzapur", "The Family Man"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_103",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which actress won the National Award for Best Actress for her performance in the 2014 film Queen?",
+    "options": ["Priyanka Chopra", "Alia Bhatt", "Kangana Ranaut", "Anushka Sharma"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_104",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Who directed the 2012 film Gangs of Wasseypur, a cult crime saga set in the coal belt of Jharkhand?",
+    "options": ["Sujoy Ghosh", "Anurag Kashyap", "Dibakar Banerjee", "Vishal Bhardwaj"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_105",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "In the 1960 epic film Mughal-E-Azam, who played the role of Prince Salim?",
+    "options": ["Raj Kapoor", "Dev Anand", "Dilip Kumar", "Sunil Dutt"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_106",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which 2019 Bollywood film starring Shahid Kapoor is the Hindi remake of the Telugu film Arjun Reddy?",
+    "options": ["Batti Gul Meter Chalu", "Kabir Singh", "Haider", "Udta Punjab"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_easy_107",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Bollywood film directed by Sanjay Leela Bhansali stars Deepika Padukone, Ranveer Singh and Shahid Kapoor and was released in 2018?",
+    "options": ["Ram-Leela", "Bajirao Mastani", "Padmaavat", "Black"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_easy_108",
+    "category": "entertainment",
+    "difficulty": 1,
+    "question": "Which Indian film directed by Mani Ratnam was AR Rahman's debut as a film music composer?",
+    "options": ["Bombay", "Dil Se", "Roja", "Yuva"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_077",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In which year was the iconic Bollywood film Dilwale Dulhania Le Jayenge (DDLJ) released?",
+    "options": ["1993", "1994", "1995", "1996"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_078",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "What is the real name of Bollywood lyricist and poet Gulzar?",
+    "options": ["Ramesh Chandra Mehta", "Sampooran Singh Kalra", "Balraj Sahni", "Sudarshan Faakir"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_079",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "The song 'Naatu Naatu' from RRR won the Oscar for Best Original Song. Who composed the music for this song?",
+    "options": ["AR Rahman", "DSP (Devi Sri Prasad)", "MM Keeravani", "Anirudh Ravichander"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_080",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which director made the 2002 Hindi film Devdas, featuring Shah Rukh Khan in the lead role?",
+    "options": ["Karan Johar", "Vidhu Vinod Chopra", "Sanjay Leela Bhansali", "Yash Chopra"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_081",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "What is the real name of Bollywood actor Irrfan Khan?",
+    "options": ["Irshad Ali Khan", "Sahabzade Irfan Ali Khan", "Nasir Hussain Khan", "Asif Ali Khan"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_082",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Who directed the 2007 Bollywood romantic film Jab We Met starring Shahid Kapoor and Kareena Kapoor?",
+    "options": ["Anurag Basu", "Sriram Raghavan", "Imtiaz Ali", "Vikram Bhatt"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_083",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In which year was KGF: Chapter 1 starring Yash first released in Kannada?",
+    "options": ["2016", "2017", "2018", "2019"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_084",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which Tamil director is known for the films Roja (1992), Bombay (1995), and Dil Se (1998)?",
+    "options": ["Shankar", "Mani Ratnam", "K Balachander", "Bala"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_085",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which Bollywood film directed by Shoojit Sircar (2015) stars Amitabh Bachchan, Deepika Padukone and Irrfan Khan?",
+    "options": ["Pink", "Vicky Donor", "October", "Piku"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_medium_086",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Who directed the acclaimed 2001 Bollywood film Lagaan that was nominated for the Academy Award for Best Foreign Language Film?",
+    "options": ["Vidhu Vinod Chopra", "Ashutosh Gowariker", "Sooraj Barjatya", "Priyadarshan"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_087",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "The 2009 film Paa, where Amitabh Bachchan played a child with progeria, was directed by whom?",
+    "options": ["Sujoy Ghosh", "R Balki", "Anurag Basu", "Rajkumar Hirani"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_088",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Who directed the 2007 Bollywood comedy film Bhool Bhulaiyaa starring Akshay Kumar and Vidya Balan?",
+    "options": ["Vikram Bhatt", "Priyadarshan", "David Dhawan", "Sanjay Leela Bhansali"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_089",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In which year was the iconic Bollywood film Sholay directed by Ramesh Sippy released?",
+    "options": ["1973", "1974", "1975", "1976"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_090",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which actor played the role of Mahabali Shaka / Baahubali in the Baahubali film series?",
+    "options": ["Ram Charan", "Jr. NTR", "Prabhas", "Rana Daggubati"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_091",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Sacred Games (2018), Netflix India's first original series, was directed by which pair of directors?",
+    "options": ["Neeraj Pandey and Ribhu Dasgupta", "Anurag Kashyap and Vikramaditya Motwane", "Sujoy Ghosh and Dibakar Banerjee", "Ram Madhvani and Tigmanshu Dhulia"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_092",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which celebrated Bollywood actress starred opposite Amitabh Bachchan in the 1975 film Sholay as Basanti?",
+    "options": ["Zeenat Aman", "Rekha", "Hema Malini", "Dimple Kapadia"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_093",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which director made the 2014 Bollywood film Queen, for which Kangana Ranaut won the National Award?",
+    "options": ["Hansal Mehta", "Zoya Akhtar", "Vikas Bahl", "Dibakar Banerjee"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_094",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In the 1994 blockbuster Hum Aapke Hain Koun, which music duo composed the hit song 'Didi Tera Devar Deewana' sung by Lata Mangeshkar and S.P. Balasubrahmanyam?",
+    "options": ["Kalyanji-Anandji", "Ramesh-Suresh", "Raam Laxman", "Nadeem-Shravan"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_095",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which 2013 musical romantic drama directed by Mohit Suri starred Aditya Roy Kapur and Shraddha Kapoor?",
+    "options": ["Half Girlfriend", "Ek Villain", "Aashiqui 2", "Malang"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_096",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "The 1960 epic film Mughal-E-Azam was directed by which Indian filmmaker?",
+    "options": ["Guru Dutt", "Bimal Roy", "K. Asif", "Raj Kapoor"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_097",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which director made Kabhi Khushi Kabhie Gham (2001) — his second directorial venture after Kuch Kuch Hota Hai?",
+    "options": ["Aditya Chopra", "Karan Johar", "Yash Chopra", "Sooraj Barjatya"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_098",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which Hindi film directed by Sooraj Barjatya (1994) featured Madhuri Dixit and Salman Khan in the leads?",
+    "options": ["Beta", "Saajan", "Hum Aapke Hain Koun", "Maine Pyar Kiya"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_099",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In which year was Amitabh Bachchan selected for the Dadasaheb Phalke Award, India's highest film honour?",
+    "options": ["2016", "2017", "2018", "2019"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_100",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which 2019 Bollywood film, directed by Sandeep Reddy Vanga, is the Hindi remake of the 2017 Telugu hit Arjun Reddy?",
+    "options": ["Luka Chuppi", "Gully Boy", "Super 30", "Kabir Singh"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_medium_101",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Who composed the original score and 'Jai Ho' song for Slumdog Millionaire, earning two Oscars at the 2009 Academy Awards?",
+    "options": ["Shankar-Ehsaan-Loy", "Pritam Chakraborty", "AR Rahman", "Amit Trivedi"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_102",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In the 2009 3 Idiots, which character's famous catchphrase is 'Aal Izz Well'?",
+    "options": ["Raju Rastogi", "Farhan Qureshi", "Rancho (Phunsukh Wangdu)", "Virus (Viru Sahastrabuddhe)"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_103",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "The 2018 Bollywood film Padmaavat was directed by Sanjay Leela Bhansali. In this film, who played Alauddin Khilji?",
+    "options": ["Shahid Kapoor", "Ranveer Singh", "Hrithik Roshan", "Arjun Kapoor"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_104",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which Bollywood director is known for making the Malayalam film Drishyam (2013) starring Mohanlal?",
+    "options": ["Priyadarshan", "Lal Jose", "Jeethu Joseph", "Shaji N. Karun"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_105",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which actress starred as Vidya Bagchi in the 2012 thriller Kahaani, directed by Sujoy Ghosh?",
+    "options": ["Tabu", "Konkona Sen Sharma", "Vidya Balan", "Radhika Apte"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_106",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "In Baahubali: The Conclusion (2017), which actor played the villain Bhallaladeva?",
+    "options": ["Sathyaraj", "Prabhas", "Rana Daggubati", "Sudeep"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_medium_107",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which song from the 1942-A Love Story (1994) composed by RD Burman was one of his last compositions before his death?",
+    "options": ["Ek Ladki Ko Dekha", "Ae Mere Humsafar", "Yaaron Dosti", "Pehla Nasha"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_medium_108",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "Which 2011 Bollywood film about three friends on a road trip across Spain starred Hrithik Roshan, Abhay Deol and Farhan Akhtar?",
+    "options": ["Dil Chahta Hai", "Znmd (Zindagi Na Milegi Dobara)", "Rock On", "Lakshya"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_medium_109",
+    "category": "entertainment",
+    "difficulty": 2,
+    "question": "The Dadasaheb Phalke Award for 2019 was given to which legendary Indian film personality?",
+    "options": ["Lata Mangeshkar", "Amitabh Bachchan", "Rajinikanth", "Asha Bhosle"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_075",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "AR Rahman's debut film Roja (1992) won him the National Film Award for Best Music Direction. What was his original name before he converted to Islam?",
+    "options": ["Dileep Kumar", "Saravanan Shanmugam", "A.S. Dileep Kumar", "Dilip Shanmugam"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_076",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In the 1975 film Sholay, what was the name of the village where Gabbar Singh terrorised locals?",
+    "options": ["Ramgarh", "Rampur", "Rampura", "Ramanagara"],
+    "correct_index": 0
+  },
+  {
+    "id": "ent_hard_077",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Who wrote the screenplay and dialogues for the iconic film Sholay (1975)?",
+    "options": ["Gulzar", "Javed Akhtar alone", "Salim-Javed (Salim Khan and Javed Akhtar)", "Rajinder Singh Bedi"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_078",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "The 2012 thriller Kahaani directed by Sujoy Ghosh won which three National Film Awards?",
+    "options": ["Best Film, Best Actress, Best Direction", "Best Screenplay, Best Editing, Special Jury", "Best Direction, Best Screenplay, Best Actress", "Best Editing, Best Sound, Best Screenplay"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_hard_079",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In the Baahubali films, who played the role of Kattappa — the trusted general?",
+    "options": ["Satyaraj", "Nasser", "Nassar", "Sathyaraj"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_hard_080",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which 2001 Bollywood film won the National Film Award for Best Hindi Film and was Farhan Akhtar's directorial debut?",
+    "options": ["Lagaan", "Dil Chahta Hai", "Company", "Kabhi Khushi Kabhie Gham"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_hard_081",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In 'Dilwale Dulhania Le Jayenge' (1995), what was the name of Kajol's character?",
+    "options": ["Tina", "Anjali", "Simran", "Pooja"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_082",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In the 2002 film Devdas by Sanjay Leela Bhansali, who played the role of the courtesan Chandramukhi?",
+    "options": ["Aishwarya Rai", "Tabu", "Rekha", "Madhuri Dixit"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_hard_083",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which production house produced Baahubali: The Beginning (2015) under director SS Rajamouli?",
+    "options": ["PVR Pictures", "UV Creations", "Arka Media Works", "Mythri Movie Makers"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_084",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Before Roja (1992), AR Rahman had primarily worked as a composer for what kind of work?",
+    "options": ["Stage plays and theater", "Television serials", "Advertisement jingles", "Classical music concerts"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_085",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "The 2009 Bollywood film 3 Idiots is loosely based on which novel by Chetan Bhagat?",
+    "options": ["2 States", "Five Point Someone", "The 3 Mistakes of My Life", "Revolution 2020"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_hard_086",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Mother India (1957), India's first Oscar-nominated film, was directed by whom?",
+    "options": ["Raj Kapoor", "Bimal Roy", "Mehboob Khan", "V. Shantaram"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_087",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In Paa (2009), Amitabh Bachchan played the role of Auro, a child with progeria. His real-life son Abhishek Bachchan played his on-screen father. What was the father's name in the film?",
+    "options": ["Amol Arte", "Vivaan Banerjee", "Arun Khanna", "Baldev Thakur"],
+    "correct_index": 0
+  },
+  {
+    "id": "ent_hard_088",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "The 2002 Tamil film Kannathil Muthamittal, directed by Mani Ratnam and set against the Sri Lankan civil war, won AR Rahman his fourth National Film Award for Best Music Direction. Who were the lead adult actors?",
+    "options": ["Suriya and Jyotika", "R. Madhavan and Simran", "Vikram and Asin", "Dhanush and Trisha"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_hard_089",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "The Mughal-E-Azam (1960) director K Asif worked on the film for approximately how many years before its completion?",
+    "options": ["5 years", "7 years", "9 years", "12 years"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_090",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In Gangs of Wasseypur (2012), Manoj Bajpayee played which character who is the central villain throughout Part 1?",
+    "options": ["Ramadhir Singh", "Shahid Khan", "Sardar Khan", "Faizal Khan"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_091",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which Indian rock band composed the critically acclaimed soundtrack for the 2015 Hindi film Masaan, directed by Neeraj Ghaywan?",
+    "options": ["Euphoria", "Parikrama", "Indian Ocean", "Agnee"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_092",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "The classic Bollywood song 'Mere Sapnon Ki Rani' from the 1969 film Aradhana was playback-sung by which legendary singer?",
+    "options": ["Manna Dey", "Mukesh", "Mohammed Rafi", "Kishore Kumar"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_hard_093",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Who composed the music for the 2015 Bollywood film Bajirao Mastani directed by Sanjay Leela Bhansali?",
+    "options": ["AR Rahman", "Shankar-Ehsaan-Loy", "Sanjay Leela Bhansali himself", "Salim-Sulaiman"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_094",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Dil Se (1998), directed by Mani Ratnam, had its music composed by AR Rahman. Which actor played the lead role of Amar?",
+    "options": ["Saif Ali Khan", "Aamir Khan", "Salman Khan", "Shah Rukh Khan"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_hard_095",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In the 1994 film Hum Aapke Hain Koun, Lata Mangeshkar received a Special Award for which song?",
+    "options": ["Wah Wah Ramji", "Didi Tera Devar Deewana", "Pehla Pehla Pyar", "Joote Do Paise Lo"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_hard_096",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which Bollywood director made his first Hindi-language film with Dil Chahta Hai (2001), having previously worked mostly in television?",
+    "options": ["Abhishek Kapoor", "Farhan Akhtar", "Vikram Motwane", "Nikhil Advani"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_hard_097",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "The song 'Chaiyya Chaiyya' from the 1998 film Dil Se, shot atop a moving train, was picturised on which actor?",
+    "options": ["Aamir Khan", "Salman Khan", "Shah Rukh Khan", "Saif Ali Khan"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_098",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which 2016 film directed by Aniruddha Roy Chowdhury starred Amitabh Bachchan as a lawyer defending a girl falsely accused — and led him to win a National Award?",
+    "options": ["Wazir", "Te3n", "Pink", "Sarkar 3"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_099",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In KGF: Chapter 1 (2018), the character Rocky's full name is Rocky Bhai. What is the name of the gold mining field the film is set around?",
+    "options": ["Kolar Gold Fields", "Mysore Gold Fields", "Karnataka Gold Reserve", "Hubli Gold Mines"],
+    "correct_index": 0
+  },
+  {
+    "id": "ent_hard_100",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which Bollywood film producer and director was the father of Aditya Chopra, the director of Dilwale Dulhania Le Jayenge (1995)?",
+    "options": ["BR Chopra", "Yash Chopra", "Vidhu Vinod Chopra", "Ramesh Chopra"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_hard_101",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In the 2013 film Drishyam (Malayalam), which actress played the role of the police officer Geetha Prabhakar investigating the case?",
+    "options": ["Shobana", "Manju Warrier", "Asha Sharath", "Meera Vasudevan"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_102",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Gulzar, who won the Dadasaheb Phalke Award in 2014, also won an Oscar (2009) for which song from Slumdog Millionaire?",
+    "options": ["O Saya", "Paper Planes", "Jai Ho", "Ringa Ringa"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_103",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which female director of the Zoya Akhtar-directed film Zindagi Na Milegi Dobara (2011) also co-wrote the screenplay for Dil Dhadakne Do (2015)?",
+    "options": ["Farah Khan", "Reema Kagti", "Juhi Chaturvedi", "Gauri Shinde"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_hard_104",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "In the 1960 film Mughal-E-Azam, the famous song 'Pyar Kiya To Darna Kya' was sung by which legendary singer?",
+    "options": ["Asha Bhosle", "Geeta Dutt", "Shamshad Begum", "Lata Mangeshkar"],
+    "correct_index": 3
+  },
+  {
+    "id": "ent_hard_105",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Rajinikanth, who received the Dadasaheb Phalke Award for 2019, made his Tamil film acting debut under which director?",
+    "options": ["S.P. Muthuraman", "K. Balachander", "Bharathiraja", "Mahendran"],
+    "correct_index": 1
+  },
+  {
+    "id": "ent_hard_106",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "Which Indian film was the first to gross over Rs 1000 crore at the box office in India?",
+    "options": ["Dangal", "PK", "Baahubali: The Conclusion", "3 Idiots"],
+    "correct_index": 2
+  },
+  {
+    "id": "ent_hard_107",
+    "category": "entertainment",
+    "difficulty": 3,
+    "question": "The 2009 3 Idiots song 'Give Me Some Sunshine' was sung by Suraj Jagan and Sharman Joshi. Which character did Sharman Joshi play in the film?",
+    "options": ["Rancho", "Farhan", "Raju", "Virus"],
+    "correct_index": 2
+  }
+]

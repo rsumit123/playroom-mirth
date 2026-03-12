@@ -1,0 +1,802 @@
+[
+  {
+    "id": "gen_easy_068",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What does GST stand for in India?",
+    "options": ["Goods and Services Tax", "General Sales Tax", "Government Service Tax", "Gross Supply Tax"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_easy_069",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the national animal of India?",
+    "options": ["Lion", "Elephant", "Tiger", "Leopard"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_070",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the national flower of India?",
+    "options": ["Rose", "Marigold", "Jasmine", "Lotus"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_easy_071",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the national fruit of India?",
+    "options": ["Banana", "Mango", "Guava", "Papaya"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_easy_072",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the national bird of India?",
+    "options": ["Parrot", "Sparrow", "Peacock", "Crane"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_073",
+    "category": "general",
+    "difficulty": 1,
+    "question": "In which year was GST introduced in India?",
+    "options": ["2015", "2016", "2017", "2018"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_074",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which Indian company founded by Sachin Bansal and Binny Bansal became a major e-commerce platform?",
+    "options": ["Amazon India", "Snapdeal", "Flipkart", "Myntra"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_075",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What does UPI stand for in Indian digital payments?",
+    "options": ["Universal Payment Interface", "Unified Payments Interface", "United Payment Index", "Unified Processing Interface"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_easy_076",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which festival is known as the Festival of Lights in India?",
+    "options": ["Holi", "Eid", "Diwali", "Navratri"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_077",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the currency of India?",
+    "options": ["Taka", "Rupee", "Dinar", "Baht"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_easy_078",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which app, launched by Reliance in 2016, disrupted India's telecom sector with free data and calls?",
+    "options": ["Airtel", "BSNL", "Jio", "Vodafone"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_079",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the national tree of India?",
+    "options": ["Neem", "Peepal", "Banyan", "Teak"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_080",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which Indian festival is celebrated by throwing coloured powder and water?",
+    "options": ["Dussehra", "Holi", "Pongal", "Baisakhi"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_easy_081",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which Indian space agency successfully landed a spacecraft near the Moon's south pole in 2023?",
+    "options": ["DRDO", "ISRO", "HAL", "BARC"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_easy_082",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What does ISRO stand for?",
+    "options": ["Indian Space Research Organisation", "Indian Science Research Office", "International Space Research Organisation", "Indian Satellite Research Office"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_easy_083",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which Indian food delivery app was founded in 2008 and lists restaurants for ordering online?",
+    "options": ["Swiggy", "Zomato", "Dunzo", "BigBasket"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_easy_084",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Pongal is the harvest festival primarily celebrated in which Indian state?",
+    "options": ["Kerala", "Karnataka", "Tamil Nadu", "Andhra Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_085",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the national sport of India?",
+    "options": ["Cricket", "Kabaddi", "Field Hockey", "Badminton"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_086",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which Indian state celebrates the harvest festival Onam?",
+    "options": ["Tamil Nadu", "Karnataka", "Goa", "Kerala"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_easy_087",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which is India's largest e-commerce company by market share, now owned by Walmart?",
+    "options": ["Amazon India", "Flipkart", "Snapdeal", "Meesho"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_easy_088",
+    "category": "general",
+    "difficulty": 1,
+    "question": "In which year did India demonetize its ₹500 and ₹1000 notes?",
+    "options": ["2014", "2015", "2016", "2017"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_089",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What does the 'P' in Paytm stand for?",
+    "options": ["Purchase", "Pay", "Platform", "Portal"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_easy_090",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which Indian city is known as the Silicon Valley of India?",
+    "options": ["Mumbai", "Pune", "Hyderabad", "Bengaluru"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_easy_091",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is India's largest social media/messaging platform by number of users?",
+    "options": ["Instagram", "Facebook", "WhatsApp", "Telegram"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_092",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which Indian online education platform was founded by Byju Raveendran?",
+    "options": ["Unacademy", "Vedantu", "BYJU'S", "Khan Academy India"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_093",
+    "category": "general",
+    "difficulty": 1,
+    "question": "How many states are there in India as of 2024?",
+    "options": ["25", "28", "29", "30"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_easy_094",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which is the smallest state in India by area?",
+    "options": ["Sikkim", "Tripura", "Nagaland", "Goa"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_easy_095",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What does ATM stand for in banking?",
+    "options": ["Automated Teller Machine", "Automatic Transfer Mode", "Automated Transaction Module", "Automatic Teller Module"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_easy_096",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which Indian ride-hailing app, founded by Bhavish Aggarwal, competes with Uber in India?",
+    "options": ["Rapido", "Meru", "Ola", "InDriver"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_097",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which is India's largest airline by market share?",
+    "options": ["Air India", "SpiceJet", "IndiGo", "Vistara"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_easy_098",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What is the full form of LED?",
+    "options": ["Light Emitting Diode", "Low Energy Display", "Laser Emitting Device", "Light Encoding Diode"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_easy_099",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which payment app in India uses a distinctive blue colour and was launched by Google?",
+    "options": ["PhonePe", "Paytm", "Amazon Pay", "Google Pay"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_easy_100",
+    "category": "general",
+    "difficulty": 1,
+    "question": "What does 'www' stand for in a website address?",
+    "options": ["World Wide Web", "World Web Wire", "Wide World Web", "World Wire Web"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_easy_101",
+    "category": "general",
+    "difficulty": 1,
+    "question": "Which Indian company owns the Tata brand of consumer products including salt and tea?",
+    "options": ["Reliance Industries", "Mahindra Group", "Tata Group", "Aditya Birla Group"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_076",
+    "category": "general",
+    "difficulty": 2,
+    "question": "In which year was Flipkart founded by Sachin Bansal and Binny Bansal?",
+    "options": ["2005", "2007", "2009", "2011"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_077",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Who founded Paytm in 2010?",
+    "options": ["Deepinder Goyal", "Vijay Shekhar Sharma", "Sachin Bansal", "Ritesh Agarwal"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_078",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Swiggy was launched in August 2014 from which Indian city?",
+    "options": ["Mumbai", "Delhi", "Bengaluru", "Hyderabad"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_079",
+    "category": "general",
+    "difficulty": 2,
+    "question": "India's UPI (Unified Payments Interface) was launched for public use in which year?",
+    "options": ["2014", "2015", "2016", "2017"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_080",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Who designed the official symbol of the Indian Rupee (₹) adopted in 2010?",
+    "options": ["Anand Krishnan", "D. Udaya Kumar", "Rajesh Sharma", "Priya Mehta"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_081",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Make in India was launched by Prime Minister Narendra Modi in which year?",
+    "options": ["2013", "2014", "2015", "2016"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_082",
+    "category": "general",
+    "difficulty": 2,
+    "question": "India's first Mars mission, Mangalyaan, was launched in which year?",
+    "options": ["2011", "2012", "2013", "2014"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_083",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which company acquired Flipkart for approximately $16 billion in 2018?",
+    "options": ["Amazon", "Alibaba", "Walmart", "Microsoft"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_084",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Nykaa, the Indian beauty e-commerce platform, was founded by whom?",
+    "options": ["Shradha Sharma", "Falguni Nayar", "Ghazal Alagh", "Vineeta Singh"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_085",
+    "category": "general",
+    "difficulty": 2,
+    "question": "IndiGo airline was founded in which year by Rahul Bhatia and Rakesh Gangwal?",
+    "options": ["2003", "2005", "2007", "2009"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_086",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which telecom company launched India's first 5G services in October 2022?",
+    "options": ["Jio", "BSNL", "Airtel", "Vodafone-Idea"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_087",
+    "category": "general",
+    "difficulty": 2,
+    "question": "BYJU'S was founded in which year?",
+    "options": ["2009", "2011", "2013", "2015"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_088",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Ola Cabs was founded in December 2010 by Bhavish Aggarwal and whom?",
+    "options": ["Ankit Bhati", "Rahul Yadav", "Ritesh Agarwal", "Kunal Bahl"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_medium_089",
+    "category": "general",
+    "difficulty": 2,
+    "question": "The Tata Nano was launched as the world's most affordable car in which year?",
+    "options": ["2006", "2008", "2010", "2012"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_090",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which Indian startup became the country's first to reach a $100 billion valuation?",
+    "options": ["Flipkart", "Reliance Jio Platforms", "Paytm", "BYJU'S"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_091",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Project Tiger, which declared the Bengal Tiger as India's national animal, was started in which year?",
+    "options": ["1963", "1973", "1983", "1993"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_092",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Zomato was originally launched under what name in 2008?",
+    "options": ["MenuMania", "FoodFinder", "FoodieBay", "DineOut"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_093",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which Indian payment app, launched by PhonePe founder Sameer Nigam, is a rival to Google Pay and Paytm?",
+    "options": ["MobiKwik", "PhonePe", "FreeCharge", "Airtel Money"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_094",
+    "category": "general",
+    "difficulty": 2,
+    "question": "India achieved the distinction of being the first country to successfully land at the Moon's south pole in which year?",
+    "options": ["2019", "2021", "2022", "2023"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_medium_095",
+    "category": "general",
+    "difficulty": 2,
+    "question": "What was the original price (in Indian Rupees) of the Tata Nano at its launch in 2008?",
+    "options": ["₹50,000", "₹1,00,000", "₹1,50,000", "₹2,00,000"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_096",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which Indian company operates the Myntra fashion e-commerce platform?",
+    "options": ["Amazon India", "Tata CLiQ", "Reliance Retail", "Flipkart"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_medium_097",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Reliance Jio commercially launched its 4G services for the public on which date in 2016?",
+    "options": ["5 January 2016", "5 March 2016", "5 September 2016", "5 December 2016"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_098",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which Indian startup, founded by Ritesh Agarwal, is known for budget hotel aggregation?",
+    "options": ["MakeMyTrip", "Treebo", "OYO Rooms", "Zostel"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_099",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which organisation developed and manages India's UPI payment system?",
+    "options": ["RBI", "SBI", "NPCI", "SEBI"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_100",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Chandrayaan-3's lander that touched down on the Moon was named?",
+    "options": ["Pragyan", "Vikram", "Chandrashekar", "Aryabhata"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_101",
+    "category": "general",
+    "difficulty": 2,
+    "question": "India's digital payment system Aadhaar is linked to a unique how-many-digit biometric ID?",
+    "options": ["10 digits", "12 digits", "14 digits", "16 digits"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_102",
+    "category": "general",
+    "difficulty": 2,
+    "question": "The festival of Navratri literally means nine what in Sanskrit?",
+    "options": ["Days", "Nights", "Gods", "Prayers"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_103",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which Indian app, developed by Bengaluru-based startup, allows users to invest in digital gold and mutual funds and is valued as a fintech unicorn?",
+    "options": ["Groww", "Zerodha", "Upstox", "Kuvera"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_medium_104",
+    "category": "general",
+    "difficulty": 2,
+    "question": "The Indian Rupee symbol ₹ is a combination of which two letters?",
+    "options": ["Devanagari 'र' and Latin 'P'", "Devanagari 'र' and Latin 'R'", "Devanagari 'ऋ' and Latin 'R'", "Devanagari 'रु' and Latin 'P'"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_105",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Chandrayaan-1, India's first lunar mission, was launched in which year?",
+    "options": ["2005", "2006", "2007", "2008"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_medium_106",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which Indian city hosts Asia's largest flower market known as the Dadar Flower Market?",
+    "options": ["Delhi", "Kolkata", "Mumbai", "Chennai"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_medium_107",
+    "category": "general",
+    "difficulty": 2,
+    "question": "Which Indian e-commerce company's name is derived from the Sanskrit word for 'commerce'?",
+    "options": ["Meesho", "Snapdeal", "Flipkart", "Nykaa"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_medium_108",
+    "category": "general",
+    "difficulty": 2,
+    "question": "India's first indigenously developed supercomputer was named?",
+    "options": ["Param", "Shakti", "Agni", "Bhaskar"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_hard_076",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Flipkart was originally founded in 2007 as an online retailer primarily selling what kind of products?",
+    "options": ["Electronics", "Clothing", "Books", "Groceries"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_077",
+    "category": "general",
+    "difficulty": 3,
+    "question": "India's Mars Orbiter Mission (Mangalyaan) made India the first country to reach Mars orbit in how many attempts?",
+    "options": ["One", "Two", "Three", "Four"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_hard_078",
+    "category": "general",
+    "difficulty": 3,
+    "question": "The UPI system was piloted on April 11, 2016, by which RBI Governor?",
+    "options": ["Duvvuri Subbarao", "Urjit Patel", "Raghuram Rajan", "Shaktikanta Das"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_079",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Which percentage of India's total currency value in circulation did the demonetized ₹500 and ₹1000 notes represent in November 2016?",
+    "options": ["56%", "68%", "76%", "86%"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_hard_080",
+    "category": "general",
+    "difficulty": 3,
+    "question": "In which IIT did D. Udaya Kumar, the designer of the Indian Rupee symbol, study at the time of the design competition?",
+    "options": ["IIT Delhi", "IIT Bombay", "IIT Madras", "IIT Kanpur"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_081",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Nykaa founder Falguni Nayar was previously a Managing Director at which financial firm before starting Nykaa at age 49?",
+    "options": ["ICICI Securities", "Goldman Sachs India", "Kotak Mahindra Capital", "DSP Merrill Lynch"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_082",
+    "category": "general",
+    "difficulty": 3,
+    "question": "India's Chandrayaan-3 lander touched down on the Moon on 23 August 2023 at approximately what latitude south?",
+    "options": ["45°S", "55°S", "69°S", "80°S"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_083",
+    "category": "general",
+    "difficulty": 3,
+    "question": "BYJU'S co-founder Divya Gokulnath is also the wife of Byju Raveendran. What was her role at BYJU'S?",
+    "options": ["CFO", "COO", "Co-founder and teacher", "Head of Marketing"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_084",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Reliance Jio's parent company One97 Communications is the parent of Paytm — False. Which company is Jio's parent?",
+    "options": ["Tata Sons", "Aditya Birla Group", "Reliance Industries Limited", "Adani Enterprises"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_085",
+    "category": "general",
+    "difficulty": 3,
+    "question": "India's first indigenously developed supercomputer, PARAM 8000, was built by which government organisation?",
+    "options": ["DRDO", "ISRO", "C-DAC", "BARC"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_086",
+    "category": "general",
+    "difficulty": 3,
+    "question": "The Royal Bengal Tiger was officially declared India's national animal in which year after the launch of Project Tiger?",
+    "options": ["1969", "1971", "1973", "1975"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_087",
+    "category": "general",
+    "difficulty": 3,
+    "question": "India's Aadhaar biometric identity programme was established under which authority?",
+    "options": ["Ministry of Finance", "RBI", "Unique Identification Authority of India (UIDAI)", "Ministry of Home Affairs"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_088",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Which Indian company operates the digital wallet MobiKwik?",
+    "options": ["Paytm", "One MobiKwik Systems", "Axis Bank", "ICICI Bank"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_089",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Zomato was founded in 2008 by Deepinder Goyal while he was working at which consulting firm?",
+    "options": ["McKinsey", "BCG", "Bain & Company", "Deloitte"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_090",
+    "category": "general",
+    "difficulty": 3,
+    "question": "In the context of India's internet infrastructure, what does TRAI stand for?",
+    "options": ["Telecom Regulatory Authority of India", "Technology Research Authority of India", "Telecommunications Reach and Access Initiative", "Technical Regulation Authority of India"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_hard_091",
+    "category": "general",
+    "difficulty": 3,
+    "question": "What was the initial capital invested by Sachin Bansal and Binny Bansal when founding Flipkart in 2007?",
+    "options": ["₹1,00,000", "₹2,00,000", "₹4,00,000", "₹10,00,000"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_092",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Mangalyaan entered Mars orbit on which date in 2014, making India the first Asian country to succeed?",
+    "options": ["5 July 2014", "24 September 2014", "14 November 2014", "5 December 2014"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_093",
+    "category": "general",
+    "difficulty": 3,
+    "question": "India became the world's 5th largest economy by nominal GDP in 2022, overtaking which country?",
+    "options": ["France", "UK", "Italy", "Brazil"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_094",
+    "category": "general",
+    "difficulty": 3,
+    "question": "The Indian Peacock was officially recognised as India's national bird on which date in 1963?",
+    "options": ["1 January 1963", "1 February 1963", "26 January 1963", "15 August 1963"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_095",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Paytm's parent company One97 Communications was incorporated by Vijay Shekhar Sharma in which year?",
+    "options": ["2000", "2001", "2004", "2007"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_096",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Which Indian startup founded by Vijay Shekhar Sharma has its registered headquarters in Noida, Uttar Pradesh?",
+    "options": ["Zomato", "Paytm", "Meesho", "PolicyBazaar"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_097",
+    "category": "general",
+    "difficulty": 3,
+    "question": "GST in India replaced which of these tax systems that previously applied at the point of sale?",
+    "options": ["Income Tax", "Value Added Tax (VAT)", "Corporate Tax", "Property Tax"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_098",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Swiggy was co-founded by Sriharsha Majety, Nandan Reddy, and which third co-founder who formerly worked at Myntra?",
+    "options": ["Harshil Mathur", "Rahul Jaimini", "Suresh Kumar", "Vikram Ahuja"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_099",
+    "category": "general",
+    "difficulty": 3,
+    "question": "The Chandrayaan-3 rover that explored the Moon's south pole was named?",
+    "options": ["Pragyan", "Vikram", "Dhruva", "Surya"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_hard_100",
+    "category": "general",
+    "difficulty": 3,
+    "question": "How many subscribers did Reliance Jio acquire in its first 83 days after the September 2016 launch?",
+    "options": ["25 million", "50 million", "70 million", "100 million"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_101",
+    "category": "general",
+    "difficulty": 3,
+    "question": "India's National Payment Corporation (NPCI) was established in which year to integrate payment mechanisms?",
+    "options": ["2005", "2007", "2009", "2011"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_102",
+    "category": "general",
+    "difficulty": 3,
+    "question": "IndiGo airline commenced commercial operations in which year after being founded in 2005?",
+    "options": ["2005", "2006", "2007", "2008"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_103",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Chandrayaan-1 discovered evidence of what substance on the Moon's surface in 2008, a landmark scientific finding?",
+    "options": ["Helium-3", "Iron oxide", "Water molecules", "Carbon dioxide"],
+    "correct_index": 2
+  },
+  {
+    "id": "gen_hard_104",
+    "category": "general",
+    "difficulty": 3,
+    "question": "The Tata Nano's production was officially discontinued in which year due to low sales?",
+    "options": ["2015", "2016", "2017", "2018"],
+    "correct_index": 3
+  },
+  {
+    "id": "gen_hard_105",
+    "category": "general",
+    "difficulty": 3,
+    "question": "India's digital payments ecosystem saw UPI transactions cross 1 billion per month for the first time in which year?",
+    "options": ["2018", "2019", "2020", "2021"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_106",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Zerodha, India's largest stock broker by active clients, was founded in 2010 by Nithin Kamath and whom?",
+    "options": ["Nikhil Kamath", "Karthik Rangappa", "Venu Madhav", "Hanan Delawala"],
+    "correct_index": 0
+  },
+  {
+    "id": "gen_hard_107",
+    "category": "general",
+    "difficulty": 3,
+    "question": "Which Indian IIT alumnus duo who founded Flipkart previously worked as software engineers at Amazon before starting their own company?",
+    "options": ["Binny Bansal and Kunal Bahl", "Sachin Bansal and Binny Bansal", "Bhavish Aggarwal and Ankit Bhati", "Deepinder Goyal and Pankaj Chaddah"],
+    "correct_index": 1
+  },
+  {
+    "id": "gen_hard_108",
+    "category": "general",
+    "difficulty": 3,
+    "question": "India surpassed China to become the world's most populous country in which year according to the UN?",
+    "options": ["2021", "2022", "2023", "2024"],
+    "correct_index": 2
+  }
+]

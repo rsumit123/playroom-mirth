@@ -1,0 +1,802 @@
+[
+  {
+    "id": "pol_easy_181",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first Prime Minister of India?",
+    "options": ["Sardar Vallabhbhai Patel", "Jawaharlal Nehru", "Lal Bahadur Shastri", "Rajendra Prasad"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_182",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many Fundamental Rights are currently guaranteed by the Indian Constitution?",
+    "options": ["5", "7", "6", "8"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_183",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What does ECI stand for in Indian politics?",
+    "options": ["Election Commission of India", "Economic Council of India", "Electoral Council of India", "Enforcement Commission of India"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_184",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many elected seats does the Lok Sabha have?",
+    "options": ["545", "552", "543", "500"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_185",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which article of the Indian Constitution abolishes untouchability?",
+    "options": ["Article 14", "Article 15", "Article 17", "Article 19"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_186",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India's Constitution was adopted by the Constituent Assembly on which date?",
+    "options": ["26 January 1950", "15 August 1947", "26 November 1949", "30 January 1948"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_187",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first President of India?",
+    "options": ["V. V. Giri", "Rajendra Prasad", "S. Radhakrishnan", "Zakir Husain"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_188",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which house of Parliament is known as the 'upper house'?",
+    "options": ["Lok Sabha", "Rajya Sabha", "Vidhan Sabha", "Vidhan Parishad"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_189",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India's Republic Day is celebrated on which date every year?",
+    "options": ["15 August", "2 October", "26 November", "26 January"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_190",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which amendment to the Indian Constitution added the words 'Socialist' and 'Secular' to the Preamble?",
+    "options": ["44th Amendment", "52nd Amendment", "42nd Amendment", "86th Amendment"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_191",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Preamble of India's Constitution begins with which words?",
+    "options": ["In the name of God", "We the People of India", "By the order of Parliament", "By sovereign authority"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_192",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which article of the Indian Constitution guarantees the Right to Equality?",
+    "options": ["Article 12", "Article 14", "Article 19", "Article 21"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_193",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Ayushman Bharat PM-JAY health scheme was launched in which year?",
+    "options": ["2016", "2019", "2017", "2018"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_194",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which article of the Constitution deals with the Right to Life and Personal Liberty?",
+    "options": ["Article 19", "Article 21", "Article 22", "Article 32"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_195",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many languages are listed in the Eighth Schedule of the Indian Constitution?",
+    "options": ["18", "14", "22", "25"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_196",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who chaired the Drafting Committee of the Indian Constitution?",
+    "options": ["Jawaharlal Nehru", "Rajendra Prasad", "B. R. Ambedkar", "Sardar Patel"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_197",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Emergency declared by Indira Gandhi in India began in which year?",
+    "options": ["1973", "1974", "1975", "1977"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_198",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which article of the Constitution provides the Right to Constitutional Remedies?",
+    "options": ["Article 30", "Article 32", "Article 35", "Article 28"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_199",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "MGNREGA guarantees a minimum of how many days of wage employment per year to rural households?",
+    "options": ["60", "90", "120", "100"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_200",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India's first general election was held in which year?",
+    "options": ["1950", "1947", "1954", "1952"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_201",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was India's first woman Prime Minister?",
+    "options": ["Sarojini Naidu", "Sonia Gandhi", "Indira Gandhi", "Sushma Swaraj"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_202",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many Schedules does the Indian Constitution currently have?",
+    "options": ["8", "10", "12", "14"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_203",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Goods and Services Tax (GST) was implemented in India on which date?",
+    "options": ["1 April 2017", "1 July 2017", "1 January 2018", "15 August 2017"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_204",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which article of the Indian Constitution provides the Right to Freedom of Speech and Expression?",
+    "options": ["Article 15", "Article 17", "Article 19", "Article 21"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_205",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was India's first woman President?",
+    "options": ["Sonia Gandhi", "Smriti Irani", "Pratibha Patil", "Sushma Swaraj"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_206",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Article 370 of the Indian Constitution, which gave special status to Jammu & Kashmir, was abrogated in which year?",
+    "options": ["2017", "2019", "2020", "2021"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_207",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The PM-KISAN scheme provides farmers an annual income support of how much?",
+    "options": ["₹4,000", "₹8,000", "₹10,000", "₹6,000"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_208",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which part of the Indian Constitution contains the Fundamental Rights?",
+    "options": ["Part II", "Part III", "Part IV", "Part V"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_209",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Election Commission of India was established in which year?",
+    "options": ["1949", "1951", "1947", "1950"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_210",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India follows which type of electoral system for Lok Sabha elections?",
+    "options": ["Proportional Representation", "First-Past-the-Post", "Two-Round System", "Single Transferable Vote"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_211",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which article of the Indian Constitution deals with President's Rule in states?",
+    "options": ["Article 352", "Article 360", "Article 356", "Article 365"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_212",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Jawaharlal Nehru served as India's Prime Minister until his death in which year?",
+    "options": ["1962", "1966", "1964", "1960"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_213",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Directive Principles of State Policy are contained in which part of the Constitution?",
+    "options": ["Part III", "Part IV", "Part V", "Part II"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_214",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional article provides for a Uniform Civil Code as a directive principle?",
+    "options": ["Article 41", "Article 44", "Article 48", "Article 51"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_156",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The landmark Kesavananda Bharati v. State of Kerala case, which established the Basic Structure doctrine, was decided in which year?",
+    "options": ["1971", "1975", "1973", "1969"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_157",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 73rd Constitutional Amendment, which gave constitutional status to Panchayati Raj institutions, was passed in which year?",
+    "options": ["1990", "1994", "1992", "1996"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_158",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Maneka Gandhi v. Union of India (1978) case expanded the interpretation of which article of the Constitution?",
+    "options": ["Article 14", "Article 19", "Article 21", "Article 32"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_159",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The National Rural Employment Guarantee Act (NREGA) was passed by Parliament in which year?",
+    "options": ["2004", "2007", "2005", "2006"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_160",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Indian Constitution provides for free and compulsory education for children aged 6–14 years?",
+    "options": ["Article 21", "Article 45", "Article 21A", "Article 39A"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_161",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Shah Bano case judgment was delivered by the Supreme Court of India in which year?",
+    "options": ["1983", "1987", "1985", "1989"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_162",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Lokpal and Lokayuktas Act was passed by the Indian Parliament in which year?",
+    "options": ["2011", "2015", "2012", "2013"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_163",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The S. R. Bommai v. Union of India judgment (1994) placed important limitations on which constitutional article?",
+    "options": ["Article 370", "Article 352", "Article 356", "Article 360"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_164",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Fundamental Duties were added to the Indian Constitution by which amendment?",
+    "options": ["40th Amendment", "44th Amendment", "42nd Amendment", "52nd Amendment"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_165",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "How many members were in the Drafting Committee of the Indian Constitution chaired by Dr. B. R. Ambedkar?",
+    "options": ["5", "9", "7", "11"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_166",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional amendment introduced the Tenth Schedule (anti-defection law) in India?",
+    "options": ["42nd Amendment", "44th Amendment", "52nd Amendment", "61st Amendment"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_167",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 86th Constitutional Amendment (2002) inserted which article to make education a fundamental right?",
+    "options": ["Article 21", "Article 21A", "Article 45A", "Article 22A"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_168",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The concept of Directive Principles of State Policy in the Indian Constitution was borrowed from the constitution of which country?",
+    "options": ["USA", "UK", "Ireland", "Canada"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_169",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "How many members can the Rajya Sabha have at most, as per the Constitution?",
+    "options": ["233", "245", "250", "260"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_170",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Right of Children to Free and Compulsory Education Act was enacted in which year?",
+    "options": ["2007", "2010", "2009", "2002"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_171",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Indian Constitution deals with the impeachment of the President?",
+    "options": ["Article 56", "Article 58", "Article 61", "Article 72"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_172",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Ninth Schedule was added to the Constitution by which amendment to protect land reform laws from judicial review?",
+    "options": ["Third Amendment", "First Amendment", "Ninth Amendment", "Fourth Amendment"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_173",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The PM-KISAN scheme was launched in which year?",
+    "options": ["2018", "2021", "2020", "2019"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_174",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Constitution empowers Parliament to amend the Constitution?",
+    "options": ["Article 360", "Article 370", "Article 368", "Article 365"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_175",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "How many Fundamental Duties are listed under Article 51A of the Indian Constitution?",
+    "options": ["9", "10", "12", "11"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_176",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 101st Constitutional Amendment of India enabled the implementation of which reform?",
+    "options": ["Demonetisation", "GST", "Aadhaar", "Insolvency Code"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_177",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 370 granting special status to Jammu & Kashmir was located in which part of the Indian Constitution?",
+    "options": ["Part XX", "Part XXI", "Part XVIII", "Part XIX"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_178",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional article allows the Governor to reserve a state bill for Presidential assent?",
+    "options": ["Article 200", "Article 201", "Article 202", "Article 213"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_179",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Constituent Assembly's Drafting Committee was appointed in which year?",
+    "options": ["1946", "1948", "1949", "1947"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_180",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Pratibha Patil, India's first woman President, assumed office in which year?",
+    "options": ["2005", "2009", "2012", "2007"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_181",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Constitution defines 'Money Bill' and restricts its introduction to the Lok Sabha only?",
+    "options": ["Article 108", "Article 110", "Article 111", "Article 117"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_182",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Indian Emergency of 1975 was proclaimed by the President under which article?",
+    "options": ["Article 356", "Article 360", "Article 365", "Article 352"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_183",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 44th Constitutional Amendment (1978) removed which right from the list of Fundamental Rights?",
+    "options": ["Right to Property", "Right to Privacy", "Right to Education", "Right to Work"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_184",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which committee recommended the inclusion of Fundamental Duties in the Indian Constitution?",
+    "options": ["Balwant Rai Mehta Committee", "Ashok Mehta Committee", "Swaran Singh Committee", "L. M. Singhvi Committee"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_185",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Indian Constitution originally had how many articles when it was adopted in 1949?",
+    "options": ["444", "395", "400", "350"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_186",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which 1976 constitutional amendment is nicknamed the 'Mini-Constitution' due to the sweeping changes it introduced?",
+    "options": ["40th Amendment", "44th Amendment", "42nd Amendment", "52nd Amendment"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_187",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Under the Indian Constitution, which article deals with Special Provisions relating to Scheduled Castes and Scheduled Tribes for reservation in public employment?",
+    "options": ["Article 15", "Article 16(4)", "Article 17", "Article 335"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_188",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Right to Information Act in India was passed in which year?",
+    "options": ["2003", "2007", "2005", "2001"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_124",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Kesavananda Bharati case was heard by how many judges in the Supreme Court bench?",
+    "options": ["9", "11", "13", "7"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_125",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule of the Indian Constitution contains the oath or affirmation to be taken by the President of India?",
+    "options": ["Second Schedule", "Third Schedule", "Fourth Schedule", "First Schedule"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_126",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Ninth Schedule of the Indian Constitution is related to which article?",
+    "options": ["Article 31A", "Article 31C", "Article 31B", "Article 32"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_127",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 'Golden Triangle' of Articles 14, 19, and 21, interconnecting fundamental rights, was established in which case?",
+    "options": ["Kesavananda Bharati v. State of Kerala", "AK Gopalan v. State of Madras", "Maneka Gandhi v. Union of India", "Minerva Mills v. Union of India"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_128",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under Article 352 of the Indian Constitution, which term replaced 'internal disturbance' after the 44th Amendment to make proclamation of Emergency more specific?",
+    "options": ["Civil unrest", "Internal conflict", "Armed rebellion", "Public disorder"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_129",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule of the Indian Constitution lists the subjects under the Panchayats' jurisdiction (29 subjects)?",
+    "options": ["Ninth Schedule", "Tenth Schedule", "Eleventh Schedule", "Twelfth Schedule"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_130",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Minerva Mills v. Union of India (1980) case struck down certain provisions of which constitutional amendment?",
+    "options": ["40th Amendment", "44th Amendment", "42nd Amendment", "52nd Amendment"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_131",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution gives the President the power to grant pardon?",
+    "options": ["Article 71", "Article 72", "Article 74", "Article 76"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_132",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Twelfth Schedule added by the 74th Amendment deals with the functions of which body?",
+    "options": ["Panchayats", "State Legislatures", "Municipalities", "District Councils"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_133",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional article provides for the doctrine of 'procedure established by law' for deprivation of life and liberty?",
+    "options": ["Article 14", "Article 19", "Article 22", "Article 21"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_134",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under the Indian Constitution, which article deals with the election of the President by an electoral college?",
+    "options": ["Article 54", "Article 55", "Article 58", "Article 62"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_135",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Constituent Assembly of India had how many members after partition (at the time of drafting)?",
+    "options": ["389", "299", "355", "320"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_136",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Constitution defines who qualifies as an 'Anglo-Indian' for special representation?",
+    "options": ["Article 336", "Article 366(2)", "Article 330", "Article 341"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_137",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 52nd Amendment to the Indian Constitution, which introduced the anti-defection law, was passed in which year?",
+    "options": ["1984", "1988", "1985", "1986"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_138",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution empowers the President to issue ordinances when Parliament is not in session?",
+    "options": ["Article 121", "Article 118", "Article 123", "Article 117"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_139",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 92nd Constitutional Amendment (2003) added which four languages to the Eighth Schedule?",
+    "options": ["Bodo, Dogri, Santhali, Maithili", "Sindhi, Nepali, Konkani, Manipuri", "Bhojpuri, Rajasthani, Tulu, Kodava", "Bodo, Kokborok, Gondi, Tulu"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_140",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under which article does the Indian Constitution prohibit the Supreme Court from questioning the internal proceedings of Parliament?",
+    "options": ["Article 118", "Article 122", "Article 124", "Article 121"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_141",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Shah Bano case (1985) led to the enactment of which legislation to effectively overturn the Supreme Court's judgment?",
+    "options": ["Muslim Women (Protection of Rights on Divorce) Act, 1986", "Personal Law (Amendment) Act, 1986", "Muslim Family Laws Ordinance, 1987", "Muslim Women Welfare Act, 1985"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_142",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 360 of the Indian Constitution relates to which type of emergency?",
+    "options": ["National Emergency", "State Emergency", "Constitutional Emergency", "Financial Emergency"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_143",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which committee, set up under the Planning Commission era, recommended the introduction of Panchayati Raj in India in 1957?",
+    "options": ["Ashok Mehta Committee", "L. M. Singhvi Committee", "G. V. K. Rao Committee", "Balwantrai Mehta Committee"],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_144",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The original Eighth Schedule of the Indian Constitution (1950) contained how many languages?",
+    "options": ["12", "18", "14", "16"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_145",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under the Indian Constitution, which article specifies that the Rajya Sabha shall not be subject to dissolution?",
+    "options": ["Article 81", "Article 85", "Article 83", "Article 82"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_146",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Objectives Resolution, which formed the basis of the Preamble to the Indian Constitution, was moved in the Constituent Assembly by Jawaharlal Nehru on which date?",
+    "options": ["13 December 1946", "26 January 1947", "22 January 1947", "15 August 1947"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_147",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Constitution prohibits Parliament from making law on a subject in the State List unless a resolution is passed by the Rajya Sabha under Article 249?",
+    "options": ["Article 249", "Article 250", "Article 246", "Article 248"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_148",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Golaknath v. State of Punjab (1967) case ruled that Parliament could not amend which part of the Constitution?",
+    "options": ["Directive Principles", "Preamble", "Fundamental Rights", "Fundamental Duties"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_149",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under India's anti-defection law (Tenth Schedule), a legislator is disqualified if they voluntarily give up membership of their political party or vote against party directions. Which authority decides on disqualification?",
+    "options": ["Supreme Court", "Speaker or Chairman of the House", "Election Commission", "President of India"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_150",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Finance Commission of India is constituted under which article of the Constitution?",
+    "options": ["Article 270", "Article 280", "Article 275", "Article 282"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_151",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "President Fakhruddin Ali Ahmed issued the proclamation of Emergency in 1975 under which article (before the 44th Amendment changed the terminology)?",
+    "options": ["Article 352", "Article 353", "Article 356", "Article 360"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_152",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution deals with the creation of new states and alteration of boundaries of existing states?",
+    "options": ["Article 1", "Article 2", "Article 3", "Article 4"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_153",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Vishaka Guidelines on sexual harassment at workplace, issued by the Supreme Court in 1997, were based on a writ petition arising from which state?",
+    "options": ["Rajasthan", "Maharashtra", "Uttar Pradesh", "Haryana"],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_154",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution lays down the procedure for joint sitting of both Houses of Parliament in case of a deadlock?",
+    "options": ["Article 106", "Article 108", "Article 110", "Article 112"],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_155",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 71st Constitutional Amendment (1992) added which three languages to the Eighth Schedule?",
+    "options": ["Bodo, Dogri, Maithili", "Sindhi, Bengali, Nepali", "Konkani, Manipuri, Nepali", "Santhali, Kokborok, Mizo"],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_156",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under Article 123, an Ordinance promulgated by the President lapses if not approved by Parliament within how many weeks of its reassembly?",
+    "options": ["4 weeks", "6 weeks", "8 weeks", "12 weeks"],
+    "correct_index": 1
+  }
+]

@@ -1,0 +1,802 @@
+[
+  {
+    "id": "food_easy_181",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which ingredient gives turmeric its characteristic yellow colour?",
+    "options": ["Curcumin", "Capsaicin", "Lycopene", "Chlorophyll"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_easy_182",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'paneer' made from?",
+    "options": ["Fermented wheat", "Curdled milk", "Ground lentils", "Coconut cream"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_183",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which state is the traditional home of Dal Baati Churma?",
+    "options": ["Punjab", "Gujarat", "Rajasthan", "Madhya Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_184",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the main grain used to make a traditional dosa?",
+    "options": ["Wheat", "Rice and urad dal", "Jowar", "Maize"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_185",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which popular Mumbai street food consists of a bread roll stuffed with a spiced potato patty?",
+    "options": ["Pav Bhaji", "Vada Pav", "Misal Pav", "Dabeli"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_186",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What does 'mishti doi' literally mean in Bengali?",
+    "options": ["Sour yogurt", "Sweet curd", "Cream dessert", "Milk pudding"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_187",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian sweet is made by soaking fried chenna balls in sugar syrup and is spongy in texture?",
+    "options": ["Gulab Jamun", "Jalebi", "Rasgulla", "Ladoo"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_188",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the primary cooking fat traditionally used in Punjabi cuisine?",
+    "options": ["Coconut oil", "Mustard oil", "Ghee", "Sunflower oil"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_189",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which festival is most associated with eating modak in Maharashtra?",
+    "options": ["Diwali", "Ganesh Chaturthi", "Holi", "Navratri"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_190",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'pani puri' called in Mumbai?",
+    "options": ["Golgappa", "Puchka", "Pani Puri", "Phuchka"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_191",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which spice is known as the 'Queen of Spices' in India?",
+    "options": ["Cloves", "Cardamom", "Saffron", "Nutmeg"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_192",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the staple bread of Kerala, made from rice flour and served at sadya?",
+    "options": ["Naan", "Appam", "Parotta", "Chapati"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_193",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which state is the largest producer of tea in India?",
+    "options": ["Kerala", "Himachal Pradesh", "Assam", "Tamil Nadu"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_194",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the main ingredient in 'rajma'?",
+    "options": ["Black lentils", "Kidney beans", "Chickpeas", "Green moong"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_195",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian bread is leavened with yeast and cooked in a tandoor?",
+    "options": ["Chapati", "Phulka", "Naan", "Poori"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_196",
+    "category": "food",
+    "difficulty": 1,
+    "question": "In which state did the Hyderabadi dum biryani originate?",
+    "options": ["Andhra Pradesh", "Telangana", "Karnataka", "Tamil Nadu"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_197",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'ghee' made from?",
+    "options": ["Coconut milk", "Clarified butter", "Vegetable oil", "Cream cheese"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_198",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which sweet is traditionally consumed during Makar Sankranti in Maharashtra and is made from sesame seeds and jaggery?",
+    "options": ["Puran Poli", "Til Gul", "Shrikhand", "Basundi"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_199",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the fermented fish paste used widely in Manipuri and Naga cuisines?",
+    "options": ["Ngari", "Kinema", "Bekang", "Tungrymbai"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_easy_200",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which South Indian dish is a thin rice-flour crepe cooked on a griddle?",
+    "options": ["Uttapam", "Idli", "Dosa", "Vada"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_201",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is 'chaat masala' primarily used for in Indian cooking?",
+    "options": ["Sweetening desserts", "Adding tangy-spicy flavour to snacks", "Thickening gravies", "Marinating meat"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_202",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which state is famous for Rosogolla and is said to have invented it in the 1860s?",
+    "options": ["Odisha", "Bihar", "West Bengal", "Jharkhand"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_203",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the name of the traditional Rajasthani bread baked in hot embers or a tandoor, served with dal?",
+    "options": ["Thepla", "Bhakri", "Baati", "Litti"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_204",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which spice gives biryani its golden-yellow colour when used in small quantities?",
+    "options": ["Turmeric", "Saffron", "Annatto", "Paprika"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_205",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the traditional Goan sausage called, made from pork and spiced with vinegar?",
+    "options": ["Sorpotel", "Chouriço", "Cafreal", "Xacuti"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_206",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Bihari dish consists of wheat balls stuffed with sattu, served with a roasted brinjal mash?",
+    "options": ["Dal Baati", "Litti Chokha", "Sattu Paratha", "Thekua"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_207",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the primary liquid used to make the spiced water in pani puri?",
+    "options": ["Coconut water", "Tamarind water with mint", "Buttermilk", "Lemon juice"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_208",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian drink is made by blending yogurt with water, salt, and sometimes spices?",
+    "options": ["Lassi", "Chaas (Buttermilk)", "Sharbat", "Thandai"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_209",
+    "category": "food",
+    "difficulty": 1,
+    "question": "The Kerala festive meal served on a banana leaf with multiple dishes is called what?",
+    "options": ["Onam Sadhya", "Thali", "Padharo", "Dawat"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_easy_210",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which nut is used extensively in Mughlai cuisine to thicken gravies and add richness?",
+    "options": ["Almond", "Cashew", "Pistachio", "Walnut"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_211",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the name of the spiced chickpea flour batter fritters popular across India?",
+    "options": ["Pakora", "Samosa", "Kachori", "Bhajia"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_easy_212",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which state is most famous for its filter coffee served in a steel tumbler and davara?",
+    "options": ["Kerala", "Karnataka", "Tamil Nadu", "Andhra Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_easy_213",
+    "category": "food",
+    "difficulty": 1,
+    "question": "What is the Punjabi name for the dish of mustard greens cooked with spices, typically eaten with makki di roti?",
+    "options": ["Saag Paneer", "Sarson da Saag", "Palak Dal", "Methi Thepla"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_easy_214",
+    "category": "food",
+    "difficulty": 1,
+    "question": "Which Indian sweet is made by deep-frying spirals of batter in oil and soaking in sugar syrup?",
+    "options": ["Rasgulla", "Barfi", "Jalebi", "Halwa"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_151",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Darjeeling tea was the first Indian product to receive a GI (Geographical Indication) tag. In which year was this GI tag granted?",
+    "options": ["2000", "2003", "2007", "2010"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_152",
+    "category": "food",
+    "difficulty": 2,
+    "question": "The Alphonso mango, also known as 'Hapus', gets its name from which Portuguese viceroy?",
+    "options": ["Vasco da Gama", "Afonso de Albuquerque", "Pedro Álvares Cabral", "Francisco de Almeida"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_153",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Thalassery biryani from Kerala uses a specific short-grained aromatic rice instead of basmati. What is this rice called?",
+    "options": ["Sona Masuri", "Kaima (Jeerakasala)", "Ponni", "Matta"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_154",
+    "category": "food",
+    "difficulty": 2,
+    "question": "The word 'vindaloo' derives from a Portuguese dish. What does the original Portuguese name 'carne de vinha d'alhos' mean?",
+    "options": ["Meat with red chillies", "Meat marinated in wine and garlic", "Slow-cooked pork", "Spiced seafood stew"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_155",
+    "category": "food",
+    "difficulty": 2,
+    "question": "West Bengal received GI protection for 'Banglar Rosogolla' in 2017. Which state also received a separate GI tag for its own version called 'Odisha Rasagola' in 2019?",
+    "options": ["Bihar", "Jharkhand", "Odisha", "Assam"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_156",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Bikaneri Bhujia received its GI tag in 2010 and is made primarily from which dal?",
+    "options": ["Chana dal", "Moong dal", "Moth dal (Vigna aconitifolia)", "Masoor dal"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_157",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which unique spice used in Chettinad cuisine is a type of dried lichen also called 'black stone flower'?",
+    "options": ["Marathi Mokku", "Kalpasi", "Patthar Phool", "Both B and C are correct names for the same spice"],
+    "correct_index": 3
+  },
+  {
+    "id": "food_medium_158",
+    "category": "food",
+    "difficulty": 2,
+    "question": "The traditional sadya of Kerala can have how many dishes served on a banana leaf during Onam?",
+    "options": ["5-10", "12-15", "24-28", "Up to 64"],
+    "correct_index": 3
+  },
+  {
+    "id": "food_medium_159",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Kashmiri saffron (Mongra) received its GI tag in which year?",
+    "options": ["2015", "2018", "2020", "2022"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_160",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Chakhao (Chak-Hao) is a GI-tagged black aromatic glutinous rice from which Indian state?",
+    "options": ["Assam", "Nagaland", "Manipur", "Meghalaya"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_161",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which northeastern Indian chili received Guinness World Record certification as the world's hottest chili in 2007?",
+    "options": ["Kanthari Mulaku", "Dalle Khorsani", "Bhut Jolokia (Ghost Pepper)", "Naga Viper"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_162",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Similipal Kai Chutney from Odisha's Mayurbhanj district received a GI tag in January 2024. What is its unusual main ingredient?",
+    "options": ["Wild mushrooms", "Red weaver ants", "Bamboo shoots", "Mahua flowers"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_163",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Tirunelveli Halwa from Tamil Nadu is made using wheat and the water of which river, which gives it its unique flavour?",
+    "options": ["Kaveri", "Vaigai", "Tamirabarani", "Palar"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_164",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Maharashtra sweet, also called 'Shrikhand', is made by straining yogurt and mixing it with sugar and saffron?",
+    "options": ["Basundi", "Amrakhand (Shrikhand)", "Mastani", "Dudhpak"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_165",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Basmati rice name comes from Sanskrit. What does 'Basmati' roughly translate to?",
+    "options": ["Long and slender", "Fragrant by nature", "From the foothills", "King of rice"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_166",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which cooking technique involves sealing a pot with dough and slow-cooking food over a low flame, used in Hyderabadi biryani?",
+    "options": ["Bhunao", "Dum pukht", "Tadka", "Bhapat"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_167",
+    "category": "food",
+    "difficulty": 2,
+    "question": "The Goan dish 'Cafreal' is a grilled chicken dish that traces its origins to which African country's Portuguese colony?",
+    "options": ["Mozambique", "Angola", "Cape Verde", "Guinea-Bissau"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_medium_168",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Bengali dish is made by cooking hilsa fish in a mustard paste gravy?",
+    "options": ["Chingri Malai Curry", "Shorshe Ilish", "Doi Maach", "Paturi"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_169",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which state produces Coorg (Kodagu) honey and Coorg orange, both with GI tags?",
+    "options": ["Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_170",
+    "category": "food",
+    "difficulty": 2,
+    "question": "In Indian cooking, the technique of seasoning hot oil with whole spices added at the start of cooking is called what?",
+    "options": ["Bhunao", "Baghar (Tadka)", "Dum", "Bhapat"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_171",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Odisha sweet is offered as 'bhog' to Lord Jagannath at Puri and is made from fresh chenna, semolina, and sugar?",
+    "options": ["Rasabali", "Chhena Poda", "Kheer Sagar", "Malpua"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_172",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Assam's 'Khar' is a traditional dish cooked using a liquid filtered from which ingredient?",
+    "options": ["Bamboo shoots", "Sun-dried banana skin ash", "Mahua flowers", "Jackfruit seeds"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_173",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which Indian state is the largest producer of Alphonso (Hapus) mangoes with a GI tag?",
+    "options": ["Gujarat", "Karnataka", "Maharashtra", "Andhra Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_174",
+    "category": "food",
+    "difficulty": 2,
+    "question": "The Warqi Paratha of Lucknow is known for its many flaky layers. The word 'warq' in Urdu means what?",
+    "options": ["Flavour", "Sheet or layer", "Crispiness", "Royal"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_175",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which plant's leaves are traditionally used to serve food in Tamil Nadu, Kerala and Andhra Pradesh at festive meals?",
+    "options": ["Teak", "Banana", "Lotus", "Peepal"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_176",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Potoler Dorma (Potoler Dolma) is a stuffed vegetable dish from West Bengal. What vegetable is used?",
+    "options": ["Brinjal", "Bitter gourd", "Pointed gourd (Potol)", "Drumstick"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_medium_177",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which traditional Himachal Pradesh bread is made with wheat flour, stuffed with walnuts, and uses yeast for leavening?",
+    "options": ["Kulcha", "Sidu", "Thenthuk", "Babru"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_178",
+    "category": "food",
+    "difficulty": 2,
+    "question": "The Mappilas of Malabar (Kerala) significantly shaped Thalassery biryani through their culinary traditions. Who were the Mappilas?",
+    "options": ["Descendants of Arab traders and local women who converted to Islam", "Portuguese-converted Christian Keralites", "Jewish traders who settled in Cochin", "Brahmin spice merchants from Calicut"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_medium_179",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which state's cuisine uses 'panch phoron' (five-spice blend) as a foundational seasoning mix?",
+    "options": ["Rajasthan", "West Bengal", "Uttar Pradesh", "Madhya Pradesh"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_180",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which traditional Goan Christmas sweet is a rose-cookie deep-fried in oil, made using rice flour?",
+    "options": ["Bebinca", "Neureos", "Kulkuls", "Achappam"],
+    "correct_index": 3
+  },
+  {
+    "id": "food_medium_181",
+    "category": "food",
+    "difficulty": 2,
+    "question": "What is 'Pitha', a traditional delicacy associated with Makar Sankranti and Bihu festivals primarily in which region?",
+    "options": ["North India — UP and Bihar", "East India — Odisha, Bengal, Assam", "South India — Andhra and Tamil Nadu", "West India — Gujarat and Rajasthan"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_medium_182",
+    "category": "food",
+    "difficulty": 2,
+    "question": "Which variety of mango from Andhra Pradesh's Krishnapuram region has been given a GI tag and is known for its jelly-like texture?",
+    "options": ["Benishan (Banganapalli)", "Neelam", "Safeda", "Totapuri"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_medium_183",
+    "category": "food",
+    "difficulty": 2,
+    "question": "The dish 'Imarti' is similar to jalebi but uses which different flour to get its distinctive flower-ring shape?",
+    "options": ["Wheat flour", "Urad dal flour", "Chickpea flour", "Rice flour"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_129",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Kashmiri Mongra saffron is grown at an altitude of approximately 1,600-1,800 metres in which specific area of Kashmir?",
+    "options": ["Sopore", "Pampore", "Anantnag", "Pahalgam"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_130",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The GI-tagged Bikaneri Bhujia received its registration number 142 on 28 May 2010. The application was filed by which body?",
+    "options": ["Rajasthan Government Food Board", "Bikaner Bhujia Udhyog Sangh", "All India Namkeen Manufacturers Federation", "Haldiram Bhujiawala Cooperative"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_131",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The first documented reference to Basmati rice by name appears in 'Heer Ranjha', a Punjabi poem. Who wrote this poem in 1766?",
+    "options": ["Bulleh Shah", "Waris Shah", "Shah Hussain", "Sultan Bahu"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_132",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Alphonso mango GI tag was granted on 3 October 2018. Its cultivation is restricted to which two districts of Maharashtra?",
+    "options": ["Pune and Satara", "Ratnagiri and Sindhudurg", "Raigad and Thane", "Kolhapur and Sangli"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_133",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Chakhao black rice was granted GI status on 20 April 2020. The application was filed in December 2017 by which body?",
+    "options": ["Government of Manipur Agriculture Department", "Consortium of Producers of Chak-Hao", "North East Organic Farmers Federation", "Manipur Organic Mission Agency"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_134",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Chettinad cuisine uses 'Kalpasi' (black stone flower), which is a type of dried lichen. What is its scientific classification?",
+    "options": ["It is a fungal-algal symbiont (lichen)", "It is a dried moss species", "It is a dehydrated flower bud", "It is a type of tree bark"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_135",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Kashmiri saffron's crocin content (the colour compound) is significantly higher than saffron grown in other regions. What range of crocin content does Kashmiri Mongra typically test at?",
+    "options": ["5-8%", "10-12%", "18-22%", "28-35%"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_136",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The 'Iruttu Kadai' in Tirunelveli is a legendary halwa shop that famously sells only during twilight hours. In which year was it reportedly opened?",
+    "options": ["1857", "1882", "1900", "1920"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_137",
+    "category": "food",
+    "difficulty": 3,
+    "question": "In Mughal culinary tradition, 'Dum Pukht' cooking was popularized by the Nawabs of which city, where it became a defining cuisine?",
+    "options": ["Delhi", "Lucknow (Awadh)", "Agra", "Lahore"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_138",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The GI tag for Darjeeling tea was awarded on 27 October 2003, making it India's first GI product. Under which Indian Act is GI protection governed?",
+    "options": ["Trade Marks Act 1999", "Geographical Indications of Goods (Registration and Protection) Act 1999", "Intellectual Property Rights Act 2000", "Agricultural Products (GI) Act 2001"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_139",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Bhut Jolokia (Ghost Pepper) was certified by Guinness World Records as the world's hottest chili in 2007 with over 1 million Scoville Heat Units. It was later displaced in 2011 by which pepper?",
+    "options": ["Carolina Reaper", "Trinidad Scorpion Butch T", "Pepper X", "7 Pot Primo"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_140",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The traditional Onam Sadya of Kerala can feature up to 64 dishes. Which specific dish, a salty-sour curry made with raw mango and coconut, must appear at a traditional sadya?",
+    "options": ["Avial", "Mango Pachadi", "Pulissery", "Manga Curry"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_141",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Goan dish 'Cafreal' traces its origin to which Portuguese-African colony, where African soldiers and cooks brought their spice blends?",
+    "options": ["Mozambique", "Angola", "São Tomé", "Goa itself"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_142",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Assam's traditional 'Khar' dish gets its distinctive alkaline flavour from lye water filtered through which specific plant's ash?",
+    "options": ["Bamboo", "Sun-dried banana skin (kola)", "Mahua tree", "Areca palm"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_143",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The panch phoron five-spice blend used in Bengali cooking contains fenugreek, nigella, cumin, and mustard. What is the fifth spice?",
+    "options": ["Fennel (saunf)", "Ajwain (carom)", "Asafoetida (hing)", "Celery seeds"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_144",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Bikaneri bhujia's first batch was produced in 1877 during the reign of which Maharaja of Bikaner and was called 'Dungar Shahi Bhujia'?",
+    "options": ["Maharaja Ganga Singh", "Maharaja Shri Dungar Singh", "Maharaja Surat Singh", "Maharaja Ratan Singh"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_145",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Similipal Kai Chutney GI application was filed in 2020 by the Mayurbhanj Kai Society. The GI was registered under which class of goods?",
+    "options": ["Class 29 (meat, fish, dairy)", "Class 30 (coffee, tea, condiments, sauces)", "Class 31 (agricultural products)", "Class 33 (alcoholic beverages)"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_146",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Chhena Poda, an Odia sweet made from roasted chenna, is considered a unique Indian dessert because it uses which rare technique?",
+    "options": ["Fermentation before cooking", "Baking the chenna in a slow oven or sealed pot until caramelized", "Steaming in banana leaves", "Deep frying in pure ghee"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_147",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Imarti (urad dal jalebi) has its origins in which royal Mughal culinary tradition? In early sources, what name was it known by?",
+    "options": ["Amriti or Amritti, mentioned in Ain-i-Akbari", "Shahi Jalebi from Akbar's darbar", "Meethi Bundi from Rajput kitchens", "Amrit Ras from Sufi traditions"],
+    "correct_index": 0
+  },
+  {
+    "id": "food_hard_148",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Kerala dish 'Pathiri' is a thin rice-flour flatbread associated with Malabar Muslims. According to culinary records, how many distinct varieties of Pathiri exist in the Malabar region?",
+    "options": ["Five", "Twelve", "About forty", "More than hundred"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_149",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Kacha Golla, a traditional Bengali sweet made from uncooked (kacha) chenna shaped into balls, is strongly associated with which district and its famous sweet-makers?",
+    "options": ["Murshidabad", "Burdwan (Bardhaman)", "Krishnanagar (Nadia)", "Hooghly"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_150",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The traditional Manipuri fermented soybean product 'Hawai-jar' (also called Hawaijar) is similar to which East Asian fermented food?",
+    "options": ["Japanese Miso", "Japanese Natto", "Korean Doenjang", "Chinese Doubanjiang"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_151",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Tirunelveli Halwa is made with water from the Tamirabarani River. According to tradition, the recipe was brought to Tirunelveli by cooks from which community who were hired by local zamindars?",
+    "options": ["Maratha soldiers", "Rajput cooks", "Mughal khansamas", "Tamil Brahmin priests"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_152",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The 'Muri Ghonto' is a traditional Bengali dish made from the head of which specific fish cooked with rice?",
+    "options": ["Hilsa (Ilish)", "Rohu (Rui)", "Katla", "Bekti"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_153",
+    "category": "food",
+    "difficulty": 3,
+    "question": "Waris Shah's 1766 poem 'Heer Ranjha' contains the first documented reference to Basmati rice. In which language was this poem written?",
+    "options": ["Urdu", "Hindi", "Punjabi", "Persian"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_154",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Naga cuisine uses 'Axone' (Akhuni), a fermented soybean product with a pungent smell used as a condiment. This is most associated with which tribe?",
+    "options": ["Ao Naga", "Sumi Naga", "Angami Naga", "Konyak Naga"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_155",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The 'Bebinca' (Bebinka) is a traditional layered Goan dessert that requires precise preparation. How many distinct layers does an authentic Bebinca traditionally have?",
+    "options": ["4", "7", "16", "24"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_156",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Gond tribal community of Madhya Pradesh uses which edible gum as a key nutritional ingredient in their traditional 'Gond ke Ladoo', especially given to lactating mothers?",
+    "options": ["Guar gum", "Edible gum (Dink/Gondh) from Acacia trees", "Tamarind gum", "Babool resin"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_157",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The 'Chapda Chutney' made from red ants is a traditional food of tribal communities in Chhattisgarh. Scientists found that the red weaver ant (Oecophylla smaragdina) has significant amounts of which nutrient that makes it nutritionally valuable?",
+    "options": ["Omega-3 fatty acids", "Vitamin B12, protein, and zinc", "Vitamin D and calcium", "Iron and folic acid exclusively"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_158",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Malabar Biryani community, the Mappilas, trace their origin to marriages between Arab traders and local Malayali women. The name 'Mappila' is derived from which combination of words?",
+    "options": ["Arabic 'mukhallat' (mixed) and Malayalam 'pillai'", "Sanskrit 'maha' and Tamil 'pillai' (literally 'great child', a respectful term for converts)", "Arabic 'ma' (water) and Malayalam 'pila'", "Portuguese 'mapear' and Malayalam 'ila'"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_159",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Onam Sadya traditionally has dishes arranged in a specific order on the banana leaf. In which direction (according to tradition) should the tip of the banana leaf point while eating?",
+    "options": ["Towards the east", "Away from the diner (outward)", "Towards the diner's left", "Towards the diner's right"],
+    "correct_index": 2
+  },
+  {
+    "id": "food_hard_160",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The Churma component of Dal Baati Churma is said to have been accidentally invented when a Mewar cook spilt which liquid on baatis, discovering the sweet combination?",
+    "options": ["Honey", "Sugarcane juice", "Palm jaggery syrup", "Milk"],
+    "correct_index": 1
+  },
+  {
+    "id": "food_hard_161",
+    "category": "food",
+    "difficulty": 3,
+    "question": "The fermented fish product 'Ngari' is the cornerstone of Manipuri cuisine. Ngari is specifically made from which type of fish that is dried and fermented in sealed earthen pots?",
+    "options": ["Catfish", "Pungfish (Puntius sophore)", "Rohu", "Climbing perch"],
+    "correct_index": 1
+  }
+]

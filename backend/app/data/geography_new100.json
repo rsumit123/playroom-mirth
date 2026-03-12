@@ -1,0 +1,802 @@
+[
+  {
+    "id": "geo_easy_072",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Rajasthan?",
+    "options": ["Jodhpur", "Udaipur", "Jaipur", "Ajmer"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_073",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river is known as the 'Sorrow of Bengal'?",
+    "options": ["Hooghly", "Damodar", "Teesta", "Mahanadi"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_easy_074",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the highest mountain peak entirely within India?",
+    "options": ["Kangchenjunga", "K2", "Nanda Devi", "Kamet"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_075",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Indian state has the longest coastline?",
+    "options": ["Maharashtra", "Tamil Nadu", "Andhra Pradesh", "Gujarat"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_easy_076",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which national park in Assam is famous for the Indian one-horned rhinoceros?",
+    "options": ["Manas National Park", "Dibru-Saikhowa", "Kaziranga National Park", "Nameri National Park"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_077",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of West Bengal?",
+    "options": ["Howrah", "Siliguri", "Durgapur", "Kolkata"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_easy_078",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the largest state in India by area?",
+    "options": ["Madhya Pradesh", "Maharashtra", "Uttar Pradesh", "Rajasthan"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_easy_079",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Through how many states does the Tropic of Cancer pass in India?",
+    "options": ["Six", "Seven", "Eight", "Nine"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_080",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the longest river that flows entirely within India?",
+    "options": ["Ganga", "Godavari", "Narmada", "Krishna"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_easy_081",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Kerala?",
+    "options": ["Kochi", "Kozhikode", "Thiruvananthapuram", "Thrissur"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_082",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which mountain range runs along the western coast of India?",
+    "options": ["Eastern Ghats", "Vindhya Range", "Western Ghats", "Satpura Range"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_083",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "India shares its longest land border with which country?",
+    "options": ["China", "Pakistan", "Nepal", "Bangladesh"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_easy_084",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Tamil Nadu?",
+    "options": ["Coimbatore", "Madurai", "Chennai", "Salem"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_085",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "The Sundarbans mangrove forest is located in which Indian state?",
+    "options": ["Odisha", "West Bengal", "Andhra Pradesh", "Tamil Nadu"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_easy_086",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Union Territory of India is an island group in the Arabian Sea?",
+    "options": ["Andaman & Nicobar Islands", "Lakshadweep", "Puducherry", "Daman & Diu"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_easy_087",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Maharashtra?",
+    "options": ["Pune", "Nagpur", "Mumbai", "Nashik"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_088",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which desert is called the Great Indian Desert?",
+    "options": ["Cold Desert", "Deccan Plateau", "Thar Desert", "Rann of Kutch"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_089",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Indian state is known as the 'Land of Five Rivers'?",
+    "options": ["Haryana", "Rajasthan", "Punjab", "Himachal Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_090",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Karnataka?",
+    "options": ["Mysuru", "Hubli", "Mangaluru", "Bengaluru"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_easy_091",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "How many states does India currently have?",
+    "options": ["26", "27", "28", "29"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_092",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Kangchenjunga, the highest peak in India, lies on the border of which two regions?",
+    "options": ["Uttarakhand and Nepal", "Sikkim and Nepal", "Himachal Pradesh and Tibet", "Arunachal Pradesh and Bhutan"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_easy_093",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Gujarat?",
+    "options": ["Surat", "Ahmedabad", "Vadodara", "Gandhinagar"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_easy_094",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river flows through the city of Varanasi?",
+    "options": ["Yamuna", "Ganga", "Gomti", "Betwa"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_easy_095",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which northeastern state of India shares borders with both China and Myanmar?",
+    "options": ["Nagaland", "Manipur", "Meghalaya", "Arunachal Pradesh"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_easy_096",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Jim Corbett National Park, India's oldest national park, is located in which state?",
+    "options": ["Himachal Pradesh", "Uttarakhand", "Uttar Pradesh", "Haryana"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_easy_097",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Odisha?",
+    "options": ["Cuttack", "Puri", "Rourkela", "Bhubaneswar"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_easy_098",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which is the smallest state in India by area?",
+    "options": ["Sikkim", "Tripura", "Goa", "Nagaland"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_099",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Chilika Lake, India's first Ramsar wetland, is located in which state?",
+    "options": ["West Bengal", "Andhra Pradesh", "Odisha", "Tamil Nadu"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_100",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which river is worshipped as the holiest in India?",
+    "options": ["Yamuna", "Narmada", "Brahmaputra", "Ganga"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_easy_101",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Andhra Pradesh?",
+    "options": ["Hyderabad", "Visakhapatnam", "Amaravati", "Vijayawada"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_102",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Indian state has the most number of national parks?",
+    "options": ["Uttarakhand", "Assam", "Madhya Pradesh", "Rajasthan"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_103",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "The Brahmaputra River originates from which region?",
+    "options": ["Nepal Himalayas", "Uttarakhand", "Tibetan Plateau", "Arunachal Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_easy_104",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "What is the capital of Telangana?",
+    "options": ["Warangal", "Hyderabad", "Karimnagar", "Nizamabad"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_easy_105",
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which body of water lies to the east of India's mainland?",
+    "options": ["Indian Ocean", "Arabian Sea", "Bay of Bengal", "Laccadive Sea"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_077",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Indian state shares borders with the most number of other states?",
+    "options": ["Madhya Pradesh", "Uttar Pradesh", "Andhra Pradesh", "Bihar"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_medium_078",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Nathu La Pass connects Sikkim with which region?",
+    "options": ["Bhutan", "Nepal", "Tibet (China)", "Myanmar"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_079",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which river flows westward from Madhya Pradesh into the Arabian Sea?",
+    "options": ["Mahanadi", "Tapti", "Narmada", "Godavari"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_080",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Hemis National Park, the largest national park in India, is located in which region?",
+    "options": ["Uttarakhand", "Himachal Pradesh", "Ladakh", "Arunachal Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_081",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Nilgiri Biosphere Reserve, India's first biosphere reserve, spans across which three states?",
+    "options": ["Karnataka, Kerala, Andhra Pradesh", "Tamil Nadu, Karnataka, Kerala", "Tamil Nadu, Andhra Pradesh, Telangana", "Kerala, Tamil Nadu, Goa"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_medium_082",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which is the largest district in India by area?",
+    "options": ["Jaisalmer, Rajasthan", "Leh, Ladakh", "Kutch, Gujarat", "Bikaner, Rajasthan"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_083",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Through which Indian state does the Mahi River cross the Tropic of Cancer twice?",
+    "options": ["Rajasthan", "Madhya Pradesh", "Gujarat", "Maharashtra"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_084",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Rann of Kutch is a salt marsh in which Indian state?",
+    "options": ["Rajasthan", "Maharashtra", "Gujarat", "Goa"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_085",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Indian state capital sits on the Tropic of Cancer?",
+    "options": ["Bhopal", "Jaipur", "Ranchi", "Agartala"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_086",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Periyar Wildlife Sanctuary and National Park is located in which state?",
+    "options": ["Karnataka", "Tamil Nadu", "Kerala", "Andhra Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_087",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which river forms the boundary between Maharashtra and Karnataka for a large stretch?",
+    "options": ["Krishna", "Tungabhadra", "Bhima", "Godavari"],
+    "correct_index": 0
+  },
+  {
+    "id": "geo_medium_088",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Bandipur National Park, famous for tigers and elephants, is in which state?",
+    "options": ["Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_089",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Indian state has the smallest area?",
+    "options": ["Nagaland", "Sikkim", "Tripura", "Goa"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_medium_090",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Brahmaputra is known by what name in Arunachal Pradesh before entering Assam?",
+    "options": ["Padma", "Tsangpo", "Siang", "Luit"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_091",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Indian state shares borders with five other states and has Ranchi as its capital?",
+    "options": ["Bihar", "West Bengal", "Chhattisgarh", "Jharkhand"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_medium_092",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Rohtang Pass connects which two valleys in Himachal Pradesh?",
+    "options": ["Spiti and Kinnaur", "Kullu and Lahaul-Spiti", "Kangra and Shimla", "Chamba and Mandi"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_medium_093",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Nagarjunasagar-Srisailam Tiger Reserve, the largest in India, spans across which two states?",
+    "options": ["Karnataka and Tamil Nadu", "Telangana and Andhra Pradesh", "Andhra Pradesh and Karnataka", "Maharashtra and Andhra Pradesh"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_medium_094",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which of these Himalayan states does NOT share a border with China?",
+    "options": ["Sikkim", "Himachal Pradesh", "Uttarakhand", "Manipur"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_medium_095",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Gir Forest National Park, home to Asiatic lions, is located in which state?",
+    "options": ["Rajasthan", "Gujarat", "Madhya Pradesh", "Maharashtra"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_medium_096",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which river's tributary system includes the Chambal, Betwa, Son, and Gomti?",
+    "options": ["Ganga", "Brahmaputra", "Narmada", "Godavari"],
+    "correct_index": 0
+  },
+  {
+    "id": "geo_medium_097",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Loktak Lake, the largest freshwater lake in northeast India, is in which state?",
+    "options": ["Nagaland", "Assam", "Mizoram", "Manipur"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_medium_098",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Indian state is bisected by the Tropic of Cancer and borders Rajasthan to the west?",
+    "options": ["Uttar Pradesh", "Madhya Pradesh", "Chhattisgarh", "Haryana"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_medium_099",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Sundarbans National Park in India is a UNESCO World Heritage Site in which district?",
+    "options": ["North 24 Parganas", "South 24 Parganas", "Purba Medinipur", "Nadia"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_medium_100",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Achanakmar-Amarkantak Biosphere Reserve spans across which two states?",
+    "options": ["Odisha and Jharkhand", "Madhya Pradesh and Chhattisgarh", "Maharashtra and Madhya Pradesh", "Chhattisgarh and Jharkhand"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_medium_101",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Himalayan pass connects Srinagar to Leh in Ladakh via National Highway 1?",
+    "options": ["Rohtang Pass", "Baralacha La", "Zoji La", "Tanglang La"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_102",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Kaveri river originates from which hill range in Karnataka?",
+    "options": ["Nilgiris", "Bababudan Hills", "Brahmagiri Hills", "Kodagu Hills"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_103",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Indian state has the most districts?",
+    "options": ["Madhya Pradesh", "Maharashtra", "Rajasthan", "Uttar Pradesh"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_medium_104",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Orang National Park, sometimes called the 'Mini Kaziranga', is located in which state?",
+    "options": ["Meghalaya", "Arunachal Pradesh", "Assam", "Nagaland"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_105",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which Indian state does NOT border the Bay of Bengal?",
+    "options": ["Andhra Pradesh", "Odisha", "Tamil Nadu", "Karnataka"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_medium_106",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Palk Strait separates India from which neighboring country?",
+    "options": ["Maldives", "Bangladesh", "Sri Lanka", "Myanmar"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_medium_107",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Deccan Plateau is bounded on the west by the Western Ghats and on the east by which range?",
+    "options": ["Vindhya Range", "Satpura Range", "Aravalli Range", "Eastern Ghats"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_medium_108",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which river passes through the Pench National Park in Madhya Pradesh and Maharashtra?",
+    "options": ["Wainganga", "Pench", "Betwa", "Ken"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_medium_109",
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Valley of Flowers National Park, a UNESCO World Heritage Site, is in which state?",
+    "options": ["Himachal Pradesh", "Uttarakhand", "Sikkim", "Jammu & Kashmir"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_077",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Nathu La Pass connecting Sikkim to Tibet is at approximately what altitude?",
+    "options": ["3,800 m", "4,310 m", "5,050 m", "3,500 m"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_078",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Dibru-Saikhowa Biosphere Reserve, the smallest in India, is in which state?",
+    "options": ["Meghalaya", "Tripura", "Assam", "Manipur"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_079",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which river is known as 'Vridha Ganga' (Old Ganga) and flows through Andhra Pradesh and Telangana?",
+    "options": ["Krishna", "Tungabhadra", "Godavari", "Pennar"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_080",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Approximately how long is the Narmada River in kilometers?",
+    "options": ["1,078 km", "1,312 km", "1,465 km", "1,600 km"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_081",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which Indian pass at the highest elevation among these is used as the boundary between India and China?",
+    "options": ["Rohtang Pass", "Zoji La", "Nathu La", "Shipki La"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_hard_082",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Phawngpui (Blue Mountain), the highest peak of Mizoram, is part of which range?",
+    "options": ["Patkai Hills", "Naga Hills", "Mizo Hills", "Lushai Hills"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_hard_083",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Great Rann of Kutch biosphere reserve is the largest biosphere reserve in India. What is its approximate area?",
+    "options": ["7,500 sq km", "12,454 sq km", "9,000 sq km", "15,000 sq km"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_084",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which river flows through the Shivanasamudra Falls in Karnataka?",
+    "options": ["Tungabhadra", "Sharavathi", "Kaveri", "Krishna"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_085",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Indira Point, the southernmost tip of India, is located in which island group?",
+    "options": ["Lakshadweep", "Nicobar Islands", "Andaman Islands", "Minor Rock Outcrops"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_086",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which Indian state shares a border with Bangladesh but does NOT share a border with Myanmar?",
+    "options": ["Mizoram", "Tripura", "Nagaland", "Manipur"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_087",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Loktak Lake in Manipur is famous for unique floating islands called what?",
+    "options": ["Phums", "Bheels", "Jhils", "Khadar"],
+    "correct_index": 0
+  },
+  {
+    "id": "geo_hard_088",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Barail Range forms a natural divide between Assam and which northeastern state?",
+    "options": ["Meghalaya", "Arunachal Pradesh", "Nagaland", "Mizoram"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_089",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which Indian river does NOT originate in the Himalayas?",
+    "options": ["Yamuna", "Chambal", "Ganga", "Sutlej"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_090",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Dudhwa National Park, known for Bengal tigers and swamp deer (barasingha), is in which state?",
+    "options": ["Bihar", "Madhya Pradesh", "Uttar Pradesh", "Jharkhand"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_091",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which river forms the boundary between Telangana and Karnataka for a significant stretch?",
+    "options": ["Krishna", "Bhima", "Tungabhadra", "Godavari"],
+    "correct_index": 0
+  },
+  {
+    "id": "geo_hard_092",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Salim Ali Bird Sanctuary (Keoladeo) in Rajasthan is in which district?",
+    "options": ["Jaisalmer", "Bharatpur", "Alwar", "Sawai Madhopur"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_093",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which Indian state has the highest percentage of forest cover relative to its total area?",
+    "options": ["Arunachal Pradesh", "Mizoram", "Meghalaya", "Uttarakhand"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_094",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Tsomgo (Changu) Lake, a glacial lake near Nathu La, is in which Indian state?",
+    "options": ["Uttarakhand", "Himachal Pradesh", "Arunachal Pradesh", "Sikkim"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_hard_095",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Chambal River originates in which range of hills in Madhya Pradesh?",
+    "options": ["Vindhya Range", "Satpura Range", "Malwa Plateau", "Aravalli"],
+    "correct_index": 0
+  },
+  {
+    "id": "geo_hard_096",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Point Calimere Wildlife Sanctuary, known for flamingos, is in which district of Tamil Nadu?",
+    "options": ["Thanjavur", "Ramanathapuram", "Nagapattinam", "Tirunelveli"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_097",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which of the following rivers flows into the Arabian Sea?",
+    "options": ["Mahanadi", "Tapti", "Godavari", "Krishna"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_098",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Baralacha La pass connects Lahaul in Himachal Pradesh to which region?",
+    "options": ["Spiti Valley", "Ladakh", "Zanskar", "Kinnaur"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_099",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Majuli river island in Assam, one of the world's largest river islands, lies in which river?",
+    "options": ["Barak", "Lohit", "Brahmaputra", "Subansiri"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_100",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Namdapha National Park, known for snow leopards and tigers coexisting, is in which state?",
+    "options": ["Sikkim", "Nagaland", "Meghalaya", "Arunachal Pradesh"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_hard_101",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which river drains the Dandakaranya region and joins the Godavari in Chhattisgarh?",
+    "options": ["Indravati", "Sabari", "Sheonath", "Mahanadi"],
+    "correct_index": 0
+  },
+  {
+    "id": "geo_hard_102",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Zanskar Range lies between which two Indian Himalayan regions?",
+    "options": ["Himachal Pradesh and Ladakh", "Uttarakhand and Nepal", "Sikkim and Bhutan", "Arunachal Pradesh and Assam"],
+    "correct_index": 0
+  },
+  {
+    "id": "geo_hard_103",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "India's only active volcano, Barren Island, is in which Union Territory?",
+    "options": ["Lakshadweep", "Puducherry", "Daman & Diu", "Andaman & Nicobar Islands"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_hard_104",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Wular Lake, one of the largest freshwater lakes in Asia, is in which state or UT?",
+    "options": ["Uttarakhand", "Himachal Pradesh", "Jammu & Kashmir", "Ladakh"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_105",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Siachen Glacier, the world's highest battlefield, lies in which mountain range?",
+    "options": ["Hindukush", "Karakoram", "Himalaya", "Saltoro Ridge"],
+    "correct_index": 1
+  },
+  {
+    "id": "geo_hard_106",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which Indian river has the largest drainage basin within the country?",
+    "options": ["Brahmaputra", "Narmada", "Ganga", "Godavari"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_107",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Dachigam National Park near Srinagar is the last remaining habitat of which endangered species?",
+    "options": ["Snow Leopard", "Red Panda", "Hangul (Kashmir Stag)", "Musk Deer"],
+    "correct_index": 2
+  },
+  {
+    "id": "geo_hard_108",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which strait separates the Andaman Islands from the Nicobar Islands?",
+    "options": ["Palk Strait", "Ten Degree Channel", "Eight Degree Channel", "Duncan Passage"],
+    "correct_index": 3
+  },
+  {
+    "id": "geo_hard_109",
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Ken-Betwa river interlinking project will primarily benefit which two states?",
+    "options": ["Rajasthan and Haryana", "Uttar Pradesh and Madhya Pradesh", "Bihar and Jharkhand", "Maharashtra and Karnataka"],
+    "correct_index": 1
+  }
+]

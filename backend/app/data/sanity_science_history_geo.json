@@ -1,0 +1,171 @@
+{
+  "audited": 910,
+  "issues_found": [
+    {
+      "id": "hist_1_007",
+      "issue_type": "nonsensical",
+      "original_question": "Which Mughal emperor was also known as Akbar the Great?",
+      "original_correct_index": 2,
+      "original_options": [
+        "Babur",
+        "Humayun",
+        "Akbar",
+        "Aurangzeb"
+      ],
+      "fix": "question_rewritten",
+      "new_correct_index": 1,
+      "new_question": "Which Mughal emperor issued a policy of religious tolerance and abolished the jizya tax on non-Muslims?",
+      "new_options": [
+        "Aurangzeb",
+        "Akbar",
+        "Jahangir",
+        "Humayun"
+      ],
+      "notes": "Original question is trivially circular — the answer (Akbar) is embedded in the question (Akbar the Great). Rewritten to ask about Akbar's actual policy achievements."
+    },
+    {
+      "id": "hist_1_028",
+      "issue_type": "duplicate",
+      "original_question": "In which year did India gain independence from British rule?",
+      "original_correct_index": 0,
+      "original_options": [
+        "1947",
+        "1945",
+        "1950",
+        "1942"
+      ],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Exact duplicate of hist_1_002 which asks the identical question with the same answer (1947). One copy should be removed."
+    },
+    {
+      "id": "otdb_sci_1_010",
+      "issue_type": "wrong_answer",
+      "original_question": "What organelle aids in synthesis of DNA in cells?",
+      "original_correct_index": 1,
+      "original_options": [
+        "Mitochondria",
+        "Ribosomes",
+        "Nuclei",
+        "Lysosomes"
+      ],
+      "fix": "correct_index_changed",
+      "new_correct_index": 2,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Ribosomes are involved in PROTEIN synthesis (translation), NOT DNA synthesis. DNA synthesis (replication) occurs in the nucleus. The nucleus (Nuclei) is the correct answer. Source: Standard cell biology — DNA replication occurs in the nucleus."
+    },
+    {
+      "id": "otdb_sci_1_044",
+      "issue_type": "wrong_answer",
+      "original_question": "How many chromosomes are in your body cells?",
+      "original_correct_index": 0,
+      "original_options": [
+        "23",
+        "21",
+        "24",
+        "22"
+      ],
+      "fix": "question_rewritten",
+      "new_correct_index": 0,
+      "new_question": "How many chromosomes are in a human sperm or egg cell (gamete)?",
+      "new_options": [
+        "23",
+        "21",
+        "24",
+        "22"
+      ],
+      "notes": "Human somatic (body) cells have 46 chromosomes (23 pairs). 23 is the number found in gametes (sperm/egg). The original question is factually wrong with the given answer. Rewritten to ask about gametes so 23 becomes correct. Source: MedlinePlus Genetics — humans have 46 chromosomes in body cells."
+    },
+    {
+      "id": "otdb_sci_2_018",
+      "issue_type": "outdated",
+      "original_question": "Which of these stars is the largest?",
+      "original_correct_index": 0,
+      "original_options": [
+        "UY Scuti",
+        "Betelgeuse",
+        "RW Cephei",
+        "VY Canis Majoris"
+      ],
+      "fix": "question_rewritten",
+      "new_correct_index": 2,
+      "new_question": "Which of these stars is the largest by radius?",
+      "new_options": [
+        "UY Scuti",
+        "Betelgeuse",
+        "VY Canis Majoris",
+        "Antares"
+      ],
+      "notes": "UY Scuti's radius was revised downward in Gaia Data Release 2 to ~755 solar radii, making it smaller than Betelgeuse (~887 R☉) and VY Canis Majoris (~1420 R☉). Among the original four options, VY Canis Majoris is now the largest. Question rewritten with VY Canis Majoris as correct at index 2. Source: Wikipedia List of largest stars, Gaia DR2 measurements."
+    },
+    {
+      "id": "otdb_sci_2_036",
+      "issue_type": "outdated",
+      "original_question": "Which color cannot be produced in Roses, even through genetic alteration?",
+      "original_correct_index": 1,
+      "original_options": [
+        "Orange",
+        "Blue",
+        "Black",
+        "Brown"
+      ],
+      "fix": "question_rewritten",
+      "new_correct_index": 2,
+      "new_question": "Which color of rose does NOT exist naturally (without genetic modification or dyeing)?",
+      "new_options": [
+        "Red",
+        "White",
+        "Blue",
+        "Pink"
+      ],
+      "notes": "Blue roses HAVE been produced via genetic alteration — Suntory's Applause rose (mauve/lavender) was commercially sold in Japan from 2010. The question premise \"even through genetic alteration\" is now false. Rewritten to ask about naturally occurring colors. True blue is not found in nature in roses. Source: Wikipedia Blue rose, Suntory Global Innovation Center."
+    },
+    {
+      "id": "sci_3_036",
+      "issue_type": "wrong_answer",
+      "original_question": "When was Aadhaar, the world's largest biometric ID system, launched in India?",
+      "original_correct_index": 2,
+      "original_options": [
+        "2006",
+        "2008",
+        "2009",
+        "2011"
+      ],
+      "fix": "question_rewritten",
+      "new_correct_index": 2,
+      "new_question": "In which year was UIDAI (Unique Identification Authority of India), the body behind Aadhaar, established?",
+      "new_options": [
+        "2006",
+        "2008",
+        "2009",
+        "2011"
+      ],
+      "notes": "UIDAI was established on 28 January 2009, but the first Aadhaar number was issued in September 2010. The system was \"launched\" (first Aadhaar issued) in 2010 which is not among the options. The question is rewritten to ask when UIDAI was established (2009) so the answer remains factually correct. Source: Aadhaar Wikipedia, Biometric Update."
+    },
+    {
+      "id": "geo_1_025",
+      "issue_type": "ambiguous",
+      "original_question": "Which is India's largest salt water lake?",
+      "original_correct_index": 0,
+      "original_options": [
+        "Sambhar Lake",
+        "Pulicat Lake",
+        "Chilika Lake",
+        "Kolleru Lake"
+      ],
+      "fix": "question_rewritten",
+      "new_correct_index": 0,
+      "new_question": "Which is India's largest inland saltwater lake?",
+      "new_options": [
+        "Sambhar Lake",
+        "Pulicat Lake",
+        "Chilika Lake",
+        "Kolleru Lake"
+      ],
+      "notes": "Chilika Lake (~1100 sq km) is larger than Sambhar Lake (~200 sq km) overall. However, Sambhar is the largest INLAND saltwater lake, while Chilika is a coastal lagoon. The question as written (\"largest salt water lake\") technically should have Chilika as the answer. Adding the word \"inland\" makes Sambhar correct. Source: Vedantu, Testbook, Wikipedia Sambhar Salt Lake."
+    }
+  ]
+}

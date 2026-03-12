@@ -1,0 +1,802 @@
+[
+  {
+    "id": "hist_easy_042",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who led the Dandi March in 1930?",
+    "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose", "Bal Gangadhar Tilak"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_043",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which year did India gain independence from British rule?",
+    "options": ["1945", "1947", "1950", "1942"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_044",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who was the first Prime Minister of independent India?",
+    "options": ["Sardar Vallabhbhai Patel", "Dr. Rajendra Prasad", "Jawaharlal Nehru", "Mahatma Gandhi"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_045",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who is known as the 'Father of the Nation' in India?",
+    "options": ["Subhas Chandra Bose", "Jawaharlal Nehru", "B.R. Ambedkar", "Mahatma Gandhi"],
+    "correct_index": 3
+  },
+  {
+    "id": "hist_easy_046",
+    "category": "history",
+    "difficulty": 1,
+    "question": "What is the name of the coastal village where Gandhi broke the salt law during the Dandi March?",
+    "options": ["Porbandar", "Dandi", "Bardoli", "Sabarmati"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_047",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who founded the Mughal Empire in India?",
+    "options": ["Akbar", "Humayun", "Babur", "Aurangzeb"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_048",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The Jallianwala Bagh massacre took place in which city?",
+    "options": ["Delhi", "Lahore", "Amritsar", "Lucknow"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_049",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who was the first President of the Republic of India?",
+    "options": ["Jawaharlal Nehru", "Dr. Rajendra Prasad", "Sardar Patel", "S. Radhakrishnan"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_050",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The Indian Constitution came into effect on which date?",
+    "options": ["15 August 1947", "26 November 1949", "26 January 1950", "2 October 1948"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_051",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who was known as 'Netaji'?",
+    "options": ["Bhagat Singh", "Subhas Chandra Bose", "Bal Gangadhar Tilak", "Lala Lajpat Rai"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_052",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The Quit India Movement was launched in which year?",
+    "options": ["1940", "1941", "1942", "1943"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_053",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who founded the Maurya Empire?",
+    "options": ["Ashoka", "Chandragupta Maurya", "Bindusara", "Samudragupta"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_054",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The First Battle of Panipat was fought between Babur and which ruler?",
+    "options": ["Rana Sanga", "Ibrahim Lodi", "Hemu", "Sher Shah Suri"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_055",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which Mughal emperor is known as 'Akbar the Great'?",
+    "options": ["Humayun", "Babur", "Akbar", "Shah Jahan"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_056",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who built the Taj Mahal?",
+    "options": ["Akbar", "Babur", "Aurangzeb", "Shah Jahan"],
+    "correct_index": 3
+  },
+  {
+    "id": "hist_easy_057",
+    "category": "history",
+    "difficulty": 1,
+    "question": "B.R. Ambedkar chaired which important committee that drafted the Indian Constitution?",
+    "options": ["Planning Committee", "Drafting Committee", "Finance Committee", "Public Committee"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_058",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The Indian National Congress was founded in which year?",
+    "options": ["1857", "1875", "1885", "1905"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_059",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who is known as the 'Iron Man of India'?",
+    "options": ["Jawaharlal Nehru", "B.R. Ambedkar", "Sardar Vallabhbhai Patel", "Bal Gangadhar Tilak"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_060",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The Revolt of 1857 is also known by which other name?",
+    "options": ["Dandi March", "First War of Independence", "Quit India Movement", "Non-Cooperation Movement"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_061",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which Mauryan emperor converted to Buddhism after the Kalinga War?",
+    "options": ["Chandragupta Maurya", "Bindusara", "Ashoka", "Brihadratha"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_062",
+    "category": "history",
+    "difficulty": 1,
+    "question": "In which city did the Jallianwala Bagh massacre occur in 1919?",
+    "options": ["Delhi", "Amritsar", "Lahore", "Bombay"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_063",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who gave the famous slogan 'Do or Die' during the Quit India Movement?",
+    "options": ["Jawaharlal Nehru", "Subhas Chandra Bose", "Mahatma Gandhi", "Bhagat Singh"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_064",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The ancient Indus Valley Civilization sites of Harappa and Mohenjo-daro are located in present-day which country?",
+    "options": ["India", "Pakistan", "Bangladesh", "Afghanistan"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_065",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Bhagat Singh was executed on which date?",
+    "options": ["15 August 1930", "23 March 1931", "26 January 1932", "30 January 1933"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_066",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who was the last Mughal Emperor of India?",
+    "options": ["Aurangzeb", "Shah Alam II", "Bahadur Shah Zafar", "Akbar II"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_067",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Subhas Chandra Bose founded which army to fight for Indian independence?",
+    "options": ["Indian National Army (INA)", "Revolutionary Army of India", "Swaraj Army", "Bengal Brigade"],
+    "correct_index": 0
+  },
+  {
+    "id": "hist_easy_068",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which freedom fighter gave the famous slogan 'Swaraj is my birthright and I shall have it'?",
+    "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "Bal Gangadhar Tilak", "Lala Lajpat Rai"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_069",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The Dandi March started from which ashram?",
+    "options": ["Wardha Ashram", "Sevagram Ashram", "Sabarmati Ashram", "Aurobindo Ashram"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_070",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who was the British Governor-General when the Partition of Bengal took place in 1905?",
+    "options": ["Lord Mountbatten", "Lord Curzon", "Lord Dalhousie", "Lord Ripon"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_071",
+    "category": "history",
+    "difficulty": 1,
+    "question": "The capital of the Maurya Empire was located in which present-day city?",
+    "options": ["Delhi", "Varanasi", "Patna (Pataliputra)", "Agra"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_072",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Which battle in 1757 established British supremacy in Bengal?",
+    "options": ["Battle of Buxar", "Battle of Plassey", "Battle of Panipat", "Battle of Haldighati"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_073",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Rani Lakshmibai was the queen of which princely state during the 1857 revolt?",
+    "options": ["Awadh", "Mysore", "Jhansi", "Hyderabad"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_easy_074",
+    "category": "history",
+    "difficulty": 1,
+    "question": "Who was the first Indian to travel to space?",
+    "options": ["A.P.J. Abdul Kalam", "Rakesh Sharma", "Kalpana Chawla", "Sunita Williams"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_easy_075",
+    "category": "history",
+    "difficulty": 1,
+    "question": "India's constitution was adopted by the Constituent Assembly on which date?",
+    "options": ["26 January 1950", "15 August 1947", "26 November 1949", "2 October 1948"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_043",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Dandi March covered approximately how many kilometres?",
+    "options": ["240 km", "385 km", "500 km", "150 km"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_044",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Jallianwala Bagh massacre took place on which date in 1919?",
+    "options": ["13 April 1919", "10 May 1919", "1 August 1919", "15 March 1919"],
+    "correct_index": 0
+  },
+  {
+    "id": "hist_medium_045",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which act passed by the British in 1919 allowed imprisonment without trial and triggered Gandhi's first nationwide civil disobedience campaign?",
+    "options": ["Government of India Act", "Rowlatt Act", "Sedition Act", "Vernacular Press Act"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_046",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Quit India Movement was formally launched at which session of the All India Congress Committee in 1942?",
+    "options": ["Lahore Session", "Calcutta Session", "Bombay Session", "Allahabad Session"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_047",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Partition of Bengal in 1905 was annulled in which year?",
+    "options": ["1909", "1911", "1916", "1919"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_048",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which freedom fighter was known as 'Punjab Kesari' (Lion of Punjab)?",
+    "options": ["Bhagat Singh", "Lala Lajpat Rai", "Sukhdev", "Udham Singh"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_049",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Battle of Plassey was fought between Robert Clive and which Nawab of Bengal?",
+    "options": ["Mir Jafar", "Mir Qasim", "Siraj-ud-Daulah", "Murshid Quli Khan"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_050",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Morley-Minto Reforms of 1909 introduced which contentious concept that later deepened communal divisions?",
+    "options": ["Provincial Autonomy", "Separate Electorates for Muslims", "Diarchy", "Federal Structure"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_051",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Rajendra Chola I launched a famous naval expedition around 1025 CE against which maritime empire in Southeast Asia?",
+    "options": ["Khmer Empire", "Majapahit Empire", "Srivijaya Empire", "Pagan Kingdom"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_052",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Vijayanagara Empire was founded in which year by Harihara and Bukka Raya?",
+    "options": ["1206", "1336", "1398", "1526"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_053",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who was the commander of the British forces at the Battle of Plassey in 1757?",
+    "options": ["Warren Hastings", "Robert Clive", "Arthur Wellesley", "Charles Cornwallis"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_054",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which Mughal emperor abolished the jizya tax on non-Muslims and introduced the policy of Sulh-i-kul (universal peace)?",
+    "options": ["Babur", "Humayun", "Akbar", "Jahangir"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_055",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Lucknow Pact of 1916 was an agreement between the Indian National Congress and which other political organisation?",
+    "options": ["Hindu Mahasabha", "Muslim League", "Ghadar Party", "Home Rule League"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_056",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Mangal Pandey, who fired the first shot in the 1857 revolt, was a soldier in which regiment?",
+    "options": ["19th Bengal Native Infantry", "34th Bengal Native Infantry", "10th Bengal Native Infantry", "50th Bengal Native Infantry"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_057",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Non-Cooperation Movement launched by Gandhi in 1920 was suspended following which violent incident?",
+    "options": ["Jallianwala Bagh massacre", "Chauri Chaura incident", "Lahore Conspiracy Case", "Chittagong Armoury Raid"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_058",
+    "category": "history",
+    "difficulty": 2,
+    "question": "In which year did Ashoka fight the Kalinga War that led to his conversion to Buddhism?",
+    "options": ["280 BCE", "268 BCE", "260 BCE", "232 BCE"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_059",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which treaty ended the Third Anglo-Maratha War and dissolved the Maratha Confederacy in 1818?",
+    "options": ["Treaty of Salbai", "Treaty of Bassein", "Treaty of Pune", "Treaty of Satara"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_060",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Swadeshi Movement emerged primarily as a protest against which 1905 colonial decision?",
+    "options": ["Partition of Punjab", "Partition of Bengal", "Rowlatt Act", "Simon Commission"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_061",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who was the first Governor-General of independent India?",
+    "options": ["Lord Mountbatten", "C. Rajagopalachari", "Sardar Patel", "Jawaharlal Nehru"],
+    "correct_index": 0
+  },
+  {
+    "id": "hist_medium_062",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The States Reorganisation Act of 1956 reorganized Indian states primarily on which basis?",
+    "options": ["Religion", "Economic zones", "Language", "Geographic features"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_063",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who authored the famous book 'Discovery of India'?",
+    "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "B.R. Ambedkar", "Rabindranath Tagore"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_064",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Simon Commission was boycotted in 1928 because it had no Indian members. Who chaired this commission?",
+    "options": ["Lord Simon", "Sir John Simon", "Lord Irwin", "Lord Reading"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_065",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which Maratha leader defeated the Mughal forces at the Battle of Salher in 1672?",
+    "options": ["Shivaji Maharaj", "Bajirao I", "Sambhaji", "Pratapaditya"],
+    "correct_index": 0
+  },
+  {
+    "id": "hist_medium_066",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Chittagong Armoury Raid of 1930 was led by which revolutionary?",
+    "options": ["Bhagat Singh", "Surya Sen (Masterda)", "Subhas Chandra Bose", "Chandrashekhar Azad"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_067",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The battle that decisively ended Mughal power in southern India after 1565 was known as?",
+    "options": ["Battle of Talikota", "Battle of Haldighati", "Battle of Khanwa", "Battle of Assaye"],
+    "correct_index": 0
+  },
+  {
+    "id": "hist_medium_068",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which Sikh Guru founded the holy city of Amritsar?",
+    "options": ["Guru Nanak Dev", "Guru Arjan Dev", "Guru Ram Das", "Guru Gobind Singh"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_069",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Doctrine of Lapse, used to annex princely states, was introduced by which British Governor-General?",
+    "options": ["Lord Wellesley", "Lord Dalhousie", "Lord Cornwallis", "Lord Ripon"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_070",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Gupta Empire is referred to as the 'Golden Age' of India because of achievements in which field?",
+    "options": ["Military conquest alone", "Trade and commerce only", "Art, science, literature, and mathematics", "Naval exploration"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_071",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who was Lala Lajpat Rai protesting against when he was fatally injured in a lathi charge in 1928?",
+    "options": ["Rowlatt Act", "Salt Act", "Simon Commission", "Partition of Bengal"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_medium_072",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Battle of Buxar (1764) established complete British supremacy over Bengal, Bihar, and Orissa. Who was the British commander in this battle?",
+    "options": ["Robert Clive", "Hector Munro", "Arthur Wellesley", "Gerard Lake"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_073",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Which Mughal emperor was known for his policy of religious intolerance and reimposed the jizya tax on Hindus?",
+    "options": ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
+    "correct_index": 3
+  },
+  {
+    "id": "hist_medium_074",
+    "category": "history",
+    "difficulty": 2,
+    "question": "The Permanent Settlement of Bengal, introduced in 1793, was a revenue system introduced by which Governor-General?",
+    "options": ["Warren Hastings", "Lord Cornwallis", "Lord Wellesley", "Lord Dalhousie"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_medium_075",
+    "category": "history",
+    "difficulty": 2,
+    "question": "Who was the last independent Nawab of Bengal, defeated at the Battle of Plassey in 1757?",
+    "options": ["Mir Jafar", "Mir Qasim", "Siraj-ud-Daulah", "Alivardi Khan"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_hard_044",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Dandi March began on 12 March 1930 with exactly how many satyagrahis accompanying Gandhi from Sabarmati Ashram?",
+    "options": ["12", "78", "120", "51"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_045",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Under which Mughal emperor was the Mansabdari system first formally instituted as an administrative framework?",
+    "options": ["Babur", "Humayun", "Akbar", "Jahangir"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_hard_046",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Rowlatt Act of 1919 was officially named what?",
+    "options": ["The Indian Penal Code Amendment Act", "The Anarchical and Revolutionary Crimes Act", "The Public Safety Act", "The Emergency Powers Act"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_047",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Ashoka's 13th Rock Edict describes the aftermath of which war and his subsequent remorse?",
+    "options": ["War against the Yavanas", "Kalinga War", "Conquest of Magadha", "War against Taxila"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_048",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Poona Pact of 1932 was signed between Gandhi and B.R. Ambedkar to resolve the issue of separate electorates for which group?",
+    "options": ["Muslims", "Sikhs", "Scheduled Castes (Depressed Classes)", "Christians"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_hard_049",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Indus Valley Civilization flourished approximately in which period?",
+    "options": ["5000–3000 BCE", "2600–1900 BCE (Mature Harappan)", "1500–1000 BCE", "3500–2000 BCE"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_050",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The 'Cabinet Mission Plan' of 1946 was led by which British minister who proposed a federal structure for India?",
+    "options": ["Stafford Cripps", "Lord Pethick-Lawrence", "A.V. Alexander", "Lord Mountbatten"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_051",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which Congress session of 1929 first passed a resolution demanding Purna Swaraj (complete independence) for India?",
+    "options": ["Surat Session", "Nagpur Session", "Lahore Session", "Calcutta Session"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_hard_052",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Vernacular Press Act of 1878 was repealed by which Viceroy?",
+    "options": ["Lord Ripon", "Lord Lytton", "Lord Dufferin", "Lord Curzon"],
+    "correct_index": 0
+  },
+  {
+    "id": "hist_hard_053",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which revolutionary threw a bomb in the Central Legislative Assembly in Delhi on 8 April 1929 along with Bhagat Singh?",
+    "options": ["Sukhdev", "Rajguru", "Batukeshwar Dutt", "Chandrashekhar Azad"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_hard_054",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Chauri Chaura incident of February 1922 occurred in which present-day state?",
+    "options": ["Bihar", "Uttar Pradesh", "Madhya Pradesh", "West Bengal"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_055",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Lahore Conspiracy Case of 1929-1931 involved which key assassination that Bhagat Singh was charged with?",
+    "options": ["Killing of Lord Curzon", "Killing of J.P. Saunders (British police officer)", "Killing of Lord Reading", "Killing of General Dyer"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_056",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Rajendra Chola I conducted his famous naval expedition against Srivijaya approximately in which year?",
+    "options": ["980 CE", "1025 CE", "1100 CE", "1150 CE"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_057",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Montagu-Chelmsford Reforms of 1919 introduced which system of governance in provincial legislatures?",
+    "options": ["Direct democracy", "Dyarchy", "Bicameralism", "Federal autonomy"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_058",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Treaty of Bassein (1802), which brought the Peshwa under British protection, was signed with which Maratha leader?",
+    "options": ["Baji Rao I", "Baji Rao II", "Madhavrao Scindia", "Daulat Rao Scindia"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_059",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Harappan site of Dholavira, known for its water conservation systems, is located in which state of India?",
+    "options": ["Rajasthan", "Punjab", "Gujarat", "Haryana"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_hard_060",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which British official ordered the troops to fire at Jallianwala Bagh on 13 April 1919?",
+    "options": ["Lord Chelmsford", "Michael O'Dwyer", "Brigadier-General Reginald Dyer", "Lord Irwin"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_hard_061",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Ilbert Bill controversy of 1883-84 during Lord Ripon's tenure was related to what issue?",
+    "options": ["Land revenue collection", "The right of Indian judges to try European British subjects", "Railway expansion", "Military recruitment"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_062",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Who was the Indian constitutional advisor (not chairman) of the Constituent Assembly Drafting Committee?",
+    "options": ["B.R. Ambedkar", "B.N. Rau", "Rajendra Prasad", "Alladi Krishnaswami Ayyar"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_063",
+    "category": "history",
+    "difficulty": 3,
+    "question": "In which year was the East India Company's rule over India officially transferred to the British Crown?",
+    "options": ["1857", "1858", "1861", "1865"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_064",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Battle of Haldighati (1576) was fought between Maharana Pratap and the Mughal forces led by which general?",
+    "options": ["Todar Mal", "Man Singh I", "Birbal", "Abul Fazl"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_065",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which revolutionary organisation founded by Chandrashekhar Azad carried out the famous Kakori train robbery in 1925?",
+    "options": ["Anushilan Samiti", "Hindustan Republican Association", "Ghadar Party", "Abhinav Bharat"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_066",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Nehru Report of 1928 was prepared in response to which British challenge to Indians to draft their own constitution?",
+    "options": ["Simon Commission report findings", "Lord Birkenhead's challenge", "Montagu's declaration", "Cripps Mission proposal"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_067",
+    "category": "history",
+    "difficulty": 3,
+    "question": "In which year was the Asiatic Society of Bengal founded by Sir William Jones, a landmark in orientalist scholarship in India?",
+    "options": ["1772", "1784", "1800", "1817"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_068",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The First Anglo-Sikh War (1845-46) ended with which treaty that ceded lands to the British East India Company?",
+    "options": ["Treaty of Lahore", "Treaty of Amritsar", "Treaty of Bhyrowal", "Treaty of Peshawar"],
+    "correct_index": 0
+  },
+  {
+    "id": "hist_hard_069",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Rakhigarhi, considered the largest Harappan site discovered in India, is located in which state?",
+    "options": ["Gujarat", "Rajasthan", "Haryana", "Punjab"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_hard_070",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Permanent Settlement introduced by Lord Cornwallis in 1793 initially applied to which region of India?",
+    "options": ["Bombay Presidency", "Madras Presidency", "Bengal Presidency", "Punjab"],
+    "correct_index": 2
+  },
+  {
+    "id": "hist_hard_071",
+    "category": "history",
+    "difficulty": 3,
+    "question": "During the 1857 revolt, Bahadur Shah Zafar was exiled to which city after being tried for treason?",
+    "options": ["Colombo", "Rangoon (Yangon)", "London", "Cape Town"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_072",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which medieval Indian mathematician, associated with the Gupta period, is credited with calculating the value of pi and formulating the heliocentric theory of the solar system?",
+    "options": ["Brahmagupta", "Aryabhata", "Varahamihira", "Bhaskara I"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_073",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The Subsidiary Alliance system in India was introduced by which British Governor-General?",
+    "options": ["Lord Cornwallis", "Lord Wellesley", "Lord Dalhousie", "Lord Hastings"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_074",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Who was the founder of the Gupta Empire, though it was his grandson Chandragupta I who elevated it to imperial status?",
+    "options": ["Samudragupta", "Sri Gupta", "Ghatotkacha", "Skandagupta"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_075",
+    "category": "history",
+    "difficulty": 3,
+    "question": "The famous Ain-i-Akbari, a 16th-century administrative document detailing Akbar's empire, was written by which court historian?",
+    "options": ["Birbal", "Abul Fazl", "Faizi", "Todar Mal"],
+    "correct_index": 1
+  },
+  {
+    "id": "hist_hard_076",
+    "category": "history",
+    "difficulty": 3,
+    "question": "Which Chola king is credited with building the Brihadeeswarar Temple at Thanjavur around 1010 CE?",
+    "options": ["Rajendra Chola I", "Raja Raja Chola I", "Kulottunga I", "Vikrama Chola"],
+    "correct_index": 1
+  }
+]

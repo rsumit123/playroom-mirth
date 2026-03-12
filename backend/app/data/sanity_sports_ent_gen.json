@@ -1,0 +1,263 @@
+{
+  "audited": 767,
+  "issues_found": [
+    {
+      "id": "spo_2_021",
+      "issue_type": "nonsensical",
+      "original_question": "Which Indian cricketer scored the fastest century in IPL history off just 30 balls?",
+      "original_correct_index": 1,
+      "original_options": ["AB de Villiers", "Chris Gayle", "Yusuf Pathan", "KL Rahul"],
+      "fix": "question_rewritten",
+      "new_correct_index": 1,
+      "new_question": "Who holds the record for the fastest century in IPL history, scoring 100 off just 30 balls?",
+      "new_options": ["AB de Villiers", "Chris Gayle", "Yusuf Pathan", "KL Rahul"],
+      "notes": "The question says 'Which Indian cricketer' but Chris Gayle (correct answer, index 1) is Jamaican/West Indian, not Indian. Gayle scored his record century off 30 balls on April 23, 2013 for RCB vs Pune Warriors. Source: ESPNcricinfo / olympics.com fastest IPL centuries."
+    },
+    {
+      "id": "ent_1_019",
+      "issue_type": "nonsensical",
+      "original_question": "Which actress is known as the 'Nightingale of India'?",
+      "original_correct_index": 0,
+      "original_options": ["Lata Mangeshkar", "Asha Bhosle", "Shreya Ghoshal", "Alka Yagnik"],
+      "fix": "question_rewritten",
+      "new_correct_index": 0,
+      "new_question": "Which singer is known as the 'Nightingale of India'?",
+      "new_options": ["Lata Mangeshkar", "Asha Bhosle", "Shreya Ghoshal", "Alka Yagnik"],
+      "notes": "Lata Mangeshkar (correct answer, index 0) was a legendary playback singer, not an actress. Calling her 'actress' is factually wrong. Note: also a near-duplicate of ent_1_003 which asks the same question."
+    },
+    {
+      "id": "spo_2_035",
+      "issue_type": "wrong_answer",
+      "original_question": "Which country has won the most Olympic gold medals in men's football (soccer)?",
+      "original_correct_index": 2,
+      "original_options": ["Germany", "Argentina", "Brazil", "Spain"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Brazil is NOT the correct answer. Great Britain and Hungary are tied for the most men's Olympic football gold medals with 3 each. Brazil has 2 golds. None of the four options is correct, so the question has no valid answer and must be deleted. Source: Wikipedia 'Football at the Summer Olympics'."
+    },
+    {
+      "id": "spo_1_009",
+      "issue_type": "duplicate",
+      "original_question": "Neeraj Chopra won India's first Olympic gold in athletics. What is his event?",
+      "original_correct_index": 2,
+      "original_options": ["Shot Put", "Discus Throw", "Javelin Throw", "Hammer Throw"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_1_023 ('Neeraj Chopra won Olympic gold for India in which sport?' same options and same answer Javelin Throw index 2). spo_1_023 was also removed, retaining only the original spo_1_009 with fuller context."
+    },
+    {
+      "id": "spo_1_023",
+      "issue_type": "duplicate",
+      "original_question": "Neeraj Chopra won Olympic gold for India in which sport?",
+      "original_correct_index": 2,
+      "original_options": ["Shot Put", "Discus Throw", "Javelin Throw", "Hammer Throw"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Exact duplicate of spo_1_009 (same topic, same options, same answer). Deleted in favour of spo_1_009 which has more context in the question text."
+    },
+    {
+      "id": "spo_1_032",
+      "issue_type": "duplicate",
+      "original_question": "Which team won the inaugural IPL season in 2008?",
+      "original_correct_index": 2,
+      "original_options": ["Chennai Super Kings", "Mumbai Indians", "Rajasthan Royals", "Kolkata Knight Riders"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Exact duplicate of spo_1_006 ('Which team won the first ever IPL season in 2008?' same options and same correct answer Rajasthan Royals index 2)."
+    },
+    {
+      "id": "spo_1_035",
+      "issue_type": "duplicate",
+      "original_question": "How many players are there in a standard cricket team?",
+      "original_correct_index": 2,
+      "original_options": ["9", "10", "11", "12"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Near-exact duplicate of spo_1_001 ('How many players are there in a cricket team?' same options, same correct answer 11 at index 2)."
+    },
+    {
+      "id": "spo_1_038",
+      "issue_type": "duplicate",
+      "original_question": "Which Indian cricketer is nicknamed 'The Wall'?",
+      "original_correct_index": 1,
+      "original_options": ["Sachin Tendulkar", "Rahul Dravid", "VVS Laxman", "Anil Kumble"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_1_011 ('Which cricketer is famously known as The Wall for his solid defensive batting?' same answer Rahul Dravid)."
+    },
+    {
+      "id": "spo_1_043",
+      "issue_type": "duplicate",
+      "original_question": "How many Olympic gold medals has the Indian men's hockey team won in total?",
+      "original_correct_index": 2,
+      "original_options": ["5", "6", "8", "10"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_2_006 ('How many Olympic gold medals has the Indian men's hockey team won?' same options, same answer 8 at index 2)."
+    },
+    {
+      "id": "spo_1_055",
+      "issue_type": "duplicate",
+      "original_question": "Which Indian sportsperson is nicknamed 'Captain Cool'?",
+      "original_correct_index": 2,
+      "original_options": ["Virat Kohli", "Sachin Tendulkar", "MS Dhoni", "Rohit Sharma"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_1_008 ('Which Indian cricketer is nicknamed Captain Cool?' same answer MS Dhoni)."
+    },
+    {
+      "id": "spo_2_008",
+      "issue_type": "duplicate",
+      "original_question": "Which team did India defeat in the final of the inaugural 2007 T20 World Cup?",
+      "original_correct_index": 3,
+      "original_options": ["Sri Lanka", "Australia", "South Africa", "Pakistan"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_2_047 ('Which country did India defeat in the final of the 2007 T20 World Cup?' same answer Pakistan). Answer Pakistan is correct."
+    },
+    {
+      "id": "spo_2_009",
+      "issue_type": "duplicate",
+      "original_question": "Who is the all-time highest run scorer in IPL history?",
+      "original_correct_index": 1,
+      "original_options": ["Rohit Sharma", "Virat Kohli", "Suresh Raina", "David Warner"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_1_020 ('Who holds the record for the most runs scored in IPL history?' same options and same correct answer Virat Kohli index 1). Also spo_1_019 (id) has same topic."
+    },
+    {
+      "id": "spo_2_014",
+      "issue_type": "duplicate",
+      "original_question": "In the 2024 T20 World Cup final, India defeated which team to win their second T20 World Cup title?",
+      "original_correct_index": 3,
+      "original_options": ["England", "Australia", "Pakistan", "South Africa"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_2_020 ('In the 2024 T20 World Cup final, India beat which team to claim the title?' same answer South Africa). Answer South Africa is correct."
+    },
+    {
+      "id": "spo_1_021",
+      "issue_type": "duplicate",
+      "original_question": "In which year did India win its first Cricket World Cup?",
+      "original_correct_index": 2,
+      "original_options": ["1975", "1979", "1983", "1987"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_2_002 ('In which year did India first win the ODI Cricket World Cup?' same options, same answer 1983 index 2)."
+    },
+    {
+      "id": "spo_3_019",
+      "issue_type": "duplicate",
+      "original_question": "In which weight category did Mirabai Chanu win her silver medal at the Tokyo Olympics?",
+      "original_correct_index": 0,
+      "original_options": ["49 kg", "55 kg", "59 kg", "64 kg"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of sports_3_031 ('In which weight category did Mirabai Chanu win silver at the 2020 Tokyo Olympics?' same answer 49 kg). Answer 49 kg confirmed correct."
+    },
+    {
+      "id": "spo_3_022",
+      "issue_type": "duplicate",
+      "original_question": "Who won the first season of the Pro Kabaddi League in 2014?",
+      "original_correct_index": 2,
+      "original_options": ["Patna Pirates", "U Mumba", "Jaipur Pink Panthers", "Bengaluru Bulls"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_3_007 ('Which team won the first season of the Pro Kabaddi League in 2014?' same answer Jaipur Pink Panthers index 2). Jaipur Pink Panthers confirmed as 2014 PKL winner via prokabaddi.com."
+    },
+    {
+      "id": "spo_3_025",
+      "issue_type": "duplicate",
+      "original_question": "Against which team did Anil Kumble take all 10 wickets in a Test innings in 1999?",
+      "original_correct_index": 3,
+      "original_options": ["Sri Lanka", "England", "Australia", "Pakistan"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_3_003 ('Anil Kumble took all 10 wickets in a Test innings in 1999 against which team?' same answer Pakistan index 3) and sports_2_022 (same question, same answer Pakistan index 1). Answer Pakistan is correct."
+    },
+    {
+      "id": "spo_2_050",
+      "issue_type": "duplicate",
+      "original_question": "Leander Paes won an Olympic bronze medal in 1996 in which sport?",
+      "original_correct_index": 2,
+      "original_options": ["Badminton", "Table Tennis", "Tennis", "Squash"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of spo_3_009 ('Leander Paes won a bronze medal for India at the 1996 Atlanta Olympics in which sport?' same options and answer Tennis index 2). Answer Tennis correct."
+    },
+    {
+      "id": "gen_2_005",
+      "issue_type": "duplicate",
+      "original_question": "What does CSS stand for in web development?",
+      "original_correct_index": 1,
+      "original_options": ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style System", "Coded Style Sheets"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of otdb_comp_1_019 ('In web design, what does CSS stand for?' same correct answer Cascading Style Sheet/Sheets). One removed."
+    },
+    {
+      "id": "gen_1_005",
+      "issue_type": "duplicate",
+      "original_question": "What does USB stand for?",
+      "original_correct_index": 3,
+      "original_options": ["Universal System Bus", "Ultra Serial Bus", "Unified Serial Board", "Universal Serial Bus"],
+      "fix": "mark_for_deletion",
+      "new_correct_index": null,
+      "new_question": null,
+      "new_options": null,
+      "notes": "Duplicate of otdb_comp_1_015 ('What does the term USB stand for?' same correct answer Universal Serial Bus). One removed."
+    }
+  ],
+  "summary": {
+    "total_audited": 767,
+    "total_issues_found": 20,
+    "fixes_applied": 20,
+    "by_fix_type": {
+      "question_rewritten": 2,
+      "mark_for_deletion": 18
+    },
+    "by_issue_type": {
+      "nonsensical_question_wording": 2,
+      "wrong_answer_no_correct_option": 1,
+      "duplicate": 17
+    },
+    "total_questions_deleted": 18,
+    "total_questions_rewritten": 2,
+    "questions_before": 767,
+    "questions_after_in_category": 749
+  }
+}

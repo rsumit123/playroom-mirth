@@ -1,0 +1,802 @@
+[
+  {
+    "id": "spt_easy_061",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "How many ODI centuries did Sachin Tendulkar score in his career?",
+    "options": ["45", "49", "52", "56"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_062",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which Indian cricketer is the highest run-scorer in IPL history?",
+    "options": ["Rohit Sharma", "MS Dhoni", "Virat Kohli", "Suresh Raina"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_063",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Who captained India to win the 1983 Cricket World Cup?",
+    "options": ["Sunil Gavaskar", "Kapil Dev", "Ravi Shastri", "Mohinder Amarnath"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_064",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Abhinav Bindra won India's first individual Olympic gold in which sport?",
+    "options": ["Archery", "Wrestling", "10m Air Rifle Shooting", "Boxing"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_065",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "At which Olympic Games did Abhinav Bindra win India's first individual gold medal?",
+    "options": ["Athens 2004", "Beijing 2008", "London 2012", "Sydney 2000"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_066",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Neeraj Chopra won a gold medal at the Tokyo 2020 Olympics in which event?",
+    "options": ["100m Sprint", "Long Jump", "Javelin Throw", "Shot Put"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_067",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which team won the IPL 2024 title?",
+    "options": ["Mumbai Indians", "Chennai Super Kings", "Kolkata Knight Riders", "Royal Challengers Bengaluru"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_068",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which team won the IPL 2025 title for the first time in their history?",
+    "options": ["Mumbai Indians", "Royal Challengers Bengaluru", "Delhi Capitals", "Rajasthan Royals"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_069",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "How many times has India won the Men's Cricket ODI World Cup?",
+    "options": ["1", "2", "3", "4"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_070",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "PV Sindhu won a silver medal in badminton at which Olympic Games?",
+    "options": ["London 2012", "Rio 2016", "Tokyo 2020", "Paris 2024"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_071",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which Indian female boxer won a bronze medal at the 2012 London Olympics?",
+    "options": ["Nikhat Zareen", "Lovlina Borgohain", "Mary Kom", "Sarita Devi"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_072",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "How many times has Viswanathan Anand won the World Chess Championship?",
+    "options": ["3", "4", "5", "6"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_073",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which IPL team has won the most titles in the league's history (as of 2025)?",
+    "options": ["Chennai Super Kings", "Mumbai Indians", "Kolkata Knight Riders", "Royal Challengers Bengaluru"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_074",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "How many Olympic gold medals has India's men's field hockey team won in total?",
+    "options": ["5", "6", "8", "10"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_075",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which Indian wrestler won a bronze medal at the 2008 Beijing Olympics?",
+    "options": ["Bajrang Punia", "Yogeshwar Dutt", "Sushil Kumar", "Ravi Dahiya"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_076",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Saina Nehwal won an Olympic bronze medal in badminton at which Games?",
+    "options": ["Beijing 2008", "London 2012", "Rio 2016", "Tokyo 2020"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_077",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "India won the inaugural T20 World Cup in 2007 under the captaincy of which player?",
+    "options": ["Sourav Ganguly", "Rahul Dravid", "MS Dhoni", "Sachin Tendulkar"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_078",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which team has won the Pro Kabaddi League (PKL) the most times?",
+    "options": ["Jaipur Pink Panthers", "U Mumba", "Patna Pirates", "Dabang Delhi"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_079",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Virat Kohli holds the record for the most ODI centuries, surpassing Sachin Tendulkar's mark of 49. What is Kohli's ODI century count as of 2024?",
+    "options": ["50", "52", "54", "56"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_080",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "India's men's hockey team won an Olympic bronze medal at Tokyo 2020, their first Olympic medal in how many years?",
+    "options": ["21 years", "31 years", "41 years", "51 years"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_081",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which legendary Indian hockey player was known as the 'Hockey Wizard' and won three Olympic gold medals?",
+    "options": ["Balbir Singh Sr.", "Dhyan Chand", "Udham Singh", "KD Singh Babu"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_082",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Who was awarded the 'Man of the Tournament' in the 2011 Cricket World Cup?",
+    "options": ["MS Dhoni", "Sachin Tendulkar", "Yuvraj Singh", "Virat Kohli"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_083",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "In which city was the 2011 Cricket World Cup final played, which India won?",
+    "options": ["Delhi", "Chennai", "Kolkata", "Mumbai"],
+    "correct_index": 3
+  },
+  {
+    "id": "spt_easy_084",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which Indian cricketer famously hit 6 sixes in a single over against Stuart Broad in the 2007 T20 World Cup?",
+    "options": ["MS Dhoni", "Yuvraj Singh", "Suresh Raina", "Harbhajan Singh"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_085",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Leander Paes won an Olympic bronze medal in tennis at which Games?",
+    "options": ["Barcelona 1992", "Atlanta 1996", "Sydney 2000", "Athens 2004"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_086",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Who is the only Indian player to score three double centuries (200+) in ODI cricket?",
+    "options": ["Sachin Tendulkar", "Virender Sehwag", "Rohit Sharma", "Virat Kohli"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_087",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "PV Sindhu won a bronze medal in badminton at which Olympic Games?",
+    "options": ["Rio 2016", "London 2012", "Tokyo 2020", "Paris 2024"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_088",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Who was the first Indian woman to win two Olympic medals?",
+    "options": ["Saina Nehwal", "Mary Kom", "PV Sindhu", "Karnam Malleswari"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_089",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which country did India defeat in the final of the 2024 T20 World Cup?",
+    "options": ["Australia", "England", "Pakistan", "South Africa"],
+    "correct_index": 3
+  },
+  {
+    "id": "spt_easy_090",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which Indian cricket captain won three different ICC limited-overs trophies: T20 World Cup (2007), ODI World Cup (2011) and Champions Trophy (2013)?",
+    "options": ["Virat Kohli", "MS Dhoni", "Rohit Sharma", "Sourav Ganguly"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_091",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "What is the nickname of Indian athlete Milkha Singh who narrowly missed an Olympic medal in the 400m at the 1960 Rome Olympics?",
+    "options": ["Golden Boy", "Flying Sikh", "Sprint King", "Track Tiger"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_easy_092",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Mary Kom has won how many World Boxing Championship gold medals in her career?",
+    "options": ["4", "5", "6", "7"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_093",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "India won the 2024 T20 World Cup under whose captaincy?",
+    "options": ["Virat Kohli", "Hardik Pandya", "Rohit Sharma", "KL Rahul"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_easy_094",
+    "category": "sports",
+    "difficulty": 1,
+    "question": "Which Indian player won the silver medal in wrestling (57kg) at the Tokyo 2020 Olympics?",
+    "options": ["Sushil Kumar", "Bajrang Punia", "Ravi Kumar Dahiya", "Narsingh Yadav"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_061",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "What distance did Neeraj Chopra throw to win the javelin gold at the Tokyo 2020 Olympics?",
+    "options": ["85.44m", "86.65m", "87.58m", "88.39m"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_062",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "What was Kapil Dev's score in his historic innings against Zimbabwe in the 1983 World Cup?",
+    "options": ["165 not out", "175 not out", "183 not out", "191 not out"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_063",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Sunil Gavaskar was the first batsman to score 10,000 runs in Test cricket. In which year did he achieve this milestone?",
+    "options": ["1985", "1986", "1987", "1988"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_064",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Sushil Kumar won two individual Olympic medals — a bronze in 2008 and a silver in 2012. In which weight category did he compete?",
+    "options": ["60kg freestyle", "66kg freestyle", "74kg freestyle", "84kg freestyle"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_065",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Pullela Gopichand won the All England Open Badminton Championship in 2001, becoming the second Indian to do so. Who was the first?",
+    "options": ["Syed Modi", "Dinesh Khanna", "Prakash Padukone", "Nandu Natekar"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_066",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "In the 2007 T20 World Cup final, India beat Pakistan by how many runs?",
+    "options": ["3 runs", "5 runs", "7 runs", "9 runs"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_067",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Which bowler did Yuvraj Singh hit for 6 sixes in a single over during the 2007 T20 World Cup group stage?",
+    "options": ["James Anderson", "Andrew Flintoff", "Stuart Broad", "Paul Collingwood"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_068",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Rohit Sharma's highest individual ODI score of 264 was made against which country?",
+    "options": ["Australia", "Pakistan", "Sri Lanka", "West Indies"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_069",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Viswanathan Anand won the undisputed FIDE World Chess Championship in 2007, 2008, 2010, 2012 and which other year?",
+    "options": ["1999", "2000", "2002", "2004"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_070",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "India's women cricket team reached the final of the ICC Women's World Cup in 2017 but lost. Which country beat them in the final?",
+    "options": ["Australia", "New Zealand", "England", "West Indies"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_071",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Sachin Tendulkar scored his first ODI century in 1994 against which country?",
+    "options": ["New Zealand", "Pakistan", "Sri Lanka", "Australia"],
+    "correct_index": 3
+  },
+  {
+    "id": "spt_medium_072",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "How many IPL titles did Mumbai Indians win under the captaincy of Rohit Sharma?",
+    "options": ["3", "4", "5", "6"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_073",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "KD Jadhav was India's first individual Olympic medallist, winning bronze in wrestling in 1952. At which Olympics did this happen?",
+    "options": ["London 1948", "Helsinki 1952", "Melbourne 1956", "Rome 1960"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_074",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "In which year did Prakash Padukone become the first Indian to win the All England Open Badminton Championship?",
+    "options": ["1978", "1979", "1980", "1981"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_075",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Which Indian cricketer became the first player to score 100 international centuries?",
+    "options": ["Sunil Gavaskar", "Rahul Dravid", "Virat Kohli", "Sachin Tendulkar"],
+    "correct_index": 3
+  },
+  {
+    "id": "spt_medium_076",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Which Indian wrestler won bronze in the 65kg freestyle event at the Tokyo 2020 Olympics?",
+    "options": ["Sushil Kumar", "Bajrang Punia", "Sumit Malik", "Deepak Punia"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_077",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "In the 2024 IPL final, Kolkata Knight Riders bowled out Sunrisers Hyderabad for just 113 runs — the lowest total in an IPL final. Who was the Player of the Match?",
+    "options": ["Sunil Narine", "Venkatesh Iyer", "Mitchell Starc", "Andre Russell"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_078",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Which Indian woman boxer won a bronze medal at the Tokyo 2020 Olympics in the 69kg category?",
+    "options": ["Mary Kom", "Sarita Devi", "Nikhat Zareen", "Lovlina Borgohain"],
+    "correct_index": 3
+  },
+  {
+    "id": "spt_medium_079",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "India last won an Olympic gold medal in field hockey in which year?",
+    "options": ["1976", "1980", "1984", "1988"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_080",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Milkha Singh missed a bronze medal at the 1960 Rome Olympics 400m final by what time margin?",
+    "options": ["0.01 seconds", "0.05 seconds", "0.1 seconds", "0.2 seconds"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_081",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Dhyan Chand scored 37 goals in 12 matches across how many Olympic Games?",
+    "options": ["2", "3", "4", "5"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_082",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Leander Paes won how many Grand Slam titles in doubles (men's doubles + mixed doubles) during his career?",
+    "options": ["12", "15", "18", "21"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_083",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "India beat which country in the Men's Hockey bronze medal match at Tokyo 2020 Olympics?",
+    "options": ["Netherlands", "Australia", "Great Britain", "Germany"],
+    "correct_index": 3
+  },
+  {
+    "id": "spt_medium_084",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Virender Sehwag holds the highest individual score by an Indian in Test cricket. What is that score?",
+    "options": ["293", "309", "319", "329"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_085",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "India's first Olympic hockey gold came at the 1928 Amsterdam Games. How many goals did Dhyan Chand score in that tournament?",
+    "options": ["8", "11", "14", "19"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_086",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Which Chennai Super Kings (CSK) IPL title was won under MS Dhoni's captaincy in 2023?",
+    "options": ["3rd title", "4th title", "5th title", "6th title"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_087",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Sachin Tendulkar scored his first Test century against England in which year?",
+    "options": ["1989", "1990", "1991", "1992"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_088",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "In which year did Kapil Dev take his famous 8 wickets for 85 runs in a Test match against Pakistan to win the series?",
+    "options": ["1979", "1982", "1983", "1986"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_089",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Which Indian wicketkeeper-batsman famously hit a six to win India the 2011 Cricket World Cup final against Sri Lanka, finishing unbeaten on 91?",
+    "options": ["Virat Kohli", "Yuvraj Singh", "Suresh Raina", "MS Dhoni"],
+    "correct_index": 3
+  },
+  {
+    "id": "spt_medium_090",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "The Pro Kabaddi League was launched in which year?",
+    "options": ["2012", "2013", "2014", "2015"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_091",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Rohit Sharma scored his ODI world-record 264 against Sri Lanka at which venue?",
+    "options": ["Wankhede Stadium, Mumbai", "Eden Gardens, Kolkata", "Rajiv Gandhi Stadium, Hyderabad", "M. Chinnaswamy Stadium, Bengaluru"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_medium_092",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Which Indian cricketer scored the most runs in a single IPL season — 973 runs in 2016?",
+    "options": ["Rohit Sharma", "David Warner", "Virat Kohli", "AB de Villiers"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_medium_093",
+    "category": "sports",
+    "difficulty": 2,
+    "question": "Sushil Kumar became the first Indian to win two individual Olympic medals. What medal did he win at London 2012?",
+    "options": ["Gold", "Silver", "Bronze", "He did not win a medal at London 2012"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_hard_062",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Kapil Dev's 175 not out against Zimbabwe in the 1983 World Cup was played at which ground in England?",
+    "options": ["Lord's, London", "Headingley, Leeds", "Nevill Ground, Tunbridge Wells", "The Oval, London"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_063",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Abhinav Bindra finished the Beijing 2008 Olympic 10m Air Rifle final with a total score of?",
+    "options": ["698.5", "699.1", "700.5", "702.0"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_064",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "KD Jadhav won India's first individual Olympic medal (bronze) in which wrestling weight category at Helsinki 1952?",
+    "options": ["Flyweight", "Bantamweight", "Featherweight", "Lightweight"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_hard_065",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Sachin Tendulkar scored his 100th international century against Bangladesh in March 2012. In which city was that match played?",
+    "options": ["Dhaka", "Mirpur", "Chittagong", "Sylhet"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_hard_066",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Virender Sehwag's world-record Test score of 319 was made against which country and at which venue?",
+    "options": ["Pakistan at Multan", "South Africa at Chennai", "Sri Lanka at Mumbai", "West Indies at Kolkata"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_hard_067",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "In which city was the inaugural Pro Kabaddi League final (Season 1) played, which Jaipur Pink Panthers won?",
+    "options": ["Jaipur", "Delhi", "Mumbai", "Patna"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_068",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Milkha Singh set a national 400m record at the 1960 Rome Olympics with which time that stood for 44 years?",
+    "options": ["44.9 seconds", "45.2 seconds", "45.6 seconds", "46.1 seconds"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_069",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Which Indian player did Abhinav Bindra edge out for the final spot in the qualifying round of the Beijing 2008 Air Rifle event?",
+    "options": ["Gagan Narang", "Jitu Rai", "Ronjan Sodhi", "Manavjit Singh Sandhu"],
+    "correct_index": 0
+  },
+  {
+    "id": "spt_hard_070",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Dhyan Chand's career goal tally in international hockey is estimated at over how many goals?",
+    "options": ["200", "300", "400", "500"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_071",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Prakash Padukone won the 1980 All England Badminton Championship without dropping a single game. He beat which player in the final?",
+    "options": ["Han Jian", "Rudy Hartono", "Liem Swie King", "Morten Frost Hansen"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_072",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "In the 2007 T20 World Cup final, India's last-over hero Joginder Sharma dismissed which Pakistani batter off a attempted scoop to seal victory?",
+    "options": ["Shoaib Malik", "Shahid Afridi", "Misbah-ul-Haq", "Imran Nazir"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_073",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Sunil Gavaskar scored his 10,000th Test run in 1987 against Pakistan. He reached the milestone with a score of how many runs in that innings?",
+    "options": ["43", "63", "87", "104"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_hard_074",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Viswanathan Anand successfully defended his World Chess Championship title in 2012 against which challenger in Moscow?",
+    "options": ["Vladimir Kramnik", "Veselin Topalov", "Boris Gelfand", "Sergey Karjakin"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_075",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "India's men's hockey team won their 8th (and last as of 2025) Olympic gold in 1980 in Moscow. Which team did they beat in the final?",
+    "options": ["West Germany", "Netherlands", "Pakistan", "Spain"],
+    "correct_index": 3
+  },
+  {
+    "id": "spt_hard_076",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Yuvraj Singh scored 6 sixes in Stuart Broad's over during the 2007 T20 World Cup. He also scored the fastest fifty in men's T20 internationals at that time. Off how many balls?",
+    "options": ["8 balls", "10 balls", "12 balls", "14 balls"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_077",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Rohit Sharma's record ODI score of 264 against Sri Lanka in November 2014 included how many sixes?",
+    "options": ["9", "11", "13", "16"],
+    "correct_index": 0
+  },
+  {
+    "id": "spt_hard_078",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Leander Paes won how many mixed doubles Grand Slam titles in total?",
+    "options": ["6", "8", "10", "12"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_079",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "In the 2011 Cricket World Cup, India needed 275 to win the final. Gautam Gambhir scored how many runs before being dismissed?",
+    "options": ["79", "87", "97", "107"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_080",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Kapil Dev's 175* against Zimbabwe in 1983 included 16 fours and how many sixes?",
+    "options": ["4", "5", "6", "7"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_081",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Dhyan Chand's Olympic gold-winning years were 1928, 1932, and 1936. In the 1936 Berlin final, India beat Germany by what score?",
+    "options": ["4–1", "6–2", "8–1", "10–3"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_082",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "PV Sindhu became the first Indian to win a BWF World Championship gold medal. In which year did she win that title?",
+    "options": ["2017", "2018", "2019", "2021"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_083",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "In the 2024 IPL final between KKR and SRH, KKR chased the target of 114 in how many overs?",
+    "options": ["9.4 overs", "10.3 overs", "11.2 overs", "12.0 overs"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_hard_084",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Patna Pirates won the PKL title three consecutive times (Seasons 3, 4, and 5). Which season-years does Season 3 correspond to?",
+    "options": ["2015–16", "2016–17", "2017–18", "2018–19"],
+    "correct_index": 0
+  },
+  {
+    "id": "spt_hard_085",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Neeraj Chopra's gold-medal throw of 87.58m at Tokyo 2020 was his which throw in the final?",
+    "options": ["First", "Second", "Third", "Fourth"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_hard_086",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Bajrang Punia won his bronze medal at Tokyo 2020 in the men's 65kg freestyle wrestling. He defeated which country's wrestler in the bronze medal match?",
+    "options": ["Iran", "Mongolia", "Kazakhstan", "Georgia"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_087",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Virat Kohli's record-breaking 50th ODI century in November 2023 came in a World Cup match against which country?",
+    "options": ["Pakistan", "South Africa", "New Zealand", "Bangladesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_088",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "India's men's hockey team scored how many goals against Germany in the Tokyo 2020 bronze medal match to win 5-4?",
+    "options": ["3", "4", "5", "6"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_089",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Viswanathan Anand defended his FIDE World Championship title in 2010 against which opponent?",
+    "options": ["Vladimir Kramnik", "Veselin Topalov", "Boris Gelfand", "Magnus Carlsen"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_hard_090",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Which Indian Test cricketer scored the first triple century for India — 309 against Pakistan at Multan in 2004?",
+    "options": ["Sachin Tendulkar", "Rahul Dravid", "Virender Sehwag", "VVS Laxman"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_091",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "In the famous 2001 Eden Gardens Test against Australia, VVS Laxman scored 281. Which partner shared a record 376-run stand with him?",
+    "options": ["Sachin Tendulkar", "Sourav Ganguly", "Rahul Dravid", "Harbhajan Singh"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_092",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "The inaugural Jaipur Pink Panthers PKL Season 1 winning team was co-owned by which Bollywood actor?",
+    "options": ["Shah Rukh Khan", "Abhishek Bachchan", "Akshay Kumar", "John Abraham"],
+    "correct_index": 1
+  },
+  {
+    "id": "spt_hard_093",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "Mary Kom's first World Boxing Championship gold was won in which year?",
+    "options": ["2000", "2001", "2002", "2003"],
+    "correct_index": 2
+  },
+  {
+    "id": "spt_hard_094",
+    "category": "sports",
+    "difficulty": 3,
+    "question": "In the 2017 ICC Women's World Cup final at Lord's, India's top-scorer was Punam Raut. How many runs did she score?",
+    "options": ["71", "79", "86", "93"],
+    "correct_index": 2
+  }
+]
