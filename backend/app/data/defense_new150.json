@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "def_easy_001",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What does IAF stand for in the Indian military?",
+    "options": ["Indian Air Force", "Indian Armed Forces", "Indian Aerial Fleet", "Indian Artillery Force"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_002",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What is India's highest military gallantry award?",
+    "options": ["Param Vir Chakra", "Ashoka Chakra", "Vir Chakra", "Mahavir Chakra"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_003",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "In which year did the Kargil War take place?",
+    "options": ["1999", "1997", "2001", "1995"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_004",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What was the Indian Army's operation name during the Kargil War?",
+    "options": ["Operation Vijay", "Operation Shakti", "Operation Parakram", "Operation Safed Sagar"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_005",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which country gifted Rafale fighter jets to India?",
+    "options": ["France", "Russia", "USA", "Israel"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_006",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What does DRDO stand for?",
+    "options": ["Defence Research and Development Organisation", "Defence Research and Deployment Organisation", "Department of Research and Defence Operations", "Directorate of Research and Development Operations"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_007",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What is the name of India's first indigenously built aircraft carrier?",
+    "options": ["INS Vikrant", "INS Viraat", "INS Vikramaditya", "INS Vishaal"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_008",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What is BrahMos?",
+    "options": ["A supersonic cruise missile", "An aircraft carrier", "A battle tank", "A fighter jet"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_009",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which war led to the creation of Bangladesh?",
+    "options": ["1971 Indo-Pak War", "1965 Indo-Pak War", "1962 Sino-Indian War", "Kargil War"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_010",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What does HAL stand for?",
+    "options": ["Hindustan Aeronautics Limited", "Heavy Aircraft Laboratory", "Hindustan Arms Limited", "High Altitude Laboratory"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_011",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "India's first nuclear-powered submarine is named?",
+    "options": ["INS Arihant", "INS Chakra", "INS Sindhuraj", "INS Kalvari"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_012",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What does IN stand for in Indian military context?",
+    "options": ["Indian Navy", "Indian Nationals", "Indian Nuke", "Indian Network"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_013",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian missile is named after the Earth (Sanskrit)?",
+    "options": ["Prithvi", "Agni", "Akash", "Nag"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_014",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What is Tejas?",
+    "options": ["India's indigenous light combat aircraft", "India's main battle tank", "India's aircraft carrier", "India's submarine"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_015",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "On which date is Kargil Vijay Diwas celebrated every year?",
+    "options": ["26 July", "15 August", "26 January", "4 December"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_016",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "India's fourth branch of armed forces besides Army, Navy and Air Force is?",
+    "options": ["Coast Guard", "Border Security Force", "CRPF", "NSG"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_017",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which country was India at war with in 1962?",
+    "options": ["China", "Pakistan", "Bangladesh", "Nepal"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_018",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile series does India have named after fire (Sanskrit)?",
+    "options": ["Agni", "Prithvi", "Akash", "Trishul"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_019",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What is the full form of IA in Indian military context?",
+    "options": ["Indian Army", "Indian Airbase", "Indian Alliance", "Indian Artillery"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_020",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which aircraft carrier did India receive from Russia in 2013?",
+    "options": ["INS Vikramaditya", "INS Viraat", "INS Vikrant", "INS Vishaal"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_021",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "The Akash missile is what type of weapon?",
+    "options": ["Surface-to-air missile", "Air-to-air missile", "Ballistic missile", "Cruise missile"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_022",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "India celebrates Navy Day on which date?",
+    "options": ["4 December", "15 August", "26 January", "7 December"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_023",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian special forces unit belongs to the Indian Navy?",
+    "options": ["MARCOS", "PARA SF", "Garud", "NSG"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_024",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile in India's arsenal is named after sky (Sanskrit)?",
+    "options": ["Akash", "Agni", "Prithvi", "Nag"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_025",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "The Arjun is India's indigenously developed what?",
+    "options": ["Main battle tank", "Fighter jet", "Submarine", "Missile"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_026",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Who was India's first Chief of Defence Staff (CDS)?",
+    "options": ["General Bipin Rawat", "General V K Singh", "General Dalbir Singh", "General Anil Chauhan"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_027",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "India's indigenous light combat aircraft Tejas is manufactured by?",
+    "options": ["HAL", "DRDO", "BEL", "ISRO"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_028",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which of the following is India's 5th generation stealth fighter under development?",
+    "options": ["AMCA", "Tejas Mk2", "Su-57", "F-35"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_029",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "The Param Vir Chakra was first awarded to which officer?",
+    "options": ["Major Somnath Sharma", "Captain Vikram Batra", "Lt. Col. A B Tarapore", "Subedar Joginder Singh"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_030",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which branch of Indian armed forces does Garud Commando Force belong to?",
+    "options": ["Indian Air Force", "Indian Army", "Indian Navy", "Coast Guard"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_031",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Operation Safed Sagar was the name given to which service's role in the Kargil War?",
+    "options": ["Indian Air Force", "Indian Navy", "Indian Army", "DRDO"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_032",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "INS Vikrant (2022) was built at which Indian shipyard?",
+    "options": ["Cochin Shipyard Limited", "Mazagon Dock Limited", "Garden Reach Shipbuilders", "Hindustan Shipyard"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_033",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "PARA SF is the special forces unit of which Indian armed force?",
+    "options": ["Indian Army", "Indian Navy", "Indian Air Force", "NSG"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_034",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "India's nuclear doctrine is based on which principle?",
+    "options": ["No First Use", "First Strike", "Massive Retaliation", "Flexible Response"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_035",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "The INS Arihant is classified as which type of submarine?",
+    "options": ["SSBN (nuclear ballistic missile)", "SSN (nuclear attack)", "SSK (conventional)", "SSGN (guided missile)"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_036",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "India won the 1971 war resulting in surrender of how many Pakistani soldiers?",
+    "options": ["Over 90,000", "Over 20,000", "Over 50,000", "Over 10,000"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_037",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which of the following missiles was the first developed under India's IGMDP programme?",
+    "options": ["Prithvi", "Agni", "Akash", "Nag"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_038",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "The BrahMos missile is a joint venture between India and which country?",
+    "options": ["Russia", "France", "Israel", "USA"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_039",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which war did India fight against China in 1962?",
+    "options": ["Sino-Indian War", "Indo-Pak War", "Liberation War", "Border War"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_040",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "India's advanced light helicopter developed by HAL is called?",
+    "options": ["Dhruv", "Tejas", "Rudra", "Prachand"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_041",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which country's military surrendered to India at Dhaka Race Course on 16 December 1971?",
+    "options": ["Pakistan", "China", "Bangladesh", "Afghanistan"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_042",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What type of missile is Agni-V?",
+    "options": ["Intercontinental Ballistic Missile", "Cruise Missile", "Surface-to-Air Missile", "Anti-Tank Missile"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_043",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "The Kargil War was fought in which state/UT?",
+    "options": ["Jammu & Kashmir", "Himachal Pradesh", "Uttarakhand", "Ladakh"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_044",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "India's highest military gallantry award 'Param Vir Chakra' — how many recipients are there as of 2025?",
+    "options": ["21", "15", "25", "30"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_045",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "The INS Vikrant (2022) is India's first indigenous what?",
+    "options": ["Aircraft carrier", "Nuclear submarine", "Destroyer", "Frigate"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_046",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Siachen Glacier, the world's highest battlefield, is controlled by which country?",
+    "options": ["India", "Pakistan", "China", "Both India and Pakistan jointly"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_047",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Kargil War hero was played by Sidharth Malhotra in a Bollywood film?",
+    "options": ["Captain Vikram Batra", "Captain Manoj Pandey", "Yogendra Singh Yadav", "Sanjay Kumar"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_048",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Nag is India's indigenously developed what type of missile?",
+    "options": ["Anti-tank guided missile", "Surface-to-air missile", "Cruise missile", "Ballistic missile"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_049",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "In which year was India's Defence Research and Development Organisation (DRDO) established?",
+    "options": ["1958", "1947", "1965", "1971"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_050",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "INS Vikramaditya was formerly known as Admiral Gorshkov — it was purchased from which country?",
+    "options": ["Russia", "USA", "UK", "France"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_001",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "BrahMos missile is a joint venture between India's DRDO and which Russian organisation?",
+    "options": ["NPO Mashinostroyeniya", "Rosoboronexport", "Almaz-Antey", "MiG Corporation"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_002",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the approximate top speed of the BrahMos cruise missile?",
+    "options": ["Mach 2.8–3", "Mach 1.5", "Mach 4", "Mach 0.9"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_003",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "INS Vikrant (2022) was commissioned in which year?",
+    "options": ["2022", "2020", "2021", "2023"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_004",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the approximate displacement of INS Vikrant (2022)?",
+    "options": ["45,000 tonnes", "20,000 tonnes", "65,000 tonnes", "30,000 tonnes"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_005",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The Indian Air Force's role in the Kargil War was codenamed?",
+    "options": ["Operation Safed Sagar", "Operation Vijay", "Operation Meghdoot", "Operation Parakram"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_006",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Kargil War hero posthumously received the Param Vir Chakra after recapturing Point 4875?",
+    "options": ["Captain Vikram Batra", "Rifleman Sanjay Kumar", "Lt. Manoj Pandey", "Grenadier Yogendra Singh Yadav"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_007",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What was the name of the Indian Navy's attack on Karachi port in the 1971 war?",
+    "options": ["Operation Trident", "Operation Vijay", "Operation Jackpot", "Operation Cactus Lily"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_008",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "MARCOS is the special forces unit of the Indian Navy — what does MARCOS stand for?",
+    "options": ["Marine Commandos", "Maritime Commando Squad", "Marine Combat Rangers", "Maritime Assault Commandos"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_009",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which generation of fighter jet is the HAL Tejas Mk1A classified as?",
+    "options": ["4th generation", "3rd generation", "5th generation", "4.5th generation"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_010",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's Akash missile is classified as which type of weapon system?",
+    "options": ["Medium-range surface-to-air missile", "Long-range ballistic missile", "Anti-ship cruise missile", "Short-range anti-tank missile"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_011",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Operation Meghdoot in 1984 was India's operation to capture which glacier?",
+    "options": ["Siachen Glacier", "Gangotri Glacier", "Zemu Glacier", "Baltoro Glacier"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_012",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "INS Arihant carries which type of submarine-launched ballistic missile with a range of 750 km?",
+    "options": ["K-15 (Sagarika)", "K-4", "K-5", "Shaurya"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_013",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "How many Tejas Mk1A jets has the Indian Air Force ordered from HAL?",
+    "options": ["83", "40", "110", "56"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_014",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The Agni-V ballistic missile has an approximate base range of?",
+    "options": ["5,000–5,400 km", "2,000 km", "1,000 km", "8,000 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_015",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "In which year was General Bipin Rawat appointed as India's first Chief of Defence Staff?",
+    "options": ["2020 (from 1 January)", "2018", "2022", "2019 (from 1 January)"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_016",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The Kalvari-class submarines are based on the Scorpene design supplied by which country?",
+    "options": ["France", "Russia", "Germany", "UK"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_017",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Kargil War hero, the youngest Param Vir Chakra recipient, captured Tiger Hill at age 19?",
+    "options": ["Grenadier Yogendra Singh Yadav", "Rifleman Sanjay Kumar", "Captain Vikram Batra", "Lt. Manoj Pandey"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_018",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The AMCA (Advanced Medium Combat Aircraft) being developed by India will be which generation fighter?",
+    "options": ["Fifth generation", "Fourth generation", "Sixth generation", "Fourth-plus generation"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_019",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Pakistan's General Niazi surrendered to which Indian General at Dhaka Race Course on 16 December 1971?",
+    "options": ["Lt. Gen. Jagjit Singh Aurora", "Gen. Sam Manekshaw", "Lt. Gen. K. P. Candeth", "Gen. P. P. Kumaramangalam"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_020",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's nuclear doctrine follows which strategic concept?",
+    "options": ["Credible minimum deterrence", "Mutually Assured Destruction", "Counterforce strategy", "Massive retaliation"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_021",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The 1965 Battle of Asal Uttar, nicknamed 'Patton Nagar', saw India defeat Pakistan's which tank division?",
+    "options": ["1st Armoured Division", "6th Armoured Division", "17th Cavalry", "14th Armoured Brigade"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_022",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Operation Trident (1971) was significant because it was the first use of what in combat in the region?",
+    "options": ["Anti-ship missiles", "Jet aircraft", "Nuclear weapons", "Night-vision equipment"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_023",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What type of propulsion does BrahMos use?",
+    "options": ["Ramjet", "Turbofan", "Solid rocket", "Liquid fuel rocket"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_024",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The Prithvi missile series was the first developed under which Indian programme?",
+    "options": ["IGMDP (Integrated Guided Missile Development Programme)", "DRDO-ISRO Joint Programme", "Project Vajra", "Advanced Weapons Programme"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_025",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which 1971 war operation by India in the East was the overall code name for the Bangladesh Liberation campaign?",
+    "options": ["Operation Cactus Lily", "Operation Jackpot", "Operation Trident", "Operation Safed Sagar"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_026",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "MARCOS was officially founded in which year?",
+    "options": ["1987", "1971", "1999", "1965"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_027",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's HAL Tejas LCA Mk1A variant features which type of advanced radar?",
+    "options": ["AESA (Active Electronically Scanned Array)", "PESA (Passive Electronically Scanned Array)", "Mechanical radar", "Infrared seeker"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_028",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Operation Meghdoot was launched on which date in 1984?",
+    "options": ["13 April 1984", "26 January 1984", "15 August 1984", "4 December 1984"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_029",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's Integrated Guided Missile Development Programme (IGMDP) was launched in which year?",
+    "options": ["1983", "1971", "1988", "1975"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_030",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "INS Vikramaditya was commissioned into the Indian Navy in which year?",
+    "options": ["2013", "2010", "2015", "2008"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_031",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Kargil War hero Lt. Manoj Kumar Pandey of Gorkha Rifles was martyred at which sector?",
+    "options": ["Batalik sector", "Drass sector", "Mushkoh sector", "Kaksar sector"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_032",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which service chief led India's forces during the 1971 war that earned him the rank of Field Marshal?",
+    "options": ["Sam Manekshaw", "K. M. Cariappa", "Kodandera Subayya Thimayya", "P. N. Thapar"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_033",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's defence export target set for FY2025 was approximately how many rupees?",
+    "options": ["₹35,000 crore", "₹5,000 crore", "₹1 lakh crore", "₹10,000 crore"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_034",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's HAL Dhruv advanced light helicopter entered operational service in which year?",
+    "options": ["2002", "1995", "2010", "1988"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_035",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Rifleman Sanjay Kumar won the Param Vir Chakra at which location during the Kargil War?",
+    "options": ["Area Flat Top", "Point 4875", "Tiger Hill", "Point 5140"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_036",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "INS Arihant was launched on which significant national day in 2009?",
+    "options": ["26 July (Kargil Vijay Diwas)", "15 August (Independence Day)", "26 January (Republic Day)", "4 December (Navy Day)"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_037",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Scorpene submarine is the sixth and final of India's Kalvari class, commissioned in January 2025?",
+    "options": ["INS Vaghsheer", "INS Vela", "INS Vagir", "INS Karanj"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_038",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's Agni-I ballistic missile has a range of approximately?",
+    "options": ["700 km", "2,500 km", "150 km", "5,000 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_039",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The Arjun main battle tank uses a gun of which caliber?",
+    "options": ["120 mm", "90 mm", "105 mm", "125 mm"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_040",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India tested its first nuclear device codenamed 'Smiling Buddha' in which year?",
+    "options": ["1974", "1971", "1980", "1998"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_041",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Operation Vijay (Kargil) was launched by India on which date in 1999?",
+    "options": ["10 May 1999", "26 July 1999", "15 August 1999", "3 June 1999"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_042",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's second nuclear test series conducted in 1998 was codenamed?",
+    "options": ["Operation Shakti", "Operation Smiling Buddha", "Operation Brasstacks", "Operation Vijay"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_043",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's Agni-II ballistic missile has a range of approximately?",
+    "options": ["2,000–2,500 km", "700 km", "5,000 km", "500 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_044",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The BrahMos name is derived from names of which two rivers?",
+    "options": ["Brahmaputra and Moskva", "Brahma and Moscow", "Beas and Mosi", "Brahmani and Mos"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_045",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's Agni-IV ballistic missile has an approximate range of?",
+    "options": ["3,000–4,000 km", "700 km", "2,000 km", "6,000 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_046",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "How many PVC recipients came from the 1999 Kargil War?",
+    "options": ["4", "2", "6", "8"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_047",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's Prithvi-I (Army variant) surface-to-surface missile has a range of approximately?",
+    "options": ["150 km", "350 km", "700 km", "50 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_048",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "INS Vikrant (2022) can carry up to how many aircraft?",
+    "options": ["30", "60", "15", "45"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_049",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Operation Trident (1971) was conducted on the night of which date?",
+    "options": ["4–5 December 1971", "3–4 December 1971", "16–17 December 1971", "1–2 December 1971"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_050",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The HAL AMCA (Advanced Medium Combat Aircraft) prototype first flight is targeted for which year?",
+    "options": ["2029", "2025", "2035", "2022"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_051",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India's Prithvi-II missile, intended for the Air Force, has a range of approximately?",
+    "options": ["250–350 km", "150 km", "700 km", "100 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_052",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian submarine class is based on the Scorpene design built by Mazagon Dock Limited?",
+    "options": ["Kalvari class", "Arihant class", "Shishumar class", "Sindhughosh class"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_053",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "The 1965 battle known as 'Patton Nagar' took place in which Indian state?",
+    "options": ["Punjab", "Rajasthan", "Gujarat", "Jammu & Kashmir"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_054",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which of the following is the Indian Army's special forces unit?",
+    "options": ["PARA SF (Parachute Special Forces)", "MARCOS", "Garud Commando Force", "NSG"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_med_055",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "India celebrated 'Swarnim Vijay Varsh' in 2021 to mark the golden jubilee of which war victory?",
+    "options": ["1971 Bangladesh Liberation War", "1965 Indo-Pak War", "Kargil War 1999", "1962 Sino-Indian War"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_001",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "INS Arihant carries the K-15 (Sagarika) missile. What is the approximate range of the K-15 missile?",
+    "options": ["750 km", "1,500 km", "350 km", "3,500 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_002",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "BrahMos-II is being developed as a hypersonic missile. What is its planned speed?",
+    "options": ["Hypersonic (Mach 7+)", "Supersonic (Mach 3)", "Mach 5", "Mach 10"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_003",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The Arjun main battle tank's 120 mm rifled gun is designed to fire what type of primary ammunition?",
+    "options": ["APFSDS (Armour-Piercing Fin-Stabilized Discarding Sabot)", "HEAT (High Explosive Anti-Tank)", "HESH (High Explosive Squash Head)", "APHE (Armour-Piercing High Explosive)"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_004",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "INS Vikramaditya was originally the Soviet/Russian aircraft carrier known as?",
+    "options": ["Admiral Gorshkov (originally Baku)", "Admiral Kuznetsov", "Kiev", "Novorossiysk"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_005",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's Operation Meghdoot on 13 April 1984 preempted Pakistan's which competing operation?",
+    "options": ["Operation Ababeel", "Operation Vijay", "Operation Grand Slam", "Operation Gibraltar"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_006",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The Kalvari-class submarines have a submerged displacement of approximately?",
+    "options": ["1,550 tonnes", "3,000 tonnes", "6,000 tonnes", "800 tonnes"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_007",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's Agni-V ballistic missile is capable of carrying how many MIRV warheads?",
+    "options": ["Up to 10–12", "1", "3–4", "15–20"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_008",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The AMCA fighter's first variant (Mk1) will be powered by which engine?",
+    "options": ["GE414", "AL-31F", "F404", "EJ200"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_009",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "INS Arihant's displacement is approximately?",
+    "options": ["6,000 tonnes", "3,000 tonnes", "10,000 tonnes", "1,500 tonnes"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_010",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Operation Trident (1971) used three missile boats from which Indian Navy squadron?",
+    "options": ["25th Missile Boat Squadron", "14th Missile Boat Squadron", "1st Eastern Fleet", "Western Naval Command"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_011",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's 1962 forward policy operation in NEFA (to evict Chinese) was codenamed?",
+    "options": ["Operation Leghorn", "Operation Vijay", "Operation Meghdoot", "Operation Lal Quila"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_012",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "INS Vikramaditya was commissioned into the Indian Navy at which Russian city?",
+    "options": ["Severodvinsk", "Vladivostok", "St. Petersburg", "Murmansk"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_013",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The Akash missile system's standard variant can target aircraft up to what maximum range?",
+    "options": ["45 km", "25 km", "100 km", "15 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_014",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's K-4 submarine-launched ballistic missile (on INS Arihant class) has a range of approximately?",
+    "options": ["3,500 km", "750 km", "1,500 km", "6,000 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_015",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Operation Meghdoot in 1984 was led by which Indian general?",
+    "options": ["Lt. Gen. Prem Nath Hoon", "Gen. Krishnaswamy Sundarji", "Lt. Gen. Jagjit Singh Aurora", "Gen. Sam Manekshaw"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_016",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The Battle of Asal Uttar in 1965 saw India defeat Pakistan's forces that were using which main US-supplied tank?",
+    "options": ["M47/M48 Patton", "M60 Patton", "Sherman M4A1", "M1 Abrams"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_017",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "INS Vikramaditya was originally built for the Soviet Navy and entered Soviet service in which year?",
+    "options": ["1987", "1990", "1980", "1975"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_018",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's HAL Tejas Mk1A features which indigenously developed AESA radar?",
+    "options": ["Uttam AESA Radar", "Kabini Radar", "Rohini Radar", "Indra Radar"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_019",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The Kalvari-class submarines are armed with how many torpedo launch tubes?",
+    "options": ["6", "4", "8", "10"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_020",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's first nuclear test in 1974 ('Smiling Buddha') was conducted at which site?",
+    "options": ["Pokhran, Rajasthan", "Kundankulam, Tamil Nadu", "Trombay, Mumbai", "Hyderabad, Telangana"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_021",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Param Vir Chakra recipient during Kargil War was fighting in the Batalik sector and belongs to 1/11 Gorkha Rifles?",
+    "options": ["Lt. Manoj Kumar Pandey", "Rifleman Sanjay Kumar", "Captain Vikram Batra", "Grenadier Yogendra Singh Yadav"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_022",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's INS Arihant has how many vertical launch torpedo tubes for ballistic missiles?",
+    "options": ["4", "8", "12", "6"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_023",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Operation Trident (1971) used Styx anti-ship missiles launched from which class of Indian missile boats?",
+    "options": ["Vidyut class", "Rajput class", "Brahmaputra class", "Nilgiri class"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_024",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's Agni-V missile is approximately how tall?",
+    "options": ["17.5 metres", "10 metres", "25 metres", "8 metres"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_025",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Captain Vikram Batra's famous battle cry during Kargil was associated with which motto?",
+    "options": ["Yeh Dil Maange More", "Jai Hind", "Taiyaar Hain Hum", "Do or Die"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_026",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's INS Vikrant (2022) is powered by how many gas turbines?",
+    "options": ["4", "2", "6", "8"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_027",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The Combat Vehicles Research and Development Establishment (CVRDE) that developed the Arjun tank is located in which city?",
+    "options": ["Chennai", "Hyderabad", "Pune", "Bengaluru"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_028",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's nuclear doctrine of 'credible minimum deterrence' also specifies which assured capability?",
+    "options": ["Assured second-strike capability", "First-strike capability", "Theatre nuclear capability", "Counterforce targeting"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_029",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Rifleman Sanjay Kumar, Kargil PVC recipient, belongs to which battalion?",
+    "options": ["13th Battalion, J&K Rifles", "6th Battalion, Rajput Regiment", "4th Battalion, Gorkha Rifles", "1st Battalion, Punjab Regiment"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_030",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The Scorpene-class (Kalvari-class) submarines have a maximum diving depth of more than?",
+    "options": ["350 metres", "100 metres", "600 metres", "200 metres"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_031",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's first Param Vir Chakra recipient Major Somnath Sharma was killed in action in which battle?",
+    "options": ["Battle of Badgam, Kashmir 1947", "Battle of Zoji La 1948", "Battle of Asal Uttar 1965", "Battle of Tiger Hill 1999"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_032",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Agni-V was first test-fired in which year?",
+    "options": ["2012", "2008", "2018", "2005"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_033",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The AMCA programme received Cabinet Committee on Security (CCS) approval for prototype development in which year?",
+    "options": ["2024", "2020", "2022", "2018"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_034",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "INS Vikrant (2022) can achieve a maximum designed speed of approximately?",
+    "options": ["28 knots", "18 knots", "35 knots", "22 knots"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_035",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The sixth Kalvari-class submarine INS Vaghsheer was commissioned in which month and year?",
+    "options": ["January 2025", "December 2024", "March 2023", "June 2025"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_036",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "During the 1971 war, the Pakistani General who surrendered at Dhaka was?",
+    "options": ["Lt. Gen. A.A.K. Niazi", "Gen. Yahya Khan", "Gen. Ayub Khan", "Lt. Gen. Tikka Khan"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_037",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's Akash-NG (New Generation) missile has a proven maximum range of?",
+    "options": ["30 km", "45 km", "60 km", "15 km"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_038",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The AMCA fighter is designed by which Indian organisation under the Ministry of Defence?",
+    "options": ["Aeronautical Development Agency (ADA)", "HAL", "DRDO headquarters", "CVRDE"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_039",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The Prithvi missile was first inducted into the Indian Army in which year?",
+    "options": ["1994", "1983", "2000", "1988"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_040",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's 1962 Sino-Indian War ended with China declaring a ceasefire on which date?",
+    "options": ["21 November 1962", "15 October 1962", "26 January 1963", "1 December 1962"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_041",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The BrahMos Aerospace joint venture is owned in what proportion between India and Russia?",
+    "options": ["50.5% India, 49.5% Russia", "51% Russia, 49% India", "60% India, 40% Russia", "50% each"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_042",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "India's HAL Advanced Light Helicopter (Dhruv) made its first flight in which year?",
+    "options": ["1992", "2002", "1984", "1999"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_043",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Agni-V missile has a launch mass of approximately?",
+    "options": ["50,000 kg", "20,000 kg", "80,000 kg", "10,000 kg"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_044",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The INS Kalvari (S21), first Kalvari-class submarine, was commissioned into the Indian Navy in which year?",
+    "options": ["2017", "2015", "2019", "2021"],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_045",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The BrahMos missile derives its name from rivers Brahmaputra (India) and which Russian river?",
+    "options": ["Moskva", "Volga", "Neva", "Don"],
+    "correct_index": 0
+  }
+]

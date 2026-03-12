@@ -9,6 +9,7 @@ const CATEGORIES = [
   { value: 'mythology', label: 'Mythology', icon: '🛕' },
   { value: 'food', label: 'Food & Cuisine', icon: '🍛' },
   { value: 'politics', label: 'Politics', icon: '🏛️' },
+  { value: 'defense', label: 'War & Defense', icon: '🪖' },
   { value: 'math', label: 'Math', icon: '🔢' },
 ]
 
