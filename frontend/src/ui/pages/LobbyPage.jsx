@@ -22,15 +22,19 @@ export default function LobbyPage() {
   }, [])
 
   useEffect(() => {
+    console.log('[LobbyPage] lobby check — roomRestoreStatus:', roomRestoreStatus, 'lobby?.room:', !!lobby?.room, 'lobby?.room?.code:', lobby?.room?.code)
     if (roomRestoreStatus !== 'done') return // wait for restore attempt
     if (!lobby?.room) {
+      console.log('[LobbyPage] NO LOBBY ROOM — redirecting to /home')
       navigate('/home', { replace: true })
       return
     }
   }, [lobby, roomRestoreStatus])
 
   useEffect(() => {
+    console.log('[LobbyPage] turn check — game?.turn:', !!game?.turn, 'game_type:', game?.turn?.game_type)
     if (game?.turn) {
+      console.log('[LobbyPage] HAS TURN — navigating to game')
       startGameSocket()
       const gameType = game.turn.game_type || lobby?.room?.game_type || 'charades'
       navigate(gameType === 'scribble' ? '/scribble' : gameType === 'trivia' ? '/trivia' : '/game')

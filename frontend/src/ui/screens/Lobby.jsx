@@ -5,6 +5,8 @@ import PlayerAvatar from '../components/PlayerAvatar.jsx'
 import DifficultySelector from '../components/DifficultySelector.jsx'
 import TriviaCategorySelector from '../components/TriviaCategorySelector.jsx'
 import RangeSlider from '../components/RangeSlider.jsx'
+import RoomScoreboard from '../components/RoomScoreboard.jsx'
+import * as api from '../../lib/api.js'
 
 export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPlayerId, loadingSave }) {
   const code = lobby?.room?.code || '------'
@@ -21,6 +23,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
     triviaCategory: lobby?.room?.trivia_category ?? 'general_knowledge',
   })
   const [copied, setCopied] = useState(false)
+  const [scoreboard, setScoreboard] = useState(null)
   const prevPlayerCountRef = useRef(players.length)
 
   // Sync settings from server when lobby updates (so non-hosts see host changes)
@@ -41,6 +44,14 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
     }
     prevPlayerCountRef.current = players.length
   }, [players.length])
+
+  // Fetch scoreboard when lobby loads or room code changes
+  useEffect(() => {
+    if (!roomMeta?.code) return
+    api.getRoomScoreboard(roomMeta.code)
+      .then((data) => setScoreboard(data))
+      .catch(() => {})
+  }, [roomMeta?.code])
 
   const inviteUrl = `${window.location.origin}/join/${code}`
 
@@ -126,6 +137,12 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
             ))}
           </div>
         </div>
+
+        {/* Room scoreboard (shown after at least one game) */}
+        <RoomScoreboard
+          scoreboard={scoreboard}
+          selfName={players.find((p) => String(p.id) === String(selfPlayerId))?.display_name}
+        />
 
         {/* Trivia category picker (visible to all) */}
         {gameType === 'trivia' && (

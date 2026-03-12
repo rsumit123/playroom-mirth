@@ -9,6 +9,7 @@ from app.models.room_player import RoomPlayer
 from app.schemas.room import RoomCreateRequest, RoomCreateGuestRequest, RoomJoinRequest, RoomUpdateRequest, LobbyState
 from typing import List
 
+from app.models.game_history import GameHistory
 from app.services.room_ops import (
     resolve_guest,
     create_room_for_user,
@@ -136,6 +137,52 @@ def update_room_settings(
     room.trivia_category = payload.trivia_category
     db.commit()
     return lobby_state(db, room)
+
+
+@router.get("/{room_code}/scoreboard")
+def get_scoreboard(
+    room_code: str,
+    db: Session = Depends(get_db),
+):
+    """Return the room scoreboard — no auth required."""
+    histories = (
+        db.query(GameHistory)
+        .filter(GameHistory.room_code == room_code)
+        .order_by(GameHistory.game_number, GameHistory.score.desc())
+        .all()
+    )
+
+    # Group by game_number
+    games_map: dict[int, dict] = {}
+    totals_map: dict[str, dict] = {}
+
+    for h in histories:
+        gn = h.game_number
+        if gn not in games_map:
+            games_map[gn] = {
+                "game_number": gn,
+                "game_type": h.game_type,
+                "played_at": h.played_at.isoformat() if h.played_at else None,
+                "players": [],
+            }
+        games_map[gn]["players"].append({
+            "display_name": h.display_name,
+            "score": h.score,
+            "is_winner": h.is_winner,
+        })
+
+        # Accumulate totals
+        name = h.display_name
+        if name not in totals_map:
+            totals_map[name] = {"display_name": name, "total_score": 0, "wins": 0, "games_played": 0}
+        totals_map[name]["total_score"] += h.score
+        totals_map[name]["wins"] += 1 if h.is_winner else 0
+        totals_map[name]["games_played"] += 1
+
+    games = sorted(games_map.values(), key=lambda g: g["game_number"])
+    totals = sorted(totals_map.values(), key=lambda t: t["total_score"], reverse=True)
+
+    return {"games": games, "totals": totals}
 
 
 # ── Play-again vote tracking ──────────────────────────────────────────

@@ -32,11 +32,12 @@ export function AppProvider({ children }) {
   }, [auth])
 
   // Persist room code and selfPlayerId to sessionStorage
+  // NOTE: Only write when we have valid data. Don't clear on null —
+  // leaveRoom() and logout() already handle cleanup. Clearing here
+  // would race with restoreRoom() on page load and destroy the saved room.
   useEffect(() => {
     if (room?.code && selfPlayerId) {
       sessionStorage.setItem('charade_room', JSON.stringify({ code: room.code, selfPlayerId }))
-    } else if (!room) {
-      sessionStorage.removeItem('charade_room')
     }
   }, [room?.code, selfPlayerId])
 
@@ -270,7 +271,6 @@ export function AppProvider({ children }) {
 
   function bindLobbyEvents(roomCode) {
     // Reset game turn so stale data from a previous game doesn't trigger auto-navigation
-    // (backend catch-up in room:register will re-set turn if a game is actually active)
     setGame((g) => ({ ...g, turn: null, word: null, lastGuess: null, roundEnd: null, gameEnd: null, playAgain: null, messages: [] }))
     const socket = connectSocket()
     socket.off('room:lobby_update')
@@ -445,12 +445,31 @@ export function AppProvider({ children }) {
   }
 
   async function emitPlayAgain(roomCode) {
-    if (!roomCode) return
+    if (!roomCode) { console.log('[PlayAgain] no roomCode'); return }
     const cleanGame = { messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null, roundEnd: null, gameEnd: null }
+
+    // Helper: refresh lobby state from REST before signaling ready
+    async function refreshAndSignalReady() {
+      try {
+        const lobbyData = await api.getRoom(roomCode, auth.token, auth.guestToken)
+        if (lobbyData?.room) {
+          setRoom(lobbyData.room)
+          setLobby(lobbyData)
+          if (lobbyData.self_player_id) setSelfPlayerId(lobbyData.self_player_id)
+        }
+      } catch (e) {
+        console.log('[PlayAgain] lobby refresh failed (non-fatal):', e.message)
+      }
+      setGame({ ...cleanGame, playAgain: { ready: true } })
+    }
+
     try {
+      console.log('[PlayAgain] voting for', roomCode)
       const res = await api.playAgainVote(auth.token, auth.guestToken, roomCode)
+      console.log('[PlayAgain] vote response:', JSON.stringify(res))
       if (res.status === 'ready') {
-        setGame({ ...cleanGame, playAgain: { ready: true } })
+        console.log('[PlayAgain] ready — refreshing lobby and resetting game state')
+        await refreshAndSignalReady()
         return
       }
       if (res.status === 'expired') {
@@ -470,15 +489,15 @@ export function AppProvider({ children }) {
         try {
           const status = await api.playAgainStatus(roomCode)
           if (status.status === 'ready') {
+            console.log('[PlayAgain] poll: ready — refreshing lobby and resetting game state')
             clearInterval(poll)
-            setGame({ ...cleanGame, playAgain: { ready: true } })
+            await refreshAndSignalReady()
           } else if (status.status === 'expired') {
             clearInterval(poll)
             setGame((g) => ({ ...g, playAgain: { expired: true, voted: status.voted, total: status.total } }))
           } else if (status.status === 'waiting') {
             setGame((g) => ({ ...g, playAgain: { voted: status.voted, total: status.total } }))
           }
-          // status === 'none' means no vote exists — keep polling in case it hasn't started yet
         } catch { /* ignore poll errors */ }
       }, 2000)
     } catch (err) {

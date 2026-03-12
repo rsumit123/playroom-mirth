@@ -30,13 +30,14 @@ from app.services.game_state import (
 )
 from app.models.room_player import RoomPlayer
 from app.models.game_history import GameHistory
+from app.models.guest import Guest
 from app.models.word import Word
+from app.api.rooms import PLAY_AGAIN_REST
 from app.services.trivia import generate_round_questions, generate_gk_round_questions
 from sqlalchemy import func as sa_func
 import time
 import random
 
-import logging
 _logger = logging.getLogger("charade.sio")
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
@@ -75,39 +76,76 @@ def _save_state(db, state: RoomGameState) -> None:
 
 
 def _save_game_history(db, state: RoomGameState) -> None:
-    """Persist game results for signed-in users."""
+    """Persist game results for all players (including guests)."""
+    _logger.debug("save_game_history room=%s type=%s players=%s scores=%s", state.room_code, state.game_type, state.player_order, state.scores)
     player_ids = state.player_order
     players = db.query(RoomPlayer).filter(RoomPlayer.id.in_(player_ids)).all()
     max_score = max(state.scores.values(), default=0)
     player_count = len(player_ids)
+
+    # Compute game_number for this room
+    current_max = db.query(sa_func.max(GameHistory.game_number)).filter(
+        GameHistory.room_code == state.room_code
+    ).scalar()
+    game_number = (current_max or 0) + 1
+
+    # Resolve display names
+    user_ids = [rp.user_id for rp in players if rp.user_id]
+    user_name_map: dict[int, str] = {}
+    if user_ids:
+        users = db.query(User).filter(User.id.in_(user_ids)).all()
+        for u in users:
+            user_name_map[u.id] = u.display_name or u.email.split("@")[0]
+
+    guest_ids = [rp.guest_id for rp in players if rp.guest_id]
+    guest_name_map: dict[int, str] = {}
+    if guest_ids:
+        guests = db.query(Guest).filter(Guest.id.in_(guest_ids)).all()
+        for g in guests:
+            guest_name_map[g.id] = g.display_name or f"Guest {g.id}"
+
+    guest_counter = 0
     for rp in players:
-        if rp.user_id is None:
-            continue
         score = state.scores.get(rp.id, 0)
+        # Resolve display name
+        if rp.user_id and rp.user_id in user_name_map:
+            display_name = user_name_map[rp.user_id]
+        elif rp.guest_id and rp.guest_id in guest_name_map:
+            display_name = guest_name_map[rp.guest_id]
+        else:
+            guest_counter += 1
+            display_name = f"Guest {guest_counter}"
+
         db.add(GameHistory(
-            user_id=rp.user_id,
+            user_id=rp.user_id or 0,
             room_code=state.room_code,
             game_type=state.game_type,
             score=score,
             player_count=player_count,
             is_winner=(score == max_score and max_score > 0),
+            guest_id=rp.guest_id,
+            display_name=display_name,
+            game_number=game_number,
         ))
 
 
 async def _auto_end_game(state: RoomGameState, room_code: str) -> None:
     """End game when no connected players remain. Caller MUST hold state.lock."""
-    if state.task and not state.task.done():
-        state.task.cancel()
-    await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+    # NOTE: do NOT cancel state.task — this may be called from within the timer task.
+    # Pop BEFORE emit so room:register can't find stale state during the emit
     ROOM_STATES.pop(room_code, None)
-    with SessionLocal() as db:
-        db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
-        _save_game_history(db, state)
-        room = db.query(Room).filter(Room.code == room_code).first()
-        if room:
-            room.status = "lobby"
-            db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: False})
+    await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+    try:
+        with SessionLocal() as db:
+            db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
+            _save_game_history(db, state)
+            room = db.query(Room).filter(Room.code == room_code).first()
+            if room:
+                room.status = "lobby"
+                db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: False})
             db.commit()
+    except Exception:
+        _logger.exception("Error saving game history for %s", room_code)
 
 
 async def _schedule_turn_timer(state: RoomGameState) -> None:
@@ -196,19 +234,22 @@ async def _advance_turn(room_code: str) -> None:
             round_ended = True
 
         if state.round_index > state.rounds_total:
-            if state.task and not state.task.done():
-                state.task.cancel()
-            await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+            # NOTE: do NOT cancel state.task here — _advance_turn runs inside the
+            # timer task, so cancelling it would abort this code path (CancelledError).
+            # Pop BEFORE emit so room:register can't find stale state during the emit
             ROOM_STATES.pop(room_code, None)
-            with SessionLocal() as db:
-                # Delete persisted game state so it's not restored on restart
-                db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
-                _save_game_history(db, state)
-                room = db.query(Room).filter(Room.code == room_code).first()
-                if room:
-                    room.status = "lobby"
-                    db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: False})
+            await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+            try:
+                with SessionLocal() as db:
+                    db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
+                    _save_game_history(db, state)
+                    room = db.query(Room).filter(Room.code == room_code).first()
+                    if room:
+                        room.status = "lobby"
+                        db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: False})
                     db.commit()
+            except Exception:
+                _logger.exception("Error saving game history for %s", room_code)
             return
 
         if round_ended:
@@ -645,7 +686,10 @@ async def _trivia_resolve_question(state: RoomGameState, room_code: str) -> None
     # Pause 4 seconds to show results, then advance
     async def _advance_after_pause():
         await asyncio.sleep(4)
-        await _trivia_advance(room_code)
+        try:
+            await _trivia_advance(room_code)
+        except Exception:
+            _logger.exception("_trivia_advance failed for %s", room_code)
 
     state.task = asyncio.create_task(_advance_after_pause())
 
@@ -674,18 +718,22 @@ async def _trivia_advance(room_code: str) -> None:
 
             if state.round_index > state.rounds_total:
                 # Game over
-                if state.task and not state.task.done():
-                    state.task.cancel()
-                await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+                # NOTE: do NOT cancel state.task here — it's the current task
+                # (_advance_after_pause), cancelling it would abort the DB write below.
+                # Pop BEFORE emit so room:register can't find stale state during the emit
                 ROOM_STATES.pop(room_code, None)
-                with SessionLocal() as db:
-                    db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
-                    _save_game_history(db, state)
-                    room = db.query(Room).filter(Room.code == room_code).first()
-                    if room:
-                        room.status = "lobby"
-                        db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: False})
+                await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+                try:
+                    with SessionLocal() as db:
+                        db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
+                        _save_game_history(db, state)
+                        room = db.query(Room).filter(Room.code == room_code).first()
+                        if room:
+                            room.status = "lobby"
+                            db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: False})
                         db.commit()
+                except Exception:
+                    _logger.exception("Error saving trivia game history for %s", room_code)
                 return
 
             # Round end — wait for host to continue
@@ -707,6 +755,9 @@ async def game_start(sid, data):
     if not room_code:
         await emit_error(sid, "room_code required", code="BAD_REQUEST")
         return {"ok": False, "error": "BAD_REQUEST"}
+
+    # Clear play-again votes from previous game so next play-again round starts fresh
+    PLAY_AGAIN_REST.pop(room_code, None)
 
     with SessionLocal() as db:
         room = db.query(Room).filter(Room.code == room_code).first()

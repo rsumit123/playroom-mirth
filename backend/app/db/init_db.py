@@ -29,6 +29,16 @@ def init_db() -> None:
         with engine.begin() as conn:
             conn.execute(text("ALTER TABLE words ADD COLUMN game_type VARCHAR(20) DEFAULT 'charades' NOT NULL"))
 
+    # Manual migration: add scoreboard columns to game_history
+    gh_columns = [col["name"] for col in inspector.get_columns("game_history")]
+    with engine.begin() as conn:
+        if "guest_id" not in gh_columns:
+            conn.execute(text("ALTER TABLE game_history ADD COLUMN guest_id INTEGER"))
+        if "display_name" not in gh_columns:
+            conn.execute(text("ALTER TABLE game_history ADD COLUMN display_name VARCHAR(50) DEFAULT 'Player' NOT NULL"))
+        if "game_number" not in gh_columns:
+            conn.execute(text("ALTER TABLE game_history ADD COLUMN game_number INTEGER DEFAULT 1 NOT NULL"))
+
     # Manual migration: add Google auth columns to users if missing
     user_columns = [col["name"] for col in inspector.get_columns("users")]
     with engine.begin() as conn:

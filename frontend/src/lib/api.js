@@ -182,6 +182,10 @@ export function deleteAdminQuestion(token, questionId) {
   })
 }
 
+export function getRoomScoreboard(roomCode) {
+  return request(`/rooms/${roomCode}/scoreboard`)
+}
+
 export function playAgainVote(token, guestToken, roomCode) {
   const params = guestToken ? `?guest_token=${encodeURIComponent(guestToken)}` : ''
   return request(`/rooms/${roomCode}/play-again${params}`, {

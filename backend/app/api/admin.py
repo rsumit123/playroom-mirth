@@ -156,6 +156,7 @@ def get_stats(db: Session = Depends(get_db), _user=Depends(get_current_user)):
             "score": g.score,
             "is_winner": g.is_winner,
             "played_at": str(g.played_at) if g.played_at else None,
+            "display_name": getattr(g, 'display_name', None),
         }
         for g in recent
     ]

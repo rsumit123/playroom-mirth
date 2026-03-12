@@ -16,3 +16,6 @@ class GameHistory(Base):
     player_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     is_winner: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     played_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, nullable=False)
+    guest_id: Mapped[int | None] = mapped_column(Integer, nullable=True, index=True)
+    display_name: Mapped[str] = mapped_column(String(50), nullable=False, default="Player")
+    game_number: Mapped[int] = mapped_column(Integer, default=1, nullable=False)
