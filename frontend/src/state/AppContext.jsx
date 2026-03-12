@@ -444,10 +444,24 @@ export function AppProvider({ children }) {
     return socket.emit('trivia:answer', { room_code: roomCode, answer_index: answerIndex })
   }
 
-  function emitPlayAgain(roomCode) {
+  async function emitPlayAgain(roomCode) {
+    if (!roomCode) return
     const socket = connectSocket()
+    // Wait for actual connection if socket is not yet connected
+    if (!socket.connected) {
+      await new Promise((resolve) => {
+        const onConnect = () => { clearTimeout(timer); resolve() }
+        const timer = setTimeout(() => { socket.off('connect', onConnect); resolve() }, 5000)
+        socket.once('connect', onConnect)
+      })
+    }
+    if (!socket.connected) return // still not connected after timeout
+    // Re-register in room (socket may have a new SID after reconnect)
     const data = auth.token ? { room_code: roomCode, token: auth.token } : { room_code: roomCode, guest_token: auth.guestToken }
-    return socket.emit('game:play_again', data)
+    socket.emit('room:register', data)
+    // Small delay to let server process registration before play_again
+    await new Promise((r) => setTimeout(r, 200))
+    socket.emit('game:play_again', data)
   }
 
   const value = useMemo(() => ({

@@ -44,11 +44,6 @@ sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
 PLAY_AGAIN_VOTES: dict[str, dict] = {}
 
 
-@sio.on("*")
-async def catch_all(event, sid, data):
-    """Log all unhandled events for debugging."""
-    _logger.info(f"[catch_all] event={event} sid={sid}")
-
 
 
 def get_user_from_token(db, token: str | None):
