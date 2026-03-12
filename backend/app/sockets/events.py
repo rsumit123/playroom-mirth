@@ -35,10 +35,20 @@ from sqlalchemy import func as sa_func
 import time
 import random
 
+import logging
+_logger = logging.getLogger("charade.sio")
+
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
 
 # Play-again vote tracking: room_code -> {player_ids: set, total: int, task: asyncio.Task}
 PLAY_AGAIN_VOTES: dict[str, dict] = {}
+
+
+@sio.on("*")
+async def catch_all(event, sid, data):
+    """Log all unhandled events for debugging."""
+    _logger.info(f"[catch_all] event={event} sid={sid}")
+
 
 
 def get_user_from_token(db, token: str | None):
@@ -970,8 +980,7 @@ async def game_next_round(sid, data):
 @sio.on("game:play_again")
 async def game_play_again(sid, data):
     """Player votes to play again after game ends."""
-    import logging
-    logger = logging.getLogger(__name__)
+    logger = _logger
 
     room_code = data.get("room_code")
     if not room_code:
