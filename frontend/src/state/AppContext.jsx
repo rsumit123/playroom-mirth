@@ -271,7 +271,7 @@ export function AppProvider({ children }) {
   function bindLobbyEvents(roomCode) {
     // Reset game turn so stale data from a previous game doesn't trigger auto-navigation
     // (backend catch-up in room:register will re-set turn if a game is actually active)
-    setGame((g) => ({ ...g, turn: null, word: null, lastGuess: null, roundEnd: null, gameEnd: null, messages: [] }))
+    setGame((g) => ({ ...g, turn: null, word: null, lastGuess: null, roundEnd: null, gameEnd: null, playAgain: null, messages: [] }))
     const socket = connectSocket()
     socket.off('room:lobby_update')
     socket.off('game:turn_start')
@@ -323,7 +323,7 @@ export function AppProvider({ children }) {
     socket.off('game:reconnect_grace')
     socket.off('disconnect')
     socket.off('connect')
-    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, hint: payload.hint || null, word: null, lastGuess: null, roundEnd: null, gameEnd: null, scribbleStrokes: [], guessedPlayerIds: [] })))
+    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, hint: payload.hint || null, word: null, lastGuess: null, roundEnd: null, gameEnd: null, playAgain: null, scribbleStrokes: [], guessedPlayerIds: [] })))
     socket.on('game:new_word', (payload) => setGame((g) => ({ ...g, word: payload.word })))
     socket.on('chat:message', (payload) => {
       setGame((g) => ({ ...g, messages: [...(g.messages || []), payload] }))
@@ -361,6 +361,12 @@ export function AppProvider({ children }) {
     socket.on('scribble:clear', () => {
       setGame((g) => ({ ...g, scribbleStrokes: [] }))
     })
+    socket.off('game:play_again_update')
+    socket.off('game:play_again_ready')
+    socket.off('game:play_again_expired')
+    socket.on('game:play_again_update', (payload) => setGame((g) => ({ ...g, playAgain: { voted: payload.voted, total: payload.total } })))
+    socket.on('game:play_again_ready', () => setGame((g) => ({ ...g, playAgain: { ready: true } })))
+    socket.on('game:play_again_expired', (payload) => setGame((g) => ({ ...g, playAgain: { expired: true, voted: payload.voted, total: payload.total } })))
     socket.on('game:player_removed', (payload) => {
       setGame((g) => ({ ...g, removed: payload }))
       if (payload?.player_id) {
@@ -438,6 +444,12 @@ export function AppProvider({ children }) {
     return socket.emit('trivia:answer', { room_code: roomCode, answer_index: answerIndex })
   }
 
+  function emitPlayAgain(roomCode) {
+    const socket = connectSocket()
+    const data = auth.token ? { room_code: roomCode, token: auth.token } : { room_code: roomCode, guest_token: auth.guestToken }
+    return socket.emit('game:play_again', data)
+  }
+
   const value = useMemo(() => ({
     auth,
     room,
@@ -462,6 +474,7 @@ export function AppProvider({ children }) {
     emitScribbleDraw,
     emitScribbleClear,
     emitTriviaAnswer,
+    emitPlayAgain,
     activeRooms,
     fetchActiveRooms,
     leaveActiveRoom,

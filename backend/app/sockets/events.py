@@ -37,6 +37,9 @@ import random
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
 
+# Play-again vote tracking: room_code -> {player_ids: set, total: int, task: asyncio.Task}
+PLAY_AGAIN_VOTES: dict[str, dict] = {}
+
 
 def get_user_from_token(db, token: str | None):
     if not token:
@@ -198,7 +201,7 @@ async def _advance_turn(room_code: str) -> None:
                 room = db.query(Room).filter(Room.code == room_code).first()
                 if room:
                     room.status = "lobby"
-                    db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: True})
+                    db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: False})
                     db.commit()
             return
 
@@ -675,7 +678,7 @@ async def _trivia_advance(room_code: str) -> None:
                     room = db.query(Room).filter(Room.code == room_code).first()
                     if room:
                         room.status = "lobby"
-                        db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: True})
+                        db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).update({RoomPlayer.in_game: False})
                         db.commit()
                 return
 
@@ -961,6 +964,88 @@ async def game_next_round(sid, data):
 
     async with state.lock:
         await _emit_next_turn(state, room_code)
+    return {"ok": True}
+
+
+@sio.on("game:play_again")
+async def game_play_again(sid, data):
+    """Player votes to play again after game ends."""
+    room_code = data.get("room_code")
+    if not room_code:
+        await emit_error(sid, "room_code required", code="BAD_REQUEST")
+        return {"ok": False}
+
+    # Identify player
+    player_id = SID_TO_PLAYER.get(sid)
+    if not player_id:
+        await emit_error(sid, "Not in a game", code="FORBIDDEN")
+        return {"ok": False}
+
+    with SessionLocal() as db:
+        room = db.query(Room).filter(Room.code == room_code).first()
+        if not room:
+            await emit_error(sid, "Room not found", code="NOT_FOUND")
+            return {"ok": False}
+
+        # Get all connected players in room
+        connected_players = db.query(RoomPlayer).filter(
+            RoomPlayer.room_id == room.id,
+            RoomPlayer.connected == True,
+        ).all()
+        connected_ids = {rp.id for rp in connected_players}
+        total = len(connected_ids)
+
+    if player_id not in connected_ids:
+        await emit_error(sid, "Not in this room", code="FORBIDDEN")
+        return {"ok": False}
+
+    # Initialize vote tracking for this room if needed
+    if room_code not in PLAY_AGAIN_VOTES:
+        PLAY_AGAIN_VOTES[room_code] = {"player_ids": set(), "total": total}
+
+        # Start 30-second timeout
+        async def _play_again_timeout():
+            await asyncio.sleep(30)
+            votes = PLAY_AGAIN_VOTES.pop(room_code, None)
+            if votes:
+                voted = len(votes["player_ids"])
+                await sio.emit("game:play_again_expired", {
+                    "voted": voted,
+                    "total": votes["total"],
+                }, room=room_code)
+
+        PLAY_AGAIN_VOTES[room_code]["task"] = asyncio.ensure_future(_play_again_timeout())
+
+    votes = PLAY_AGAIN_VOTES[room_code]
+    votes["player_ids"].add(player_id)
+    votes["total"] = total  # refresh in case someone disconnected
+    voted = len(votes["player_ids"])
+
+    if voted >= total:
+        # All players agreed — cancel timeout, clean up, send to lobby
+        task = votes.get("task")
+        if task and not task.done():
+            task.cancel()
+        PLAY_AGAIN_VOTES.pop(room_code, None)
+
+        # Re-enable in_game for all connected players so game:start can find them
+        with SessionLocal() as db:
+            room = db.query(Room).filter(Room.code == room_code).first()
+            if room:
+                db.query(RoomPlayer).filter(
+                    RoomPlayer.room_id == room.id,
+                    RoomPlayer.connected == True,
+                ).update({RoomPlayer.in_game: True})
+                db.commit()
+
+        await sio.emit("game:play_again_ready", {"room_code": room_code}, room=room_code)
+    else:
+        # Broadcast updated vote count
+        await sio.emit("game:play_again_update", {
+            "voted": voted,
+            "total": total,
+        }, room=room_code)
+
     return {"ok": True}
 
 

@@ -1,11 +1,11 @@
-import { useMemo } from 'react'
+import { useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import GameEnd from '../screens/GameEnd.jsx'
 import { useApp } from '../../state/AppContext.jsx'
 
 export default function GameEndPage() {
   const navigate = useNavigate()
-  const { game, lobby, leaveRoom } = useApp()
+  const { game, lobby, room, leaveRoom, emitPlayAgain } = useApp()
   const playerNames = useMemo(() => {
     const map = {}
     for (const p of lobby?.players || []) {
@@ -13,5 +13,21 @@ export default function GameEndPage() {
     }
     return map
   }, [lobby?.players])
-  return <GameEnd scores={game?.scores || {}} playerNames={playerNames} onHome={() => { leaveRoom(); navigate('/home') }} />
+
+  // When all players agree, navigate to lobby
+  useEffect(() => {
+    if (game?.playAgain?.ready) {
+      navigate('/lobby')
+    }
+  }, [game?.playAgain?.ready])
+
+  return (
+    <GameEnd
+      scores={game?.scores || {}}
+      playerNames={playerNames}
+      playAgain={game?.playAgain}
+      onPlayAgain={() => emitPlayAgain(room?.code)}
+      onHome={() => { leaveRoom(); navigate('/home') }}
+    />
+  )
 }

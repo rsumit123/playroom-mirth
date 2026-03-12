@@ -7,12 +7,19 @@ export default function LobbyPage() {
   const navigate = useNavigate()
   const { lobby, game, leaveRoom, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui, roomRestoreStatus, bindLobbyEvents } = useApp()
 
-  // Re-bind socket events when room is restored from refresh
+  // Bind lobby socket events on mount and when room code is available
   useEffect(() => {
     if (roomRestoreStatus === 'done' && lobby?.room?.code) {
       bindLobbyEvents(lobby.room.code)
     }
   }, [roomRestoreStatus, lobby?.room?.code])
+
+  // Also re-bind when this page mounts (e.g. returning from game-end via play again)
+  useEffect(() => {
+    if (lobby?.room?.code) {
+      bindLobbyEvents(lobby.room.code)
+    }
+  }, [])
 
   useEffect(() => {
     if (roomRestoreStatus !== 'done') return // wait for restore attempt

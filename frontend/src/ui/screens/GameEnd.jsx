@@ -4,8 +4,9 @@ import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import PlayerAvatar from '../components/PlayerAvatar.jsx'
 import { playSound } from '../../lib/sounds.js'
 
-export default function GameEnd({ scores, playerNames, onHome }) {
+export default function GameEnd({ scores, playerNames, playAgain, onPlayAgain, onHome }) {
   const [confettiKey, setConfettiKey] = useState(0)
+  const [voted, setVoted] = useState(false)
 
   useEffect(() => {
     setConfettiKey((k) => k + 1)
@@ -16,6 +17,14 @@ export default function GameEnd({ scores, playerNames, onHome }) {
     .map(([id, score]) => ({ id, score, name: playerNames?.[id] || `Player ${id}` }))
     .sort((a, b) => b.score - a.score)
   const winner = entries[0]
+
+  const handlePlayAgain = () => {
+    setVoted(true)
+    onPlayAgain()
+  }
+
+  const waiting = voted && !playAgain?.expired && !playAgain?.ready
+  const remaining = playAgain ? playAgain.total - playAgain.voted : null
 
   return (
     <div className="game-shell">
@@ -44,18 +53,41 @@ export default function GameEnd({ scores, playerNames, onHome }) {
           </div>
 
           <div className="w-full max-w-xs space-y-3">
-            <button
-              className="btn-primary w-full py-3.5 text-base touch-target"
-              onClick={onHome}
-            >
-              Play Again
-            </button>
-            <button
-              className="btn-ghost w-full touch-target"
-              onClick={onHome}
-            >
-              Back to Home
-            </button>
+            {playAgain?.expired ? (
+              <>
+                <div className="text-sm text-slate/60 mb-2">
+                  Not everyone wanted to play again ({playAgain.voted}/{playAgain.total} voted)
+                </div>
+                <button className="btn-ghost w-full touch-target" onClick={onHome}>
+                  Back to Home
+                </button>
+              </>
+            ) : waiting ? (
+              <>
+                <div className="btn-primary w-full py-3.5 text-base opacity-70 cursor-default flex items-center justify-center gap-2">
+                  <span className="inline-block w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
+                  Waiting for {remaining} more player{remaining !== 1 ? 's' : ''}...
+                </div>
+                <button className="btn-ghost w-full touch-target" onClick={onHome}>
+                  Leave
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  className="btn-primary w-full py-3.5 text-base touch-target"
+                  onClick={handlePlayAgain}
+                >
+                  Play Again
+                </button>
+                <button
+                  className="btn-ghost w-full touch-target"
+                  onClick={onHome}
+                >
+                  Back to Home
+                </button>
+              </>
+            )}
           </div>
         </div>
       </div>

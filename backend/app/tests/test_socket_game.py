@@ -146,6 +146,6 @@ async def test_game_end_resets_in_game():
         room = db.query(Room).filter(Room.code == room_code).first()
         assert room.status == "lobby"
         players = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).all()
-        assert all(p.in_game for p in players)
+        assert all(not p.in_game for p in players)
     finally:
         db.close()
