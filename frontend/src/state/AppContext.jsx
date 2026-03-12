@@ -365,7 +365,7 @@ export function AppProvider({ children }) {
     socket.off('game:play_again_ready')
     socket.off('game:play_again_expired')
     socket.on('game:play_again_update', (payload) => setGame((g) => ({ ...g, playAgain: { voted: payload.voted, total: payload.total } })))
-    socket.on('game:play_again_ready', () => setGame((g) => ({ ...g, playAgain: { ready: true } })))
+    socket.on('game:play_again_ready', () => setGame({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null, playAgain: { ready: true } }))
     socket.on('game:play_again_expired', (payload) => setGame((g) => ({ ...g, playAgain: { expired: true, voted: payload.voted, total: payload.total } })))
     socket.on('game:player_removed', (payload) => {
       setGame((g) => ({ ...g, removed: payload }))
@@ -446,31 +446,39 @@ export function AppProvider({ children }) {
 
   async function emitPlayAgain(roomCode) {
     if (!roomCode) return
+    const cleanGame = { messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null, roundEnd: null, gameEnd: null }
     try {
       const res = await api.playAgainVote(auth.token, auth.guestToken, roomCode)
-      setGame((g) => ({ ...g, playAgain: { voted: res.voted, total: res.total } }))
       if (res.status === 'ready') {
-        setGame({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null, playAgain: { ready: true } })
+        setGame({ ...cleanGame, playAgain: { ready: true } })
         return
       }
-      // Poll for updates since socket may be dead
+      if (res.status === 'expired') {
+        setGame((g) => ({ ...g, playAgain: { expired: true, voted: res.voted, total: res.total } }))
+        return
+      }
+      setGame((g) => ({ ...g, playAgain: { voted: res.voted, total: res.total } }))
+      // Poll for updates every 2s
       let attempts = 0
       const poll = setInterval(async () => {
         attempts++
-        if (attempts > 15) { // 30 seconds max
+        if (attempts > 20) { // 40 seconds safety limit
           clearInterval(poll)
-          setGame((g) => ({ ...g, playAgain: { expired: true, voted: res.voted, total: res.total } }))
+          setGame((g) => ({ ...g, playAgain: { expired: true, voted: 0, total: 0 } }))
           return
         }
         try {
           const status = await api.playAgainStatus(roomCode)
-          if (status.status === 'none') {
-            // Vote completed (ready) — reset all game state and go to lobby
+          if (status.status === 'ready') {
             clearInterval(poll)
-            setGame({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null, playAgain: { ready: true } })
-          } else {
+            setGame({ ...cleanGame, playAgain: { ready: true } })
+          } else if (status.status === 'expired') {
+            clearInterval(poll)
+            setGame((g) => ({ ...g, playAgain: { expired: true, voted: status.voted, total: status.total } }))
+          } else if (status.status === 'waiting') {
             setGame((g) => ({ ...g, playAgain: { voted: status.voted, total: status.total } }))
           }
+          // status === 'none' means no vote exists — keep polling in case it hasn't started yet
         } catch { /* ignore poll errors */ }
       }, 2000)
     } catch (err) {

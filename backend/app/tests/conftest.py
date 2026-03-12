@@ -45,17 +45,20 @@ def clear_users():
 async def reset_game_state():
     from app.services.game_state import ROOM_STATES, SID_TO_PLAYER, PLAYER_TO_SID, cancel_all_timers
     from app.sockets.events import PLAY_AGAIN_VOTES
+    from app.api.rooms import PLAY_AGAIN_REST
 
     ROOM_STATES.clear()
     SID_TO_PLAYER.clear()
     PLAYER_TO_SID.clear()
     PLAY_AGAIN_VOTES.clear()
+    PLAY_AGAIN_REST.clear()
     yield
     await cancel_all_timers()
     ROOM_STATES.clear()
     SID_TO_PLAYER.clear()
     PLAYER_TO_SID.clear()
     PLAY_AGAIN_VOTES.clear()
+    PLAY_AGAIN_REST.clear()
 
 
 @pytest.fixture()

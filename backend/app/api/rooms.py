@@ -138,9 +138,10 @@ def update_room_settings(
     return lobby_state(db, room)
 
 
-# ── Play-again vote tracking (shared with socket handler) ──────────────
-# Import here to share state with the socket handler
-from app.sockets.events import PLAY_AGAIN_VOTES, sio
+# ── Play-again vote tracking ──────────────────────────────────────────
+# Separate from socket handler — uses its own dict so we can track result status.
+# Structure: room_code -> {player_ids: set, total: int, status: "waiting"|"ready"|"expired", task: asyncio.Task}
+PLAY_AGAIN_REST: dict[str, dict] = {}
 
 
 @router.post("/{room_code}/play-again")
@@ -150,7 +151,7 @@ async def play_again_vote(
     db: Session = Depends(get_db),
     user=Depends(get_current_user_optional),
 ):
-    """REST endpoint for play-again votes — bypasses socket."""
+    """REST endpoint for play-again votes."""
     room = db.query(Room).filter(Room.code == room_code).first()
     if not room:
         raise HTTPException(status_code=404, detail="Room not found")
@@ -173,24 +174,29 @@ async def play_again_vote(
 
     _logger.info(f"[play_again REST] player_id={player_id} total={total}")
 
+    # If a previous vote already completed, return that result
+    existing = PLAY_AGAIN_REST.get(room_code)
+    if existing and existing.get("status") in ("ready", "expired"):
+        return {"ok": True, "status": existing["status"], "voted": len(existing["player_ids"]), "total": existing["total"]}
+
     # Initialize vote tracking for this room if needed
-    if room_code not in PLAY_AGAIN_VOTES:
-        PLAY_AGAIN_VOTES[room_code] = {"player_ids": set(), "total": total}
+    if room_code not in PLAY_AGAIN_REST:
+        PLAY_AGAIN_REST[room_code] = {"player_ids": set(), "total": total, "status": "waiting"}
 
         # Start 30-second timeout
         async def _play_again_timeout():
             await asyncio.sleep(30)
-            votes = PLAY_AGAIN_VOTES.pop(room_code, None)
-            if votes:
-                voted = len(votes["player_ids"])
-                await sio.emit("game:play_again_expired", {
-                    "voted": voted,
-                    "total": votes["total"],
-                }, room=room_code)
+            votes = PLAY_AGAIN_REST.get(room_code)
+            if votes and votes["status"] == "waiting":
+                votes["status"] = "expired"
+                _logger.info(f"[play_again REST] TIMEOUT for {room_code}")
 
-        PLAY_AGAIN_VOTES[room_code]["task"] = asyncio.ensure_future(_play_again_timeout())
+        PLAY_AGAIN_REST[room_code]["task"] = asyncio.ensure_future(_play_again_timeout())
 
-    votes = PLAY_AGAIN_VOTES[room_code]
+    votes = PLAY_AGAIN_REST[room_code]
+    if votes["status"] != "waiting":
+        return {"ok": True, "status": votes["status"], "voted": len(votes["player_ids"]), "total": votes["total"]}
+
     votes["player_ids"].add(player_id)
     votes["total"] = total
     voted = len(votes["player_ids"])
@@ -202,7 +208,7 @@ async def play_again_vote(
         task = votes.get("task")
         if task and not task.done():
             task.cancel()
-        PLAY_AGAIN_VOTES.pop(room_code, None)
+        votes["status"] = "ready"
 
         # Re-enable in_game for all players so game:start can find them
         db.query(RoomPlayer).filter(
@@ -211,11 +217,9 @@ async def play_again_vote(
         db.commit()
 
         _logger.info(f"[play_again REST] ALL voted — ready for {room_code}")
-        await sio.emit("game:play_again_ready", {"room_code": room_code}, room=room_code)
         return {"ok": True, "status": "ready", "voted": voted, "total": total}
     else:
         _logger.info(f"[play_again REST] waiting — {voted}/{total}")
-        await sio.emit("game:play_again_update", {"voted": voted, "total": total}, room=room_code)
         return {"ok": True, "status": "waiting", "voted": voted, "total": total}
 
 
@@ -229,11 +233,8 @@ def play_again_status(
     if not room:
         raise HTTPException(status_code=404, detail="Room not found")
 
-    votes = PLAY_AGAIN_VOTES.get(room_code)
+    votes = PLAY_AGAIN_REST.get(room_code)
     if not votes:
-        # No active vote — either completed (ready) or never started
         return {"status": "none", "voted": 0, "total": 0}
 
-    voted = len(votes["player_ids"])
-    total = votes["total"]
-    return {"status": "waiting", "voted": voted, "total": total}
+    return {"status": votes["status"], "voted": len(votes["player_ids"]), "total": votes["total"]}
