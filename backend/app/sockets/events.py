@@ -970,15 +970,12 @@ async def game_next_round(sid, data):
 @sio.on("game:play_again")
 async def game_play_again(sid, data):
     """Player votes to play again after game ends."""
+    import logging
+    logger = logging.getLogger(__name__)
+
     room_code = data.get("room_code")
     if not room_code:
         await emit_error(sid, "room_code required", code="BAD_REQUEST")
-        return {"ok": False}
-
-    # Identify player
-    player_id = SID_TO_PLAYER.get(sid)
-    if not player_id:
-        await emit_error(sid, "Not in a game", code="FORBIDDEN")
         return {"ok": False}
 
     with SessionLocal() as db:
@@ -987,17 +984,49 @@ async def game_play_again(sid, data):
             await emit_error(sid, "Room not found", code="NOT_FOUND")
             return {"ok": False}
 
-        # Get all connected players in room
-        connected_players = db.query(RoomPlayer).filter(
-            RoomPlayer.room_id == room.id,
-            RoomPlayer.connected == True,
-        ).all()
-        connected_ids = {rp.id for rp in connected_players}
-        total = len(connected_ids)
+        # Identify player via token (robust — doesn't depend on SID mapping)
+        token = data.get("token")
+        guest_token = data.get("guest_token")
+        user = get_user_from_token(db, token)
+        guest = resolve_guest(db, guest_token)
+        if not user and not guest:
+            await emit_error(sid, "Authentication required", code="UNAUTHORIZED")
+            return {"ok": False}
 
-    if player_id not in connected_ids:
-        await emit_error(sid, "Not in this room", code="FORBIDDEN")
-        return {"ok": False}
+        # Find the player's RoomPlayer record
+        rp_filter = RoomPlayer.room_id == room.id
+        if user:
+            rp = db.query(RoomPlayer).filter(rp_filter, RoomPlayer.user_id == user.id).first()
+        else:
+            rp = db.query(RoomPlayer).filter(rp_filter, RoomPlayer.guest_id == guest.id).first()
+
+        if not rp:
+            await emit_error(sid, "Not in this room", code="FORBIDDEN")
+            return {"ok": False}
+
+        player_id = rp.id
+
+        # Count players in the room — use in_game=False (just finished a game)
+        # AND connected=True, OR simply count all players associated with the room
+        # who are still in the Socket.IO room
+        all_players = db.query(RoomPlayer).filter(
+            RoomPlayer.room_id == room.id,
+        ).all()
+        # Use PLAYER_TO_SID to determine who's actually connected via socket
+        active_player_ids = {p.id for p in all_players if PLAYER_TO_SID.get(p.id)}
+        total = len(active_player_ids)
+
+    logger.info(f"[play_again] sid={sid} player_id={player_id} active_players={active_player_ids} total={total}")
+
+    if player_id not in active_player_ids:
+        # Player has a valid token but no active socket — try registering them
+        await sio.enter_room(sid, room_code)
+        SID_TO_PLAYER[sid] = player_id
+        PLAYER_TO_SID[player_id] = sid
+        PLAYER_TO_ROOM[player_id] = room_code
+        active_player_ids.add(player_id)
+        total = len(active_player_ids)
+        logger.info(f"[play_again] auto-registered player_id={player_id} sid={sid}")
 
     # Initialize vote tracking for this room if needed
     if room_code not in PLAY_AGAIN_VOTES:
@@ -1020,6 +1049,7 @@ async def game_play_again(sid, data):
     votes["player_ids"].add(player_id)
     votes["total"] = total  # refresh in case someone disconnected
     voted = len(votes["player_ids"])
+    logger.info(f"[play_again] voted={voted}/{total} voters={votes['player_ids']}")
 
     if voted >= total:
         # All players agreed — cancel timeout, clean up, send to lobby
@@ -1038,8 +1068,10 @@ async def game_play_again(sid, data):
                 ).update({RoomPlayer.in_game: True})
                 db.commit()
 
+        logger.info(f"[play_again] ALL voted — emitting play_again_ready for {room_code}")
         await sio.emit("game:play_again_ready", {"room_code": room_code}, room=room_code)
     else:
+        logger.info(f"[play_again] emitting play_again_update voted={voted} total={total}")
         # Broadcast updated vote count
         await sio.emit("game:play_again_update", {
             "voted": voted,
