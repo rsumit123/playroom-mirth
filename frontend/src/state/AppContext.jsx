@@ -450,7 +450,7 @@ export function AppProvider({ children }) {
       const res = await api.playAgainVote(auth.token, auth.guestToken, roomCode)
       setGame((g) => ({ ...g, playAgain: { voted: res.voted, total: res.total } }))
       if (res.status === 'ready') {
-        setGame((g) => ({ ...g, playAgain: { ready: true } }))
+        setGame({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null, playAgain: { ready: true } })
         return
       }
       // Poll for updates since socket may be dead
@@ -465,9 +465,9 @@ export function AppProvider({ children }) {
         try {
           const status = await api.playAgainStatus(roomCode)
           if (status.status === 'none') {
-            // Vote completed (ready) or expired — check by trying to detect ready
+            // Vote completed (ready) — reset all game state and go to lobby
             clearInterval(poll)
-            setGame((g) => ({ ...g, playAgain: { ready: true } }))
+            setGame({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null, playAgain: { ready: true } })
           } else {
             setGame((g) => ({ ...g, playAgain: { voted: status.voted, total: status.total } }))
           }
