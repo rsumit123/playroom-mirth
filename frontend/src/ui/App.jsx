@@ -1,5 +1,8 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom'
+import { Capacitor } from '@capacitor/core'
+import { App as CapApp } from '@capacitor/app'
+import { StatusBar, Style } from '@capacitor/status-bar'
 import { AppProvider } from '../state/AppContext.jsx'
 import { useApp } from '../state/AppContext.jsx'
 import WelcomePage from './pages/WelcomePage.jsx'
@@ -15,6 +18,7 @@ import HowToPage from './pages/HowToPage.jsx'
 import AdminWordsPage from './pages/AdminWordsPage.jsx'
 import AdminDashboardPage from './pages/AdminDashboardPage.jsx'
 import JoinPage from './pages/JoinPage.jsx'
+import PrivacyPage from './pages/PrivacyPage.jsx'
 import TopBar from './components/TopBar.jsx'
 import Toast from './components/Toast.jsx'
 import LoadingOverlay from './components/LoadingOverlay.jsx'
@@ -43,11 +47,28 @@ function AppShell() {
     if (auth?.token) fetchActiveRooms()
   }, [])
 
+  // Android: configure status bar and back button
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return
+    StatusBar.setOverlaysWebView({ overlay: false })
+    StatusBar.setBackgroundColor({ color: '#2C6E6A' })
+    StatusBar.setStyle({ style: Style.Dark })
+
+    const listener = CapApp.addListener('backButton', ({ canGoBack }) => {
+      if (canGoBack) {
+        navigate(-1)
+      } else {
+        CapApp.minimizeApp()
+      }
+    })
+    return () => { listener.then(l => l.remove()) }
+  }, [])
+
   // Redirect to welcome screen when auth is cleared (e.g. expired session)
   const isAuthed = Boolean(auth?.token || auth?.guestToken)
   const path = location.pathname
   useEffect(() => {
-    if (!isAuthed && path !== '/' && path !== '/how-to' && !path.startsWith('/join/') && !path.startsWith('/admin')) {
+    if (!isAuthed && path !== '/' && path !== '/how-to' && path !== '/privacy' && !path.startsWith('/join/') && !path.startsWith('/admin')) {
       navigate('/', { replace: true })
     }
   }, [isAuthed])
@@ -86,6 +107,7 @@ function AppShell() {
         <Route path="/game-end" element={<GameEndPage />} />
         <Route path="/how-to" element={<HowToPage />} />
         <Route path="/join/:roomCode" element={<JoinPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/admin" element={<AdminDashboardPage />} />
         <Route path="/admin/words" element={<AdminWordsPage />} />
       </Routes>

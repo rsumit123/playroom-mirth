@@ -27,6 +27,11 @@ __pycache__/
 .env.*
 .oauth
 
+# Android keystore (NEVER commit signing keys)
+frontend/android/keystore/
+*.jks
+*.keystore
+
 # OS
 .DS_Store
 Thumbs.db
