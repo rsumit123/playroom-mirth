@@ -69,7 +69,7 @@ export default function PrivacyPage() {
           <h2 className="font-semibold text-ink text-base mb-2">Contact</h2>
           <p>
             If you have questions about this privacy policy or want to request data deletion,
-            contact us at <a href="mailto:privacy@skdev.one" className="text-accent underline">privacy@skdev.one</a>.
+            contact us at <a href="mailto:sumit.skdev018@gmail.com" className="text-accent underline">sumit.skdev018@gmail.com</a>.
           </p>
         </section>
       </div>
