@@ -27,6 +27,7 @@ fastapi_app.add_middleware(
         "https://frontend-ashen-alpha-57.vercel.app",
         "capacitor://localhost",
         "http://localhost",
+        "https://localhost",
     ],
     allow_credentials=True,
     allow_methods=["*"],
