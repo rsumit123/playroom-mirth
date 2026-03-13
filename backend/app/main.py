@@ -25,6 +25,8 @@ fastapi_app.add_middleware(
         "https://charade-chat.skdev.one",
         "https://playroom.skdev.one",
         "https://frontend-ashen-alpha-57.vercel.app",
+        "capacitor://localhost",
+        "http://localhost",
     ],
     allow_credentials=True,
     allow_methods=["*"],
