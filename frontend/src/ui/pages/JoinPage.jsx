@@ -21,7 +21,7 @@ export default function JoinPage() {
     try {
       await joinRoom(normalizedCode)
       bindLobbyEvents(normalizedCode)
-      navigate('/lobby', { replace: true })
+      navigate('/lobby', { replace: true, state: { fromJoin: true } })
     } catch (err) {
       setError(err?.message || 'Could not join room')
       setJoining(false)

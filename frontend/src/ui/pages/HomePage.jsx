@@ -20,7 +20,7 @@ export default function HomePage() {
     try {
       await joinRoom(roomCode)
       bindLobbyEvents(roomCode)
-      navigate('/lobby')
+      navigate('/lobby', { state: { fromJoin: true } })
     } catch {
       // errors surfaced via toast
     }

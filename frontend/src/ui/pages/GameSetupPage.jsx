@@ -11,7 +11,7 @@ export default function GameSetupPage() {
     try {
       const res = await createRoom(payload)
       bindLobbyEvents(res.room.code)
-      navigate('/lobby')
+      navigate('/lobby', { state: { fromJoin: true } })
     } catch {
       // errors surfaced via toast
     }
@@ -21,7 +21,7 @@ export default function GameSetupPage() {
     try {
       await joinRoom(roomCode)
       bindLobbyEvents(roomCode)
-      navigate('/lobby')
+      navigate('/lobby', { state: { fromJoin: true } })
     } catch {
       // errors surfaced via toast
     }

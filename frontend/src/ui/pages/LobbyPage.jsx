@@ -1,33 +1,42 @@
-import { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import Lobby from '../screens/Lobby.jsx'
 import { useApp } from '../../state/AppContext.jsx'
 
 export default function LobbyPage() {
   const navigate = useNavigate()
+  const location = useLocation()
   const { lobby, game, leaveRoom, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui, roomRestoreStatus, bindLobbyEvents } = useApp()
 
-  // Bind lobby socket events on mount and when room code is available
-  useEffect(() => {
-    if (roomRestoreStatus === 'done' && lobby?.room?.code) {
-      bindLobbyEvents(lobby.room.code)
-    }
-  }, [roomRestoreStatus, lobby?.room?.code])
+  const isJoining = Boolean(ui?.loadingKeys?.join_room)
+  // Track whether we arrived here from a join — React may not have flushed
+  // the lobby state yet on the first render after navigate().
+  const [waitingForJoin, setWaitingForJoin] = useState(() => Boolean(location.state?.fromJoin))
 
-  // Also re-bind when this page mounts (e.g. returning from game-end via play again)
+  // Safety timeout: clear guard after 2s so user isn't stuck if lobby never arrives
+  useEffect(() => {
+    if (!waitingForJoin) return
+    const timer = setTimeout(() => setWaitingForJoin(false), 2000)
+    return () => clearTimeout(timer)
+  }, [waitingForJoin])
+
+  // Bind lobby socket events when room code becomes available
   useEffect(() => {
     if (lobby?.room?.code) {
       bindLobbyEvents(lobby.room.code)
+      setWaitingForJoin(false)
     }
-  }, [])
+  }, [lobby?.room?.code])
 
   useEffect(() => {
     if (roomRestoreStatus !== 'done') return // wait for restore attempt
+    if (isJoining) return // wait for join to complete
+    if (waitingForJoin) return // wait for lobby state to flush after join navigation
     if (!lobby?.room) {
       navigate('/home', { replace: true })
       return
     }
-  }, [lobby, roomRestoreStatus])
+  }, [lobby, roomRestoreStatus, isJoining, waitingForJoin])
 
   useEffect(() => {
     if (game?.turn) {
