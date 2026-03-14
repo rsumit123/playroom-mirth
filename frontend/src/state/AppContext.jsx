@@ -372,6 +372,10 @@ export function AppProvider({ children }) {
       if (payload?.player_id) {
         setLobby((l) => {
           if (!l?.players) return l
+          const removed = l.players.find((p) => p.id === payload.player_id)
+          if (removed) {
+            showToast(`${removed.display_name || 'A player'} left the game`)
+          }
           return { ...l, players: l.players.filter((p) => p.id !== payload.player_id) }
         })
       }
