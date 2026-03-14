@@ -1,19 +1,29 @@
 import { test, expect } from '@playwright/test'
 
+const APP = 'http://localhost:5173'
+
+/** Helper: log in as guest so protected routes are accessible */
+async function loginAsGuest(page, name = 'TestUser') {
+  await page.goto(APP)
+  await page.waitForLoadState('networkidle')
+  await page.evaluate(() => { localStorage.clear(); sessionStorage.clear() })
+  await page.reload()
+  await page.waitForLoadState('networkidle')
+  await page.getByPlaceholder(/enter your name/i).fill(name)
+  await page.getByRole('button', { name: /^play as guest$/i }).click()
+  await page.waitForURL('**/home', { timeout: 10000 })
+}
+
 // ── A. Home page renders correctly on mobile ──────────────────────────
 
 test.describe('Home page mobile layout', () => {
   test('game cards are visible and no horizontal overflow', async ({ page }) => {
-    await page.goto('/home')
+    await loginAsGuest(page, 'MobileHome')
 
-    // Verify game cards are visible (Charades + Scribble buttons)
-    const charadesCard = page.locator('button', { hasText: 'Charades' })
-    const scribbleCard = page.locator('button', { hasText: 'Scribble' })
-    await expect(charadesCard).toBeVisible()
-    await expect(scribbleCard).toBeVisible()
-
-    // Verify "More Games Coming Soon" placeholder is visible
-    await expect(page.locator('text=More Games Coming Soon')).toBeVisible()
+    // Verify game cards are visible (Charades, Scribble, Trivia)
+    await expect(page.getByText('Charades').first()).toBeVisible()
+    await expect(page.getByText('Scribble').first()).toBeVisible()
+    await expect(page.getByText('Trivia').first()).toBeVisible()
 
     // Verify no horizontal overflow: body scrollWidth should equal clientWidth
     const overflow = await page.evaluate(() => {
@@ -74,19 +84,21 @@ test.describe('Input field visibility with keyboard', () => {
 
 test.describe('Game setup page mobile layout', () => {
   test('form fields and buttons are tappable and within viewport', async ({ page }) => {
-    await page.goto('/play/scribble')
+    await loginAsGuest(page, 'MobileSetup')
+    await page.goto(`${APP}/play/scribble`)
+    await page.waitForLoadState('networkidle')
 
     // Verify the heading is visible
-    await expect(page.locator('h2', { hasText: 'Scribble' })).toBeVisible()
+    await expect(page.locator('h2.font-display', { hasText: 'Scribble' })).toBeVisible()
 
     // Verify "Create Room" and "Join Room" tabs are visible
-    const createTab = page.locator('button', { hasText: 'Create Room' })
-    const joinTab = page.locator('button', { hasText: 'Join Room' })
+    const createTab = page.locator('.segmented-option-active, .segmented-option', { hasText: /create room/i }).first()
+    const joinTab = page.locator('.segmented-option-active, .segmented-option', { hasText: /join room/i }).first()
     await expect(createTab).toBeVisible()
     await expect(joinTab).toBeVisible()
 
     // Verify the Create Room submit button is visible and within viewport
-    const createBtn = page.locator('button', { hasText: 'Create Room' }).last()
+    const createBtn = page.locator('button.btn-primary', { hasText: /create room/i })
     const box = await createBtn.boundingBox()
     expect(box).not.toBeNull()
     const viewport = page.viewportSize()
