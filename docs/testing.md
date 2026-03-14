@@ -69,7 +69,7 @@ If any test fails, **do not commit**. Fix the issue first.
 
 | File | What it tests | Servers needed |
 |------|--------------|----------------|
-| `charades-full-game.spec.js` | Full 2-player charades: guest login, room create/join, lobby, game start, roles, word/hint, correct guess, game end. Mid-game leave (auto-end). Stay button dismiss. | Backend + Frontend |
+| `charades-full-game.spec.js` | Full 2-player charades: guest login, room create/join, lobby, game start, roles, word/hint, correct guess, game end. Mid-game leave (auto-end). Stay button dismiss. Wrong guess (no correct feedback). Reconnection via page reload. 3-player describer rotation. | Backend + Frontend |
 | `scribble-full-game.spec.js` | Full 2-player scribble: guest login, room create/join, lobby, game start, drawer/guesser roles, canvas, word/hint, correct guess with points. Mid-game leave. | Backend + Frontend |
 | `trivia-full-game.spec.js` | Full 2-player trivia: guest login, room create/join, lobby, game start, question + 4 options, both answer, results shown, question progression. Mid-game leave (solo continues). | Backend + Frontend |
 | `play-again.spec.js` | Play-again voting flow (REST API based) | Backend + Frontend |
@@ -187,5 +187,3 @@ test('my game flow', async ({ browser }) => {
 - Trivia answer validation and scoring (backend unit tests)
 - Scribble drawing stroke relay (backend unit tests)
 - Frontend Lobby screen (component tests)
-- Reconnection mid-turn scenarios (beyond grace period)
-- 3+ player E2E tests
