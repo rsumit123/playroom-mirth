@@ -9,9 +9,15 @@ cd backend && .venv/bin/python -m pytest --tb=short -q
 # Frontend build check + unit tests (always run before committing)
 cd frontend && npm run build && npx vitest run
 
-# Backend E2E tests (require running server)
+# Backend E2E tests (require running server on port 8005)
 cd backend && .venv/bin/python -m uvicorn app.main:app --port 8005 &
 .venv/bin/python -m pytest app/tests/test_charades_scribble_e2e.py app/tests/test_play_again_rest.py app/tests/test_scoreboard.py --tb=short -v
+
+# Frontend Playwright E2E tests (require both backend + frontend dev servers)
+# Start backend: cd backend && .venv/bin/python -m uvicorn app.main:app --port 8005 &
+# Start frontend: cd frontend && npm run dev &
+# Then run:
+cd frontend && npx playwright test --project "Mobile Chrome"
 ```
 
 ## Pre-Commit Checklist
@@ -58,6 +64,16 @@ If any test fails, **do not commit**. Fix the issue first.
 | `ui/components/__tests__/DifficultySelector.test.jsx` | Difficulty picker |
 | `ui/screens/__tests__/Home.test.jsx` | Home screen (game selection, active rooms) |
 | `ui/screens/__tests__/GameSetup.test.jsx` | Game setup (create/join tabs) |
+
+### Frontend Playwright E2E (`frontend/e2e/`)
+
+| File | What it tests | Servers needed |
+|------|--------------|----------------|
+| `charades-full-game.spec.js` | Full 2-player charades: guest login, room create/join, lobby, game start, roles, word/hint, correct guess, game end. Mid-game leave (auto-end). Stay button dismiss. | Backend + Frontend |
+| `scribble-full-game.spec.js` | Full 2-player scribble: guest login, room create/join, lobby, game start, drawer/guesser roles, canvas, word/hint, correct guess with points. Mid-game leave. | Backend + Frontend |
+| `trivia-full-game.spec.js` | Full 2-player trivia: guest login, room create/join, lobby, game start, question + 4 options, both answer, results shown, question progression. Mid-game leave (solo continues). | Backend + Frontend |
+| `play-again.spec.js` | Play-again voting flow (REST API based) | Backend + Frontend |
+| `mobile-keyboard.spec.js` | Mobile layout and keyboard handling | Frontend |
 
 ## Writing New Tests
 
@@ -126,18 +142,50 @@ When adding a new feature, tests should cover:
 3. **Error handling** - Invalid input, unauthorized access
 4. **Interaction with existing features** - Does play-again still work? Does turn rotation break?
 
+### Frontend Playwright E2E tests
+
+Use 2 browser contexts for 2-player games. Pattern from `charades-full-game.spec.js`:
+
+```javascript
+test('my game flow', async ({ browser }) => {
+  const ctx1 = await browser.newContext()
+  const ctx2 = await browser.newContext()
+  const player1 = await ctx1.newPage()
+  const player2 = await ctx2.newPage()
+
+  try {
+    await loginAsGuest(player1, 'Alice')  // clear storage, fill name, click Play as Guest
+    await loginAsGuest(player2, 'Bob')
+    const roomCode = await createRoom(player1)  // click game, click Create Room
+    await joinRoom(player2, roomCode)            // click game, Join tab, fill code, click Join
+    // ... game flow assertions
+  } finally {
+    await ctx1.close()
+    await ctx2.close()
+  }
+})
+```
+
+**Important patterns:**
+- Always clear `localStorage` and `sessionStorage` in `loginAsGuest` to avoid stale auth
+- Use `page.getByPlaceholder(/enter your name/i)` not `input[type="text"]` for the name input
+- Use `page.locator('button.btn-primary', { hasText: /create room/i })` to distinguish submit buttons from tab buttons
+- Use `page.getByLabel(/leave game/i)` for the leave button (aria-label)
+- Use `test.setTimeout(120000)` for full-game tests (turn timers are 60-120s)
+
 ### Currently well-covered areas
 - Room creation/joining (REST + Socket)
 - Game start and turn progression
 - Correct guess scoring (charades + scribble)
 - Play-again voting flow
 - Word seeding and deduplication
-- Mid-game leave (game:leave)
+- Mid-game leave (game:leave) -- backend + E2E
 - Grace period rotation
+- Full game flow E2E for all 3 game modes (charades, scribble, trivia)
 
 ### Areas needing more coverage
-- Trivia answer validation and scoring
-- Scribble drawing stroke relay
-- Frontend game screens (Game.jsx, ScribbleGame.jsx, TriviaGame.jsx)
-- Frontend Lobby screen
+- Trivia answer validation and scoring (backend unit tests)
+- Scribble drawing stroke relay (backend unit tests)
+- Frontend Lobby screen (component tests)
 - Reconnection mid-turn scenarios (beyond grace period)
+- 3+ player E2E tests

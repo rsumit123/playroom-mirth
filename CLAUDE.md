@@ -48,6 +48,13 @@ cd frontend && VITE_API_BASE=https://charade-api.skdev.one VITE_SOCKET_URL=https
 
 If ANY test fails, do NOT commit. Fix the issue first.
 
+**For game logic or socket changes, also run Playwright E2E tests:**
+```bash
+# Start both servers, then:
+cd frontend && npx playwright test --project "Mobile Chrome"
+```
+This runs full 2-player game E2E tests for charades, scribble, and trivia.
+
 **Additional rules:**
 - For Python changes: always run backend tests after changes
 - For JS/TS changes: always run frontend build + vitest after changes

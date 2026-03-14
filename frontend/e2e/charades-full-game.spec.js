@@ -38,14 +38,12 @@ test.describe('Charades - Full 2-Player Game', () => {
   async function loginAsGuest(page, name) {
     await page.goto(APP)
     await page.waitForLoadState('networkidle')
-
-    // Fill guest name and click Play as Guest
-    const nameInput = page.getByPlaceholder(/your name/i).or(page.getByPlaceholder(/enter.*name/i)).or(page.locator('input[type="text"]').first())
-    await nameInput.fill(name)
-    const playBtn = page.getByRole('button', { name: /^play as guest$/i })
-    await playBtn.click()
-
-    // Should navigate to /home
+    // Clear any leftover auth state
+    await page.evaluate(() => { localStorage.clear(); sessionStorage.clear() })
+    await page.reload()
+    await page.waitForLoadState('networkidle')
+    await page.getByPlaceholder(/enter your name/i).fill(name)
+    await page.getByRole('button', { name: /^play as guest$/i }).click()
     await page.waitForURL('**/home', { timeout: 10000 })
   }
 
