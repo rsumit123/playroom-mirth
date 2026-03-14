@@ -303,4 +303,46 @@ test.describe('Charades - Full 2-Player Game', () => {
       await ctx2.close()
     }
   })
+
+  test('wrong guess shows in chat but no correct feedback', async ({ browser }) => {
+    test.setTimeout(60000)
+
+    const ctx1 = await browser.newContext()
+    const ctx2 = await browser.newContext()
+    const player1 = await ctx1.newPage()
+    const player2 = await ctx2.newPage()
+
+    try {
+      await loginAsGuest(player1, 'WrongAlice')
+      await loginAsGuest(player2, 'WrongBob')
+
+      const roomCode = await createCharadesRoom(player1)
+      await joinRoom(player2, roomCode)
+      await player1.waitForTimeout(1000)
+
+      await player1.getByRole('button', { name: /start game/i }).click()
+      await player1.waitForURL('**/game', { timeout: 10000 })
+      await player2.waitForURL('**/game', { timeout: 10000 })
+
+      // Identify guesser
+      const p1Role = await player1.locator('.badge-describer, .badge-guesser').first().textContent()
+      const guesser = p1Role.includes('Guesser') ? player1 : player2
+
+      // Submit a wrong guess
+      const guessInput = guesser.getByPlaceholder(/type your guess/i)
+      await expect(guessInput).toBeVisible({ timeout: 5000 })
+      await guessInput.fill('definitelywrongguess')
+      await guesser.getByRole('button', { name: /guess/i }).click()
+
+      // Wrong guess should appear in chat
+      await expect(guesser.getByText('definitelywrongguess').first()).toBeVisible({ timeout: 5000 })
+
+      // No correct-guess feedback (green checkmark / "guessed correctly" banner)
+      await expect(guesser.locator('.bg-correct\\/10').first()).not.toBeVisible()
+
+    } finally {
+      await ctx1.close()
+      await ctx2.close()
+    }
+  })
 })
