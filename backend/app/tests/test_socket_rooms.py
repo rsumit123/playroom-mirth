@@ -41,11 +41,13 @@ async def test_socket_room_create_with_user():
 async def test_socket_room_create_with_guest_and_join():
     db = SessionLocal()
     try:
-        # Create a guest directly
+        # Create two guests directly
         from app.models.guest import Guest
 
-        guest = Guest(guest_token="guest-token-1")
-        db.add(guest)
+        guest1 = Guest(guest_token="guest-token-1")
+        guest2 = Guest(guest_token="guest-token-2")
+        db.add(guest1)
+        db.add(guest2)
         db.add(Word(text="banana", difficulty=2, active=True))
         db.commit()
     finally:
@@ -75,7 +77,7 @@ async def test_socket_room_create_with_guest_and_join():
         "room:join",
         "/",
         sid2,
-        {"room_code": room_code, "guest_token": "guest-token-1"},
+        {"room_code": room_code, "guest_token": "guest-token-2"},
     )
     assert join_res["ok"] is True
     assert len(join_res["lobby"]["players"]) == 2

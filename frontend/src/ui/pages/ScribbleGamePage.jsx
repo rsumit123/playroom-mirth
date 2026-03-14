@@ -2,10 +2,11 @@ import { useEffect, useMemo, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ScribbleGame from '../screens/ScribbleGame.jsx'
 import { useApp } from '../../state/AppContext.jsx'
+import { getSocket } from '../../lib/socket.js'
 
 export default function ScribbleGamePage() {
   const navigate = useNavigate()
-  const { room, lobby, game, emitChat, emitScribbleDraw, emitScribbleClear, emitRoomJoin, selfPlayerId, roomRestoreStatus } = useApp()
+  const { room, lobby, game, emitChat, emitScribbleDraw, emitScribbleClear, emitRoomJoin, leaveRoom, selfPlayerId, roomRestoreStatus } = useApp()
   const navigatedRef = useRef(false)
 
   useEffect(() => {
@@ -53,6 +54,14 @@ export default function ScribbleGamePage() {
     emitScribbleClear(room.code)
   }
 
+  function handleLeave() {
+    if (room?.code) {
+      getSocket().emit('game:leave', { room_code: room.code })
+    }
+    leaveRoom()
+    navigate('/home')
+  }
+
   return (
     <ScribbleGame
       game={{ ...game, selfPlayerId }}
@@ -60,6 +69,7 @@ export default function ScribbleGamePage() {
       onSend={handleSend}
       onStroke={handleStroke}
       onClear={handleClear}
+      onLeave={handleLeave}
       onRejoin={() => {
         if (!room?.code) return
         emitRoomJoin(room.code)

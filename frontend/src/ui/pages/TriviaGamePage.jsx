@@ -2,10 +2,11 @@ import { useEffect, useMemo, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import TriviaGame from '../screens/TriviaGame.jsx'
 import { useApp } from '../../state/AppContext.jsx'
+import { getSocket } from '../../lib/socket.js'
 
 export default function TriviaGamePage() {
   const navigate = useNavigate()
-  const { room, lobby, game, emitTriviaAnswer, selfPlayerId, roomRestoreStatus } = useApp()
+  const { room, lobby, game, emitTriviaAnswer, leaveRoom, selfPlayerId, roomRestoreStatus } = useApp()
   const navigatedRef = useRef(false)
 
   useEffect(() => {
@@ -43,11 +44,20 @@ export default function TriviaGamePage() {
     emitTriviaAnswer(room.code, answerIndex)
   }
 
+  function handleLeave() {
+    if (room?.code) {
+      getSocket().emit('game:leave', { room_code: room.code })
+    }
+    leaveRoom()
+    navigate('/home')
+  }
+
   return (
     <TriviaGame
       game={{ ...game, selfPlayerId }}
       playerNames={playerNames}
       onAnswer={handleAnswer}
+      onLeave={handleLeave}
     />
   )
 }

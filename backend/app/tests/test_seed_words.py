@@ -41,18 +41,15 @@ def test_seed_words_charades_count_matches_source():
 
 
 def test_seed_words_scribble_count_matches_source():
-    """Number of scribble words inserted should equal unique scribble texts minus overlaps with charades."""
+    """Number of scribble words inserted should equal unique scribble texts."""
     db = SessionLocal()
     try:
         seed_words(db)
 
-        unique_charades = _count_unique_words(CHARADES_WORDS)
         unique_scribble = _count_unique_words(SCRIBBLE_WORDS)
-        # Words appearing in both dicts get game_type="charades" (seeded first)
-        scribble_only = unique_scribble - unique_charades
         scribble_count = db.query(Word).filter(Word.game_type == "scribble").count()
-        assert scribble_count == len(scribble_only), (
-            f"Expected {len(scribble_only)} scribble-only words, got {scribble_count}"
+        assert scribble_count == len(unique_scribble), (
+            f"Expected {len(unique_scribble)} scribble words, got {scribble_count}"
         )
     finally:
         db.close()
@@ -141,19 +138,18 @@ def test_seed_words_idempotent():
 
 
 def test_seed_words_total_count():
-    """Total word count should equal unique charades + unique scribble words."""
+    """Total word count should equal unique charades + unique scribble words (composite unique allows same text in both)."""
     db = SessionLocal()
     try:
         seed_words(db)
 
         unique_charades = _count_unique_words(CHARADES_WORDS)
         unique_scribble = _count_unique_words(SCRIBBLE_WORDS)
-        # Some words may overlap between dicts; seed_words skips duplicates
-        all_expected = unique_charades | unique_scribble
-        # But charades words are seeded first, so overlapping texts get game_type="charades"
+        # Composite unique constraint (text, game_type) allows same text in both game types
+        expected_total = len(unique_charades) + len(unique_scribble)
         total = db.query(Word).count()
-        assert total == len(all_expected), (
-            f"Expected {len(all_expected)} total words, got {total}"
+        assert total == expected_total, (
+            f"Expected {expected_total} total words, got {total}"
         )
     finally:
         db.close()

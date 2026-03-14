@@ -2,10 +2,11 @@ import { useEffect, useMemo, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Game from '../screens/Game.jsx'
 import { useApp } from '../../state/AppContext.jsx'
+import { getSocket } from '../../lib/socket.js'
 
 export default function GamePage() {
   const navigate = useNavigate()
-  const { room, lobby, game, emitChat, emitRoomJoin, selfPlayerId, roomRestoreStatus } = useApp()
+  const { room, lobby, game, emitChat, emitRoomJoin, leaveRoom, selfPlayerId, roomRestoreStatus } = useApp()
   const navigatedRef = useRef(false)
 
   useEffect(() => {
@@ -43,11 +44,20 @@ export default function GamePage() {
     emitChat(room.code, message)
   }
 
+  function handleLeave() {
+    if (room?.code) {
+      getSocket().emit('game:leave', { room_code: room.code })
+    }
+    leaveRoom()
+    navigate('/home')
+  }
+
   return (
     <Game
       game={{ ...game, selfPlayerId }}
       playerNames={playerNames}
       onSend={handleSend}
+      onLeave={handleLeave}
       onRejoin={() => {
         if (!room?.code) return
         emitRoomJoin(room.code)

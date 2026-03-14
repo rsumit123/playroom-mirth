@@ -148,14 +148,17 @@ async def _auto_end_game(state: RoomGameState, room_code: str) -> None:
         _logger.exception("Error saving game history for %s", room_code)
 
 
-async def _schedule_turn_timer(state: RoomGameState) -> None:
+async def _schedule_turn_timer(state: RoomGameState, override_seconds: float | None = None) -> None:
     if state.task and not state.task.done():
         state.task.cancel()
 
     async def _timer():
-        remaining = state.turn_seconds - (time.time() - state.turn_start_ts)
-        if remaining > 0:
-            await asyncio.sleep(remaining)
+        if override_seconds is not None:
+            await asyncio.sleep(override_seconds)
+        else:
+            remaining = state.turn_seconds - (time.time() - state.turn_start_ts)
+            if remaining > 0:
+                await asyncio.sleep(remaining)
         await _advance_turn(state.room_code)
 
     state.task = asyncio.create_task(_timer())
@@ -163,12 +166,15 @@ async def _schedule_turn_timer(state: RoomGameState) -> None:
 
 async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
     """Select a word, emit turn_start + new_word, schedule timer."""
-    # Skip disconnected describers
+    # Skip disconnected describers (but not those in grace period who may reconnect)
     for _ in range(len(state.player_order)):
         describer_id = state.player_order[state.describer_index]
         if PLAYER_TO_SID.get(describer_id):
             break  # connected
-        # Disconnected — skip to next player
+        grace_task = PLAYER_GRACE_TASKS.get(describer_id)
+        if grace_task and not grace_task.done():
+            break  # in grace period, give them the turn (word sent on reconnect)
+        # Truly disconnected — skip to next player
         state.describer_index += 1
         if state.describer_index >= len(state.player_order):
             state.describer_index = 0
@@ -207,7 +213,13 @@ async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
     describer_sid = PLAYER_TO_SID.get(describer_id)
     if describer_sid and state.current_word_text:
         await sio.emit("game:new_word", {"word": state.current_word_text}, to=describer_sid)
-    await _schedule_turn_timer(state)
+        await _schedule_turn_timer(state)
+    elif not describer_sid:
+        # Describer in grace period — use shorter timer (15s) to limit dead time
+        _logger.info("Describer %s has no SID (grace period), using 15s timer", describer_id)
+        await _schedule_turn_timer(state, override_seconds=15)
+    else:
+        await _schedule_turn_timer(state)
 
 
 async def _advance_turn(room_code: str) -> None:
@@ -433,6 +445,17 @@ async def room_register(sid, data):
             )
             if rp.id == describer_id and state.current_word_text:
                 await sio.emit("game:new_word", {"word": state.current_word_text}, to=sid)
+                # Restart turn with full timer since describer just reconnected
+                state.turn_start_ts = time.time()
+                await sio.emit("game:turn_start", {
+                    "describer_id": describer_id,
+                    "turn_seconds": state.turn_seconds,
+                    "turn_start_ts": int(state.turn_start_ts),
+                    "round_index": state.round_index,
+                    "game_type": state.game_type,
+                    "hint": hint,
+                }, room=room_code)
+                await _schedule_turn_timer(state)
     return {"ok": True}
 
 
@@ -955,6 +978,68 @@ async def chat_message(sid, data):
 
     await sio.emit("chat:message", {"player_id": player_id, "message": message}, room=room_code)
     return {"ok": True, "correct": False}
+
+
+@sio.on("game:leave")
+async def game_leave(sid, data):
+    """Player explicitly leaves mid-game."""
+    player_id = SID_TO_PLAYER.get(sid)
+    room_code = data.get("room_code") or PLAYER_TO_ROOM.get(player_id)
+    if not player_id or not room_code:
+        return
+
+    _logger.info("Player %s leaving game in room %s", player_id, room_code)
+
+    # Cancel any existing grace task
+    task = PLAYER_GRACE_TASKS.get(player_id)
+    if task and not task.done():
+        task.cancel()
+
+    # Mark player as left in DB
+    with SessionLocal() as db:
+        rp = db.query(RoomPlayer).filter(RoomPlayer.id == player_id).first()
+        if rp:
+            rp.in_game = False
+            rp.connected = False
+            db.commit()
+
+    # Clean up SID mappings
+    SID_TO_PLAYER.pop(sid, None)
+    PLAYER_TO_SID.pop(player_id, None)
+    PLAYER_TO_ROOM.pop(player_id, None)
+
+    # Notify room
+    await sio.emit("game:player_removed", {"player_id": player_id}, room=room_code)
+
+    # Clean up game state
+    state = ROOM_STATES.get(room_code)
+    if state and player_id in state.player_order:
+        async with state.lock:
+            if player_id not in state.player_order:
+                return
+            idx = state.player_order.index(player_id)
+            was_describer = (idx == state.describer_index)
+            state.player_order.remove(player_id)
+
+            # If fewer than 2 players remain (charades/scribble need 2), end game
+            if not state.player_order or (state.game_type != "trivia" and len(state.player_order) < 2):
+                await _auto_end_game(state, room_code)
+                return
+
+            if was_describer:
+                if state.task and not state.task.done():
+                    state.task.cancel()
+                if state.describer_index >= len(state.player_order):
+                    state.describer_index = 0
+                if state.game_type != "trivia":
+                    await _emit_next_turn(state, room_code)
+            elif idx < state.describer_index:
+                state.describer_index -= 1
+
+            with SessionLocal() as db:
+                _save_state(db, state)
+
+    await sio.leave_room(sid, room_code)
 
 
 @sio.on("game:turn_end")

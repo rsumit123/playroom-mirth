@@ -4,10 +4,12 @@ import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import ChatBubble from '../components/ChatBubble.jsx'
 import Scoreboard from '../components/Scoreboard.jsx'
 import GameAlerts, { useGameAlerts } from '../components/GameAlerts.jsx'
+import LeaveGameModal from '../components/LeaveGameModal.jsx'
 import { playSound } from '../../lib/sounds.js'
 
-export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
+export default function Game({ game, onSend, onRejoin, onLeave, playerNames = {} }) {
   const [message, setMessage] = useState('')
+  const [showLeaveModal, setShowLeaveModal] = useState(false)
   const [confettiKey, setConfettiKey] = useState(0)
   const [remaining, setRemaining] = useState(null)
   const [showScoreboard, setShowScoreboard] = useState(false)
@@ -125,7 +127,7 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
   }
 
   const shellStyle = viewport
-    ? { position: 'fixed', top: `${viewport.offsetTop}px`, left: 0, right: 0, height: `${viewport.height}px` }
+    ? { position: 'fixed', top: `max(env(safe-area-inset-top, 0px), ${viewport.offsetTop}px)`, left: 0, right: 0, height: `${viewport.height}px` }
     : { height: '100dvh' }
 
   return (
@@ -143,6 +145,9 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
       {/* Top status bar */}
       <div className="border-b border-black/5 bg-white/70 backdrop-blur px-4 py-2 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-3">
+          <button className="touch-target p-1.5 -ml-1.5 rounded-lg text-slate/40 hover:text-slate/70 hover:bg-black/5 transition-colors" onClick={() => setShowLeaveModal(true)} aria-label="Leave game">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          </button>
           <span className="text-xs uppercase tracking-wider text-slate/50">
             Round {turn?.round_index || 1}
           </span>
@@ -152,6 +157,7 @@ export default function Game({ game, onSend, onRejoin, playerNames = {} }) {
         </div>
         <CircularTimer remaining={remaining ?? (turn?.turn_seconds || 60)} total={turn?.turn_seconds || 60} size={48} />
       </div>
+      <LeaveGameModal open={showLeaveModal} onConfirm={onLeave} onCancel={() => setShowLeaveModal(false)} />
 
       {/* Word / info bar */}
       {role === 'describer' ? (

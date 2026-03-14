@@ -4,6 +4,7 @@ import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import Scoreboard from '../components/Scoreboard.jsx'
 import PlayerAvatar from '../components/PlayerAvatar.jsx'
 import GameAlerts, { useGameAlerts } from '../components/GameAlerts.jsx'
+import LeaveGameModal from '../components/LeaveGameModal.jsx'
 import { playSound } from '../../lib/sounds.js'
 
 const OPTION_COLORS = [
@@ -13,11 +14,12 @@ const OPTION_COLORS = [
   { bg: 'bg-[#2ecc71]/10', border: 'border-[#2ecc71]/20', activeBg: 'bg-[#2ecc71]/20' },
 ]
 
-export default function TriviaGame({ game, onAnswer, playerNames = {} }) {
+export default function TriviaGame({ game, onAnswer, onLeave, playerNames = {} }) {
   const [confettiKey, setConfettiKey] = useState(0)
   const [remaining, setRemaining] = useState(null)
   const [showScoreboard, setShowScoreboard] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
+  const [showLeaveModal, setShowLeaveModal] = useState(false)
   const { alerts, addAlert, removeAlert } = useGameAlerts()
   const prevQuestionRef = useRef(null)
   const questionReceivedRef = useRef(null)
@@ -79,6 +81,7 @@ export default function TriviaGame({ game, onAnswer, playerNames = {} }) {
     <div className="game-shell">
       <ConfettiBurst key={confettiKey} />
       <GameAlerts alerts={alerts} onRemove={removeAlert} />
+      <LeaveGameModal open={showLeaveModal} onConfirm={onLeave} onCancel={() => setShowLeaveModal(false)} />
 
       <div className="flex flex-col lg:flex-row h-full">
         {/* Main area */}
@@ -87,6 +90,9 @@ export default function TriviaGame({ game, onAnswer, playerNames = {} }) {
           {/* Top bar: progress + timer */}
           <div className="bg-white/60 backdrop-blur border-b border-black/5 px-4 py-3 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-3">
+              <button className="touch-target p-1.5 -ml-1.5 rounded-lg text-slate/40 hover:text-slate/70 hover:bg-black/5 transition-colors" onClick={() => setShowLeaveModal(true)} aria-label="Leave game">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              </button>
               <span className="badge bg-accent/10 text-accent text-xs font-semibold">
                 Round {trivia?.round_index || 1}
               </span>
