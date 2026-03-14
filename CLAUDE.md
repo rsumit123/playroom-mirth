@@ -41,10 +41,20 @@ cd frontend && VITE_API_BASE=https://charade-api.skdev.one VITE_SOCKET_URL=https
 
 ## Testing Rules
 
-- For Python changes: always run `cd backend && .venv/bin/python -m pytest --tb=short -q` after changes
-- For JS/TS changes: always run `cd frontend && npm run build` to verify no build errors
+**MANDATORY before every commit -- no exceptions:**
+1. Backend tests: `cd backend && .venv/bin/python -m pytest --tb=short -q`
+2. Frontend build: `cd frontend && npm run build`
+3. Frontend tests: `cd frontend && npx vitest run`
+
+If ANY test fails, do NOT commit. Fix the issue first.
+
+**Additional rules:**
+- For Python changes: always run backend tests after changes
+- For JS/TS changes: always run frontend build + vitest after changes
 - Run the full test suite at the START of a debugging session to establish a baseline
 - When multiple bugs exist in the same system, analyze them together before fixing individually to find shared root causes
+- When adding a new feature, add tests for it in the same commit
+- See `docs/testing.md` for full testing guide, test structure, and writing conventions
 
 ## Content Generation Rules
 
