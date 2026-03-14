@@ -345,4 +345,192 @@ test.describe('Charades - Full 2-Player Game', () => {
       await ctx2.close()
     }
   })
+
+  test('reconnection: page reload mid-game rejoins and restores state', async ({ browser }) => {
+    test.setTimeout(90000)
+
+    const ctx1 = await browser.newContext()
+    const ctx2 = await browser.newContext()
+    const player1 = await ctx1.newPage()
+    const player2 = await ctx2.newPage()
+
+    try {
+      await loginAsGuest(player1, 'ReconAlice')
+      await loginAsGuest(player2, 'ReconBob')
+
+      const roomCode = await createCharadesRoom(player1)
+      await joinRoom(player2, roomCode)
+      await player1.waitForTimeout(1000)
+
+      // Start game
+      await player1.getByRole('button', { name: /start game/i }).click()
+      await player1.waitForURL('**/game', { timeout: 10000 })
+      await player2.waitForURL('**/game', { timeout: 10000 })
+
+      // Verify both see the game
+      await expect(player1.getByText(/round 1/i).first()).toBeVisible({ timeout: 5000 })
+      await expect(player2.getByText(/round 1/i).first()).toBeVisible({ timeout: 5000 })
+
+      // Identify roles
+      const p1Role = await player1.locator('.badge-describer, .badge-guesser').first().textContent()
+      const describer = p1Role.includes('Describer') ? player1 : player2
+      const guesser = p1Role.includes('Describer') ? player2 : player1
+
+      // Describer should see the word before reload
+      const wordEl = describer.locator('.font-display.text-3xl, .font-display.text-4xl').first()
+      await expect(wordEl).toBeVisible({ timeout: 5000 })
+      const wordBefore = (await wordEl.textContent()).trim()
+      expect(wordBefore).toBeTruthy()
+      expect(wordBefore).not.toBe('...')
+
+      // ========== RELOAD the describer's page ==========
+      // This triggers: socket disconnect → reconnect → room:register
+      await describer.reload()
+      await describer.waitForLoadState('networkidle')
+
+      // Should stay on /game (sessionStorage has room code, auto-restore kicks in)
+      await describer.waitForURL('**/game', { timeout: 15000 })
+
+      // Describer should see the game screen restored (round info + role badge)
+      await expect(describer.getByText(/round/i).first()).toBeVisible({ timeout: 10000 })
+      const roleAfter = await describer.locator('.badge-describer, .badge-guesser').first().textContent()
+      // Role may have swapped if turn advanced during reload (grace timer),
+      // but the player should have a valid role either way
+      expect(roleAfter).toMatch(/Describer|Guesser/)
+
+      // If still describer, they should see the word again (sent via room:register)
+      if (roleAfter.includes('Describer')) {
+        const wordAfter = describer.locator('.font-display.text-3xl, .font-display.text-4xl').first()
+        await expect(wordAfter).toBeVisible({ timeout: 10000 })
+        const restoredWord = (await wordAfter.textContent()).trim()
+        expect(restoredWord).toBeTruthy()
+        expect(restoredWord).not.toBe('...')
+      }
+
+      // Guesser should still be on the game screen unaffected
+      expect(guesser.url()).toContain('/game')
+      await expect(guesser.getByText(/round/i).first()).toBeVisible()
+
+    } finally {
+      await ctx1.close()
+      await ctx2.close()
+    }
+  })
+
+  test('3-player game: describer rotates to each player', async ({ browser }) => {
+    test.setTimeout(120000)
+
+    const ctx1 = await browser.newContext()
+    const ctx2 = await browser.newContext()
+    const ctx3 = await browser.newContext()
+    const player1 = await ctx1.newPage()
+    const player2 = await ctx2.newPage()
+    const player3 = await ctx3.newPage()
+
+    try {
+      // Login 3 players
+      await loginAsGuest(player1, 'RotateAlice')
+      await loginAsGuest(player2, 'RotateBob')
+      await loginAsGuest(player3, 'RotateCarol')
+
+      // Player 1 creates room
+      const roomCode = await createCharadesRoom(player1)
+
+      // Set timer to 30s in lobby settings for faster turns
+      const timerSlider = player1.locator('input[type="range"]').nth(1) // Timer is 2nd slider
+      if (await timerSlider.isVisible()) {
+        await timerSlider.fill('30')
+        const saveBtn = player1.getByRole('button', { name: /save settings/i })
+        if (await saveBtn.isVisible()) await saveBtn.click()
+        await player1.waitForTimeout(500)
+      }
+
+      // Player 2 and 3 join
+      await joinRoom(player2, roomCode)
+      await joinRoom(player3, roomCode)
+      await player1.waitForTimeout(1000)
+
+      // Verify 3 players in lobby
+      await expect(player1.getByText('RotateAlice').first()).toBeVisible({ timeout: 5000 })
+      await expect(player1.getByText('RotateBob').first()).toBeVisible({ timeout: 5000 })
+      await expect(player1.getByText('RotateCarol').first()).toBeVisible({ timeout: 5000 })
+
+      // Start game
+      await player1.getByRole('button', { name: /start game/i }).click()
+      await player1.waitForURL('**/game', { timeout: 10000 })
+      await player2.waitForURL('**/game', { timeout: 10000 })
+      await player3.waitForURL('**/game', { timeout: 10000 })
+
+      // ========== TURN 1: Check who is describer ==========
+      const allPlayers = [player1, player2, player3]
+      const getRoles = async () => {
+        const roles = []
+        for (const p of allPlayers) {
+          const badge = await p.locator('.badge-describer, .badge-guesser').first().textContent()
+          roles.push(badge.includes('Describer') ? 'describer' : 'guesser')
+        }
+        return roles
+      }
+
+      const turn1Roles = await getRoles()
+      // Exactly 1 describer and 2 guessers
+      expect(turn1Roles.filter(r => r === 'describer').length).toBe(1)
+      expect(turn1Roles.filter(r => r === 'guesser').length).toBe(2)
+
+      const turn1DescriberIdx = turn1Roles.indexOf('describer')
+
+      // Find a guesser and the secret word
+      const turn1Describer = allPlayers[turn1DescriberIdx]
+      const turn1Guesser = allPlayers[turn1Roles.indexOf('guesser')]
+
+      const wordEl = turn1Describer.locator('.font-display.text-3xl, .font-display.text-4xl').first()
+      await expect(wordEl).toBeVisible({ timeout: 5000 })
+      const word1 = (await wordEl.textContent()).trim()
+
+      // Guesser guesses correctly to speed up the turn
+      const guessInput = turn1Guesser.getByPlaceholder(/type your guess/i)
+      await expect(guessInput).toBeVisible({ timeout: 5000 })
+      await guessInput.fill(word1)
+      await turn1Guesser.getByRole('button', { name: /guess/i }).click()
+      await expect(turn1Guesser.getByText(/guessed/).first()).toBeVisible({ timeout: 5000 })
+
+      // Wait for turn to advance (timer will eventually expire, or after all guessers guess)
+      // With 3 players, only 1 guesser guessed -- need to wait for timer
+      // Wait for roles to change (turn advancement)
+      await player1.waitForTimeout(2000) // brief wait for any auto-advance
+
+      // Check if roles changed -- the turn may still be active (2nd guesser hasn't guessed)
+      // The turn will end when the timer expires. Let's wait for that.
+      // For efficiency, let the 2nd guesser also guess correctly
+      const turn1Guesser2Idx = turn1Roles.lastIndexOf('guesser')
+      if (turn1Guesser2Idx !== turn1Roles.indexOf('guesser')) {
+        const turn1Guesser2 = allPlayers[turn1Guesser2Idx]
+        // The describer got a new word after first correct guess
+        // Guesser 2 needs to see the updated hint/word -- but they don't know it
+        // Just wait for the timer to expire and advance the turn
+      }
+
+      // Wait for turn 2 (timer expires → describer rotates)
+      // We'll detect it by watching for the describer role to change on one of the guessers
+      let turn2Roles
+      const deadline = Date.now() + 45000 // 45s max wait (30s timer + buffer)
+      while (Date.now() < deadline) {
+        turn2Roles = await getRoles()
+        const turn2DescriberIdx = turn2Roles.indexOf('describer')
+        if (turn2DescriberIdx !== turn1DescriberIdx) break
+        await player1.waitForTimeout(2000)
+      }
+
+      // ========== TURN 2: Describer should have rotated ==========
+      const turn2DescriberIdx = turn2Roles.indexOf('describer')
+      expect(turn2DescriberIdx).not.toBe(turn1DescriberIdx)
+      expect(turn2Roles.filter(r => r === 'describer').length).toBe(1)
+      expect(turn2Roles.filter(r => r === 'guesser').length).toBe(2)
+
+    } finally {
+      await ctx1.close()
+      await ctx2.close()
+      await ctx3.close()
+    }
+  })
 })
