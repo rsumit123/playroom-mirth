@@ -3,9 +3,10 @@ import { useRef, useEffect, useCallback } from 'react'
 const BRUSH_WIDTH = 4
 const ERASER_WIDTH = 20
 
-export default function CanvasViewer({ strokes = [] }) {
+export default function CanvasViewer({ strokes = [], replayGen = 0 }) {
   const canvasRef = useRef(null)
   const lastDrawnRef = useRef(0)
+  const lastGenRef = useRef(0)
 
   const resizeCanvas = useCallback(() => {
     const canvas = canvasRef.current
@@ -48,8 +49,15 @@ export default function CanvasViewer({ strokes = [] }) {
       return
     }
 
-    if (strokes.length < lastDrawnRef.current) {
-      // Undo or stroke_replay with fewer strokes — redraw from scratch
+    if (replayGen !== lastGenRef.current) {
+      // Full replay (reconnection) — redraw everything from scratch
+      const ctx = canvas.getContext('2d')
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      drawStrokes(canvas, strokes, 0)
+      lastDrawnRef.current = strokes.length
+      lastGenRef.current = replayGen
+    } else if (strokes.length < lastDrawnRef.current) {
+      // Undo — redraw from scratch
       const ctx = canvas.getContext('2d')
       ctx.clearRect(0, 0, canvas.width, canvas.height)
       drawStrokes(canvas, strokes, 0)
@@ -58,7 +66,7 @@ export default function CanvasViewer({ strokes = [] }) {
       drawStrokes(canvas, strokes, lastDrawnRef.current)
       lastDrawnRef.current = strokes.length
     }
-  }, [strokes])
+  }, [strokes, replayGen])
 
   return (
     <div className="h-full bg-white rounded-xl border border-black/10 overflow-hidden relative">

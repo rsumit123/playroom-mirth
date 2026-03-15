@@ -370,7 +370,7 @@ export function AppProvider({ children }) {
       setGame((g) => ({ ...g, scribbleStrokes: (g.scribbleStrokes || []).slice(0, -1) }))
     })
     socket.on('scribble:stroke_replay', (payload) => {
-      setGame((g) => ({ ...g, scribbleStrokes: payload.strokes || [] }))
+      setGame((g) => ({ ...g, scribbleStrokes: payload.strokes || [], scribbleReplayGen: (g.scribbleReplayGen || 0) + 1 }))
     })
     socket.off('game:play_again_update')
     socket.off('game:play_again_ready')

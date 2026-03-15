@@ -197,7 +197,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onUndo, 
             {role === 'drawer' ? (
               <DrawingCanvas key={game?.word || turn?.turn_start_ts || ''} onStroke={onStroke} onClear={onClear} onUndo={onUndo} />
             ) : (
-              <CanvasViewer strokes={game?.scribbleStrokes || []} />
+              <CanvasViewer strokes={game?.scribbleStrokes || []} replayGen={game?.scribbleReplayGen || 0} />
             )}
           </div>
 
