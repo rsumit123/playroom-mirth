@@ -4,7 +4,7 @@ const COLORS = ['#000000', '#e74c3c', '#3498db', '#27ae60', '#f39c12']
 const BRUSH_WIDTH = 4
 const ERASER_WIDTH = 20
 
-export default function DrawingCanvas({ onStroke, onClear }) {
+export default function DrawingCanvas({ onStroke, onClear, onUndo }) {
   const canvasRef = useRef(null)
   const [color, setColor] = useState(COLORS[0])
   const [isErasing, setIsErasing] = useState(false)
@@ -129,8 +129,10 @@ export default function DrawingCanvas({ onStroke, onClear }) {
   }
 
   function handleUndo() {
+    if (strokesRef.current.length === 0) return
     strokesRef.current.pop()
     redrawAll()
+    onUndo?.()
   }
 
   return (

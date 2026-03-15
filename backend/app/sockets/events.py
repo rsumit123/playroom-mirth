@@ -1305,6 +1305,24 @@ async def scribble_clear(sid, data):
     await sio.emit("scribble:clear", {}, room=room_code, skip_sid=sid)
 
 
+@sio.on("scribble:undo")
+async def scribble_undo(sid, data):
+    """Drawer undoes last stroke; relay to room."""
+    room_code = data.get("room_code")
+    if not room_code:
+        return
+    state = ROOM_STATES.get(room_code)
+    if not state or state.game_type != "scribble":
+        return
+    player_id = SID_TO_PLAYER.get(sid)
+    describer_id = state.player_order[state.describer_index]
+    if player_id != describer_id:
+        return
+    if state.strokes:
+        state.strokes.pop()
+    await sio.emit("scribble:undo", {}, room=room_code, skip_sid=sid)
+
+
 def restore_game_states() -> None:
     with SessionLocal() as db:
         rows = db.query(RoomState).all()

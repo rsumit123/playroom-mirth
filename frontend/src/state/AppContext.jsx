@@ -365,6 +365,10 @@ export function AppProvider({ children }) {
     socket.on('scribble:clear', () => {
       setGame((g) => ({ ...g, scribbleStrokes: [] }))
     })
+    socket.off('scribble:undo')
+    socket.on('scribble:undo', () => {
+      setGame((g) => ({ ...g, scribbleStrokes: (g.scribbleStrokes || []).slice(0, -1) }))
+    })
     socket.on('scribble:stroke_replay', (payload) => {
       setGame((g) => ({ ...g, scribbleStrokes: payload.strokes || [] }))
     })
@@ -447,6 +451,11 @@ export function AppProvider({ children }) {
   function emitScribbleClear(roomCode) {
     const socket = getSocket()
     return socket.emit('scribble:clear', { room_code: roomCode })
+  }
+
+  function emitScribbleUndo(roomCode) {
+    const socket = getSocket()
+    return socket.emit('scribble:undo', { room_code: roomCode })
   }
 
   function emitTriviaAnswer(roomCode, answerIndex) {
@@ -539,6 +548,7 @@ export function AppProvider({ children }) {
     emitChat,
     emitScribbleDraw,
     emitScribbleClear,
+    emitScribbleUndo,
     emitTriviaAnswer,
     emitPlayAgain,
     activeRooms,

@@ -6,7 +6,7 @@ import { getSocket } from '../../lib/socket.js'
 
 export default function ScribbleGamePage() {
   const navigate = useNavigate()
-  const { room, lobby, game, emitChat, emitScribbleDraw, emitScribbleClear, emitRoomJoin, leaveRoom, selfPlayerId, roomRestoreStatus } = useApp()
+  const { room, lobby, game, emitChat, emitScribbleDraw, emitScribbleClear, emitScribbleUndo, emitRoomJoin, leaveRoom, selfPlayerId, roomRestoreStatus } = useApp()
   const navigatedRef = useRef(false)
 
   useEffect(() => {
@@ -54,6 +54,11 @@ export default function ScribbleGamePage() {
     emitScribbleClear(room.code)
   }
 
+  function handleUndo() {
+    if (!room?.code) return
+    emitScribbleUndo(room.code)
+  }
+
   function handleLeave() {
     if (room?.code) {
       getSocket().emit('game:leave', { room_code: room.code })
@@ -69,6 +74,7 @@ export default function ScribbleGamePage() {
       onSend={handleSend}
       onStroke={handleStroke}
       onClear={handleClear}
+      onUndo={handleUndo}
       onLeave={handleLeave}
       onRejoin={() => {
         if (!room?.code) return

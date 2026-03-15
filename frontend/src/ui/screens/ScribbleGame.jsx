@@ -9,7 +9,7 @@ import GameAlerts, { useGameAlerts } from '../components/GameAlerts.jsx'
 import LeaveGameModal from '../components/LeaveGameModal.jsx'
 import { playSound } from '../../lib/sounds.js'
 
-export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin, onLeave, playerNames = {} }) {
+export default function ScribbleGame({ game, onSend, onStroke, onClear, onUndo, onRejoin, onLeave, playerNames = {} }) {
   const [message, setMessage] = useState('')
   const [showLeaveModal, setShowLeaveModal] = useState(false)
   const [confettiKey, setConfettiKey] = useState(0)
@@ -195,7 +195,7 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onRejoin
           {/* Canvas area */}
           <div className="flex-1 p-3 min-h-0">
             {role === 'drawer' ? (
-              <DrawingCanvas key={game?.word || turn?.turn_start_ts || ''} onStroke={onStroke} onClear={onClear} />
+              <DrawingCanvas key={game?.word || turn?.turn_start_ts || ''} onStroke={onStroke} onClear={onClear} onUndo={onUndo} />
             ) : (
               <CanvasViewer strokes={game?.scribbleStrokes || []} />
             )}

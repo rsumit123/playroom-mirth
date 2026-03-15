@@ -208,3 +208,109 @@ async def test_mixed_eraser_and_color_strokes():
     assert state.strokes[1]["color"] == "#00FF00"
     assert state.strokes[2]["eraser"] is False
     assert state.strokes[3]["eraser"] is True
+
+
+@pytest.mark.asyncio
+async def test_undo_removes_last_stroke():
+    """scribble:undo should pop the last stroke from the buffer."""
+    ht, gt = _setup("undo1", "undo")
+    room_code, sid_host, sid_guest = await _start_scribble(ht, gt, "undo1")
+
+    state = ROOM_STATES[room_code]
+    describer_sid = PLAYER_TO_SID[state.player_order[state.describer_index]]
+
+    # Draw 3 strokes
+    for color in ["#FF0000", "#00FF00", "#0000FF"]:
+        await sio._trigger_event("scribble:draw", "/", describer_sid, {
+            "room_code": room_code,
+            "points": [{"x": 0.1, "y": 0.1}, {"x": 0.5, "y": 0.5}],
+            "color": color,
+            "width": 4,
+        })
+    assert len(state.strokes) == 3
+
+    # Undo once
+    await sio._trigger_event("scribble:undo", "/", describer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 2
+    assert state.strokes[-1]["color"] == "#00FF00"  # blue was removed
+
+    # Undo again
+    await sio._trigger_event("scribble:undo", "/", describer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 1
+    assert state.strokes[0]["color"] == "#FF0000"
+
+
+@pytest.mark.asyncio
+async def test_undo_on_empty_buffer_is_safe():
+    """scribble:undo on empty buffer should not crash."""
+    ht, gt = _setup("undo2", "safe")
+    room_code, sid_host, sid_guest = await _start_scribble(ht, gt, "undo2")
+
+    state = ROOM_STATES[room_code]
+    describer_sid = PLAYER_TO_SID[state.player_order[state.describer_index]]
+
+    assert len(state.strokes) == 0
+
+    # Undo on empty -- should not crash
+    await sio._trigger_event("scribble:undo", "/", describer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 0
+
+    # Rapid undo spam on empty
+    for _ in range(5):
+        await sio._trigger_event("scribble:undo", "/", describer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 0
+
+
+@pytest.mark.asyncio
+async def test_non_drawer_cannot_undo():
+    """Only the drawer should be able to undo."""
+    ht, gt = _setup("undo3", "auth")
+    room_code, sid_host, sid_guest = await _start_scribble(ht, gt, "undo3")
+
+    state = ROOM_STATES[room_code]
+    describer_id = state.player_order[state.describer_index]
+    describer_sid = PLAYER_TO_SID[describer_id]
+    non_drawer_id = [p for p in state.player_order if p != describer_id][0]
+    non_drawer_sid = PLAYER_TO_SID[non_drawer_id]
+
+    # Draw a stroke
+    await sio._trigger_event("scribble:draw", "/", describer_sid, {
+        "room_code": room_code,
+        "points": [{"x": 0.1, "y": 0.1}, {"x": 0.5, "y": 0.5}],
+        "color": "#000000",
+        "width": 4,
+    })
+    assert len(state.strokes) == 1
+
+    # Non-drawer tries to undo -- should be ignored
+    await sio._trigger_event("scribble:undo", "/", non_drawer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 1
+
+
+@pytest.mark.asyncio
+async def test_undo_then_draw_correct_buffer():
+    """After undo, new strokes should append correctly."""
+    ht, gt = _setup("undo4", "redraw")
+    room_code, sid_host, sid_guest = await _start_scribble(ht, gt, "undo4")
+
+    state = ROOM_STATES[room_code]
+    describer_sid = PLAYER_TO_SID[state.player_order[state.describer_index]]
+
+    # Draw 2, undo 1, draw 1
+    await sio._trigger_event("scribble:draw", "/", describer_sid, {
+        "room_code": room_code, "points": [{"x": 0, "y": 0}, {"x": 1, "y": 1}], "color": "#FF0000", "width": 4,
+    })
+    await sio._trigger_event("scribble:draw", "/", describer_sid, {
+        "room_code": room_code, "points": [{"x": 0, "y": 0}, {"x": 1, "y": 1}], "color": "#00FF00", "width": 4,
+    })
+    assert len(state.strokes) == 2
+
+    await sio._trigger_event("scribble:undo", "/", describer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 1
+
+    await sio._trigger_event("scribble:draw", "/", describer_sid, {
+        "room_code": room_code, "points": [{"x": 0, "y": 0}, {"x": 1, "y": 1}], "color": "#0000FF", "width": 4,
+    })
+    assert len(state.strokes) == 2
+    assert state.strokes[0]["color"] == "#FF0000"
+    assert state.strokes[1]["color"] == "#0000FF"  # green was undone, blue replaced it
