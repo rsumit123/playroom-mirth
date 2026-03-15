@@ -314,3 +314,79 @@ async def test_undo_then_draw_correct_buffer():
     assert len(state.strokes) == 2
     assert state.strokes[0]["color"] == "#FF0000"
     assert state.strokes[1]["color"] == "#0000FF"  # green was undone, blue replaced it
+
+
+@pytest.mark.asyncio
+async def test_non_drawer_cannot_clear():
+    """Only the drawer should be able to clear the canvas."""
+    ht, gt = _setup("clearauth1", "protect")
+    room_code, sid_host, sid_guest = await _start_scribble(ht, gt, "clearauth1")
+
+    state = ROOM_STATES[room_code]
+    describer_id = state.player_order[state.describer_index]
+    describer_sid = PLAYER_TO_SID[describer_id]
+    non_drawer_id = [p for p in state.player_order if p != describer_id][0]
+    non_drawer_sid = PLAYER_TO_SID[non_drawer_id]
+
+    # Draw a stroke
+    await sio._trigger_event("scribble:draw", "/", describer_sid, {
+        "room_code": room_code,
+        "points": [{"x": 0.1, "y": 0.1}, {"x": 0.5, "y": 0.5}],
+        "color": "#000000", "width": 4,
+    })
+    assert len(state.strokes) == 1
+
+    # Non-drawer tries to clear -- should be ignored
+    await sio._trigger_event("scribble:clear", "/", non_drawer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 1
+
+
+@pytest.mark.asyncio
+async def test_undo_then_reconnect_replays_correct_strokes():
+    """After undo, reconnecting player should only see remaining strokes."""
+    ht, gt = _setup("undorecon1", "replay")
+    room_code, sid_host, sid_guest = await _start_scribble(ht, gt, "undorecon1")
+
+    state = ROOM_STATES[room_code]
+    describer_sid = PLAYER_TO_SID[state.player_order[state.describer_index]]
+
+    # Draw 3 strokes
+    for color in ["#FF0000", "#00FF00", "#0000FF"]:
+        await sio._trigger_event("scribble:draw", "/", describer_sid, {
+            "room_code": room_code,
+            "points": [{"x": 0.1, "y": 0.1}, {"x": 0.5, "y": 0.5}],
+            "color": color, "width": 4,
+        })
+
+    # Undo last stroke (blue removed)
+    await sio._trigger_event("scribble:undo", "/", describer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 2
+
+    # The stroke buffer (what would be sent on reconnect) should have 2 strokes
+    assert state.strokes[0]["color"] == "#FF0000"
+    assert state.strokes[1]["color"] == "#00FF00"
+    # Blue should NOT be in the buffer
+    assert all(s["color"] != "#0000FF" for s in state.strokes)
+
+
+@pytest.mark.asyncio
+async def test_clear_then_undo_buffer_stays_empty():
+    """Clear then undo should not restore strokes on the backend."""
+    ht, gt = _setup("clearundo1", "empty")
+    room_code, sid_host, sid_guest = await _start_scribble(ht, gt, "clearundo1")
+
+    state = ROOM_STATES[room_code]
+    describer_sid = PLAYER_TO_SID[state.player_order[state.describer_index]]
+
+    # Draw, clear, then undo
+    await sio._trigger_event("scribble:draw", "/", describer_sid, {
+        "room_code": room_code,
+        "points": [{"x": 0.1, "y": 0.1}, {"x": 0.5, "y": 0.5}],
+        "color": "#000000", "width": 4,
+    })
+    await sio._trigger_event("scribble:clear", "/", describer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 0
+
+    # Undo after clear -- buffer is empty, should stay empty
+    await sio._trigger_event("scribble:undo", "/", describer_sid, {"room_code": room_code})
+    assert len(state.strokes) == 0
