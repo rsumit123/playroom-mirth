@@ -323,7 +323,10 @@ export function AppProvider({ children }) {
     socket.off('game:reconnect_grace')
     socket.off('disconnect')
     socket.off('connect')
-    socket.on('game:turn_start', (payload) => setGame((g) => ({ ...g, turn: payload, hint: payload.hint || null, word: null, lastGuess: null, roundEnd: null, gameEnd: null, playAgain: null, scribbleStrokes: [], guessedPlayerIds: [] })))
+    socket.on('game:turn_start', (payload) => setGame((g) => {
+      const isSameTurn = g.turn && g.turn.describer_id === payload.describer_id && g.turn.turn_start_ts === payload.turn_start_ts
+      return { ...g, turn: payload, hint: payload.hint || null, word: isSameTurn ? g.word : null, lastGuess: null, roundEnd: null, gameEnd: null, playAgain: null, scribbleStrokes: isSameTurn ? (g.scribbleStrokes || []) : [], guessedPlayerIds: isSameTurn ? (g.guessedPlayerIds || []) : [] }
+    }))
     socket.on('game:new_word', (payload) => setGame((g) => ({ ...g, word: payload.word })))
     socket.on('chat:message', (payload) => {
       setGame((g) => ({ ...g, messages: [...(g.messages || []), payload] }))
@@ -355,11 +358,15 @@ export function AppProvider({ children }) {
     // Scribble events
     socket.off('scribble:draw')
     socket.off('scribble:clear')
+    socket.off('scribble:stroke_replay')
     socket.on('scribble:draw', (payload) => {
       setGame((g) => ({ ...g, scribbleStrokes: [...(g.scribbleStrokes || []), payload] }))
     })
     socket.on('scribble:clear', () => {
       setGame((g) => ({ ...g, scribbleStrokes: [] }))
+    })
+    socket.on('scribble:stroke_replay', (payload) => {
+      setGame((g) => ({ ...g, scribbleStrokes: payload.strokes || [] }))
     })
     socket.off('game:play_again_update')
     socket.off('game:play_again_ready')

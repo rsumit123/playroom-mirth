@@ -31,6 +31,7 @@ class RoomGameState:
     question_time_seconds: int = 0
     trivia_category: str = "math"
     used_question_ids: Set[str] = field(default_factory=set)
+    strokes: List[dict] = field(default_factory=list)  # scribble stroke buffer (in-memory only, not persisted)
     task: Optional[asyncio.Task] = None
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
 
@@ -45,6 +46,7 @@ PLAYER_GRACE_TASKS: Dict[int, asyncio.Task] = {}
 def start_turn(state: RoomGameState) -> None:
     state.turn_start_ts = time.time()
     state.guessed_players = set()
+    state.strokes = []
 
 
 def serialize_state(state: RoomGameState) -> str:

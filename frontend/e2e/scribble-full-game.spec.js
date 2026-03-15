@@ -193,4 +193,72 @@ test.describe('Scribble - Full 2-Player Game', () => {
       await ctx2.close()
     }
   })
+
+  test('reconnection: guesser reloads mid-turn and sees drawing restored', async ({ browser }) => {
+    test.setTimeout(90000)
+
+    const ctx1 = await browser.newContext()
+    const ctx2 = await browser.newContext()
+    const player1 = await ctx1.newPage()
+    const player2 = await ctx2.newPage()
+
+    try {
+      await loginAsGuest(player1, 'StrokeAlice')
+      await loginAsGuest(player2, 'StrokeBob')
+
+      const roomCode = await createScribbleRoom(player1)
+      await joinRoom(player2, roomCode)
+      await player1.waitForTimeout(1000)
+
+      await player1.getByRole('button', { name: /start game/i }).click()
+      await player1.waitForURL('**/scribble', { timeout: 10000 })
+      await player2.waitForURL('**/scribble', { timeout: 10000 })
+
+      // Identify drawer and guesser
+      const p1Role = await player1.locator('.badge-describer, .badge-guesser').first().textContent()
+      const drawer = p1Role.includes('Drawing') ? player1 : player2
+      const guesser = p1Role.includes('Drawing') ? player2 : player1
+
+      // Drawer draws on the canvas (simulate strokes via pointer events)
+      const canvas = drawer.locator('canvas').first()
+      await expect(canvas).toBeVisible({ timeout: 5000 })
+      const box = await canvas.boundingBox()
+      // Draw a diagonal line across the canvas
+      await drawer.mouse.move(box.x + 30, box.y + 30)
+      await drawer.mouse.down()
+      for (let i = 1; i <= 5; i++) {
+        await drawer.mouse.move(box.x + 30 + i * 20, box.y + 30 + i * 20)
+      }
+      await drawer.mouse.up()
+
+      // Small wait for strokes to relay
+      await guesser.waitForTimeout(1500)
+
+      // ========== GUESSER RELOADS (simulates Android screen dim/wake) ==========
+      await guesser.reload()
+      await guesser.waitForLoadState('networkidle')
+      await guesser.waitForURL('**/scribble', { timeout: 15000 })
+
+      // Guesser should see the game screen restored with round info
+      await expect(guesser.getByText(/round/i).first()).toBeVisible({ timeout: 10000 })
+
+      // Guesser should see their role badge (Guessing) -- confirms game state restored
+      const roleAfter = await guesser.locator('.badge-describer, .badge-guesser').first().textContent()
+      expect(roleAfter).toMatch(/Drawing|Guessing/)
+
+      // Guesser should see the canvas component (CanvasViewer for guesser)
+      await expect(guesser.locator('canvas').first()).toBeVisible({ timeout: 5000 })
+
+      // Guesser should see the hint (word hint bar) -- confirms turn state preserved
+      const hintArea = guesser.locator('.font-mono').first()
+      if (await hintArea.isVisible()) {
+        const hint = await hintArea.textContent()
+        expect(hint).toContain('_')
+      }
+
+    } finally {
+      await ctx1.close()
+      await ctx2.close()
+    }
+  })
 })

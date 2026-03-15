@@ -443,6 +443,9 @@ async def room_register(sid, data):
                 },
                 to=sid,
             )
+            # Replay accumulated scribble strokes to reconnecting player
+            if state.game_type == "scribble" and state.strokes:
+                await sio.emit("scribble:stroke_replay", {"strokes": state.strokes}, to=sid)
             if rp.id == describer_id and state.current_word_text:
                 await sio.emit("game:new_word", {"word": state.current_word_text}, to=sid)
                 # Restart turn with full timer since describer just reconnected
@@ -1279,13 +1282,10 @@ async def scribble_draw(sid, data):
     describer_id = state.player_order[state.describer_index]
     if player_id != describer_id:
         return
-    # Relay to everyone except the drawer
-    await sio.emit(
-        "scribble:draw",
-        {"points": data.get("points", []), "color": data.get("color", "#000000"), "width": data.get("width", 3)},
-        room=room_code,
-        skip_sid=sid,
-    )
+    # Accumulate stroke and relay to everyone except the drawer
+    stroke = {"points": data.get("points", []), "color": data.get("color", "#000000"), "width": data.get("width", 3)}
+    state.strokes.append(stroke)
+    await sio.emit("scribble:draw", stroke, room=room_code, skip_sid=sid)
 
 
 @sio.on("scribble:clear")
@@ -1301,6 +1301,7 @@ async def scribble_clear(sid, data):
     describer_id = state.player_order[state.describer_index]
     if player_id != describer_id:
         return
+    state.strokes = []
     await sio.emit("scribble:clear", {}, room=room_code, skip_sid=sid)
 
 
