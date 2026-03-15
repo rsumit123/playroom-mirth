@@ -127,7 +127,7 @@ export default function Game({ game, onSend, onRejoin, onLeave, playerNames = {}
   }
 
   const shellStyle = viewport
-    ? { position: 'fixed', top: `max(env(safe-area-inset-top, 0px), ${viewport.offsetTop}px)`, left: 0, right: 0, height: `${viewport.height}px` }
+    ? { position: 'fixed', top: `calc(env(safe-area-inset-top, 0px) + ${viewport.offsetTop}px)`, left: 0, right: 0, height: `calc(${viewport.height}px - env(safe-area-inset-top, 0px) - ${viewport.offsetTop}px)` }
     : { height: '100dvh' }
 
   return (

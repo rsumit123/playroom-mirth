@@ -50,8 +50,8 @@ function AppShell() {
   // Android: configure status bar and back button
   useEffect(() => {
     if (!Capacitor.isNativePlatform()) return
-    StatusBar.setOverlaysWebView({ overlay: false })
-    StatusBar.setBackgroundColor({ color: '#2C6E6A' })
+    StatusBar.setOverlaysWebView({ overlay: true })
+    StatusBar.setBackgroundColor({ color: '#00000000' })
     StatusBar.setStyle({ style: Style.Dark })
 
     const listener = CapApp.addListener('backButton', ({ canGoBack }) => {
