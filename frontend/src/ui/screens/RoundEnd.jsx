@@ -4,7 +4,7 @@ import ConfettiBurst from '../components/ConfettiBurst.jsx'
 import PlayerAvatar from '../components/PlayerAvatar.jsx'
 import { playSound } from '../../lib/sounds.js'
 
-export default function RoundEnd({ scores, playerNames, isHost, onContinue }) {
+export default function RoundEnd({ scores, playerNames, isHost, onContinue, onLeave }) {
   const [confettiKey, setConfettiKey] = useState(0)
 
   useEffect(() => {
@@ -41,16 +41,21 @@ export default function RoundEnd({ scores, playerNames, isHost, onContinue }) {
             <Scoreboard scores={scores} playerNames={playerNames} highlight={leader?.id} />
           </div>
 
-          {isHost ? (
-            <button
-              className="btn-primary w-full max-w-xs py-3.5 text-base touch-target animate-pop"
-              onClick={onContinue}
-            >
-              Next Round &rarr;
+          <div className="w-full max-w-xs space-y-3">
+            {isHost ? (
+              <button
+                className="btn-primary w-full py-3.5 text-base touch-target animate-pop"
+                onClick={onContinue}
+              >
+                Next Round &rarr;
+              </button>
+            ) : (
+              <div className="text-sm text-slate/50 animate-pop">Waiting for host to continue...</div>
+            )}
+            <button className="btn-ghost w-full touch-target" onClick={onLeave}>
+              Leave Game
             </button>
-          ) : (
-            <div className="text-sm text-slate/50 animate-pop">Waiting for host to continue...</div>
-          )}
+          </div>
         </div>
       </div>
     </div>

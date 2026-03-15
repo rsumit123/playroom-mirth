@@ -2,10 +2,11 @@ import { useEffect, useMemo, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import RoundEnd from '../screens/RoundEnd.jsx'
 import { useApp } from '../../state/AppContext.jsx'
+import { getSocket } from '../../lib/socket.js'
 
 export default function RoundEndPage() {
   const navigate = useNavigate()
-  const { game, room, lobby, selfPlayerId, roomRestoreStatus, emitNextRound } = useApp()
+  const { game, room, lobby, selfPlayerId, leaveRoom, roomRestoreStatus, emitNextRound } = useApp()
   const turnRef = useRef(game?.turn)
 
   useEffect(() => {
@@ -39,12 +40,21 @@ export default function RoundEndPage() {
     if (room?.code) emitNextRound(room.code)
   }
 
+  function handleLeave() {
+    if (room?.code) {
+      getSocket().emit('game:leave', { room_code: room.code })
+    }
+    leaveRoom()
+    navigate('/home')
+  }
+
   return (
     <RoundEnd
       scores={game?.scores || {}}
       playerNames={playerNames}
       isHost={isHost}
       onContinue={handleNextRound}
+      onLeave={handleLeave}
     />
   )
 }
