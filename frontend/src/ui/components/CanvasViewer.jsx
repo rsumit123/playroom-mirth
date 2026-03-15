@@ -1,7 +1,7 @@
 import { useRef, useEffect, useCallback } from 'react'
 
-const BRUSH_WIDTH = 4
-const ERASER_WIDTH = 20
+const DEFAULT_BRUSH_RATIO = 0.005
+const DEFAULT_ERASER_RATIO = 0.025
 
 export default function CanvasViewer({ strokes = [], replayGen = 0 }) {
   const canvasRef = useRef(null)
@@ -69,11 +69,13 @@ export default function CanvasViewer({ strokes = [], replayGen = 0 }) {
   }, [strokes, replayGen])
 
   return (
-    <div className="h-full bg-white rounded-xl border border-black/10 overflow-hidden relative">
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full"
-      />
+    <div className="h-full flex items-center justify-center">
+      <div className="bg-white rounded-xl border border-black/10 overflow-hidden relative" style={{ aspectRatio: '4/3', maxWidth: '100%', maxHeight: '100%', width: '100%' }}>
+        <canvas
+          ref={canvasRef}
+          className="absolute inset-0 w-full h-full"
+        />
+      </div>
     </div>
   )
 }
@@ -90,7 +92,8 @@ function drawStrokes(canvas, strokes, fromIndex) {
 
     ctx.beginPath()
     ctx.strokeStyle = s.eraser ? '#FFFFFF' : (s.color || '#000000')
-    ctx.lineWidth = s.eraser ? ERASER_WIDTH : (s.width || BRUSH_WIDTH)
+    // Width is a normalized ratio — scale to this canvas width
+    ctx.lineWidth = (s.width || DEFAULT_BRUSH_RATIO) * w
     ctx.lineCap = 'round'
     ctx.lineJoin = 'round'
     ctx.moveTo(pts[0].x * w, pts[0].y * h)

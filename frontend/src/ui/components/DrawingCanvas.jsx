@@ -1,8 +1,9 @@
 import { useRef, useEffect, useState, useCallback } from 'react'
 
 const COLORS = ['#000000', '#e74c3c', '#3498db', '#27ae60', '#f39c12']
-const BRUSH_WIDTH = 4
-const ERASER_WIDTH = 20
+// Normalized width ratios (relative to canvas width)
+const BRUSH_RATIO = 0.005   // ~4px on a 800px canvas
+const ERASER_RATIO = 0.025  // ~20px on a 800px canvas
 
 export default function DrawingCanvas({ onStroke, onClear, onUndo }) {
   const canvasRef = useRef(null)
@@ -60,7 +61,8 @@ export default function DrawingCanvas({ onStroke, onClear, onUndo }) {
     if (!stroke.points || stroke.points.length < 2) return
     ctx.beginPath()
     ctx.strokeStyle = stroke.eraser ? '#FFFFFF' : stroke.color
-    ctx.lineWidth = stroke.eraser ? ERASER_WIDTH : stroke.width
+    // Width is stored as a normalized ratio — scale to canvas width
+    ctx.lineWidth = (stroke.width || BRUSH_RATIO) * w
     ctx.lineCap = 'round'
     ctx.lineJoin = 'round'
     ctx.moveTo(stroke.points[0].x * w, stroke.points[0].y * h)
@@ -96,7 +98,7 @@ export default function DrawingCanvas({ onStroke, onClear, onUndo }) {
     const curr = pts[pts.length - 1]
     ctx.beginPath()
     ctx.strokeStyle = isErasing ? '#FFFFFF' : color
-    ctx.lineWidth = isErasing ? ERASER_WIDTH : BRUSH_WIDTH
+    ctx.lineWidth = (isErasing ? ERASER_RATIO : BRUSH_RATIO) * canvas.width
     ctx.lineCap = 'round'
     ctx.lineJoin = 'round'
     ctx.moveTo(prev.x * canvas.width, prev.y * canvas.height)
@@ -110,7 +112,7 @@ export default function DrawingCanvas({ onStroke, onClear, onUndo }) {
     const stroke = {
       points: points.current,
       color: color,
-      width: BRUSH_WIDTH,
+      width: isErasing ? ERASER_RATIO : BRUSH_RATIO,
       eraser: isErasing,
     }
     strokesRef.current.push(stroke)
@@ -137,16 +139,18 @@ export default function DrawingCanvas({ onStroke, onClear, onUndo }) {
 
   return (
     <div className="flex flex-col h-full">
-      {/* Canvas area */}
-      <div className="flex-1 bg-white rounded-xl border border-black/10 overflow-hidden relative touch-none">
-        <canvas
-          ref={canvasRef}
-          className="absolute inset-0 w-full h-full cursor-crosshair"
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          onPointerCancel={handlePointerUp}
-        />
+      {/* Canvas area — fixed 4:3 aspect ratio for cross-platform consistency */}
+      <div className="flex-1 flex items-center justify-center min-h-0">
+        <div className="bg-white rounded-xl border border-black/10 overflow-hidden relative touch-none" style={{ aspectRatio: '4/3', maxWidth: '100%', maxHeight: '100%', width: '100%' }}>
+          <canvas
+            ref={canvasRef}
+            className="absolute inset-0 w-full h-full cursor-crosshair"
+            onPointerDown={handlePointerDown}
+            onPointerMove={handlePointerMove}
+            onPointerUp={handlePointerUp}
+            onPointerCancel={handlePointerUp}
+          />
+        </div>
       </div>
 
       {/* Toolbar */}
