@@ -1283,7 +1283,7 @@ async def scribble_draw(sid, data):
     if player_id != describer_id:
         return
     # Accumulate stroke and relay to everyone except the drawer
-    stroke = {"points": data.get("points", []), "color": data.get("color", "#000000"), "width": data.get("width", 3)}
+    stroke = {"points": data.get("points", []), "color": data.get("color", "#000000"), "width": data.get("width", 3), "eraser": data.get("eraser", False)}
     state.strokes.append(stroke)
     await sio.emit("scribble:draw", stroke, room=room_code, skip_sid=sid)
 
