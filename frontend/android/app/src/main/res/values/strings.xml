@@ -4,4 +4,5 @@
     <string name="title_activity_main">PlayRoom</string>
     <string name="package_name">com.skdev.playroom</string>
     <string name="custom_url_scheme">com.skdev.playroom</string>
+    <string name="server_client_id">929006071236-55m4f4gujp7nnu9ldirbkrmr4qn30ng1.apps.googleusercontent.com</string>
 </resources>

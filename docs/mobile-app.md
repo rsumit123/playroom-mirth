@@ -65,18 +65,97 @@ frontend/
 
 ## Build & Deploy Pipeline
 
+### Prerequisites
+
+- **JDK 21**: `brew install openjdk@21`
+- **Android SDK**: Installed at `~/Library/Android/sdk` (platform-tools, platforms;android-35, build-tools;35.0.0)
+- **JAVA_HOME**: `export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home`
+
+### Build Debug APK (for testing)
+
+Run all commands from `frontend/`:
+
+```bash
+# 1. Build frontend with production env vars
+cd /Users/rsumit123/work/charade-chat/frontend
+VITE_API_BASE=https://charade-api.skdev.one \
+VITE_SOCKET_URL=https://charade-api.skdev.one \
+VITE_GOOGLE_CLIENT_ID=929006071236-55m4f4gujp7nnu9ldirbkrmr4qn30ng1.apps.googleusercontent.com \
+npm run build
+
+# 2. Sync web assets to Android project
+npx cap sync android
+
+# 3. Build debug APK
+export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
+cd android && ./gradlew assembleDebug
+
+# Output: android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+### Build Release AAB (for Play Store)
+
+```bash
+# 1. Build frontend (same as debug)
+cd /Users/rsumit123/work/charade-chat/frontend
+VITE_API_BASE=https://charade-api.skdev.one \
+VITE_SOCKET_URL=https://charade-api.skdev.one \
+VITE_GOOGLE_CLIENT_ID=929006071236-55m4f4gujp7nnu9ldirbkrmr4qn30ng1.apps.googleusercontent.com \
+npm run build
+
+# 2. Sync
+npx cap sync android
+
+# 3. IMPORTANT: Bump versionCode in android/app/build.gradle
+#    (must be higher than previous Play Store upload)
+#    versionCode 3  →  versionCode 4
+#    versionName "1.2.0"  →  "1.3.0"
+
+# 4. Build signed release AAB
+export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
+cd android && ./gradlew bundleRelease
+
+# Output: android/app/build/outputs/bundle/release/app-release.aab
+```
+
+### Deploy to Play Store
+
+1. Upload `app-release.aab` in **Play Console > Testing > Closed testing > Releases > Create new release**
+2. Add release notes (max 500 chars):
+   ```
+   <en-US>
+   Your release notes here
+   </en-US>
+   ```
+3. Review and roll out
+
+### Signing Key
+
+- **Keystore**: `frontend/android/keystore/playroom-release.jks` (gitignored, NEVER commit)
+- **Password**: `REDACTED`
+- **Alias**: `playroom`
+- **BACK THIS UP** — if lost, you can never update the app on Play Store
+
+### Google Sign-In SHA-1 Fingerprints
+
+Three Android OAuth clients exist in Google Cloud Console (project `polar-pillar-450607-b7`):
+
+| Build type | SHA-1 | Purpose |
+|-----------|-------|---------|
+| Debug keystore | `C2:34:45:6D:0A:06:9F:74:66:BB:D0:7F:91:EA:90:49:92:51:58:33` | Local debug APKs |
+| Release keystore | `74:1A:6F:F8:95:FC:A4:37:E8:11:53:63:00:86:34:0E:6C:F5:58:93` | Sideloaded release APKs |
+| Play Store signing | (found in Play Console > Setup > App signing) | Play Store installs |
+
+To get debug SHA-1:
+```bash
+/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/keytool \
+  -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android 2>&1 | grep SHA1
+```
+
 ### Web (unchanged)
 ```bash
 npm run build          # → dist/
-# Deploy dist/ to Vercel
-```
-
-### Android
-```bash
-npm run build          # → dist/ (same build)
-npx cap sync android   # Copy dist/ into android/ + sync plugins
-# Open in Android Studio, build APK/AAB
-npx cap open android
+# Deploy dist/ to Vercel (auto-deploys on git push to main)
 ```
 
 ### Commands Reference
