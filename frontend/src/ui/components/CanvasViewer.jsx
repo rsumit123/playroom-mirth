@@ -48,7 +48,13 @@ export default function CanvasViewer({ strokes = [] }) {
       return
     }
 
-    if (strokes.length > lastDrawnRef.current) {
+    if (strokes.length < lastDrawnRef.current) {
+      // Undo or stroke_replay with fewer strokes — redraw from scratch
+      const ctx = canvas.getContext('2d')
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      drawStrokes(canvas, strokes, 0)
+      lastDrawnRef.current = strokes.length
+    } else if (strokes.length > lastDrawnRef.current) {
       drawStrokes(canvas, strokes, lastDrawnRef.current)
       lastDrawnRef.current = strokes.length
     }
