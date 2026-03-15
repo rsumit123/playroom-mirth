@@ -61,8 +61,9 @@ export default function DrawingCanvas({ onStroke, onClear, onUndo }) {
     if (!stroke.points || stroke.points.length < 2) return
     ctx.beginPath()
     ctx.strokeStyle = stroke.eraser ? '#FFFFFF' : stroke.color
-    // Width is stored as a normalized ratio — scale to canvas width
-    ctx.lineWidth = (stroke.width || BRUSH_RATIO) * w
+    // Width: if <= 1 it's a normalized ratio (new format), if > 1 it's fixed pixels (old format)
+    const rawWidth = stroke.width || BRUSH_RATIO
+    ctx.lineWidth = rawWidth > 1 ? rawWidth : rawWidth * w
     ctx.lineCap = 'round'
     ctx.lineJoin = 'round'
     ctx.moveTo(stroke.points[0].x * w, stroke.points[0].y * h)

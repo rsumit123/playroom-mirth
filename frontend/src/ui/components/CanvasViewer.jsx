@@ -92,8 +92,9 @@ function drawStrokes(canvas, strokes, fromIndex) {
 
     ctx.beginPath()
     ctx.strokeStyle = s.eraser ? '#FFFFFF' : (s.color || '#000000')
-    // Width is a normalized ratio — scale to this canvas width
-    ctx.lineWidth = (s.width || DEFAULT_BRUSH_RATIO) * w
+    // Width: if <= 1 it's a normalized ratio (new format), if > 1 it's fixed pixels (old format)
+    const rawWidth = s.width || DEFAULT_BRUSH_RATIO
+    ctx.lineWidth = rawWidth > 1 ? rawWidth : rawWidth * w
     ctx.lineCap = 'round'
     ctx.lineJoin = 'round'
     ctx.moveTo(pts[0].x * w, pts[0].y * h)
