@@ -229,7 +229,7 @@ _CATEGORY_PREFIXES = {
     "science": "sci", "history": "hist", "geography": "geo",
     "sports": "spt", "entertainment": "ent", "general": "gen",
     "mythology": "myth", "food": "food", "politics": "pol",
-    "defense": "def",
+    "defense": "def", "current_affairs": "ca",
 }
 
 

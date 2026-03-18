@@ -4744,7 +4744,7 @@
     "options": [
       "Pronghorn Antelope",
       "Cheetah",
-      "Thomson\u2019s Gazelle",
+      "Thomson’s Gazelle",
       "Lion"
     ],
     "difficulty": 1,
@@ -4782,7 +4782,7 @@
   },
   {
     "id": "otdb_ani_1_011",
-    "question": "The K\u0101k\u0101p\u014d is a large, flightless, nocturnal parrot native to which country?",
+    "question": "The Kākāpō is a large, flightless, nocturnal parrot native to which country?",
     "options": [
       "Australia",
       "Madagascar",
@@ -5442,7 +5442,7 @@
     "id": "otdb_comp_1_010",
     "question": "The C programming language was created by this American computer scientist. ",
     "options": [
-      "al-Khw\u0101rizm\u012b",
+      "al-Khwārizmī",
       "Tim Berners Lee",
       "Dennis Ritchie",
       "Willis Ware"
@@ -6465,7 +6465,7 @@
     "question": "CMOS is tech used for constructing integrated circuits. What does CMOS stand for?",
     "options": [
       "Complementary magnetic-ohms-semiconductor",
-      "Complementary metal\u2013oxide\u2013semiconductor",
+      "Complementary metal–oxide–semiconductor",
       "Computer-made operating system",
       "Computer-made oscillating static"
     ],
@@ -6882,7 +6882,7 @@
   },
   {
     "id": "otdb_math_1_006",
-    "question": "How many sides does a M\u00f6bius strip have?",
+    "question": "How many sides does a Möbius strip have?",
     "options": [
       "4",
       "3",
@@ -6994,7 +6994,7 @@
   },
   {
     "id": "otdb_math_2_004",
-    "question": "What is the area of a circle with a diameter of 20 inches if \u03c0= 3.1415?",
+    "question": "What is the area of a circle with a diameter of 20 inches if π= 3.1415?",
     "options": [
       "380.1215 Inches",
       "1256.6 Inches",
@@ -7137,7 +7137,7 @@
     "question": "What is the only Millennium Prize Problem that has been solved so far?",
     "options": [
       "Fermat's conjecture",
-      "Poincar\u00e9 conjecture",
+      "Poincaré conjecture",
       "P vs. NP problem",
       "Riemann Hypothesis"
     ],
@@ -7162,7 +7162,7 @@
   },
   {
     "id": "otdb_math_3_006",
-    "question": "What is the fourth digit of \u03c0?",
+    "question": "What is the fourth digit of π?",
     "options": [
       "3",
       "1",
@@ -7864,10 +7864,10 @@
     "id": "otdb_sci_2_007",
     "question": "At what temperature does water boil?",
     "options": [
-      "200\u00b0F",
-      "181\u00b0F",
-      "178\u00b0F",
-      "212\u00b0F"
+      "200°F",
+      "181°F",
+      "178°F",
+      "212°F"
     ],
     "difficulty": 2,
     "category": "science",
@@ -7880,7 +7880,7 @@
     "options": [
       "James Watt",
       "Albert Einstein",
-      "Wilhelm Conrad R\u00f6ntgen",
+      "Wilhelm Conrad Röntgen",
       "Thomas Alva Edison"
     ],
     "difficulty": 2,
@@ -8480,9 +8480,9 @@
     "id": "otdb_sci_3_001",
     "question": "The core of the Sun can reach which temperature?",
     "options": [
-      "27\u00b0 Million F (15\u00b0 Million C)",
-      "8\u00b0 Billion F (\u00b04.4 Billion C)",
-      "938,000\u00b0 F (521093.3\u00b0 C)",
+      "27° Million F (15° Million C)",
+      "8° Billion F (°4.4 Billion C)",
+      "938,000° F (521093.3° C)",
       "Absolute Zero (Both F and C)"
     ],
     "difficulty": 3,
@@ -8912,7 +8912,7 @@
   },
   {
     "id": "otdb_sci_3_033",
-    "question": "Which of the following liquids is least viscous? Assume temperature is 25\u00b0C.",
+    "question": "Which of the following liquids is least viscous? Assume temperature is 25°C.",
     "options": [
       "Water",
       "Acetone",
@@ -9124,9 +9124,9 @@
     "id": "otdb_sci_3_049",
     "question": "Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?",
     "options": [
-      "Triassic\u2013Jurassic",
-      "Permian\u2013Triassic",
-      "Ordovician\u2013Silurian",
+      "Triassic–Jurassic",
+      "Permian–Triassic",
+      "Ordovician–Silurian",
       "Cretaceous-Paleogene"
     ],
     "difficulty": 3,
@@ -40499,7 +40499,7 @@
     "options": [
       "The Cosmic Ocean",
       "The Kshira Sagara (Milk Ocean)",
-      "The Lava\u1e47a Sagara (Salt Ocean)",
+      "The Lavaṇa Sagara (Salt Ocean)",
       "The River Ganga"
     ],
     "correct_index": 1
@@ -40703,7 +40703,7 @@
     "id": "myth_medium_175",
     "category": "mythology",
     "difficulty": 2,
-    "question": "What is the name of the divine sword of Ma\u00f1jushri, the Bodhisattva of wisdom in Buddhism?",
+    "question": "What is the name of the divine sword of Mañjushri, the Bodhisattva of wisdom in Buddhism?",
     "options": [
       "Chandrahasa",
       "Khadga",
@@ -40887,7 +40887,7 @@
     "difficulty": 2,
     "question": "In the Mahabharata, which warrior broke the Chakravyuha (circular battle formation) that Abhimanyu entered?",
     "options": [
-      "No one \u2014 Abhimanyu entered but nobody broke it from inside",
+      "No one — Abhimanyu entered but nobody broke it from inside",
       "Arjuna",
       "Drona",
       "Karna"
@@ -41056,10 +41056,10 @@
     "difficulty": 3,
     "question": "According to the Vishnu Purana, in which Manvantara (era of Manu) are we currently living?",
     "options": [
-      "Fifth Manvantara \u2014 Raivata",
-      "Sixth Manvantara \u2014 Chakshusha",
-      "Seventh Manvantara \u2014 Vaivasvata",
-      "Eighth Manvantara \u2014 Savarni"
+      "Fifth Manvantara — Raivata",
+      "Sixth Manvantara — Chakshusha",
+      "Seventh Manvantara — Vaivasvata",
+      "Eighth Manvantara — Savarni"
     ],
     "correct_index": 2
   },
@@ -41135,7 +41135,7 @@
     "question": "The Rigvedic hymn 'Nasadiya Sukta' (Hymn of Creation, RV 10.129) expresses what philosophical idea?",
     "options": [
       "The supremacy of Indra",
-      "Uncertainty about the origin of the cosmos \u2014 not even the gods know",
+      "Uncertainty about the origin of the cosmos — not even the gods know",
       "The creation from Purusha's sacrifice",
       "The primacy of Agni"
     ],
@@ -41590,7 +41590,7 @@
     "question": "In the Advaita Vedanta of Adi Shankaracharya, the world is described as 'Mithya'. What does this mean?",
     "options": [
       "The world is completely non-existent (absolute non-being)",
-      "The world is neither absolutely real nor absolutely unreal \u2014 it is indeterminate",
+      "The world is neither absolutely real nor absolutely unreal — it is indeterminate",
       "The world is real but transient",
       "The world is a dream of Brahma"
     ],
@@ -42005,10 +42005,10 @@
     "difficulty": 1,
     "question": "What is the boiling point of water at standard pressure?",
     "options": [
-      "90\u00b0C",
-      "100\u00b0C",
-      "110\u00b0C",
-      "120\u00b0C"
+      "90°C",
+      "100°C",
+      "110°C",
+      "120°C"
     ],
     "correct_index": 1
   },
@@ -42237,7 +42237,7 @@
     "id": "sci_medium_091",
     "category": "science",
     "difficulty": 2,
-    "question": "What is pH of pure water at 25\u00b0C?",
+    "question": "What is pH of pure water at 25°C?",
     "options": [
       "5",
       "6",
@@ -43929,10 +43929,10 @@
     "difficulty": 3,
     "question": "The Indus Valley Civilization flourished approximately in which period?",
     "options": [
-      "5000\u20133000 BCE",
-      "2600\u20131900 BCE (Mature Harappan)",
-      "1500\u20131000 BCE",
-      "3500\u20132000 BCE"
+      "5000–3000 BCE",
+      "2600–1900 BCE (Mature Harappan)",
+      "1500–1000 BCE",
+      "3500–2000 BCE"
     ],
     "correct_index": 1
   },
@@ -46072,7 +46072,7 @@
     "id": "spt_medium_064",
     "category": "sports",
     "difficulty": 2,
-    "question": "Sushil Kumar won two individual Olympic medals \u2014 a bronze in 2008 and a silver in 2012. In which weight category did he compete?",
+    "question": "Sushil Kumar won two individual Olympic medals — a bronze in 2008 and a silver in 2012. In which weight category did he compete?",
     "options": [
       "60kg freestyle",
       "66kg freestyle",
@@ -46241,7 +46241,7 @@
     "id": "spt_medium_077",
     "category": "sports",
     "difficulty": 2,
-    "question": "In the 2024 IPL final, Kolkata Knight Riders bowled out Sunrisers Hyderabad for just 113 runs \u2014 the lowest total in an IPL final. Who was the Player of the Match?",
+    "question": "In the 2024 IPL final, Kolkata Knight Riders bowled out Sunrisers Hyderabad for just 113 runs — the lowest total in an IPL final. Who was the Player of the Match?",
     "options": [
       "Sunil Narine",
       "Venkatesh Iyer",
@@ -46436,7 +46436,7 @@
     "id": "spt_medium_092",
     "category": "sports",
     "difficulty": 2,
-    "question": "Which Indian cricketer scored the most runs in a single IPL season \u2014 973 runs in 2016?",
+    "question": "Which Indian cricketer scored the most runs in a single IPL season — 973 runs in 2016?",
     "options": [
       "Rohit Sharma",
       "David Warner",
@@ -46711,10 +46711,10 @@
     "difficulty": 3,
     "question": "Dhyan Chand's Olympic gold-winning years were 1928, 1932, and 1936. In the 1936 Berlin final, India beat Germany by what score?",
     "options": [
-      "4\u20131",
-      "6\u20132",
-      "8\u20131",
-      "10\u20133"
+      "4–1",
+      "6–2",
+      "8–1",
+      "10–3"
     ],
     "correct_index": 2
   },
@@ -46750,10 +46750,10 @@
     "difficulty": 3,
     "question": "Patna Pirates won the PKL title three consecutive times (Seasons 3, 4, and 5). Which season-years does Season 3 correspond to?",
     "options": [
-      "2015\u201316",
-      "2016\u201317",
-      "2017\u201318",
-      "2018\u201319"
+      "2015–16",
+      "2016–17",
+      "2017–18",
+      "2018–19"
     ],
     "correct_index": 0
   },
@@ -46826,7 +46826,7 @@
     "id": "spt_hard_090",
     "category": "sports",
     "difficulty": 3,
-    "question": "Which Indian Test cricketer scored the first triple century for India \u2014 309 against Pakistan at Multan in 2004?",
+    "question": "Which Indian Test cricketer scored the first triple century for India — 309 against Pakistan at Multan in 2004?",
     "options": [
       "Sachin Tendulkar",
       "Rahul Dravid",
@@ -47086,7 +47086,7 @@
     "id": "ent_easy_090",
     "category": "entertainment",
     "difficulty": 1,
-    "question": "Who composed the music for Roja (1992) \u2014 his first film as a composer?",
+    "question": "Who composed the music for Roja (1992) — his first film as a composer?",
     "options": [
       "Ilaiyaraaja",
       "AR Rahman",
@@ -47593,7 +47593,7 @@
     "id": "ent_medium_097",
     "category": "entertainment",
     "difficulty": 2,
-    "question": "Which director made Kabhi Khushi Kabhie Gham (2001) \u2014 his second directorial venture after Kuch Kuch Hota Hai?",
+    "question": "Which director made Kabhi Khushi Kabhie Gham (2001) — his second directorial venture after Kuch Kuch Hota Hai?",
     "options": [
       "Aditya Chopra",
       "Karan Johar",
@@ -47814,7 +47814,7 @@
     "id": "ent_hard_079",
     "category": "entertainment",
     "difficulty": 3,
-    "question": "In the Baahubali films, who played the role of Kattappa \u2014 the trusted general?",
+    "question": "In the Baahubali films, who played the role of Kattappa — the trusted general?",
     "options": [
       "Satyaraj",
       "Nasser",
@@ -48061,7 +48061,7 @@
     "id": "ent_hard_098",
     "category": "entertainment",
     "difficulty": 3,
-    "question": "Which 2016 film directed by Aniruddha Roy Chowdhury starred Amitabh Bachchan as a lawyer defending a girl falsely accused \u2014 and led him to win a National Award?",
+    "question": "Which 2016 film directed by Aniruddha Roy Chowdhury starred Amitabh Bachchan as a lawyer defending a girl falsely accused — and led him to win a National Award?",
     "options": [
       "Wazir",
       "Te3n",
@@ -48451,7 +48451,7 @@
     "id": "gen_easy_088",
     "category": "general",
     "difficulty": 1,
-    "question": "In which year did India demonetize its \u20b9500 and \u20b91000 notes?",
+    "question": "In which year did India demonetize its ₹500 and ₹1000 notes?",
     "options": [
       "2014",
       "2015",
@@ -48685,7 +48685,7 @@
     "id": "gen_medium_080",
     "category": "general",
     "difficulty": 2,
-    "question": "Who designed the official symbol of the Indian Rupee (\u20b9) adopted in 2010?",
+    "question": "Who designed the official symbol of the Indian Rupee (₹) adopted in 2010?",
     "options": [
       "Anand Krishnan",
       "D. Udaya Kumar",
@@ -48882,10 +48882,10 @@
     "difficulty": 2,
     "question": "What was the original price (in Indian Rupees) of the Tata Nano at its launch in 2008?",
     "options": [
-      "\u20b950,000",
-      "\u20b91,00,000",
-      "\u20b91,50,000",
-      "\u20b92,00,000"
+      "₹50,000",
+      "₹1,00,000",
+      "₹1,50,000",
+      "₹2,00,000"
     ],
     "correct_index": 1
   },
@@ -48997,12 +48997,12 @@
     "id": "gen_medium_104",
     "category": "general",
     "difficulty": 2,
-    "question": "The Indian Rupee symbol \u20b9 is a combination of which two letters?",
+    "question": "The Indian Rupee symbol ₹ is a combination of which two letters?",
     "options": [
-      "Devanagari '\u0930' and Latin 'P'",
-      "Devanagari '\u0930' and Latin 'R'",
-      "Devanagari '\u090b' and Latin 'R'",
-      "Devanagari '\u0930\u0941' and Latin 'P'"
+      "Devanagari 'र' and Latin 'P'",
+      "Devanagari 'र' and Latin 'R'",
+      "Devanagari 'ऋ' and Latin 'R'",
+      "Devanagari 'रु' and Latin 'P'"
     ],
     "correct_index": 1
   },
@@ -49101,7 +49101,7 @@
     "id": "gen_hard_079",
     "category": "general",
     "difficulty": 3,
-    "question": "Which percentage of India's total currency value in circulation did the demonetized \u20b9500 and \u20b91000 notes represent in November 2016?",
+    "question": "Which percentage of India's total currency value in circulation did the demonetized ₹500 and ₹1000 notes represent in November 2016?",
     "options": [
       "56%",
       "68%",
@@ -49142,10 +49142,10 @@
     "difficulty": 3,
     "question": "India's Chandrayaan-3 lander touched down on the Moon on 23 August 2023 at approximately what latitude south?",
     "options": [
-      "45\u00b0S",
-      "55\u00b0S",
-      "69\u00b0S",
-      "80\u00b0S"
+      "45°S",
+      "55°S",
+      "69°S",
+      "80°S"
     ],
     "correct_index": 2
   },
@@ -49166,7 +49166,7 @@
     "id": "gen_hard_084",
     "category": "general",
     "difficulty": 3,
-    "question": "Reliance Jio's parent company One97 Communications is the parent of Paytm \u2014 False. Which company is Jio's parent?",
+    "question": "Reliance Jio's parent company One97 Communications is the parent of Paytm — False. Which company is Jio's parent?",
     "options": [
       "Tata Sons",
       "Aditya Birla Group",
@@ -49259,10 +49259,10 @@
     "difficulty": 3,
     "question": "What was the initial capital invested by Sachin Bansal and Binny Bansal when founding Flipkart in 2007?",
     "options": [
-      "\u20b91,00,000",
-      "\u20b92,00,000",
-      "\u20b94,00,000",
-      "\u20b910,00,000"
+      "₹1,00,000",
+      "₹2,00,000",
+      "₹4,00,000",
+      "₹10,00,000"
     ],
     "correct_index": 2
   },
@@ -50248,9 +50248,9 @@
     "question": "In the story of Narasimha from the Bhagavata Purana, Hiranyakashipu's boon from Brahma protected him from death in all ways EXCEPT which combination?",
     "options": [
       "By water, fire, or air",
-      "By human, god, or animal \u2014 Narasimha being part-man, part-lion circumvented this",
-      "By day or night \u2014 he was killed at noon",
-      "By weapon \u2014 Narasimha used a sword"
+      "By human, god, or animal — Narasimha being part-man, part-lion circumvented this",
+      "By day or night — he was killed at noon",
+      "By weapon — Narasimha used a sword"
     ],
     "correct_index": 1
   },
@@ -50531,7 +50531,7 @@
     "id": "myth_hard_192",
     "category": "mythology",
     "difficulty": 3,
-    "question": "The Buddhist concept of 'Prat\u012btyasamutp\u0101da' (dependent origination) states that phenomena arise dependent on conditions. How many links (nidanas) does the standard chain of dependent origination contain?",
+    "question": "The Buddhist concept of 'Pratītyasamutpāda' (dependent origination) states that phenomena arise dependent on conditions. How many links (nidanas) does the standard chain of dependent origination contain?",
     "options": [
       "8",
       "10",
@@ -51106,7 +51106,7 @@
     "question": "What is the traditional Goan sausage called, made from pork and spiced with vinegar?",
     "options": [
       "Sorpotel",
-      "Chouri\u00e7o",
+      "Chouriço",
       "Cafreal",
       "Xacuti"
     ],
@@ -51250,7 +51250,7 @@
     "options": [
       "Vasco da Gama",
       "Afonso de Albuquerque",
-      "Pedro \u00c1lvares Cabral",
+      "Pedro Álvares Cabral",
       "Francisco de Almeida"
     ],
     "correct_index": 1
@@ -51625,10 +51625,10 @@
     "difficulty": 2,
     "question": "What is 'Pitha', a traditional delicacy associated with Makar Sankranti and Bihu festivals primarily in which region?",
     "options": [
-      "North India \u2014 UP and Bihar",
-      "East India \u2014 Odisha, Bengal, Assam",
-      "South India \u2014 Andhra and Tamil Nadu",
-      "West India \u2014 Gujarat and Rajasthan"
+      "North India — UP and Bihar",
+      "East India — Odisha, Bengal, Assam",
+      "South India — Andhra and Tamil Nadu",
+      "West India — Gujarat and Rajasthan"
     ],
     "correct_index": 1
   },
@@ -51822,7 +51822,7 @@
     "options": [
       "Mozambique",
       "Angola",
-      "S\u00e3o Tom\u00e9",
+      "São Tomé",
       "Goa itself"
     ],
     "correct_index": 0
@@ -52431,10 +52431,10 @@
     "difficulty": 1,
     "question": "The PM-KISAN scheme provides farmers an annual income support of how much?",
     "options": [
-      "\u20b94,000",
-      "\u20b98,000",
-      "\u20b910,000",
-      "\u20b96,000"
+      "₹4,000",
+      "₹8,000",
+      "₹10,000",
+      "₹6,000"
     ],
     "correct_index": 3
   },
@@ -52585,7 +52585,7 @@
     "id": "pol_medium_160",
     "category": "politics",
     "difficulty": 2,
-    "question": "Which article of the Indian Constitution provides for free and compulsory education for children aged 6\u201314 years?",
+    "question": "Which article of the Indian Constitution provides for free and compulsory education for children aged 6–14 years?",
     "options": [
       "Article 21",
       "Article 45",
@@ -53950,7 +53950,7 @@
     "id": "def_easy_044",
     "category": "defense",
     "difficulty": 1,
-    "question": "India's highest military gallantry award 'Param Vir Chakra' \u2014 how many recipients are there as of 2025?",
+    "question": "India's highest military gallantry award 'Param Vir Chakra' — how many recipients are there as of 2025?",
     "options": [
       "21",
       "15",
@@ -54028,7 +54028,7 @@
     "id": "def_easy_050",
     "category": "defense",
     "difficulty": 1,
-    "question": "INS Vikramaditya was formerly known as Admiral Gorshkov \u2014 it was purchased from which country?",
+    "question": "INS Vikramaditya was formerly known as Admiral Gorshkov — it was purchased from which country?",
     "options": [
       "Russia",
       "USA",
@@ -54056,7 +54056,7 @@
     "difficulty": 2,
     "question": "What is the approximate top speed of the BrahMos cruise missile?",
     "options": [
-      "Mach 2.8\u20133",
+      "Mach 2.8–3",
       "Mach 1.5",
       "Mach 4",
       "Mach 0.9"
@@ -54132,7 +54132,7 @@
     "id": "def_med_008",
     "category": "defense",
     "difficulty": 2,
-    "question": "MARCOS is the special forces unit of the Indian Navy \u2014 what does MARCOS stand for?",
+    "question": "MARCOS is the special forces unit of the Indian Navy — what does MARCOS stand for?",
     "options": [
       "Marine Commandos",
       "Maritime Commando Squad",
@@ -54212,7 +54212,7 @@
     "difficulty": 2,
     "question": "The Agni-V ballistic missile has an approximate base range of?",
     "options": [
-      "5,000\u20135,400 km",
+      "5,000–5,400 km",
       "2,000 km",
       "1,000 km",
       "8,000 km"
@@ -54459,10 +54459,10 @@
     "difficulty": 2,
     "question": "India's defence export target set for FY2025 was approximately how many rupees?",
     "options": [
-      "\u20b935,000 crore",
-      "\u20b95,000 crore",
-      "\u20b91 lakh crore",
-      "\u20b910,000 crore"
+      "₹35,000 crore",
+      "₹5,000 crore",
+      "₹1 lakh crore",
+      "₹10,000 crore"
     ],
     "correct_index": 0
   },
@@ -54589,7 +54589,7 @@
     "difficulty": 2,
     "question": "India's Agni-II ballistic missile has a range of approximately?",
     "options": [
-      "2,000\u20132,500 km",
+      "2,000–2,500 km",
       "700 km",
       "5,000 km",
       "500 km"
@@ -54615,7 +54615,7 @@
     "difficulty": 2,
     "question": "India's Agni-IV ballistic missile has an approximate range of?",
     "options": [
-      "3,000\u20134,000 km",
+      "3,000–4,000 km",
       "700 km",
       "2,000 km",
       "6,000 km"
@@ -54667,10 +54667,10 @@
     "difficulty": 2,
     "question": "Operation Trident (1971) was conducted on the night of which date?",
     "options": [
-      "4\u20135 December 1971",
-      "3\u20134 December 1971",
-      "16\u201317 December 1971",
-      "1\u20132 December 1971"
+      "4–5 December 1971",
+      "3–4 December 1971",
+      "16–17 December 1971",
+      "1–2 December 1971"
     ],
     "correct_index": 0
   },
@@ -54693,7 +54693,7 @@
     "difficulty": 2,
     "question": "India's Prithvi-II missile, intended for the Air Force, has a range of approximately?",
     "options": [
-      "250\u2013350 km",
+      "250–350 km",
       "150 km",
       "700 km",
       "100 km"
@@ -54836,10 +54836,10 @@
     "difficulty": 3,
     "question": "India's Agni-V ballistic missile is capable of carrying how many MIRV warheads?",
     "options": [
-      "Up to 10\u201312",
+      "Up to 10–12",
       "1",
-      "3\u20134",
-      "15\u201320"
+      "3–4",
+      "15–20"
     ],
     "correct_index": 0
   },
@@ -55336,5 +55336,1747 @@
       "Don"
     ],
     "correct_index": 0
+  },
+  {
+    "id": "ca_easy_001",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Supreme Court of India ruled that maternity leave is a right available to which group?",
+    "options": [
+      "Only biological mothers",
+      "Only surrogate mothers",
+      "All adoptive mothers",
+      "Only single mothers"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_002",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Archaeological Survey of India (ASI) functions under which Ministry?",
+    "options": [
+      "Ministry of Home Affairs",
+      "Ministry of Culture",
+      "Ministry of Education",
+      "Ministry of Tourism"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_003",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Strait of Hormuz connects the Persian Gulf to which body of water?",
+    "options": [
+      "Red Sea",
+      "Gulf of Oman",
+      "Arabian Sea",
+      "Caspian Sea"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_004",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Sonam Wangchuk, the education reformist from Ladakh, is known for inspiring which Bollywood film?",
+    "options": [
+      "Swades",
+      "3 Idiots",
+      "Rang De Basanti",
+      "Taare Zameen Par"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_005",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Nowruz, the Persian New Year, is celebrated on which astronomical event?",
+    "options": [
+      "Winter solstice",
+      "Spring equinox",
+      "Summer solstice",
+      "Autumnal equinox"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_006",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The 'State of Working India' report is published by which institution?",
+    "options": [
+      "NSSO",
+      "ILO India Office",
+      "Azim Premji University",
+      "CMIE"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_007",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The International Hockey Federation is commonly known by which abbreviation?",
+    "options": [
+      "IHF",
+      "FIH",
+      "WHF",
+      "AHF"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_001",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India opposed the US proposal at the WTO to permanently ban customs duties on electronic transmissions. India's concern is that such a moratorium:",
+    "options": [
+      "Violates bilateral trade agreements",
+      "Acts as a deterrent to taxing the digital economy",
+      "Increases tariffs on physical goods",
+      "Undermines IT sector export competitiveness"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_002",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Transgender Persons (Protection of Rights) Act, which was recently amended, was originally enacted in which year?",
+    "options": [
+      "2014",
+      "2017",
+      "2019",
+      "2021"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_003",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Indian Information Service (IIS), proposed to be placed in foreign missions for media outreach, is a:",
+    "options": [
+      "Group A All India Service",
+      "Group A Central Civil Service",
+      "Autonomous body under the Press Council",
+      "Service under the Ministry of External Affairs"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_004",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "An Appropriation Bill in the Indian Parliament is:",
+    "options": [
+      "A Money Bill that authorises withdrawal from the Consolidated Fund of India",
+      "A Financial Bill that imposes new taxes",
+      "A Bill to approve supplementary grants only",
+      "A Bill presented after the budget session"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_005",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India's strategic Chabahar Port is located on the coast of:",
+    "options": [
+      "Persian Gulf",
+      "Gulf of Oman",
+      "Caspian Sea",
+      "Arabian Sea"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_006",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Under the Information Technology Act, which body holds the primary authority to issue directions for blocking online content?",
+    "options": [
+      "CERT-In",
+      "Ministry of Electronics and IT (MeitY)",
+      "Ministry of Home Affairs",
+      "Ministry of Information and Broadcasting"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_007",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Piped Natural Gas (PNG) distribution in India is regulated by which body?",
+    "options": [
+      "Oil and Natural Gas Corporation (ONGC)",
+      "Petroleum and Natural Gas Regulatory Board (PNGRB)",
+      "Gas Authority of India Limited (GAIL)",
+      "Ministry of Petroleum directly"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_008",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The World Squash Federation (WSF) is the international governing body of squash. Where is it headquartered?",
+    "options": [
+      "London, UK",
+      "Lausanne, Switzerland",
+      "East Sussex, UK",
+      "Paris, France"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_001",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "China uses which administrative framework for governing its ethnic minority regions?",
+    "options": [
+      "Federal states",
+      "Autonomous regions",
+      "Union territories",
+      "Special economic zones"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_002",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Chief Economic Adviser (CEA) of India heads which division?",
+    "options": [
+      "NITI Aayog",
+      "Economic Advisory Council to the PM",
+      "Economic Division of the Department of Economic Affairs",
+      "RBI's research wing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_003",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "India's data centre capacity (~152 centres) is significantly lower than the US (~5,500) and China (~400-500). Data centre policy in India falls under which ministry?",
+    "options": [
+      "Ministry of Electronics and Information Technology (MeitY)",
+      "Ministry of Commerce",
+      "Ministry of Science and Technology",
+      "Department of Telecommunications"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_004",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Section 69A of the IT Act, which empowers the government to block online content, requires the blocking order to be issued by:",
+    "options": [
+      "Any court of law",
+      "The Central Government through MeitY",
+      "CERT-In after a cyber audit",
+      "The Telecom Regulatory Authority"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_005",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The WTO moratorium on customs duties on electronic transmissions was first introduced in which year?",
+    "options": [
+      "1995",
+      "1998",
+      "2001",
+      "2005"
+    ],
+    "correct_index": 1
+  },
+  {
+    "category": "current_affairs",
+    "question": "The 'Vayu Shakti' exercise, in which Rafale, Su-30 and Tejas aircraft participate, is conducted by the Indian Air Force at which location?",
+    "difficulty": 1,
+    "options": [
+      "Jaisalmer",
+      "Pokhran",
+      "Jodhpur",
+      "Bikaner"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_008"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Vande Mataram, which the Ministry of Home Affairs directed must be sung in all six stanzas, was composed by which author?",
+    "difficulty": 1,
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chattopadhyay",
+      "Sarat Chandra Chattopadhyay",
+      "Ishwar Chandra Vidyasagar"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_009"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The National Green Tribunal (NGT) is a statutory body established under which Act?",
+    "difficulty": 1,
+    "options": [
+      "Environment Protection Act, 1986",
+      "National Green Tribunal Act, 2010",
+      "Wildlife Protection Act, 1972",
+      "Forest Conservation Act, 1980"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_010"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Sabari Rail project in Kerala connects Angamaly to which destination?",
+    "difficulty": 1,
+    "options": [
+      "Thiruvananthapuram",
+      "Kochi",
+      "Sabarimala (Erumely)",
+      "Kozhikode"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_011"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Great Nicobar Island project, cleared by the NGT citing 'strategic role', is located closest to which strategically important strait?",
+    "difficulty": 2,
+    "options": [
+      "Strait of Hormuz",
+      "Palk Strait",
+      "Strait of Malacca",
+      "Strait of Bab-el-Mandeb"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_009"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Ricin, the subject of India's first bioterrorism probe in Hyderabad, is a toxic substance derived from which plant?",
+    "difficulty": 2,
+    "options": [
+      "Oleander",
+      "Castor",
+      "Belladonna",
+      "Hemlock"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_010"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Sabarimala temple women's entry case involves the interpretation of which fundamental right?",
+    "difficulty": 2,
+    "options": [
+      "Right to Equality (Article 14)",
+      "Right to Freedom of Religion (Article 25)",
+      "Right against Exploitation (Article 23)",
+      "Cultural and Educational Rights (Article 29)"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_011"
+  },
+  {
+    "category": "current_affairs",
+    "question": "PFC and REC, for which the government formed a merger panel, are public sector enterprises under which ministry?",
+    "difficulty": 2,
+    "options": [
+      "Ministry of Finance",
+      "Ministry of Power",
+      "Ministry of New and Renewable Energy",
+      "Ministry of Heavy Industries"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_012"
+  },
+  {
+    "category": "current_affairs",
+    "question": "India's plan to produce rare-earth magnets domestically is strategically important because these magnets are critical components in which of the following?",
+    "difficulty": 2,
+    "options": [
+      "Semiconductor chips",
+      "Electric vehicles and wind turbines",
+      "Nuclear reactors",
+      "Optical fibre cables"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_013"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The 'Pax Silica' initiative that India is set to join is a US-led grouping focused on which area?",
+    "difficulty": 2,
+    "options": [
+      "Semiconductor supply chain security",
+      "Rare earth mineral extraction",
+      "Cybersecurity cooperation",
+      "Space exploration collaboration"
+    ],
+    "correct_index": 0,
+    "id": "ca_medium_014"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Unlawful Activities (Prevention) Act (UAPA) allows detention without charge for a maximum of how many days?",
+    "difficulty": 2,
+    "options": [
+      "90 days",
+      "120 days",
+      "180 days",
+      "365 days"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_015"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Morarji Desai received Pakistan's highest civilian honour, the Nishan-e-Pakistan, in which year?",
+    "difficulty": 3,
+    "options": [
+      "1980",
+      "1990",
+      "1992",
+      "1998"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_006"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Dabolim airport in Goa is unique because it functions as a civil enclave within a facility operated by which entity?",
+    "difficulty": 3,
+    "options": [
+      "Indian Air Force",
+      "Indian Navy",
+      "Indian Coast Guard",
+      "Airports Authority of India"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_007"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Under the South Korean constitution, martial law declared by the President must be lifted if demanded by which body?",
+    "difficulty": 3,
+    "options": [
+      "The Constitutional Court",
+      "The National Assembly",
+      "The Supreme Court",
+      "The National Security Council"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_008"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Right to Information (RTI) Act was originally enacted in which year?",
+    "difficulty": 3,
+    "options": [
+      "2002",
+      "2003",
+      "2005",
+      "2009"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_009"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Union Cabinet approved renaming the state of Kerala to 'Keralam'. Which language's original name for the state does this reflect?",
+    "difficulty": 1,
+    "options": [
+      "Tamil",
+      "Malayalam",
+      "Kannada",
+      "Tulu"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_012"
+  },
+  {
+    "category": "current_affairs",
+    "question": "India's government announced a nationwide HPV vaccination drive targeting girls. HPV vaccination is primarily aimed at preventing which type of cancer?",
+    "difficulty": 1,
+    "options": [
+      "Breast cancer",
+      "Lung cancer",
+      "Cervical cancer",
+      "Ovarian cancer"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_013"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Which international financial centre, India's first, has a Metro corridor planned for its expansion in Gujarat?",
+    "difficulty": 1,
+    "options": [
+      "SEBI Financial City",
+      "GIFT City",
+      "Mumbai International Financial Centre",
+      "Gandhinagar Finance Hub"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_014"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Directorate General of Civil Aviation (DGCA) functions under which Union Ministry?",
+    "difficulty": 1,
+    "options": [
+      "Ministry of Defence",
+      "Ministry of Civil Aviation",
+      "Ministry of Transport",
+      "Ministry of Home Affairs"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_015"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Which organisation is responsible for compiling India's national income statistics and GDP estimates?",
+    "difficulty": 2,
+    "options": [
+      "Reserve Bank of India",
+      "NITI Aayog",
+      "National Statistical Office (NSO)",
+      "Ministry of Finance"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_016"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Under international trade law, countervailing duties are imposed to offset which type of trade practice?",
+    "difficulty": 2,
+    "options": [
+      "Dumping by exporters",
+      "Government subsidies to exporters",
+      "Currency manipulation",
+      "Intellectual property violations"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_017"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Canada moved to revoke the citizenship of Tahawwur Rana, who was convicted for his involvement in which terrorist attack?",
+    "difficulty": 2,
+    "options": [
+      "9/11 attacks (2001)",
+      "26/11 Mumbai attacks (2008)",
+      "Pulwama attack (2019)",
+      "Parliament attack (2001)"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_018"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Bangladesh Nationalist Party (BNP) was originally founded by which leader?",
+    "difficulty": 2,
+    "options": [
+      "Sheikh Mujibur Rahman",
+      "Ziaur Rahman",
+      "Hussain Muhammad Ershad",
+      "Khaleda Zia"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_019"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The International Emergency Economic Powers Act (IEEPA), recently challenged in US courts over tariffs, grants emergency economic powers to which authority?",
+    "difficulty": 2,
+    "options": [
+      "US Congress",
+      "US Federal Reserve",
+      "US President",
+      "US Trade Representative"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_020"
+  },
+  {
+    "category": "current_affairs",
+    "question": "C. Rajagopalachari (Rajaji), India's last Governor-General, also founded which political party as an alternative to the Congress?",
+    "difficulty": 3,
+    "options": [
+      "Janata Party",
+      "Swatantra Party",
+      "Bharatiya Jana Sangh",
+      "Praja Socialist Party"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_010"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The concept of 'melody roads' — roads that produce musical sounds when vehicles drive over them — was first developed in which country?",
+    "difficulty": 3,
+    "options": [
+      "United States",
+      "Japan",
+      "Germany",
+      "South Korea"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_011"
+  },
+  {
+    "category": "current_affairs",
+    "question": "India's Seed Bill aims to regulate the registration and certification of seeds. The existing legislation governing seed quality in India is the:",
+    "difficulty": 3,
+    "options": [
+      "Seeds Act, 1966",
+      "Plant Quarantine Act, 2003",
+      "Essential Commodities Act, 1955",
+      "Agricultural Produce Act, 1937"
+    ],
+    "correct_index": 0,
+    "id": "ca_hard_012"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Essential Commodities Act, which the government can invoke to regulate supply and pricing of critical goods like LPG, was originally enacted in which year?",
+    "difficulty": 1,
+    "options": [
+      "1955",
+      "1962",
+      "1971",
+      "1980"
+    ],
+    "correct_index": 0,
+    "id": "ca_easy_016"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The International Energy Agency (IEA), which coordinates emergency oil stock releases among member nations, is headquartered in which city?",
+    "difficulty": 1,
+    "options": [
+      "Geneva",
+      "Brussels",
+      "Paris",
+      "Vienna"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_017"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Jal Jeevan Mission aims to provide what to every rural household?",
+    "difficulty": 1,
+    "options": [
+      "Electricity connection",
+      "Functional household tap connection",
+      "Toilets under Swachh Bharat",
+      "Free cooking gas connection"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_018"
+  },
+  {
+    "category": "current_affairs",
+    "question": "FIDE, the world governing body for chess, is headquartered in which city?",
+    "difficulty": 1,
+    "options": [
+      "Paris, France",
+      "Zurich, Switzerland",
+      "Lausanne, Switzerland",
+      "Moscow, Russia"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_019"
+  },
+  {
+    "category": "current_affairs",
+    "question": "India's first semiconductor fabrication facility by Micron Technology is located in which state?",
+    "difficulty": 1,
+    "options": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Gujarat",
+      "Telangana"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_020"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Section 301 of the US Trade Act, which allows the US to impose tariffs on countries engaged in unfair trade practices, is administered by which office?",
+    "difficulty": 1,
+    "options": [
+      "US Department of Commerce",
+      "US Federal Reserve",
+      "Office of the United States Trade Representative (USTR)",
+      "US International Trade Commission"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_021"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The removal of the Chief Election Commissioner requires a motion passed by Parliament in the same manner as the removal of which other constitutional authority?",
+    "difficulty": 2,
+    "options": [
+      "President of India",
+      "Supreme Court Judge",
+      "Comptroller and Auditor General",
+      "Attorney General"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_021"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Kochi-Muziris Biennale, India's largest contemporary art exhibition, takes its name from 'Muziris', an ancient port in which state?",
+    "difficulty": 2,
+    "options": [
+      "Karnataka",
+      "Kerala",
+      "Goa",
+      "Tamil Nadu"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_022"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Passive euthanasia in India was first recognised as legally permissible by the Supreme Court in which landmark case?",
+    "difficulty": 2,
+    "options": [
+      "Vishaka v. State of Rajasthan",
+      "Aruna Shanbaug v. Union of India",
+      "K.S. Puttaswamy v. Union of India",
+      "Navtej Singh Johar v. Union of India"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_023"
+  },
+  {
+    "category": "current_affairs",
+    "question": "China has been building 'Xiaokang' border defence villages along the LAC. The Line of Actual Control between India and China stretches approximately how many kilometres?",
+    "difficulty": 2,
+    "options": [
+      "2,100 km",
+      "2,700 km",
+      "3,488 km",
+      "4,056 km"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_024"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The National Council for Teacher Education (NCTE) is a statutory body established under which Act?",
+    "difficulty": 2,
+    "options": [
+      "Right to Education Act, 2009",
+      "National Council for Teacher Education Act, 1993",
+      "National Education Policy Act, 1986",
+      "University Grants Commission Act, 1956"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_025"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Competition Commission of India (CCI) derives its powers from which legislation?",
+    "difficulty": 2,
+    "options": [
+      "Companies Act, 2013",
+      "Consumer Protection Act, 2019",
+      "Competition Act, 2002",
+      "SEBI Act, 1992"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_026"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Food Safety and Standards Authority of India (FSSAI) was established under which Act?",
+    "difficulty": 2,
+    "options": [
+      "Food Safety and Standards Act, 2006",
+      "Essential Commodities Act, 1955",
+      "Prevention of Food Adulteration Act, 1954",
+      "Consumer Protection Act, 2019"
+    ],
+    "correct_index": 0,
+    "id": "ca_medium_027"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Small Modular Reactors (SMRs) are defined as nuclear reactors with a power output of up to how many megawatts electric (MWe)?",
+    "difficulty": 2,
+    "options": [
+      "100 MWe",
+      "200 MWe",
+      "300 MWe",
+      "500 MWe"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_028"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Supreme Court's 'creamy layer' concept for excluding affluent members from OBC reservation was first laid down in which case?",
+    "difficulty": 3,
+    "options": [
+      "Indra Sawhney v. Union of India",
+      "M. Nagaraj v. Union of India",
+      "Ashoka Kumar Thakur v. Union of India",
+      "Balaji v. State of Mysore"
+    ],
+    "correct_index": 0,
+    "id": "ca_hard_013"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Under the CEC Appointment Act 2023, the selection committee includes the PM, the Leader of Opposition in Lok Sabha, and which other member?",
+    "difficulty": 3,
+    "options": [
+      "Chief Justice of India",
+      "A Union Cabinet Minister nominated by the PM",
+      "Vice President of India",
+      "Speaker of Lok Sabha"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_014"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The United Nations Security Council has how many non-permanent members?",
+    "difficulty": 3,
+    "options": [
+      "5",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_015"
+  },
+  {
+    "category": "current_affairs",
+    "question": "India's navigation satellite system, the country's own alternative to GPS, is known by which name?",
+    "difficulty": 1,
+    "options": [
+      "GAGAN",
+      "NavIC",
+      "IRNSS-B",
+      "GEMINI"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_022"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Fujairah Port, strategically important as an oil export terminal outside the Strait of Hormuz, is located in which country?",
+    "difficulty": 1,
+    "options": [
+      "Oman",
+      "Saudi Arabia",
+      "United Arab Emirates",
+      "Qatar"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_023"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Sahitya Akademi, which confers annual literary awards in India, recognises works in how many languages?",
+    "difficulty": 1,
+    "options": [
+      "14",
+      "18",
+      "22",
+      "24"
+    ],
+    "correct_index": 3,
+    "id": "ca_easy_024"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Which body is the apex regulatory authority for the securities market in India?",
+    "difficulty": 1,
+    "options": [
+      "Reserve Bank of India",
+      "Securities and Exchange Board of India",
+      "Insurance Regulatory and Development Authority",
+      "National Stock Exchange"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_025"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Pradhan Mantri Ujjwala Yojana, which provides LPG connections to BPL households, was launched in which year?",
+    "difficulty": 2,
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_029"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Model Code of Conduct in Indian elections is enforced by the Election Commission under which constitutional article?",
+    "difficulty": 2,
+    "options": [
+      "Article 280",
+      "Article 324",
+      "Article 356",
+      "Article 368"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_030"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Uniform Civil Code (UCC) is mentioned in which part of the Indian Constitution?",
+    "difficulty": 2,
+    "options": [
+      "Fundamental Rights",
+      "Directive Principles of State Policy",
+      "Fundamental Duties",
+      "Preamble"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_031"
+  },
+  {
+    "category": "current_affairs",
+    "question": "FASTag for electronic toll collection on national highways uses which technology?",
+    "difficulty": 2,
+    "options": [
+      "Near Field Communication (NFC)",
+      "Bluetooth Low Energy",
+      "Radio Frequency Identification (RFID)",
+      "QR Code scanning"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_032"
+  },
+  {
+    "category": "current_affairs",
+    "question": "In GDP estimation, 'discrepancies' in national accounts refers to the difference between GDP estimated by which two approaches?",
+    "difficulty": 2,
+    "options": [
+      "Nominal and Real",
+      "Production and Expenditure",
+      "Market price and Factor cost",
+      "Current price and Constant price"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_033"
+  },
+  {
+    "category": "current_affairs",
+    "question": "Which country operates the world's largest desalination capacity?",
+    "difficulty": 2,
+    "options": [
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Israel",
+      "Kuwait"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_034"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The Jnanpith Award, India's highest literary honour, was instituted in which year?",
+    "difficulty": 3,
+    "options": [
+      "1961",
+      "1965",
+      "1971",
+      "1975"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_016"
+  },
+  {
+    "category": "current_affairs",
+    "question": "The 2016 Una flogging case, a landmark incident in Dalit rights discourse, occurred in which Indian state?",
+    "difficulty": 3,
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Madhya Pradesh",
+      "Maharashtra"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_017"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Magh Mela, an annual religious congregation held at the Sangam (confluence of rivers), takes place in which Indian city?",
+    "options": [
+      "Varanasi",
+      "Prayagraj",
+      "Haridwar",
+      "Nashik"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_026"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Somnath Temple, often referred to as a symbol of India's resilience and reconstruction, is located in which Indian state?",
+    "options": [
+      "Rajasthan",
+      "Madhya Pradesh",
+      "Gujarat",
+      "Maharashtra"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_027"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "A Purchasing Managers' Index (PMI) reading above 50 indicates that the sector is:",
+    "options": [
+      "Contracting",
+      "Expanding",
+      "Stagnant",
+      "In recession"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_028"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Gangasagar Mela, one of India's largest religious fairs, is held annually on Sagar Island at the confluence of the Ganges and which body of water?",
+    "options": [
+      "Arabian Sea",
+      "Indian Ocean",
+      "Bay of Bengal",
+      "Palk Strait"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_029"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "GLP-1 receptor agonist drugs like semaglutide, which have seen a surge in global demand, were originally developed to treat which condition?",
+    "options": [
+      "Hypertension",
+      "Type 2 Diabetes",
+      "Asthma",
+      "Epilepsy"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_030"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The National Medical Commission (NMC), which regulates medical education in India, replaced which earlier body?",
+    "options": [
+      "Indian Medical Association",
+      "Medical Council of India",
+      "National Board of Examinations",
+      "Directorate General of Health Services"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_035"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Census of India is conducted under the administrative authority of which ministry?",
+    "options": [
+      "Ministry of Statistics and Programme Implementation",
+      "Ministry of Home Affairs",
+      "Ministry of Housing and Urban Affairs",
+      "Ministry of Social Justice and Empowerment"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_036"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India's Mumbai-Ahmedabad bullet train project uses technology based on which country's high-speed rail system?",
+    "options": [
+      "France",
+      "Germany",
+      "Japan",
+      "China"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_037"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Mustard, the largest oilseed crop grown during the Rabi season in India, is produced in the largest quantity by which state?",
+    "options": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Haryana"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_038"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Vande Bharat Express trains are manufactured by which entity?",
+    "options": [
+      "Bombardier India",
+      "Alstom India",
+      "Integral Coach Factory (ICF), Chennai",
+      "Bharat Heavy Electricals Limited (BHEL)"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_039"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Gold Exchange Traded Funds (ETFs) in India are regulated by which body?",
+    "options": [
+      "Reserve Bank of India",
+      "Securities and Exchange Board of India",
+      "Insurance Regulatory and Development Authority",
+      "Pension Fund Regulatory and Development Authority"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_040"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "India's Integrated Battle Groups (IBGs), planned as agile combined-arms formations, are primarily being organised to address threats along which border?",
+    "options": [
+      "India-Pakistan border",
+      "India-China border",
+      "India-Myanmar border",
+      "India-Bangladesh border"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_018"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "ThyssenKrupp, the steel and engineering conglomerate, is headquartered in which country?",
+    "options": [
+      "United States",
+      "United Kingdom",
+      "Germany",
+      "Sweden"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_019"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Viswanathan Anand, India's first chess world champion, hails from which Indian city?",
+    "options": [
+      "Mumbai",
+      "Kolkata",
+      "Chennai",
+      "Hyderabad"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_031"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The permanent secretariat of the Commonwealth of Nations is located in which city?",
+    "options": [
+      "New York",
+      "London",
+      "Geneva",
+      "Canberra"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_032"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India and the European Union first launched Free Trade Agreement (FTA) negotiations in which year?",
+    "options": [
+      "2005",
+      "2007",
+      "2010",
+      "2013"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_041"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Mercosur, the South American trade bloc, counts which of the following as a founding member?",
+    "options": [
+      "Chile",
+      "Colombia",
+      "Brazil",
+      "Peru"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_033"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Lucknow model of stray dog population control, praised by the Supreme Court, relies primarily on which method?",
+    "options": [
+      "Mass culling",
+      "Animal Birth Control (ABC) through sterilisation",
+      "Relocation to shelters outside the city",
+      "Chemical contraceptive feeding programs"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_042"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Central Electricity Regulatory Commission (CERC) was established under which Act?",
+    "options": [
+      "Electricity Act, 2003",
+      "Energy Conservation Act, 2001",
+      "Electricity Regulatory Commissions Act, 1998",
+      "Indian Electricity Act, 1910"
+    ],
+    "correct_index": 0,
+    "id": "ca_medium_043"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Greenland, over which the US expressed strategic interest, is an autonomous territory of which country?",
+    "options": [
+      "Norway",
+      "Iceland",
+      "Denmark",
+      "Sweden"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_034"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "India's first BSL-4 (Biosafety Level 4) laboratory was established in which state?",
+    "options": [
+      "Maharashtra",
+      "Karnataka",
+      "Gujarat",
+      "Tamil Nadu"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_020"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Employees' Provident Fund Organisation (EPFO) operates under the administrative control of which Union Ministry?",
+    "options": [
+      "Ministry of Finance",
+      "Ministry of Labour and Employment",
+      "Ministry of Commerce and Industry",
+      "Ministry of Corporate Affairs"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_044"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The World Bank is headquartered in which city?",
+    "options": [
+      "New York",
+      "Geneva",
+      "Washington, D.C.",
+      "London"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_035"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The cadre allocation policy for All India Services (IAS, IPS, IFoS) allocates cadre through which mechanism?",
+    "options": [
+      "Direct choice of the candidate",
+      "Roster-based rotation among cadre groups",
+      "Random computerised lottery",
+      "Seniority-based allocation from UPSC merit list"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_021"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Vizhinjam International Seaport, a major deep-water port project, is located in which Indian state?",
+    "options": [
+      "Karnataka",
+      "Goa",
+      "Kerala",
+      "Tamil Nadu"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_045"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Australian Open tennis Grand Slam is held annually in which city?",
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_036"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Tata Steel Chess Tournament, a prestigious annual event, is traditionally held in which city?",
+    "options": [
+      "London, UK",
+      "Stavanger, Norway",
+      "Wijk aan Zee, Netherlands",
+      "Saint Louis, USA"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_022"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Nipah virus belongs to which family of viruses?",
+    "options": [
+      "Coronaviridae",
+      "Paramyxoviridae",
+      "Flaviviridae",
+      "Filoviridae"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_046"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Post-matric scholarships for Scheduled Caste students are provided by which Union Ministry?",
+    "options": [
+      "Ministry of Education",
+      "Ministry of Social Justice and Empowerment",
+      "Ministry of Tribal Affairs",
+      "Ministry of Minority Affairs"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_037"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The ISS (International Space Station) orbits Earth at approximately what altitude?",
+    "options": [
+      "200-250 km",
+      "400-420 km",
+      "600-650 km",
+      "800-850 km"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_047"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Gorkha sub-tribes are listed under which constitutional provision for the purpose of reservation?",
+    "options": [
+      "Fifth Schedule",
+      "Sixth Schedule",
+      "Scheduled Tribe list under Article 342",
+      "Other Backward Classes list under Article 340"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_023"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The 'Jamma' land tenure system in Karnataka is historically prevalent in which region?",
+    "options": [
+      "Malnad region",
+      "Coorg (Kodagu) region",
+      "Coastal Karnataka",
+      "Hyderabad-Karnataka region"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_024"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The EU's Carbon Border Adjustment Mechanism (CBAM) is designed to:",
+    "options": [
+      "Subsidise renewable energy exports from the EU",
+      "Impose a carbon levy on imports from countries with weaker climate policies",
+      "Ban imports of fossil fuels into EU member states",
+      "Provide tax credits to EU manufacturers using green technology"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_038"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Uttarakhand Freedom of Religion Act, 2018 requires prior approval from which authority before religious conversion?",
+    "options": [
+      "State Home Department",
+      "District Magistrate",
+      "Sub-Divisional Magistrate",
+      "Block Development Officer"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_025"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Islamic Revolutionary Guard Corps (IRGC), listed as a terrorist organisation by the EU, is a branch of the armed forces of:",
+    "options": [
+      "Iraq",
+      "Syria",
+      "Iran",
+      "Afghanistan"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_048"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Programme for International Student Assessment (PISA) is conducted by which organisation?",
+    "options": [
+      "UNESCO",
+      "World Bank",
+      "OECD",
+      "UNICEF"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_049"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Consumer Price Index (CPI) in India assigns the highest weight to which category?",
+    "options": [
+      "Housing",
+      "Transport and communication",
+      "Food and beverages",
+      "Fuel and light"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_050"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Embraer, the aircraft manufacturer that announced plans to set up an assembly unit in India, is headquartered in:",
+    "options": [
+      "Canada",
+      "France",
+      "Brazil",
+      "United States"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_039"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which schedule of the Indian Constitution deals with the powers and responsibilities of Panchayats?",
+    "options": [
+      "Ninth Schedule",
+      "Tenth Schedule",
+      "Eleventh Schedule",
+      "Twelfth Schedule"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_026"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "A duopoly in economics refers to a market structure dominated by how many sellers?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_051"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Thorium, strategically important for India's nuclear programme, can be converted in a reactor into a fissile isotope of which element?",
+    "options": [
+      "Plutonium",
+      "Uranium",
+      "Neptunium",
+      "Americium"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_027"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Colombo Security Conclave is a multilateral security grouping. Which of the following countries is a member?",
+    "options": [
+      "Bangladesh",
+      "Seychelles",
+      "Indonesia",
+      "Nepal"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_040"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Halwara, a major Indian Air Force station, is located in which state?",
+    "options": [
+      "Rajasthan",
+      "Punjab",
+      "Haryana",
+      "Gujarat"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_041"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "CAR-T cell therapy, a breakthrough by IIT Bombay researchers, is primarily used against which type of disease?",
+    "options": [
+      "Autoimmune disorders",
+      "Cancer",
+      "Viral infections",
+      "Neurodegenerative diseases"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_052"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Pradhan Mantri Kaushal Vikas Yojana (PMKVY) is implemented by which ministry?",
+    "options": [
+      "Ministry of Labour and Employment",
+      "Ministry of Skill Development and Entrepreneurship",
+      "Ministry of Human Resource Development",
+      "Ministry of Rural Development"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_028"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The 'Right to be Forgotten' is explicitly recognized under which major international regulation?",
+    "options": [
+      "US Digital Millennium Copyright Act",
+      "EU General Data Protection Regulation (GDPR)",
+      "UK Online Safety Act",
+      "Australia Privacy Act"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_053"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Vidarbha, which holds about 75% of Maharashtra's mineral resources, is a region in which part of the state?",
+    "options": [
+      "Western Maharashtra",
+      "Konkan coast",
+      "Eastern Maharashtra",
+      "Northern Maharashtra"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_054"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The SC/ST (Prevention of Atrocities) Act was originally enacted in which year?",
+    "options": [
+      "1985",
+      "1989",
+      "1993",
+      "1995"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_055"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Greece, which signed a defence cooperation declaration with India, is located in which part of Europe?",
+    "options": [
+      "Western Europe",
+      "Northern Europe",
+      "Southeastern Europe",
+      "Central Europe"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_042"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Rafah border crossing connects the Gaza Strip to which Egyptian region?",
+    "options": [
+      "Nile Delta",
+      "Sinai Peninsula",
+      "Western Desert",
+      "Upper Egypt"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_029"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The START (Strategic Arms Reduction Treaty) was historically signed between the United States and which other country?",
+    "options": [
+      "China",
+      "United Kingdom",
+      "Russia (Soviet Union)",
+      "France"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_056"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Gadchiroli, a district known for anti-Maoist operations, is in which Indian state?",
+    "options": [
+      "Chhattisgarh",
+      "Jharkhand",
+      "Maharashtra",
+      "Odisha"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_057"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Tulip cultivation in India, recently in the news for winter blooming breakthroughs, is associated with which Union Territory?",
+    "options": [
+      "Ladakh",
+      "Jammu and Kashmir",
+      "Puducherry",
+      "Andaman and Nicobar Islands"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_043"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The MUDRA loan scheme provides loans up to Rs 10 lakh under how many categories?",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_030"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Strait of Malacca, a key trade chokepoint, lies between Malaysia and which other country?",
+    "options": [
+      "Thailand",
+      "Vietnam",
+      "Indonesia",
+      "Philippines"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_058"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Supreme Court flagged 'punitive demolitions' of accused persons' properties as violating which fundamental right?",
+    "options": [
+      "Article 14 — Right to Equality",
+      "Article 19 — Right to Freedom",
+      "Article 21 — Right to Life and Personal Liberty",
+      "Article 300A — Right to Property"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_031"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Hong Kong's National Security Law was imposed by China in which year?",
+    "options": [
+      "2017",
+      "2019",
+      "2020",
+      "2022"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_032"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Section 80GGC of the Income Tax Act allows individual taxpayers deductions for contributions made to:",
+    "options": [
+      "Registered political parties",
+      "Electoral trusts only",
+      "Individual candidates only",
+      "Non-governmental organisations"
+    ],
+    "correct_index": 0,
+    "id": "ca_medium_059"
   }
 ]

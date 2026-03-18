@@ -86,17 +86,18 @@ Question IDs follow the pattern: `{prefix}_{difficulty}_{sequence}`
 
 ### Category Prefixes
 
-| Category       | Prefix  |
-|----------------|---------|
-| science        | `sci`   |
-| history        | `hist`  |
-| geography      | `geo`   |
-| sports         | `spt`   |
-| entertainment  | `ent`   |
-| general        | `gen`   |
-| mythology      | `myth`  |
-| food           | `food`  |
-| politics       | `pol`   |
+| Category         | Prefix  |
+|------------------|---------|
+| science          | `sci`   |
+| history          | `hist`  |
+| geography        | `geo`   |
+| sports           | `spt`   |
+| entertainment    | `ent`   |
+| general          | `gen`   |
+| mythology        | `myth`  |
+| food             | `food`  |
+| politics         | `pol`   |
+| current_affairs  | `ca`    |
 
 ### Difficulty Labels
 
@@ -134,6 +135,7 @@ Our target audience is primarily Indian players. Questions should be **engaging 
 - **Mythology**: Hindu, Buddhist, Jain, tribal mythologies of India. Epics (Ramayana, Mahabharata), Puranas, Vedic literature, folk traditions.
 - **Food**: Indian cuisine, regional specialities, spices, cooking techniques, food history, GI-tagged foods, street food, traditional preparations.
 - **Politics**: Indian constitution, parliamentary system, elections, landmark court cases, government schemes, political history.
+- **Current Affairs**: Derived from daily newspapers. Tests durable concepts (institutions, laws, geography, constitutional provisions) anchored to recent events. See [Generating from Newspapers](#generating-current-affairs-from-newspapers) below.
 
 ### Difficulty Levels
 
@@ -448,3 +450,117 @@ To add a new trivia category:
    - `frontend/src/ui/components/TriviaCategorySelector.jsx` — add to `CATEGORIES` array.
    - `frontend/src/ui/pages/AdminDashboardPage.jsx` — add to `CAT_ICONS` and `CATEGORIES`.
 7. **Deploy** both backend and frontend.
+
+---
+
+## Generating Current Affairs from Newspapers
+
+The `current_affairs` category uses daily newspaper PDFs as source material instead of web search. The workflow and quality bar differ from other categories.
+
+### Source Material
+
+Any major English daily works (Indian Express, The Hindu, Hindustan Times, etc.). The PDF should be the full edition — front page through sports.
+
+### Step 1: Read the Full Newspaper
+
+Scanned newspaper PDFs are image-based, so text extraction (`pdftotext`) produces garbled output. Convert pages to images instead:
+
+```bash
+# Install poppler if needed
+brew install poppler  # macOS
+# apt-get install poppler-utils  # Linux
+
+# Convert all pages to PNG (adjust page range to match the edition)
+pdftoppm -png -r 200 -f 1 -l 16 newspaper.pdf /tmp/news_page
+```
+
+Then read every page — front page, nation, parliament, economy, explained, editorial, world, and sports sections all contain question-worthy material.
+
+### Step 2: Filter for Question-Worthy Items
+
+Not every article makes a good question. Use this filter:
+
+| Good for MCQs | Skip |
+|---|---|
+| Supreme Court / High Court judgments | Daily casualty counts or death tolls |
+| New laws, bills, amendments | Transient political drama (suspensions, walkouts) |
+| International treaties, summits, organisations | Exact monetary figures (sale prices, stock indices) |
+| Government schemes, policies, regulatory bodies | Bypolls, candidate lists, party reshuffles |
+| Geographic/strategic concepts (straits, ports, borders) | Crime reports, FIRs, arrests |
+| Scientific discoveries, space missions | Celebrity news, entertainment gossip |
+| Reports by notable institutions (NITI Aayog, RBI, UN) | Opinion columns (unless they reference a testable fact) |
+| Constitutional provisions triggered by a news event | Weather, daily market movement |
+| Sports governing bodies, historic milestones | Match scores, player auction prices |
+
+**Rule of thumb:** If the question would become meaningless or trivially dated in 6 months, skip it.
+
+### Step 3: Use the News as a Springboard, Not the Answer
+
+This is the core quality principle. The newspaper headline provides the *context*, but the question should test a **durable concept, institution, or fact** connected to it.
+
+**Bad (ephemeral):**
+> "How many Opposition MPs were suspended from Lok Sabha on March 18, 2026?"
+
+**Good (durable, from the same headline):**
+> "The Speaker of Lok Sabha can suspend a member under which rule of the Rules of Procedure?"
+
+The pattern:
+1. Read the headline / article.
+2. Ask: *What institution, law, geography, or concept does this involve?*
+3. Frame the question around **that** concept, using the news as a brief setup line if needed.
+
+### Step 4: Classify Difficulty
+
+| Level | Criteria | Example |
+|-------|----------|---------|
+| Easy | Common knowledge most educated adults know | "The Strait of Hormuz connects the Persian Gulf to the Gulf of ___" |
+| Medium | Requires specific domain knowledge | "Piped natural gas distribution in India is regulated by which body?" |
+| Hard | Obscure detail, specific section/year/institutional structure | "The WTO moratorium on e-transmission customs duties was first introduced in which year?" |
+
+Aim for a split of roughly **35% easy, 40% medium, 25% hard** — current affairs questions tend to be harder by nature, so lean slightly more toward medium.
+
+### Step 5: Verification
+
+Unlike other categories where web search verification is mandatory, newspaper-sourced questions have a different verification path:
+
+1. **The newspaper itself is the primary source** — the fact was published by a reputable daily.
+2. **Conceptual facts still need verification** — if the question tests a constitutional article, governing body, or geographic fact, verify that the concept (not the news event) is correct.
+3. **Cross-check with a second source** where possible, especially for hard questions.
+
+### Step 6: Generate and Append
+
+Use the standard JSON format with `"category": "current_affairs"` and prefix `ca`:
+
+```json
+{
+  "id": "ca_easy_001",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The Archaeological Survey of India (ASI) functions under which Ministry?",
+  "options": ["Ministry of Home Affairs", "Ministry of Culture", "Ministry of Education", "Ministry of Tourism"],
+  "correct_index": 1
+}
+```
+
+Append to `gk_questions.json`. These questions will automatically appear in the `current_affairs` category and in the `general_knowledge` (all topics) pool.
+
+### Prompt Template for Newspaper-Based Generation
+
+```
+Read this newspaper PDF and generate 20 exam-quality MCQs (single correct answer)
+suitable for UPSC/SSC/State PCS preparation.
+
+Rules:
+1. Use news items as context, but test durable concepts — institutions, laws,
+   geography, constitutional provisions, governing bodies.
+2. Every question must remain valid and meaningful if asked 1 year later.
+3. No questions on death tolls, exact monetary figures, match scores,
+   or ephemeral political events.
+4. All 4 options must be plausible and from the same category.
+5. Cover a balanced spread: polity, economy, international relations,
+   science & tech, geography, society, sports/culture.
+6. Vary the position of the correct answer across questions.
+7. Classify each question as easy (1), medium (2), or hard (3).
+8. Output as JSON array matching the gk_questions.json schema.
+9. Use ID prefix "ca" and start sequence from {next_available_number}.
+```
