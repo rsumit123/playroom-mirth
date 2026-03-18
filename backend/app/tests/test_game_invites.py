@@ -158,3 +158,31 @@ def test_invite_dismissed_on_room_join(client):
     # Invite should be dismissed (status = accepted)
     notif = client.get("/notifications", headers=_auth(tok_b)).json()
     assert len(notif["game_invites"]) == 0
+
+
+def test_notification_count_updates_after_invite(client):
+    """Notifications total should increment immediately after an invite is sent."""
+    uid_a, tok_a = _create_user("notifup1a@x.com", "Alice")
+    uid_b, tok_b = _create_user("notifup1b@x.com", "Bob")
+    _make_friends(client, uid_a, tok_a, uid_b, tok_b)
+
+    # Bob has 0 notifications
+    notif = client.get("/notifications", headers=_auth(tok_b)).json()
+    assert notif["total"] == 0
+
+    # Alice creates room and invites Bob
+    room_code = _create_room(client, tok_a)
+    client.post(f"/rooms/{room_code}/invite", json={"user_id": uid_b}, headers=_auth(tok_a))
+
+    # Bob immediately has 1 notification (simulates what notifKey refresh does)
+    notif = client.get("/notifications", headers=_auth(tok_b)).json()
+    assert notif["total"] == 1
+    assert notif["game_invites"][0]["room_code"] == room_code
+
+    # Alice creates another room and invites Bob again
+    room_code2 = _create_room(client, tok_a)
+    client.post(f"/rooms/{room_code2}/invite", json={"user_id": uid_b}, headers=_auth(tok_a))
+
+    # Bob now has 2 notifications
+    notif = client.get("/notifications", headers=_auth(tok_b)).json()
+    assert notif["total"] == 2

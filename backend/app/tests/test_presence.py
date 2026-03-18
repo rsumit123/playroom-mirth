@@ -90,6 +90,37 @@ async def test_presence_multi_tab_cleanup():
 
 
 @pytest.mark.asyncio
+async def test_presence_re_registration_after_disconnect():
+    """After disconnect + new connect, presence:connect re-registers the user."""
+    USER_ONLINE.clear()
+    SID_TO_USER.clear()
+
+    uid, token = _create_user("presreg1@x.com", "ReRegAlice")
+
+    # First connection
+    sid1 = await sio.manager.connect("eio-presreg1a", "/")
+    await sio._trigger_event("presence:connect", "/", sid1, {"token": token})
+    assert uid in USER_ONLINE
+
+    # Simulate disconnect (socket reset)
+    user_id = SID_TO_USER.pop(sid1, None)
+    if user_id and user_id in USER_ONLINE:
+        USER_ONLINE[user_id].discard(sid1)
+        if not USER_ONLINE[user_id]:
+            del USER_ONLINE[user_id]
+    assert uid not in USER_ONLINE  # now offline
+
+    # New connection (simulates socketGen bump → useEffect re-runs → new connectSocket)
+    sid2 = await sio.manager.connect("eio-presreg1b", "/")
+    await sio._trigger_event("presence:connect", "/", sid2, {"token": token})
+
+    # User should be online again with new SID
+    assert uid in USER_ONLINE
+    assert sid2 in USER_ONLINE[uid]
+    assert sid1 not in USER_ONLINE[uid]
+
+
+@pytest.mark.asyncio
 async def test_presence_invalid_token_ignored():
     """presence:connect with invalid token is silently ignored."""
     sid = await sio.manager.connect("eio-pres4", "/")
