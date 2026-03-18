@@ -6,9 +6,10 @@ import DifficultySelector from '../components/DifficultySelector.jsx'
 import TriviaCategorySelector from '../components/TriviaCategorySelector.jsx'
 import RangeSlider from '../components/RangeSlider.jsx'
 import RoomScoreboard from '../components/RoomScoreboard.jsx'
+import InviteFriendsDrawer from '../components/InviteFriendsDrawer.jsx'
 import * as api from '../../lib/api.js'
 
-export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPlayerId, loadingSave }) {
+export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, onInviteFriend, selfPlayerId, loadingSave, isSignedIn = false, friends = [] }) {
   const code = lobby?.room?.code || '------'
   const players = lobby?.players || []
   const roomMeta = lobby?.room
@@ -24,6 +25,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
   })
   const [copied, setCopied] = useState(false)
   const [scoreboard, setScoreboard] = useState(null)
+  const [showInvite, setShowInvite] = useState(false)
   const prevPlayerCountRef = useRef(players.length)
 
   // Sync settings from server when lobby updates (so non-hosts see host changes)
@@ -95,6 +97,14 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
               Leave
             </button>
           </div>
+          {isSignedIn && (
+            <button
+              className="btn-primary px-4 py-2 text-sm touch-target mt-2"
+              onClick={() => setShowInvite(true)}
+            >
+              Invite Friends
+            </button>
+          )}
         </div>
 
         {/* Game in progress alert */}
@@ -222,6 +232,12 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, selfPla
           </div>
         )}
       </div>
+      <InviteFriendsDrawer
+        open={showInvite}
+        friends={friends}
+        onInvite={onInviteFriend}
+        onClose={() => setShowInvite(false)}
+      />
     </div>
   )
 }
