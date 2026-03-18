@@ -303,9 +303,13 @@ export function AppProvider({ children }) {
         ? { room_code: roomCode, token: auth.token }
         : { room_code: roomCode, guest_token: auth.guestToken }
       // Re-register on every (re)connection so the socket stays in the room
-      socket.on('connect', () => socket.emit('room:register', data))
+      socket.on('connect', () => {
+        socket.emit('room:register', data)
+        if (auth.token) socket.emit('presence:connect', { token: auth.token })
+      })
       if (socket.connected) {
         socket.emit('room:register', data)
+        if (auth.token) socket.emit('presence:connect', { token: auth.token })
       }
     }
   }
@@ -411,6 +415,7 @@ export function AppProvider({ children }) {
           : { room_code: room.code, guest_token: auth.guestToken }
         socket.emit('room:register', regData)
       }
+      if (auth.token) socket.emit('presence:connect', { token: auth.token })
     })
   }
 

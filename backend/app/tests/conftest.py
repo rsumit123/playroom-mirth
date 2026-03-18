@@ -45,13 +45,15 @@ def clear_users():
 
 @pytest.fixture(autouse=True)
 async def reset_game_state():
-    from app.services.game_state import ROOM_STATES, SID_TO_PLAYER, PLAYER_TO_SID, cancel_all_timers
-    from app.sockets.events import PLAY_AGAIN_VOTES
+    from app.services.game_state import ROOM_STATES, SID_TO_PLAYER, PLAYER_TO_SID, USER_ONLINE, cancel_all_timers
+    from app.sockets.events import PLAY_AGAIN_VOTES, SID_TO_USER
     from app.api.rooms import PLAY_AGAIN_REST
 
     ROOM_STATES.clear()
     SID_TO_PLAYER.clear()
     PLAYER_TO_SID.clear()
+    USER_ONLINE.clear()
+    SID_TO_USER.clear()
     PLAY_AGAIN_VOTES.clear()
     PLAY_AGAIN_REST.clear()
     yield
@@ -59,6 +61,8 @@ async def reset_game_state():
     ROOM_STATES.clear()
     SID_TO_PLAYER.clear()
     PLAYER_TO_SID.clear()
+    USER_ONLINE.clear()
+    SID_TO_USER.clear()
     PLAY_AGAIN_VOTES.clear()
     PLAY_AGAIN_REST.clear()
 

@@ -42,6 +42,9 @@ PLAYER_TO_SID: Dict[int, str] = {}
 PLAYER_TO_ROOM: Dict[int, str] = {}
 PLAYER_GRACE_TASKS: Dict[int, asyncio.Task] = {}
 
+# Presence tracking: user_id -> set of socket SIDs (multi-tab support)
+USER_ONLINE: Dict[int, set] = {}
+
 
 def start_turn(state: RoomGameState) -> None:
     state.turn_start_ts = time.time()

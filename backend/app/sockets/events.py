@@ -23,6 +23,7 @@ from app.services.game_state import (
     PLAYER_TO_SID,
     PLAYER_TO_ROOM,
     PLAYER_GRACE_TASKS,
+    USER_ONLINE,
     RoomGameState,
     start_turn,
     serialize_state,
@@ -344,11 +345,39 @@ async def disconnect(sid):
     SID_TO_PLAYER.pop(sid, None)
     if player_id:
         PLAYER_TO_SID.pop(player_id, None)
+    # Clean up presence tracking
+    user_id = SID_TO_USER.pop(sid, None)
+    if user_id and user_id in USER_ONLINE:
+        USER_ONLINE[user_id].discard(sid)
+        if not USER_ONLINE[user_id]:
+            del USER_ONLINE[user_id]
 
 
 @sio.event
 async def ping(sid, data):
     await sio.emit("pong", {"ok": True}, to=sid)
+
+
+# ── Presence tracking ─────────────────────────────────────────────────
+# Maps socket SID -> user_id for online status.
+# A user is "online" if they have any SID in USER_ONLINE[user_id].
+SID_TO_USER: dict[str, int] = {}
+
+
+@sio.on("presence:connect")
+async def presence_connect(sid, data):
+    """Register a signed-in user for online presence tracking."""
+    token = data.get("token")
+    if not token:
+        return
+    with SessionLocal() as db:
+        user = get_user_from_token(db, token)
+        if not user:
+            return
+    SID_TO_USER[sid] = user.id
+    if user.id not in USER_ONLINE:
+        USER_ONLINE[user.id] = set()
+    USER_ONLINE[user.id].add(sid)
 
 
 @sio.on("room:register")

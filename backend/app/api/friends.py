@@ -5,6 +5,7 @@ from sqlalchemy import or_, and_
 from app.api.deps import get_db, get_current_user
 from app.models.user import User
 from app.models.friendship import Friendship
+from app.services.game_state import USER_ONLINE
 
 router = APIRouter(tags=["friends"])
 
@@ -68,7 +69,7 @@ def list_friends(
                 "id": friend_user.id,
                 "display_name": friend_user.display_name,
                 "avatar_url": friend_user.avatar_url,
-                "is_online": False,  # Phase 3 will add presence tracking
+                "is_online": bool(USER_ONLINE.get(friend_user.id)),
             })
     return {"friends": friends}
 

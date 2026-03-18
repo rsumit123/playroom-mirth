@@ -167,10 +167,13 @@ export default function FriendsPage() {
               ) : (
                 friends.map(f => (
                   <div key={f.id} className="card px-4 py-3 flex items-center gap-3">
-                    <PlayerAvatar name={f.display_name || 'User'} size="md" />
+                    <div className="relative">
+                      <PlayerAvatar name={f.display_name || 'User'} size="md" />
+                      {f.is_online && <div className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-correct border-2 border-white" />}
+                    </div>
                     <div className="flex-1 min-w-0">
                       <div className="font-medium text-sm truncate">{f.display_name}</div>
-                      <div className="text-xs text-slate/40">{f.is_online ? 'Online' : 'Offline'}</div>
+                      <div className={`text-xs ${f.is_online ? 'text-correct' : 'text-slate/40'}`}>{f.is_online ? 'Online' : 'Offline'}</div>
                     </div>
                     <button
                       className="btn-ghost-sm touch-target text-danger/60 text-xs"
