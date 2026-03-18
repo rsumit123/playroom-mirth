@@ -55,7 +55,17 @@ def join_room(
 
     if not user and not guest:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication required")
-    return join_room_op(db, room, user.id if user else None, guest)
+    result = join_room_op(db, room, user.id if user else None, guest)
+    # Dismiss any pending game invites for this user + room
+    if user:
+        from app.models.game_invite import GameInvite
+        db.query(GameInvite).filter(
+            GameInvite.receiver_id == user.id,
+            GameInvite.room_code == payload.room_code,
+            GameInvite.status == "pending",
+        ).update({"status": "accepted"})
+        db.commit()
+    return result
 
 
 @router.get("/active", response_model=List[dict])

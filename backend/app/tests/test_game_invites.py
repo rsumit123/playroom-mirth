@@ -138,3 +138,23 @@ def test_notifications_combined(client):
 def test_notifications_requires_auth(client):
     res = client.get("/notifications")
     assert res.status_code == 401
+
+
+def test_invite_dismissed_on_room_join(client):
+    uid_a, tok_a = _create_user("dismiss1a@x.com", "Alice")
+    uid_b, tok_b = _create_user("dismiss1b@x.com", "Bob")
+    _make_friends(client, uid_a, tok_a, uid_b, tok_b)
+
+    room_code = _create_room(client, tok_a)
+    client.post(f"/rooms/{room_code}/invite", json={"user_id": uid_b}, headers=_auth(tok_a))
+
+    # Bob has 1 pending invite
+    notif = client.get("/notifications", headers=_auth(tok_b)).json()
+    assert len(notif["game_invites"]) == 1
+
+    # Bob joins the room
+    client.post("/rooms/join", json={"room_code": room_code}, headers=_auth(tok_b))
+
+    # Invite should be dismissed (status = accepted)
+    notif = client.get("/notifications", headers=_auth(tok_b)).json()
+    assert len(notif["game_invites"]) == 0

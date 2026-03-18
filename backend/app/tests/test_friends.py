@@ -164,3 +164,14 @@ def test_accept_nonexistent_request(client):
 
     res = client.post(f"/friends/{uid_a}/accept", headers=_auth(tok_b))
     assert res.status_code == 404
+
+
+def test_user_search_by_email(client):
+    uid_a, tok_a = _create_user("alice@x.com", "Alice")
+    uid_b, tok_b = _create_user("bob@x.com", "Bob")
+
+    res = client.get("/users/search?q=bob@x.com", headers=_auth(tok_a))
+    assert res.status_code == 200
+    ids = [u["id"] for u in res.json()["users"]]
+    assert uid_b in ids
+    assert uid_a not in ids
