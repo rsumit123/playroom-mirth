@@ -105,9 +105,12 @@ describe('UI screens', () => {
     expect(screen.getByText('TestGuest')).toBeInTheDocument()
   })
 
-  it('renders top bar authed state with display name', () => {
+  it('renders top bar authed state with display name', async () => {
     render(<TopBar isAuthed userDisplayName="John" userEmail="me@example.com" onLogout={() => {}} />)
-    expect(screen.getByText('Logout')).toBeInTheDocument()
+    // Name visible on desktop via avatar button
     expect(screen.getByText('John')).toBeInTheDocument()
+    // Click avatar to open dropdown menu
+    fireEvent.click(screen.getByText('John'))
+    expect(screen.getByText('Logout')).toBeInTheDocument()
   })
 })
