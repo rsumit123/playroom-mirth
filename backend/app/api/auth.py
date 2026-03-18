@@ -5,6 +5,7 @@ from app.api.deps import get_db
 from app.models.user import User
 from app.schemas.auth import GoogleAuthRequest, GoogleAuthResponse, GoogleUserInfo
 from app.services.auth import create_access_token, verify_google_token
+from app.core.config import JWT_SECRET_KEY
 
 router = APIRouter(tags=["auth"])
 
@@ -61,3 +62,26 @@ def google_login(payload: GoogleAuthRequest, db: Session = Depends(get_db)):
             avatar_url=user.avatar_url,
         ),
     )
+
+
+@router.post("/auth/test-user")
+def create_test_user(payload: dict, db: Session = Depends(get_db)):
+    """Create a test user and return a JWT. Only works in dev mode (default secret key)."""
+    if JWT_SECRET_KEY != "dev-secret-change":
+        raise HTTPException(status_code=404, detail="Not found")
+
+    display_name = payload.get("display_name", "TestUser")
+    email = payload.get("email", f"{display_name.lower().replace(' ', '')}@test.playroom")
+
+    user = db.query(User).filter(User.email == email).first()
+    if not user:
+        user = User(email=email, google_id=f"test-{email}", display_name=display_name, password_hash="")
+        db.add(user)
+        db.commit()
+        db.refresh(user)
+
+    token = create_access_token(subject=str(user.id))
+    return {
+        "access_token": token,
+        "user": {"id": user.id, "email": user.email, "display_name": user.display_name, "avatar_url": user.avatar_url},
+    }
