@@ -149,7 +149,7 @@ def search_users(
     user: User = Depends(get_current_user),
 ):
     results = db.query(User).filter(
-        User.display_name.ilike(f"%{q}%"),
+        or_(User.display_name.ilike(f"%{q}%"), User.email.ilike(f"%{q}%")),
         User.id != user.id,
         User.google_id.isnot(None),
     ).limit(20).all()

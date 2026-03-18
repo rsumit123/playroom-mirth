@@ -42,6 +42,11 @@ export default function FriendsPage() {
     fetchData()
   }, [token, fetchData])
 
+  // Auto-refresh when switching tabs (friends/requests)
+  useEffect(() => {
+    if (tab === 'friends' || tab === 'requests') fetchData()
+  }, [tab])
+
   async function handleSearch() {
     if (!searchQuery.trim() || !token) return
     setSearching(true)
@@ -116,14 +121,23 @@ export default function FriendsPage() {
               <button className="btn-ghost-sm touch-target mb-2" onClick={() => navigate('/home')}>&larr; Back</button>
               <h1 className="font-display text-2xl">Friends</h1>
             </div>
-            {requests.length > 0 && tab !== 'requests' && (
+            <div className="flex items-center gap-2">
+              {requests.length > 0 && tab !== 'requests' && (
+                <button
+                  className="badge bg-danger/10 text-danger text-xs font-semibold px-2.5 py-1 cursor-pointer"
+                  onClick={() => setTab('requests')}
+                >
+                  {requests.length} pending
+                </button>
+              )}
               <button
-                className="badge bg-danger/10 text-danger text-xs font-semibold px-2.5 py-1 cursor-pointer"
-                onClick={() => setTab('requests')}
+                className="btn-ghost-sm touch-target w-9 h-9 flex items-center justify-center text-base"
+                onClick={() => { setLoading(true); fetchData() }}
+                title="Refresh"
               >
-                {requests.length} pending
+                &#8635;
               </button>
-            )}
+            </div>
           </div>
 
           {/* Tabs */}

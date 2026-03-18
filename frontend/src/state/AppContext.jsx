@@ -65,6 +65,16 @@ export function AppProvider({ children }) {
     restoreRoom()
   }, [])
 
+  // Connect socket and register presence when signed in
+  useEffect(() => {
+    if (!auth.token) return
+    const socket = connectSocket()
+    const emitPresence = () => socket.emit('presence:connect', { token: auth.token })
+    socket.on('connect', emitPresence)
+    if (socket.connected) emitPresence()
+    return () => socket.off('connect', emitPresence)
+  }, [auth.token])
+
   const startLoading = (key) =>
     setUi((u) => ({
       ...u,
