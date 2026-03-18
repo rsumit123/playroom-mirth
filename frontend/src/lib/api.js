@@ -234,3 +234,17 @@ export function searchUsers(token, query) {
     headers: { Authorization: `Bearer ${token}` }
   })
 }
+
+export function inviteFriendToRoom(token, roomCode, userId) {
+  return request(`/rooms/${roomCode}/invite`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}` },
+    body: JSON.stringify({ user_id: userId })
+  })
+}
+
+export function getNotifications(token) {
+  return request('/notifications', {
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}

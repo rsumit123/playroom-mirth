@@ -20,6 +20,7 @@ from app.models.room_player import RoomPlayer
 from app.models.room_state import RoomState
 from app.models.word import Word
 from app.models.friendship import Friendship
+from app.models.game_invite import GameInvite
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -36,6 +37,7 @@ def clear_users():
         db.query(Room).delete()
         db.query(Guest).delete()
         db.query(Word).delete()
+        db.query(GameInvite).delete()
         db.query(Friendship).delete()
         db.query(User).delete()
         db.commit()
