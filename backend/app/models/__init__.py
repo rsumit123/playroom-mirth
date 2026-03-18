@@ -5,6 +5,7 @@ from app.models.room_player import RoomPlayer
 from app.models.word import Word
 from app.models.room_state import RoomState
 from app.models.game_history import GameHistory
+from app.models.friendship import Friendship
 
 __all__ = [
     "User",
@@ -14,4 +15,5 @@ __all__ = [
     "Word",
     "RoomState",
     "GameHistory",
+    "Friendship",
 ]
