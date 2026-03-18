@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave, activeRooms = [], gameHistory = [], isSignedIn = false }) {
+export default function Home({ onSelectGame, onRejoin, onLeaveRoom, onFriends, loadingLeave, activeRooms = [], gameHistory = [], isSignedIn = false }) {
   const [showHistory, setShowHistory] = useState(false)
 
   return (
@@ -51,6 +51,21 @@ export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave
               ))}
             </div>
           </div>
+        )}
+
+        {/* Friends shortcut -- signed-in users only */}
+        {isSignedIn && (
+          <button
+            className="card px-5 py-4 flex items-center gap-3 w-full text-left hover:shadow-hover transition"
+            onClick={onFriends}
+          >
+            <div className="h-10 w-10 rounded-xl bg-accent/10 flex items-center justify-center text-xl shrink-0">&#128101;</div>
+            <div className="flex-1 min-w-0">
+              <div className="font-semibold text-sm">Friends</div>
+              <div className="text-xs text-slate/50">Add friends, manage requests</div>
+            </div>
+            <span className="text-slate/30 text-lg">&rsaquo;</span>
+          </button>
         )}
 
         {/* Game Selector */}

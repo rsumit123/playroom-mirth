@@ -197,3 +197,40 @@ export function playAgainVote(token, guestToken, roomCode) {
 export function playAgainStatus(roomCode) {
   return request(`/rooms/${roomCode}/play-again`)
 }
+
+// Friends API
+export function getFriends(token) {
+  return request('/friends', { headers: { Authorization: `Bearer ${token}` } })
+}
+
+export function getFriendRequests(token) {
+  return request('/friends/requests', { headers: { Authorization: `Bearer ${token}` } })
+}
+
+export function sendFriendRequest(token, userId) {
+  return request('/friends/request', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}` },
+    body: JSON.stringify({ user_id: userId })
+  })
+}
+
+export function acceptFriendRequest(token, userId) {
+  return request(`/friends/${userId}/accept`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
+
+export function rejectFriend(token, userId) {
+  return request(`/friends/${userId}/reject`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
+
+export function searchUsers(token, query) {
+  return request(`/users/search?q=${encodeURIComponent(query)}`, {
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}

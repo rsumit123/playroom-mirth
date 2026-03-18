@@ -19,6 +19,7 @@ import AdminWordsPage from './pages/AdminWordsPage.jsx'
 import AdminDashboardPage from './pages/AdminDashboardPage.jsx'
 import JoinPage from './pages/JoinPage.jsx'
 import PrivacyPage from './pages/PrivacyPage.jsx'
+import FriendsPage from './pages/FriendsPage.jsx'
 import TopBar from './components/TopBar.jsx'
 import Toast from './components/Toast.jsx'
 import LoadingOverlay from './components/LoadingOverlay.jsx'
@@ -73,7 +74,7 @@ function AppShell() {
     }
   }, [isAuthed])
 
-  const showTopBar = path === '/home' || path === '/lobby' || path.startsWith('/play/')
+  const showTopBar = path === '/home' || path === '/lobby' || path === '/friends' || path.startsWith('/play/')
 
   return (
     <>
@@ -107,6 +108,7 @@ function AppShell() {
         <Route path="/game-end" element={<GameEndPage />} />
         <Route path="/how-to" element={<HowToPage />} />
         <Route path="/join/:roomCode" element={<JoinPage />} />
+        <Route path="/friends" element={<FriendsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/admin" element={<AdminDashboardPage />} />
         <Route path="/admin/words" element={<AdminWordsPage />} />
