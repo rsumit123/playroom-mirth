@@ -19,6 +19,8 @@ export function AppProvider({ children }) {
   const [selfPlayerId, setSelfPlayerId] = useState(null)
   const [game, setGame] = useState({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
   const [roomRestoreStatus, setRoomRestoreStatus] = useState('pending') // 'pending' | 'done'
+  const [socketGen, setSocketGen] = useState(0) // increments on socket reset to re-trigger presence
+  const [notifKey, setNotifKey] = useState(0) // increments when a notification-worthy event arrives
   const [activeRooms, setActiveRooms] = useState([])
   const [gameHistory, setGameHistory] = useState([])
   const [ui, setUi] = useState({ loading: 0, toast: null, loadingKeys: {} })
@@ -65,7 +67,7 @@ export function AppProvider({ children }) {
     restoreRoom()
   }, [])
 
-  // Connect socket and register presence when signed in
+  // Connect socket and register presence when signed in (re-runs after socket reset)
   useEffect(() => {
     if (!auth.token) return
     const socket = connectSocket()
@@ -73,7 +75,7 @@ export function AppProvider({ children }) {
     socket.on('connect', emitPresence)
     if (socket.connected) emitPresence()
     return () => socket.off('connect', emitPresence)
-  }, [auth.token])
+  }, [auth.token, socketGen])
 
   const startLoading = (key) =>
     setUi((u) => ({
@@ -106,6 +108,7 @@ export function AppProvider({ children }) {
     setGame({ messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null })
     sessionStorage.removeItem('charade_room')
     resetSocket()
+    setSocketGen(g => g + 1) // re-trigger presence registration
   }
 
   function logout() {
@@ -390,6 +393,7 @@ export function AppProvider({ children }) {
     socket.on('game:invite', (payload) => {
       const name = payload?.from_user?.display_name || 'A friend'
       showToast(`${name} invited you to play!`)
+      setNotifKey(k => k + 1) // trigger notification refresh in App.jsx
     })
     socket.off('game:play_again_update')
     socket.off('game:play_again_ready')
@@ -577,8 +581,9 @@ export function AppProvider({ children }) {
     gameHistory,
     fetchGameHistory,
     clearToast,
-    leaveRoom
-  }), [auth, room, lobby, game, ui, roomRestoreStatus, selfPlayerId, activeRooms, gameHistory])
+    leaveRoom,
+    notifKey,
+  }), [auth, room, lobby, game, ui, roomRestoreStatus, selfPlayerId, activeRooms, gameHistory, notifKey])
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }

@@ -43,7 +43,7 @@ export default function App() {
 function AppShell() {
   const navigate = useNavigate()
   const location = useLocation()
-  const { auth, logout, ui, clearToast, fetchActiveRooms, joinRoom, bindLobbyEvents } = useApp()
+  const { auth, logout, ui, clearToast, fetchActiveRooms, joinRoom, bindLobbyEvents, notifKey } = useApp()
   const [notifications, setNotifications] = useState({ friend_requests_list: [], game_invites: [], total: 0 })
   const [showNotifications, setShowNotifications] = useState(false)
 
@@ -72,7 +72,7 @@ function AppShell() {
     fetchNotifications()
     const interval = setInterval(fetchNotifications, 30000)
     return () => clearInterval(interval)
-  }, [auth?.token, fetchNotifications])
+  }, [auth?.token, fetchNotifications, notifKey])
 
   // Android: configure status bar and back button
   useEffect(() => {
