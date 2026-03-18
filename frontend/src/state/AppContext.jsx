@@ -376,6 +376,11 @@ export function AppProvider({ children }) {
     socket.on('scribble:stroke_replay', (payload) => {
       setGame((g) => ({ ...g, scribbleStrokes: payload.strokes || [], scribbleReplayGen: (g.scribbleReplayGen || 0) + 1 }))
     })
+    socket.off('game:invite')
+    socket.on('game:invite', (payload) => {
+      const name = payload?.from_user?.display_name || 'A friend'
+      showToast(`${name} invited you to play!`)
+    })
     socket.off('game:play_again_update')
     socket.off('game:play_again_ready')
     socket.off('game:play_again_expired')

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Logo from './Logo.jsx'
 import { toggleMute, isMuted } from '../../lib/sounds.js'
 
-export default function TopBar({ userEmail, userDisplayName, userAvatarUrl, isAuthed, isGuest, guestDisplayName, onLogout, onHome, onHowTo }) {
+export default function TopBar({ userEmail, userDisplayName, userAvatarUrl, isAuthed, isGuest, guestDisplayName, onLogout, onHome, onHowTo, notificationCount = 0, onNotifications }) {
   const displayLabel = userDisplayName || userEmail || 'Signed in'
   const [muted, setMuted] = useState(isMuted())
 
@@ -34,6 +34,21 @@ export default function TopBar({ userEmail, userDisplayName, userAvatarUrl, isAu
               title="How to play"
             >
               &#128214;
+            </button>
+          )}
+
+          {isAuthed && onNotifications && (
+            <button
+              className="btn-ghost-sm touch-target w-9 h-9 flex items-center justify-center text-base relative"
+              onClick={onNotifications}
+              title="Notifications"
+            >
+              &#128276;
+              {notificationCount > 0 && (
+                <span className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] rounded-full bg-danger text-white text-[10px] font-bold flex items-center justify-center px-1">
+                  {notificationCount > 9 ? '9+' : notificationCount}
+                </span>
+              )}
             </button>
           )}
 

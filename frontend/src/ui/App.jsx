@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom'
 import { Capacitor } from '@capacitor/core'
 import { App as CapApp } from '@capacitor/app'
@@ -21,6 +21,8 @@ import JoinPage from './pages/JoinPage.jsx'
 import PrivacyPage from './pages/PrivacyPage.jsx'
 import FriendsPage from './pages/FriendsPage.jsx'
 import TopBar from './components/TopBar.jsx'
+import NotificationDrawer from './components/NotificationDrawer.jsx'
+import * as api from '../lib/api.js'
 import Toast from './components/Toast.jsx'
 import LoadingOverlay from './components/LoadingOverlay.jsx'
 
@@ -41,12 +43,36 @@ export default function App() {
 function AppShell() {
   const navigate = useNavigate()
   const location = useLocation()
-  const { auth, logout, ui, clearToast, fetchActiveRooms } = useApp()
+  const { auth, logout, ui, clearToast, fetchActiveRooms, joinRoom, bindLobbyEvents } = useApp()
+  const [notifications, setNotifications] = useState({ friend_requests_list: [], game_invites: [], total: 0 })
+  const [showNotifications, setShowNotifications] = useState(false)
 
   // Validate JWT on mount — if expired, fetchActiveRooms will get 401 → logout
   useEffect(() => {
     if (auth?.token) fetchActiveRooms()
   }, [])
+
+  // Poll notifications every 30s for signed-in users
+  const fetchNotifications = useCallback(async () => {
+    if (!auth?.token) return
+    try {
+      const data = await api.getNotifications(auth.token)
+      // Also fetch friend request details for the drawer
+      const reqData = await api.getFriendRequests(auth.token)
+      setNotifications({
+        friend_requests_list: reqData.requests || [],
+        game_invites: data.game_invites || [],
+        total: data.total || 0,
+      })
+    } catch { /* */ }
+  }, [auth?.token])
+
+  useEffect(() => {
+    if (!auth?.token) return
+    fetchNotifications()
+    const interval = setInterval(fetchNotifications, 30000)
+    return () => clearInterval(interval)
+  }, [auth?.token, fetchNotifications])
 
   // Android: configure status bar and back button
   useEffect(() => {
@@ -88,6 +114,8 @@ function AppShell() {
           isAuthed={Boolean(auth?.token)}
           isGuest={Boolean(auth?.guestToken && !auth?.token)}
           guestDisplayName={auth?.guestDisplayName}
+          notificationCount={notifications.total}
+          onNotifications={() => { fetchNotifications(); setShowNotifications(true) }}
           onLogout={() => {
             logout()
             navigate('/')
@@ -96,6 +124,31 @@ function AppShell() {
           onHowTo={() => navigate('/how-to')}
         />
       )}
+      <NotificationDrawer
+        open={showNotifications}
+        notifications={notifications}
+        onAcceptFriend={async (userId) => {
+          try {
+            await api.acceptFriendRequest(auth.token, userId)
+            await fetchNotifications()
+          } catch { /* */ }
+        }}
+        onRejectFriend={async (userId) => {
+          try {
+            await api.rejectFriend(auth.token, userId)
+            await fetchNotifications()
+          } catch { /* */ }
+        }}
+        onJoinRoom={async (roomCode) => {
+          setShowNotifications(false)
+          try {
+            await joinRoom(roomCode)
+            bindLobbyEvents(roomCode)
+            navigate('/lobby', { state: { fromJoin: true } })
+          } catch { /* */ }
+        }}
+        onClose={() => setShowNotifications(false)}
+      />
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/home" element={<HomePage />} />
