@@ -13,7 +13,6 @@ export default function Game({ game, onSend, onRejoin, onLeave, playerNames = {}
   const [confettiKey, setConfettiKey] = useState(0)
   const [remaining, setRemaining] = useState(null)
   const [showScoreboard, setShowScoreboard] = useState(false)
-  const [viewport, setViewport] = useState(null)
   const { alerts, addAlert, removeAlert } = useGameAlerts()
   const turn = game?.turn
   const describerId = turn?.describer_id
@@ -24,22 +23,15 @@ export default function Game({ game, onSend, onRejoin, onLeave, playerNames = {}
   const prevWordRef = useRef(null)
   const timedUpRef = useRef(false)
   const tickPlayedRef = useRef(false)
+  const prevRoleRef = useRef(role)
 
-  // Track visual viewport height + offset to handle mobile keyboard
+  // Clear message input when role changes (prevents stale text from previous turn)
   useEffect(() => {
-    const vv = window.visualViewport
-    if (!vv) return
-    const onResize = () => {
-      setViewport({ height: vv.height, offsetTop: vv.offsetTop })
+    if (role !== prevRoleRef.current) {
+      setMessage('')
+      prevRoleRef.current = role
     }
-    vv.addEventListener('resize', onResize)
-    vv.addEventListener('scroll', onResize)
-    onResize()
-    return () => {
-      vv.removeEventListener('resize', onResize)
-      vv.removeEventListener('scroll', onResize)
-    }
-  }, [])
+  }, [role])
 
   useEffect(() => {
     if (lastGuess) {
@@ -126,12 +118,15 @@ export default function Game({ game, onSend, onRejoin, onLeave, playerNames = {}
     }
   }
 
-  const shellStyle = viewport
-    ? { position: 'fixed', top: `calc(env(safe-area-inset-top, 0px) + ${viewport.offsetTop}px)`, left: 0, right: 0, height: `calc(${viewport.height}px - env(safe-area-inset-top, 0px) - ${viewport.offsetTop}px)` }
-    : { height: '100dvh' }
+  // Scroll input into view when keyboard opens on mobile
+  function handleInputFocus() {
+    setTimeout(() => {
+      inputRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+    }, 300)
+  }
 
   return (
-    <div className="flex flex-col overflow-hidden relative" style={shellStyle}>
+    <div className="game-shell">
       <ConfettiBurst trigger={confettiKey} />
 
       {/* Reconnecting bar */}
@@ -231,6 +226,7 @@ export default function Game({ game, onSend, onRejoin, onLeave, playerNames = {}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   onKeyDown={handleKeyDown}
+                  onFocus={handleInputFocus}
                 />
                 <button
                   className="bg-accent text-white rounded-xl px-4 py-2.5 text-sm font-semibold touch-target shrink-0 transition active:scale-95"
