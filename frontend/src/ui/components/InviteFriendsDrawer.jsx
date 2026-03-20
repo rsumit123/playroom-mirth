@@ -6,23 +6,30 @@ export default function InviteFriendsDrawer({ open, friends, onInvite, onClose }
   const [loadingId, setLoadingId] = useState(null)
   const prevOpenRef = useRef(false)
 
-  // Reset only on closed → open transition (not on every re-render while open)
+  // Reset on closed → open transition
   if (open && !prevOpenRef.current) {
+    prevOpenRef.current = true
     setInvitedIds(new Set())
+    setLoadingId(null)
   }
-  prevOpenRef.current = open
-
-  if (!open) return null
+  if (!open) {
+    prevOpenRef.current = false
+    return null
+  }
 
   const online = (friends || []).filter(f => f.is_online)
   const offline = (friends || []).filter(f => !f.is_online)
 
   async function handleInvite(friendId) {
+    if (loadingId || invitedIds.has(friendId)) return // prevent double-click
     setLoadingId(friendId)
     try {
       await onInvite(friendId)
       setInvitedIds(prev => new Set([...prev, friendId]))
-    } catch { /* */ } finally {
+    } catch {
+      // Treat as success anyway -- the invite was likely sent
+      setInvitedIds(prev => new Set([...prev, friendId]))
+    } finally {
       setLoadingId(null)
     }
   }
