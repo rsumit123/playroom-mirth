@@ -14,7 +14,7 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
   const [tab, setTab] = useState('create')
   const [rounds, setRounds] = useState(3)
   const [timer, setTimer] = useState(120)
-  const [difficulty, setDifficulty] = useState(gameType === 'trivia' ? 1 : 0)
+  const [difficulty, setDifficulty] = useState(0)
   const [triviaCategory, setTriviaCategory] = useState('general_knowledge')
   const [maxPlayers, setMaxPlayers] = useState(20)
   const [roomCode, setRoomCode] = useState('')
@@ -63,7 +63,7 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
 
             <div className="space-y-2">
               <span className="text-xs text-slate/60 font-medium">Difficulty</span>
-              <DifficultySelector value={difficulty} onChange={setDifficulty} hideMixed={gameType === 'trivia'} />
+              <DifficultySelector value={difficulty} onChange={setDifficulty} />
             </div>
 
             <RangeSlider label="Max Players" value={maxPlayers} min={2} max={20} onChange={setMaxPlayers} />
