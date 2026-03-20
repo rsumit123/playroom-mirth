@@ -1,0 +1,2466 @@
+[
+  {
+    "id": "myth_easy_061",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which Kerala festival celebrates the homecoming of the mythical King Mahabali?",
+    "options": ["Vishu", "Onam", "Thrissur Pooram", "Theyyam"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_062",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the founder of Buddhism?",
+    "options": ["Mahavira", "Ashoka", "Gautama Buddha", "Nagarjuna"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_063",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the founder of Jainism in its current cycle according to Jain tradition?",
+    "options": ["Rishabhadeva", "Parshvanatha", "Mahavira", "Neminatha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_064",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the holy river that Lord Vishnu is said to have measured with his foot, causing it to flow to earth?",
+    "options": ["Ganga", "Yamuna", "Saraswati", "Kaveri"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_easy_065",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god is the son of Shiva and is worshipped as the god of war in South India?",
+    "options": ["Ganesha", "Murugan (Kartikeya)", "Ayyappan", "Hanuman"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_066",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In the Panchatantra, what kind of stories are told?",
+    "options": ["War epics", "Animal fables with moral lessons", "Love stories", "Creation myths"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_067",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was the first Sikh Guru?",
+    "options": ["Guru Angad", "Guru Gobind Singh", "Guru Nanak", "Guru Arjan"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_068",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which goddess is worshipped during Durga Puja, especially popular in Bengal?",
+    "options": ["Lakshmi", "Saraswati", "Durga", "Kali"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_069",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the sacred tree under which Gautama Buddha attained enlightenment?",
+    "options": ["Banyan tree", "Neem tree", "Bodhi tree (Peepal)", "Ashoka tree"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_070",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which animal is Lord Ganesha's vehicle (vahana)?",
+    "options": ["Rat (Mushika)", "Cat", "Parrot", "Dog"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_easy_071",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What harvest festival is celebrated in Tamil Nadu in January?",
+    "options": ["Onam", "Bihu", "Pongal", "Lohri"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_072",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which warrior in the Mahabharata was known for his incredible generosity and giving away his armor?",
+    "options": ["Bhishma", "Arjuna", "Karna", "Drona"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_073",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Rama's devoted brother who placed Rama's sandals on the throne and ruled in his absence?",
+    "options": ["Lakshmana", "Bharata", "Shatrughna", "Vibhishana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_074",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god is known as the 'Remover of Obstacles'?",
+    "options": ["Hanuman", "Shiva", "Ganesha", "Vishnu"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_075",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In Hindu mythology, what emerged from the Samudra Manthan that could destroy the world, which Shiva drank?",
+    "options": ["Amrit", "Halahala (poison)", "Kaustubha gem", "Parijata tree"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_076",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "The Jataka tales are stories about the previous lives of which figure?",
+    "options": ["Mahavira", "Krishna", "Gautama Buddha", "Rama"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_077",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which river is considered the sister of Yamuna and is believed to flow underground?",
+    "options": ["Ganga", "Godavari", "Saraswati", "Narmada"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_078",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the demon king whom Lord Vamana pushed to the underworld with his foot?",
+    "options": ["Ravana", "Hiranyakashipu", "Mahabali", "Mahishasura"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_079",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which festival involves the worship of the Sun God and is celebrated in Bihar with offerings in rivers?",
+    "options": ["Pongal", "Makar Sankranti", "Chhath Puja", "Lohri"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_080",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the Hindu god of love, often compared to Cupid?",
+    "options": ["Indra", "Kamadeva", "Vayu", "Kubera"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_081",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What did Lord Krishna lift on his little finger to protect the people of Vrindavan from Indra's rain?",
+    "options": ["Mount Meru", "Mount Kailash", "Govardhan Hill", "Mount Mandara"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_082",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In Sikh tradition, how many human Gurus are there in total?",
+    "options": ["5", "7", "10", "12"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_083",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which goddess emerged fully armed from the combined energies of all the gods to slay Mahishasura?",
+    "options": ["Kali", "Lakshmi", "Durga", "Saraswati"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_084",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the serpent whom Lord Krishna danced on and subdued in the Yamuna river?",
+    "options": ["Vasuki", "Takshaka", "Kaliya", "Shesha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_085",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many Tirthankaras are there in Jainism?",
+    "options": ["12", "18", "24", "30"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_086",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Hanuman's mother?",
+    "options": ["Anjana", "Tara", "Sita", "Mandodari"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_easy_087",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which place is famous for the Jagannath Temple and the annual Rath Yatra?",
+    "options": ["Varanasi", "Tirupati", "Puri", "Madurai"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_088",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the god of wealth and the guardian of the North in Hindu mythology?",
+    "options": ["Indra", "Kubera", "Varuna", "Yama"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_089",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the vehicle (vahana) of Lord Indra?",
+    "options": ["Horse Uchchaihshravas", "Elephant Airavata", "Garuda", "Nandi"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_090",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which ancient Indian collection of stories features a king named Vikramaditya and a spirit called Betaal?",
+    "options": ["Panchatantra", "Hitopadesha", "Vikram-Betaal (Vetala Panchavimshati)", "Kathasaritsagara"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_091",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Ravana's giant brother who slept for six months at a time?",
+    "options": ["Vibhishana", "Kumbhakarna", "Indrajit", "Maricha"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_092",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which god is worshipped as Jagannath in Odisha?",
+    "options": ["Shiva", "Brahma", "Vishnu (Krishna)", "Ganesha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_093",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the magical flying chariot mentioned in the Ramayana that Ravana possessed?",
+    "options": ["Garuda Vimana", "Pushpaka Vimana", "Deva Ratha", "Indra Vimana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_094",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In Hindu mythology, what are the Apsaras?",
+    "options": ["Demon warriors", "Celestial nymphs/dancers", "Sacred rivers", "Holy sages"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_095",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Where did Gautama Buddha deliver his first sermon after enlightenment?",
+    "options": ["Bodh Gaya", "Sarnath", "Kushinagar", "Lumbini"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_096",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which warrior from the Mahabharata sacrificed his thumb as Guru Dakshina to Dronacharya?",
+    "options": ["Karna", "Ekalavya", "Arjuna", "Ashwatthama"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_097",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Mahashivratri is a festival dedicated to which god?",
+    "options": ["Vishnu", "Brahma", "Shiva", "Ganesha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_098",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Krishna's childhood foster mother in Gokul?",
+    "options": ["Devaki", "Yashoda", "Rohini", "Kunti"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_099",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which form of Goddess Parvati is worshipped as the fierce destroyer of evil, depicted with a dark complexion and a garland of skulls?",
+    "options": ["Durga", "Kali", "Annapurna", "Lalita"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_100",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the confluence of the Ganga, Yamuna, and mythical Saraswati rivers called?",
+    "options": ["Haridwar", "Varanasi", "Triveni Sangam (Prayag)", "Rishikesh"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_101",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In Jain mythology, what is the symbol associated with Mahavira, the 24th Tirthankara?",
+    "options": ["Bull", "Lion", "Elephant", "Horse"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_102",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was Lord Krishna's biological mother?",
+    "options": ["Yashoda", "Rohini", "Devaki", "Kunti"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_103",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which ancient Indian text is a collection of animal fables attributed to Vishnu Sharma?",
+    "options": ["Jataka Tales", "Panchatantra", "Hitopadesha", "Kathasaritsagara"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_104",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What are the Gandharvas in Hindu mythology?",
+    "options": ["Celestial musicians", "Demon kings", "Sacred trees", "Mountain spirits"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_easy_105",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which deity is also known as 'Vighnaharta' meaning remover of obstacles?",
+    "options": ["Hanuman", "Ganesha", "Shiva", "Vishnu"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_106",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What was the name of the kingdom ruled by the Kauravas and Pandavas' ancestors?",
+    "options": ["Magadha", "Hastinapura", "Kashi", "Matsya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_107",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Shiva's cosmic dance of destruction?",
+    "options": ["Bharatanatyam", "Kathak", "Tandava", "Lasya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_108",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the river goddess associated with the Yamuna river?",
+    "options": ["Ganga", "Yamuna (Yami)", "Saraswati", "Kaveri"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_109",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In the Ramayana, who tried to swallow Hanuman's shadow while he was flying to Lanka?",
+    "options": ["Surasa", "Simhika", "Lankini", "Trijata"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_110",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which bird is considered sacred to Lord Shani (Saturn) in Hindu mythology?",
+    "options": ["Eagle", "Peacock", "Crow", "Swan"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_111",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the evil uncle of Lord Krishna who tried to kill him at birth?",
+    "options": ["Ravana", "Kamsa", "Jarasandha", "Shishupala"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_112",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which festival marks the Sikh New Year and commemorates the formation of the Khalsa?",
+    "options": ["Lohri", "Gurpurab", "Baisakhi", "Hola Mohalla"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_113",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What are the Nagas in Hindu mythology?",
+    "options": ["Celestial singers", "Serpent beings", "Forest spirits", "Cloud deities"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_114",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is Goddess Lakshmi's consort?",
+    "options": ["Shiva", "Brahma", "Vishnu", "Indra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_115",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which avatar of Lord Vishnu is depicted as a tortoise?",
+    "options": ["Matsya", "Kurma", "Varaha", "Vamana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_116",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the Assamese New Year festival associated with harvesting and mythological origins?",
+    "options": ["Onam", "Pongal", "Bihu", "Baisakhi"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_117",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In which city was Gautama Buddha born?",
+    "options": ["Bodh Gaya", "Sarnath", "Lumbini", "Kushinagar"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_118",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the son of Vayu (wind god) among the Pandavas?",
+    "options": ["Arjuna", "Yudhishthira", "Bhima", "Sahadeva"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_119",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which goddess is known as 'Annapurna', the goddess of food and nourishment?",
+    "options": ["Lakshmi", "Parvati", "Saraswati", "Durga"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_120",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the chariot festival associated with Lord Jagannath in Puri?",
+    "options": ["Kumbh Mela", "Rath Yatra", "Pushkar Mela", "Thrissur Pooram"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_121",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the Buddhist term for the state of ultimate liberation from the cycle of birth and death?",
+    "options": ["Moksha", "Nirvana", "Samadhi", "Karma"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_122",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the Hindu god of the ocean and water?",
+    "options": ["Agni", "Vayu", "Varuna", "Indra"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_123",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which sacred text of Sikhism was compiled by Guru Arjan Dev?",
+    "options": ["Dasam Granth", "Adi Granth (Guru Granth Sahib)", "Janamsakhis", "Rehat Maryada"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_124",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the demon who disguised himself as a golden deer to lure Sita in the Ramayana?",
+    "options": ["Subahu", "Maricha", "Khara", "Tataka"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_125",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which deity is known as 'Neelkanth' (the blue-throated one)?",
+    "options": ["Vishnu", "Krishna", "Shiva", "Rama"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_126",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In the Mahabharata, what was the name of Arjuna's son who was killed in the Chakravyuha?",
+    "options": ["Ghatotkacha", "Abhimanyu", "Iravan", "Parikshit"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_127",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the Yakshas' role in Hindu mythology?",
+    "options": ["Fire guardians", "Nature spirits and guardians of wealth", "War deities", "River spirits"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_128",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which Sikh Guru is known for sacrificing his life to protect the religious freedom of Hindus?",
+    "options": ["Guru Nanak", "Guru Gobind Singh", "Guru Tegh Bahadur", "Guru Arjan Dev"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_129",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the famous temple in Andhra Pradesh dedicated to Lord Venkateswara (Vishnu)?",
+    "options": ["Meenakshi Temple", "Tirupati Balaji Temple", "Somnath Temple", "Jagannath Temple"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_130",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What did Bhishma take a terrible vow of in the Mahabharata?",
+    "options": ["Silence", "Lifelong celibacy", "Fasting", "Never using weapons"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_131",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the king of the Nagas (serpents) in Hindu mythology, often depicted with multiple hoods?",
+    "options": ["Kaliya", "Takshaka", "Vasuki", "Shesha"],
+    "correct_index": 3
+  },
+  {
+    "id": "myth_easy_132",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which famous temple in Gujarat is one of the twelve Jyotirlingas and was rebuilt multiple times?",
+    "options": ["Dwarka Temple", "Somnath Temple", "Akshardham Temple", "Ambaji Temple"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_133",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the vehicle (vahana) of Kartikeya (Murugan)?",
+    "options": ["Elephant", "Peacock", "Bull", "Swan"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_134",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In Jainism, what is the practice of non-violence toward all living beings called?",
+    "options": ["Dharma", "Ahimsa", "Satya", "Tapas"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_135",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which city is known as the 'City of Temples' and is famous for the Meenakshi Amman Temple?",
+    "options": ["Varanasi", "Tirupati", "Madurai", "Haridwar"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_136",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name given to the divine nectar of immortality in Hindu mythology?",
+    "options": ["Soma", "Amrit", "Madhu", "Sura"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_137",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What are the Kinnaras in Hindu mythology?",
+    "options": ["Demon warriors", "Half-human half-horse celestial musicians", "Serpent kings", "Fire spirits"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_138",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which Pandava was known for his skill with horses and his handsome appearance?",
+    "options": ["Bhima", "Arjuna", "Nakula", "Yudhishthira"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_139",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Shiva in his form as the 'Lord of Dance'?",
+    "options": ["Rudra", "Nataraja", "Mahadeva", "Bhairava"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_140",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "According to Hindu mythology, who is the Sun God?",
+    "options": ["Agni", "Indra", "Surya", "Vayu"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_141",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the mythical bird that is the enemy of serpents and the vehicle of Vishnu?",
+    "options": ["Jatayu", "Garuda", "Sampati", "Hamsa"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_142",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In the Ramayana, which vulture tried to save Sita from Ravana and was fatally wounded?",
+    "options": ["Garuda", "Sampati", "Jatayu", "Aruna"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_143",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What title is given to Lord Buddha's first sermon at Sarnath?",
+    "options": ["The Great Departure", "Turning the Wheel of Dharma", "The Enlightenment", "The Great Renunciation"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_144",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which Sikh Guru founded the Khalsa, the Sikh warrior community?",
+    "options": ["Guru Nanak", "Guru Gobind Singh", "Guru Tegh Bahadur", "Guru Hargobind"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_145",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Lord Vishnu's mace?",
+    "options": ["Vajra", "Kaumodaki", "Trishul", "Parashu"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_146",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Guru Nanak Dev Ji is said to have traveled extensively to spread his teachings. What are these journeys called?",
+    "options": ["Yatras", "Udasis", "Teerths", "Parikramas"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_147",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which demon was Holika, after whom the festival of Holi is partly named?",
+    "options": ["Sister of Hiranyakashipu", "Wife of Ravana", "Mother of Mahishasura", "Daughter of Shukracharya"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_easy_148",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the first Jain Tirthankara?",
+    "options": ["Mahavira", "Parshvanatha", "Rishabhadeva (Adinatha)", "Neminatha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_149",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which sage is known as the 'mind-born son' of Brahma and is famous for traveling between worlds playing his veena?",
+    "options": ["Vasishtha", "Vishwamitra", "Narada", "Agastya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_150",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In the Mahabharata, what did Draupadi's brother Dhrishtadyumna emerge from?",
+    "options": ["A sacred river", "A sacrificial fire", "A divine lotus", "A magical cave"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_151",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the mythological origin of the river Narmada according to Hindu tradition?",
+    "options": ["Flowed from Vishnu's feet", "Born from Shiva's sweat during his penance", "Emerged from Brahma's kamandalu", "Descended from heaven like the Ganga"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_152",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In Buddhist tradition, what are the 'Four Noble Truths' primarily about?",
+    "options": ["Creation of the universe", "The nature of suffering and the path to end it", "Rules for monastic life", "Stories of Buddha's past lives"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_153",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which avatar of Vishnu is associated with the story of the great flood, similar to Noah's Ark?",
+    "options": ["Kurma", "Matsya", "Varaha", "Vamana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_154",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the deity worshipped at the Sabarimala temple in Kerala?",
+    "options": ["Murugan", "Shiva", "Ayyappan", "Vishnu"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_155",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the sacred syllable considered the primordial sound of the universe in Hinduism?",
+    "options": ["Ram", "Om (Aum)", "Shri", "Hrim"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_156",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the elephant-headed god's broken tusk, which he is sometimes depicted holding?",
+    "options": ["He used it as a writing instrument", "It was a weapon", "It was a gift to Shiva", "It had no special significance"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_easy_157",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which ancient Indian text is considered a retelling of the Panchatantra with additional moral stories?",
+    "options": ["Kathasaritsagara", "Hitopadesha", "Vikram-Betaal", "Jataka Tales"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_158",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the goddess of the river Ganga in Hindu mythology?",
+    "options": ["Parvati", "Yamuna", "Ganga", "Saraswati"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_159",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of Guru Nanak's childhood friend and companion who is mentioned in the Janamsakhis?",
+    "options": ["Bhai Lehna", "Bhai Mardana", "Bhai Gurdas", "Bhai Bala"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_160",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which form of Lord Shiva is depicted as half-male and half-female?",
+    "options": ["Nataraja", "Ardhanarishvara", "Bhairava", "Dakshinamurthy"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_161",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In Sikh tradition, what is 'Langar'?",
+    "options": ["A prayer ceremony", "A community kitchen serving free food", "A religious text", "A meditation practice"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_162",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which South Indian deity is believed to be the son of Shiva and Mohini (Vishnu's female form)?",
+    "options": ["Murugan", "Ganesha", "Ayyappan", "Hanuman"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_163",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the divine cow that grants all wishes, mentioned in Hindu mythology?",
+    "options": ["Nandini", "Kamadhenu", "Surabhi", "Kapila"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_164",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "How many arms does Goddess Durga typically have in popular depictions?",
+    "options": ["4", "6", "8", "10"],
+    "correct_index": 3
+  },
+  {
+    "id": "myth_easy_165",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was the prince who renounced his royal life to seek enlightenment and became the Buddha?",
+    "options": ["Ashoka", "Siddhartha Gautama", "Bimbisara", "Ajatashatru"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_166",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the term for Lord Vishnu's periodic sleep on the cosmic ocean between creation cycles?",
+    "options": ["Samadhi", "Yoga Nidra", "Tapas", "Dhyana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_167",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which sage taught Rama and Lakshmana the use of divine weapons and took them to Mithila?",
+    "options": ["Vasishtha", "Vishwamitra", "Agastya", "Bharadwaja"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_168",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the monkey kingdom in the Ramayana where Sugriva and Vali ruled?",
+    "options": ["Lanka", "Kishkindha", "Ayodhya", "Panchavati"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_169",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In Hindu mythology, what is the name of Lord Vishnu's conch shell?",
+    "options": ["Kaumodaki", "Panchajanya", "Devadatta", "Anantavijaya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_170",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "According to Buddhist tradition, what did Siddhartha Gautama see outside his palace that led him to seek enlightenment?",
+    "options": ["A war", "An old man, a sick man, a dead man, and an ascetic", "A natural disaster", "A divine vision"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_171",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which festival celebrates the bond between brothers and sisters with tying a thread on the wrist?",
+    "options": ["Diwali", "Raksha Bandhan", "Bhai Dooj", "Karva Chauth"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_172",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who is the god of justice and the lord of the southern direction in Hindu mythology?",
+    "options": ["Indra", "Kubera", "Yama", "Varuna"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_173",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which ancient Sun temple in Odisha is shaped like a giant chariot with stone wheels?",
+    "options": ["Lingaraj Temple", "Konark Sun Temple", "Jagannath Temple", "Mukteswara Temple"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_174",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "According to legend, why does the Konark Sun Temple have 24 wheels?",
+    "options": ["For 24 hours of the day", "For 24 Tirthankaras", "For 24 avatars of Vishnu", "For 24 Vedic mantras"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_easy_175",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What do the three deities worshipped together at Jagannath Puri represent - Jagannath, Balabhadra, and Subhadra?",
+    "options": ["Brahma, Vishnu, Shiva", "Krishna, Balarama, and their sister Subhadra", "Rama, Lakshmana, Sita", "Sun, Moon, Earth"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_176",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the Buddhist 'Eightfold Path' a path toward?",
+    "options": ["Wealth", "Power", "Ending suffering", "Rebirth in heaven"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_177",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Who was the bear king in the Ramayana who helped Lord Rama find Sita?",
+    "options": ["Sugriva", "Angada", "Jambavan", "Nala"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_easy_178",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "Which Puranic story explains why Lord Ganesha has an elephant head?",
+    "options": ["He was born that way", "Shiva replaced his head after beheading him", "Vishnu blessed him", "Brahma cursed him"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_179",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "In Jainism, what is 'Sallekhana'?",
+    "options": ["A festival of lights", "A voluntary fast unto death at the end of life", "A meditation technique", "A pilgrimage ritual"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_easy_180",
+    "category": "mythology",
+    "difficulty": 1,
+    "question": "What is the name of the divine tree that emerged during the Samudra Manthan and was taken to Indra's heaven?",
+    "options": ["Bodhi tree", "Kalpavriksha (Parijata)", "Banyan tree", "Ashoka tree"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_051",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Tamil mythology, which six-faced deity defeated the demon Surapadman?",
+    "options": ["Ganesha", "Ayyappan", "Murugan", "Hanuman"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_052",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the serpent goddess worshipped primarily in Bengal?",
+    "options": ["Durga", "Manasa", "Kali", "Chandi"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_053",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Jainism, what is the term for the omniscient knowledge attained by a Tirthankara?",
+    "options": ["Nirvana", "Kevala Jnana", "Samyak Darshana", "Moksha"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_054",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to legend, why is Shiva's throat blue?",
+    "options": ["He was born that way", "A demon cursed him", "He drank the Halahala poison during Samudra Manthan", "He swallowed the Ganga river"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_055",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Mahabharata, who was Ghatotkacha?",
+    "options": ["Son of Arjuna and Subhadra", "Son of Bhima and Hidimbi", "Son of Yudhishthira and Draupadi", "Son of Nakula and Draupadi"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_056",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What weapon did Karna save to use against Arjuna but was forced to use on Ghatotkacha instead?",
+    "options": ["Brahmastra", "Shakti (given by Indra)", "Pashupatastra", "Narayanastra"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_057",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was Shikhandi in the Mahabharata and why was he significant in Bhishma's defeat?",
+    "options": ["A warrior Bhishma refused to fight because Shikhandi was born female", "A divine archer who overpowered Bhishma", "A sage who cursed Bhishma", "A king who bribed Bhishma to stop fighting"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_medium_058",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Vikram-Betaal stories, what happens every time King Vikramaditya answers the Betaal's question?",
+    "options": ["He gains a wish", "The Betaal flies back to the tree", "He loses a year of life", "A demon appears"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_059",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Purana is considered the most popular and is devoted primarily to the stories of Lord Krishna?",
+    "options": ["Vishnu Purana", "Bhagavata Purana", "Padma Purana", "Garuda Purana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_060",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the celestial apsara who was sent by Indra to distract sage Vishwamitra from his penance?",
+    "options": ["Urvashi", "Menaka", "Rambha", "Tilottama"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_061",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Jataka tale features a monkey king who sacrifices himself by making a bridge of his body for his troop?",
+    "options": ["Sasa Jataka", "Maha Kapi Jataka", "Vessantara Jataka", "Nidana Jataka"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_062",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the Mahabharata warrior who was born with natural armor (kavacha) and earrings (kundala)?",
+    "options": ["Arjuna", "Bhishma", "Karna", "Drona"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_063",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Hindu mythology, who is the mother of the Devas and the Asuras?",
+    "options": ["Diti and Aditi", "Parvati and Lakshmi", "Ganga and Yamuna", "Saraswati and Durga"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_medium_064",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to Skanda Purana, which temple is considered the southernmost Jyotirlinga?",
+    "options": ["Somnath", "Mahakaleshwar", "Rameshwaram", "Mallikarjuna"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_065",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Ramayana, what was the name of the female demon who guarded the entrance to Lanka and was defeated by Hanuman?",
+    "options": ["Surasa", "Lankini", "Simhika", "Tataka"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_066",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the festival of Onam mythologically connected to?",
+    "options": ["Rama's return to Ayodhya", "King Mahabali's annual return from the netherworld", "Krishna's birth", "Durga's victory over Mahishasura"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_067",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is the author of the Arthashastra, an ancient Indian treatise on statecraft?",
+    "options": ["Manu", "Kautilya (Chanakya)", "Vatsyayana", "Bharata Muni"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_068",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Mahabharata, who was Barbarik and what was his unique power?",
+    "options": ["He could end the war with just three arrows", "He could become invisible", "He could control time", "He could summon storms"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_medium_069",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to legend, the Meenakshi Temple in Madurai is dedicated to a form of which goddess?",
+    "options": ["Lakshmi", "Parvati", "Saraswati", "Durga"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_070",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the 23rd Jain Tirthankara who is also mentioned in Hindu texts?",
+    "options": ["Rishabhadeva", "Neminatha", "Parshvanatha", "Mahavira"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_071",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Bhagavata Purana, how many Gopikas (milkmaids) are associated with Krishna's Rasa Lila?",
+    "options": ["8", "16", "108", "16,000"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_072",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Sikh Guru compiled the Adi Granth, the first version of the Guru Granth Sahib?",
+    "options": ["Guru Nanak", "Guru Arjan Dev", "Guru Gobind Singh", "Guru Angad"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_073",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Mahabharata, who offered himself as a sacrifice to Goddess Kali before the Kurukshetra war?",
+    "options": ["Abhimanyu", "Ghatotkacha", "Iravan", "Barbarik"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_074",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the Garuda Purana primarily concerned with?",
+    "options": ["Stories of Lord Vishnu's avatars", "Rituals related to death and the afterlife", "The creation of the universe", "Temple architecture"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_075",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Bhagavata Purana, which child devotee of Vishnu was protected by Narasimha?",
+    "options": ["Dhruva", "Prahlada", "Nachiketa", "Markandeya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_076",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to the Markandeya Purana, what is the Devi Mahatmya (Durga Saptashati) about?",
+    "options": ["Stories of Shiva's battles", "The glory and victories of the Divine Mother Goddess", "Creation of the universe by Brahma", "The life of sage Markandeya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_077",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who is the deity worshipped at the Tirupati temple, also known as the 'Lord of Seven Hills'?",
+    "options": ["Shiva", "Rama", "Venkateswara (Vishnu)", "Murugan"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_078",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the Pushpaka Vimana's unique characteristic?",
+    "options": ["It can become invisible", "It can expand to accommodate any number of passengers", "It can travel underwater", "It can grant wishes"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_079",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Mahabharata, who was the king of Matsya where the Pandavas spent their year of disguise?",
+    "options": ["Drupada", "Virata", "Jarasandha", "Shalya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_080",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to Hindu mythology, what does the Narmada river circumambulation (parikrama) grant?",
+    "options": ["Wealth", "Moksha (liberation)", "Long life", "Victory in battle"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_081",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Mahabharata, who was the charioteer of Karna during his final battle?",
+    "options": ["Duryodhana", "Shalya", "Ashwatthama", "Shakuni"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_082",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the sacred Sikh symbol 'Khanda' composed of?",
+    "options": ["A crescent and star", "A double-edged sword, a chakkar, and two kirpans", "A lotus and wheel", "A trident and drum"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_083",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to legend, what is the significance of the Somnath temple in Gujarat?",
+    "options": ["It is where Shiva performed the Tandava", "It is the first among the twelve Jyotirlingas", "It is where Vishnu took the Matsya avatar", "It is where Brahma created the world"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_084",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Jainism, what is 'Samyak Darshana'?",
+    "options": ["Right knowledge", "Right faith or perception", "Right conduct", "Right meditation"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_085",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the sage who brought the Ganga down to earth and whose ancestors were turned to ash?",
+    "options": ["Vishwamitra", "Bhagiratha", "Vasishtha", "Agastya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_086",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Mahabharata, what was the name of Bhima's son by Draupadi?",
+    "options": ["Ghatotkacha", "Sutasoma", "Iravan", "Prativindhya"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_087",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to Hindu mythology, who is the planet deity (graha) associated with bad luck and is the son of Surya?",
+    "options": ["Rahu", "Ketu", "Shani (Saturn)", "Mangal (Mars)"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_088",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the dwarf avatar of Vishnu who took three steps to cover the universe?",
+    "options": ["Parashurama", "Narasimha", "Vamana", "Matsya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_089",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the Churning Rod (Mandara Mountain) resting on during the Samudra Manthan?",
+    "options": ["Shesha Naga", "Kurma (Vishnu's turtle avatar)", "A divine lotus", "The ocean floor"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_090",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Ramayana, which kingdom was ruled by Sugriva's brother Vali?",
+    "options": ["Lanka", "Kishkindha", "Ayodhya", "Mithila"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_091",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of the ancient Tamil Sangam literature's mythological flood that destroyed the previous Tamil lands?",
+    "options": ["Pralaya", "Kadal Kol (Great Deluge)", "Mahapralaya", "Samudra Manthan"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_092",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Buddhist mythology, who is Mara?",
+    "options": ["A celestial king", "The demon of desire and death who tempted Buddha", "A serpent deity", "A guardian of the dharma"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_093",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the 'Shakti Peethas' in Hindu mythology?",
+    "options": ["Places where Sati's body parts fell to earth", "Temples built by Vishwakarma", "Mountains where sages meditated", "Rivers blessed by Brahma"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_medium_094",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which warrior in the Mahabharata possessed the Vijaya bow, originally belonging to Lord Shiva?",
+    "options": ["Arjuna", "Bhishma", "Karna", "Drona"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_095",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to Hindu mythology, what is Amravati?",
+    "options": ["The capital of the Asuras", "The capital city of Indra in heaven", "The birthplace of Brahma", "A sacred river"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_096",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Skanda Purana, what is the significance of the six faces of Murugan (Shanmukha)?",
+    "options": ["They represent six emotions", "They represent the six directions", "They represent the six seasons", "They watch over the six abodes (Arupadaiveedu)"],
+    "correct_index": 3
+  },
+  {
+    "id": "myth_medium_097",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Who was the sage who cursed Pandu, preventing him from having physical relations with his wives?",
+    "options": ["Durvasa", "Kindama", "Agastya", "Parashurama"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_098",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Bhagavata Purana, who is the child devotee who attained a fixed star (Dhruva Tara/Pole Star) through penance?",
+    "options": ["Prahlada", "Nachiketa", "Dhruva", "Markandeya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_099",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the name of Guru Nanak's famous statement about God being neither Hindu nor Muslim?",
+    "options": ["Japji Sahib", "Mul Mantar", "Na koi Hindu na Musalman", "Ik Onkar"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_100",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Panchatantra, what is the moral of the story of the monkey and the crocodile?",
+    "options": ["Greed leads to ruin", "Quick thinking can save your life", "Trust no one", "Patience is a virtue"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_101",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Lord Ayyappan is believed to be the son of which two deities?",
+    "options": ["Shiva and Parvati", "Vishnu and Lakshmi", "Shiva and Mohini (Vishnu's female form)", "Brahma and Saraswati"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_102",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the legend of Goddess Meenakshi of Madurai, she was born with how many breasts?",
+    "options": ["One", "Two", "Three", "Four"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_103",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to the Puri temple legend, who carved the original wooden idols of Jagannath, Balabhadra, and Subhadra?",
+    "options": ["Brahma", "Vishwakarma", "Narada", "Indra"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_104",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Hindu mythology, which celestial weapon of Indra was forged from the bones of sage Dadhichi?",
+    "options": ["Pashupatastra", "Vajra", "Brahmastra", "Sudarshana Chakra"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_105",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "The Kamakhya temple in Assam is one of the most important Shakti Peethas. Which body part of Sati is believed to have fallen there?",
+    "options": ["Eyes", "Yoni (reproductive organ)", "Tongue", "Right hand"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_106",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Jain cosmology, what is the name of the central continent in which humans live?",
+    "options": ["Dhatakikhand", "Pushkarvar", "Jambudvipa", "Airavat"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_107",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Buddhist tradition, who is Avalokiteshvara?",
+    "options": ["The historical Buddha", "The Bodhisattva of compassion", "The god of death", "The creator deity"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_108",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which sacred river in India is considered holy merely by its sight, unlike other rivers that require bathing?",
+    "options": ["Ganga", "Narmada", "Godavari", "Kaveri"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_109",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the Narayanastra in Hindu mythology?",
+    "options": ["A weapon that can only be used once and destroys everything", "A weapon of Vishnu that increases in power the more one resists it", "A shield that protects against all astras", "A celestial chariot"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_110",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the legend of Meenakshi, what happened when she met Lord Sundareshwara (Shiva)?",
+    "options": ["She fought him in battle", "Her third breast disappeared, fulfilling a prophecy", "She turned into a river", "He gifted her a divine weapon"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_111",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Jain Tirthankara is associated with the symbol of a bull and is considered the first king and lawgiver?",
+    "options": ["Mahavira", "Parshvanatha", "Rishabhadeva (Adinatha)", "Neminatha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_112",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Buddhist mythology, what is the 'Wheel of Dharma' (Dharmachakra) with eight spokes symbolic of?",
+    "options": ["Eight avatars of Buddha", "The Noble Eightfold Path", "Eight sacred sites", "Eight Buddhist councils"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_113",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to legend, which temple in Tamil Nadu has five chariots carved from single rocks, attributed to the Pandavas?",
+    "options": ["Shore Temple, Mahabalipuram", "Pancha Rathas, Mahabalipuram", "Meenakshi Temple, Madurai", "Brihadeeswarar Temple, Thanjavur"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_114",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the Sudarshana Chakra in Hindu mythology?",
+    "options": ["Shiva's trident", "Vishnu's spinning disc weapon", "Brahma's lotus", "Indra's thunderbolt"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_115",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Buddhist tradition, what is a 'Stupa' originally meant to enshrine?",
+    "options": ["Statues of the Buddha", "Sacred texts", "Relics of the Buddha or saints", "Offerings to the gods"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_116",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to the Padma Purana, how many Shakti Peethas are there?",
+    "options": ["18", "51", "64", "108"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_117",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Jagannath tradition, what is the 'Nabakalebara' ceremony?",
+    "options": ["Annual bathing of the idols", "Periodic replacement of the wooden idols with new ones", "A fire ritual at the temple", "Coronation of the chief priest"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_118",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which celestial being in Hindu mythology is the architect of the gods?",
+    "options": ["Tvashtar", "Vishwakarma", "Narada", "Brihaspati"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_119",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Buddhist mythology, what are the 'Bodhisattvas'?",
+    "options": ["Enlightened beings who delay Nirvana to help others", "Demon kings", "Celestial musicians", "Guardian spirits of temples"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_medium_120",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to legend, which sage drank up the entire ocean and is associated with the Vindhya mountains?",
+    "options": ["Vasishtha", "Vishwamitra", "Agastya", "Narada"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_121",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Jain cosmology, what is 'Siddha Loka'?",
+    "options": ["The realm of demons", "The abode of liberated souls at the apex of the universe", "The human world", "The celestial realm of gods"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_122",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which divine weapon in the Mahabharata could be used only once and would destroy the target completely but required giving up one's own life?",
+    "options": ["Brahmastra", "Pashupatastra", "Brahmashira", "Brahma Danda"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_123",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Tamil Sangam mythology, which ancient land is believed to have been submerged by the sea south of India?",
+    "options": ["Atlantis", "Kumari Kandam (Lemuria)", "Lanka", "Dwaraka"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_124",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to the Skanda Purana, who are the 'Saptamatrikas' (Seven Mothers)?",
+    "options": ["Seven river goddesses", "Seven female energies of major Hindu gods", "Seven wives of the Saptarishis", "Seven forms of Durga"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_125",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Jain tradition, what are the 'Panch Kalyanak' associated with a Tirthankara?",
+    "options": ["Five vows of Jainism", "Five auspicious events in a Tirthankara's life", "Five types of knowledge", "Five elements of the universe"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_126",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the 'Pashupatastra' in Hindu mythology?",
+    "options": ["Vishnu's discus weapon", "The most powerful weapon of Shiva, lord of animals", "Brahma's bow", "Indra's mace"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_127",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the legend of Badrinath temple, who meditated there before Vishnu took over the spot?",
+    "options": ["Brahma", "Indra", "Shiva", "Agastya"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_128",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Jataka tale describes the Buddha's previous life as a generous king who gave away everything, including his children?",
+    "options": ["Maha Kapi Jataka", "Sasa Jataka", "Vessantara Jataka", "Matanga Jataka"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_129",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Hindu mythology, what is 'Vaikuntha'?",
+    "options": ["Shiva's abode on Mount Kailash", "The heavenly abode of Vishnu", "Brahma's realm on the lotus", "Indra's paradise Amaravati"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_130",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to the Sthalapurana of Chidambaram temple, what is unique about the 'Chidambara Rahasyam' (secret)?",
+    "options": ["A hidden treasure", "An empty space behind a curtain symbolizing the formless divine", "A secret underground passage", "A golden idol visible only to priests"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_131",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Hindu mythology, what is 'Kalpavriksha'?",
+    "options": ["A celestial river", "A wish-fulfilling divine tree", "A sacred mountain", "A heavenly weapon"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_132",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which Buddhist text contains accounts of 547 previous lives of the Buddha?",
+    "options": ["Dhammapada", "Vinaya Pitaka", "Jataka Tales", "Abhidhamma Pitaka"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_133",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Hindu mythology, what is the 'Gandiva'?",
+    "options": ["Krishna's flute", "Arjuna's divine bow given by Agni", "Bhishma's sword", "Yudhishthira's chariot"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_134",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to legend, why are the Jagannath idols at Puri unfinished in appearance?",
+    "options": ["The sculptor was killed before finishing", "Vishwakarma left before completing them as his condition of working undisturbed was violated", "They were damaged in a flood", "They represent the formless Brahman"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_135",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Jainism, what is 'Kayotsarga'?",
+    "options": ["A sacred text", "A standing meditation posture of abandoning the body", "A festival of lights", "A pilgrimage route"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_136",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which sacred geography concept divides India into seven holy cities (Sapta Puri) that grant moksha?",
+    "options": ["The Char Dham concept", "The Sapta Puri (Ayodhya, Mathura, Haridwar, Varanasi, Kanchi, Ujjain, Dwaraka)", "The Panch Sarovar concept", "The Dwadash Jyotirlinga concept"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_137",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Buddhist tradition, what is the 'Tripitaka' (Three Baskets)?",
+    "options": ["Three sacred mountains", "The three divisions of the Pali Canon (Vinaya, Sutta, Abhidhamma)", "Three types of meditation", "Three Buddhist councils"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_138",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to the Devi Bhagavata Purana, who is Goddess Bhuvaneshwari?",
+    "options": ["The goddess of the earth alone", "The sovereign queen of the universe, one of the Dasha Mahavidyas", "A river goddess", "A tribal forest deity"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_139",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "What is the significance of 'Nandi' in Shaiva mythology beyond being Shiva's mount?",
+    "options": ["He is the chief of Shiva's ganas and the gatekeeper of Kailash", "He is Shiva's weapon maker", "He is a form of Vishnu", "He represents the demon armies"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_medium_140",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Bhagavata Purana, which king performed ninety-nine Ashvamedha (horse) sacrifices, alarming Indra?",
+    "options": ["Sagara", "Harishchandra", "Prithu", "Mahabali"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_141",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Buddhist tradition, what is 'Pratityasamutpada' (Dependent Origination)?",
+    "options": ["The belief in a creator god", "The teaching that all phenomena arise in dependence upon causes and conditions", "A type of meditation retreat", "A monastic rule"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_142",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "Which divine object emerged from the Samudra Manthan and became Vishnu's chest ornament?",
+    "options": ["Chintamani", "Kaustubha Mani (gem)", "Syamantaka gem", "Koh-i-Noor"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_143",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to temple legends, the Brihadeeswarar Temple in Thanjavur was built by which Chola king?",
+    "options": ["Rajendra Chola I", "Rajaraja Chola I", "Kulottunga Chola I", "Karikala Chola"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_144",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Hindu mythology, what are the 'Ashta Dikpalas' (eight guardians of directions)?",
+    "options": ["Eight avatars of Vishnu", "Eight forms of Shiva", "Eight deities guarding the cardinal and intercardinal directions", "Eight sacred rivers"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_145",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Jain tradition, what is the 'Samavasarana'?",
+    "options": ["A Jain monastery", "The divine preaching assembly of a Tirthankara", "A sacred mountain", "A type of fasting ritual"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_146",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to the Mahabharata, what is the 'Akshaya Patra' given to the Pandavas?",
+    "options": ["An inexhaustible quiver of arrows", "A vessel that provides unlimited food until Draupadi eats", "A magical shield", "A divine chariot"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_147",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the Skanda Purana, the Arunachala hill (Tiruvannamalai) is considered a manifestation of which deity?",
+    "options": ["Vishnu", "Brahma", "Shiva as a column of fire", "Murugan"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_medium_148",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In Buddhist mythology, who are the 'Four Heavenly Kings' (Chaturmaharajika)?",
+    "options": ["Four incarnations of the Buddha", "Four guardian deities protecting the four cardinal directions", "Four demons who opposed the Buddha", "Four sacred animals"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_149",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "In the mythology of Puri, during Rath Yatra, why does Jagannath's chariot stop midway at the Gundicha temple?",
+    "options": ["For repairs to the chariot", "It represents Krishna's journey to his aunt Gundicha's home (his birth place Mathura)", "To collect offerings from devotees", "The priests need rest"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_medium_150",
+    "category": "mythology",
+    "difficulty": 2,
+    "question": "According to Hindu tradition, what are the 'Char Dham' pilgrimage sites?",
+    "options": ["Varanasi, Haridwar, Rishikesh, Allahabad", "Badrinath, Dwarka, Puri, Rameswaram", "Tirupati, Shirdi, Vaishno Devi, Sabarimala", "Kedarnath, Amarnath, Somnath, Ujjain"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_041",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Brihadaranyaka Upanishad, what does Yajnavalkya teach Maitreyi about the Self (Atman)?",
+    "options": ["The Self is identical with the body", "The Self is unknowable", "The Self is the essence of everything, and it is for the sake of the Self that everything is dear", "The Self is a creation of Brahma"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_042",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Matsya Purana, which demon stole the Vedas from Brahma while he was asleep at the end of a cosmic cycle?",
+    "options": ["Hiranyaksha", "Hayagriva (the demon)", "Madhu and Kaitabha", "Shankhasura"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_043",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Tantric tradition, what are the 'Dasha Mahavidyas' (Ten Great Wisdoms)?",
+    "options": ["Ten forms of Vishnu", "Ten fierce goddess forms representing different aspects of the Divine Mother", "Ten Vedic mantras", "Ten sacred rivers"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_044",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "According to the Vayu Purana, what is the total duration of one 'Kalpa' (day of Brahma) in human years?",
+    "options": ["1 billion years", "4.32 billion years", "8.64 billion years", "100 billion years"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_045",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Chandogya Upanishad, what is the teaching of 'Tat Tvam Asi' (That Thou Art) about?",
+    "options": ["The creation of the universe", "The identity of the individual soul (Atman) with the universal reality (Brahman)", "The duties of a householder", "The importance of rituals"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_046",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Linga Purana, what form does Shiva take to settle the dispute between Brahma and Vishnu about who is supreme?",
+    "options": ["Nataraja", "An infinite column of fire (Jyotirlinga)", "Ardhanarishvara", "Dakshinamurthy"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_047",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Tantric Buddhism (Vajrayana), who is Vajrapani?",
+    "options": ["The Buddha of infinite light", "The bodhisattva representing the power of all Buddhas, depicted holding a vajra", "The goddess of wisdom", "The historical Buddha in his fierce form"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_048",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Skanda Purana, what is the legend behind the Kedarnath Jyotirlinga?",
+    "options": ["Shiva appeared as a bull and his hump remained as the Jyotirlinga when he dove into the earth", "Vishnu placed a linga there", "It was created by Parvati's tears", "Brahma established it during creation"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_hard_049",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Jain cosmology, what is the 'Loka' (universe) shaped like?",
+    "options": ["A sphere", "A cosmic person standing with arms akimbo", "A flat disc", "A pyramid"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_050",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Kena Upanishad, which deity fails to burn a blade of grass placed by Brahman (the Absolute), revealing the limits of divine power?",
+    "options": ["Indra", "Vayu", "Agni", "Varuna"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_051",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Markandeya Purana, which demon did Goddess Chamunda (a form of Durga) slay by drinking his blood before it could touch the ground?",
+    "options": ["Mahishasura", "Shumbha", "Raktabija", "Nishumbha"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_052",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Tantric tradition, what is the 'Sri Yantra' or 'Sri Chakra'?",
+    "options": ["A weapon of Vishnu", "A sacred geometric diagram of interlocking triangles representing the union of Shiva and Shakti", "A Buddhist mandala", "A type of sacrificial fire pit"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_053",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "According to the Bhagavata Purana, what is the story of King Ambarisha and sage Durvasa?",
+    "options": ["Durvasa cursed Ambarisha to become a serpent", "Vishnu's Sudarshana Chakra chased Durvasa to protect devotee Ambarisha", "Ambarisha defeated Durvasa in a debate", "Durvasa granted Ambarisha immortality"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_054",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Buddhist Abhidharma, what are the 'Skandhas' (aggregates) that constitute a person?",
+    "options": ["Body, speech, and mind", "Form, feeling, perception, mental formations, and consciousness", "Earth, water, fire, air, and space", "Birth, aging, sickness, and death"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_055",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology of Northeast India, who is 'Khasi U Blei Nongthaw' in Khasi mythology?",
+    "options": ["The god of rivers", "The Supreme Creator God", "The spirit of the forest", "The goddess of harvest"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_056",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Vishnu Purana, what is the story of Hiranyaksha?",
+    "options": ["He stole the sun", "He dragged the Earth to the bottom of the cosmic ocean, prompting Vishnu's Varaha avatar", "He cursed Vishnu", "He built Lanka"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_057",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Kalidasa's 'Kumarasambhava', what is the central narrative?",
+    "options": ["The birth of Lord Ganesha", "The romance of Shiva and Parvati leading to the birth of Kartikeya (Kumara)", "The churning of the ocean", "The exile of Rama"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_058",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Mandukya Upanishad, how many states of consciousness are described, and what is the fourth (Turiya)?",
+    "options": ["Two states; Turiya is deep sleep", "Three states plus Turiya, which is pure consciousness beyond waking, dreaming, and deep sleep", "Five states; Turiya is the dream state", "Four equal states of awareness"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_059",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Padma Purana, what is the story of the curse on Tulsi (holy basil) and her connection to Vishnu?",
+    "options": ["Tulsi was a cursed apsara", "Tulsi (Vrinda) cursed Vishnu to become a stone (Shaligrama) after he deceived her husband Jalandhar", "Tulsi grew from Brahma's tears", "Tulsi was created by Shiva"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_060",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the tribal mythology of the Santhal people, who are 'Pilchu Haram' and 'Pilchu Budhi'?",
+    "options": ["The sun and moon deities", "The first human couple created by Thakur Jiu (the creator god)", "The gods of rain and harvest", "Mountain spirits"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_061",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Brahmanda Purana, what is the 'Lalita Sahasranama'?",
+    "options": ["A hymn of 1000 names of Lord Vishnu", "A hymn of 1000 names of Goddess Lalita (Tripurasundari)", "A list of 1000 sacred sites", "A compilation of 1000 Vedic mantras"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_062",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Jain concept of 'Anekantavada', what philosophical principle is conveyed?",
+    "options": ["Absolute monism", "Many-sidedness of reality; truth has multiple aspects", "Complete nihilism", "Strict dualism of good and evil"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_063",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Shiva Purana, who is 'Virabhadra' and how was he created?",
+    "options": ["He was born from Parvati's anger", "He was created from Shiva's matted hair to destroy Daksha's sacrifice", "He was an avatar of Vishnu", "He emerged from the cosmic ocean"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_064",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Buddhist Abhidharma, what is 'Sunyata' (Emptiness)?",
+    "options": ["The void before creation", "The teaching that all phenomena lack inherent, independent existence", "Physical empty space", "The absence of gods"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_065",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology of the Mizo people of Northeast India, what is 'Pialral'?",
+    "options": ["A sacred mountain", "The paradise or land of the dead for those who die heroically", "A harvest festival", "A creation hymn"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_066",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "According to the Kurma Purana, what is the significance of the 'Lingodbhava' form of Shiva?",
+    "options": ["Shiva dancing on Apasmara", "Shiva emerging from the cosmic Linga of fire, showing he is without beginning or end", "Shiva meditating in the Himalayas", "Shiva destroying Tripura"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_067",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Kalidasa's 'Meghaduta', what is the cloud messenger asked to carry?",
+    "options": ["A weapon to the gods", "A love message from an exiled Yaksha to his wife in Alaka", "Sacred offerings to a temple", "News of war to a king"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_068",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Tantric tradition, what is the 'Kundalini' described as?",
+    "options": ["A sacred river", "A coiled serpent energy at the base of the spine that rises through chakras", "A type of mantra", "A cosmic weapon"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_069",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Garuda Purana, what are the 'Yamadoots'?",
+    "options": ["Celestial musicians", "Messengers of Yama who escort souls of the dead", "Guardian spirits of temples", "Sacred animals"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_070",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Jain cosmology, what is 'Adholoka'?",
+    "options": ["The celestial realm", "The lower world consisting of seven hells (Naraka)", "The human realm", "The realm of liberated souls"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_071",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Isha Upanishad, what is the central teaching about the relationship between renunciation and action?",
+    "options": ["Only renunciation leads to liberation", "Only action is important", "One should enjoy through renunciation; both knowledge and action are needed", "The gods decide one's fate regardless of action"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_072",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Bhagavata Purana, what is the story of 'Gajendra Moksha'?",
+    "options": ["A king achieves liberation through penance", "An elephant devotee is rescued by Vishnu from a crocodile when he surrenders completely", "A sage transforms into an elephant", "Ganesha liberates a demon"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_073",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology of the Garo people of Meghalaya, who is 'Tatara-Rabuga'?",
+    "options": ["The god of thunder", "The Supreme Creator who existed before the world", "The goddess of rice", "The spirit of the river"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_074",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Agni Purana, what architectural principles are described for temple construction?",
+    "options": ["Only palace design", "Vastu Shastra principles including the Vastu Purusha Mandala as the basis for temple layout", "Fortress design only", "No architectural content exists in this Purana"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_075",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Tantric tradition, who is 'Chinnamasta' among the Dasha Mahavidyas?",
+    "options": ["The goddess of wealth", "The self-decapitated goddess who drinks her own blood, symbolizing self-sacrifice and kundalini awakening", "The goddess of learning", "The goddess of the ocean"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_076",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "According to the Vamana Purana, what happened to the demon Andhaka when he attacked Shiva?",
+    "options": ["He was banished to the netherworld", "Shiva impaled him on his trident, and Andhaka's blood devotion transformed him into a Shiva gana named Bhringi", "He became a river", "Vishnu defeated him"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_077",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Buddhist Abhidharma tradition, what are the 'Twelve Nidanas' (links of dependent origination)?",
+    "options": ["Twelve meditation stages", "Twelve causal links explaining the cycle of existence from ignorance to suffering", "Twelve Buddhist virtues", "Twelve councils of Buddhism"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_078",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology of the Nagas of Nagaland, what is the significance of the 'Log Drum' (ritual drum)?",
+    "options": ["It is merely a musical instrument", "It is carved from a single tree trunk and is believed to house spirits and mark important community events", "It is used only for war", "It represents the creator god"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_079",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Mahabharata (Vana Parva), what is the story of Savitri and Satyavan?",
+    "options": ["Savitri defeated a demon to save her kingdom", "Savitri argued with Yama (Death) and won back her husband Satyavan's life through her wit and devotion", "Satyavan became immortal through tapas", "They were cursed by a sage"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_080",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Katha Upanishad, what does Nachiketa learn from Yama about the nature of death?",
+    "options": ["Death is the end of everything", "Death is a punishment by gods", "The Self (Atman) is never born and never dies; it is eternal", "Death can be avoided through rituals"],
+    "correct_index": 2
+  },
+  {
+    "id": "myth_hard_081",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the regional mythology of Kerala, what is the legend of 'Parasurama Kshetra'?",
+    "options": ["Parasurama conquered Lanka", "Parasurama threw his axe from Gokarna and the sea receded to create the land of Kerala", "Parasurama built a temple for Vishnu", "Parasurama fought Rama"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_082",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Jain cosmology, what are the 'Tirthas' associated with the concept of 'Tirthankara'?",
+    "options": ["Pilgrimage sites only", "A ford or crossing point established by the Tirthankara to help souls cross the ocean of worldly existence", "Sacred rivers", "Mountain peaks"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_083",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Vayu Purana, who are the 'Saptarishi' (Seven Sages) of the current Manvantara?",
+    "options": ["Manu, Surya, Chandra, Agni, Vayu, Indra, Brahma", "Kashyapa, Atri, Vasishtha, Vishwamitra, Gautama, Jamadagni, Bharadvaja", "Seven incarnations of Vishnu", "Seven sons of Parvati"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_084",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Tantric tradition, what are the 'Pancha Makara' (Five M's) used in left-hand Tantra rituals?",
+    "options": ["Five types of mantras", "Madya (wine), Mamsa (meat), Matsya (fish), Mudra (grain), Maithuna (union)", "Five sacred mountains", "Five forms of meditation"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_085",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Sanskrit literature, what is Bharavi's 'Kiratarjuniya' about?",
+    "options": ["The story of Rama's exile", "Arjuna's encounter with Shiva disguised as a Kirata (hunter) to obtain the Pashupatastra", "Krishna's childhood adventures", "The churning of the ocean"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_086",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology of Tamil Shaiva Siddhanta, who are the 63 Nayanars?",
+    "options": ["63 forms of Vishnu", "63 Shaiva poet-saints who demonstrated extreme devotion to Shiva", "63 sacred rivers", "63 Jain monks"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_087",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Bhagavata Purana, what is the 'Venu Gita' (Song of the Flute)?",
+    "options": ["A war song by Krishna", "A passage describing the Gopis' ecstatic response to Krishna's flute music", "A hymn sung by Brahma", "A lament by Draupadi"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_088",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Buddhist Abhidharma, what is the concept of 'Alaya-vijnana' (Storehouse Consciousness) in Yogachara philosophy?",
+    "options": ["The consciousness of the creator god", "A foundational consciousness that stores all karmic seeds and experiences", "The awareness during deep sleep only", "A type of meditation attainment"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_089",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the tribal mythology of the Bhil people, who is their legendary hero ancestor?",
+    "options": ["Birsa", "Eklavya", "Ghatotkacha", "Barbarik"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_090",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Varaha Purana, what is the significance of 'Mathura Mahatmya'?",
+    "options": ["It describes the creation of the world", "It glorifies Mathura as the birthplace of Krishna and details its sacred geography", "It narrates the Ramayana", "It describes Shiva's marriage"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_091",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Tantric tradition, what is the significance of the 'Shatchakra Nirupana'?",
+    "options": ["A text about temple architecture", "A treatise describing the six chakras (energy centers) and the path of Kundalini through them", "A hymn to the six forms of Murugan", "A description of six sacred rivers"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_092",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Mahabharata, what is the 'Yaksha Prashna' (Questions of the Yaksha)?",
+    "options": ["A battle between Yudhishthira and a Yaksha", "A dialogue where Yudhishthira answers ethical and philosophical riddles posed by a Yaksha (actually Yama) to revive his brothers", "A hymn to Kubera", "A curse by a Yaksha on the Pandavas"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_093",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Aitareya Upanishad, what is described as the process of creation?",
+    "options": ["Creation from nothing", "The Atman (Self) alone existed and created the worlds, then entered into beings as consciousness", "The gods created the world through sacrifice", "Creation through sound vibrations only"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_094",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the regional folk mythology of Rajasthan, who is 'Pabuji'?",
+    "options": ["A Mughal emperor", "A folk deity and hero worshipped as a protector of cattle and camels, celebrated in the Pabuji ki Phad scroll painting tradition", "A river god", "A historical Jain monk"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_095",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Bhagavata Purana, what is the concept of 'Navavidha Bhakti' (Nine Forms of Devotion)?",
+    "options": ["Nine avatars of Vishnu", "Shravana, Kirtana, Smarana, Padasevana, Archana, Vandana, Dasya, Sakhya, Atmanivedana", "Nine types of yoga", "Nine sacred rivers"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_096",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology surrounding the Konark Sun Temple, what legend explains why the temple was never completed?",
+    "options": ["A curse from Shiva", "The chief architect Bisu Maharana's son Dharmapada placed the final stone but the architect feared the king's wrath over the long construction, leading to a tragic end", "An earthquake destroyed it", "Foreign invaders stopped the work"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_097",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Jain cosmology, what is 'Pudgala'?",
+    "options": ["The soul", "Matter, one of the six fundamental substances (Dravyas) that makes up the physical world", "Time", "Space"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_098",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Shiva Purana, what is the legend of 'Tripurantaka' (Destroyer of the Three Cities)?",
+    "options": ["Vishnu destroyed three demon cities", "Shiva destroyed three flying cities of the Asuras (Tripura) with a single arrow", "Brahma created three sacred cities", "Indra conquered three heavenly realms"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_099",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Buddhist concept from the Abhidharma, what is 'Bhavachakra' (Wheel of Existence)?",
+    "options": ["A meditation technique", "A symbolic representation of the cycle of existence (samsara) with its six realms and twelve links of dependent origination", "A sacred pilgrimage circuit", "A type of Buddhist temple"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_100",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology of the Toda people of the Nilgiri Hills, what is the role of the sacred buffalo?",
+    "options": ["It is merely a domestic animal", "The buffalo is central to Toda religion; their goddess Tokisy created sacred buffaloes, and buffalo rituals mark all major life events", "Buffaloes are sacrificed to the sun god", "They serve as war mounts"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_101",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Sanskrit literature, what is Magha's 'Shishupala Vadha' about?",
+    "options": ["The birth of Shishupala", "Krishna's slaying of Shishupala at Yudhishthira's Rajasuya sacrifice, told as a mahakavya", "Shishupala's conquests", "A debate between Shishupala and Bhishma"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_102",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Tantric tradition, what is the concept of 'Shakti-pata'?",
+    "options": ["A physical exercise", "The descent of divine grace from guru to disciple, initiating spiritual awakening", "A type of mantra chanting", "A pilgrimage route"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_103",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Taittiriya Upanishad, what are the five sheaths (Pancha Kosha) that envelop the Self?",
+    "options": ["Earth, water, fire, air, space", "Annamaya, Pranamaya, Manomaya, Vijnanamaya, Anandamaya", "Sight, sound, touch, taste, smell", "Five types of karma"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_104",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the folk mythology of the Warli tribe of Maharashtra, what is their creation myth centered around?",
+    "options": ["A cosmic egg", "Palaghata, the Mother Goddess, is central; the earth was created from her body", "A great flood", "A battle between gods"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_105",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Brahmavaivarta Purana, what is the relationship between Radha and Krishna described as?",
+    "options": ["Master and servant", "Radha is the eternal consort and the Shakti (power) of Krishna; they are inseparable aspects of the divine", "Siblings", "Teacher and student"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_106",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Buddhist Abhidharma, what is 'Citta' and how many types are identified in the Theravada tradition?",
+    "options": ["A sacred text; 12 types", "Mind/consciousness; 89 (or 121) types of consciousness", "A meditation posture; 4 types", "A moral precept; 10 types"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_107",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology of the Apatani tribe of Arunachal Pradesh, who are 'Abo Teni' and what is their significance?",
+    "options": ["Mountain spirits", "The legendary ancestor from whom all Apatani clans descend", "Rain deities", "Forest guardians"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_108",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Shilpa Shastras, what is the 'Vastu Purusha Mandala' in temple architecture?",
+    "options": ["A decorative motif", "A sacred geometric diagram of a cosmic person lying face down, forming the metaphysical plan for temple layout", "A type of temple tower", "A ritual performed before construction"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_109",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Devi Bhagavata Purana, who is 'Dhumavati' among the Dasha Mahavidyas?",
+    "options": ["The beautiful goddess of love", "The widow goddess associated with inauspiciousness, depicted as an old woman riding a crow or chariot", "The goddess of music", "The goddess of rivers"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_110",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Jain philosophy, what is 'Syadvada' (the doctrine of conditional predication)?",
+    "options": ["A doctrine of absolute truth", "A logical framework stating that all assertions are conditionally true, expressed through sevenfold predication (Saptabhangi)", "A meditation technique", "A dietary restriction"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_111",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Prashna Upanishad, what question does Kabandhi Katyayana ask sage Pippalada about the origin of beings?",
+    "options": ["How to attain wealth", "From what source are creatures born?", "How to perform rituals", "What happens after death only"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_112",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the South Indian Shaiva tradition, what is the 'Thevaram'?",
+    "options": ["A temple festival", "A collection of Tamil devotional hymns composed by the three Nayanar saints: Thirugnanasambandar, Thirunavukkarasar, and Sundarar", "A Vishnu worship text", "A Jain philosophical text"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_113",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Mahabharata, what is the 'Anugita' and where does it appear?",
+    "options": ["A sequel to the Bhagavad Gita, found in the Ashvamedhika Parva, where Krishna recapitulates spiritual teachings to Arjuna", "A war strategy manual", "A hymn sung during the Rajasuya sacrifice", "A prophecy by Vyasa"],
+    "correct_index": 0
+  },
+  {
+    "id": "myth_hard_114",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology of the Lepcha people of Sikkim, who is 'Itbu-moo'?",
+    "options": ["The god of war", "The Mother Creator goddess who created the world and humanity from the snows of Kanchenjunga", "The sun god", "A river spirit"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_115",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Tantric tradition, what is 'Nyasa' in the context of Tantric worship?",
+    "options": ["A type of musical composition", "The ritual placement of mantras and divine energies on different parts of the body through touch", "A fasting practice", "A type of temple decoration"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_116",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Bhagavata Purana, what is the story of 'Ajamila' and its significance?",
+    "options": ["Ajamila conquered a kingdom", "A sinful Brahmin was saved at death by accidentally calling his son 'Narayana' (a name of Vishnu), illustrating the power of God's name", "Ajamila performed a great sacrifice", "Ajamila was a warrior who defeated demons"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_117",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the mythology surrounding temple architecture, what is the 'Garbhagriha' symbolically representing?",
+    "options": ["The cosmic battlefield", "The cave of the heart or the womb chamber where the divine is born/resides, symbolizing the innermost self", "An assembly hall", "A water reservoir"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_118",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Kalidasa's 'Abhijnana Shakuntalam', what token of recognition does King Dushyanta give Shakuntala?",
+    "options": ["A necklace", "A royal signet ring", "A sacred thread", "A golden bangle"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_119",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Mundaka Upanishad, what is the metaphor of the 'two birds on a tree' meant to illustrate?",
+    "options": ["The relationship between husband and wife", "The individual self (Jivatman) and the universal self (Paramatman) residing in the same body", "The sun and moon", "Two competing deities"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_120",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the folk mythology of the Irula tribe of South India, what is their relationship with snakes?",
+    "options": ["They fear and avoid snakes", "They worship the Naga spirits and are traditional snake catchers, with snake-related rituals central to their culture", "They have no mythology about snakes", "They consider snakes as evil omens only"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_121",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Narada Purana, what is the concept of 'Kali Yuga Dharma'?",
+    "options": ["Complex Vedic rituals are the only path", "In the age of Kali, simple repetition of God's name (Nama Sankirtana) is the most effective spiritual practice", "Dharma is completely destroyed", "Only warrior dharma remains"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_122",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In Jain cosmology, what is the 'Lokakasha' (occupied space) surrounded by?",
+    "options": ["Infinite water", "Alokakasha (empty or unoccupied infinite space)", "Other universes", "A cosmic shell"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_123",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Vishnu Purana, what is the story of Jadabharata?",
+    "options": ["A king who conquered all lands", "King Bharata was reborn as a deer due to attachment, then as a Brahmin who appeared dull but possessed supreme knowledge", "A warrior who fought the gods", "A sage who created a new Veda"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_124",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Buddhist Abhidharma, what is 'Tathagatagarbha' (Buddha-nature)?",
+    "options": ["A physical relic of the Buddha", "The innate potential or seed of Buddhahood present in all sentient beings", "A type of monastery", "A meditation posture"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_125",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the temple mythology of Thanjavur, what engineering marvel of the Brihadeeswarar Temple remains unexplained?",
+    "options": ["Its underwater foundation", "The 80-ton granite capstone atop the 216-foot vimana (tower) and how it was raised", "A revolving shrine", "Invisible foundations"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_126",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Svetasvatara Upanishad, what is unique about its philosophical contribution?",
+    "options": ["It focuses only on rituals", "It is one of the earliest Upanishads to identify a personal God (Rudra-Shiva) as the Supreme Being while discussing Sankhya and Yoga", "It rejects the concept of Brahman", "It is purely a medical text"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_127",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the folk mythology of the Kodava people of Coorg (Karnataka), who is their mythical ancestor?",
+    "options": ["A Pandava prince", "Chandravarama, the moon-god's descendant, or according to another legend, they descend from the warriors of Alexander's army who settled there", "A Chola king", "A Jain saint"],
+    "correct_index": 1
+  },
+  {
+    "id": "myth_hard_128",
+    "category": "mythology",
+    "difficulty": 3,
+    "question": "In the Tantric tradition, what is 'Bhairava' and how many forms does the Shiva Purana describe?",
+    "options": ["A type of dance; 4 forms", "A fierce manifestation of Shiva; eight primary forms known as the Ashtabhairava", "A weapon of Vishnu; 12 forms", "A sacred river; 7 forms"],
+    "correct_index": 1
+  }
+]

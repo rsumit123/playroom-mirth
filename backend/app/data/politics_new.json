@@ -1,0 +1,4266 @@
+[
+  {
+    "id": "pol_easy_056",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the second Prime Minister of India?",
+    "options": [
+      "Morarji Desai",
+      "Lal Bahadur Shastri",
+      "Indira Gandhi",
+      "Gulzarilal Nanda"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_057",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Quit India Movement was launched in which year?",
+    "options": [
+      "1946",
+      "1944",
+      "1940",
+      "1942"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_058",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the election symbol of the Bharatiya Janata Party (BJP)?",
+    "options": [
+      "Lotus",
+      "Elephant",
+      "Broom",
+      "Hand"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_059",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the election symbol of the Indian National Congress?",
+    "options": [
+      "Hand",
+      "Cycle",
+      "Lotus",
+      "Arrow"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_060",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is known as the 'Missile Man of India'?",
+    "options": [
+      "Homi Bhabha",
+      "A.P.J. Abdul Kalam",
+      "Satish Dhawan",
+      "Vikram Sarabhai"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_061",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Red Fort, from which the Prime Minister addresses the nation on Independence Day, is located in which city?",
+    "options": [
+      "New Delhi",
+      "Lucknow",
+      "Jaipur",
+      "Agra"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_062",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state is known as 'God's Own Country'?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Goa",
+      "Karnataka"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_063",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What does NOTA stand for in Indian elections?",
+    "options": [
+      "None Of The Above",
+      "Nomination Of The Assembly",
+      "No Option To Accept",
+      "Not On The Agenda"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_064",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Reserve Bank of India is headquartered in which city?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_065",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which leader gave the famous slogan 'Jai Jawan Jai Kisan'?",
+    "options": [
+      "Lal Bahadur Shastri",
+      "Atal Bihari Vajpayee",
+      "Jawaharlal Nehru",
+      "Indira Gandhi"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_066",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Swachh Bharat Mission was launched by which Prime Minister?",
+    "options": [
+      "Atal Bihari Vajpayee",
+      "Narendra Modi",
+      "Rajiv Gandhi",
+      "Manmohan Singh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_067",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the full form of MGNREGA?",
+    "options": [
+      "Mahatma Gandhian National Rural Employment Guarantee Act",
+      "Ministry of Gandhi National Rural Employment Generation Act",
+      "Mahatma Gandhi National Rural Employment Guarantee Act",
+      "Mahatma Gandhi National Rural Education Guarantee Act"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_068",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first President of the Indian National Congress?",
+    "options": [
+      "Surendranath Banerjee",
+      "W.C. Bonnerjee",
+      "Dadabhai Naoroji",
+      "Allan Octavian Hume"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_069",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Dandi March was led by Mahatma Gandhi to protest against which tax?",
+    "options": [
+      "Land Tax",
+      "Trade Tax",
+      "Salt Tax",
+      "Income Tax"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_070",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Indian city was formerly known as Bombay?",
+    "options": [
+      "Kolkata",
+      "Chennai",
+      "Bengaluru",
+      "Mumbai"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_071",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "A.P.J. Abdul Kalam served as which President of India (by number)?",
+    "options": [
+      "13th",
+      "10th",
+      "12th",
+      "11th"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_072",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Non-Aligned Movement (NAM) was co-founded by which Indian leader?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Rajiv Gandhi",
+      "Indira Gandhi",
+      "Mahatma Gandhi"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_073",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Hyderabad is the capital of which Indian state?",
+    "options": [
+      "Telangana",
+      "Karnataka",
+      "Andhra Pradesh",
+      "Maharashtra"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_074",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the national animal of India?",
+    "options": [
+      "Leopard",
+      "Bengal Tiger",
+      "Elephant",
+      "Lion"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_075",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which government scheme aims to provide bank accounts to every household in India?",
+    "options": [
+      "Make in India",
+      "Swachh Bharat",
+      "Jan Dhan Yojana",
+      "Skill India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_076",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian National Congress was founded in which year?",
+    "options": [
+      "1880",
+      "1890",
+      "1895",
+      "1885"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_077",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Manmohan Singh served as Prime Minister of India for how many terms?",
+    "options": [
+      "1",
+      "4",
+      "3",
+      "2"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_078",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What does EVM stand for in Indian elections?",
+    "options": [
+      "Electronic Voting Machine",
+      "Electronic Voter Management",
+      "Election Verification Machine",
+      "Electronic Vote Machine"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_079",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Jallianwala Bagh massacre took place in which city?",
+    "options": [
+      "Amritsar",
+      "Lucknow",
+      "Lahore",
+      "Delhi"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_080",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Goa was liberated from Portuguese rule in which year?",
+    "options": [
+      "1961",
+      "1947",
+      "1950",
+      "1971"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_081",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first Indian woman to become the Governor of a state?",
+    "options": [
+      "Sarojini Naidu",
+      "Indira Gandhi",
+      "Vijaya Lakshmi Pandit",
+      "Sucheta Kripalani"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_082",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Aadhaar card is a unique identification number consisting of how many digits?",
+    "options": [
+      "16",
+      "14",
+      "12",
+      "10"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_083",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which organization is responsible for conducting the Census of India?",
+    "options": [
+      "NITI Aayog",
+      "Ministry of Statistics",
+      "Election Commission",
+      "Registrar General and Census Commissioner"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_084",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Kargil War between India and Pakistan took place in which year?",
+    "options": [
+      "2002",
+      "1990",
+      "1971",
+      "1999"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_085",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Subhas Chandra Bose founded which army to fight for Indian independence?",
+    "options": [
+      "Indian Army",
+      "Indian National Army (INA)",
+      "Azad Hind Fauj",
+      "Both B and C"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_086",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Simon Commission visited India in which year?",
+    "options": [
+      "1935",
+      "1919",
+      "1942",
+      "1928"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_087",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state in India has its own separate constitution?",
+    "options": [
+      "Goa",
+      "Nagaland",
+      "Jammu & Kashmir (before 2019)",
+      "Sikkim"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_088",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Union Budget of India is presented in which month?",
+    "options": [
+      "January",
+      "February",
+      "March",
+      "April"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_089",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first Indian to win the Nobel Prize?",
+    "options": [
+      "Rabindranath Tagore",
+      "Amartya Sen",
+      "C.V. Raman",
+      "Mother Teresa"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_090",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the highest civilian award in India?",
+    "options": [
+      "Padma Bhushan",
+      "Bharat Ratna",
+      "Padma Vibhushan",
+      "Param Vir Chakra"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_091",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India became a Republic on which date?",
+    "options": [
+      "26 January 1950",
+      "26 November 1949",
+      "30 January 1948",
+      "15 August 1947"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_092",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who gave the slogan 'Do or Die' during the freedom struggle?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Bhagat Singh",
+      "Mahatma Gandhi",
+      "Bal Gangadhar Tilak"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_093",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Bharatiya Janata Party (BJP) was founded in which year?",
+    "options": [
+      "1977",
+      "1984",
+      "1980",
+      "1989"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_094",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Prime Minister is known for the 'Green Revolution' in India?",
+    "options": [
+      "Indira Gandhi",
+      "Jawaharlal Nehru",
+      "Rajiv Gandhi",
+      "Lal Bahadur Shastri"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_095",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Telangana became the newest state of India in which year?",
+    "options": [
+      "2019",
+      "2010",
+      "2014",
+      "2000"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_096",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The three branches of the Indian government are the Legislature, Executive, and:",
+    "options": [
+      "Media",
+      "Judiciary",
+      "Military",
+      "Bureaucracy"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_097",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Chief Minister is the head of government in a:",
+    "options": [
+      "District",
+      "State",
+      "Country",
+      "Village"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_098",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Indian state has the smallest area?",
+    "options": [
+      "Nagaland",
+      "Goa",
+      "Tripura",
+      "Sikkim"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_099",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The first war of Indian independence (Sepoy Mutiny) took place in which year?",
+    "options": [
+      "1877",
+      "1847",
+      "1867",
+      "1857"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_100",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first Deputy Prime Minister of India?",
+    "options": [
+      "B.R. Ambedkar",
+      "Jawaharlal Nehru",
+      "Rajendra Prasad",
+      "Sardar Vallabhbhai Patel"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_101",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "ISRO, India's space agency, is headquartered in which city?",
+    "options": [
+      "Bengaluru",
+      "New Delhi",
+      "Sriharikota",
+      "Mumbai"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_102",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India conducted its first nuclear test (Smiling Buddha) in which year?",
+    "options": [
+      "1998",
+      "1974",
+      "1980",
+      "1968"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_103",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the name of the lower house of the Indian Parliament?",
+    "options": [
+      "Lok Sabha",
+      "Vidhan Sabha",
+      "Rajya Sabha",
+      "Vidhan Parishad"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_104",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Governor of a state is appointed by whom?",
+    "options": [
+      "Chief Justice of India",
+      "Chief Minister",
+      "Prime Minister",
+      "President of India"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_105",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Gandhi Jayanti is celebrated on which date?",
+    "options": [
+      "26 January",
+      "2 October",
+      "14 November",
+      "15 August"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_106",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Children's Day in India is celebrated on 14 November to honour which leader?",
+    "options": [
+      "A.P.J. Abdul Kalam",
+      "Jawaharlal Nehru",
+      "Rabindranath Tagore",
+      "Mahatma Gandhi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_107",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The partition of India in 1947 created which two nations?",
+    "options": [
+      "India and Sri Lanka",
+      "India and Myanmar",
+      "India and Pakistan",
+      "India and Bangladesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_108",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "SAARC is a regional organization of countries in which region?",
+    "options": [
+      "Southeast Asia",
+      "East Asia",
+      "Central Asia",
+      "South Asia"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_109",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The highest military decoration in India is the:",
+    "options": [
+      "Ashoka Chakra",
+      "Maha Vir Chakra",
+      "Kirti Chakra",
+      "Param Vir Chakra"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_110",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which leader gave the slogan 'Swaraj is my birthright and I shall have it'?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Mahatma Gandhi",
+      "Bhagat Singh",
+      "Bal Gangadhar Tilak"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_111",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Army, Navy, and Air Force together form the:",
+    "options": [
+      "Indian Defence Force",
+      "Indian National Guard",
+      "Indian Armed Forces",
+      "Indian Military Services"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_112",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who gave the slogan 'Inquilab Zindabad' (Long Live the Revolution)?",
+    "options": [
+      "Mahatma Gandhi",
+      "Bhagat Singh",
+      "Chandrashekhar Azad",
+      "Subhas Chandra Bose"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_113",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Planning Commission of India was set up in which year?",
+    "options": [
+      "1950",
+      "1955",
+      "1960",
+      "1947"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_114",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Indian Prime Minister was assassinated in 1984?",
+    "options": [
+      "Indira Gandhi",
+      "Morarji Desai",
+      "Rajiv Gandhi",
+      "Lal Bahadur Shastri"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_115",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Rajiv Gandhi was assassinated in which year?",
+    "options": [
+      "1993",
+      "1984",
+      "1991",
+      "1989"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_116",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The national bird of India is the:",
+    "options": [
+      "Eagle",
+      "Peacock",
+      "Sparrow",
+      "Parrot"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_117",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the full form of UPSC?",
+    "options": [
+      "Union Professional Service Commission",
+      "Universal Public Service Commission",
+      "Union Public Service Commission",
+      "United Public Service Commission"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_118",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Lok Sabha is also known as the:",
+    "options": [
+      "House of the People",
+      "National Assembly",
+      "Council of States",
+      "Senate"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_119",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the Prime Minister of India during the 1971 India-Pakistan War?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Lal Bahadur Shastri",
+      "Morarji Desai",
+      "Indira Gandhi"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_120",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The state of Chhattisgarh was carved out from which state in 2000?",
+    "options": [
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Bihar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_121",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The state of Jharkhand was carved out from which state in 2000?",
+    "options": [
+      "Odisha",
+      "West Bengal",
+      "Bihar",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_122",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The state of Uttarakhand was carved out from which state in 2000?",
+    "options": [
+      "Uttar Pradesh",
+      "Rajasthan",
+      "Himachal Pradesh",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_123",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Demonetization of 500 and 1000 rupee notes was announced in which year?",
+    "options": [
+      "2017",
+      "2015",
+      "2016",
+      "2014"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_124",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state has the most number of districts in India?",
+    "options": [
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Maharashtra"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_125",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the national song of India?",
+    "options": [
+      "Vande Mataram",
+      "Jana Gana Mana",
+      "Sare Jahan Se Achha",
+      "Jai Ho"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_126",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who wrote the national song 'Vande Mataram'?",
+    "options": [
+      "Sarojini Naidu",
+      "Bankim Chandra Chatterjee",
+      "Muhammad Iqbal",
+      "Rabindranath Tagore"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_127",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Ayushman Bharat is a government scheme related to which sector?",
+    "options": [
+      "Healthcare",
+      "Housing",
+      "Education",
+      "Agriculture"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_128",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Make in India is a government initiative to promote:",
+    "options": [
+      "Manufacturing",
+      "Education",
+      "Agriculture",
+      "Tourism"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_129",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Panchayati Raj system operates at which levels?",
+    "options": [
+      "Four levels",
+      "Two levels",
+      "Five levels",
+      "Three levels"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_130",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "DRDO stands for:",
+    "options": [
+      "Defence Research and Design Organisation",
+      "Defence Research and Development Organisation",
+      "Defence Resource and Development Office",
+      "Department of Research and Defence Operations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_131",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Non-Cooperation Movement was launched by Mahatma Gandhi in which year?",
+    "options": [
+      "1922",
+      "1930",
+      "1920",
+      "1918"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_132",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the first Chief Justice of India?",
+    "options": [
+      "M. Patanjali Sastri",
+      "S.R. Das",
+      "B.K. Mukherjea",
+      "H.J. Kania"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_133",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India is a member of which grouping along with Brazil, Russia, China, and South Africa?",
+    "options": [
+      "NATO",
+      "BRICS",
+      "ASEAN",
+      "G7"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_134",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The civil disobedience movement led by Gandhi is also known as the:",
+    "options": [
+      "Quit India Movement",
+      "Swadeshi Movement",
+      "Salt March / Dandi March",
+      "Khilafat Movement"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_135",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the last Mughal Emperor of India?",
+    "options": [
+      "Bahadur Shah Zafar",
+      "Aurangzeb",
+      "Akbar",
+      "Shah Jahan"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_136",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many spokes does the Ashoka Chakra on the Indian flag have?",
+    "options": [
+      "24",
+      "12",
+      "30",
+      "20"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_137",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The capital of Tamil Nadu is:",
+    "options": [
+      "Madurai",
+      "Chennai",
+      "Coimbatore",
+      "Trichy"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_138",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The capital of West Bengal is:",
+    "options": [
+      "Siliguri",
+      "Durgapur",
+      "Kolkata",
+      "Howrah"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_139",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Narendra Modi was the Chief Minister of which state before becoming PM?",
+    "options": [
+      "Gujarat",
+      "Maharashtra",
+      "Rajasthan",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_140",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Right to Information Act (RTI) was enacted in which year?",
+    "options": [
+      "2010",
+      "2005",
+      "2000",
+      "2003"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_141",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is India's rank among the world's largest democracies by population?",
+    "options": [
+      "First",
+      "Fourth",
+      "Second",
+      "Third"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_142",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Constitution is one of the longest written constitutions in the world. True or false?",
+    "options": [
+      "False",
+      "True",
+      "It is the shortest",
+      "It is unwritten"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_143",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Bhagat Singh, Sukhdev, and Rajguru were executed by the British on which date?",
+    "options": [
+      "23 March 1931",
+      "13 April 1919",
+      "15 August 1947",
+      "30 January 1948"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_144",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Space Research Organisation (ISRO) was founded in which year?",
+    "options": [
+      "1980",
+      "1975",
+      "1962",
+      "1969"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_145",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "From which monument does the Prime Minister traditionally address the nation on Independence Day?",
+    "options": [
+      "India Gate",
+      "Rashtrapati Bhavan",
+      "Red Fort",
+      "Parliament House"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_146",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was Sardar Vallabhbhai Patel's major achievement in unifying India?",
+    "options": [
+      "Founding the INC",
+      "Drafting the Constitution",
+      "Leading the Quit India Movement",
+      "Integrating princely states"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_147",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Rowlatt Act of 1919 gave the British government the power to:",
+    "options": [
+      "Abolish local councils",
+      "Ban political parties",
+      "Imprison people without trial",
+      "Impose new taxes"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_148",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who presides over the sessions of the Lok Sabha?",
+    "options": [
+      "Prime Minister",
+      "Vice President",
+      "President",
+      "Speaker"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_149",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The National Human Rights Commission (NHRC) of India was established in which year?",
+    "options": [
+      "1990",
+      "1998",
+      "2000",
+      "1993"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_150",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Fundamental Duties of citizens are listed in which part of the Indian Constitution?",
+    "options": [
+      "Part III",
+      "Part V",
+      "Part IVA",
+      "Part IV"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_151",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India shares its longest land border with which country?",
+    "options": [
+      "Bangladesh",
+      "Pakistan",
+      "China",
+      "Nepal"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_152",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The state legislature of a state with two houses has a Vidhan Sabha and a:",
+    "options": [
+      "Lok Sabha",
+      "Panchayat",
+      "Vidhan Parishad",
+      "Rajya Sabha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_153",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the minimum age to become a member of the Rajya Sabha?",
+    "options": [
+      "30 years",
+      "40 years",
+      "35 years",
+      "25 years"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_154",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Constitution provides for how many Fundamental Duties?",
+    "options": [
+      "12",
+      "10",
+      "9",
+      "11"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_155",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the head of a Municipal Corporation?",
+    "options": [
+      "Mayor",
+      "Commissioner",
+      "District Collector",
+      "Sarpanch"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_156",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Rajya Sabha is a permanent body and is not subject to:",
+    "options": [
+      "Debates",
+      "Dissolution",
+      "Elections",
+      "Nominations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_157",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Bangladesh was formerly known as:",
+    "options": [
+      "East Pakistan",
+      "West Pakistan",
+      "Bengal Province",
+      "East Bengal Republic"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_158",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What is the name of the official residence of the Chief Justice of India?",
+    "options": [
+      "6 Flagstaff Road",
+      "5 Krishna Menon Marg",
+      "1 Safdarjung Lane",
+      "7 Race Course Road"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_159",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Pokhran-II nuclear tests were conducted in which year?",
+    "options": [
+      "1998",
+      "1974",
+      "2001",
+      "1995"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_160",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who among the following was NOT a President of India?",
+    "options": [
+      "Zakir Husain",
+      "R. Venkataraman",
+      "Jayaprakash Narayan",
+      "S. Radhakrishnan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_161",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Parliament House (now called Sansad Bhavan) was designed by which architects?",
+    "options": [
+      "Laurie Baker",
+      "Edwin Lutyens and Herbert Baker",
+      "Le Corbusier",
+      "Charles Correa"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_162",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Satyameva Jayate is taken from which ancient text?",
+    "options": [
+      "Arthashastra",
+      "Mundaka Upanishad",
+      "Rigveda",
+      "Bhagavad Gita"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_163",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What does the acronym IAS stand for?",
+    "options": [
+      "Indian Audit Service",
+      "Indian Army Service",
+      "Indian Administrative Service",
+      "Indian Academic Service"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_164",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many High Courts are there in India?",
+    "options": [
+      "30",
+      "25",
+      "28",
+      "21"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_165",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian Constitution guarantees the Right to Equality under which articles?",
+    "options": [
+      "Articles 14-18",
+      "Articles 25-28",
+      "Articles 12-18",
+      "Articles 19-22"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_166",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which leader is associated with the slogan 'Tum Mujhe Khoon Do, Main Tumhe Azadi Dunga'?",
+    "options": [
+      "Bal Gangadhar Tilak",
+      "Bhagat Singh",
+      "Mahatma Gandhi",
+      "Subhas Chandra Bose"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_167",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Goods and Services Tax (GST) Council is headed by the:",
+    "options": [
+      "Prime Minister",
+      "Chief Justice of India",
+      "RBI Governor",
+      "Union Finance Minister"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_168",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India's first Five Year Plan was launched in which year?",
+    "options": [
+      "1950",
+      "1947",
+      "1951",
+      "1955"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_169",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The state of Andhra Pradesh's new capital (under development) is:",
+    "options": [
+      "Visakhapatnam",
+      "Amaravati",
+      "Tirupati",
+      "Hyderabad"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_170",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the head of the village-level Panchayat?",
+    "options": [
+      "Collector",
+      "Tehsildar",
+      "Sarpanch",
+      "Mayor"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_171",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Indian national calendar is based on which era?",
+    "options": [
+      "Saka Era",
+      "Hijri Era",
+      "Vikram Samvat",
+      "Christian Era"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_172",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who was the President of India when Narendra Modi first became Prime Minister in 2014?",
+    "options": [
+      "Ram Nath Kovind",
+      "A.P.J. Abdul Kalam",
+      "Pratibha Patil",
+      "Pranab Mukherjee"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_easy_173",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The 'Look East' policy of India was launched under which Prime Minister?",
+    "options": [
+      "P.V. Narasimha Rao",
+      "Manmohan Singh",
+      "Rajiv Gandhi",
+      "Atal Bihari Vajpayee"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_174",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which of these is NOT a Fundamental Right in the Indian Constitution?",
+    "options": [
+      "Right against Exploitation",
+      "Right to Property",
+      "Right to Freedom",
+      "Right to Equality"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_175",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Jallianwala Bagh massacre occurred in which year?",
+    "options": [
+      "1921",
+      "1919",
+      "1915",
+      "1917"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_easy_176",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "How many schedules does the Indian Constitution currently contain?",
+    "options": [
+      "12",
+      "8",
+      "14",
+      "10"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_177",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "India tested nuclear weapons under the code name 'Operation Shakti' in which year?",
+    "options": [
+      "1974",
+      "2000",
+      "1998",
+      "1995"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_easy_178",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who among these was the longest-serving President of India?",
+    "options": [
+      "Rajendra Prasad",
+      "S. Radhakrishnan",
+      "A.P.J. Abdul Kalam",
+      "Pranab Mukherjee"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_179",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "The Directive Principles of State Policy are:",
+    "options": [
+      "Not enforceable by courts",
+      "Part of criminal law",
+      "Legally enforceable",
+      "Applicable only to states"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_easy_180",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Prime Minister launched the 'Digital India' campaign?",
+    "options": [
+      "Narendra Modi",
+      "Atal Bihari Vajpayee",
+      "Manmohan Singh",
+      "Rajiv Gandhi"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_046",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Mandal Commission recommended reservations for which group?",
+    "options": [
+      "Other Backward Classes (OBCs)",
+      "Economically Weaker Sections",
+      "Scheduled Castes",
+      "Scheduled Tribes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_047",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the Finance Minister who presented the historic 1991 liberalization budget?",
+    "options": [
+      "Pranab Mukherjee",
+      "P. Chidambaram",
+      "Manmohan Singh",
+      "Yashwant Sinha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_048",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Indian Constitution deals with the President's Rule in states?",
+    "options": [
+      "Article 368",
+      "Article 360",
+      "Article 352",
+      "Article 356"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_049",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 74th Constitutional Amendment deals with which institution?",
+    "options": [
+      "Panchayati Raj",
+      "Cooperative Societies",
+      "Municipalities / Urban Local Bodies",
+      "Tribunals"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_050",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The National Commission for Women (NCW) was established in which year?",
+    "options": [
+      "2000",
+      "1995",
+      "1992",
+      "1990"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_051",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Vishakha guidelines, laid down by the Supreme Court, relate to:",
+    "options": [
+      "Child labor",
+      "Sexual harassment at the workplace",
+      "Environmental protection",
+      "Right to education"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_052",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first non-Congress PM of India?",
+    "options": [
+      "V.P. Singh",
+      "Morarji Desai",
+      "Charan Singh",
+      "Atal Bihari Vajpayee"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_053",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Tashkent Agreement of 1966 was signed between India and Pakistan after which war?",
+    "options": [
+      "1947-48 War",
+      "1971 War",
+      "1965 War",
+      "1962 War"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_054",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The first Indian state to implement Panchayati Raj was:",
+    "options": [
+      "Andhra Pradesh",
+      "Rajasthan",
+      "Maharashtra",
+      "Kerala"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_055",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which PM nationalized 14 major commercial banks in 1969?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Lal Bahadur Shastri",
+      "Morarji Desai",
+      "Indira Gandhi"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_056",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Shimla Agreement of 1972 was signed between Indira Gandhi and:",
+    "options": [
+      "Zulfikar Ali Bhutto",
+      "General Yahya Khan",
+      "General Zia-ul-Haq",
+      "Ayub Khan"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_057",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "How many states in India have a bicameral legislature (two houses)?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_058",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 360 of the Indian Constitution deals with:",
+    "options": [
+      "Martial Law",
+      "President's Rule",
+      "National Emergency",
+      "Financial Emergency"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_059",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The NOTA option was introduced in Indian elections in which year?",
+    "options": [
+      "2011",
+      "2014",
+      "2013",
+      "2009"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_060",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The States Reorganization Act of 1956 was based on the recommendations of which commission?",
+    "options": [
+      "Rajmannar Committee",
+      "Sarkaria Commission",
+      "Fazl Ali Commission",
+      "Mandal Commission"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_061",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first Chief Election Commissioner known for reforming Indian elections?",
+    "options": [
+      "Sukumar Sen",
+      "T.N. Seshan",
+      "N. Gopalaswami",
+      "James Michael Lyngdoh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_062",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Indus Waters Treaty was signed between India and Pakistan in which year?",
+    "options": [
+      "1972",
+      "1960",
+      "1965",
+      "1955"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_063",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Constitution provides for the formation of new states or alteration of boundaries?",
+    "options": [
+      "Article 1",
+      "Article 2",
+      "Article 4",
+      "Article 3"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_064",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The National Development Council (NDC) was established in which year?",
+    "options": [
+      "1950",
+      "1960",
+      "1952",
+      "1955"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_065",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is 'Zero Hour' in Indian Parliament?",
+    "options": [
+      "The first hour of the session",
+      "Time for voting on bills",
+      "The hour after lunch break",
+      "An informal session after Question Hour to raise urgent matters"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_066",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Question Hour in Indian Parliament is the:",
+    "options": [
+      "First hour devoted to questions by members",
+      "Last hour of the session",
+      "Hour for debate on bills",
+      "Hour for voting"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_067",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Bharat Ratna was first awarded in which year?",
+    "options": [
+      "1960",
+      "1947",
+      "1950",
+      "1954"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_068",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which leader founded the Azad Hind government in exile during World War II?",
+    "options": [
+      "Bhagat Singh",
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Subhas Chandra Bose"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_069",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Election Commission of India originally had how many members when it was established?",
+    "options": [
+      "One (single member body)",
+      "Two",
+      "Three",
+      "Five"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_070",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 86th Constitutional Amendment added which Fundamental Right?",
+    "options": [
+      "Right to Privacy",
+      "Right to Information",
+      "Right to Education (Article 21A)",
+      "Right to Food"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_071",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the PM who signed the Lahore Declaration with Pakistan in 1999?",
+    "options": [
+      "I.K. Gujral",
+      "P.V. Narasimha Rao",
+      "Atal Bihari Vajpayee",
+      "H.D. Deve Gowda"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_072",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 'No Confidence Motion' can be moved in which house of Parliament?",
+    "options": [
+      "Either house",
+      "Rajya Sabha only",
+      "Both houses",
+      "Lok Sabha only"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_073",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Lal Bahadur Shastri passed away in which city?",
+    "options": [
+      "New Delhi",
+      "Tashkent",
+      "Varanasi",
+      "Moscow"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_074",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The President of India can be impeached on the ground of:",
+    "options": [
+      "Incompetence",
+      "Violation of the Constitution",
+      "Old age",
+      "Corruption"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_075",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Indian PM gave the slogan 'Garibi Hatao' (Remove Poverty)?",
+    "options": [
+      "P.V. Narasimha Rao",
+      "Rajiv Gandhi",
+      "Jawaharlal Nehru",
+      "Indira Gandhi"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_076",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The NDA (National Democratic Alliance) was first formed as a coalition led by which party?",
+    "options": [
+      "Janata Dal",
+      "Bharatiya Janata Party",
+      "Telugu Desam Party",
+      "Indian National Congress"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_077",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The UPA (United Progressive Alliance) was led by which party?",
+    "options": [
+      "Indian National Congress",
+      "BJP",
+      "Janata Dal",
+      "DMK"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_078",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the chairman of the first Finance Commission of India?",
+    "options": [
+      "A.K. Chanda",
+      "K.C. Neogy",
+      "K. Santhanam",
+      "Y.B. Chavan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_079",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "EVMs (Electronic Voting Machines) were first used on an experimental basis in Indian elections in which year?",
+    "options": [
+      "1982",
+      "1998",
+      "1989",
+      "2004"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_080",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which amendment added the word 'integrity' to the Preamble of the Indian Constitution?",
+    "options": [
+      "86th Amendment",
+      "52nd Amendment",
+      "42nd Amendment",
+      "44th Amendment"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_081",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Panchsheel Agreement (Five Principles of Peaceful Coexistence) was signed between India and which country?",
+    "options": [
+      "Japan",
+      "USSR",
+      "China",
+      "Pakistan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_082",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Article 19 of the Indian Constitution guarantees how many freedoms?",
+    "options": [
+      "4",
+      "7",
+      "6",
+      "5"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_083",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first Dalit President of India?",
+    "options": [
+      "Ram Nath Kovind",
+      "Zakir Husain",
+      "A.P.J. Abdul Kalam",
+      "K.R. Narayanan"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_084",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Rajiv Gandhi government was known for advancing which sector in India?",
+    "options": [
+      "Heavy industries",
+      "Nuclear energy",
+      "Information Technology and Telecom",
+      "Steel and mining"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_085",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Aam Aadmi Party (AAP) was founded in which year?",
+    "options": [
+      "2010",
+      "2012",
+      "2014",
+      "2016"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_086",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first tribal President of India?",
+    "options": [
+      "Ram Nath Kovind",
+      "K.R. Narayanan",
+      "Droupadi Murmu",
+      "A.P.J. Abdul Kalam"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_087",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The three lists in the Seventh Schedule are the Union List, State List, and:",
+    "options": [
+      "Residuary List",
+      "Concurrent List",
+      "Joint List",
+      "Common List"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_088",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Indian PM introduced the National Policy on Education in 1986?",
+    "options": [
+      "V.P. Singh",
+      "Indira Gandhi",
+      "Rajiv Gandhi",
+      "P.V. Narasimha Rao"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_089",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Anti-Defection Law is contained in which schedule of the Indian Constitution?",
+    "options": [
+      "Eighth Schedule",
+      "Ninth Schedule",
+      "Eleventh Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_090",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The first Indian satellite, Aryabhata, was launched in which year?",
+    "options": [
+      "1969",
+      "1975",
+      "1980",
+      "1972"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_091",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "India's 'No First Use' policy relates to which weapons?",
+    "options": [
+      "Conventional missiles",
+      "Biological weapons",
+      "Nuclear weapons",
+      "Chemical weapons"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_092",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Balwant Rai Mehta Committee recommended which system of local governance?",
+    "options": [
+      "Municipal corporations",
+      "District administration",
+      "Cantonment boards",
+      "Panchayati Raj (three-tier system)"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_093",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Chief of Defence Staff (CDS) post was created in which year?",
+    "options": [
+      "2017",
+      "2015",
+      "2020",
+      "2019"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_094",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was India's first Chief of Defence Staff?",
+    "options": [
+      "Air Chief Marshal R.K.S. Bhadauria",
+      "Admiral Karambir Singh",
+      "General M.M. Naravane",
+      "General Bipin Rawat"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_095",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Rajya Sabha members are elected by which method?",
+    "options": [
+      "Single transferable vote by state MLAs",
+      "Direct election by people",
+      "Nomination by the President",
+      "Election by Lok Sabha members"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_096",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is an 'Adjournment Motion' in the Indian Parliament?",
+    "options": [
+      "A motion to postpone a bill",
+      "A motion to remove the Speaker",
+      "A motion to end the session permanently",
+      "A motion to discuss a definite matter of urgent public importance"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_097",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "India's nuclear doctrine was officially announced in which year?",
+    "options": [
+      "1998",
+      "2001",
+      "1999",
+      "2003"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_098",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which PM introduced the 'Pradhan Mantri Gram Sadak Yojana' (rural road scheme)?",
+    "options": [
+      "Atal Bihari Vajpayee",
+      "Manmohan Singh",
+      "P.V. Narasimha Rao",
+      "Narendra Modi"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_099",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Indian Independence Act 1947 was passed by which body?",
+    "options": [
+      "Indian National Congress",
+      "Indian Constituent Assembly",
+      "British Parliament",
+      "United Nations"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_100",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Right to Privacy was declared a Fundamental Right by the Supreme Court in which year?",
+    "options": [
+      "2017",
+      "2013",
+      "2015",
+      "2019"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_101",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first Muslim President of India?",
+    "options": [
+      "A.P.J. Abdul Kalam",
+      "Mohammad Hidayatullah",
+      "Zakir Husain",
+      "Fakhruddin Ali Ahmed"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_102",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Comptroller and Auditor General of India is appointed by whom?",
+    "options": [
+      "President of India",
+      "Prime Minister",
+      "Chief Justice of India",
+      "Finance Minister"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_103",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 'surgical strikes' by India across the Line of Control took place in which year?",
+    "options": [
+      "2018",
+      "2016",
+      "2014",
+      "2019"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_104",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Navtej Singh Johar v. Union of India (2018) Supreme Court case dealt with:",
+    "options": [
+      "Triple talaq",
+      "Right to privacy",
+      "Decriminalization of Section 377 (homosexuality)",
+      "Aadhaar validity"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_105",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Balakot airstrike by the Indian Air Force took place in which year?",
+    "options": [
+      "2016",
+      "2019",
+      "2017",
+      "2020"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_106",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Government of India Act 1935 divided powers between the Centre and provinces using:",
+    "options": [
+      "Three lists",
+      "One list",
+      "Four lists",
+      "Two lists"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_107",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Pokhran-I nuclear test (1974) was conducted under the leadership of which PM?",
+    "options": [
+      "Indira Gandhi",
+      "Morarji Desai",
+      "Lal Bahadur Shastri",
+      "Jawaharlal Nehru"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_108",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which President of India was also a renowned philosopher and author of 'The Hindu View of Life'?",
+    "options": [
+      "V.V. Giri",
+      "S. Radhakrishnan",
+      "Zakir Husain",
+      "Rajendra Prasad"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_109",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Delimitation Commission is set up to:",
+    "options": [
+      "Regulate political parties",
+      "Conduct elections",
+      "Audit government accounts",
+      "Fix the boundaries of electoral constituencies"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_110",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The UPSC conducts which of the following examinations?",
+    "options": [
+      "NET",
+      "Civil Services Examination",
+      "NEET",
+      "JEE"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_111",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which PM abolished the privy purses of former Indian royalty?",
+    "options": [
+      "Morarji Desai",
+      "Lal Bahadur Shastri",
+      "Jawaharlal Nehru",
+      "Indira Gandhi"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_112",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The President's address to Parliament at the beginning of each session is mandated by which article?",
+    "options": [
+      "Article 80",
+      "Article 100",
+      "Article 85",
+      "Article 87"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_113",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the PM of India during the 2008 Indo-US nuclear deal?",
+    "options": [
+      "Atal Bihari Vajpayee",
+      "P.V. Narasimha Rao",
+      "Manmohan Singh",
+      "Narendra Modi"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_114",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Cabinet Mission Plan of 1946 proposed:",
+    "options": [
+      "Complete independence immediately",
+      "Separate elections for Muslims",
+      "A three-tier federal structure for India",
+      "Partition of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_115",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Indian Penal Code (IPC) was drafted by which committee?",
+    "options": [
+      "Hunter Commission",
+      "Montague-Chelmsford Committee",
+      "First Law Commission chaired by Lord Macaulay",
+      "Simon Commission"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_116",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Goa became a full state of India in which year?",
+    "options": [
+      "1971",
+      "1991",
+      "1987",
+      "1961"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_117",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Indian state was ruled by the Communist Party (CPI) government for the first time in 1957?",
+    "options": [
+      "Kerala",
+      "Tripura",
+      "Tamil Nadu",
+      "West Bengal"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_118",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Nehru-Liaquat Pact (1950) was related to:",
+    "options": [
+      "Protection of minorities",
+      "River water sharing",
+      "Trade agreement",
+      "Kashmir dispute"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_119",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Right to Education Act mandates free and compulsory education for children of which age group?",
+    "options": [
+      "6 to 16 years",
+      "5 to 14 years",
+      "5 to 12 years",
+      "6 to 14 years"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_120",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The S.R. Bommai case (1994) is a landmark case related to:",
+    "options": [
+      "President's Rule under Article 356",
+      "Anti-defection law",
+      "Freedom of Speech",
+      "Right to Privacy"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_121",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "In which year was NITI Aayog established?",
+    "options": [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_122",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The National Emergency in India has been declared how many times in total?",
+    "options": [
+      "Twice",
+      "Four times",
+      "Once",
+      "Three times"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_123",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the shortest-serving Prime Minister of India?",
+    "options": [
+      "H.D. Deve Gowda",
+      "Charan Singh",
+      "Atal Bihari Vajpayee (first term)",
+      "Gulzarilal Nanda"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_124",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Indian flag code allows citizens to fly the national flag on any day. This was made possible after which court ruling?",
+    "options": [
+      "Golak Nath case",
+      "Kesavananda Bharati case",
+      "Maneka Gandhi case",
+      "Union of India v. Naveen Jindal (2004)"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_125",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The first general elections in India were held using which method of voting?",
+    "options": [
+      "Ballot papers with symbols",
+      "Electronic Voting Machines",
+      "Show of hands",
+      "Voice vote"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_126",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the PM of India during the 1962 India-China War?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Morarji Desai",
+      "Indira Gandhi",
+      "Lal Bahadur Shastri"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_127",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule of the Indian Constitution lists the subjects in Union, State, and Concurrent Lists?",
+    "options": [
+      "Eighth Schedule",
+      "Sixth Schedule",
+      "Seventh Schedule",
+      "Fifth Schedule"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_128",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The first woman Chief Minister of Delhi was:",
+    "options": [
+      "Sheila Dikshit",
+      "Brinda Karat",
+      "Indira Gandhi",
+      "Sushma Swaraj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_129",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Potti Sriramulu's death by fasting led to the creation of which state?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_130",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Maneka Gandhi v. Union of India case (1978) expanded the scope of which article?",
+    "options": [
+      "Article 32",
+      "Article 19",
+      "Article 14",
+      "Article 21"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_131",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Finance Commission is constituted every:",
+    "options": [
+      "6 years",
+      "5 years",
+      "4 years",
+      "3 years"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_132",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state had the first woman Chief Minister from a Dalit background?",
+    "options": [
+      "Bihar",
+      "West Bengal",
+      "Uttar Pradesh",
+      "Tamil Nadu"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_133",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Triple Talaq was declared unconstitutional by the Supreme Court in which year?",
+    "options": [
+      "2017",
+      "2015",
+      "2019",
+      "2020"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_134",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The President of India is elected by which body?",
+    "options": [
+      "All citizens through direct election",
+      "An electoral college of elected members of Parliament and state legislatures",
+      "Members of Parliament only",
+      "Rajya Sabha members only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_135",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the longest-serving Chief Minister of any Indian state?",
+    "options": [
+      "Jyoti Basu",
+      "M. Karunanidhi",
+      "Pawan Kumar Chamling",
+      "Naveen Patnaik"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_136",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who founded the Bahujan Samaj Party (BSP)?",
+    "options": [
+      "Ram Vilas Paswan",
+      "Mayawati",
+      "Kanshi Ram",
+      "B.R. Ambedkar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_137",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Lokpal and Lokayuktas Act was passed in which year?",
+    "options": [
+      "2018",
+      "2015",
+      "2013",
+      "2011"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_138",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The CAG (Comptroller and Auditor General) is described under which article of the Constitution?",
+    "options": [
+      "Article 146",
+      "Article 150",
+      "Article 155",
+      "Article 148"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_139",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The President can be re-elected for:",
+    "options": [
+      "Cannot be re-elected",
+      "Two more terms",
+      "Only one more term",
+      "Any number of terms"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_140",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who was the first Lok Sabha Speaker to be voted out through a no-confidence motion?",
+    "options": [
+      "No Speaker has been voted out",
+      "Hukam Singh",
+      "G.V. Mavalankar",
+      "N. Sanjiva Reddy"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_141",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Citizenship Amendment Act (CAA) was passed in which year?",
+    "options": [
+      "2017",
+      "2020",
+      "2021",
+      "2019"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_142",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The National Green Tribunal was established under which act?",
+    "options": [
+      "Environment Protection Act, 1986",
+      "Wildlife Protection Act, 1972",
+      "National Green Tribunal Act, 2010",
+      "Forest Conservation Act, 1980"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_143",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which article of the Constitution establishes the Supreme Court of India?",
+    "options": [
+      "Article 124",
+      "Article 143",
+      "Article 136",
+      "Article 112"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_144",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The postal ballot facility in Indian elections is primarily available to:",
+    "options": [
+      "Only NRIs",
+      "Service personnel, diplomats, and certain special voters",
+      "Only senior citizens",
+      "All citizens"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_145",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "V.P. Singh's government implemented the Mandal Commission recommendations in which year?",
+    "options": [
+      "1990",
+      "1989",
+      "1991",
+      "1992"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_146",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The National Security Advisor (NSA) is appointed by whom?",
+    "options": [
+      "President",
+      "Parliament",
+      "Prime Minister",
+      "Defence Minister"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_147",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Indira Gandhi was which Prime Minister of India by number?",
+    "options": [
+      "3rd",
+      "4th",
+      "2nd",
+      "5th"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_medium_148",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The 103rd Constitutional Amendment (2019) provides for:",
+    "options": [
+      "Women's reservation in Parliament",
+      "OBC reservation increase",
+      "10% reservation for Economically Weaker Sections (EWS)",
+      "SC/ST reservation in promotion"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_149",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Rajya Sabha was first constituted on which date?",
+    "options": [
+      "26 January 1950",
+      "13 May 1952",
+      "15 August 1947",
+      "3 April 1952"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_medium_150",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which regional party was founded by N.T. Rama Rao?",
+    "options": [
+      "AIADMK",
+      "Telugu Desam Party",
+      "Shiv Sena",
+      "Trinamool Congress"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_151",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Sachar Committee report (2006) examined the social, economic, and educational status of which community?",
+    "options": [
+      "Scheduled Castes",
+      "Scheduled Tribes",
+      "Muslim community",
+      "Christians"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_152",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "A Money Bill can be introduced in which house of Parliament?",
+    "options": [
+      "Rajya Sabha only",
+      "Lok Sabha only",
+      "Joint session only",
+      "Either house"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_153",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Indian flag was adopted by the Constituent Assembly on which date?",
+    "options": [
+      "15 August 1947",
+      "26 November 1949",
+      "22 July 1947",
+      "26 January 1950"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_medium_154",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Chandigarh is the shared capital of which two states?",
+    "options": [
+      "Bihar and Jharkhand",
+      "Punjab and Haryana",
+      "Uttar Pradesh and Uttarakhand",
+      "Madhya Pradesh and Chhattisgarh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_medium_155",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who headed the committee that drafted the national flag for independent India?",
+    "options": [
+      "Rajendra Prasad",
+      "Sardar Patel",
+      "Jawaharlal Nehru",
+      "B.R. Ambedkar"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_031",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Minerva Mills v. Union of India (1980) case reinforced the doctrine of Basic Structure and struck down which sections of the 42nd Amendment?",
+    "options": [
+      "Sections 10 and 12",
+      "Sections 7 and 9",
+      "Sections 4 and 55",
+      "Sections 2 and 3"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_032",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Shah Commission was set up to investigate the excesses committed during which period?",
+    "options": [
+      "1962 India-China War",
+      "1971 Bangladesh War",
+      "1984 anti-Sikh riots",
+      "1975-77 Emergency"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_033",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Berubari Union case (1960) established that the Preamble of the Indian Constitution is:",
+    "options": [
+      "Superior to all articles",
+      "Not a part of the Constitution",
+      "Only a guideline for the judiciary",
+      "A part of the Constitution and enforceable"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_034",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which writ literally means 'to have the body' and is used to protect personal liberty?",
+    "options": [
+      "Habeas Corpus",
+      "Mandamus",
+      "Quo Warranto",
+      "Certiorari"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_035",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Golaknath v. State of Punjab case (1967) held that:",
+    "options": [
+      "Directive Principles are enforceable",
+      "Emergency can override all rights",
+      "Fundamental Rights cannot be amended by Parliament",
+      "President's Rule is unconstitutional"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_036",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 'Instrument of Accession' was used for the integration of which entities into the Indian Union?",
+    "options": [
+      "French colonies",
+      "Portuguese territories",
+      "British provinces",
+      "Princely states"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_037",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 312 of the Indian Constitution provides for the creation of:",
+    "options": [
+      "All India Services",
+      "New states",
+      "Tribunals",
+      "High Courts"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_038",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Punchhi Commission (2007) was set up to examine:",
+    "options": [
+      "Centre-State relations",
+      "Electoral reforms",
+      "Tax reforms",
+      "Judicial appointments"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_039",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 11th Schedule (added by the 73rd Amendment) lists how many subjects for Panchayati Raj institutions?",
+    "options": [
+      "18",
+      "33",
+      "25",
+      "29"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_040",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 12th Schedule (added by the 74th Amendment) lists how many subjects for Municipalities?",
+    "options": [
+      "22",
+      "15",
+      "18",
+      "25"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_041",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "In which year did the Supreme Court of India first sit?",
+    "options": [
+      "1955",
+      "1952",
+      "1950",
+      "1947"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_042",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The writ of 'Quo Warranto' is issued to:",
+    "options": [
+      "Order a public official to perform a duty",
+      "Question the legal authority of a person holding public office",
+      "Produce a detained person before court",
+      "Prevent a lower court from exceeding jurisdiction"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_043",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who was the first Attorney General of India?",
+    "options": [
+      "C.K. Daphtary",
+      "Niren De",
+      "M.C. Setalvad",
+      "L.N. Sinha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_044",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The concept of 'Procedure Established by Law' in Article 21 was reinterpreted as 'Due Process of Law' in which case?",
+    "options": [
+      "Minerva Mills case (1980)",
+      "Golak Nath case (1967)",
+      "A.K. Gopalan case (1950)",
+      "Maneka Gandhi case (1978)"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_045",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indira Nehru Gandhi v. Raj Narain case (1975) led to which significant event?",
+    "options": [
+      "Declaration of Emergency",
+      "Creation of Bangladesh",
+      "Formation of Janata Party",
+      "Nationalization of banks"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_046",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The first Backward Classes Commission (Kaka Kalelkar Commission) submitted its report in which year?",
+    "options": [
+      "1955",
+      "1953",
+      "1958",
+      "1960"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_047",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Constituent Assembly of India was formed based on the proposals of which plan?",
+    "options": [
+      "Cripps Mission",
+      "Mountbatten Plan",
+      "Cabinet Mission Plan",
+      "Wavell Plan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_048",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indian Constitution borrows the concept of 'Fundamental Rights' primarily from which country's constitution?",
+    "options": [
+      "France",
+      "United Kingdom",
+      "Soviet Union",
+      "United States of America"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_049",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The concept of 'Republic' in the Indian Constitution was borrowed from which country?",
+    "options": [
+      "France",
+      "USA",
+      "Australia",
+      "UK"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_050",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 324 of the Constitution vests the power of superintendence, direction, and control of elections in the:",
+    "options": [
+      "Parliament",
+      "Election Commission",
+      "Supreme Court",
+      "President"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_051",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Comptroller and Auditor General of India submits audit reports to the:",
+    "options": [
+      "Finance Minister",
+      "Prime Minister",
+      "Parliament",
+      "President of India"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_052",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article provides for a Joint Sitting of both houses of Parliament in case of a deadlock?",
+    "options": [
+      "Article 118",
+      "Article 110",
+      "Article 104",
+      "Article 108"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_053",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "How many joint sittings of Parliament have been held in India (as of 2024)?",
+    "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Two"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_054",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The concept of 'Emergency Provisions' in the Indian Constitution was borrowed from which country?",
+    "options": [
+      "USA",
+      "France",
+      "Germany (Weimar Constitution)",
+      "South Africa"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_055",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indian Constitution provides for the removal of a Supreme Court judge through:",
+    "options": [
+      "Address by Parliament (impeachment process)",
+      "National Judicial Commission",
+      "Impeachment by President",
+      "Decision of the Chief Justice"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_056",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The National Judicial Appointments Commission (NJAC) was struck down by the Supreme Court in which year?",
+    "options": [
+      "2013",
+      "2014",
+      "2016",
+      "2015"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_057",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who was the President of India who exercised his 'pocket veto' power on the Indian Post Office (Amendment) Bill?",
+    "options": [
+      "Zail Singh",
+      "Shankar Dayal Sharma",
+      "R. Venkataraman",
+      "K.R. Narayanan"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_058",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 143 of the Constitution empowers the President to seek the advisory opinion of which body?",
+    "options": [
+      "Law Commission",
+      "Attorney General",
+      "NITI Aayog",
+      "Supreme Court"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_059",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indian Councils Act of 1909 is also known as the:",
+    "options": [
+      "Morley-Minto Reforms",
+      "Government of India Act",
+      "Montague-Chelmsford Reforms",
+      "Pitt's India Act"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_060",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Montague-Chelmsford Reforms led to the Government of India Act of which year?",
+    "options": [
+      "1935",
+      "1909",
+      "1947",
+      "1919"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_061",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 262 of the Indian Constitution deals with:",
+    "options": [
+      "Adjudication of inter-state water disputes",
+      "Election of the President",
+      "Appointment of Governors",
+      "Amendment procedure"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_062",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 24th Constitutional Amendment (1971) was passed in response to which Supreme Court case?",
+    "options": [
+      "Kesavananda Bharati case",
+      "Golaknath case",
+      "A.K. Gopalan case",
+      "Minerva Mills case"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_063",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who was the first woman to preside over the UN General Assembly, and she was from India?",
+    "options": [
+      "Indira Gandhi",
+      "Vijaya Lakshmi Pandit",
+      "Sarojini Naidu",
+      "Sucheta Kripalani"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_064",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Swaran Singh Committee (1976) recommended the inclusion of which in the Constitution?",
+    "options": [
+      "Fundamental Duties",
+      "DPSP additions",
+      "Anti-defection provisions",
+      "Emergency provisions"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_065",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Second Administrative Reforms Commission (2005) was chaired by:",
+    "options": [
+      "M.N. Venkatachaliah",
+      "Veerappa Moily",
+      "Y.K. Alagh",
+      "P.C. Jain"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_066",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under Article 200, a Governor can reserve a bill for the consideration of the:",
+    "options": [
+      "Supreme Court",
+      "President of India",
+      "Chief Minister",
+      "Speaker of the Assembly"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_067",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Dinesh Goswami Committee (1990) dealt with reforms related to:",
+    "options": [
+      "Electoral system",
+      "Centre-State relations",
+      "Tax reforms",
+      "Judicial appointments"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_068",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The number of Anglo-Indian members that could be nominated to the Lok Sabha (before the 104th Amendment) was:",
+    "options": [
+      "2",
+      "6",
+      "1",
+      "4"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_069",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 104th Constitutional Amendment (2020) ended the reservation of seats in the Lok Sabha and State Assemblies for:",
+    "options": [
+      "OBCs",
+      "Scheduled Castes",
+      "Anglo-Indians",
+      "Scheduled Tribes"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_070",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Representation of the People Act was enacted in which year?",
+    "options": [
+      "1947 and 1948",
+      "1950 and 1951",
+      "1955 and 1960",
+      "1952 and 1955"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_071",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Ninth Schedule was added to protect which type of legislation from judicial review?",
+    "options": [
+      "Tax laws",
+      "Criminal laws",
+      "Environmental laws",
+      "Land reform laws"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_072",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under Article 239AA, which Union Territory has a special status with its own legislative assembly?",
+    "options": [
+      "Lakshadweep",
+      "Puducherry",
+      "Chandigarh",
+      "Delhi (NCT)"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_073",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The I.R. Coelho v. State of Tamil Nadu case (2007) dealt with:",
+    "options": [
+      "Freedom of speech",
+      "Judicial review of laws in the Ninth Schedule",
+      "Right to property",
+      "Anti-defection law"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_074",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The first Delimitation Commission of India was set up in which year?",
+    "options": [
+      "1950",
+      "1960",
+      "1952",
+      "1955"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_075",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Ashok Mehta Committee (1978) recommended reforming which system?",
+    "options": [
+      "Panchayati Raj (two-tier system)",
+      "Judiciary",
+      "Tax structure",
+      "Electoral system"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_076",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The idea of a Constituent Assembly for India was first proposed by:",
+    "options": [
+      "Mahatma Gandhi",
+      "M.N. Roy",
+      "B.R. Ambedkar",
+      "Jawaharlal Nehru"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_077",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Regulating Act of 1773 was significant because it:",
+    "options": [
+      "Abolished the East India Company",
+      "Granted Indians the right to vote",
+      "Established the Supreme Court at Calcutta",
+      "Created the Indian Civil Service"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_078",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The 'Collegium System' for appointing judges was established through which Supreme Court cases?",
+    "options": [
+      "Golaknath and Maneka Gandhi",
+      "A.K. Gopalan and Romesh Thapar",
+      "Kesavananda Bharati and Minerva Mills",
+      "First, Second, and Third Judges cases"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_079",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under Article 262, which tribunal adjudicates inter-state river water disputes?",
+    "options": [
+      "National Green Tribunal",
+      "Income Tax Appellate Tribunal",
+      "Inter-State Water Disputes Tribunal",
+      "Central Administrative Tribunal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_080",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Karachi Resolution of 1931 by the Indian National Congress outlined:",
+    "options": [
+      "Support for World War II",
+      "Rejection of the Simon Commission",
+      "A charter of fundamental rights and economic policy",
+      "Demand for Dominion Status"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_081",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution grants the Governor the power to promulgate ordinances?",
+    "options": [
+      "Article 213",
+      "Article 123",
+      "Article 200",
+      "Article 356"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_082",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The first Finance Commission of India was constituted in which year?",
+    "options": [
+      "1950",
+      "1955",
+      "1952",
+      "1951"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_083",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The term 'Secular' in the Indian context means the state:",
+    "options": [
+      "Opposes religion",
+      "Has no religion of its own and treats all religions equally",
+      "Supports only Hinduism",
+      "Promotes atheism"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_084",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indian Constitution originally had how many schedules?",
+    "options": [
+      "10",
+      "8",
+      "12",
+      "6"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_085",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The L.M. Singhvi Committee (1986) recommended constitutional status for which institution?",
+    "options": [
+      "UPSC",
+      "Election Commission",
+      "NHRC",
+      "Panchayati Raj institutions"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_086",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "How many times has Article 360 (Financial Emergency) been invoked in India?",
+    "options": [
+      "Once",
+      "Twice",
+      "Never",
+      "Three times"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_087",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Santhanam Committee (1964) was appointed to deal with:",
+    "options": [
+      "Language policy",
+      "Electoral reforms",
+      "Centre-State relations",
+      "Prevention of corruption"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_088",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The first Joint Parliamentary Committee (JPC) in India was set up in which year?",
+    "options": [
+      "1987",
+      "1981",
+      "2001",
+      "1992"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_089",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Tarkunde Committee (1975) and Goswami Committee (1990) both dealt with reforms related to:",
+    "options": [
+      "Electoral reform",
+      "Administrative reform",
+      "Judicial reform",
+      "Police reform"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_090",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Constitution prohibits traffic in human beings and forced labor?",
+    "options": [
+      "Article 24",
+      "Article 25",
+      "Article 23",
+      "Article 21"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_091",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Charter Act of 1833 made the Governor-General of Bengal the:",
+    "options": [
+      "Governor of all provinces",
+      "Viceroy of India",
+      "Commander-in-Chief",
+      "Governor-General of India"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_092",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The concept of 'Single Citizenship' in India was borrowed from which country?",
+    "options": [
+      "USA",
+      "Canada",
+      "Australia",
+      "Britain"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_093",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Viceroy introduced the system of 'Dyarchy' in British India?",
+    "options": [
+      "Lord Irwin",
+      "Lord Chelmsford",
+      "Lord Curzon",
+      "Lord Wavell"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_094",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 300A of the Constitution states that no person shall be deprived of his property save by:",
+    "options": [
+      "Presidential decree",
+      "Executive order",
+      "Court order",
+      "Authority of law"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_095",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Sarkaria Commission submitted its report on Centre-State relations in which year?",
+    "options": [
+      "1988",
+      "1990",
+      "1983",
+      "1985"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_096",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Indian Constitution empowers the High Courts to issue writs?",
+    "options": [
+      "Article 32",
+      "Article 226",
+      "Article 136",
+      "Article 227"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_097",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The original Constitution of India was handwritten in which language(s)?",
+    "options": [
+      "Sanskrit and English",
+      "Hindi and English",
+      "Hindi only",
+      "English only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_098",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The calligrapher who wrote the original Constitution of India by hand was:",
+    "options": [
+      "Ram Manohar Sinha",
+      "Prem Behari Narain Raizada",
+      "Nandalal Bose",
+      "Beohar Rammanohar Sinha"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_099",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 110 defines a 'Money Bill.' Who has the final authority to certify a bill as a Money Bill?",
+    "options": [
+      "President",
+      "Speaker of the Lok Sabha",
+      "Finance Minister",
+      "Chairman of Rajya Sabha"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_100",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The National Commission for Scheduled Castes is established under which article?",
+    "options": [
+      "Article 338",
+      "Article 342",
+      "Article 340",
+      "Article 350"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_101",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Venkatachaliah Commission (2002) was set up to review the:",
+    "options": [
+      "Tax structure",
+      "Electoral system",
+      "Criminal justice system",
+      "Working of the Constitution"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_102",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which of the following is NOT an All India Service?",
+    "options": [
+      "Indian Forest Service",
+      "Indian Police Service",
+      "Indian Administrative Service",
+      "Indian Revenue Service"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_103",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Naga Hills became the state of Nagaland in which year?",
+    "options": [
+      "1971",
+      "1966",
+      "1963",
+      "1960"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_104",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Indira Sawhney v. Union of India case (1992) is a landmark case related to:",
+    "options": [
+      "Right to education",
+      "Freedom of speech",
+      "OBC reservations (Mandal Commission)",
+      "Presidential powers"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_105",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under which article can the Parliament legislate on a State List subject if the Rajya Sabha passes a resolution by two-thirds majority?",
+    "options": [
+      "Article 249",
+      "Article 250",
+      "Article 248",
+      "Article 252"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_106",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Public Accounts Committee (PAC) examines the audit reports of the CAG and is chaired by:",
+    "options": [
+      "Prime Minister",
+      "Finance Minister",
+      "Speaker of Lok Sabha",
+      "A member of the opposition (by convention)"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_107",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Gadgil formula is used for:",
+    "options": [
+      "Electoral college calculation",
+      "Distribution of tax revenue",
+      "Delimitation of constituencies",
+      "Allocation of plan assistance to states"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_108",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The State of Haryana was carved out of Punjab in which year?",
+    "options": [
+      "1960",
+      "1971",
+      "1966",
+      "1956"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_109",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 123 empowers the President to promulgate ordinances when:",
+    "options": [
+      "When Parliament is not in session",
+      "During war",
+      "When the PM requests",
+      "During elections"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_110",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The D.S. Kothari Commission (1964-66) dealt with reforms in:",
+    "options": [
+      "Agriculture",
+      "Tax structure",
+      "Education",
+      "Police"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_111",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Union Territories of Dadra & Nagar Haveli and Daman & Diu were merged into a single UT in which year?",
+    "options": [
+      "2019",
+      "2020",
+      "2022",
+      "2021"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_112",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Inter-State Council under Article 263 was first constituted in which year?",
+    "options": [
+      "1990",
+      "1980",
+      "1960",
+      "1950"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_113",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Who was the chairman of the Union Powers Committee in the Constituent Assembly?",
+    "options": [
+      "B.R. Ambedkar",
+      "Jawaharlal Nehru",
+      "Alladi Krishnaswamy Ayyar",
+      "Sardar Patel"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_114",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The State Reorganization Commission (Fazl Ali Commission) submitted its report in which year?",
+    "options": [
+      "1955",
+      "1958",
+      "1956",
+      "1953"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "pol_hard_115",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Article 164(1A), inserted by the 91st Amendment, limits the Council of Ministers to what percentage of the total members of the legislature?",
+    "options": [
+      "10%",
+      "20%",
+      "15%",
+      "12%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_116",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The K. Santhanam Committee recommended the establishment of which body?",
+    "options": [
+      "Central Bureau of Investigation",
+      "Central Vigilance Commission",
+      "Lokpal",
+      "NHRC"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_117",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The GV Mavalankar Committee in the Constituent Assembly dealt with:",
+    "options": [
+      "Drafting of Fundamental Rights",
+      "Separation of legislative and constitution-making functions",
+      "Judicial reform",
+      "Administrative reform"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_118",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under Article 169, a Legislative Council in a state can be created or abolished by:",
+    "options": [
+      "The President alone",
+      "Parliament on the resolution of the State Legislative Assembly",
+      "The Governor",
+      "The Supreme Court"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_119",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Bommai judgment established that secularism is part of the:",
+    "options": [
+      "Fundamental Duties",
+      "Basic Structure of the Constitution",
+      "Preamble only",
+      "Directive Principles"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "pol_hard_120",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The VVPAT (Voter Verifiable Paper Audit Trail) was first used in Indian elections in which year?",
+    "options": [
+      "2017",
+      "2014",
+      "2013",
+      "2011"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_121",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which article of the Constitution provides for the appointment of a special officer for linguistic minorities?",
+    "options": [
+      "Article 351",
+      "Article 344",
+      "Article 347",
+      "Article 350B"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "pol_hard_122",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "The Rajamannar Committee was set up by which state government to examine Centre-State relations?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "West Bengal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "pol_hard_123",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Under the Indian Constitution, residuary powers (subjects not in any of the three lists) belong to:",
+    "options": [
+      "Local bodies",
+      "Both Centre and States jointly",
+      "State government",
+      "Union government (Parliament)"
+    ],
+    "correct_index": 3
+  }
+]
