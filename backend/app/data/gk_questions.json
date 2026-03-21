@@ -75967,5 +75967,948 @@
       "Cultural Site"
     ],
     "correct_index": 3
+  },
+  {
+    "question": "India's first consolidated counter-terrorism policy 'PRAHAAR', unveiled in February 2026, rests on how many pillars?",
+    "options": [
+      "A) 5",
+      "B) 7",
+      "C) 9",
+      "D) 12"
+    ],
+    "correct_answer": "B) 7",
+    "explanation": "India unveiled its first-ever consolidated counter-terrorism policy called 'PRAHAAR' which is built on 7 pillars. The policy aims to deny terrorists and their supporters access to funds, weapons, and logistical support, representing a shift from reactive to proactive counter-terrorism strategy.",
+    "difficulty": 2,
+    "topic": "Internal Security & Defence Policy",
+    "news_source": "Feb 24, 2026 - India's 1st counter-terror policy 'Prahaar' unveiled",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_medium_060"
+  },
+  {
+    "question": "The US Supreme Court's February 2026 ruling on tariffs held that the power to impose tariffs lies with which branch of government?",
+    "options": [
+      "A) The President under executive privilege",
+      "B) The Federal Reserve under monetary policy powers",
+      "C) Congress, not the President",
+      "D) The US Trade Representative under delegated authority"
+    ],
+    "correct_answer": "C) Congress, not the President",
+    "explanation": "In a landmark 6-3 ruling, the US Supreme Court held that tariff powers belong to Congress, not the President, scrapping Trump's unilateral tariffs. This is rooted in Article I, Section 8 of the US Constitution which grants Congress the power to 'lay and collect Taxes, Duties, Imposts and Excises' and to 'regulate Commerce with foreign Nations.'",
+    "difficulty": 1,
+    "topic": "International Relations & Constitutional Law",
+    "news_source": "Feb 21-23, 2026 - US SC scraps Trump tariffs",
+    "category": "current_affairs",
+    "correct_index": 2,
+    "id": "ca_easy_044"
+  },
+  {
+    "question": "After the US Supreme Court struck down unilateral tariffs, President Trump raised tariffs from 10% to 15% by invoking which US law?",
+    "options": [
+      "A) The Smoot-Hawley Tariff Act",
+      "B) The International Emergency Economic Powers Act (IEEPA)",
+      "C) The Trade Expansion Act, Section 232",
+      "D) The Trade Act of 1974, Section 301"
+    ],
+    "correct_answer": "B) The International Emergency Economic Powers Act (IEEPA)",
+    "explanation": "After the Supreme Court struck down his tariffs under Congressional authority, Trump used the International Emergency Economic Powers Act (IEEPA) to impose a new 15% blanket tariff, arguing national emergency grounds. IEEPA was originally enacted in 1977 to deal with 'unusual and extraordinary threats' to national security, and its use for trade policy was considered a novel and controversial stretching of the law.",
+    "difficulty": 3,
+    "topic": "International Trade Law",
+    "news_source": "Feb 22, 2026 - Trump raises new tariff to 15% from 10%",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_hard_033"
+  },
+  {
+    "question": "Kolkata's iconic Howrah Bridge (Rabindra Setu) was announced in February 2026 to receive a Rs 117-crore high-tech makeover. What type of bridge is Howrah Bridge?",
+    "options": [
+      "A) Suspension bridge",
+      "B) Cable-stayed bridge",
+      "C) Cantilever truss bridge",
+      "D) Arch bridge"
+    ],
+    "correct_answer": "C) Cantilever truss bridge",
+    "explanation": "Howrah Bridge, officially Rabindra Setu, is a cantilever truss bridge over the Hooghly River. Completed in 1943, it is one of the busiest cantilever bridges in the world. The Rs 117-crore makeover announced in February 2026 is described as a 'folding' bridge technology upgrade to enable sections to be moved for maintenance without full closure.",
+    "difficulty": 1,
+    "topic": "Indian Infrastructure & Engineering",
+    "news_source": "Feb 21, 2026 - Kolkata's iconic 'folding' bridge to get Rs 117-crore high-tech push",
+    "category": "current_affairs",
+    "correct_index": 2,
+    "id": "ca_easy_045"
+  },
+  {
+    "question": "India joined 'Pax Silica' in February 2026. What does Pax Silica refer to?",
+    "options": [
+      "A) A global treaty banning sand mining from riverbeds",
+      "B) A US-led coalition of countries with advanced semiconductor and AI capabilities",
+      "C) A UN initiative to preserve silicon-based ecosystems",
+      "D) An ASEAN framework for regulating silicon chip exports"
+    ],
+    "correct_answer": "B) A US-led coalition of countries with advanced semiconductor and AI capabilities",
+    "explanation": "Pax Silica refers to a US-led coalition of nations with significant semiconductor and AI capabilities, analogous to how 'Pax Americana' described post-WWII US-led order. India's inclusion in Pax Silica was seen as strengthening the coalition and signaling India's growing importance in the global tech supply chain, particularly in AI and chip manufacturing.",
+    "difficulty": 3,
+    "topic": "Technology & Geopolitics",
+    "news_source": "Feb 21, 2026 - As India enters Pax Silica, US says our coalition stronger",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_hard_034"
+  },
+  {
+    "question": "The PM inaugurated India's first Regional Rapid Transit System (RRTS) corridor in February 2026. This corridor connects Delhi to which city?",
+    "options": [
+      "A) Panipat",
+      "B) Meerut",
+      "C) Alwar",
+      "D) Agra"
+    ],
+    "correct_answer": "B) Meerut",
+    "explanation": "India's first RRTS corridor, also called RapidX or Namo Bharat, connects Delhi to Meerut and was inaugurated in February 2026. RRTS is designed for speeds up to 180 km/h, making the Delhi-Meerut journey possible in less than an hour. Two more corridors (Delhi-Alwar and Delhi-Karnal) were also set to receive approval.",
+    "difficulty": 1,
+    "topic": "Infrastructure & Transport",
+    "news_source": "Feb 23, 2026 - PM inaugurates RRTS: 'Will make life easier'",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_easy_046"
+  },
+  {
+    "question": "In February 2026, the highest-ranking CPI(Maoist) leader to surrender was Devuji, who headed the organization's Central Military Commission. For approximately how long had the CPI(Maoist) been active before this surrender?",
+    "options": [
+      "A) About one decade",
+      "B) About two decades",
+      "C) About three decades",
+      "D) About four decades"
+    ],
+    "correct_answer": "B) About two decades",
+    "explanation": "Devuji, the highest-ranking CPI(Maoist) leader to ever surrender, had been the head of the Central Military Commission for about two decades. The CPI(Maoist) was formed in 2004 through the merger of the Communist Party of India (Marxist-Leninist) People's War (PWG) and the Maoist Communist Centre of India (MCCI). He was involved in the killing of over 250 security personnel.",
+    "difficulty": 2,
+    "topic": "Internal Security & Left-Wing Extremism",
+    "news_source": "Feb 23, 2026 - Highest-ranking Maoist leader Devuji surrenders",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_medium_061"
+  },
+  {
+    "question": "NASA's report on the Boeing Starliner program, released in February 2026, highlighted failures primarily in which areas?",
+    "options": [
+      "A) Fuel cell technology and heat shield design",
+      "B) Technical execution and leadership/management",
+      "C) Navigation software and communication systems",
+      "D) Launch vehicle integration and payload capacity"
+    ],
+    "correct_answer": "B) Technical execution and leadership/management",
+    "explanation": "NASA's report on Boeing's Starliner highlighted failures in both technical execution and leadership/management. The Starliner spacecraft had faced repeated delays and technical issues, including thruster malfunctions and helium leaks during its crewed test flight, which stranded astronauts at the ISS for months longer than planned.",
+    "difficulty": 2,
+    "topic": "Science & Technology - Space",
+    "news_source": "Feb 21, 2026 - NASA report highlights technical & leadership failures of Boeing's Starliner",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_medium_062"
+  },
+  {
+    "question": "The Finance Minister launched the National Monetisation Pipeline (NMP) 2.0 in February 2026, targeting asset monetisation of Rs 16.72 lakh crore by which year?",
+    "options": [
+      "A) 2028",
+      "B) 2030",
+      "C) 2032",
+      "D) 2035"
+    ],
+    "correct_answer": "B) 2030",
+    "explanation": "The Finance Minister launched NMP 2.0 with a target of Rs 16.72 lakh crore in asset monetisation by 2030. NMP involves leasing out government-owned infrastructure assets (highways, railways, power, telecom, logistics parks) to private operators for a fixed period while retaining ownership. The first NMP (2021-25) achieved 88% of its Rs 6 lakh crore target.",
+    "difficulty": 2,
+    "topic": "Economy & Public Finance",
+    "news_source": "Feb 24, 2026 - FM launches NMP 2.0, sets eye on Rs 16.72 lakh cr",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_medium_063"
+  },
+  {
+    "question": "The CBI's liquor policy case against AAP leaders Kejriwal and Sisodia was discharged by the court in February 2026. What legal standard did the court cite for the discharge?",
+    "options": [
+      "A) The accused had diplomatic immunity",
+      "B) The prosecution failed to produce a single recovery or financial trail linking the accused to alleged fund transfers",
+      "C) The statute of limitations had expired",
+      "D) The charges were based on a law later declared unconstitutional"
+    ],
+    "correct_answer": "B) The prosecution failed to produce a single recovery or financial trail linking the accused to alleged fund transfers",
+    "explanation": "The trial court discharged Kejriwal, Sisodia, and 21 others in the Delhi liquor policy case, calling the CBI investigation a 'choreographed exercise' and noting that the prosecution had not produced a single recovery or financial trail linking the accused to the alleged transfer of funds. The court described the case as not meeting the required legal standard for proceeding to trial.",
+    "difficulty": 2,
+    "topic": "Polity & Governance - Judicial Process",
+    "news_source": "Feb 28, 2026 - Court throws out CBI liquor case, discharges Kejriwal, Sisodia",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_medium_064"
+  },
+  {
+    "question": "To make India a full member of the International Energy Agency (IEA), what procedural step is required according to the IEA's founding charter?",
+    "options": [
+      "A) India must join NATO first, as IEA membership is linked to NATO allies",
+      "B) India must become a member of the OECD, as the IEA charter limits membership to OECD countries",
+      "C) India must achieve net-zero emissions by a specified date",
+      "D) India must reduce its crude oil imports below 50% of total energy consumption"
+    ],
+    "correct_answer": "B) India must become a member of the OECD, as the IEA charter limits membership to OECD countries",
+    "explanation": "The IEA's founding charter (established in 1974 after the oil crisis) restricts full membership to OECD member countries. To make India a full member, either the IEA charter needs to be amended, or India must first join the OECD. India currently has 'Association' status with the IEA. The IEA was founded as a response to the 1973 oil embargo and is headquartered in Paris.",
+    "difficulty": 3,
+    "topic": "International Organizations & Energy Policy",
+    "news_source": "Feb 24, 2026 - To make India full member, IEA needs to amend founding charter",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_hard_035"
+  },
+  {
+    "question": "India's first nationwide childhood cancer survival registry, published in February 2026, reported a survival rate of approximately what percentage?",
+    "options": [
+      "A) 75.5%",
+      "B) 84.5%",
+      "C) 91.5%",
+      "D) 97.5%"
+    ],
+    "correct_answer": "C) 91.5%",
+    "explanation": "India's first nationwide childhood cancer survival registry reported a 91.5% survival rate, which is comparable to global standards. However, the study also flagged late-stage presentation of cases as a major risk factor. The registry covered 5,419 children and tracked survival across multiple centres, marking a significant step in paediatric oncology data collection in India.",
+    "difficulty": 3,
+    "topic": "Health & Medicine",
+    "news_source": "Feb 21, 2026 - 91.5% survival in childhood cancer, says study; flags late risks",
+    "category": "current_affairs",
+    "correct_index": 2,
+    "id": "ca_hard_036"
+  },
+  {
+    "question": "Sunetra Pawar was elected president of the NCP (Ajit Pawar faction) in February 2026. What is her relationship to party leader Ajit Pawar?",
+    "options": [
+      "A) She is his sister",
+      "B) She is his wife",
+      "C) She is his daughter",
+      "D) She is his daughter-in-law"
+    ],
+    "correct_answer": "B) She is his wife",
+    "explanation": "Sunetra Pawar, wife of Maharashtra Deputy Chief Minister Ajit Pawar, was elected president of the Nationalist Congress Party (Ajit Pawar faction). The NCP split in 2023 when Ajit Pawar broke away from uncle Sharad Pawar's faction and joined the ruling Mahayuti alliance in Maharashtra.",
+    "difficulty": 1,
+    "topic": "Indian Polity - Political Parties",
+    "news_source": "Feb 27, 2026 - Sunetra Pawar elected NCP president",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_easy_047"
+  },
+  {
+    "question": "The CAQM (Commission for Air Quality Management) panel recommended that only EV registrations be allowed in Delhi-NCR by which year?",
+    "options": [
+      "A) 2027",
+      "B) 2028",
+      "C) 2030",
+      "D) 2035"
+    ],
+    "correct_answer": "C) 2030",
+    "explanation": "The CAQM panel recommended that Delhi-NCR should allow only electric vehicle (EV) registrations by 2030. The Commission for Air Quality Management was established by an Act of Parliament in 2021 to address air pollution in the National Capital Region and adjoining areas, replacing the earlier EPCA (Environment Pollution Prevention and Control Authority).",
+    "difficulty": 1,
+    "topic": "Environment & Governance",
+    "news_source": "Feb 27, 2026 - CAQM panel may back only EV registrations in Delhi-NCR by '30",
+    "category": "current_affairs",
+    "correct_index": 2,
+    "id": "ca_easy_048"
+  },
+  {
+    "question": "A broken power circuit was identified as the cause behind ISRO's failed launch of which satellite in January 2025?",
+    "options": [
+      "A) GSAT-24",
+      "B) NVS-02",
+      "C) Aditya-L1",
+      "D) RISAT-2BR2"
+    ],
+    "correct_answer": "B) NVS-02",
+    "explanation": "A committee investigation found that a broken power circuit was behind ISRO's failed launch of the NVS-02 navigation satellite in January 2025. The NVS (Navigation with Indian Constellation) series is part of India's NavIC (Navigation with Indian Constellation) system, India's indigenous regional satellite navigation system that provides positioning services over India and the surrounding region, similar to GPS.",
+    "difficulty": 3,
+    "topic": "Science & Technology - Space",
+    "news_source": "Feb 27, 2026 - Broken power circuit behind ISRO's failed launch of NVS-02",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_hard_037"
+  },
+  {
+    "question": "The 16th Finance Commission's recommendations, discussed in February 2026, include provisions to boost urban local bodies. The Finance Commission is constituted under which Article of the Indian Constitution?",
+    "options": [
+      "A) Article 243-I",
+      "B) Article 280",
+      "C) Article 300A",
+      "D) Article 312"
+    ],
+    "correct_answer": "B) Article 280",
+    "explanation": "The Finance Commission is constituted under Article 280 of the Indian Constitution. It recommends the distribution of tax revenues between the Union and State governments (vertical devolution) and among states (horizontal devolution). Article 243-I provides for a State Finance Commission (not the central one) to review the financial position of municipalities and panchayats.",
+    "difficulty": 1,
+    "topic": "Indian Polity - Constitutional Bodies",
+    "news_source": "Feb 28, 2026 - As urbanisation grows, 16th FC provides a boost",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_easy_049"
+  },
+  {
+    "question": "India reduced its holdings of US Treasury securities by over 18% in 2025. Which country holds the largest amount of US government debt?",
+    "options": [
+      "A) China",
+      "B) Japan",
+      "C) United Kingdom",
+      "D) India"
+    ],
+    "correct_answer": "B) Japan",
+    "explanation": "Japan is the largest foreign holder of US Treasury securities. India reduced its holdings by over 18% in 2025 (from $235.7 billion to $192.9 billion). Countries hold US Treasuries as foreign exchange reserves because they are considered among the safest and most liquid assets globally. Diversification away from US Treasuries can reflect changing monetary policy strategies or concerns about currency risk.",
+    "difficulty": 1,
+    "topic": "Economy - International Finance",
+    "news_source": "Feb 23, 2026 - India reduced investment in US Treasuries by over 18% in 2025",
+    "category": "current_affairs",
+    "correct_index": 1,
+    "id": "ca_easy_050"
+  },
+  {
+    "question": "Anthropic, the AI safety company, declined the Pentagon's request for AI safeguards in February 2026, citing a dispute. Anthropic is known for developing which AI model?",
+    "options": [
+      "A) GPT",
+      "B) Gemini",
+      "C) Claude",
+      "D) LLaMA"
+    ],
+    "correct_answer": "C) Claude",
+    "explanation": "Anthropic, founded in 2021 by former OpenAI researchers Dario and Daniela Amodei, develops the Claude AI model. The company's refusal to accede to the Pentagon's request for AI safeguards highlighted the ongoing tension between AI companies' safety commitments and government/military applications of AI technology.",
+    "difficulty": 1,
+    "topic": "Science & Technology - Artificial Intelligence",
+    "news_source": "Feb 28, 2026 - Cannot accede to Pentagon's request in AI safeguards dispute: Anthropic",
+    "category": "current_affairs",
+    "correct_index": 2,
+    "id": "ca_easy_051"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Tirupati Tirumala temple is located in which Indian state?",
+    "options": [
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Karnataka",
+      "Telangana"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_052"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The NSE of India is headquartered in which city?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Chennai",
+      "Bengaluru"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_053"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Zaporizhzhia Nuclear Power Plant is located in which country?",
+    "options": [
+      "Russia",
+      "France",
+      "Ukraine",
+      "Germany"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_054"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Union Budget is presented under which Article of the Constitution?",
+    "options": [
+      "Article 110",
+      "Article 112",
+      "Article 266",
+      "Article 280"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_055"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Elgar Parishad case relates to violence at which location?",
+    "options": [
+      "Koregaon Bhima near Pune",
+      "Malegaon",
+      "Dhule",
+      "Gadchiroli"
+    ],
+    "correct_index": 0,
+    "id": "ca_medium_065"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India committed to reaching net-zero emissions by which year?",
+    "options": [
+      "2050",
+      "2060",
+      "2070",
+      "2080"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_066"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The SC ruled menstrual hygiene is part of which fundamental right?",
+    "options": [
+      "Article 14",
+      "Article 21",
+      "Article 23",
+      "Article 32"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_038"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which of the following is NOT a GCC member?",
+    "options": [
+      "Oman",
+      "Qatar",
+      "Iran",
+      "Bahrain"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_067"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "NDMA is chaired by which authority?",
+    "options": [
+      "Home Minister",
+      "Prime Minister",
+      "Cabinet Secretary",
+      "CJI"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_039"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The STT is levied under which act?",
+    "options": [
+      "Income Tax Act",
+      "Securities Contracts Act",
+      "Finance (No. 2) Act, 2004",
+      "SEBI Act"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_068"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Trevi Fountain in Rome is from which architectural period?",
+    "options": [
+      "Renaissance",
+      "Gothic",
+      "Baroque",
+      "Romanesque"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_056"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The H-1B visa programme is administered by which US department?",
+    "options": [
+      "Dept of State",
+      "Dept of Homeland Security",
+      "Dept of Labour",
+      "Dept of Commerce"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_069"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Poola Anthony, India's first Dalit Cardinal, belongs to which denomination?",
+    "options": [
+      "Church of South India",
+      "Syrian Orthodox",
+      "Roman Catholic Church",
+      "Church of North India"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_040"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Bhima Koregaon battle (1818) was fought against which power?",
+    "options": [
+      "Maratha Peshwa",
+      "Nizam of Hyderabad",
+      "Kingdom of Mysore",
+      "Sikh Empire"
+    ],
+    "correct_index": 0,
+    "id": "ca_medium_070"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Governor withholding assent to re-passed bills relates to which Article?",
+    "options": [
+      "Article 200",
+      "Article 201",
+      "Article 163",
+      "Article 154"
+    ],
+    "correct_index": 0,
+    "id": "ca_hard_041"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Sarah Mullally became the first woman to lead which institution?",
+    "options": [
+      "Roman Catholic Church",
+      "Church of England",
+      "Greek Orthodox",
+      "Presbyterian Church"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_057"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The P-8I aircraft is designed for which role?",
+    "options": [
+      "Air superiority",
+      "Maritime patrol and anti-submarine warfare",
+      "Strategic bombing",
+      "Airborne early warning"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_071"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The no-confidence motion against the Lok Sabha Speaker is governed by which Article?",
+    "options": [
+      "Article 90",
+      "Article 94",
+      "Article 100",
+      "Article 102"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_058"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The four labour codes subsume how many older central labour laws?",
+    "options": [
+      "15",
+      "21",
+      "29",
+      "35"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_072"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Sabarmati Ashram was founded by Gandhi in which year?",
+    "options": [
+      "1915",
+      "1917",
+      "1920",
+      "1922"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_059"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India's wheat export ban was originally imposed in which year?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_073"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Under NPS, pensions are based on what?",
+    "options": [
+      "Last drawn salary",
+      "Market-linked returns",
+      "Fixed % of avg salary",
+      "Govt grants"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_060"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Puri Jagannath Temple is in which state?",
+    "options": [
+      "West Bengal",
+      "Odisha",
+      "Andhra Pradesh",
+      "Tamil Nadu"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_061"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Munich Security Conference is held in which country?",
+    "options": [
+      "Switzerland",
+      "Austria",
+      "Germany",
+      "Belgium"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_062"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Brahmaputra flows through which sequence?",
+    "options": [
+      "Tibet, Arunachal, Assam, Bangladesh",
+      "Nepal, Bihar, WB, Bangladesh",
+      "Tibet, Nepal, Assam, Bangladesh",
+      "Myanmar, Manipur, Assam, Bangladesh"
+    ],
+    "correct_index": 0,
+    "id": "ca_medium_074"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India AI Mission 2.0 is modelled on which digital infrastructure?",
+    "options": [
+      "Aadhaar",
+      "DigiLocker",
+      "UPI",
+      "ONDC"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_075"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Chandigarh was designed by which architect?",
+    "options": [
+      "Lutyens",
+      "Le Corbusier",
+      "Louis Kahn",
+      "Frank Lloyd Wright"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_063"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Naga peace talks involve which group?",
+    "options": [
+      "MNF",
+      "ULFA",
+      "NSCN",
+      "PLA Manipur"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_076"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Smithsonian Institution is headquartered in which city?",
+    "options": [
+      "New York",
+      "London",
+      "Washington D.C.",
+      "Paris"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_064"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "WhatsApp's 2021 privacy update shared data with which parent company?",
+    "options": [
+      "Alphabet",
+      "Meta",
+      "Microsoft",
+      "Amazon"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_065"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "ASML, the sole EUV lithography manufacturer, is headquartered where?",
+    "options": [
+      "US",
+      "Japan",
+      "Netherlands",
+      "South Korea"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_077"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "CCPA functions under which ministry?",
+    "options": [
+      "Commerce",
+      "Consumer Affairs",
+      "Corporate Affairs",
+      "Finance"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_078"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Who publishes the World Happiness Report?",
+    "options": [
+      "WHO",
+      "UN SDSN",
+      "WEF",
+      "OECD"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_079"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Forest Survey of India is headquartered in which city?",
+    "options": [
+      "New Delhi",
+      "Dehradun",
+      "Bhopal",
+      "Nagpur"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_066"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Wayanad district is in which state?",
+    "options": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Goa"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_067"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which country is the world's largest LNG exporter?",
+    "options": [
+      "Russia",
+      "US",
+      "Qatar",
+      "Australia"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_080"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "A GI tag can be held by whom?",
+    "options": [
+      "Only individual farmers",
+      "Only central govt",
+      "Association of producers",
+      "Only MNCs"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_042"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "PWR uses which moderator vs India's PHWR?",
+    "options": [
+      "PWR heavy; PHWR light",
+      "PWR light water; PHWR heavy water",
+      "PWR graphite; PHWR light",
+      "PWR sodium; PHWR graphite"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_043"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which is NOT a critical mineral?",
+    "options": [
+      "Lithium",
+      "Cobalt",
+      "Iron ore",
+      "Uranium"
+    ],
+    "correct_index": 2,
+    "id": "ca_easy_068"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India VIX measures what?",
+    "options": [
+      "FII inflows",
+      "Expected market volatility",
+      "Trade deficit",
+      "Top 50 performance"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_081"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which state passed the Freedom of Religion Bill in 2026 with life term?",
+    "options": [
+      "UP",
+      "MP",
+      "Chhattisgarh",
+      "Karnataka"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_044"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Petronet LNG terminal at Dahej is in which state?",
+    "options": [
+      "Maharashtra",
+      "Gujarat",
+      "Kerala",
+      "Tamil Nadu"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_082"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which Scandinavian country became India's Strategic Partner in 2026?",
+    "options": [
+      "Sweden",
+      "Norway",
+      "Finland",
+      "Denmark"
+    ],
+    "correct_index": 2,
+    "id": "ca_hard_045"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "LIGO-India observatory is planned for which state?",
+    "options": [
+      "Maharashtra",
+      "Karnataka",
+      "Rajasthan",
+      "Tamil Nadu"
+    ],
+    "correct_index": 0,
+    "id": "ca_hard_046"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Kharg Island is a key oil terminal of which country?",
+    "options": [
+      "Saudi Arabia",
+      "Iraq",
+      "Iran",
+      "Kuwait"
+    ],
+    "correct_index": 2,
+    "id": "ca_medium_083"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Ladki Bahin Yojana is a scheme of which state?",
+    "options": [
+      "MP",
+      "Maharashtra",
+      "Rajasthan",
+      "West Bengal"
+    ],
+    "correct_index": 1,
+    "id": "ca_easy_069"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Gujarat UCC Bill 2026 regulates which type of relationships?",
+    "options": [
+      "Inter-faith marriages",
+      "Live-in relationships",
+      "NRI marriages",
+      "Polygamous marriages"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_084"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Bihar's microfinance law limits borrowers to how many MFIs?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct_index": 1,
+    "id": "ca_hard_047"
+  },
+  {
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Vantara wildlife facility is owned by which group?",
+    "options": [
+      "Tata",
+      "Reliance (Ambani)",
+      "Adani",
+      "Birla"
+    ],
+    "correct_index": 1,
+    "id": "ca_medium_085"
   }
 ]
