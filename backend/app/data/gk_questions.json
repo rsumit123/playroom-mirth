@@ -55473,12 +55473,12 @@
     "difficulty": 2,
     "question": "An Appropriation Bill in the Indian Parliament is:",
     "options": [
-      "A Money Bill that authorises withdrawal from the Consolidated Fund of India",
       "A Financial Bill that imposes new taxes",
+      "A Money Bill that authorises withdrawal from the Consolidated Fund of India",
       "A Bill to approve supplementary grants only",
       "A Bill presented after the budget session"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_005",
@@ -55719,12 +55719,12 @@
     "question": "The 'Pax Silica' initiative that India is set to join is a US-led grouping focused on which area?",
     "difficulty": 2,
     "options": [
-      "Semiconductor supply chain security",
       "Rare earth mineral extraction",
+      "Semiconductor supply chain security",
       "Cybersecurity cooperation",
       "Space exploration collaboration"
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_014"
   },
   {
@@ -55940,12 +55940,12 @@
     "question": "India's Seed Bill aims to regulate the registration and certification of seeds. The existing legislation governing seed quality in India is the:",
     "difficulty": 3,
     "options": [
-      "Seeds Act, 1966",
+      "Agricultural Produce Act, 1937",
       "Plant Quarantine Act, 2003",
       "Essential Commodities Act, 1955",
-      "Agricultural Produce Act, 1937"
+      "Seeds Act, 1966"
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_012"
   },
   {
@@ -55953,12 +55953,12 @@
     "question": "The Essential Commodities Act, which the government can invoke to regulate supply and pricing of critical goods like LPG, was originally enacted in which year?",
     "difficulty": 1,
     "options": [
-      "1955",
       "1962",
+      "1955",
       "1971",
       "1980"
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_016"
   },
   {
@@ -56109,12 +56109,12 @@
     "question": "The Food Safety and Standards Authority of India (FSSAI) was established under which Act?",
     "difficulty": 2,
     "options": [
-      "Food Safety and Standards Act, 2006",
-      "Essential Commodities Act, 1955",
       "Prevention of Food Adulteration Act, 1954",
+      "Essential Commodities Act, 1955",
+      "Food Safety and Standards Act, 2006",
       "Consumer Protection Act, 2019"
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_027"
   },
   {
@@ -57071,12 +57071,12 @@
     "difficulty": 2,
     "question": "Section 80GGC of the Income Tax Act allows individual taxpayers deductions for contributions made to:",
     "options": [
-      "Registered political parties",
-      "Electoral trusts only",
       "Individual candidates only",
+      "Electoral trusts only",
+      "Registered political parties",
       "Non-governmental organisations"
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_059"
   },
   {
@@ -76461,12 +76461,12 @@
     "difficulty": 3,
     "question": "Governor withholding assent to re-passed bills relates to which Article?",
     "options": [
-      "Article 200",
       "Article 201",
+      "Article 200",
       "Article 163",
       "Article 154"
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_041"
   },
   {
@@ -76591,12 +76591,12 @@
     "difficulty": 2,
     "question": "The Brahmaputra flows through which sequence?",
     "options": [
-      "Tibet, Arunachal, Assam, Bangladesh",
-      "Nepal, Bihar, WB, Bangladesh",
       "Tibet, Nepal, Assam, Bangladesh",
+      "Nepal, Bihar, WB, Bangladesh",
+      "Tibet, Arunachal, Assam, Bangladesh",
       "Myanmar, Manipur, Assam, Bangladesh"
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_074"
   },
   {
@@ -76838,12 +76838,12 @@
     "difficulty": 3,
     "question": "LIGO-India observatory is planned for which state?",
     "options": [
-      "Maharashtra",
       "Karnataka",
+      "Maharashtra",
       "Rajasthan",
       "Tamil Nadu"
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_046"
   },
   {
@@ -76930,25 +76930,12 @@
     "difficulty": 2,
     "question": "Which of the following is a key component of the India-EU Comprehensive Strategic Partnership signed alongside the FTA in 2026?",
     "options": [
-      "Maritime security and counter-terrorism pact",
       "Joint space exploration agreement",
+      "Maritime security and counter-terrorism pact",
       "Mutual defence treaty with NATO integration",
       "Currency swap arrangement"
     ],
-    "correct_index": 0
-  },
-  {
-    "id": "ca_easy_071",
-    "category": "current_affairs",
-    "difficulty": 1,
-    "question": "The EU's Carbon Border Adjustment Mechanism (CBAM) primarily targets imports based on which factor?",
-    "options": [
-      "Labour standards in the exporting country",
-      "Intellectual property compliance",
-      "Carbon emissions embedded in the production process",
-      "Digital services tax payments"
-    ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "ca_medium_087",
@@ -76956,12 +76943,12 @@
     "difficulty": 2,
     "question": "In the context of the India-EU FTA, the 'mobility pact' primarily deals with which issue?",
     "options": [
-      "Easier visa and work permit arrangements for professionals and students",
       "Movement of goods across borders",
+      "Easier visa and work permit arrangements for professionals and students",
       "Railway connectivity between India and Europe",
       "Digital data transfer regulations"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_072",
@@ -76995,12 +76982,12 @@
     "difficulty": 1,
     "question": "Where is the headquarters of the International Solar Alliance (ISA)?",
     "options": [
-      "Gurugram (Haryana)",
-      "New Delhi",
       "Geneva",
+      "New Delhi",
+      "Gurugram (Haryana)",
       "Paris"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_hard_048",
@@ -77073,12 +77060,12 @@
     "difficulty": 3,
     "question": "The 2026 UGC regulations on caste-based discrimination in higher educational institutions drew controversy. What is the full form of UGC?",
     "options": [
-      "University Grants Commission",
       "University Governance Commission",
+      "University Grants Commission",
       "University Grants Council",
       "Unified Grants Committee"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_076",
@@ -77164,12 +77151,12 @@
     "difficulty": 2,
     "question": "The Army's animal wing participates in the Republic Day parade. Which of the following animals is traditionally part of this contingent?",
     "options": [
-      "Camels, ponies, and raptors",
-      "Elephants and tigers",
       "Horses and dolphins",
+      "Elephants and tigers",
+      "Camels, ponies, and raptors",
       "Dogs and eagles"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_079",
@@ -77177,25 +77164,12 @@
     "difficulty": 1,
     "question": "The Kolkata Metro is the oldest metro railway system in India. It started operations in which year?",
     "options": [
-      "1984",
+      "1978",
       "1972",
       "1990",
-      "1978"
+      "1984"
     ],
-    "correct_index": 0
-  },
-  {
-    "id": "ca_hard_051",
-    "category": "current_affairs",
-    "difficulty": 3,
-    "question": "Which schedule of the Indian Constitution deals with the provisions for Panchayati Raj institutions?",
-    "options": [
-      "Ninth Schedule",
-      "Tenth Schedule",
-      "Eleventh Schedule",
-      "Twelfth Schedule"
-    ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "ca_medium_094",
@@ -77346,12 +77320,12 @@
     "difficulty": 1,
     "question": "The CEA (Central Electricity Authority) proposed easing green norms for which type of energy storage project?",
     "options": [
-      "Hydro pumped-storage",
+      "Flywheel storage",
       "Compressed air storage",
       "Battery storage",
-      "Flywheel storage"
+      "Hydro pumped-storage"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_hard_054",
@@ -77359,12 +77333,12 @@
     "difficulty": 3,
     "question": "In the context of India's new CPI inflation series, food's weight is proposed to be reduced from 46% to what percentage?",
     "options": [
-      "37%",
+      "35%",
       "39%",
       "42%",
-      "35%"
+      "37%"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_099",
@@ -77476,12 +77450,12 @@
     "difficulty": 2,
     "question": "The self-enumeration feature in the upcoming Indian Census will support how many languages on a single portal?",
     "options": [
-      "16",
+      "22",
       "12",
       "18",
-      "22"
+      "16"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_088",
@@ -77632,12 +77606,12 @@
     "difficulty": 1,
     "question": "Starmer (UK PM) visited China to seek a thaw in relations. The UK's formal name is:",
     "options": [
-      "United Kingdom of Great Britain and Northern Ireland",
-      "United Kingdom of Great Britain",
       "United Kingdom of England and Wales",
+      "United Kingdom of Great Britain",
+      "United Kingdom of Great Britain and Northern Ireland",
       "British Commonwealth Kingdom"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_107",
@@ -77671,12 +77645,12 @@
     "difficulty": 3,
     "question": "The concept of 'Gram Swaraj' associated with Mahatma Gandhi refers to:",
     "options": [
-      "Self-sufficient and self-governing village republics",
       "Centralised governance from Delhi",
+      "Self-sufficient and self-governing village republics",
       "Military defence at the village level",
       "Urban-rural migration policy"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_108",
@@ -77931,12 +77905,12 @@
     "difficulty": 3,
     "question": "The Economic Survey proposed that India's potential GDP growth rate has been raised. The potential growth rate is estimated using which economic concept?",
     "options": [
-      "Solow Growth Model and total factor productivity",
-      "Phillips Curve",
       "Keynesian multiplier",
+      "Phillips Curve",
+      "Solow Growth Model and total factor productivity",
       "Laffer Curve"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_101",
@@ -78100,12 +78074,12 @@
     "difficulty": 2,
     "question": "The CJI (Chief Justice of India) stated that the High Court must be a 'primary sentinel'. The CJI is appointed under which Article of the Constitution?",
     "options": [
-      "Article 124",
-      "Article 126",
       "Article 217",
+      "Article 126",
+      "Article 124",
       "Article 143"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_106",
@@ -78438,12 +78412,12 @@
     "difficulty": 3,
     "question": "The Trump administration's threat of 100% tariffs on Canada over the 'China deal' relates to concerns about Chinese goods entering the US through:",
     "options": [
-      "Canadian backdoor trade routes (CUSMA/USMCA loopholes)",
-      "European ports",
       "African trade zones",
+      "European ports",
+      "Canadian backdoor trade routes (CUSMA/USMCA loopholes)",
       "South American free trade areas"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_130",
@@ -78451,12 +78425,12 @@
     "difficulty": 2,
     "question": "The India-Bangladesh maritime exchange repatriated 151 fishermen. The maritime boundary between India and Bangladesh was settled by which international tribunal?",
     "options": [
-      "Permanent Court of Arbitration (PCA)",
+      "UN Arbitral Tribunal under UNCLOS Annex VII",
       "International Court of Justice (ICJ)",
       "International Tribunal for the Law of the Sea (ITLOS)",
-      "UN Arbitral Tribunal under UNCLOS Annex VII"
+      "Permanent Court of Arbitration (PCA)"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_116",
@@ -78464,20 +78438,20 @@
     "difficulty": 1,
     "question": "The DGP (Director General of Police) is the head of the police force in a state. DGP is appointed by:",
     "options": [
-      "The State Government from a panel prepared by UPSC",
+      "The Chief Justice of the High Court",
       "The President of India",
       "The Home Minister directly",
-      "The Chief Justice of the High Court"
+      "The State Government from a panel prepared by UPSC"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_117",
     "question": "The Union Budget 2026-27 proposed a new income tax regime under which income up to what amount is effectively tax-free for salaried individuals (after standard deduction)?",
     "options": [
-      "A) Rs 12.75 lakh",
-      "B) Rs 12 lakh",
       "C) Rs 15 lakh",
+      "B) Rs 12 lakh",
+      "A) Rs 12.75 lakh",
       "D) Rs 10 lakh"
     ],
     "answer": "A) Rs 12.75 lakh",
@@ -78485,7 +78459,7 @@
     "source": "Feb 02, 2026",
     "topic": "Union Budget 2026-27 - Income Tax",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_131",
@@ -78507,17 +78481,17 @@
     "id": "ca_medium_132",
     "question": "The India-US interim trade deal announced in February 2026 included India's agreement to increase imports of which category of American products?",
     "options": [
-      "A) Agricultural products including tree nuts, soyabean oil, and fresh fruits",
+      "D) Semiconductors and electronics",
       "B) Pharmaceutical raw materials",
       "C) Automobiles and auto parts",
-      "D) Semiconductors and electronics"
+      "A) Agricultural products including tree nuts, soyabean oil, and fresh fruits"
     ],
     "answer": "A) Agricultural products including tree nuts, soyabean oil, and fresh fruits",
     "difficulty": 2,
     "source": "Feb 08, 2026",
     "topic": "India-US Trade Deal",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_118",
@@ -78619,9 +78593,9 @@
     "id": "ca_easy_121",
     "question": "India and the Gulf Cooperation Council (GCC) inked terms of reference to formally launch Free Trade Agreement (FTA) talks. How many member countries does the GCC have?",
     "options": [
-      "A) 6",
-      "B) 8",
       "C) 4",
+      "B) 8",
+      "A) 6",
       "D) 5"
     ],
     "answer": "A) 6",
@@ -78629,7 +78603,7 @@
     "source": "Feb 06, 2026",
     "topic": "International Trade - India-GCC FTA",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_122",
@@ -78651,25 +78625,25 @@
     "id": "ca_hard_077",
     "question": "Rat-hole mining, which was in news due to the Meghalaya mine disaster, was banned by the National Green Tribunal (NGT) in which year?",
     "options": [
-      "A) 2018",
+      "D) 2012",
       "B) 2016",
       "C) 2014",
-      "D) 2012"
+      "A) 2018"
     ],
     "answer": "C) 2014",
     "difficulty": 3,
     "source": "Feb 07, 2026",
     "topic": "Rat-hole Mining Ban",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_hard_078",
     "question": "The concept of a 'no-confidence motion against the Speaker' of the Lok Sabha was in news. Under the Indian Constitution, the Speaker can be removed by:",
     "options": [
-      "A) A resolution passed by both Houses of Parliament",
-      "B) A resolution of the Lok Sabha passed by a majority of all then members of the House after 14 days' notice",
       "C) A resolution passed by a majority of all members of the House",
+      "B) A resolution of the Lok Sabha passed by a majority of all then members of the House after 14 days' notice",
+      "A) A resolution passed by both Houses of Parliament",
       "D) An impeachment process similar to the President"
     ],
     "answer": "B) A resolution of the Lok Sabha passed by a majority of all then members of the House after 14 days' notice",
@@ -78677,14 +78651,14 @@
     "source": "Feb 11, 2026",
     "topic": "Constitutional Provisions - Speaker Removal",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_135",
     "question": "The Colombo Security Conclave, of which India is a key member, welcomed which island nation as a full member in February 2026?",
     "options": [
-      "A) Comoros",
       "B) Madagascar",
+      "A) Comoros",
       "C) Seychelles",
       "D) Maldives"
     ],
@@ -78693,14 +78667,14 @@
     "source": "Feb 10, 2026",
     "topic": "Colombo Security Conclave",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_123",
     "question": "India and Greece signed a joint declaration of intent to strengthen defence cooperation in February 2026. Greece is a member of which military alliance?",
     "options": [
-      "A) CSTO",
       "B) ASEAN",
+      "A) CSTO",
       "C) Shanghai Cooperation Organisation",
       "D) NATO"
     ],
@@ -78709,15 +78683,15 @@
     "source": "Feb 10, 2026",
     "topic": "India-Greece Defence Cooperation",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_136",
     "question": "The Defence Acquisition Council (DAC) approved the procurement of six more P-8I submarine hunter aircraft. The P-8I is manufactured by which company?",
     "options": [
-      "A) Dassault Aviation",
-      "B) Lockheed Martin",
       "C) Northrop Grumman",
+      "B) Lockheed Martin",
+      "A) Dassault Aviation",
       "D) Boeing"
     ],
     "answer": "D) Boeing",
@@ -78725,7 +78699,7 @@
     "source": "Feb 11, 2026",
     "topic": "Defence - P-8I Aircraft",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_124",
@@ -78779,25 +78753,25 @@
     "id": "ca_medium_139",
     "question": "The Polavaram project, for which Andhra Pradesh CM Naidu sought funds from the Centre, is built across which river?",
     "options": [
-      "A) Krishna",
+      "D) Tungabhadra",
       "B) Godavari",
       "C) Pennar",
-      "D) Tungabhadra"
+      "A) Krishna"
     ],
     "answer": "B) Godavari",
     "difficulty": 2,
     "source": "Feb 11, 2026",
     "topic": "Polavaram Project",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_140",
     "question": "The 'right to be forgotten' was examined by the Supreme Court in February 2026 to determine if it applies to online news. This right is primarily derived from which fundamental right?",
     "options": [
-      "A) Right to Freedom of Speech (Article 19)",
-      "B) Right to Constitutional Remedies (Article 32)",
       "C) Right against Exploitation (Article 23)",
+      "B) Right to Constitutional Remedies (Article 32)",
+      "A) Right to Freedom of Speech (Article 19)",
       "D) Right to Privacy (Article 21)"
     ],
     "answer": "D) Right to Privacy (Article 21)",
@@ -78805,7 +78779,7 @@
     "source": "Feb 07, 2026",
     "topic": "Right to be Forgotten",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_hard_079",
@@ -78827,8 +78801,8 @@
     "id": "ca_medium_141",
     "question": "The Union Budget 2026-27 proposed a retrospective tax provision. The concept of retrospective taxation in India became controversial after the amendment to which Act to tax the Vodafone-Hutchison deal?",
     "options": [
-      "A) Income Tax Act, 1961",
       "B) Securities Contracts (Regulation) Act, 1956",
+      "A) Income Tax Act, 1961",
       "C) FEMA, 1999",
       "D) Companies Act, 2013"
     ],
@@ -78837,7 +78811,7 @@
     "source": "Feb 06, 2026",
     "topic": "Retrospective Taxation",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_125",
@@ -78859,17 +78833,17 @@
     "id": "ca_medium_142",
     "question": "The Supreme Court lifted the ban on Anurag Thakur from taking part in BCCI affairs. The BCCI is governed by reforms recommended by which committee appointed by the Supreme Court?",
     "options": [
-      "A) Srinivasan Committee",
+      "D) Vinod Rai Committee",
       "B) Mudgal Committee",
       "C) Lodha Committee",
-      "D) Vinod Rai Committee"
+      "A) Srinivasan Committee"
     ],
     "answer": "C) Lodha Committee",
     "difficulty": 2,
     "source": "Feb 06, 2026",
     "topic": "BCCI Reforms - Lodha Committee",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_hard_080",
@@ -78891,9 +78865,9 @@
     "id": "ca_hard_081",
     "question": "The Election Commission's deployment of 8,100 micro-observers in West Bengal was noted as unprecedented. Micro-observers are typically drawn from which cadre?",
     "options": [
-      "A) NGO volunteers",
-      "B) Retired judges",
       "C) Central government employees including from central PSUs",
+      "B) Retired judges",
+      "A) NGO volunteers",
       "D) State police officers"
     ],
     "answer": "C) Central government employees including from central PSUs",
@@ -78901,15 +78875,15 @@
     "source": "Feb 07, 2026",
     "topic": "Election Commission - Micro-observers",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_hard_082",
     "question": "The Frontier Nagaland Territorial Authority agreement was signed in February 2026. The demand for a separate Frontier Nagaland has historically been raised by which tribal group?",
     "options": [
-      "A) Eastern Nagaland People's Organisation (ENPO) representing six tribes",
-      "B) Ao Nagas",
       "C) Angami Nagas",
+      "B) Ao Nagas",
+      "A) Eastern Nagaland People's Organisation (ENPO) representing six tribes",
       "D) Sema Nagas"
     ],
     "answer": "A) Eastern Nagaland People's Organisation (ENPO) representing six tribes",
@@ -78917,31 +78891,31 @@
     "source": "Feb 06, 2026",
     "topic": "Frontier Nagaland - ENPO",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_126",
     "question": "The Kuki-Zo peace deal was being readied on lines of the Nagaland pact. The Kuki-Zo conflict in Manipur is primarily between the Kuki-Zo tribes and which other community?",
     "options": [
-      "A) Karbi tribes",
+      "D) Bodo tribes",
       "B) Meitei community",
       "C) Naga tribes",
-      "D) Bodo tribes"
+      "A) Karbi tribes"
     ],
     "answer": "B) Meitei community",
     "difficulty": 1,
     "source": "Feb 09, 2026",
     "topic": "Manipur - Kuki-Zo Conflict",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_143",
     "question": "LIC leveraged its real estate portfolio worth Rs 45,000 crore. LIC is established under which Act?",
     "options": [
-      "A) Insurance Act, 1938",
-      "B) Life Insurance Corporation Act, 1956",
       "C) Insurance Regulatory and Development Authority Act, 1999",
+      "B) Life Insurance Corporation Act, 1956",
+      "A) Insurance Act, 1938",
       "D) Companies Act, 2013"
     ],
     "answer": "B) Life Insurance Corporation Act, 1956",
@@ -78949,23 +78923,23 @@
     "source": "Feb 06, 2026",
     "topic": "LIC - Statutory Framework",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_127",
     "question": "The Central Board of Direct Taxes (CBDT) chairman stated that 95% of income tax refunds have been disbursed. CBDT is the apex body for administration of which tax(es)?",
     "options": [
-      "A) GST and Income Tax",
+      "D) Income Tax and Wealth Tax",
       "B) Only Income Tax",
       "C) All direct taxes including Income Tax and Corporate Tax",
-      "D) Income Tax and Wealth Tax"
+      "A) GST and Income Tax"
     ],
     "answer": "C) All direct taxes including Income Tax and Corporate Tax",
     "difficulty": 1,
     "source": "Feb 09, 2026",
     "topic": "CBDT - Direct Tax Administration",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_128",
@@ -79003,17 +78977,17 @@
     "id": "ca_easy_129",
     "question": "The India-US interim trade deal addressed the 25% penalty on monitoring of Russian oil imports. India's crude oil imports from Russia had significantly increased since which year?",
     "options": [
-      "A) 2022",
+      "D) 2023",
       "B) 2024",
       "C) 2020",
-      "D) 2023"
+      "A) 2022"
     ],
     "answer": "A) 2022",
     "difficulty": 1,
     "source": "Feb 08, 2026",
     "topic": "India-Russia Oil Trade",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_130",
@@ -79035,24 +79009,24 @@
     "id": "ca_medium_144",
     "question": "The Panchayat Amendment Bill was passed by the West Bengal Assembly. Panchayati Raj institutions are governed by which Schedule of the Indian Constitution (added by the 73rd Amendment)?",
     "options": [
-      "A) Tenth Schedule",
+      "D) Ninth Schedule",
       "B) Eleventh Schedule",
       "C) Twelfth Schedule",
-      "D) Ninth Schedule"
+      "A) Tenth Schedule"
     ],
     "answer": "B) Eleventh Schedule",
     "difficulty": 2,
     "source": "Feb 09, 2026",
     "topic": "Panchayati Raj - Constitutional Provisions",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_145",
     "question": "The Black Swan Summit 2026, focused on AI, FinTech and InsurTech, was held in which Indian city?",
     "options": [
-      "A) Bengaluru",
       "B) Hyderabad",
+      "A) Bengaluru",
       "C) Bhubaneswar",
       "D) Mumbai"
     ],
@@ -79061,7 +79035,7 @@
     "source": "Feb 06, 2026",
     "topic": "Black Swan Summit 2026",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_131",
@@ -79115,9 +79089,9 @@
     "id": "ca_hard_084",
     "question": "The Supreme Court stated that 'digital arrests' causing loss of Rs 54,000 crore amount to 'dacoity'. Under the Indian Penal Code (now BNS), dacoity requires a minimum of how many persons?",
     "options": [
-      "A) 7 persons",
-      "B) 4 persons",
       "C) 3 persons",
+      "B) 4 persons",
+      "A) 7 persons",
       "D) 5 persons"
     ],
     "answer": "D) 5 persons",
@@ -79125,23 +79099,23 @@
     "source": "Feb 10, 2026",
     "topic": "Criminal Law - Dacoity",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_133",
     "question": "The Islamabad suicide attack in February 2026 killed over 30 people. Pakistan's capital Islamabad is located adjacent to which city?",
     "options": [
-      "A) Rawalpindi",
+      "D) Peshawar",
       "B) Karachi",
       "C) Lahore",
-      "D) Peshawar"
+      "A) Rawalpindi"
     ],
     "answer": "A) Rawalpindi",
     "difficulty": 1,
     "source": "Feb 07, 2026",
     "topic": "Pakistan - Geography",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_134",
@@ -79163,9 +79137,9 @@
     "id": "ca_hard_085",
     "question": "The START (Strategic Arms Reduction Treaty) between the US and Russia expired. The New START treaty, which was the last remaining nuclear arms control treaty between the two nations, limited each side to how many deployed strategic nuclear warheads?",
     "options": [
-      "A) 2,000",
-      "B) 800",
       "C) 1,550",
+      "B) 800",
+      "A) 2,000",
       "D) 1,100"
     ],
     "answer": "C) 1,550",
@@ -79173,23 +79147,23 @@
     "source": "Feb 06, 2026",
     "topic": "Nuclear Arms Control - START Treaty",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_hard_086",
     "question": "Flush car door handles were banned by China due to safety concerns for pedestrians. In India, vehicle safety standards are regulated by which body?",
     "options": [
-      "A) Automotive Research Association of India (ARAI)",
+      "D) Central Motor Vehicles Rules under the Motor Vehicles Act",
       "B) Bureau of Indian Standards (BIS)",
       "C) National Automotive Testing and R&D Infrastructure Project (NATRiP)",
-      "D) Central Motor Vehicles Rules under the Motor Vehicles Act"
+      "A) Automotive Research Association of India (ARAI)"
     ],
     "answer": "D) Central Motor Vehicles Rules under the Motor Vehicles Act",
     "difficulty": 3,
     "source": "Feb 06, 2026",
     "topic": "Vehicle Safety Standards",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_147",
@@ -79211,40 +79185,40 @@
     "id": "ca_medium_148",
     "question": "The Keezhadi archaeological site findings were in news, with archaeologists saying the ASI review seems AI-assisted. Keezhadi is an important archaeological site located in which state?",
     "options": [
-      "A) Andhra Pradesh",
+      "D) Karnataka",
       "B) Kerala",
       "C) Tamil Nadu",
-      "D) Karnataka"
+      "A) Andhra Pradesh"
     ],
     "answer": "C) Tamil Nadu",
     "difficulty": 2,
     "source": "Feb 06, 2026",
     "topic": "Archaeology - Keezhadi",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_135",
     "question": "The Bank of England retained its interest rate, mentioned alongside the RBI decision. The Bank of England is the central bank of which entity?",
     "options": [
-      "A) England and Wales",
+      "D) The Commonwealth nations",
       "B) The United Kingdom",
       "C) England only",
-      "D) The Commonwealth nations"
+      "A) England and Wales"
     ],
     "answer": "B) The United Kingdom",
     "difficulty": 1,
     "source": "Feb 06, 2026",
     "topic": "Central Banks - Bank of England",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_hard_087",
     "question": "Harley-Davidson's India comeback was reported likely due to the India-US trade deal. Harley-Davidson motorcycles are manufactured in which US city/state?",
     "options": [
-      "A) Austin, Texas",
       "B) Detroit, Michigan",
+      "A) Austin, Texas",
       "C) Milwaukee, Wisconsin",
       "D) Nashville, Tennessee"
     ],
@@ -79253,7 +79227,7 @@
     "source": "Feb 08, 2026",
     "topic": "India-US Trade - Harley-Davidson",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_149",
@@ -79275,8 +79249,8 @@
     "id": "ca_medium_150",
     "question": "Japan's Sanae Takaichi was set for a landslide poll victory as Japan's Prime Minister. She leads which political party?",
     "options": [
-      "A) Constitutional Democratic Party",
       "B) Liberal Democratic Party (LDP)",
+      "A) Constitutional Democratic Party",
       "C) Komeito",
       "D) Democratic Party of Japan"
     ],
@@ -79285,23 +79259,23 @@
     "source": "Feb 09, 2026",
     "topic": "Japan Politics - Takaichi",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_151",
     "question": "Hong Kong media mogul Jimmy Lai was sentenced to 20 years in a national security case. Jimmy Lai is the founder of which media outlet?",
     "options": [
-      "A) Apple Daily",
+      "D) South China Morning Post",
       "B) Oriental Daily News",
       "C) Ming Pao",
-      "D) South China Morning Post"
+      "A) Apple Daily"
     ],
     "answer": "A) Apple Daily",
     "difficulty": 2,
     "source": "Feb 10, 2026",
     "topic": "Hong Kong - Jimmy Lai",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_hard_088",
@@ -79355,8 +79329,8 @@
     "id": "ca_medium_152",
     "question": "An Indian teacher won the $1 million Global Teacher Prize. The Global Teacher Prize is awarded by which organization?",
     "options": [
-      "A) UNESCO",
       "B) UNICEF",
+      "A) UNESCO",
       "C) Varkey Foundation",
       "D) World Bank"
     ],
@@ -79365,15 +79339,15 @@
     "source": "Feb 06, 2026",
     "topic": "Global Teacher Prize",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_153",
     "question": "The 16th Finance Commission report was in news as three poll-bound states were set to get a higher share in taxes. The Finance Commission is constituted under which Article of the Constitution?",
     "options": [
-      "A) Article 270",
-      "B) Article 275",
       "C) Article 280",
+      "B) Article 275",
+      "A) Article 270",
       "D) Article 282"
     ],
     "answer": "C) Article 280",
@@ -79381,7 +79355,7 @@
     "source": "Feb 09, 2026",
     "topic": "Finance Commission - Constitutional Provision",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_138",
@@ -79403,8 +79377,8 @@
     "id": "ca_medium_154",
     "question": "The Bharatiya Rashtriya Sabha (BRS, formerly TRS) MLAs' disqualification plea was before the Supreme Court, which gave the Telangana Speaker a 'last chance' to decide. Under which Schedule of the Constitution is the anti-defection law contained?",
     "options": [
-      "A) Tenth Schedule",
       "B) Eleventh Schedule",
+      "A) Tenth Schedule",
       "C) Ninth Schedule",
       "D) Eighth Schedule"
     ],
@@ -79413,14 +79387,14 @@
     "source": "Feb 07, 2026",
     "topic": "Anti-defection Law - Tenth Schedule",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_139",
     "question": "India and Malaysia signed key pacts in business and technology. Malaysia is located on which peninsula?",
     "options": [
-      "A) Arabian Peninsula",
       "B) Indochina Peninsula",
+      "A) Arabian Peninsula",
       "C) Korean Peninsula",
       "D) Malay Peninsula and Borneo island"
     ],
@@ -79429,15 +79403,15 @@
     "source": "Feb 09, 2026",
     "topic": "India-Malaysia Relations",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_hard_089",
     "question": "The security info channel between India and Canada was reopened after NSA Doval's visit. Canada's intelligence agency is known as:",
     "options": [
-      "A) CSE (Communications Security Establishment)",
-      "B) RCMP Intelligence Branch",
       "C) SIGINT (Signal Intelligence Division)",
+      "B) RCMP Intelligence Branch",
+      "A) CSE (Communications Security Establishment)",
       "D) CSIS (Canadian Security Intelligence Service)"
     ],
     "answer": "D) CSIS (Canadian Security Intelligence Service)",
@@ -79445,31 +79419,31 @@
     "source": "Feb 09, 2026",
     "topic": "India-Canada Intelligence Cooperation",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_140",
     "question": "51 Maoists, including 24 women, surrendered in Sukma and Bijapur districts. These districts are located in which state?",
     "options": [
-      "A) Telangana",
+      "D) Odisha",
       "B) Chhattisgarh",
       "C) Jharkhand",
-      "D) Odisha"
+      "A) Telangana"
     ],
     "answer": "B) Chhattisgarh",
     "difficulty": 1,
     "source": "Feb 08, 2026",
     "topic": "Maoist Insurgency - Chhattisgarh",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_141",
     "question": "The People's Charter to protect Goa's hills received ex-CJI Gogoi's backing. A 'People's Charter' is a form of which type of democratic instrument?",
     "options": [
-      "A) Citizens' petition or civic demand document",
-      "B) Judicial writ",
       "C) Legislative bill",
+      "B) Judicial writ",
+      "A) Citizens' petition or civic demand document",
       "D) Executive order"
     ],
     "answer": "A) Citizens' petition or civic demand document",
@@ -79477,7 +79451,7 @@
     "source": "Feb 09, 2026",
     "topic": "Civic Participation - People's Charter",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_142",
@@ -79499,9 +79473,9 @@
     "id": "ca_medium_155",
     "question": "The Hampi gangrape case saw 3 convictions. Hampi, a UNESCO World Heritage Site, was the capital of which historical empire?",
     "options": [
-      "A) Bahmani Sultanate",
-      "B) Chalukya Empire",
       "C) Vijayanagara Empire",
+      "B) Chalukya Empire",
+      "A) Bahmani Sultanate",
       "D) Hoysala Empire"
     ],
     "answer": "C) Vijayanagara Empire",
@@ -79509,14 +79483,14 @@
     "source": "Feb 09, 2026",
     "topic": "History - Hampi",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_156",
     "question": "IIT-Bombay researchers overcame a key bottleneck in CAR-T cell therapy for cancer. CAR-T therapy works by modifying which type of immune cells?",
     "options": [
-      "A) Natural Killer cells",
       "B) T-cells",
+      "A) Natural Killer cells",
       "C) B-cells",
       "D) Macrophages"
     ],
@@ -79525,7 +79499,7 @@
     "source": "Feb 07, 2026",
     "topic": "Cancer Therapy - CAR-T Cells",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_157",
@@ -79547,8 +79521,8 @@
     "id": "ca_hard_090",
     "question": "Tata Steel completed the first made-in-Tamil Nadu Range Rover at its new plant. The Tata Motors vehicle manufacturing plant that rolled out the Range Rover is located in which Tamil Nadu city?",
     "options": [
-      "A) Hosur",
       "B) Coimbatore",
+      "A) Hosur",
       "C) Ranipet",
       "D) Chennai"
     ],
@@ -79557,14 +79531,14 @@
     "source": "Feb 10, 2026",
     "topic": "Automobile Manufacturing - Tata",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_158",
     "question": "The Surat gems and jewellery industry hoped to bring back the 'bling' after the India-US trade deal. Surat is famous for cutting and polishing what percentage of the world's diamonds?",
     "options": [
-      "A) About 50%",
       "B) About 60%",
+      "A) About 50%",
       "C) About 70%",
       "D) About 90%"
     ],
@@ -79573,47 +79547,47 @@
     "source": "Feb 08, 2026",
     "topic": "Surat Diamond Industry",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_159",
     "question": "REC received in-principle nod to merge with PFC. Both REC and PFC are under the administrative control of which ministry?",
     "options": [
-      "A) Ministry of Power",
+      "D) Ministry of Heavy Industries",
       "B) Ministry of Finance",
       "C) Ministry of New and Renewable Energy",
-      "D) Ministry of Heavy Industries"
+      "A) Ministry of Power"
     ],
     "answer": "A) Ministry of Power",
     "difficulty": 2,
     "source": "Feb 07, 2026",
     "topic": "Power Sector - REC PFC Merger",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_160",
     "question": "Vidarbha was reported to hold 75% of Maharashtra's minerals, including the best iron ore. Vidarbha comprises which two divisions of Maharashtra?",
     "options": [
-      "A) Aurangabad and Kolhapur",
+      "D) Pune and Nashik",
       "B) Nagpur and Amravati",
       "C) Thane and Konkan",
-      "D) Pune and Nashik"
+      "A) Aurangabad and Kolhapur"
     ],
     "answer": "B) Nagpur and Amravati",
     "difficulty": 2,
     "source": "Feb 07, 2026",
     "topic": "Maharashtra - Vidarbha Region",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_143",
     "question": "The report on Bangladesh polls noted Jamaat-e-Islami's new role. Bangladesh shares borders with India and which other country?",
     "options": [
-      "A) Bhutan",
-      "B) Sri Lanka",
       "C) Nepal",
+      "B) Sri Lanka",
+      "A) Bhutan",
       "D) Myanmar"
     ],
     "answer": "D) Myanmar",
@@ -79621,7 +79595,7 @@
     "source": "Feb 09, 2026",
     "topic": "Bangladesh - Geography",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_144",
@@ -79643,25 +79617,25 @@
     "id": "ca_hard_091",
     "question": "The 'right to be forgotten' concept originates from which landmark ruling of the European Court of Justice?",
     "options": [
-      "A) Maximillian Schrems v. Facebook Ireland",
+      "D) Google Spain SL v. AEPD",
       "B) Schrems v. Data Protection Commissioner",
       "C) Digital Rights Ireland v. Minister for Communications",
-      "D) Google Spain SL v. AEPD"
+      "A) Maximillian Schrems v. Facebook Ireland"
     ],
     "answer": "D) Google Spain SL v. AEPD",
     "difficulty": 3,
     "source": "Feb 07, 2026",
     "topic": "Right to be Forgotten - Legal Origins",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_145",
     "question": "The T20 World Cup match between India and Pakistan was back on the table after Pakistan reversed its boycott threat. The ICC (International Cricket Council) is headquartered in which city?",
     "options": [
-      "A) Melbourne",
-      "B) London",
       "C) Dubai",
+      "B) London",
+      "A) Melbourne",
       "D) Mumbai"
     ],
     "answer": "C) Dubai",
@@ -79669,15 +79643,15 @@
     "source": "Feb 10, 2026",
     "topic": "Cricket - ICC",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_161",
     "question": "Small car concession was scrapped under new norms that would classify vehicles based on their carbon emissions rather than size. This shift aligns with which international climate framework?",
     "options": [
-      "A) Paris Agreement",
-      "B) Stockholm Convention",
       "C) Montreal Protocol",
+      "B) Stockholm Convention",
+      "A) Paris Agreement",
       "D) Kyoto Protocol"
     ],
     "answer": "A) Paris Agreement",
@@ -79685,7 +79659,7 @@
     "source": "Feb 07, 2026",
     "topic": "Vehicle Emission Norms",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_146",
@@ -79707,17 +79681,17 @@
     "id": "ca_easy_147",
     "question": "An architect aimed to rebuild and restore a quake-hit Turkish city's multicultural past, including a church. The devastating Turkey-Syria earthquake occurred in which year?",
     "options": [
-      "A) 2023",
+      "D) 2022",
       "B) 2024",
       "C) 2025",
-      "D) 2022"
+      "A) 2023"
     ],
     "answer": "A) 2023",
     "difficulty": 1,
     "source": "Feb 07, 2026",
     "topic": "Turkey Earthquake - Reconstruction",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_162",
@@ -79739,8 +79713,8 @@
     "id": "ca_medium_163",
     "question": "Soot at sight: Black carbon from marine traffic was reported to be ensnaring the Arctic. Black carbon is primarily produced by:",
     "options": [
-      "A) Chemical weathering of rocks",
       "B) Nuclear reactions",
+      "A) Chemical weathering of rocks",
       "C) Volcanic eruptions",
       "D) Incomplete combustion of fossil fuels and biomass"
     ],
@@ -79749,7 +79723,7 @@
     "source": "Feb 11, 2026",
     "topic": "Environment - Black Carbon",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_164",
@@ -79803,17 +79777,17 @@
     "id": "ca_easy_149",
     "question": "Syria and Saudi Arabia signed multibillion-dollar investment deals to boost Syria's economy. Syria's capital is:",
     "options": [
-      "A) Homs",
+      "D) Damascus",
       "B) Latakia",
       "C) Aleppo",
-      "D) Damascus"
+      "A) Homs"
     ],
     "answer": "D) Damascus",
     "difficulty": 1,
     "source": "Feb 08, 2026",
     "topic": "Middle East - Syria",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_150",
@@ -79835,17 +79809,17 @@
     "id": "ca_hard_093",
     "question": "Tigers far away from home: the article discussed tiger conservation with focus on leopards in India. India's tiger population is estimated through which exercise?",
     "options": [
-      "A) All India Tiger Estimation (using camera traps and the M-STrIPES platform)",
+      "D) Forest Survey of India count",
       "B) State wildlife board enumeration",
       "C) Project Tiger Census",
-      "D) Forest Survey of India count"
+      "A) All India Tiger Estimation (using camera traps and the M-STrIPES platform)"
     ],
     "answer": "A) All India Tiger Estimation (using camera traps and the M-STrIPES platform)",
     "difficulty": 3,
     "source": "Feb 11, 2026",
     "topic": "Wildlife Conservation - Tiger Census",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_151",
@@ -79883,9 +79857,9 @@
     "id": "ca_hard_094",
     "question": "The PM CARES Fund was in news as the PMO told Lok Sabha Secretariat that no questions on PM CARES can be answered citing rules. PM CARES Fund is registered under which Act?",
     "options": [
-      "A) Societies Registration Act, 1860",
-      "B) Indian Trusts Act, 1882 (as a public charitable trust)",
       "C) Companies Act, 2013",
+      "B) Indian Trusts Act, 1882 (as a public charitable trust)",
+      "A) Societies Registration Act, 1860",
       "D) Charitable Endowments Act, 1890"
     ],
     "answer": "B) Indian Trusts Act, 1882 (as a public charitable trust)",
@@ -79893,23 +79867,23 @@
     "source": "Feb 09, 2026",
     "topic": "PM CARES Fund - Legal Status",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_166",
     "question": "India won the ICC U19 T20 World Cup defeating which team in the final?",
     "options": [
-      "A) Sri Lanka",
+      "D) England",
       "B) Australia",
       "C) South Africa",
-      "D) England"
+      "A) Sri Lanka"
     ],
     "answer": "D) England",
     "difficulty": 2,
     "source": "Feb 07, 2026",
     "topic": "Cricket - U19 T20 WC Final",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_167",
@@ -79931,8 +79905,8 @@
     "id": "ca_hard_095",
     "question": "MHA reminded paramilitary forces to submit cadre review proposals for Group A officers. India's central armed police forces (CAPFs) include how many forces?",
     "options": [
-      "A) 9",
       "B) 7",
+      "A) 9",
       "C) 5",
       "D) 3"
     ],
@@ -79941,7 +79915,7 @@
     "source": "Feb 06, 2026",
     "topic": "Central Armed Police Forces",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_168",
@@ -79963,8 +79937,8 @@
     "id": "ca_hard_096",
     "question": "The Budget proposed zero digital services tax, which was described as shrinking sovereign policy space. The digital services tax (also called 'equalization levy') in India was introduced at what rate on specified digital services?",
     "options": [
-      "A) 2%",
       "B) 6%",
+      "A) 2%",
       "C) 8%",
       "D) 4%"
     ],
@@ -79973,7 +79947,7 @@
     "source": "Feb 11, 2026",
     "topic": "Digital Services Tax - Equalization Levy",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_169",
@@ -79995,8 +79969,8 @@
     "id": "ca_easy_152",
     "question": "India's first Tata Range Rover rolled out of Tamil Nadu. The Jaguar Land Rover brand is owned by which Indian conglomerate?",
     "options": [
-      "A) Reliance Industries",
       "B) Mahindra Group",
+      "A) Reliance Industries",
       "C) Tata Group",
       "D) Aditya Birla Group"
     ],
@@ -80005,7 +79979,7 @@
     "source": "Feb 10, 2026",
     "topic": "Automobile - JLR Tata",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_153",
@@ -80027,9 +80001,9 @@
     "id": "ca_easy_154",
     "question": "Alphabet planned to sell a $100 billion bond to fund AI plans. Alphabet is the parent company of which major technology firm?",
     "options": [
-      "A) Microsoft",
-      "B) Meta",
       "C) Google",
+      "B) Meta",
+      "A) Microsoft",
       "D) Amazon"
     ],
     "answer": "C) Google",
@@ -80037,7 +80011,7 @@
     "source": "Feb 11, 2026",
     "topic": "Technology - Alphabet",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_170",
@@ -80059,24 +80033,24 @@
     "id": "ca_easy_155",
     "question": "India's External Affairs Minister stated that purchasing oil from the US is in India's strategic interests. India is the world's _____ largest consumer of crude oil.",
     "options": [
-      "A) Fourth",
+      "D) Second",
       "B) Third",
       "C) Fifth",
-      "D) Second"
+      "A) Fourth"
     ],
     "answer": "B) Third",
     "difficulty": 1,
     "source": "Feb 09, 2026",
     "topic": "Energy - India Oil Consumption",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_156",
     "question": "The Ratnagiri plant operating with machinery from an Italian firm within consented norms was in news. Ratnagiri is located on the coast of which Indian state?",
     "options": [
-      "A) Gujarat",
       "B) Karnataka",
+      "A) Gujarat",
       "C) Goa",
       "D) Maharashtra"
     ],
@@ -80085,7 +80059,7 @@
     "source": "Feb 06, 2026",
     "topic": "Geography - Ratnagiri",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_hard_097",
@@ -80107,9 +80081,9 @@
     "id": "ca_easy_157",
     "question": "Road fatalities on National Highways fell 11% in 2025, with UP and MP leading the way. India's National Highways are maintained by which body?",
     "options": [
-      "A) National Highways Authority of India (NHAI)",
-      "B) Ministry of Road Transport and Highways",
       "C) Central Public Works Department",
+      "B) Ministry of Road Transport and Highways",
+      "A) National Highways Authority of India (NHAI)",
       "D) State PWD departments"
     ],
     "answer": "A) National Highways Authority of India (NHAI)",
@@ -80117,31 +80091,31 @@
     "source": "Feb 06, 2026",
     "topic": "Infrastructure - NHAI",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_171",
     "question": "Sustained double-digit growth for India is possible, said Mukesh Ambani at a BlackRock CEO event. BlackRock is the world's largest:",
     "options": [
-      "A) Hedge fund",
+      "D) Asset management firm",
       "B) Investment bank",
       "C) Private equity firm",
-      "D) Asset management firm"
+      "A) Hedge fund"
     ],
     "answer": "D) Asset management firm",
     "difficulty": 2,
     "source": "Feb 05, 2026",
     "topic": "Finance - BlackRock",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_158",
     "question": "The government proposed to sell up to 37% stake in BHEL. BHEL (Bharat Heavy Electricals Limited) primarily manufactures equipment for which sector?",
     "options": [
-      "A) Power generation equipment",
-      "B) Railway rolling stock",
       "C) Telecommunications equipment",
+      "B) Railway rolling stock",
+      "A) Power generation equipment",
       "D) Defence equipment"
     ],
     "answer": "A) Power generation equipment",
@@ -80149,15 +80123,15 @@
     "source": "Feb 11, 2026",
     "topic": "Disinvestment - BHEL",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_159",
     "question": "India services PMI hit a 3-month high in January 2026. PMI (Purchasing Managers' Index) above which value indicates expansion?",
     "options": [
-      "A) 100",
-      "B) 0",
       "C) 25",
+      "B) 0",
+      "A) 100",
       "D) 50"
     ],
     "answer": "D) 50",
@@ -80165,15 +80139,15 @@
     "source": "Feb 05, 2026",
     "topic": "Economy - PMI Index",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_160",
     "question": "France's President Macron was set to visit India on February 17. France is a permanent member of the UN Security Council. How many permanent members does the UNSC have?",
     "options": [
-      "A) 10",
-      "B) 5",
       "C) 3",
+      "B) 5",
+      "A) 10",
       "D) 7"
     ],
     "answer": "B) 5",
@@ -80181,7 +80155,7 @@
     "source": "Feb 11, 2026",
     "topic": "International Relations - France Visit",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_hard_098",
@@ -80219,25 +80193,25 @@
     "id": "ca_hard_099",
     "question": "The loneliness epidemic was discussed as needing a policy response in the editorial pages. Which country appointed the world's first 'Minister of Loneliness'?",
     "options": [
-      "A) United States",
+      "D) United Kingdom",
       "B) Finland",
       "C) Japan",
-      "D) United Kingdom"
+      "A) United States"
     ],
     "answer": "D) United Kingdom",
     "difficulty": 3,
     "source": "Feb 06, 2026",
     "topic": "Public Health - Loneliness Policy",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_172",
     "question": "The Dholera Industrial City Development was advertised prominently. Dholera Special Investment Region (SIR) is located in which state?",
     "options": [
-      "A) Madhya Pradesh",
-      "B) Maharashtra",
       "C) Rajasthan",
+      "B) Maharashtra",
+      "A) Madhya Pradesh",
       "D) Gujarat"
     ],
     "answer": "D) Gujarat",
@@ -80245,7 +80219,7 @@
     "source": "Feb 06, 2026",
     "topic": "Infrastructure - Dholera SIR",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_173",
@@ -80267,33 +80241,33 @@
     "id": "ca_hard_100",
     "question": "The Gujarat High Court approved the reclaiming of Asaram ashram land. The concept of 'escheat' (land reverting to the state when owner has no legal heirs) is based on which legal principle?",
     "options": [
-      "A) Doctrine of escheat",
+      "D) Doctrine of adverse possession",
       "B) Doctrine of eminent domain",
       "C) Doctrine of res judicata",
-      "D) Doctrine of adverse possession"
+      "A) Doctrine of escheat"
     ],
     "answer": "A) Doctrine of escheat",
     "difficulty": 3,
     "source": "Feb 06, 2026",
     "topic": "Land Law - Escheat",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_174",
     "question": "The Manipur government passed a floor test despite no Kuki-Zo MLAs in the House. A floor test in Indian parliamentary democracy requires:",
     "options": [
-      "A) Simple majority of members present and voting",
+      "D) Two-thirds majority of all members",
       "B) Absolute majority of total strength",
       "C) Three-fourths majority of members present",
-      "D) Two-thirds majority of all members"
+      "A) Simple majority of members present and voting"
     ],
     "answer": "A) Simple majority of members present and voting",
     "difficulty": 2,
     "source": "Feb 06, 2026",
     "topic": "Parliamentary Democracy - Floor Test",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_hard_101",
@@ -80315,8 +80289,8 @@
     "id": "ca_medium_175",
     "question": "The India-US interim deal included tariff on pulses. Which of the following pulses is India's largest import?",
     "options": [
-      "A) Tur/Arhar (Pigeon Pea)",
       "B) Chana (Chickpea)",
+      "A) Tur/Arhar (Pigeon Pea)",
       "C) Masoor (Red Lentil)",
       "D) Urad (Black Gram)"
     ],
@@ -80325,14 +80299,14 @@
     "source": "Feb 11, 2026",
     "topic": "Agriculture - Pulse Imports",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_162",
     "question": "The Women Reservation Act and gender budget were discussed in the context of West Bengal's budget. The Women's Reservation Act (Constitution 106th Amendment Act, 2023) reserves what percentage of seats for women in Lok Sabha and state assemblies?",
     "options": [
-      "A) 50%",
       "B) 25%",
+      "A) 50%",
       "C) 33%",
       "D) 40%"
     ],
@@ -80341,15 +80315,15 @@
     "source": "Feb 09, 2026",
     "topic": "Women's Reservation Act",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_163",
     "question": "The RSS chief Mohan Bhagwat stated the Sangh has asked him to continue in his role. The RSS was founded in which year?",
     "options": [
-      "A) 1925",
-      "B) 1935",
       "C) 1920",
+      "B) 1935",
+      "A) 1925",
       "D) 1930"
     ],
     "answer": "A) 1925",
@@ -80357,7 +80331,7 @@
     "source": "Feb 09, 2026",
     "topic": "Indian Organizations - RSS",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_176",
@@ -80379,8 +80353,8 @@
     "id": "ca_hard_102",
     "question": "Delhi Police filed a case over circulation of Gen Naravane's unpublished book. Publishing a government official's unpublished memoir without authorization may violate which law?",
     "options": [
-      "A) Press and Registration of Books Act, 1867",
       "B) Both Official Secrets Act and Indian Copyright Act",
+      "A) Press and Registration of Books Act, 1867",
       "C) Copyright Act, 1957",
       "D) Official Secrets Act, 1923"
     ],
@@ -80389,36 +80363,36 @@
     "source": "Feb 10, 2026",
     "topic": "Official Secrets Act - Publishing",
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "question": "The National Green Tribunal (NGT) cleared the Great Nicobar Island project in February 2026, citing 'strategic' role. The Great Nicobar Island is the southernmost point of which island chain?",
     "options": [
-      "Andaman and Nicobar Islands",
+      "Mergui Archipelago",
       "Maldive Islands",
       "Lakshadweep Islands",
-      "Mergui Archipelago"
+      "Andaman and Nicobar Islands"
     ],
     "answer": "Andaman and Nicobar Islands",
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_164"
   },
   {
     "question": "India set to join 'Pax Silica', a US-led coalition announced during the India AI Impact Summit 2026. Pax Silica primarily focuses on cooperation in which sector?",
     "options": [
-      "Space exploration",
-      "Semiconductor and AI technology",
       "Nuclear energy",
+      "Semiconductor and AI technology",
+      "Space exploration",
       "Rare earth mining"
     ],
     "answer": "Semiconductor and AI technology",
     "difficulty": 3,
     "source": "Indian Express, February 20-21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_103"
   },
   {
@@ -80439,8 +80413,8 @@
   {
     "question": "TCS partnered with AMD to provide a 200 MW AI data centre blueprint in India. AMD is a leading manufacturer of which type of hardware?",
     "options": [
-      "Display panels",
       "Networking routers",
+      "Display panels",
       "Battery cells",
       "Semiconductor chips and processors"
     ],
@@ -80448,22 +80422,22 @@
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_165"
   },
   {
     "question": "Two consortia led by L&T and Bharat Forge were shortlisted for making fighter jets under the Air Force Modernisation push. This programme aims to manufacture which type of aircraft domestically?",
     "options": [
-      "Multi-role fighter aircraft",
+      "Transport aircraft",
       "Unmanned combat drones",
       "Maritime patrol aircraft",
-      "Transport aircraft"
+      "Multi-role fighter aircraft"
     ],
     "answer": "Multi-role fighter aircraft",
     "difficulty": 2,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_178"
   },
   {
@@ -80484,16 +80458,16 @@
   {
     "question": "After a 3-month boycott over a Dalit cook, an Odisha village finally sent children to an anganwadi. Anganwadi centres operate under which government scheme?",
     "options": [
-      "Sarva Shiksha Abhiyan",
+      "Integrated Child Development Services (ICDS)",
       "Midday Meal Scheme",
       "National Health Mission",
-      "Integrated Child Development Services (ICDS)"
+      "Sarva Shiksha Abhiyan"
     ],
     "answer": "Integrated Child Development Services (ICDS)",
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_166"
   },
   {
@@ -80514,31 +80488,31 @@
   {
     "question": "Bangladesh Nationalist Party leader Rahman took oath as PM in February 2026, after the interim government ended. Who headed Bangladesh's interim government before Rahman?",
     "options": [
-      "Khaleda Zia",
+      "Muhammad Yunus",
       "Abdul Hamid",
       "Sheikh Hasina",
-      "Muhammad Yunus"
+      "Khaleda Zia"
     ],
     "answer": "Muhammad Yunus",
     "difficulty": 2,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_179"
   },
   {
     "question": "The 'Bodhan AI' initiative was launched by the Centre to integrate AI tools in schools. Under which ministry does school education policy primarily fall in India?",
     "options": [
-      "Ministry of Electronics and Information Technology",
+      "Ministry of Science and Technology",
       "Ministry of Education",
       "Ministry of Skill Development",
-      "Ministry of Science and Technology"
+      "Ministry of Electronics and Information Technology"
     ],
     "answer": "Ministry of Education",
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_168"
   },
   {
@@ -80574,23 +80548,23 @@
   {
     "question": "Meta raised concerns over a 3-hour timeline for takedown of social media content imposed by Indian authorities. Under which Indian legislation are intermediary guidelines for social media platforms primarily framed?",
     "options": [
-      "Consumer Protection Act, 2019",
-      "Indian Penal Code",
       "Information Technology Act, 2000",
+      "Indian Penal Code",
+      "Consumer Protection Act, 2019",
       "Digital Personal Data Protection Act, 2023"
     ],
     "answer": "Information Technology Act, 2000",
     "difficulty": 2,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_181"
   },
   {
     "question": "The ISI (Indian Statistical Institute) held its 60th convocation, with Padmanabhan Balaram urging focus on basic sciences. ISI was founded by which renowned Indian statistician?",
     "options": [
-      "Prasanta Chandra Mahalanobis",
       "S.N. Bose",
+      "Prasanta Chandra Mahalanobis",
       "D.D. Kosambi",
       "C.R. Rao"
     ],
@@ -80598,7 +80572,7 @@
     "difficulty": 3,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_105"
   },
   {
@@ -80619,8 +80593,8 @@
   {
     "question": "Iran briefly closed the Strait of Hormuz in February 2026 amid US-Tehran nuclear tensions. Approximately what percentage of the world's seaborne crude oil passes through the Strait of Hormuz?",
     "options": [
-      "About 10%",
       "About 20%",
+      "About 10%",
       "About 35%",
       "About 50%"
     ],
@@ -80628,37 +80602,37 @@
     "difficulty": 3,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_106"
   },
   {
     "question": "The India AI Mission 2.0 was announced to focus on AI service for MSMEs, similar to UPI. IndiaAI Mission 2.0 aims to add how many GPUs to the existing stock?",
     "options": [
-      "10,000",
-      "20,000",
       "5,000",
+      "20,000",
+      "10,000",
       "50,000"
     ],
     "answer": "10,000",
     "difficulty": 3,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_107"
   },
   {
     "question": "India's first private sector helicopter Final Assembly Line (FAL) by Tata-Airbus opened in Karnataka. The helicopter being assembled is:",
     "options": [
-      "Chinook CH-47",
+      "Ka-226T",
       "Apache AH-64",
       "H125 (formerly Ecureuil)",
-      "Ka-226T"
+      "Chinook CH-47"
     ],
     "answer": "H125 (formerly Ecureuil)",
     "difficulty": 3,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_108"
   },
   {
@@ -80694,46 +80668,46 @@
   {
     "question": "The India AI Impact Summit 2026, a major global gathering, was held at which venue in New Delhi?",
     "options": [
-      "Pragati Maidan",
-      "Bharat Mandapam",
       "Vigyan Bhawan",
+      "Bharat Mandapam",
+      "Pragati Maidan",
       "India Habitat Centre"
     ],
     "answer": "Bharat Mandapam",
     "difficulty": 2,
     "source": "Indian Express, February 19-20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_183"
   },
   {
     "question": "Google announced plans for subsea cables to link India and the US. Subsea internet cables are typically made of which material for signal transmission?",
     "options": [
-      "Copper wire",
+      "Coaxial cable",
       "Optical fibre",
       "Aluminium wire",
-      "Coaxial cable"
+      "Copper wire"
     ],
     "answer": "Optical fibre",
     "difficulty": 1,
     "source": "Indian Express, February 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_172"
   },
   {
     "question": "Maharashtra scrapped its 2014 policy providing 5% reservation for Muslims in education in February 2026. Reservation for religious minorities in education requires backing under which constitutional provision?",
     "options": [
-      "Article 30",
-      "Article 15(4)",
       "Article 46",
+      "Article 15(4)",
+      "Article 30",
       "Article 29"
     ],
     "answer": "Article 30",
     "difficulty": 3,
     "source": "Indian Express, February 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_109"
   },
   {
@@ -80784,8 +80758,8 @@
   {
     "question": "The CCI vs WhatsApp case was highlighted as a pivotal battle in regulatory evolution. CCI stands for:",
     "options": [
-      "Competition Commission of India",
       "Corporate Compliance Institution",
+      "Competition Commission of India",
       "Consumer Court of India",
       "Central Consumer Index"
     ],
@@ -80793,7 +80767,7 @@
     "difficulty": 1,
     "source": "Indian Express, February 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_174"
   },
   {
@@ -80814,68 +80788,68 @@
   {
     "question": "Chandigarh celebrated its 75th anniversary, described as 'a tale of two cities'. Chandigarh was designed by which famous architect?",
     "options": [
-      "Frank Lloyd Wright",
-      "Louis Kahn",
       "Le Corbusier",
+      "Louis Kahn",
+      "Frank Lloyd Wright",
       "Edwin Lutyens"
     ],
     "answer": "Le Corbusier",
     "difficulty": 2,
     "source": "Indian Express, February 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_186"
   },
   {
     "question": "Tata Sons board was to weigh FY27 spending and Air India funding. Tata Sons is the holding company of the Tata Group. Where is Tata Sons headquartered?",
     "options": [
-      "Kolkata",
+      "Mumbai",
       "Bengaluru",
       "New Delhi",
-      "Mumbai"
+      "Kolkata"
     ],
     "answer": "Mumbai",
     "difficulty": 1,
     "source": "Indian Express, February 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_176"
   },
   {
     "question": "The DGCA proposed stricter norms for unruly fliers in February 2026. DGCA stands for:",
     "options": [
-      "Director General of Civil Accounts",
+      "Director General of Customs Administration",
       "Directorate General of Civil Aviation",
       "Department of Government Civil Affairs",
-      "Director General of Customs Administration"
+      "Director General of Civil Accounts"
     ],
     "answer": "Directorate General of Civil Aviation",
     "difficulty": 1,
     "source": "Indian Express, February 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_177"
   },
   {
     "question": "The India-Canada FTA talks may be sealed by March 2026. India-Canada trade discussions include which strategic mineral as a key agenda item?",
     "options": [
-      "Titanium",
-      "Uranium",
       "Lithium",
+      "Uranium",
+      "Titanium",
       "Cobalt"
     ],
     "answer": "Uranium",
     "difficulty": 2,
     "source": "Indian Express, February 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_187"
   },
   {
     "question": "Abhishek Singh, CEO of IndiaAI Mission, spoke at the India AI Impact Summit about companies looking to hire AI engineers from India. IndiaAI Mission operates under which ministry?",
     "options": [
-      "Ministry of Education",
       "Ministry of Science and Technology",
+      "Ministry of Education",
       "Ministry of Commerce and Industry",
       "Ministry of Electronics and Information Technology"
     ],
@@ -80883,14 +80857,14 @@
     "difficulty": 2,
     "source": "Indian Express, February 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_188"
   },
   {
     "question": "The Supreme Court ruled there is 'no question of stay' on RTI amendments in February 2026. RTI stands for:",
     "options": [
-      "Right to Internet",
       "Right to Inspection",
+      "Right to Internet",
       "Right to Information",
       "Right to Intervention"
     ],
@@ -80898,7 +80872,7 @@
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_178"
   },
   {
@@ -80934,8 +80908,8 @@
   {
     "question": "The government unveiled a framework to regulate AI in healthcare at the India AI Impact Summit. Which organization typically sets global standards for health-related regulations?",
     "options": [
-      "World Trade Organization (WTO)",
       "International Labour Organization (ILO)",
+      "World Trade Organization (WTO)",
       "UNESCO",
       "World Health Organization (WHO)"
     ],
@@ -80943,14 +80917,14 @@
     "difficulty": 1,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_180"
   },
   {
     "question": "Adani Group announced plans to invest $100 billion in AI-ready data centres by 2035. Data centres require massive amounts of which resource for cooling?",
     "options": [
-      "Liquid nitrogen",
       "Natural gas",
+      "Liquid nitrogen",
       "Helium",
       "Water"
     ],
@@ -80958,29 +80932,29 @@
     "difficulty": 2,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_189"
   },
   {
     "question": "The 70 nations that backed the 'Delhi Declaration' on AI at the India AI Impact Summit committed to responsible AI development. The Delhi Declaration on AI emphasizes which key principle?",
     "options": [
-      "AI supremacy for developed nations",
+      "Restricting AI to military use",
       "Centralizing AI control under the UN",
       "Democratizing AI and respecting sovereignty",
-      "Restricting AI to military use"
+      "AI supremacy for developed nations"
     ],
     "answer": "Democratizing AI and respecting sovereignty",
     "difficulty": 2,
     "source": "Indian Express, February 19-21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_190"
   },
   {
     "question": "The SC slammed states for freebies to affluent while running fiscal deficits. The Fiscal Responsibility and Budget Management (FRBM) Act was enacted in which year?",
     "options": [
-      "2003",
       "2005",
+      "2003",
       "2000",
       "2008"
     ],
@@ -80988,14 +80962,14 @@
     "difficulty": 3,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_111"
   },
   {
     "question": "A no-trust motion against the Speaker was reported in February 2026. Under which Article of the Constitution can a no-confidence motion be moved against the Speaker of Lok Sabha?",
     "options": [
-      "Article 90",
       "Article 96",
+      "Article 90",
       "Article 94",
       "Article 99"
     ],
@@ -81003,7 +80977,7 @@
     "difficulty": 3,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_112"
   },
   {
@@ -81039,16 +81013,16 @@
   {
     "question": "Time lost in litigation gave the Arunachal power project an 11-year extension of green clearance. Environmental clearances in India are granted by which body?",
     "options": [
-      "National Green Tribunal",
-      "Ministry of Environment, Forest and Climate Change",
       "Central Pollution Control Board",
+      "Ministry of Environment, Forest and Climate Change",
+      "National Green Tribunal",
       "State Pollution Control Board"
     ],
     "answer": "Ministry of Environment, Forest and Climate Change",
     "difficulty": 2,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_193"
   },
   {
@@ -81069,16 +81043,16 @@
   {
     "question": "The government formed a panel for PFC-REC merger. PFC and REC are both engaged in financing which sector?",
     "options": [
-      "Telecommunications",
-      "Power and energy",
       "Agriculture",
+      "Power and energy",
+      "Telecommunications",
       "Railways"
     ],
     "answer": "Power and energy",
     "difficulty": 2,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_195"
   },
   {
@@ -81114,8 +81088,8 @@
   {
     "question": "Former South Korean President Yoon was given a life term for imposing martial law in 2024. South Korea's capital is:",
     "options": [
-      "Tokyo",
       "Taipei",
+      "Tokyo",
       "Seoul",
       "Pyongyang"
     ],
@@ -81123,7 +81097,7 @@
     "difficulty": 1,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_182"
   },
   {
@@ -81159,47 +81133,32 @@
   {
     "question": "India chose to be an observer at Trump's 'Board of Peace' for the Russia-Ukraine conflict. In international diplomacy, an 'observer' status means:",
     "options": [
-      "Participation without voting rights",
-      "Full voting rights in the body",
       "Leading role in negotiations",
+      "Full voting rights in the body",
+      "Participation without voting rights",
       "Financial contribution without participation"
     ],
     "answer": "Participation without voting rights",
     "difficulty": 2,
     "source": "Indian Express, February 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_196"
   },
   {
     "question": "The Centre formed an empowered panel for implementation of CAA (Citizenship Amendment Act). The CAA provides citizenship to persecuted minorities from which three countries?",
     "options": [
-      "Iran, Iraq, Syria",
+      "China, Myanmar, Thailand",
       "Pakistan, Afghanistan, Bangladesh",
       "Nepal, Sri Lanka, Myanmar",
-      "China, Myanmar, Thailand"
+      "Iran, Iraq, Syria"
     ],
     "answer": "Pakistan, Afghanistan, Bangladesh",
     "difficulty": 1,
     "source": "Indian Express, February 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_183"
-  },
-  {
-    "question": "Kolkata's iconic Howrah Bridge (Rabindra Setu) was to get a Rs 117-crore high-tech push, described as a 'folding' bridge renovation. Howrah Bridge spans which river?",
-    "options": [
-      "Ganga",
-      "Hooghly",
-      "Damodar",
-      "Brahmaputra"
-    ],
-    "answer": "Hooghly",
-    "difficulty": 1,
-    "source": "Indian Express, February 21, 2026",
-    "category": "current_affairs",
-    "correct_index": 0,
-    "id": "ca_easy_184"
   },
   {
     "question": "Microsoft announced plans to train 20 lakh teachers in AI by 2030 at the India AI Impact Summit. Microsoft's current CEO is:",
@@ -81219,8 +81178,8 @@
   {
     "question": "NASA's report highlighted technical and leadership failures in Boeing's Starliner spacecraft programme. The Starliner was designed to carry astronauts to which destination?",
     "options": [
-      "Mars",
       "The Moon",
+      "Mars",
       "International Space Station (ISS)",
       "James Webb Space Telescope"
     ],
@@ -81228,22 +81187,22 @@
     "difficulty": 2,
     "source": "Indian Express, February 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_197"
   },
   {
     "question": "The Armed Forces Tribunal (AFT) quashed the Army's 2024-26 MTech selection process as 'arbitrary'. The AFT was established under which Act?",
     "options": [
-      "Military Justice Act, 2003",
-      "Armed Services Act, 2010",
       "National Defence Act, 2005",
+      "Armed Services Act, 2010",
+      "Military Justice Act, 2003",
       "Armed Forces Tribunal Act, 2007"
     ],
     "answer": "Armed Forces Tribunal Act, 2007",
     "difficulty": 3,
     "source": "Indian Express, February 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_116"
   },
   {
@@ -81264,16 +81223,16 @@
   {
     "question": "Net FDI turned negative in December amid record high repatriation by foreign investors. FDI stands for:",
     "options": [
-      "Foreign Direct Investment",
-      "Financial Development Index",
       "Fiscal Deficit Indicator",
+      "Financial Development Index",
+      "Foreign Direct Investment",
       "Federal Deposit Insurance"
     ],
     "answer": "Foreign Direct Investment",
     "difficulty": 1,
     "source": "Indian Express, February 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_186"
   },
   {
@@ -81309,16 +81268,16 @@
   {
     "question": "Allahabad HC rapped police for using Hindi film dialogues in FIRs, calling them 'fanciful and highly exaggerated'. FIR in Indian law stands for:",
     "options": [
-      "Final Investigation Report",
-      "First Information Report",
       "Formal Incident Record",
+      "First Information Report",
+      "Final Investigation Report",
       "First Inquiry Report"
     ],
     "answer": "First Information Report",
     "difficulty": 1,
     "source": "Indian Express, February 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_188"
   },
   {
@@ -81339,53 +81298,53 @@
   {
     "question": "Adani and Embraer planned to set up an E175 regional jet final assembly line in India. Embraer is an aircraft manufacturer from which country?",
     "options": [
-      "Canada",
+      "France",
       "Sweden",
       "Brazil",
-      "France"
+      "Canada"
     ],
     "answer": "Brazil",
     "difficulty": 2,
     "source": "Indian Express, February 22, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_201"
   },
   {
     "question": "Commercial insurance rates fell by up to 25% amid intense competition in the Indian market. Insurance regulation in India falls under which body?",
     "options": [
-      "RBI",
+      "PFRDA",
       "IRDAI",
       "SEBI",
-      "PFRDA"
+      "RBI"
     ],
     "answer": "IRDAI",
     "difficulty": 2,
     "source": "Indian Express, February 22, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_202"
   },
   {
     "question": "The MG BaaS (Battery as a Service) blueprint was reported to inspire Maruti Suzuki and Tata Motors. BaaS in the EV context refers to:",
     "options": [
-      "Building batteries from recycled materials",
-      "Buying batteries at subsidized rates",
       "Government-backed battery insurance",
+      "Buying batteries at subsidized rates",
+      "Building batteries from recycled materials",
       "Swapping or subscribing to batteries separately from the vehicle"
     ],
     "answer": "Swapping or subscribing to batteries separately from the vehicle",
     "difficulty": 2,
     "source": "Indian Express, February 22, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_203"
   },
   {
     "question": "Cuba pulled its security forces from Venezuela amid US pressure in February 2026. Venezuela is located on which continent?",
     "options": [
-      "North America",
       "Caribbean Islands",
+      "North America",
       "Central America",
       "South America"
     ],
@@ -81393,14 +81352,14 @@
     "difficulty": 1,
     "source": "Indian Express, February 22, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_189"
   },
   {
     "question": "The SIR Phase 2 showed electors in 9 states/UTs down by 8%. SIR (Special Intensive Revision) of electoral rolls is conducted by which constitutional body?",
     "options": [
-      "Election Commission of India",
       "National Human Rights Commission",
+      "Election Commission of India",
       "Union Public Service Commission",
       "Supreme Court of India"
     ],
@@ -81408,7 +81367,7 @@
     "difficulty": 1,
     "source": "Indian Express, February 22, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_190"
   },
   {
@@ -81429,8 +81388,8 @@
   {
     "question": "The India-France summit saw Macron declare 'We have reinforced our tech sovereignty'. The concept of 'tech sovereignty' in international relations primarily refers to:",
     "options": [
-      "Banning all foreign technology",
       "Creating a government monopoly on technology",
+      "Banning all foreign technology",
       "Imposing tariffs on tech imports",
       "A nation's ability to develop and control its own critical technologies"
     ],
@@ -81438,7 +81397,7 @@
     "difficulty": 2,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_204"
   },
   {
@@ -81459,23 +81418,23 @@
   {
     "question": "Rubio met Orban in Budapest as the US and Hungary discussed a plan for civilian nuclear deal. Budapest is the capital of which country?",
     "options": [
-      "Poland",
-      "Czech Republic",
       "Hungary",
+      "Czech Republic",
+      "Poland",
       "Romania"
     ],
     "answer": "Hungary",
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_192"
   },
   {
     "question": "The 'Adopt a Statue' programme for Milan's iconic Duomo was reported to restore centuries-old marble. The Duomo di Milano is an example of which architectural style?",
     "options": [
-      "Baroque",
       "Gothic",
+      "Baroque",
       "Renaissance",
       "Romanesque"
     ],
@@ -81483,7 +81442,7 @@
     "difficulty": 3,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_117"
   },
   {
@@ -81504,8 +81463,8 @@
   {
     "question": "The cost of controls on the fertiliser industry was discussed in the Explained section. India's fertiliser subsidy is primarily distributed through which mechanism?",
     "options": [
-      "Free distribution through cooperatives",
       "Direct cash transfer to farmers",
+      "Free distribution through cooperatives",
       "Subsidy to manufacturers to keep prices low",
       "Tax rebate on purchase"
     ],
@@ -81513,14 +81472,14 @@
     "difficulty": 2,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_206"
   },
   {
     "question": "37 hectares of a Himachal township approved by the state cabinet fell in an area marked for ecological restoration. Ecological restoration refers to:",
     "options": [
-      "Re-establishing a degraded ecosystem to its natural state",
       "Relocating wildlife to zoos",
+      "Re-establishing a degraded ecosystem to its natural state",
       "Building eco-tourism resorts",
       "Converting forest land for agriculture"
     ],
@@ -81528,14 +81487,14 @@
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_194"
   },
   {
     "question": "An Indian detained in Mali prompted MEA to write to the employer for an urgent hearing. MEA stands for:",
     "options": [
-      "Ministry of External Affairs",
       "Ministry of Environmental Assessment",
+      "Ministry of External Affairs",
       "Ministry of Economic Affairs",
       "Ministry of Education and Administration"
     ],
@@ -81543,29 +81502,29 @@
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_195"
   },
   {
     "question": "The Indian Navy conducted a fleet review in February 2026. The President of India is the Supreme Commander of which forces?",
     "options": [
-      "Indian Army, Navy, and Air Force",
-      "Only the Indian Navy",
       "Only the Indian Army",
+      "Only the Indian Navy",
+      "Indian Army, Navy, and Air Force",
       "Indian Army and Air Force only"
     ],
     "answer": "Indian Army, Navy, and Air Force",
     "difficulty": 1,
     "source": "Indian Express, February 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_196"
   },
   {
     "question": "Rajnath Singh said naval forces must join hands to tackle maritime threats. The Indian Navy's motto 'Sham No Varunah' invokes which deity?",
     "options": [
-      "Agni",
       "Vishnu",
+      "Agni",
       "Indra",
       "Varuna"
     ],
@@ -81573,7 +81532,7 @@
     "difficulty": 2,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_207"
   },
   {
@@ -81594,8 +81553,8 @@
   {
     "question": "OpenAI CEO Sam Altman was a guest at Express Adda during the India AI Impact Summit. OpenAI is the creator of which widely used AI chatbot?",
     "options": [
-      "Copilot",
       "ChatGPT",
+      "Copilot",
       "Gemini",
       "Claude"
     ],
@@ -81603,52 +81562,52 @@
     "difficulty": 1,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_197"
   },
   {
     "question": "The Anthropic CEO stated 'India revenue run-rate doubled'. Anthropic is the creator of which AI model?",
     "options": [
-      "LLaMA",
+      "Claude",
       "GPT-4",
       "Gemini",
-      "Claude"
+      "LLaMA"
     ],
     "answer": "Claude",
     "difficulty": 2,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_208"
   },
   {
     "question": "The DMK brought DMDK into its alliance, offering a Rajya Sabha berth. Rajya Sabha members are elected by which method?",
     "options": [
-      "Direct election by the people",
+      "Nomination by the President",
       "Selection by the Prime Minister",
       "Election by elected members of State Legislative Assemblies",
-      "Nomination by the President"
+      "Direct election by the people"
     ],
     "answer": "Election by elected members of State Legislative Assemblies",
     "difficulty": 2,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_209"
   },
   {
     "question": "RSS chief's separate meetings with UP CM and Deputy CMs sparked poll buzz in February 2026. The RSS was founded in which year?",
     "options": [
-      "1920",
-      "1925",
       "1935",
+      "1925",
+      "1920",
       "1930"
     ],
     "answer": "1925",
     "difficulty": 2,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_210"
   },
   {
@@ -81699,23 +81658,23 @@
   {
     "question": "Maruti Suzuki expanded its range and drove its first electric model Vitara. Maruti Suzuki India Limited is a subsidiary of which Japanese automaker?",
     "options": [
-      "Suzuki Motor Corporation",
-      "Honda",
       "Toyota",
+      "Honda",
+      "Suzuki Motor Corporation",
       "Nissan"
     ],
     "answer": "Suzuki Motor Corporation",
     "difficulty": 1,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_199"
   },
   {
     "question": "The editorial discussed how AI is wreaking enduring transformations in state-capital relations. In the Indian federal system, the relationship between the Centre and States is governed by which part of the Constitution?",
     "options": [
-      "Part XIV",
       "Part XI",
+      "Part XIV",
       "Part V",
       "Part XVIII"
     ],
@@ -81723,14 +81682,14 @@
     "difficulty": 3,
     "source": "Indian Express, February 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_120"
   },
   {
     "question": "The SC affirmed women's choice and reproductive autonomy in a landmark ruling discussed in February 2026. The Medical Termination of Pregnancy (MTP) Act in India was last amended in which year?",
     "options": [
-      "2019",
       "2021",
+      "2019",
       "2023",
       "2017"
     ],
@@ -81738,29 +81697,29 @@
     "difficulty": 3,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_121"
   },
   {
     "question": "Bangladesh set to resume full visa operations for Indian nationals in February 2026. India and Bangladesh share their longest international border. What is the approximate length of the India-Bangladesh border?",
     "options": [
-      "4,800 km",
+      "3,300 km",
       "4,096 km",
       "2,500 km",
-      "3,300 km"
+      "4,800 km"
     ],
     "answer": "4,096 km",
     "difficulty": 3,
     "source": "Indian Express, February 22, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_122"
   },
   {
     "question": "The Supreme Court ordered super-checking using scanners on 30 lakh more names in Bengal's SIR. The power of superintendence over elections vests in the Election Commission under which Article?",
     "options": [
-      "Article 324",
       "Article 326",
+      "Article 324",
       "Article 320",
       "Article 329"
     ],
@@ -81768,7 +81727,7 @@
     "difficulty": 2,
     "source": "Indian Express, February 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_212"
   },
   {
@@ -81789,8 +81748,8 @@
   {
     "question": "Nandan Nilekani's article argued that India's AI moment needs a leader, comparing it to the Aadhaar initiative. Nilekani was the founding chairman of which body?",
     "options": [
-      "NITI Aayog",
       "UIDAI",
+      "NITI Aayog",
       "Infosys",
       "NASSCOM"
     ],
@@ -81798,14 +81757,14 @@
     "difficulty": 2,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_213"
   },
   {
     "question": "Jesse Jackson, who led the civil rights movement after Martin Luther King, was reported to have died at 84. Jesse Jackson ran for the US presidency as a candidate of which party?",
     "options": [
-      "Republican Party",
       "Democratic Party",
+      "Republican Party",
       "Independent",
       "Green Party"
     ],
@@ -81813,14 +81772,14 @@
     "difficulty": 2,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_214"
   },
   {
     "question": "The editorial discussed 'A climate warning to India from Europe'. The European Green Deal aims to make the EU climate-neutral by which target year?",
     "options": [
-      "2035",
       "2040",
+      "2035",
       "2060",
       "2050"
     ],
@@ -81828,7 +81787,7 @@
     "difficulty": 2,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_215"
   },
   {
@@ -81849,16 +81808,16 @@
   {
     "question": "India's Pro Hockey League campaign saw a home-leg loss to Argentina. Field hockey in India is governed by which body?",
     "options": [
-      "Hockey India",
+      "Sports Authority of India",
       "International Hockey Federation",
       "Indian Olympic Association",
-      "Sports Authority of India"
+      "Hockey India"
     ],
     "answer": "Hockey India",
     "difficulty": 1,
     "source": "Indian Express, February 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_201"
   },
   {
@@ -81909,16 +81868,16 @@
   {
     "question": "The Centre asked states to wrap up the household survey by April-end, focusing on timely delivery of entitlements to vulnerable tribes. India's tribal population is protected under which Schedule of the Constitution?",
     "options": [
-      "Tenth Schedule",
-      "Eighth Schedule",
       "Fifth Schedule",
+      "Eighth Schedule",
+      "Tenth Schedule",
       "Third Schedule"
     ],
     "answer": "Fifth Schedule",
     "difficulty": 3,
     "source": "Indian Express, February 22, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_124"
   },
   {
@@ -81954,8 +81913,8 @@
   {
     "question": "Dabolim airport's fate was debated in Goa, with fears that closure would 'kill the economy'. Dabolim airport in Goa was originally built as:",
     "options": [
-      "A Portuguese military airbase",
       "An Indian Navy airfield",
+      "A Portuguese military airbase",
       "A British colonial airfield",
       "A private commercial airport"
     ],
@@ -81963,7 +81922,7 @@
     "difficulty": 3,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_125"
   },
   {
@@ -82014,16 +81973,16 @@
   {
     "question": "The editorial titled 'BJP shrinks House with its bid to silence LoP' discussed parliamentary procedure. LoP stands for:",
     "options": [
-      "Leader of the Opposition",
+      "Leader of the Party",
       "Leader of Proceedings",
       "Leader of Parliament",
-      "Leader of the Party"
+      "Leader of the Opposition"
     ],
     "answer": "Leader of the Opposition",
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_206"
   },
   {
@@ -82059,8 +82018,8 @@
   {
     "question": "Reza Pahlavi called for regime change in Iran, explaining how his family ruled and lost Iran. The Pahlavi dynasty was overthrown in which year?",
     "options": [
-      "1983",
       "1979",
+      "1983",
       "1975",
       "1971"
     ],
@@ -82068,7 +82027,7 @@
     "difficulty": 2,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_221"
   },
   {
@@ -82089,38 +82048,38 @@
   {
     "question": "Purnesh Modi was elected Gujarat Deputy Speaker. The Deputy Speaker of a state legislative assembly is elected under which Article of the Constitution?",
     "options": [
-      "Article 178",
+      "Article 181",
       "Article 180",
       "Article 179",
-      "Article 181"
+      "Article 178"
     ],
     "answer": "Article 178",
     "difficulty": 3,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_127"
   },
   {
     "question": "Goa's ex-minister was booked for sexual harassment. The Protection of Women from Sexual Harassment at Workplace Act was enacted in which year?",
     "options": [
-      "2013",
-      "2009",
       "2017",
+      "2009",
+      "2013",
       "2005"
     ],
     "answer": "2013",
     "difficulty": 2,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_222"
   },
   {
     "question": "Mahua Moitra's legal battle over her dog 'Henry' was discussed, with the article explaining how Indian law decides who keeps a pet. Pet custody disputes in India fall under which general legal framework?",
     "options": [
-      "Prevention of Cruelty to Animals Act",
       "Criminal Procedure Code",
+      "Prevention of Cruelty to Animals Act",
       "Transfer of Property Act",
       "Indian Contract Act and equity principles"
     ],
@@ -82128,7 +82087,7 @@
     "difficulty": 3,
     "source": "Indian Express, February 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_128"
   },
   {
@@ -82164,16 +82123,16 @@
   {
     "question": "The Hyatt Board chairman resigned over Epstein links. The Epstein scandal primarily involved allegations of:",
     "options": [
-      "Sex trafficking and abuse of minors",
-      "Arms dealing and espionage",
       "Drug trafficking and money laundering",
+      "Arms dealing and espionage",
+      "Sex trafficking and abuse of minors",
       "Financial fraud and insider trading"
     ],
     "answer": "Sex trafficking and abuse of minors",
     "difficulty": 2,
     "source": "Indian Express, February 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_224"
   },
   {
@@ -82194,8 +82153,8 @@
   {
     "question": "Using AI to prevent 2-wheeler accidents was discussed, with the government looking at safety features. The Centre of Excellence for Road Safety is working with which ministry?",
     "options": [
-      "Ministry of Electronics and IT",
       "Ministry of Road Transport and Highways",
+      "Ministry of Electronics and IT",
       "Ministry of Home Affairs",
       "Ministry of Heavy Industries"
     ],
@@ -82203,7 +82162,7 @@
     "difficulty": 2,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_225"
   },
   {
@@ -82224,31 +82183,31 @@
   {
     "question": "The UNSC was to meet on the Gaza forum. The UN Security Council has how many non-permanent members?",
     "options": [
-      "5",
-      "8",
       "15",
+      "8",
+      "5",
       "10"
     ],
     "answer": "10",
     "difficulty": 2,
     "source": "Indian Express, February 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_227"
   },
   {
     "question": "The JEE (Mains) results showed 12 candidates scored a perfect 100 percentile. JEE is the entrance examination for admission to which type of institutions?",
     "options": [
-      "Law universities",
+      "Management schools",
       "Medical colleges",
       "Engineering institutes including IITs and NITs",
-      "Management schools"
+      "Law universities"
     ],
     "answer": "Engineering institutes including IITs and NITs",
     "difficulty": 1,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_209"
   },
   {
@@ -82269,8 +82228,8 @@
   {
     "question": "A visually-impaired teacher got a job in a college 6 years after clearing UGC-NET, following HC intervention. UGC-NET is conducted for determining eligibility for:",
     "options": [
-      "Government administrative posts",
       "Assistant Professor and Junior Research Fellowship",
+      "Government administrative posts",
       "School teaching positions",
       "Engineering faculty positions"
     ],
@@ -82278,14 +82237,14 @@
     "difficulty": 2,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_228"
   },
   {
     "question": "The second instalment of PM Kisan saw 25 lakh more women in Bihar getting Rs 10,000 each. PM-KISAN provides income support to which category of beneficiaries?",
     "options": [
-      "Only women-headed farming households",
       "Only marginal farmers below 2 hectares",
+      "Only women-headed farming households",
       "All farmer families",
       "Urban poor households"
     ],
@@ -82293,7 +82252,7 @@
     "difficulty": 2,
     "source": "Indian Express, February 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_229"
   },
   {
@@ -82489,8 +82448,8 @@
   {
     "question": "In the Supreme Court's ruling on forest land in February 2026, the Centre argued that prior title is not required if individual forest rights are recognized. This pertains to which Act?",
     "options": [
-      "Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006",
       "Forest Conservation Act, 1980",
+      "Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006",
       "Wildlife Protection Act, 1972",
       "Indian Forest Act, 1927"
     ],
@@ -82499,7 +82458,7 @@
     "difficulty": 1,
     "topic": "Forest Rights Act SC Ruling Prior Title",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_215"
   },
   {
@@ -82649,17 +82608,17 @@
   {
     "question": "The Samajwadi Party (SP) sealed a deal with I-PAC for social media campaigning ahead of UP elections. I-PAC is a political consultancy founded by which strategist?",
     "options": [
-      "Prashant Kishor",
+      "Sunil Kanugolu",
       "Amit Malviya",
       "Pavan Khera",
-      "Sunil Kanugolu"
+      "Prashant Kishor"
     ],
     "correct_answer": "Prashant Kishor",
     "source_date": "2026-03-01",
     "difficulty": 1,
     "topic": "SP I-PAC Deal UP Elections",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_222"
   },
   {
@@ -82761,8 +82720,8 @@
   {
     "question": "A gas leak at Tarapur MIDC in March 2026 caused panic and evacuations. Tarapur MIDC is located in which state?",
     "options": [
-      "Maharashtra",
       "Rajasthan",
+      "Maharashtra",
       "Gujarat",
       "Madhya Pradesh"
     ],
@@ -82771,7 +82730,7 @@
     "difficulty": 2,
     "topic": "Tarapur MIDC Gas Leak Maharashtra",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_240"
   },
   {
@@ -82857,9 +82816,9 @@
   {
     "question": "The India VIX, a measure of market volatility, surged to its highest level since May 2025 during the West Asia conflict in March 2026. India VIX is computed by which exchange?",
     "options": [
-      "NSE",
-      "NCDEX",
       "BSE",
+      "NCDEX",
+      "NSE",
       "MCX"
     ],
     "correct_answer": "NSE",
@@ -82867,7 +82826,7 @@
     "difficulty": 2,
     "topic": "India VIX Market Volatility NSE",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_244"
   },
   {
@@ -82889,9 +82848,9 @@
   {
     "question": "Fino Payments Bank faced a probe for allegedly funnelling illicit funds from online money gaming. Fino Payments Bank is categorized as which type of bank by the RBI?",
     "options": [
-      "Payments Bank",
-      "Universal Bank",
       "Cooperative Bank",
+      "Universal Bank",
+      "Payments Bank",
       "Small Finance Bank"
     ],
     "correct_answer": "Payments Bank",
@@ -82899,23 +82858,23 @@
     "difficulty": 1,
     "topic": "Fino Payments Bank Probe Online Gaming",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_227"
   },
   {
     "question": "RBI Governor Shaktikanta Das stated that 'India is a key driver of global growth' in early 2026. The RBI's Monetary Policy Committee (MPC) has how many members?",
     "options": [
-      "Six",
+      "Ten",
       "Four",
       "Eight",
-      "Ten"
+      "Six"
     ],
     "correct_answer": "Six",
     "source_date": "2026-03-01",
     "difficulty": 1,
     "topic": "RBI MPC Members India Growth Driver",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_228"
   },
   {
@@ -82985,17 +82944,17 @@
   {
     "question": "The SEBI chairperson stated in March 2026 that 'we believe in optimal regulation, not too much, not too little.' SEBI is the regulator for which sector?",
     "options": [
-      "Securities and Capital Markets",
+      "Foreign Exchange",
       "Insurance",
       "Banking",
-      "Foreign Exchange"
+      "Securities and Capital Markets"
     ],
     "correct_answer": "Securities and Capital Markets",
     "source_date": "2026-03-02",
     "difficulty": 1,
     "topic": "SEBI Optimal Regulation Securities Market",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_230"
   },
   {
@@ -83289,9 +83248,9 @@
   {
     "question": "The Nagaland teachers' strike involving 2,295 teachers was reported in February 2026. Nagaland's state capital is:",
     "options": [
-      "Kohima",
-      "Mon",
       "Tuensang",
+      "Mon",
+      "Kohima",
       "Dimapur"
     ],
     "correct_answer": "Kohima",
@@ -83299,7 +83258,7 @@
     "difficulty": 1,
     "topic": "Nagaland Teachers Strike Kohima Capital",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_237"
   },
   {
@@ -83321,17 +83280,17 @@
   {
     "question": "The Allahabad High Court recommended action against a civil judge in a property dispute ruling. The Allahabad High Court is the High Court for which state?",
     "options": [
-      "Uttar Pradesh",
+      "Bihar",
       "Uttarakhand",
       "Madhya Pradesh",
-      "Bihar"
+      "Uttar Pradesh"
     ],
     "correct_answer": "Uttar Pradesh",
     "source_date": "2026-02-27",
     "difficulty": 1,
     "topic": "Allahabad HC Property Dispute Civil Judge UP",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_239"
   },
   {
@@ -83417,8 +83376,8 @@
   {
     "question": "The SC granted bail to two suspects in the Pune Porsche case in February 2026. The Pune Porsche case involved which issue?",
     "options": [
-      "A car crash by a minor involving drunk driving",
       "A tax evasion case involving luxury vehicles",
+      "A car crash by a minor involving drunk driving",
       "An insurance fraud case",
       "A kidnapping using a luxury car"
     ],
@@ -83427,7 +83386,7 @@
     "difficulty": 2,
     "topic": "Pune Porsche Crash Case SC Bail",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_257"
   },
   {
@@ -83481,8 +83440,8 @@
   {
     "question": "The 'South Group' of judges drew concern from the court in February 2026. In the Indian judiciary, the Collegium system for appointment of judges was established through which mechanism?",
     "options": [
-      "Supreme Court Judgments",
       "Executive Order",
+      "Supreme Court Judgments",
       "Constitutional Amendment",
       "Parliamentary Act"
     ],
@@ -83491,7 +83450,7 @@
     "difficulty": 3,
     "topic": "South Group Judges Collegium System",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_142"
   },
   {
@@ -83609,9 +83568,9 @@
   {
     "question": "The Maharashtra cabinet approved the Anti-Conversion Bill in March 2026. The bill provides for imprisonment for forced religious conversions. Under the Indian Constitution, freedom of religion is guaranteed under which Articles?",
     "options": [
-      "Articles 25-28",
-      "Articles 14-18",
       "Articles 29-30",
+      "Articles 14-18",
+      "Articles 25-28",
       "Articles 19-22"
     ],
     "correct_answer": "Articles 25-28",
@@ -83619,7 +83578,7 @@
     "difficulty": 2,
     "topic": "Maharashtra Anti-Conversion Bill Articles 25-28",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_262"
   },
   {
@@ -83849,24 +83808,24 @@
   {
     "question": "In the February 2026 reporting on Pakistan operations, Pakistan bombed areas in Kabul and Kandahar after Taliban strikes. Kandahar is located in which part of Afghanistan?",
     "options": [
-      "Southern",
+      "Western",
       "Northern",
       "Eastern",
-      "Western"
+      "Southern"
     ],
     "correct_answer": "Southern",
     "source_date": "2026-02-28",
     "difficulty": 2,
     "topic": "Pakistan Bombs Kandahar Southern Afghanistan",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_273"
   },
   {
     "question": "Sachin Pilot discussed MGNREGA in a March 2026 interview, noting the scheme has been 'significantly diluted.' MGNREGA guarantees how many days of employment per year?",
     "options": [
-      "100 days",
       "150 days",
+      "100 days",
       "75 days",
       "50 days"
     ],
@@ -83875,15 +83834,15 @@
     "difficulty": 1,
     "topic": "Sachin Pilot MGNREGA 100 Days Employment",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_250"
   },
   {
     "question": "The Deepak Gupta was appointed as UIDAI chairman in March 2026. UIDAI is the body responsible for issuing which identification number?",
     "options": [
-      "Aadhaar",
-      "Passport",
       "Voter ID",
+      "Passport",
+      "Aadhaar",
       "PAN"
     ],
     "correct_answer": "Aadhaar",
@@ -83891,7 +83850,7 @@
     "difficulty": 1,
     "topic": "UIDAI Chairman Deepak Gupta Aadhaar",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_251"
   },
   {
@@ -83913,8 +83872,8 @@
   {
     "question": "The Manufacturing PMI hit a record high of 62 in February 2026. PMI (Purchasing Managers' Index) above which threshold indicates expansion?",
     "options": [
-      "50",
       "45",
+      "50",
       "55",
       "40"
     ],
@@ -83923,7 +83882,7 @@
     "difficulty": 1,
     "topic": "Manufacturing PMI Record High 50 Threshold",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_252"
   },
   {
@@ -83961,8 +83920,8 @@
   {
     "question": "Saudi Arabia's plan to use an overland pipeline to bypass the Strait of Hormuz was discussed during the March 2026 crisis. This pipeline is known as the:",
     "options": [
-      "East-West Pipeline (Petroline)",
       "Trans-Arabian Pipeline",
+      "East-West Pipeline (Petroline)",
       "TAPI Pipeline",
       "Dolphin Pipeline"
     ],
@@ -83971,7 +83930,7 @@
     "difficulty": 3,
     "topic": "Saudi East-West Pipeline Petroline Hormuz Bypass",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_146"
   },
   {
@@ -83993,9 +83952,9 @@
   {
     "question": "The Rs 2,220-crore Bank of Baroda loan fraud led to a fresh CBI case against Anil Ambani in February 2026. Bank of Baroda is headquartered in which city?",
     "options": [
-      "Vadodara",
-      "New Delhi",
       "Ahmedabad",
+      "New Delhi",
+      "Vadodara",
       "Mumbai"
     ],
     "correct_answer": "Vadodara",
@@ -84003,7 +83962,7 @@
     "difficulty": 2,
     "topic": "Bank of Baroda Loan Fraud CBI Vadodara HQ",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_274"
   },
   {
@@ -84073,9 +84032,9 @@
   {
     "question": "The Rupee crossed the 92 mark against the US Dollar for the first time during the West Asia crisis in March 2026. The exchange rate of the Rupee is determined by which system in India?",
     "options": [
-      "Managed floating exchange rate",
-      "Free floating exchange rate",
       "Fixed exchange rate",
+      "Free floating exchange rate",
+      "Managed floating exchange rate",
       "Currency board arrangement"
     ],
     "correct_answer": "Managed floating exchange rate",
@@ -84083,7 +84042,7 @@
     "difficulty": 2,
     "topic": "Rupee Crosses 92 Managed Floating Exchange",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_276"
   },
   {
@@ -84137,8 +84096,8 @@
   {
     "question": "Khamenei's grandson Hassan was brought into focus as a potential successor after Iran's Supreme Leader's death. Iran's system of governance is based on which concept introduced by Ayatollah Khomeini?",
     "options": [
-      "Velayat-e Faqih (Guardianship of the Jurist)",
       "Imamate",
+      "Velayat-e Faqih (Guardianship of the Jurist)",
       "Caliphate",
       "Shura (Consultation)"
     ],
@@ -84147,7 +84106,7 @@
     "difficulty": 3,
     "topic": "Iran Velayat-e Faqih Khamenei Succession",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_148"
   },
   {
@@ -84169,17 +84128,17 @@
   {
     "question": "The Matua community's concerns about being excluded from electoral rolls were raised in West Bengal. The Matua community follows the teachings of which spiritual leader?",
     "options": [
-      "Harichand Thakur",
+      "Chaitanya Mahaprabhu",
       "Swami Vivekananda",
       "Sri Ramakrishna",
-      "Chaitanya Mahaprabhu"
+      "Harichand Thakur"
     ],
     "correct_answer": "Harichand Thakur",
     "source_date": "2026-03-06",
     "difficulty": 3,
     "topic": "Matua Community Harichand Thakur Bengal SIR",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_149"
   },
   {
@@ -84201,17 +84160,17 @@
   {
     "question": "The Rajnath Singh questioned TMC over 'scams' and said BJP would replicate Assam's 'detect, delete, deport' model. This model is primarily associated with addressing which issue?",
     "options": [
-      "Illegal immigration",
+      "Drug trafficking",
       "Cybercrime",
       "Corruption",
-      "Drug trafficking"
+      "Illegal immigration"
     ],
     "correct_answer": "Illegal immigration",
     "source_date": "2026-03-03",
     "difficulty": 2,
     "topic": "Rajnath Assam Detect Delete Deport Immigration",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_280"
   },
   {
@@ -84297,34 +84256,18 @@
   {
     "question": "The UK sent more fighter jets to West Asia as PM Starmer called for Iran talks in March 2026. The UK's primary fighter jet deployed in such operations is the:",
     "options": [
-      "Eurofighter Typhoon",
+      "Tornado GR4",
       "Harrier",
       "F-35 Lightning",
-      "Tornado GR4"
+      "Eurofighter Typhoon"
     ],
     "correct_answer": "Eurofighter Typhoon",
     "source_date": "2026-03-06",
     "difficulty": 3,
     "topic": "UK Fighter Jets West Asia Eurofighter Typhoon",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_151"
-  },
-  {
-    "question": "In February 2026, the highest-ranking CPI(Maoist) leader Devuji surrendered. Devuji held which position in the CPI(Maoist) organization?",
-    "options": [
-      "Central Committee member",
-      "Politburo member",
-      "Central Military Commission head",
-      "State Secretary"
-    ],
-    "correct_answer": "Central Military Commission head",
-    "source_date": "2026-02-23",
-    "difficulty": 3,
-    "topic": "CPI Maoist Devuji Surrender Central Military Commission",
-    "category": "current_affairs",
-    "correct_index": 2,
-    "id": "ca_hard_152"
   },
   {
     "question": "Brazilian President Lula, during his visit to India in February 2026, stated that 'India does not have the mindset of a coloniser.' Lula is the President of which BRICS member nation?",
@@ -84361,8 +84304,8 @@
   {
     "question": "A network in Rajasthan was found diverting cash from government schemes through Direct Benefit Transfer (DBT). DBT is primarily linked to which identification system?",
     "options": [
-      "Aadhaar",
       "PAN Card",
+      "Aadhaar",
       "Voter ID",
       "Ration Card"
     ],
@@ -84371,7 +84314,7 @@
     "difficulty": 1,
     "topic": "Rajasthan DBT Fraud Aadhaar System",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_266"
   },
   {
@@ -84553,17 +84496,17 @@
   {
     "question": "The Centre blocked 5 OTT platforms showing obscene content in February 2026. OTT platforms in India are regulated under which set of rules?",
     "options": [
-      "Information Technology (Intermediary Guidelines) Rules, 2021",
+      "Press Council Act, 1978",
       "Cable Television Networks Rules",
       "Cinematograph Act, 1952",
-      "Press Council Act, 1978"
+      "Information Technology (Intermediary Guidelines) Rules, 2021"
     ],
     "correct_answer": "Information Technology (Intermediary Guidelines) Rules, 2021",
     "source_date": "2026-02-25",
     "difficulty": 3,
     "topic": "Centre Blocks 5 OTT Platforms IT Rules",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_156"
   },
   {
@@ -84729,8 +84672,8 @@
   {
     "question": "The Strait of Hormuz, which became a flashpoint during the Iran-Israel conflict in March 2026, connects which two bodies of water?",
     "options": [
-      "Persian Gulf and Gulf of Oman",
       "Red Sea and Mediterranean Sea",
+      "Persian Gulf and Gulf of Oman",
       "Arabian Sea and Bay of Bengal",
       "Caspian Sea and Black Sea"
     ],
@@ -84738,7 +84681,7 @@
     "difficulty": 1,
     "source": "Mar 7-21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_271"
   },
   {
@@ -84759,8 +84702,8 @@
   {
     "question": "The SHANTI Act, discussed as a pathway to India's energy independence, focuses on which nuclear fuel as an alternative to uranium?",
     "options": [
-      "Plutonium",
       "Deuterium",
+      "Plutonium",
       "Thorium",
       "Tritium"
     ],
@@ -84768,29 +84711,29 @@
     "difficulty": 2,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_295"
   },
   {
     "question": "Which Article of the Indian Constitution deals with the power of the Election Commission to transfer government officials during elections?",
     "options": [
-      "Article 329",
-      "Article 325",
       "Article 326",
+      "Article 325",
+      "Article 329",
       "Article 324"
     ],
     "answer": "Article 324",
     "difficulty": 2,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_296"
   },
   {
     "question": "India's import dependency for LPG supplies is approximately what percentage, making it vulnerable to disruptions in the Strait of Hormuz?",
     "options": [
-      "About 60 per cent",
       "About 45 per cent",
+      "About 60 per cent",
       "About 30 per cent",
       "About 75 per cent"
     ],
@@ -84798,7 +84741,7 @@
     "difficulty": 3,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_158"
   },
   {
@@ -84834,23 +84777,23 @@
   {
     "question": "Under Indian law, the Supreme Court ruled that all adoptive mothers are entitled to maternity leave. Which existing legislation governs maternity benefits for women in India?",
     "options": [
-      "Equal Remuneration Act, 1976",
+      "Maternity Benefit Act, 1961",
       "Industrial Disputes Act, 1947",
       "Factories Act, 1948",
-      "Maternity Benefit Act, 1961"
+      "Equal Remuneration Act, 1976"
     ],
     "answer": "Maternity Benefit Act, 1961",
     "difficulty": 1,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_272"
   },
   {
     "question": "Which state in India was reported to have mandated passes for minor minerals in a bid to regulate illegal mining?",
     "options": [
-      "Bihar",
       "Jharkhand",
+      "Bihar",
       "Odisha",
       "Chhattisgarh"
     ],
@@ -84858,7 +84801,7 @@
     "difficulty": 3,
     "source": "Mar 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_160"
   },
   {
@@ -84879,16 +84822,16 @@
   {
     "question": "The BHAVYA scheme, approved by the Union Cabinet in March 2026, aims to create up to 100 what type of facilities across India?",
     "options": [
-      "Smart cities",
+      "Agricultural export zones",
       "Solar energy parks",
       "Plug-and-play industrial parks",
-      "Agricultural export zones"
+      "Smart cities"
     ],
     "answer": "Plug-and-play industrial parks",
     "difficulty": 2,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_298"
   },
   {
@@ -84909,16 +84852,16 @@
   {
     "question": "The Vairamuthu who won the Jnanpith Award, as reported in March 2026, writes primarily in which language?",
     "options": [
-      "Tamil",
+      "Malayalam",
       "Kannada",
       "Telugu",
-      "Malayalam"
+      "Tamil"
     ],
     "answer": "Tamil",
     "difficulty": 1,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_273"
   },
   {
@@ -84939,16 +84882,16 @@
   {
     "question": "The Gujarat Uniform Civil Code (UCC) Bill, introduced in March 2026, specifically seeks to regulate which type of personal relationships?",
     "options": [
-      "Interfaith marriages only",
+      "Adoption by single parents",
       "Same-sex partnerships",
       "Live-in relationships",
-      "Adoption by single parents"
+      "Interfaith marriages only"
     ],
     "answer": "Live-in relationships",
     "difficulty": 1,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_274"
   },
   {
@@ -84969,8 +84912,8 @@
   {
     "question": "The Sahitya Akademi Award winners announced in March 2026 included Navtej Sarna and Mamta Kalia. The Sahitya Akademi Award is given for excellence in which field?",
     "options": [
-      "Literary writing",
       "Performing arts",
+      "Literary writing",
       "Film direction",
       "Music composition"
     ],
@@ -84978,14 +84921,14 @@
     "difficulty": 1,
     "source": "Mar 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_276"
   },
   {
     "question": "The MC Mehta vs Union of India case (Writ Petition No. 13029), which the Supreme Court recently closed after nearly four decades, was a landmark PIL related to which issue?",
     "options": [
-      "Right to education",
       "Vehicular air pollution",
+      "Right to education",
       "Right to privacy",
       "Forest conservation"
     ],
@@ -84993,7 +84936,7 @@
     "difficulty": 3,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_163"
   },
   {
@@ -85044,8 +84987,8 @@
   {
     "question": "India's Piped Natural Gas (PNG) network expansion was linked to the LPG crisis. PNG distribution falls under which ministry?",
     "options": [
-      "Ministry of Power",
       "Ministry of Petroleum and Natural Gas",
+      "Ministry of Power",
       "Ministry of New and Renewable Energy",
       "Ministry of Coal"
     ],
@@ -85053,52 +84996,52 @@
     "difficulty": 1,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_279"
   },
   {
     "question": "The Kargil Democratic Alliance, whose founder had NSA (National Security Act) invoked against him, is associated with demands for which region's constitutional status?",
     "options": [
-      "Kashmir Valley",
+      "Gilgit-Baltistan",
       "Jammu",
       "Ladakh",
-      "Gilgit-Baltistan"
+      "Kashmir Valley"
     ],
     "answer": "Ladakh",
     "difficulty": 2,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_301"
   },
   {
     "question": "The Supreme Court rapped NCERT for withdrawing a chapter on the judiciary from textbooks. NCERT is an autonomous body under which ministry?",
     "options": [
-      "Ministry of Human Resource Development",
+      "Ministry of Education",
       "Ministry of Social Justice",
       "Ministry of Culture",
-      "Ministry of Education"
+      "Ministry of Human Resource Development"
     ],
     "answer": "Ministry of Education",
     "difficulty": 1,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_280"
   },
   {
     "question": "The FDI policy tweak for 'LBCs' reported in March 2026 was introduced in the 2024 FDI rules and primarily meant for Chinese investment. LBC stands for what?",
     "options": [
-      "Land Border Countries",
-      "Low Budget Companies",
       "Large Business Conglomerates",
+      "Low Budget Companies",
+      "Land Border Countries",
       "Licensed Business Categories"
     ],
     "answer": "Land Border Countries",
     "difficulty": 3,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_164"
   },
   {
@@ -85149,8 +85092,8 @@
   {
     "question": "India was reported to host the World Indoor Athletics Championships. This event is organized by which global governing body?",
     "options": [
-      "World Athletics",
       "International Olympic Committee",
+      "World Athletics",
       "Asian Athletics Association",
       "Commonwealth Games Federation"
     ],
@@ -85158,7 +85101,7 @@
     "difficulty": 2,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_303"
   },
   {
@@ -85179,16 +85122,16 @@
   {
     "question": "The Gujarat UCC expert panel was tasked with submitting a report and draft law. The committee followed which state's template for its UCC legislation?",
     "options": [
-      "Goa",
-      "Himachal Pradesh",
       "Uttarakhand",
+      "Himachal Pradesh",
+      "Goa",
       "Sikkim"
     ],
     "answer": "Uttarakhand",
     "difficulty": 3,
     "source": "Mar 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_165"
   },
   {
@@ -85209,8 +85152,8 @@
   {
     "question": "The Appropriation Bill passed by Parliament in March 2026 authorizes the government to do what?",
     "options": [
-      "Withdraw funds from the Consolidated Fund of India",
       "Impose new taxes",
+      "Withdraw funds from the Consolidated Fund of India",
       "Amend the Constitution",
       "Declare a financial emergency"
     ],
@@ -85218,22 +85161,22 @@
     "difficulty": 2,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_305"
   },
   {
     "question": "The Rajya Sabha elections held in March 2026 saw Nitish Kumar's party and Nabin's party win seats. Rajya Sabha members are elected for a term of how many years?",
     "options": [
-      "4 years",
+      "Life term",
       "6 years",
       "5 years",
-      "Life term"
+      "4 years"
     ],
     "answer": "6 years",
     "difficulty": 1,
     "source": "Mar 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_283"
   },
   {
@@ -85248,22 +85191,22 @@
     "difficulty": 3,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_167"
   },
   {
     "question": "The Supreme Court scrapped the age limit for maternity leave in adoptions, holding that equality demands this. This relates to which fundamental right?",
     "options": [
-      "Article 32 - Right to Constitutional Remedies",
+      "Article 14 - Right to Equality",
       "Article 19 - Freedom of Speech",
       "Article 21 - Right to Life",
-      "Article 14 - Right to Equality"
+      "Article 32 - Right to Constitutional Remedies"
     ],
     "answer": "Article 14 - Right to Equality",
     "difficulty": 2,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_306"
   },
   {
@@ -85284,38 +85227,38 @@
   {
     "question": "The Allahabad High Court rapped a judge for granting bail in dowry death cases too freely. Dowry-related offences are primarily covered under which section of IPC (now BNS)?",
     "options": [
-      "Section 302",
+      "Section 420",
       "Section 304B",
       "Section 376",
-      "Section 420"
+      "Section 302"
     ],
     "answer": "Section 304B",
     "difficulty": 2,
     "source": "Mar 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_308"
   },
   {
     "question": "NTPC was reported to be exploring imported PWR (Pressurized Water Reactor) technology for its nuclear fleet from France, Russia, and the US. NTPC is primarily classified as what type of company?",
     "options": [
-      "Private sector energy company",
-      "Nuclear regulatory body",
       "State-owned power generation company",
+      "Nuclear regulatory body",
+      "Private sector energy company",
       "Renewable energy startup"
     ],
     "answer": "State-owned power generation company",
     "difficulty": 1,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_284"
   },
   {
     "question": "The Centre asked WhatsApp to block caller IDs used in digital arrest scams. Digital arrest scams typically involve impersonation of officials from which agencies?",
     "options": [
-      "Election Commission and SEBI",
       "Income Tax and GST departments",
+      "Election Commission and SEBI",
       "RBI and NABARD",
       "CBI, police, or customs officials"
     ],
@@ -85323,22 +85266,22 @@
     "difficulty": 1,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_285"
   },
   {
     "question": "The World Happiness Report, flagging social media's negative impact, named which country as the happiest in the world for the seventh consecutive time?",
     "options": [
-      "Finland",
+      "Switzerland",
       "Norway",
       "Denmark",
-      "Switzerland"
+      "Finland"
     ],
     "answer": "Finland",
     "difficulty": 1,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_286"
   },
   {
@@ -85359,8 +85302,8 @@
   {
     "question": "The generic versions of GLP-1 weight loss drugs became available starting March 21, 2026 at significantly reduced prices. GLP-1 stands for what?",
     "options": [
-      "Glucose-Lowering Peptide-1",
       "Glycemic Level Protein-1",
+      "Glucose-Lowering Peptide-1",
       "Glucagon-Like Peptide-1",
       "Gut-Liver Pathway-1"
     ],
@@ -85368,7 +85311,7 @@
     "difficulty": 3,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_168"
   },
   {
@@ -85404,16 +85347,16 @@
   {
     "question": "The ASI (Archaeological Survey of India) approved excavation at 8 sites in Tamil Nadu. ASI functions under which ministry?",
     "options": [
-      "Ministry of Education",
+      "Ministry of Home Affairs",
       "Ministry of Culture",
       "Ministry of Tourism",
-      "Ministry of Home Affairs"
+      "Ministry of Education"
     ],
     "answer": "Ministry of Culture",
     "difficulty": 2,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_310"
   },
   {
@@ -85449,91 +85392,91 @@
   {
     "question": "The NDA (National Democratic Alliance) increased its Rajya Sabha tally to 141 in March 2026. The total strength of the Rajya Sabha is how many members?",
     "options": [
-      "245",
+      "260",
       "230",
       "250",
-      "260"
+      "245"
     ],
     "answer": "245",
     "difficulty": 2,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_311"
   },
   {
     "question": "The DGCA (Directorate General of Civil Aviation) issued directions on lithium battery safety on flights. DGCA is the regulatory body for civil aviation in India under which ministry?",
     "options": [
-      "Ministry of Defence",
+      "Ministry of Commerce",
       "Ministry of Civil Aviation",
       "Ministry of Transport",
-      "Ministry of Commerce"
+      "Ministry of Defence"
     ],
     "answer": "Ministry of Civil Aviation",
     "difficulty": 1,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_289"
   },
   {
     "question": "The Nowruz festival, which coincided with the Iran conflict, is the Persian New Year celebration. Nowruz typically falls on which date?",
     "options": [
-      "January 1",
-      "April 14",
       "March 21",
+      "April 14",
+      "January 1",
       "September 23"
     ],
     "answer": "March 21",
     "difficulty": 2,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_312"
   },
   {
     "question": "Sri Lanka's President turned down a US request to let its ships land in the country during the Iran war. Sri Lanka's current system of government features what type of executive?",
     "options": [
-      "Ceremonial President with Prime Minister as head",
-      "Parliamentary system with no President",
       "Constitutional Monarchy",
+      "Parliamentary system with no President",
+      "Ceremonial President with Prime Minister as head",
       "Executive Presidency"
     ],
     "answer": "Executive Presidency",
     "difficulty": 2,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_313"
   },
   {
     "question": "The Centre proposed a global media outreach proposal involving posting IIS (Indian Information Service) officers in foreign missions. IIS officers are recruited through which examination?",
     "options": [
-      "UPSC Civil Services Examination",
+      "IBPS examination",
       "SSC Combined Graduate Level",
       "UPSC Engineering Services",
-      "IBPS examination"
+      "UPSC Civil Services Examination"
     ],
     "answer": "UPSC Civil Services Examination",
     "difficulty": 2,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_314"
   },
   {
     "question": "The 'inflexible coal-fired plants' harming India's clean energy push was a key economy story. India's largest source of electricity generation is currently which fuel?",
     "options": [
-      "Natural gas",
+      "Solar",
       "Coal",
       "Hydroelectric",
-      "Solar"
+      "Natural gas"
     ],
     "answer": "Coal",
     "difficulty": 1,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_290"
   },
   {
@@ -85599,8 +85542,8 @@
   {
     "question": "The Badrinath-Kedarnath Temple Committee president demanded a 'Sanatani' affidavit for shrine visits. The Badrinath and Kedarnath temples are located in which state?",
     "options": [
-      "Himachal Pradesh",
       "Uttar Pradesh",
+      "Himachal Pradesh",
       "Uttarakhand",
       "Jammu & Kashmir"
     ],
@@ -85608,37 +85551,37 @@
     "difficulty": 1,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_292"
   },
   {
     "question": "The Centre sought Aadhaar app preloading from phone makers. Aadhaar is administered by which body?",
     "options": [
-      "Reserve Bank of India",
+      "Unique Identification Authority of India (UIDAI)",
       "Ministry of Electronics and IT",
       "National Informatics Centre",
-      "Unique Identification Authority of India (UIDAI)"
+      "Reserve Bank of India"
     ],
     "answer": "Unique Identification Authority of India (UIDAI)",
     "difficulty": 1,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_293"
   },
   {
     "question": "The Rajya Sabha elections for 37 seats across 10 states were held in March 2026. Members of Rajya Sabha are elected by whom?",
     "options": [
-      "By the elected members of State Legislative Assemblies",
-      "Directly by the people",
       "By the President on the advice of the PM",
+      "Directly by the people",
+      "By the elected members of State Legislative Assemblies",
       "By members of both Houses of Parliament"
     ],
     "answer": "By the elected members of State Legislative Assemblies",
     "difficulty": 1,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_294"
   },
   {
@@ -85719,16 +85662,16 @@
   {
     "question": "The Speaker of Lok Sabha, Om Birla, urged floor leaders to ensure the dignity of the House is upheld. The Speaker's role is defined under which Article of the Constitution?",
     "options": [
-      "Article 89",
-      "Article 95",
       "Article 93",
+      "Article 95",
+      "Article 89",
       "Article 97"
     ],
     "answer": "Article 93",
     "difficulty": 3,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_172"
   },
   {
@@ -85749,31 +85692,31 @@
   {
     "question": "The Telangana budget promised free breakfast in schools with the pledge 'No child will study hungry.' Free mid-day meals in government schools are provided under which scheme?",
     "options": [
-      "PM POSHAN (earlier Mid-Day Meal Scheme)",
+      "National Food Security Mission",
       "Annapurna Scheme",
       "Integrated Child Development Services",
-      "National Food Security Mission"
+      "PM POSHAN (earlier Mid-Day Meal Scheme)"
     ],
     "answer": "PM POSHAN (earlier Mid-Day Meal Scheme)",
     "difficulty": 2,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_322"
   },
   {
     "question": "The Karnataka government's liquor policy tweak involved shifting from price-based to alcohol content-based taxation. Excise duty on alcohol is levied by which level of government in India?",
     "options": [
-      "Central Government only",
-      "State Governments",
       "Both Central and State equally",
+      "State Governments",
+      "Central Government only",
       "Local municipal bodies"
     ],
     "answer": "State Governments",
     "difficulty": 2,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_323"
   },
   {
@@ -85839,16 +85782,16 @@
   {
     "question": "Ali Larijani, Iran's security chief killed during the Israel strikes, had previously served as Iran's chief nuclear negotiator and held which other major position?",
     "options": [
-      "President of Iran",
-      "Commander of the IRGC",
       "Speaker of the Iranian Parliament (Majlis)",
+      "Commander of the IRGC",
+      "President of Iran",
       "Foreign Minister of Iran"
     ],
     "answer": "Speaker of the Iranian Parliament (Majlis)",
     "difficulty": 3,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_175"
   },
   {
@@ -85884,16 +85827,16 @@
   {
     "question": "India's fertiliser sector reform was discussed in the Ideas Page, noting that India heavily subsidises fertilisers. The primary fertiliser subsidy in India covers which nutrient?",
     "options": [
-      "Potassium only",
+      "Zinc and Boron",
       "Nitrogen (through urea)",
       "Phosphorus only",
-      "Zinc and Boron"
+      "Potassium only"
     ],
     "answer": "Nitrogen (through urea)",
     "difficulty": 2,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_327"
   },
   {
@@ -85914,23 +85857,23 @@
   {
     "question": "The Sree Narayana Guru, whose life and teachings were reviewed in the Sunday Express, was a social reformer from which Indian state?",
     "options": [
-      "Tamil Nadu",
-      "Karnataka",
       "Andhra Pradesh",
+      "Karnataka",
+      "Tamil Nadu",
       "Kerala"
     ],
     "answer": "Kerala",
     "difficulty": 1,
     "source": "Mar 15, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_297"
   },
   {
     "question": "The Balance of Payments components discussed in the context of the Iran war's economic fallout include the current account and the capital account. A current account deficit occurs when which of the following happens?",
     "options": [
-      "Imports of goods and services exceed exports",
       "Exports exceed imports",
+      "Imports of goods and services exceed exports",
       "FDI inflows exceed FDI outflows",
       "Government revenue exceeds expenditure"
     ],
@@ -85938,7 +85881,7 @@
     "difficulty": 2,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_328"
   },
   {
@@ -86004,8 +85947,8 @@
   {
     "question": "The Israel-Iran war rerouted global flights. The airspace closure primarily affected routes between which regions?",
     "options": [
-      "North America and South America",
       "Europe/Asia and the Middle East/Gulf",
+      "North America and South America",
       "Africa and Australia",
       "East Asia and South America"
     ],
@@ -86013,44 +85956,44 @@
     "difficulty": 1,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_300"
   },
   {
     "question": "The RSS (Rashtriya Swayamsevak Sangh) stated that grieving for Khamenei's death is not wrong but should not disturb harmony. The RSS was founded in which year?",
     "options": [
-      "1920",
+      "1935",
       "1930",
       "1925",
-      "1935"
+      "1920"
     ],
     "answer": "1925",
     "difficulty": 2,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_331"
   },
   {
     "question": "The Vi (Vodafone Idea) sought investors to enable government exit, with US-based fund eyes reported for a domestic stake. Vi operates in which sector?",
     "options": [
-      "Fintech",
+      "Telecommunications",
       "E-commerce",
       "Social media",
-      "Telecommunications"
+      "Fintech"
     ],
     "answer": "Telecommunications",
     "difficulty": 1,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_301"
   },
   {
     "question": "The TOTTL norms were reported to have been not halted for Air India. TOTTL stands for what in aviation regulatory context?",
     "options": [
-      "Take-Off and Taxi Time Limitations",
       "Technical Operations and Travel Time Limits",
+      "Take-Off and Taxi Time Limitations",
       "Total On-Time Takeoff and Landing",
       "Transfer of Terminal Traffic Liability"
     ],
@@ -86058,7 +86001,7 @@
     "difficulty": 3,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_177"
   },
   {
@@ -86094,38 +86037,38 @@
   {
     "question": "The Impact Player rule in IPL, mentioned in the sports section, allows teams to substitute a player during the match. The IPL is organized by which body?",
     "options": [
-      "International Cricket Council",
+      "Board of Control for Cricket in India (BCCI)",
       "Ministry of Sports",
       "Indian Premier League Foundation",
-      "Board of Control for Cricket in India (BCCI)"
+      "International Cricket Council"
     ],
     "answer": "Board of Control for Cricket in India (BCCI)",
     "difficulty": 1,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_302"
   },
   {
     "question": "The FIDE chess event discussed in the sports pages involved St. Louis. FIDE, the international chess governing body, is headquartered in which city?",
     "options": [
-      "Lausanne",
-      "Zurich",
       "Paris",
+      "Zurich",
+      "Lausanne",
       "Moscow"
     ],
     "answer": "Lausanne",
     "difficulty": 3,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_179"
   },
   {
     "question": "The Supplementary Voter List for West Bengal elections was to be ready by a specific week. The preparation of electoral rolls in India is the responsibility of which body?",
     "options": [
-      "State Election Commission",
       "Election Commission of India",
+      "State Election Commission",
       "District Magistrate",
       "Ministry of Home Affairs"
     ],
@@ -86133,67 +86076,67 @@
     "difficulty": 1,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_303"
   },
   {
     "question": "NATO's refusal to help the US in the Iran war was described by Trump as a 'very foolish mistake.' NATO's collective defence clause is contained in which Article of the NATO treaty?",
     "options": [
-      "Article 3",
-      "Article 4",
       "Article 5",
+      "Article 4",
+      "Article 3",
       "Article 7"
     ],
     "answer": "Article 5",
     "difficulty": 2,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_333"
   },
   {
     "question": "The Centre floated a Rs 497 crore scheme to give relief to exporters during the Iran war crisis. India's export promotion is overseen by which body under the Ministry of Commerce?",
     "options": [
-      "Export-Import Bank of India",
+      "Directorate General of Foreign Trade (DGFT)",
       "Federation of Indian Export Organisations",
       "Export Credit Guarantee Corporation",
-      "Directorate General of Foreign Trade (DGFT)"
+      "Export-Import Bank of India"
     ],
     "answer": "Directorate General of Foreign Trade (DGFT)",
     "difficulty": 2,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_334"
   },
   {
     "question": "The Bhabha Atomic Research Centre (BARC) recruitment notice appeared in March 2026 papers. BARC is located in which city?",
     "options": [
-      "Mumbai",
-      "Hyderabad",
       "Chennai",
+      "Hyderabad",
+      "Mumbai",
       "Indore"
     ],
     "answer": "Mumbai",
     "difficulty": 1,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_304"
   },
   {
     "question": "The HC ordered Newslaundry to take down content against TV Today and Aaj Tak. Newslaundry is primarily what type of media?",
     "options": [
-      "Television broadcaster",
-      "Digital news and media criticism platform",
       "Print newspaper",
+      "Digital news and media criticism platform",
+      "Television broadcaster",
       "Radio network"
     ],
     "answer": "Digital news and media criticism platform",
     "difficulty": 2,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_335"
   },
   {
@@ -86229,8 +86172,8 @@
   {
     "question": "The K-Pop phenomenon and the film 'K-Pop Demon Hunters' winning 2 Oscars was reported. The Oscar (Academy Award) for Best Picture is awarded by which organization?",
     "options": [
-      "Academy of Motion Picture Arts and Sciences",
       "Hollywood Foreign Press Association",
+      "Academy of Motion Picture Arts and Sciences",
       "Screen Actors Guild",
       "British Academy of Film and Television Arts"
     ],
@@ -86238,7 +86181,7 @@
     "difficulty": 1,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_305"
   },
   {
@@ -86304,8 +86247,8 @@
   {
     "question": "Data centres powering AI were featured in 'The Big Picture.' India currently has approximately how many data centres compared to the US and China?",
     "options": [
-      "More than China but less than US",
       "Approximately 152 versus 5,500 in the US",
+      "More than China but less than US",
       "Equal to China",
       "More than both US and China combined"
     ],
@@ -86313,22 +86256,22 @@
     "difficulty": 3,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_183"
   },
   {
     "question": "The Iran war's impact on India's Balance of Payments was compared to the Ukraine war. India's current account is most directly impacted by oil imports because India imports approximately what share of its crude oil needs?",
     "options": [
-      "About 55%",
+      "About 95%",
       "About 70%",
       "About 85%",
-      "About 95%"
+      "About 55%"
     ],
     "answer": "About 85%",
     "difficulty": 2,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_337"
   },
   {
@@ -86349,8 +86292,8 @@
   {
     "question": "Small hydropower projects received Rs 2,585 crore scheme push from the government. Small hydro projects are defined as those with capacity up to what limit?",
     "options": [
-      "25 MW",
       "10 MW",
+      "25 MW",
       "50 MW",
       "100 MW"
     ],
@@ -86358,7 +86301,7 @@
     "difficulty": 2,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_338"
   },
   {
@@ -86379,16 +86322,16 @@
   {
     "question": "The Election Commission deployed 4th central observers for the West Bengal polls. Central observers during elections are typically drawn from which service?",
     "options": [
-      "Indian Police Service only",
+      "Indian Forest Service",
       "Indian Foreign Service",
       "Indian Administrative Service and Indian Revenue Service",
-      "Indian Forest Service"
+      "Indian Police Service only"
     ],
     "answer": "Indian Administrative Service and Indian Revenue Service",
     "difficulty": 3,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_184"
   },
   {
@@ -86409,16 +86352,16 @@
   {
     "question": "The oil spike was reported to fuel inflation but US and EU central banks had not raised interest rates. The European Central Bank is headquartered in which city?",
     "options": [
-      "Frankfurt",
+      "Luxembourg",
       "Paris",
       "Brussels",
-      "Luxembourg"
+      "Frankfurt"
     ],
     "answer": "Frankfurt",
     "difficulty": 2,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_340"
   },
   {
@@ -86454,8 +86397,8 @@
   {
     "question": "The UAE ordered the arrest of 35 over misleading social media posts, with 19 Indians among them. The UAE's legal system is based on which legal tradition?",
     "options": [
-      "Common law",
       "Customary tribal law",
+      "Common law",
       "Purely Sharia law",
       "Civil law with elements of Sharia"
     ],
@@ -86463,7 +86406,7 @@
     "difficulty": 3,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_186"
   },
   {
@@ -86484,16 +86427,16 @@
   {
     "question": "The 'dark transit' of ships through the Strait of Hormuz involved Iran exporting millions of barrels of oil. A 'dark transit' means ships turning off which system?",
     "options": [
-      "Radar systems",
+      "Communication radios",
       "AIS (Automatic Identification System) transponder",
       "Navigation lights",
-      "Communication radios"
+      "Radar systems"
     ],
     "answer": "AIS (Automatic Identification System) transponder",
     "difficulty": 3,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_187"
   },
   {
@@ -86514,8 +86457,8 @@
   {
     "question": "The West Bengal Assembly election was announced for two phases. The West Bengal Legislative Assembly has how many seats?",
     "options": [
-      "288",
       "300",
+      "288",
       "295",
       "294"
     ],
@@ -86523,22 +86466,22 @@
     "difficulty": 2,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_342"
   },
   {
     "question": "Shubman Gill was reported to be targeting the 2027 World Cup. The ICC Cricket World Cup 2027 is scheduled to be hosted by which countries?",
     "options": [
-      "South Africa, Zimbabwe and Namibia",
+      "Australia and New Zealand",
       "India alone",
       "England and Wales",
-      "Australia and New Zealand"
+      "South Africa, Zimbabwe and Namibia"
     ],
     "answer": "South Africa, Zimbabwe and Namibia",
     "difficulty": 2,
     "source": "Mar 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_343"
   },
   {
@@ -86559,38 +86502,38 @@
   {
     "question": "The AT-1 bond mis-selling case resulted in HDFC Bank taking action against 3 executives. AT-1 bonds are a type of which financial instrument?",
     "options": [
-      "Government securities",
-      "Equity shares",
       "Additional Tier-1 capital bonds (perpetual bonds)",
+      "Equity shares",
+      "Government securities",
       "Corporate fixed deposits"
     ],
     "answer": "Additional Tier-1 capital bonds (perpetual bonds)",
     "difficulty": 3,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_188"
   },
   {
     "question": "Nepal's interim PM KP Sharma Oli's recommendations to the President sparked a big row. Nepal's current system of government is a what?",
     "options": [
-      "Constitutional monarchy",
+      "Federal democratic republic",
       "Theocratic state",
       "Presidential republic",
-      "Federal democratic republic"
+      "Constitutional monarchy"
     ],
     "answer": "Federal democratic republic",
     "difficulty": 2,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_345"
   },
   {
     "question": "The Carnegie Hall endowment for Indian music was reported in the Arts section. Carnegie Hall, one of the world's most prestigious concert venues, is located in which city?",
     "options": [
-      "New York",
       "Vienna",
+      "New York",
       "London",
       "Boston"
     ],
@@ -86598,7 +86541,7 @@
     "difficulty": 1,
     "source": "Mar 15, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_312"
   },
   {
@@ -86619,8 +86562,8 @@
   {
     "question": "The SIR (Summary Revision of electoral rolls) in West Bengal saw '60 lakh names under adjudication.' The EC set up 19 appellate tribunals for SIR appeals. These tribunals were staffed by whom?",
     "options": [
-      "Sitting Supreme Court judges",
       "Election Commission officers",
+      "Sitting Supreme Court judges",
       "Former judges of district and higher courts",
       "Members of Parliament"
     ],
@@ -86628,7 +86571,7 @@
     "difficulty": 3,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_189"
   },
   {
@@ -86649,31 +86592,31 @@
   {
     "question": "The Explained section discussed why NATO doesn't have to answer Trump's call to join the Iran war. NATO's decision-making operates on which principle?",
     "options": [
-      "Consensus among all member states",
-      "Qualified majority voting",
       "Simple majority voting",
+      "Qualified majority voting",
+      "Consensus among all member states",
       "Decision by the Secretary General alone"
     ],
     "answer": "Consensus among all member states",
     "difficulty": 2,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_347"
   },
   {
     "question": "India's food aid to Afghanistan was described as 'a powerful message' in the Ideas Page. India's food aid to Afghanistan is primarily routed through which international organization?",
     "options": [
-      "UNICEF",
-      "World Food Programme (WFP)",
       "FAO",
+      "World Food Programme (WFP)",
+      "UNICEF",
       "UNDP"
     ],
     "answer": "World Food Programme (WFP)",
     "difficulty": 2,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_348"
   },
   {
@@ -86694,8 +86637,8 @@
   {
     "question": "The Iran war's impact on Southeast Asia tourism was reported, with airlines rerouting global flights. Which UN specialized agency governs international civil aviation?",
     "options": [
-      "IATA",
       "WTO",
+      "IATA",
       "IMO",
       "ICAO"
     ],
@@ -86703,14 +86646,14 @@
     "difficulty": 2,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_349"
   },
   {
     "question": "The ACC (Anti-Corruption Commission) of which organization stripped Senegal of its AFCON football title?",
     "options": [
-      "CAF (Confederation of African Football)",
       "FIFA",
+      "CAF (Confederation of African Football)",
       "IOC",
       "UEFA"
     ],
@@ -86718,22 +86661,22 @@
     "difficulty": 2,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_350"
   },
   {
     "question": "The Allahabad High Court ordered that FIRs should be issued 'even if cops try to browbeat.' The registration of FIR (First Information Report) is mandatory under which section of CrPC (now BNSS)?",
     "options": [
-      "Section 144",
-      "Section 154",
       "Section 161",
+      "Section 154",
+      "Section 144",
       "Section 173"
     ],
     "answer": "Section 154",
     "difficulty": 3,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_191"
   },
   {
@@ -86754,8 +86697,8 @@
   {
     "question": "The Delhi High Court quashed look-out circulars against NDTV founders. A Look-Out Circular (LOC) in India is issued to prevent a person from doing what?",
     "options": [
-      "Operating a bank account",
       "Using digital payment platforms",
+      "Operating a bank account",
       "Accessing government buildings",
       "Leaving the country"
     ],
@@ -86763,44 +86706,44 @@
     "difficulty": 1,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_314"
   },
   {
     "question": "India was reported to host the 2030 Commonwealth Games (CWG). The Commonwealth Games Federation is headquartered in which city?",
     "options": [
-      "London",
-      "Melbourne",
       "New Delhi",
+      "Melbourne",
+      "London",
       "Kuala Lumpur"
     ],
     "answer": "London",
     "difficulty": 2,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_352"
   },
   {
     "question": "The NDRF and SDRF were sought by the HC for rescue operations in drowning cases. NDRF stands for what?",
     "options": [
-      "National Defence Response Force",
-      "National Disaster Response Force",
       "National Disaster Relief Fund",
+      "National Disaster Response Force",
+      "National Defence Response Force",
       "National Defence Rescue Force"
     ],
     "answer": "National Disaster Response Force",
     "difficulty": 1,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_315"
   },
   {
     "question": "Norway's Crown Princess Martha Louise said she was 'manipulated and deceived by Epstein.' Norway's system of government is best described as what?",
     "options": [
-      "Federal republic",
       "Presidential democracy",
+      "Federal republic",
       "Constitutional monarchy",
       "Parliamentary republic"
     ],
@@ -86808,14 +86751,14 @@
     "difficulty": 1,
     "source": "Mar 21, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_316"
   },
   {
     "question": "The WTO's Joint Statement Initiative (JSI) on e-commerce was at the center of the e-transmission duty debate. The WTO is headquartered in which city?",
     "options": [
-      "New York",
       "Brussels",
+      "New York",
       "The Hague",
       "Geneva"
     ],
@@ -86823,14 +86766,14 @@
     "difficulty": 1,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_317"
   },
   {
     "question": "The Indian women's hockey team coach Janneke Schopman (referred to as Marijne's successor) was preparing for the World Cup. Field hockey's international governing body is called what?",
     "options": [
-      "International Hockey Federation (FIH)",
       "World Hockey Association",
+      "International Hockey Federation (FIH)",
       "International Field Hockey Board",
       "Global Hockey Council"
     ],
@@ -86838,22 +86781,22 @@
     "difficulty": 2,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_353"
   },
   {
     "question": "The Pentagon requested $3,008 million more for the Iran war. The Pentagon is the headquarters of which US government department?",
     "options": [
-      "Department of State",
+      "National Security Agency",
       "Department of Defense",
       "Department of Homeland Security",
-      "National Security Agency"
+      "Department of State"
     ],
     "answer": "Department of Defense",
     "difficulty": 1,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_318"
   },
   {
@@ -86874,31 +86817,31 @@
   {
     "question": "The Bharat Ratna demand for Kanshi Ram was raised by BSP chief Mayawati. The Bharat Ratna is India's highest civilian award and is conferred by whom?",
     "options": [
-      "The Prime Minister",
+      "The President of India",
       "The Parliament through a resolution",
       "The Chief Justice of India",
-      "The President of India"
+      "The Prime Minister"
     ],
     "answer": "The President of India",
     "difficulty": 1,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_320"
   },
   {
     "question": "Sabalenka's tennis victory was reported in the sports section. The WTA (Women's Tennis Association) Tour season includes how many Grand Slam tournaments?",
     "options": [
-      "Four",
-      "Three",
       "Two",
+      "Three",
+      "Four",
       "Five"
     ],
     "answer": "Four",
     "difficulty": 1,
     "source": "Mar 17, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_321"
   },
   {
@@ -86919,8 +86862,8 @@
   {
     "question": "The Adani group's MHDEC infrastructure plans were discussed. MHDEC is associated with the development of which major Indian port project?",
     "options": [
-      "Mundra Port",
       "Vizhinjam Port",
+      "Mundra Port",
       "Navi Mumbai International Airport",
       "Sagarmala Project"
     ],
@@ -86928,7 +86871,7 @@
     "difficulty": 3,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_192"
   },
   {
@@ -86964,53 +86907,53 @@
   {
     "question": "The Explained section discussed how the global energy shock threatens India's 'Goldilocks era.' A 'Goldilocks economy' refers to an economy that is experiencing what conditions?",
     "options": [
-      "Hyperinflation and rapid growth",
+      "Very high growth with high unemployment",
       "Neither too hot (high inflation) nor too cold (recession)",
       "Deflation and stagnation",
-      "Very high growth with high unemployment"
+      "Hyperinflation and rapid growth"
     ],
     "answer": "Neither too hot (high inflation) nor too cold (recession)",
     "difficulty": 2,
     "source": "Mar 18, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_356"
   },
   {
     "question": "The Odisha Congress was accused of cross-voting in Rajya Sabha polls. The anti-defection law in India is contained in which Schedule of the Constitution?",
     "options": [
-      "Eighth Schedule",
-      "Ninth Schedule",
       "Tenth Schedule",
+      "Ninth Schedule",
+      "Eighth Schedule",
       "Eleventh Schedule"
     ],
     "answer": "Tenth Schedule",
     "difficulty": 2,
     "source": "Mar 16, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_357"
   },
   {
     "question": "Kim Jong Un was reported to have swept elections with 99.98% votes in North Korea. North Korea's official name is what?",
     "options": [
-      "Republic of Korea",
+      "Democratic People's Republic of Korea",
       "Korean Democratic Republic",
       "People's Republic of Korea",
-      "Democratic People's Republic of Korea"
+      "Republic of Korea"
     ],
     "answer": "Democratic People's Republic of Korea",
     "difficulty": 1,
     "source": "Mar 20, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_322"
   },
   {
     "question": "The Afghanistan-Pakistan ceasefire during Eid was reported in the World section. The Pak Taliban (TTP) is distinct from the Afghan Taliban. TTP stands for what?",
     "options": [
-      "Tehrik-i-Taliban Pakistan",
       "Tahrik-i-Taliban Pakistan",
+      "Tehrik-i-Taliban Pakistan",
       "Taliban Tanzeem Pakistan",
       "Tehreek-e-Taliban Pukhtunkhwa"
     ],
@@ -87018,7 +86961,7 @@
     "difficulty": 3,
     "source": "Mar 19, 2026",
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_194"
   }
 ]
