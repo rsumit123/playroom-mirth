@@ -195,18 +195,17 @@ async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
 
     if state.game_type == "scribble":
         # Scribble: offer 3 word choices to the drawer
+        choice_words = []
         with SessionLocal() as db:
-            choices = []
             for _ in range(3):
-                w = _select_word(db, state.difficulty, state.word_history_ids + [c.id for c in choices], state.game_type)
+                w = _select_word(db, state.difficulty, state.word_history_ids + [cw["id"] for cw in choice_words], state.game_type)
                 if w:
-                    choices.append(w)
-            if not choices:
-                # Fallback: at least get one word
+                    choice_words.append({"text": w.text, "id": w.id})
+            if not choice_words:
                 w = _select_word(db, state.difficulty, [], state.game_type)
                 if w:
-                    choices.append(w)
-            state._word_choices = {w.text: w.id for w in choices}
+                    choice_words.append({"text": w.text, "id": w.id})
+            state._word_choices = {cw["text"]: cw["id"] for cw in choice_words}
             _save_state(db, state)
 
         await sio.emit(
@@ -221,8 +220,8 @@ async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
             },
             room=room_code,
         )
-        if describer_sid and choices:
-            await sio.emit("game:word_choices", {"words": [w.text for w in choices]}, to=describer_sid)
+        if describer_sid and choice_words:
+            await sio.emit("game:word_choices", {"words": [cw["text"] for cw in choice_words]}, to=describer_sid)
         # Timer starts after word is picked (in game:word_pick handler)
         # Schedule a fallback timer (15s) in case drawer doesn't pick
         await _schedule_turn_timer(state, override_seconds=15)
@@ -509,9 +508,12 @@ async def room_register(sid, data):
                 },
                 to=sid,
             )
-            # Replay accumulated scribble strokes to reconnecting player
+            # Scribble reconnection: replay strokes or resend word choices
             if state.game_type == "scribble" and state.strokes:
                 await sio.emit("scribble:stroke_replay", {"strokes": state.strokes}, to=sid)
+            word_choices = getattr(state, '_word_choices', {})
+            if state.game_type == "scribble" and word_choices and rp.id == describer_id:
+                await sio.emit("game:word_choices", {"words": list(word_choices.keys())}, to=sid)
             if rp.id == describer_id and state.current_word_text:
                 await sio.emit("game:new_word", {"word": state.current_word_text}, to=sid)
                 # Restart turn with full timer since describer just reconnected
@@ -911,10 +913,14 @@ async def game_start(sid, data):
             await _trivia_start_round(state, room.code)
             return {"ok": True}
 
-        word = _select_word(db, room.difficulty, [], room.game_type)
-        if not word:
-            await emit_error(sid, "No words available", code="NO_WORDS")
-            return {"ok": False, "error": "NO_WORDS"}
+        # For charades, pre-select first word to validate words exist
+        if room.game_type != "scribble":
+            word = _select_word(db, room.difficulty, [], room.game_type)
+            if not word:
+                await emit_error(sid, "No words available", code="NO_WORDS")
+                return {"ok": False, "error": "NO_WORDS"}
+        else:
+            word = None
 
         state = RoomGameState(
             room_id=room.id,
@@ -925,14 +931,19 @@ async def game_start(sid, data):
             game_type=room.game_type,
             player_order=[p.id for p in players],
             scores={p.id: p.score for p in players},
-            current_word_id=word.id,
-            current_word_text=word.text,
-            word_history_ids=[word.id],
+            current_word_id=word.id if word else None,
+            current_word_text=word.text if word else None,
+            word_history_ids=[word.id] if word else [],
         )
         start_turn(state)
         ROOM_STATES[room.code] = state
         room.status = "active"
         _save_state(db, state)
+
+    # Use _emit_next_turn for scribble (3-word choice) — it handles everything
+    if state.game_type == "scribble":
+        await _emit_next_turn(state, state.room_code)
+        return {"ok": True}
 
     room_code_val = state.room_code
     hint = _generate_hint(state.current_word_text) if state.current_word_text else None
@@ -1162,6 +1173,8 @@ async def game_skip_word(sid, data):
     state = ROOM_STATES.get(room_code)
     if not state:
         return {"ok": False, "error": "Game not active"}
+    if state.game_type != "charades":
+        return {"ok": False, "error": "Skip only available in charades"}
     player_id = SID_TO_PLAYER.get(sid)
     describer_id = state.player_order[state.describer_index]
     if player_id != describer_id:
