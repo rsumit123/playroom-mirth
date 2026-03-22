@@ -76892,19 +76892,6 @@
     "correct_index": 1
   },
   {
-    "id": "ca_medium_093",
-    "category": "current_affairs",
-    "difficulty": 2,
-    "question": "The Army's animal wing participates in the Republic Day parade. Which of the following animals is traditionally part of this contingent?",
-    "options": [
-      "Horses and dolphins",
-      "Elephants and tigers",
-      "Camels, ponies, and raptors",
-      "Dogs and eagles"
-    ],
-    "correct_index": 2
-  },
-  {
     "id": "ca_easy_079",
     "category": "current_affairs",
     "difficulty": 1,
@@ -77044,19 +77031,6 @@
       "Cyber scam call centres targeting Indian citizens",
       "Hacking of government websites",
       "Cryptocurrency mining fraud"
-    ],
-    "correct_index": 1
-  },
-  {
-    "id": "ca_medium_098",
-    "category": "current_affairs",
-    "difficulty": 2,
-    "question": "The Supreme Court's direction on acid attacks included measures similar to which existing legal framework?",
-    "options": [
-      "Domestic Violence Act provisions",
-      "Dowry death provisions under Section 304B IPC",
-      "POCSO Act provisions",
-      "Anti-ragging regulations"
     ],
     "correct_index": 1
   },
@@ -77802,19 +77776,6 @@
     "correct_index": 2
   },
   {
-    "id": "ca_hard_068",
-    "category": "current_affairs",
-    "difficulty": 3,
-    "question": "The India-EU FTA includes provisions for reducing tariffs on automobiles. India currently imposes customs duty on imported cars at approximately:",
-    "options": [
-      "25-30%",
-      "40-60%",
-      "110-125%",
-      "70-100%"
-    ],
-    "correct_index": 3
-  },
-  {
     "id": "ca_medium_120",
     "category": "current_affairs",
     "difficulty": 2,
@@ -78166,19 +78127,6 @@
     "correct_index": 2
   },
   {
-    "id": "ca_medium_130",
-    "category": "current_affairs",
-    "difficulty": 2,
-    "question": "The India-Bangladesh maritime exchange repatriated 151 fishermen. The maritime boundary between India and Bangladesh was settled by which international tribunal?",
-    "options": [
-      "UN Arbitral Tribunal under UNCLOS Annex VII",
-      "International Court of Justice (ICJ)",
-      "International Tribunal for the Law of the Sea (ITLOS)",
-      "Permanent Court of Arbitration (PCA)"
-    ],
-    "correct_index": 3
-  },
-  {
     "id": "ca_easy_116",
     "category": "current_affairs",
     "difficulty": 1,
@@ -78358,7 +78306,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_138",
@@ -78475,7 +78423,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "ca_easy_126",
@@ -78618,7 +78566,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_hard_085",
@@ -78722,7 +78670,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "ca_medium_151",
@@ -78933,19 +78881,6 @@
     "correct_index": 0
   },
   {
-    "id": "ca_hard_090",
-    "question": "Tata Steel completed the first made-in-Tamil Nadu Range Rover at its new plant. The Tata Motors vehicle manufacturing plant that rolled out the Range Rover is located in which Tamil Nadu city?",
-    "options": [
-      "Coimbatore",
-      "Hosur",
-      "Ranipet",
-      "Chennai"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 1
-  },
-  {
     "id": "ca_medium_158",
     "question": "The Surat gems and jewellery industry hoped to bring back the 'bling' after the India-US trade deal. Surat is famous for cutting and polishing what percentage of the world's diamonds?",
     "options": [
@@ -79060,7 +78995,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_147",
@@ -79164,7 +79099,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_hard_093",
@@ -79245,19 +79180,6 @@
     "correct_index": 0
   },
   {
-    "id": "ca_hard_095",
-    "question": "MHA reminded paramilitary forces to submit cadre review proposals for Group A officers. India's central armed police forces (CAPFs) include how many forces?",
-    "options": [
-      "7",
-      "9",
-      "5",
-      "3"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 1
-  },
-  {
     "id": "ca_medium_168",
     "question": "The West Bengal government's annual budget, termed an 'interim budget,' showed revenue deficit. Under Article 202 of the Constitution, who presents the state budget?",
     "options": [
@@ -79294,7 +79216,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_152",
@@ -79307,7 +79229,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "ca_easy_153",
@@ -79333,7 +79255,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "ca_medium_170",
@@ -79372,7 +79294,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "ca_hard_097",
@@ -79593,7 +79515,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "question": "The National Green Tribunal (NGT) cleared the Great Nicobar Island project citing 'strategic' role. The Great Nicobar Island is the southernmost point of which island chain?",
@@ -79683,7 +79605,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_easy_166"
   },
   {
@@ -79802,19 +79724,6 @@
     "category": "current_affairs",
     "correct_index": 1,
     "id": "ca_hard_106"
-  },
-  {
-    "question": "The India AI Mission 2.0 was announced to focus on AI service for MSMEs, similar to UPI. IndiaAI Mission 2.0 aims to add how many GPUs to the existing stock?",
-    "options": [
-      "5,000",
-      "20,000",
-      "10,000",
-      "50,000"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 2,
-    "id": "ca_hard_107"
   },
   {
     "question": "India's first private sector helicopter Final Assembly Line (FAL) by Tata-Airbus opened in Karnataka. The helicopter being assembled is:",
@@ -80125,7 +80034,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_hard_112"
   },
   {
@@ -80385,7 +80294,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_easy_188"
   },
   {
@@ -80476,7 +80385,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_191"
   },
   {
@@ -80541,7 +80450,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_193"
   },
   {
@@ -80749,7 +80658,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_hard_121"
   },
   {
@@ -80905,7 +80814,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_hard_124"
   },
   {
@@ -80931,7 +80840,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_204"
   },
   {
@@ -81139,7 +81048,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_208"
   },
   {
@@ -81191,7 +81100,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_easy_209"
   },
   {
@@ -81258,19 +81167,6 @@
     "category": "current_affairs",
     "correct_index": 0,
     "id": "ca_medium_230"
-  },
-  {
-    "question": "In February 2026, the CBI's excise policy case against Delhi leaders was discharged by a trial court. Which court specifically discharged Arvind Kejriwal and Manish Sisodia in this case?",
-    "options": [
-      "Patiala House Court, Delhi",
-      "Rouse Avenue Court, Delhi",
-      "Supreme Court of India",
-      "Delhi High Court"
-    ],
-    "difficulty": 2,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_medium_231"
   },
   {
     "question": "The 16th Finance Commission, which was in focus in early 2026 for recommending increased urban funding, is constituted under which Article of the Indian Constitution?",
@@ -81479,19 +81375,6 @@
     "category": "current_affairs",
     "correct_index": 2,
     "id": "ca_easy_219"
-  },
-  {
-    "question": "The CM of West Bengal unveiled 'Pink Booths' and mobile patrol teams for the safety of late-night working women in which city?",
-    "options": [
-      "Howrah",
-      "Durgapur",
-      "Siliguri",
-      "Kolkata"
-    ],
-    "difficulty": 1,
-    "category": "current_affairs",
-    "correct_index": 3,
-    "id": "ca_easy_220"
   },
   {
     "question": "Jammu & Kashmir cricket team won its maiden Ranji Trophy title in 2026. The Ranji Trophy is India's premier domestic cricket tournament in which format?",
@@ -82144,19 +82027,6 @@
     "id": "ca_hard_141"
   },
   {
-    "question": "The SC granted bail to two suspects in the Pune Porsche case The Pune Porsche case involved which issue?",
-    "options": [
-      "A tax evasion case involving luxury vehicles",
-      "A car crash by a minor involving drunk driving",
-      "An insurance fraud case",
-      "A kidnapping using a luxury car"
-    ],
-    "difficulty": 2,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_medium_257"
-  },
-  {
     "question": "The Telangana anti-Maoist operations secured over 590 surrenders in the last 2 years under officer B Sumathi. The Maoists in Telangana primarily operated in which type of terrain?",
     "options": [
       "Coastal areas",
@@ -82207,19 +82077,6 @@
     "category": "current_affairs",
     "correct_index": 1,
     "id": "ca_hard_142"
-  },
-  {
-    "question": "In March 2026, judicial officers on duty were held to be above administrative and political officials in a contempt case. This ruling was given by which High Court?",
-    "options": [
-      "Madras High Court",
-      "Allahabad High Court",
-      "Calcutta High Court",
-      "Bombay High Court"
-    ],
-    "difficulty": 2,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_medium_260"
   },
   {
     "question": "The Manjummel Boys director was booked for sexual harassment 'Manjummel Boys' was a blockbuster film in which language?",
@@ -82311,19 +82168,6 @@
     "category": "current_affairs",
     "correct_index": 2,
     "id": "ca_medium_262"
-  },
-  {
-    "question": "A Sukhoi aircraft went off radar during a search operation in which northeastern state ?",
-    "options": [
-      "Nagaland",
-      "Meghalaya",
-      "Manipur",
-      "Assam"
-    ],
-    "difficulty": 2,
-    "category": "current_affairs",
-    "correct_index": 3,
-    "id": "ca_medium_264"
   },
   {
     "question": "The RSS held coordination meetings and BJP planned to rejig caste politics The RSS coordination meetings are typically held in which month(s) each year?",
@@ -82740,19 +82584,6 @@
     "category": "current_affairs",
     "correct_index": 2,
     "id": "ca_medium_279"
-  },
-  {
-    "question": "The Matua community's concerns about being excluded from electoral rolls were raised in West Bengal. The Matua community follows the teachings of which spiritual leader?",
-    "options": [
-      "Chaitanya Mahaprabhu",
-      "Swami Vivekananda",
-      "Sri Ramakrishna",
-      "Harichand Thakur"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 3,
-    "id": "ca_hard_149"
   },
   {
     "question": "Light rail transit was likely to start from the next week for four districts in West Bengal, with IMD issuing yellow alerts. IMD stands for:",
@@ -83236,19 +83067,6 @@
     "id": "ca_medium_296"
   },
   {
-    "question": "India's import dependency for LPG supplies is approximately what percentage, making it vulnerable to disruptions in the Strait of Hormuz?",
-    "options": [
-      "About 45 per cent",
-      "About 60 per cent",
-      "About 30 per cent",
-      "About 75 per cent"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_hard_158"
-  },
-  {
     "question": "The 'discrepancies' in India's GDP data, as reported by the Ministry of Statistics, refer to the gap between which two components of GDP calculation?",
     "options": [
       "Revenue and expenditure estimates",
@@ -83258,7 +83076,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_159"
   },
   {
@@ -83310,7 +83128,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_161"
   },
   {
@@ -83336,7 +83154,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_162"
   },
   {
@@ -83479,7 +83297,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_medium_301"
   },
   {
@@ -83752,7 +83570,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_169"
   },
   {
@@ -83843,7 +83661,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_medium_312"
   },
   {
@@ -83934,7 +83752,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_easy_292"
   },
   {
@@ -84129,7 +83947,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_325"
   },
   {
@@ -84181,7 +83999,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_medium_327"
   },
   {
@@ -84246,7 +84064,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_329"
   },
   {
@@ -84315,19 +84133,6 @@
     "id": "ca_easy_301"
   },
   {
-    "question": "The TOTTL norms were reported to have been not halted for Air India. TOTTL stands for what in aviation regulatory context?",
-    "options": [
-      "Technical Operations and Travel Time Limits",
-      "Take-Off and Taxi Time Limitations",
-      "Total On-Time Takeoff and Landing",
-      "Transfer of Terminal Traffic Liability"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_hard_177"
-  },
-  {
     "question": "CPM (Communist Party of India - Marxist) announced Pinarayi Vijayan from Dharmadam constituency for Kerala elections. CPM's organisational headquarters is located in which city?",
     "options": [
       "Kolkata",
@@ -84339,19 +84144,6 @@
     "category": "current_affairs",
     "correct_index": 0,
     "id": "ca_medium_332"
-  },
-  {
-    "question": "The Rajya Sabha elections saw the cross-voting issue in Bihar and Odisha, termed a 'setback for Opp.' Cross-voting in Rajya Sabha elections is possible because voting is done through which method?",
-    "options": [
-      "Secret ballot",
-      "Voice vote",
-      "Open ballot with party whip",
-      "Electronic voting"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 0,
-    "id": "ca_hard_178"
   },
   {
     "question": "The Impact Player rule in IPL, mentioned in the sports section, allows teams to substitute a player during the match. The IPL is organized by which body?",
@@ -84454,7 +84246,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_180"
   },
   {
@@ -84493,7 +84285,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_182"
   },
   {
@@ -84545,7 +84337,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_hard_183"
   },
   {
@@ -84727,7 +84519,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_medium_342"
   },
   {
@@ -84831,7 +84623,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_190"
   },
   {
@@ -84974,7 +84766,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_easy_316"
   },
   {
@@ -85039,7 +84831,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_easy_320"
   },
   {
@@ -85130,7 +84922,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_medium_357"
   },
   {
