@@ -56595,7 +56595,7 @@
       "Gujarat",
       "Tamil Nadu"
     ],
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_hard_020"
   },
   {
@@ -75982,19 +75982,6 @@
     "id": "ca_easy_044"
   },
   {
-    "question": "After the US Supreme Court struck down unilateral tariffs, President Trump raised tariffs from 10% to 15% by invoking which US law?",
-    "options": [
-      "The Smoot-Hawley Tariff Act",
-      "The International Emergency Economic Powers Act (IEEPA)",
-      "The Trade Expansion Act, Section 232",
-      "The Trade Act of 1974, Section 301"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_hard_033"
-  },
-  {
     "question": "Kolkata's iconic Howrah Bridge (Rabindra Setu) was announced to receive a Rs 117-crore high-tech makeover. What type of bridge is Howrah Bridge?",
     "options": [
       "Suspension bridge",
@@ -76021,19 +76008,6 @@
     "id": "ca_easy_046"
   },
   {
-    "question": "In February 2026, the highest-ranking CPI(Maoist) leader to surrender was Devuji, who headed the organization's Central Military Commission. For approximately how long had the CPI(Maoist) been active before this surrender?",
-    "options": [
-      "About one decade",
-      "About two decades",
-      "About three decades",
-      "About four decades"
-    ],
-    "difficulty": 2,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_medium_061"
-  },
-  {
     "question": "To make India a full member of the International Energy Agency (IEA), what procedural step is required according to the IEA's founding charter?",
     "options": [
       "India must join NATO first, as IEA membership is linked to NATO allies",
@@ -76045,19 +76019,6 @@
     "category": "current_affairs",
     "correct_index": 1,
     "id": "ca_hard_035"
-  },
-  {
-    "question": "A broken power circuit was identified as the cause behind ISRO's failed launch of which satellite in January 2025?",
-    "options": [
-      "GSAT-24",
-      "NVS-02",
-      "Aditya-L1",
-      "RISAT-2BR2"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_hard_037"
   },
   {
     "question": "The 16th Finance Commission's recommendations, discussed include provisions to boost urban local bodies. The Finance Commission is constituted under which Article of the Indian Constitution?",
@@ -76671,32 +76632,6 @@
     "correct_index": 2
   },
   {
-    "id": "ca_medium_086",
-    "category": "current_affairs",
-    "difficulty": 2,
-    "question": "Which of the following is a key component of the India-EU Comprehensive Strategic Partnership signed alongside the FTA in 2026?",
-    "options": [
-      "Joint space exploration agreement",
-      "Maritime security and counter-terrorism pact",
-      "Mutual defence treaty with NATO integration",
-      "Currency swap arrangement"
-    ],
-    "correct_index": 1
-  },
-  {
-    "id": "ca_medium_087",
-    "category": "current_affairs",
-    "difficulty": 2,
-    "question": "In the context of the India-EU FTA, the 'mobility pact' primarily deals with which issue?",
-    "options": [
-      "Movement of goods across borders",
-      "Easier visa and work permit arrangements for professionals and students",
-      "Railway connectivity between India and Europe",
-      "Digital data transfer regulations"
-    ],
-    "correct_index": 1
-  },
-  {
     "id": "ca_easy_072",
     "category": "current_affairs",
     "difficulty": 1,
@@ -76732,19 +76667,6 @@
       "New Delhi",
       "Gurugram (Haryana)",
       "Paris"
-    ],
-    "correct_index": 2
-  },
-  {
-    "id": "ca_hard_048",
-    "category": "current_affairs",
-    "difficulty": 3,
-    "question": "Which Article of the Indian Constitution was invoked by the Supreme Court in 2026 to declare menstrual health as part of the fundamental right to life?",
-    "options": [
-      "Article 14",
-      "Article 19",
-      "Article 21",
-      "Article 32"
     ],
     "correct_index": 2
   },
@@ -76825,19 +76747,6 @@
       "Forest Conservation Act, 1980"
     ],
     "correct_index": 1
-  },
-  {
-    "id": "ca_medium_091",
-    "category": "current_affairs",
-    "difficulty": 2,
-    "question": "The 'Discombobulator' electronic warfare system reportedly used by the US in its Venezuela attack is designed to:",
-    "options": [
-      "Jam enemy radar and communication systems",
-      "Intercept ballistic missiles",
-      "Conduct underwater surveillance",
-      "Provide satellite navigation"
-    ],
-    "correct_index": 0
   },
   {
     "id": "ca_easy_077",
@@ -77165,19 +77074,6 @@
     "correct_index": 3
   },
   {
-    "id": "ca_medium_102",
-    "category": "current_affairs",
-    "difficulty": 2,
-    "question": "The self-enumeration feature in the upcoming Indian Census will support how many languages on a single portal?",
-    "options": [
-      "22",
-      "12",
-      "18",
-      "16"
-    ],
-    "correct_index": 3
-  },
-  {
     "id": "ca_easy_088",
     "category": "current_affairs",
     "difficulty": 1,
@@ -77332,19 +77228,6 @@
       "British Commonwealth Kingdom"
     ],
     "correct_index": 2
-  },
-  {
-    "id": "ca_medium_107",
-    "category": "current_affairs",
-    "difficulty": 2,
-    "question": "North Korea fired missiles into the sea, provoking regional tensions. North Korea's official name is:",
-    "options": [
-      "People's Republic of Korea",
-      "Democratic People's Republic of Korea",
-      "Korean Democratic Republic",
-      "Socialist Republic of Korea"
-    ],
-    "correct_index": 1
   },
   {
     "id": "ca_easy_093",
@@ -78075,19 +77958,6 @@
     "correct_index": 3
   },
   {
-    "id": "ca_easy_114",
-    "category": "current_affairs",
-    "difficulty": 1,
-    "question": "The Tirupati laddu controversy involving alleged beef tallow relates to the temple located in which state?",
-    "options": [
-      "Tamil Nadu",
-      "Karnataka",
-      "Telangana",
-      "Andhra Pradesh"
-    ],
-    "correct_index": 3
-  },
-  {
     "id": "ca_medium_129",
     "category": "current_affairs",
     "difficulty": 2,
@@ -78163,7 +78033,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_118",
@@ -78241,7 +78111,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_easy_121",
@@ -78267,7 +78137,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "ca_medium_136",
@@ -78280,7 +78150,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "ca_easy_124",
@@ -78293,7 +78163,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_137",
@@ -78319,7 +78189,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_139",
@@ -78332,7 +78202,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "ca_medium_140",
@@ -78345,7 +78215,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "ca_hard_079",
@@ -78358,7 +78228,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_141",
@@ -78397,20 +78267,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3
-  },
-  {
-    "id": "ca_hard_080",
-    "question": "The West Bengal government's Special Investment Region (SIR) was in news due to Election Commission concerns about voter deletion. The SIR is governed by which state legislation?",
-    "options": [
-      "West Bengal Land Reforms Act",
-      "West Bengal Town and Country Planning Act",
-      "West Bengal Industrial Development Corporation Act",
-      "A special ordinance for summary revision of electoral rolls"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_hard_081",
@@ -78436,7 +78293,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "ca_medium_143",
@@ -78449,7 +78306,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "ca_easy_127",
@@ -78462,7 +78319,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "ca_hard_083",
@@ -78475,7 +78332,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_130",
@@ -78501,7 +78358,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "ca_medium_145",
@@ -78514,7 +78371,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "ca_easy_131",
@@ -78527,7 +78384,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_146",
@@ -78540,7 +78397,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_hard_084",
@@ -78553,7 +78410,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "ca_easy_134",
@@ -78579,7 +78436,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "ca_hard_086",
@@ -78592,7 +78449,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "ca_medium_147",
@@ -78605,7 +78462,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_148",
@@ -78618,7 +78475,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "ca_easy_135",
@@ -78631,7 +78488,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "ca_hard_087",
@@ -78644,7 +78501,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "ca_medium_149",
@@ -78696,7 +78553,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_136",
@@ -78709,7 +78566,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_137",
@@ -78722,7 +78579,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_152",
@@ -78735,7 +78592,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "ca_medium_153",
@@ -78748,7 +78605,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "ca_easy_138",
@@ -78787,7 +78644,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "ca_hard_089",
@@ -78800,7 +78657,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "ca_easy_140",
@@ -78813,7 +78670,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "ca_easy_141",
@@ -78839,7 +78696,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_medium_155",
@@ -78852,7 +78709,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "ca_medium_156",
@@ -78865,7 +78722,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "ca_medium_157",
@@ -78878,7 +78735,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_158",
@@ -78891,7 +78748,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "ca_medium_159",
@@ -78917,7 +78774,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "ca_easy_143",
@@ -78943,7 +78800,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_hard_091",
@@ -78956,7 +78813,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "ca_easy_145",
@@ -78969,7 +78826,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "ca_medium_161",
@@ -79021,7 +78878,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_163",
@@ -79034,7 +78891,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "ca_medium_164",
@@ -79060,7 +78917,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_hard_092",
@@ -79073,7 +78930,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_149",
@@ -79086,7 +78943,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "ca_easy_150",
@@ -79151,7 +79008,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "ca_medium_166",
@@ -79177,7 +79034,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_medium_168",
@@ -79190,7 +79047,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_hard_096",
@@ -79242,7 +79099,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_easy_154",
@@ -79268,7 +79125,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_easy_155",
@@ -79281,7 +79138,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "ca_easy_156",
@@ -79333,7 +79190,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "ca_easy_158",
@@ -79359,7 +79216,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "ca_easy_161",
@@ -79372,7 +79229,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "ca_hard_099",
@@ -79385,7 +79242,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "ca_medium_172",
@@ -79398,7 +79255,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "ca_medium_173",
@@ -79411,7 +79268,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "ca_hard_100",
@@ -79450,7 +79307,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_medium_175",
@@ -79476,7 +79333,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "ca_easy_163",
@@ -79502,7 +79359,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "ca_hard_102",
@@ -79540,7 +79397,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_hard_103"
   },
   {
@@ -79566,7 +79423,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_easy_165"
   },
   {
@@ -79618,7 +79475,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_167"
   },
   {
@@ -79631,7 +79488,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_medium_179"
   },
   {
@@ -79644,7 +79501,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_easy_168"
   },
   {
@@ -79683,7 +79540,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_medium_181"
   },
   {
@@ -79709,7 +79566,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_170"
   },
   {
@@ -79722,7 +79579,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_hard_106"
   },
   {
@@ -79735,7 +79592,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_hard_108"
   },
   {
@@ -79761,7 +79618,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_171"
   },
   {
@@ -79774,7 +79631,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_medium_183"
   },
   {
@@ -79787,7 +79644,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_easy_172"
   },
   {
@@ -79813,7 +79670,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_184"
   },
   {
@@ -79826,7 +79683,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_173"
   },
   {
@@ -79839,7 +79696,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_185"
   },
   {
@@ -79852,7 +79709,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_easy_174"
   },
   {
@@ -79878,7 +79735,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_medium_186"
   },
   {
@@ -79891,7 +79748,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_easy_176"
   },
   {
@@ -79904,7 +79761,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_easy_177"
   },
   {
@@ -79930,7 +79787,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_medium_188"
   },
   {
@@ -79943,7 +79800,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_easy_178"
   },
   {
@@ -79956,7 +79813,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_110"
   },
   {
@@ -79982,7 +79839,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_easy_180"
   },
   {
@@ -79995,7 +79852,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_medium_189"
   },
   {
@@ -80008,7 +79865,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_medium_190"
   },
   {
@@ -80060,7 +79917,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_192"
   },
   {
@@ -80099,7 +79956,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_medium_195"
   },
   {
@@ -80125,7 +79982,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_181"
   },
   {
@@ -80138,7 +79995,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_easy_182"
   },
   {
@@ -80177,7 +80034,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_medium_196"
   },
   {
@@ -80190,7 +80047,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_easy_183"
   },
   {
@@ -80203,7 +80060,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_185"
   },
   {
@@ -80216,7 +80073,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_medium_197"
   },
   {
@@ -80229,7 +80086,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 3,
     "id": "ca_hard_116"
   },
   {
@@ -80307,7 +80164,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_200"
   },
   {
@@ -80320,7 +80177,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_medium_201"
   },
   {
@@ -80333,7 +80190,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_medium_202"
   },
   {
@@ -80346,7 +80203,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 3,
     "id": "ca_medium_203"
   },
   {
@@ -80359,7 +80216,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_easy_189"
   },
   {
@@ -80398,7 +80255,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_medium_204"
   },
   {
@@ -80424,7 +80281,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_easy_192"
   },
   {
@@ -80437,7 +80294,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_hard_117"
   },
   {
@@ -80463,7 +80320,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_medium_206"
   },
   {
@@ -80515,7 +80372,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_medium_207"
   },
   {
@@ -80528,7 +80385,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_118"
   },
   {
@@ -80541,7 +80398,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_easy_197"
   },
   {
@@ -80554,7 +80411,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_medium_208"
   },
   {
@@ -80567,7 +80424,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_medium_209"
   },
   {
@@ -80580,7 +80437,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_medium_210"
   },
   {
@@ -80593,7 +80450,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_198"
   },
   {
@@ -80606,7 +80463,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_119"
   },
   {
@@ -80619,7 +80476,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_211"
   },
   {
@@ -80645,7 +80502,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_hard_120"
   },
   {
@@ -80723,7 +80580,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_medium_214"
   },
   {
@@ -80736,7 +80593,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_medium_215"
   },
   {
@@ -80775,7 +80632,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_216"
   },
   {
@@ -80790,19 +80647,6 @@
     "category": "current_affairs",
     "correct_index": 0,
     "id": "ca_easy_202"
-  },
-  {
-    "question": "The Uttarakhand government cleared 227 ad hoc appointments by two successive CMs, ignoring red flags. Ad hoc appointments in government service can be challenged under which Article?",
-    "options": [
-      "Article 32 (Right to Constitutional Remedies)",
-      "Article 21 (Right to Life)",
-      "Article 14 (Right to Equality)",
-      "Article 19 (Freedom of Speech)"
-    ],
-    "difficulty": 2,
-    "category": "current_affairs",
-    "correct_index": 0,
-    "id": "ca_medium_217"
   },
   {
     "question": "The Centre asked states to wrap up the household survey by April-end, focusing on timely delivery of entitlements to vulnerable tribes. India's tribal population is protected under which Schedule of the Constitution?",
@@ -80827,7 +80671,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_203"
   },
   {
@@ -80866,7 +80710,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_126"
   },
   {
@@ -80879,7 +80723,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_205"
   },
   {
@@ -80892,7 +80736,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_218"
   },
   {
@@ -80918,7 +80762,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_219"
   },
   {
@@ -80931,7 +80775,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_220"
   },
   {
@@ -80944,7 +80788,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_medium_221"
   },
   {
@@ -80957,7 +80801,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_207"
   },
   {
@@ -80996,7 +80840,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_hard_128"
   },
   {
@@ -81009,7 +80853,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_129"
   },
   {
@@ -81022,7 +80866,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_223"
   },
   {
@@ -81061,7 +80905,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_medium_225"
   },
   {
@@ -81074,7 +80918,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_226"
   },
   {
@@ -81087,7 +80931,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 3,
     "id": "ca_medium_227"
   },
   {
@@ -81113,7 +80957,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_210"
   },
   {
@@ -81126,7 +80970,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_medium_228"
   },
   {
@@ -81139,7 +80983,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_medium_229"
   },
   {
@@ -81152,7 +80996,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_211"
   },
   {
@@ -81165,7 +81009,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_230"
   },
   {
@@ -81555,7 +81399,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_hard_134"
   },
   {
@@ -81583,19 +81427,6 @@
     "category": "current_affairs",
     "correct_index": 2,
     "id": "ca_medium_244"
-  },
-  {
-    "question": "In March 2026, the Wayanad landslide survivors were given new homes in a model township. The rehabilitation project in Kerala was worth how much according to the state government's plan?",
-    "options": [
-      "Rs 250 crore",
-      "Rs 360 crore",
-      "Rs 100 crore",
-      "Rs 500 crore"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_hard_135"
   },
   {
     "question": "Fino Payments Bank faced a probe for allegedly funnelling illicit funds from online money gaming. Fino Payments Bank is categorized as which type of bank by the RBI?",
@@ -81815,7 +81646,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_hard_138"
   },
   {
@@ -82140,7 +81971,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_hard_143"
   },
   {
@@ -82495,19 +82326,6 @@
     "id": "ca_medium_275"
   },
   {
-    "question": "The Bhagavad Gita's teachings were highlighted as guiding youth The Bhagavad Gita is part of which larger epic?",
-    "options": [
-      "Vedas",
-      "Mahabharata",
-      "Upanishads",
-      "Ramayana"
-    ],
-    "difficulty": 1,
-    "category": "current_affairs",
-    "correct_index": 1,
-    "id": "ca_easy_257"
-  },
-  {
     "question": "The Rupee crossed the 92 mark against the US Dollar for the first time during the West Asia crisis The exchange rate of the Rupee is determined by which system in India?",
     "options": [
       "Fixed exchange rate",
@@ -82662,19 +82480,6 @@
     "category": "current_affairs",
     "correct_index": 3,
     "id": "ca_easy_263"
-  },
-  {
-    "question": "The Kerala state government allocated Rs 360 crore for Wayanad landslide rehabilitation, including model township named after which concept?",
-    "options": [
-      "Nava Kerala township",
-      "Chooralmala-Mundakkai township",
-      "Jyothi Nagar",
-      "Punarchith (Rebuilding)"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
-    "correct_index": 3,
-    "id": "ca_hard_150"
   },
   {
     "question": "The UK sent more fighter jets to West Asia as PM Starmer called for Iran talks The UK's primary fighter jet deployed in such operations is the:",
@@ -83050,7 +82855,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_medium_295"
   },
   {
@@ -83063,7 +82868,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 3,
     "id": "ca_medium_296"
   },
   {
@@ -83089,7 +82894,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_297"
   },
   {
@@ -83102,7 +82907,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_easy_272"
   },
   {
@@ -83141,7 +82946,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_medium_298"
   },
   {
@@ -83184,19 +82989,6 @@
     "id": "ca_medium_299"
   },
   {
-    "question": "The Gujarat Uniform Civil Code (UCC) Bill, introduced specifically seeks to regulate which type of personal relationships?",
-    "options": [
-      "Adoption by single parents",
-      "Same-sex partnerships",
-      "Live-in relationships",
-      "Interfaith marriages only"
-    ],
-    "difficulty": 1,
-    "category": "current_affairs",
-    "correct_index": 3,
-    "id": "ca_easy_274"
-  },
-  {
     "question": "Which type of crude oil benchmark was primarily referenced in discussions about global oil price spikes during the Iran-Israel war?",
     "options": [
       "West Texas Intermediate (WTI)",
@@ -83232,7 +83024,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_hard_163"
   },
   {
@@ -83245,7 +83037,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_277"
   },
   {
@@ -83258,7 +83050,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_300"
   },
   {
@@ -83284,7 +83076,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_easy_279"
   },
   {
@@ -83310,7 +83102,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_easy_280"
   },
   {
@@ -83336,7 +83128,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_281"
   },
   {
@@ -83349,7 +83141,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_302"
   },
   {
@@ -83362,7 +83154,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_282"
   },
   {
@@ -83388,7 +83180,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_304"
   },
   {
@@ -83401,7 +83193,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_hard_165"
   },
   {
@@ -83414,7 +83206,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_166"
   },
   {
@@ -83440,7 +83232,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_easy_283"
   },
   {
@@ -83466,7 +83258,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_medium_306"
   },
   {
@@ -83492,7 +83284,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_medium_308"
   },
   {
@@ -83505,7 +83297,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_easy_284"
   },
   {
@@ -83544,7 +83336,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_309"
   },
   {
@@ -83557,7 +83349,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_hard_168"
   },
   {
@@ -83596,7 +83388,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_medium_310"
   },
   {
@@ -83609,7 +83401,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_170"
   },
   {
@@ -83622,7 +83414,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_288"
   },
   {
@@ -83648,7 +83440,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_easy_289"
   },
   {
@@ -83674,7 +83466,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 3,
     "id": "ca_medium_313"
   },
   {
@@ -83700,7 +83492,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_easy_290"
   },
   {
@@ -83713,7 +83505,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_315"
   },
   {
@@ -83739,7 +83531,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_317"
   },
   {
@@ -83765,7 +83557,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_easy_293"
   },
   {
@@ -83791,7 +83583,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_hard_171"
   },
   {
@@ -83804,7 +83596,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_295"
   },
   {
@@ -83843,7 +83635,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_320"
   },
   {
@@ -83856,7 +83648,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_hard_172"
   },
   {
@@ -83869,7 +83661,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_321"
   },
   {
@@ -83895,7 +83687,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_medium_323"
   },
   {
@@ -83908,7 +83700,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_173"
   },
   {
@@ -83921,7 +83713,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_324"
   },
   {
@@ -83960,7 +83752,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_hard_175"
   },
   {
@@ -83973,7 +83765,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_296"
   },
   {
@@ -84012,7 +83804,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_176"
   },
   {
@@ -84025,7 +83817,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 3,
     "id": "ca_easy_297"
   },
   {
@@ -84051,7 +83843,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_298"
   },
   {
@@ -84077,7 +83869,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_330"
   },
   {
@@ -84103,7 +83895,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_easy_300"
   },
   {
@@ -84116,7 +83908,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_medium_331"
   },
   {
@@ -84129,7 +83921,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_easy_301"
   },
   {
@@ -84142,7 +83934,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_332"
   },
   {
@@ -84155,7 +83947,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_easy_302"
   },
   {
@@ -84181,7 +83973,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 0,
     "id": "ca_easy_303"
   },
   {
@@ -84194,7 +83986,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_medium_333"
   },
   {
@@ -84207,7 +83999,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_medium_334"
   },
   {
@@ -84233,7 +84025,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_medium_335"
   },
   {
@@ -84259,7 +84051,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_hard_181"
   },
   {
@@ -84272,7 +84064,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 2,
     "id": "ca_easy_305"
   },
   {
@@ -84311,7 +84103,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_307"
   },
   {
@@ -84350,7 +84142,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_medium_337"
   },
   {
@@ -84363,7 +84155,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_easy_308"
   },
   {
@@ -84389,7 +84181,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_309"
   },
   {
@@ -84402,7 +84194,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 2,
     "id": "ca_hard_184"
   },
   {
@@ -84415,7 +84207,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_339"
   },
   {
@@ -84441,7 +84233,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_easy_310"
   },
   {
@@ -84454,7 +84246,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_hard_185"
   },
   {
@@ -84467,7 +84259,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_hard_186"
   },
   {
@@ -84493,7 +84285,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_hard_187"
   },
   {
@@ -84545,7 +84337,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_344"
   },
   {
@@ -84558,7 +84350,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 0,
     "id": "ca_hard_188"
   },
   {
@@ -84597,21 +84389,8 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
-    "id": "ca_medium_346"
-  },
-  {
-    "question": "The SIR (Summary Revision of electoral rolls) in West Bengal saw '60 lakh names under adjudication.' The EC set up 19 appellate tribunals for SIR appeals. These tribunals were staffed by whom?",
-    "options": [
-      "Election Commission officers",
-      "Sitting Supreme Court judges",
-      "Former judges of district and higher courts",
-      "Members of Parliament"
-    ],
-    "difficulty": 3,
-    "category": "current_affairs",
     "correct_index": 1,
-    "id": "ca_hard_189"
+    "id": "ca_medium_346"
   },
   {
     "question": "Denmark was reported to elect a new parliament on March 24. Denmark's parliament is known by what name?",
@@ -84649,7 +84428,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_medium_348"
   },
   {
@@ -84662,7 +84441,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_313"
   },
   {
@@ -84675,7 +84454,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_medium_349"
   },
   {
@@ -84701,7 +84480,7 @@
     ],
     "difficulty": 3,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_hard_191"
   },
   {
@@ -84714,7 +84493,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_medium_351"
   },
   {
@@ -84727,7 +84506,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_easy_314"
   },
   {
@@ -84753,7 +84532,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 2,
+    "correct_index": 1,
     "id": "ca_easy_315"
   },
   {
@@ -84779,7 +84558,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 1,
+    "correct_index": 3,
     "id": "ca_easy_317"
   },
   {
@@ -84805,7 +84584,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_easy_318"
   },
   {
@@ -84818,7 +84597,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 2,
     "id": "ca_easy_319"
   },
   {
@@ -84857,7 +84636,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 1,
     "id": "ca_medium_354"
   },
   {
@@ -84883,7 +84662,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 0,
+    "correct_index": 3,
     "id": "ca_medium_355"
   },
   {
@@ -84909,7 +84688,7 @@
     ],
     "difficulty": 2,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 1,
     "id": "ca_medium_356"
   },
   {
@@ -84935,7 +84714,7 @@
     ],
     "difficulty": 1,
     "category": "current_affairs",
-    "correct_index": 3,
+    "correct_index": 0,
     "id": "ca_easy_322"
   },
   {
