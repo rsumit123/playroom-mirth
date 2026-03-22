@@ -50,6 +50,7 @@ def start_turn(state: RoomGameState) -> None:
     state.turn_start_ts = time.time()
     state.guessed_players = set()
     state.strokes = []
+    state._skips_this_turn = 0
 
 
 def serialize_state(state: RoomGameState) -> str:

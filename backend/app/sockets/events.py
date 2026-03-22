@@ -189,38 +189,75 @@ async def _emit_next_turn(state: RoomGameState, room_code: str) -> None:
         return
 
     start_turn(state)
-    with SessionLocal() as db:
-        word = _select_word(db, state.difficulty, state.word_history_ids, state.game_type)
-        if word:
-            state.current_word_id = word.id
-            state.current_word_text = word.text
-            state.word_history_ids.append(word.id)
-        _save_state(db, state)
 
     describer_id = state.player_order[state.describer_index]
-    hint = _generate_hint(state.current_word_text) if state.current_word_text else None
-    await sio.emit(
-        "game:turn_start",
-        {
-            "describer_id": describer_id,
-            "turn_seconds": state.turn_seconds,
-            "turn_start_ts": int(state.turn_start_ts),
-            "round_index": state.round_index,
-            "game_type": state.game_type,
-            "hint": hint,
-        },
-        room=room_code,
-    )
     describer_sid = PLAYER_TO_SID.get(describer_id)
-    if describer_sid and state.current_word_text:
-        await sio.emit("game:new_word", {"word": state.current_word_text}, to=describer_sid)
-        await _schedule_turn_timer(state)
-    elif not describer_sid:
-        # Describer in grace period — use shorter timer (15s) to limit dead time
-        _logger.info("Describer %s has no SID (grace period), using 15s timer", describer_id)
+
+    if state.game_type == "scribble":
+        # Scribble: offer 3 word choices to the drawer
+        with SessionLocal() as db:
+            choices = []
+            for _ in range(3):
+                w = _select_word(db, state.difficulty, state.word_history_ids + [c.id for c in choices], state.game_type)
+                if w:
+                    choices.append(w)
+            if not choices:
+                # Fallback: at least get one word
+                w = _select_word(db, state.difficulty, [], state.game_type)
+                if w:
+                    choices.append(w)
+            state._word_choices = {w.text: w.id for w in choices}
+            _save_state(db, state)
+
+        await sio.emit(
+            "game:turn_start",
+            {
+                "describer_id": describer_id,
+                "turn_seconds": state.turn_seconds,
+                "turn_start_ts": int(state.turn_start_ts),
+                "round_index": state.round_index,
+                "game_type": state.game_type,
+                "choosing": True,
+            },
+            room=room_code,
+        )
+        if describer_sid and choices:
+            await sio.emit("game:word_choices", {"words": [w.text for w in choices]}, to=describer_sid)
+        # Timer starts after word is picked (in game:word_pick handler)
+        # Schedule a fallback timer (15s) in case drawer doesn't pick
         await _schedule_turn_timer(state, override_seconds=15)
     else:
-        await _schedule_turn_timer(state)
+        # Charades: select one word immediately
+        with SessionLocal() as db:
+            word = _select_word(db, state.difficulty, state.word_history_ids, state.game_type)
+            if word:
+                state.current_word_id = word.id
+                state.current_word_text = word.text
+                state.word_history_ids.append(word.id)
+            _save_state(db, state)
+
+        hint = _generate_hint(state.current_word_text) if state.current_word_text else None
+        await sio.emit(
+            "game:turn_start",
+            {
+                "describer_id": describer_id,
+                "turn_seconds": state.turn_seconds,
+                "turn_start_ts": int(state.turn_start_ts),
+                "round_index": state.round_index,
+                "game_type": state.game_type,
+                "hint": hint,
+            },
+            room=room_code,
+        )
+        if describer_sid and state.current_word_text:
+            await sio.emit("game:new_word", {"word": state.current_word_text}, to=describer_sid)
+            await _schedule_turn_timer(state)
+        elif not describer_sid:
+            # Describer in grace period — use shorter timer (15s) to limit dead time
+            _logger.info("Describer %s has no SID (grace period), using 15s timer", describer_id)
+            await _schedule_turn_timer(state, override_seconds=15)
+        else:
+            await _schedule_turn_timer(state)
 
 
 async def _advance_turn(room_code: str) -> None:
@@ -1072,6 +1109,86 @@ async def game_leave(sid, data):
                 _save_state(db, state)
 
     await sio.leave_room(sid, room_code)
+
+
+@sio.on("game:word_pick")
+async def game_word_pick(sid, data):
+    """Drawer picks one of the 3 offered words in scribble."""
+    room_code = data.get("room_code")
+    word_text = data.get("word")
+    if not room_code or not word_text:
+        return {"ok": False}
+    state = ROOM_STATES.get(room_code)
+    if not state or state.game_type != "scribble":
+        return {"ok": False}
+    player_id = SID_TO_PLAYER.get(sid)
+    describer_id = state.player_order[state.describer_index]
+    if player_id != describer_id:
+        return {"ok": False}
+    choices = getattr(state, '_word_choices', {})
+    if word_text not in choices:
+        return {"ok": False}
+    # Set the chosen word
+    state.current_word_id = choices[word_text]
+    state.current_word_text = word_text
+    state.word_history_ids.append(choices[word_text])
+    state._word_choices = {}
+    # Reset turn timer to full duration now that word is picked
+    state.turn_start_ts = time.time()
+    with SessionLocal() as db:
+        _save_state(db, state)
+    # Send the chosen word to the drawer
+    await sio.emit("game:new_word", {"word": word_text}, to=sid)
+    # Send hint + updated turn_start to all players
+    hint = _generate_hint(word_text)
+    await sio.emit("game:turn_start", {
+        "describer_id": describer_id,
+        "turn_seconds": state.turn_seconds,
+        "turn_start_ts": int(state.turn_start_ts),
+        "round_index": state.round_index,
+        "game_type": state.game_type,
+        "hint": hint,
+    }, room=room_code)
+    await _schedule_turn_timer(state)
+    return {"ok": True}
+
+
+@sio.on("game:skip_word")
+async def game_skip_word(sid, data):
+    """Describer skips the current word and gets a new one. Max 2 skips per turn."""
+    room_code = data.get("room_code")
+    if not room_code:
+        return {"ok": False, "error": "room_code required"}
+    state = ROOM_STATES.get(room_code)
+    if not state:
+        return {"ok": False, "error": "Game not active"}
+    player_id = SID_TO_PLAYER.get(sid)
+    describer_id = state.player_order[state.describer_index]
+    if player_id != describer_id:
+        await emit_error(sid, "Only the describer can skip", code="FORBIDDEN")
+        return {"ok": False, "error": "FORBIDDEN"}
+    # Track skips per turn (stored on state, cleared by start_turn)
+    if not hasattr(state, '_skips_this_turn'):
+        state._skips_this_turn = 0
+    if state._skips_this_turn >= 2:
+        await emit_error(sid, "No skips remaining", code="SKIP_LIMIT")
+        return {"ok": False, "error": "SKIP_LIMIT"}
+    state._skips_this_turn += 1
+    # Select a new word
+    with SessionLocal() as db:
+        word = _select_word(db, state.difficulty, state.word_history_ids, state.game_type)
+        if word:
+            state.current_word_id = word.id
+            state.current_word_text = word.text
+            state.word_history_ids.append(word.id)
+        _save_state(db, state)
+    hint = _generate_hint(state.current_word_text) if state.current_word_text else None
+    # Send new word to describer
+    if state.current_word_text:
+        await sio.emit("game:new_word", {"word": state.current_word_text}, to=sid)
+    # Send updated hint to all (so guessers see the new hint)
+    await sio.emit("game:hint", {"hint": hint}, room=room_code, skip_sid=sid)
+    return {"ok": True, "skips_remaining": 2 - state._skips_this_turn}
 
 
 @sio.on("game:turn_end")

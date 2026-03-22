@@ -9,7 +9,7 @@ import GameAlerts, { useGameAlerts } from '../components/GameAlerts.jsx'
 import LeaveGameModal from '../components/LeaveGameModal.jsx'
 import { playSound } from '../../lib/sounds.js'
 
-export default function ScribbleGame({ game, onSend, onStroke, onClear, onUndo, onRejoin, onLeave, playerNames = {} }) {
+export default function ScribbleGame({ game, onSend, onStroke, onClear, onUndo, onWordPick, onRejoin, onLeave, playerNames = {} }) {
   const [message, setMessage] = useState('')
   const [showLeaveModal, setShowLeaveModal] = useState(false)
   const [confettiKey, setConfettiKey] = useState(0)
@@ -154,14 +154,35 @@ export default function ScribbleGame({ game, onSend, onStroke, onClear, onUndo, 
 
       {/* Word bar (drawer) or info bar (guesser) */}
       {role === 'drawer' ? (
-        <div className="bg-accent/5 border-b border-accent/10 px-4 py-2.5 text-center shrink-0">
-          <div className="text-[10px] uppercase tracking-wider text-accent/60 mb-0.5">Draw this</div>
-          <div className="font-display text-2xl text-accent">{game?.word || '...'}</div>
-        </div>
+        game?.wordChoices && game.wordChoices.length > 0 ? (
+          <div className="bg-accent/5 border-b border-accent/10 px-4 py-3 shrink-0">
+            <div className="text-[10px] uppercase tracking-wider text-accent/60 mb-2 text-center">Choose a word to draw</div>
+            <div className="flex gap-2 justify-center">
+              {game.wordChoices.map((w) => (
+                <button
+                  key={w}
+                  className="bg-white border-2 border-accent/20 hover:border-accent rounded-xl px-4 py-2 font-display text-base text-accent touch-target transition active:scale-95"
+                  onClick={() => onWordPick?.(w)}
+                >
+                  {w}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="bg-accent/5 border-b border-accent/10 px-4 py-2.5 text-center shrink-0">
+            <div className="text-[10px] uppercase tracking-wider text-accent/60 mb-0.5">Draw this</div>
+            <div className="font-display text-2xl text-accent">{game?.word || '...'}</div>
+          </div>
+        )
       ) : (
         <div className="bg-mist/50 border-b border-black/5 px-4 py-2 text-center shrink-0">
           <div className="text-sm text-slate/50">
-            <span className="font-medium text-ink">{playerNames[describerId] || 'Someone'}</span> is drawing...
+            {game?.turn?.choosing ? (
+              <><span className="font-medium text-ink">{playerNames[describerId] || 'Someone'}</span> is choosing a word...</>
+            ) : (
+              <><span className="font-medium text-ink">{playerNames[describerId] || 'Someone'}</span> is drawing...</>
+            )}
           </div>
           {game?.hint && (
             <div className="font-mono text-lg sm:text-xl tracking-[0.25em] text-ink/70 mt-1.5 select-none">

@@ -342,9 +342,9 @@ export function AppProvider({ children }) {
     socket.off('connect')
     socket.on('game:turn_start', (payload) => setGame((g) => {
       const isSameTurn = g.turn && g.turn.describer_id === payload.describer_id && g.turn.turn_start_ts === payload.turn_start_ts
-      return { ...g, turn: payload, hint: payload.hint || null, word: isSameTurn ? g.word : null, lastGuess: null, roundEnd: null, gameEnd: null, playAgain: null, scribbleStrokes: isSameTurn ? (g.scribbleStrokes || []) : [], guessedPlayerIds: isSameTurn ? (g.guessedPlayerIds || []) : [] }
+      return { ...g, turn: payload, hint: payload.hint || null, word: isSameTurn ? g.word : null, lastGuess: null, roundEnd: null, gameEnd: null, playAgain: null, messages: isSameTurn ? (g.messages || []) : [], scribbleStrokes: isSameTurn ? (g.scribbleStrokes || []) : [], guessedPlayerIds: isSameTurn ? (g.guessedPlayerIds || []) : [] }
     }))
-    socket.on('game:new_word', (payload) => setGame((g) => ({ ...g, word: payload.word })))
+    socket.on('game:new_word', (payload) => setGame((g) => ({ ...g, word: payload.word, wordChoices: null })))
     socket.on('chat:message', (payload) => {
       setGame((g) => ({ ...g, messages: [...(g.messages || []), payload] }))
     })
@@ -372,6 +372,10 @@ export function AppProvider({ children }) {
     socket.on('trivia:question_result', (payload) => setGame((g) => ({
       ...g, triviaResult: payload, scores: payload.scores || g.scores,
     })))
+    socket.off('game:word_choices')
+    socket.on('game:word_choices', (payload) => {
+      setGame((g) => ({ ...g, wordChoices: payload.words || [] }))
+    })
     // Scribble events
     socket.off('scribble:draw')
     socket.off('scribble:clear')

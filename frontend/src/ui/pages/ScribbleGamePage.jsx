@@ -75,6 +75,10 @@ export default function ScribbleGamePage() {
       onStroke={handleStroke}
       onClear={handleClear}
       onUndo={handleUndo}
+      onWordPick={(word) => {
+        if (!room?.code) return
+        getSocket().emit('game:word_pick', { room_code: room.code, word })
+      }}
       onLeave={handleLeave}
       onRejoin={() => {
         if (!room?.code) return

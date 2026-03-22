@@ -57,6 +57,10 @@ export default function GamePage() {
       game={{ ...game, selfPlayerId }}
       playerNames={playerNames}
       onSend={handleSend}
+      onSkip={() => {
+        if (!room?.code) return
+        getSocket().emit('game:skip_word', { room_code: room.code })
+      }}
       onLeave={handleLeave}
       onRejoin={() => {
         if (!room?.code) return

@@ -7,7 +7,7 @@ import GameAlerts, { useGameAlerts } from '../components/GameAlerts.jsx'
 import LeaveGameModal from '../components/LeaveGameModal.jsx'
 import { playSound } from '../../lib/sounds.js'
 
-export default function Game({ game, onSend, onRejoin, onLeave, playerNames = {} }) {
+export default function Game({ game, onSend, onSkip, onRejoin, onLeave, playerNames = {} }) {
   const [message, setMessage] = useState('')
   const [showLeaveModal, setShowLeaveModal] = useState(false)
   const [confettiKey, setConfettiKey] = useState(0)
@@ -214,8 +214,13 @@ export default function Game({ game, onSend, onRejoin, onLeave, playerNames = {}
           {/* Input bar */}
           <div className="border-t border-black/5 bg-white/80 backdrop-blur px-3 py-2.5 shrink-0 safe-area-bottom">
             {role === 'describer' ? (
-              <div className="text-sm text-slate/50 text-center py-1.5">
-                Give clues out loud &mdash; guesses appear above
+              <div className="flex items-center justify-between py-1">
+                <span className="text-sm text-slate/50">Give clues out loud</span>
+                {onSkip && (
+                  <button className="btn-ghost-sm touch-target text-xs text-slate/60" onClick={onSkip}>
+                    Skip word
+                  </button>
+                )}
               </div>
             ) : (
               <div className="flex items-center gap-2">
