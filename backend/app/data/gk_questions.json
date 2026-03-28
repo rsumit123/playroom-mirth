@@ -84729,5 +84729,837 @@
     "category": "current_affairs",
     "correct_index": 1,
     "id": "ca_hard_194"
+  },
+  {
+    "id": "ca_easy_323",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Strait of Hormuz, a critical chokepoint for global oil trade, connects the Persian Gulf to which body of water?",
+    "options": [
+      "Red Sea",
+      "Gulf of Oman",
+      "Gulf of Aden",
+      "Arabian Sea"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_324",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which US military base, located in the Indian Ocean and used as a strategic airbase, is situated on Diego Garcia?",
+    "options": [
+      "Incirlik Air Base",
+      "Al Udeid Air Base",
+      "Camp Lemonnier",
+      "Naval Support Facility Diego Garcia"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_358",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India's Census, a decennial exercise conducted under the Census Act, was first carried out in which year?",
+    "options": [
+      "1872",
+      "1891",
+      "1881",
+      "1861"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_325",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Under Indian law, census data is kept confidential under which Act?",
+    "options": [
+      "Statistics Collection Act, 1953",
+      "National Population Act, 1950",
+      "Census Act, 1948",
+      "Enumeration Act, 1947"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_359",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Cabinet Committee on Security (CCS), India's apex body for national security decisions, is chaired by whom?",
+    "options": [
+      "National Security Advisor",
+      "Defence Minister",
+      "Prime Minister",
+      "President of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_360",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Intermediate Range Ballistic Missiles (IRBMs) are defined as having a range between which values?",
+    "options": [
+      "1,000-3,000 km",
+      "5,500-8,000 km",
+      "3,000-5,500 km",
+      "500-1,000 km"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_326",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Jal Jeevan Mission, launched by the Government of India, aims to provide what to every rural household?",
+    "options": [
+      "Toilets",
+      "Functional household tap connection",
+      "Electricity connection",
+      "LPG connection"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_361",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "In India, which public sector bank is the sole authorised bank for issuing Electoral Bonds?",
+    "options": [
+      "Bank of Baroda",
+      "Union Bank of India",
+      "Punjab National Bank",
+      "State Bank of India"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_195",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "India's strategic petroleum reserves are maintained by the Indian Strategic Petroleum Reserves Limited (ISPRL). Which of these is NOT a location of India's strategic oil reserve?",
+    "options": [
+      "Visakhapatnam",
+      "Padur",
+      "Mangalore",
+      "Jamnagar"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_362",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Uniform Civil Code (UCC), which aims to replace personal laws of different religious communities, finds mention in which part of the Indian Constitution?",
+    "options": [
+      "Fundamental Duties",
+      "Preamble",
+      "Fundamental Rights",
+      "Directive Principles of State Policy"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_196",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Article 44 of the Indian Constitution, which deals with the Uniform Civil Code, falls under which specific Directive Principle?",
+    "options": [
+      "Article 43 - Living wage for workers",
+      "Article 44 - Uniform civil code for the citizens",
+      "Article 46 - Promotion of educational interests of SCs/STs",
+      "Article 39 - Equal justice and free legal aid"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_327",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "SEBI, the regulator of India's securities market, stands for:",
+    "options": [
+      "Securities and Equity Board of India",
+      "Stock Exchange Board of India",
+      "Securities and Exchange Board of India",
+      "Securities and Exchange Bureau of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_363",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The National Company Law Tribunal (NCLT) in India was established under which Act?",
+    "options": [
+      "Competition Act, 2002",
+      "Insolvency and Bankruptcy Code, 2016",
+      "Companies Act, 2013",
+      "SEBI Act, 1992"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_364",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India's ethanol blending programme targets blending ethanol with petrol. What is the target blending percentage set by the government for 2025-26?",
+    "options": [
+      "20%",
+      "25%",
+      "15%",
+      "10%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_328",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The World Trade Organization's ministerial conferences are the highest decision-making body of the WTO. Where is the WTO headquartered?",
+    "options": [
+      "New York",
+      "Brussels",
+      "The Hague",
+      "Geneva"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_197",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Under India's Foreign Contribution (Regulation) Act (FCRA), which ministry grants registration and prior permission for receiving foreign contributions?",
+    "options": [
+      "Ministry of Corporate Affairs",
+      "Ministry of External Affairs",
+      "Ministry of Home Affairs",
+      "Ministry of Finance"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_365",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Supreme Court of India ruled that Scheduled Caste status is lost upon religious conversion. Under which Article of the Constitution are Scheduled Castes notified?",
+    "options": [
+      "Article 341",
+      "Article 340",
+      "Article 342",
+      "Article 338"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_366",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India's Nationally Determined Contributions (NDCs) under the Paris Agreement are climate targets submitted to which body?",
+    "options": [
+      "UN Environment Programme",
+      "Intergovernmental Panel on Climate Change",
+      "World Meteorological Organization",
+      "UNFCCC"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_329",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Paris Agreement on climate change, adopted in 2015, aims to limit global warming to well below how many degrees Celsius above pre-industrial levels?",
+    "options": [
+      "2.5 degrees",
+      "2 degrees",
+      "1.5 degrees",
+      "1 degree"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_198",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The UDAN (Ude Desh ka Aam Nagrik) scheme is aimed at making air travel affordable. UDAN falls under which broader initiative of the Government of India?",
+    "options": [
+      "Make in India",
+      "National Civil Aviation Policy",
+      "Smart Cities Mission",
+      "Startup India"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_330",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Desalination, the process of removing salt from seawater to produce freshwater, is widely used in which region that heavily depends on it for drinking water?",
+    "options": [
+      "Southeast Asia",
+      "Gulf countries (Middle East)",
+      "Central America",
+      "Sub-Saharan Africa"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_367",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "In India, which body is responsible for the delimitation of constituencies for Lok Sabha and State Legislative Assemblies?",
+    "options": [
+      "Election Commission of India",
+      "Parliamentary Committee on Home Affairs",
+      "Law Commission",
+      "Delimitation Commission"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_199",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Women's Reservation Bill, which provides for reservation of seats for women in Lok Sabha and State Assemblies, was passed as which Constitutional Amendment Act?",
+    "options": [
+      "106th Amendment Act",
+      "104th Amendment Act",
+      "107th Amendment Act",
+      "105th Amendment Act"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_368",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Vikramshila Setu, one of the longest river bridges in India, spans across which river?",
+    "options": [
+      "Ganga",
+      "Godavari",
+      "Yamuna",
+      "Brahmaputra"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_369",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Noida International Airport at Jewar, under construction in Uttar Pradesh, is located in which district?",
+    "options": [
+      "Gautam Buddha Nagar",
+      "Noida",
+      "Ghaziabad",
+      "Bulandshahr"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_331",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Central Bureau of Investigation (CBI) operates under the administrative control of which ministry in India?",
+    "options": [
+      "Ministry of Personnel, Public Grievances and Pensions",
+      "Prime Minister's Office",
+      "Ministry of Home Affairs",
+      "Ministry of Law and Justice"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_200",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "An induction cooktop works on the principle of electromagnetic induction. Who is credited with the discovery of electromagnetic induction?",
+    "options": [
+      "Hans Christian Oersted",
+      "Nikola Tesla",
+      "Michael Faraday",
+      "James Clerk Maxwell"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_370",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "In the context of India's new criminal laws that replaced the Indian Penal Code, what is the name of the new legislation?",
+    "options": [
+      "Bharatiya Nagarik Suraksha Sanhita",
+      "Bharatiya Dand Sanhita",
+      "Bharatiya Nyaya Sanhita",
+      "Bharatiya Sakshya Adhiniyam"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_371",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which Indian institution developed India's first indigenously built Tunnel Boring Machine (TBM)?",
+    "options": [
+      "Hindustan Aeronautics Limited",
+      "Larsen & Toubro (L&T)",
+      "Bharat Heavy Electricals Limited (BHEL)",
+      "Rail Vikas Nigam Limited"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_332",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The QS World University Rankings are published by which organisation?",
+    "options": [
+      "Times Higher Education",
+      "Quacquarelli Symonds",
+      "U.S. News & World Report",
+      "Shanghai Ranking Consultancy"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_372",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "IIT Kharagpur, which featured in top QS rankings, was the first Indian Institute of Technology to be established. In which year was it founded?",
+    "options": [
+      "1951",
+      "1947",
+      "1956",
+      "1950"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_201",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Registrar General of India (RGI), who oversees the Census of India, functions under which ministry?",
+    "options": [
+      "Ministry of Statistics and Programme Implementation",
+      "NITI Aayog",
+      "Ministry of Personnel",
+      "Ministry of Home Affairs"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_333",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Reserve Bank of India (RBI) has launched the Central Bank Digital Currency (CBDC), also known as the e-Rupee. What type of currency is a CBDC?",
+    "options": [
+      "Cryptocurrency like Bitcoin",
+      "Digital form of a country's fiat currency",
+      "Foreign exchange reserve",
+      "Virtual currency backed by gold"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_373",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "NASA's Artemis programme, which includes plans for a lunar base, aims to return humans to which celestial body?",
+    "options": [
+      "The Moon",
+      "Venus",
+      "Mars",
+      "International Space Station"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_202",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Sabarimala temple in Kerala is dedicated to which deity?",
+    "options": [
+      "Lord Murugan",
+      "Lord Ayyappa",
+      "Lord Shiva",
+      "Lord Vishnu"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_334",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Semaglutide, a drug originally developed for Type 2 diabetes that has gained prominence for weight loss, belongs to which class of drugs?",
+    "options": [
+      "GLP-1 receptor agonists",
+      "ACE inhibitors",
+      "Statins",
+      "Beta blockers"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_374",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The 'carrom ball' in cricket, a type of delivery bowled by spinners using the fingers, was popularised by which Sri Lankan bowler?",
+    "options": [
+      "Ajantha Mendis",
+      "Muttiah Muralitharan",
+      "Lasith Malinga",
+      "Rangana Herath"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_375",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Antimicrobial resistance (AMR), described as a silent pandemic, occurs when microorganisms become resistant to drugs. Which global organisation has declared AMR one of the top 10 global public health threats?",
+    "options": [
+      "UNICEF",
+      "World Bank",
+      "World Health Organization",
+      "International Red Cross"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_203",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Natanz facility, which has been a focus of international attention regarding Iran's nuclear programme, is primarily used for what purpose?",
+    "options": [
+      "Plutonium reprocessing",
+      "Heavy water production",
+      "Nuclear weapons testing",
+      "Uranium enrichment"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_335",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which international agreement, signed in 2015, governs the Iran nuclear deal framework?",
+    "options": [
+      "Comprehensive Nuclear-Test-Ban Treaty (CTBT)",
+      "Joint Comprehensive Plan of Action (JCPOA)",
+      "Treaty on the Non-Proliferation of Nuclear Weapons (NPT)",
+      "Camp David Accords"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_376",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Hezbollah, a political and militant organisation based in Lebanon, was founded in which decade?",
+    "options": [
+      "2000s",
+      "1980s",
+      "1970s",
+      "1990s"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_377",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Election Commission of India (ECI) has the power to transfer government officials during elections. This power is derived from which Article of the Constitution?",
+    "options": [
+      "Article 326",
+      "Article 325",
+      "Article 324",
+      "Article 329"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_204",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Under India's Central Armed Police Forces (CAPFs), which force is primarily responsible for border security along India's borders with Pakistan and Bangladesh?",
+    "options": [
+      "Sashastra Seema Bal (SSB)",
+      "Border Security Force (BSF)",
+      "Indo-Tibetan Border Police (ITBP)",
+      "Central Reserve Police Force (CRPF)"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_336",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Organisation for Economic Co-operation and Development (OECD), which publishes GDP growth forecasts for various countries, is headquartered in which city?",
+    "options": [
+      "Vienna",
+      "Brussels",
+      "Paris",
+      "Geneva"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_378",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Foreign Direct Investment (FDI) differs from Foreign Portfolio Investment (FPI) primarily because FDI involves:",
+    "options": [
+      "Short-term speculative investment",
+      "Buying government bonds",
+      "Trading in currency markets",
+      "A lasting interest and significant control in a foreign enterprise"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_205",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Transgender Persons (Protection of Rights) Act in India was originally enacted in which year?",
+    "options": [
+      "2019",
+      "2014",
+      "2021",
+      "2017"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_337",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Supreme Court of India's ruling on permanent commission for women officers applies to which branches of India's armed forces?",
+    "options": [
+      "Only the Navy",
+      "Army and Air Force",
+      "Army, Navy, and Air Force",
+      "Only the Army"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_379",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Zoological Survey of India (ZSI), which discovers new species in India, was established in 1916 and is headquartered in which city?",
+    "options": [
+      "Kolkata",
+      "Chennai",
+      "New Delhi",
+      "Dehradun"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_380",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India's forex reserves are managed by the Reserve Bank of India. The reserves primarily consist of foreign currency assets, gold, SDRs, and the reserve tranche position with which organisation?",
+    "options": [
+      "Bank for International Settlements",
+      "World Bank",
+      "Asian Development Bank",
+      "International Monetary Fund"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_206",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "In India, plea bargaining was introduced through an amendment to the Code of Criminal Procedure. Under the new Bharatiya Nagarik Suraksha Sanhita, plea bargaining is available for offences punishable with imprisonment up to how many years?",
+    "options": [
+      "5 years",
+      "7 years",
+      "10 years",
+      "3 years"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_338",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Puri Jagannath Temple, whose ratna bhandar (treasury) inventory has been in the news, is located in which state?",
+    "options": [
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Odisha",
+      "West Bengal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_381",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India's National Education Policy (NEP) 2020 proposes replacing the University Grants Commission (UGC) with which new body?",
+    "options": [
+      "Higher Education Commission of India",
+      "Indian Education Authority",
+      "National Higher Education Regulatory Council",
+      "National Education Commission"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_207",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Facial recognition technology, now being deployed at Indian railway stations, works by mapping facial features. Which type of artificial intelligence is primarily used in facial recognition?",
+    "options": [
+      "Natural Language Processing",
+      "Expert Systems",
+      "Computer Vision",
+      "Reinforcement Learning"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_382",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "In the context of Italian politics, a constitutional referendum was held on judicial reform under PM Giorgia Meloni. Italy's form of government is a:",
+    "options": [
+      "Presidential republic",
+      "Constitutional monarchy",
+      "Semi-presidential republic",
+      "Parliamentary republic"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_339",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The cervical cancer vaccine protects against which virus that causes the majority of cervical cancer cases?",
+    "options": [
+      "Herpes Simplex virus",
+      "Hepatitis B virus",
+      "Human Papillomavirus (HPV)",
+      "Epstein-Barr virus"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_383",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Custodial death, a serious human rights concern in India, is monitored by which constitutional body?",
+    "options": [
+      "Central Vigilance Commission",
+      "Central Bureau of Investigation",
+      "National Human Rights Commission",
+      "Lokpal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_208",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The concept of 'bail is the rule, jail is the exception' in Indian criminal jurisprudence was established in which landmark Supreme Court case?",
+    "options": [
+      "Maneka Gandhi v. Union of India",
+      "State of Rajasthan v. Balchand",
+      "K. Basu v. State of West Bengal",
+      "Arnesh Kumar v. State of Bihar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_340",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "LPG, the cooking gas widely used in Indian households, stands for:",
+    "options": [
+      "Liquefied Petroleum Gas",
+      "Low Pressure Gas",
+      "Liquid Pressurised Gas",
+      "Liquid Propane Gas"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_384",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Bihar Diwas, celebrated to mark the formation of the state of Bihar, is observed on which date?",
+    "options": [
+      "January 26",
+      "November 15",
+      "March 15",
+      "March 22"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_209",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "The Anthropic study mentioned in the context of AI replacing jobs identified which sector as most exposed to AI disruption?",
+    "options": [
+      "Healthcare",
+      "Manufacturing",
+      "Finance, management, and legal sectors",
+      "Agriculture"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_385",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "The Narendra Modi Stadium in Ahmedabad, the world's largest cricket stadium by seating capacity, can hold approximately how many spectators?",
+    "options": [
+      "110,000",
+      "132,000",
+      "150,000",
+      "100,000"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_341",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "The Finance Bill in India, which contains the government's taxation proposals for the year, must be passed by which House of Parliament?",
+    "options": [
+      "Either House",
+      "Lok Sabha only",
+      "Rajya Sabha only",
+      "Both Houses jointly"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_386",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "India's Pradhan Mantri Ujjwala Yojana (PMUY) scheme aims to provide free LPG connections to women from which category of households?",
+    "options": [
+      "Below Poverty Line (BPL) households",
+      "Urban slum households",
+      "All rural households",
+      "SC/ST households only"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_210",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Section 230 of the Communications Decency Act, which provides tech companies liability protection for user-generated content, is a law of which country?",
+    "options": [
+      "United Kingdom",
+      "European Union",
+      "India",
+      "United States"
+    ],
+    "correct_index": 3
   }
 ]
