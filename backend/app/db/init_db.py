@@ -48,3 +48,5 @@ def init_db() -> None:
             conn.execute(text("ALTER TABLE users ADD COLUMN display_name VARCHAR(255)"))
         if "avatar_url" not in user_columns:
             conn.execute(text("ALTER TABLE users ADD COLUMN avatar_url VARCHAR(512)"))
+        if "is_bot" not in user_columns:
+            conn.execute(text("ALTER TABLE users ADD COLUMN is_bot BOOLEAN NOT NULL DEFAULT 0"))
