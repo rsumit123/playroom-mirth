@@ -31,6 +31,7 @@ class RoomGameState:
     question_time_seconds: int = 0
     trivia_category: str = "math"
     used_question_ids: Set[str] = field(default_factory=set)
+    origin: str = "friends"
     strokes: List[dict] = field(default_factory=list)  # scribble stroke buffer (in-memory only, not persisted)
     task: Optional[asyncio.Task] = None
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
@@ -78,6 +79,7 @@ def serialize_state(state: RoomGameState) -> str:
         "question_time_seconds": state.question_time_seconds,
         "trivia_category": state.trivia_category,
         "used_question_ids": list(state.used_question_ids),
+        "origin": state.origin,
     }
     return json.dumps(payload)
 
@@ -108,6 +110,7 @@ def deserialize_state(raw: str) -> RoomGameState:
         question_time_seconds=data.get("question_time_seconds", 0),
         trivia_category=data.get("trivia_category", "math"),
         used_question_ids=set(data.get("used_question_ids", [])),
+        origin=data.get("origin", "friends"),
     )
 
 
