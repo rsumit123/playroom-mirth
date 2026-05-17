@@ -9,6 +9,7 @@ are dropped; clients see a socket disconnect and re-queue.
 """
 
 import asyncio
+import random
 import time
 from collections import defaultdict
 from dataclasses import dataclass, field
@@ -122,3 +123,17 @@ async def cancel_queue(user_id: int) -> dict:
         if entry.fallback_task and not entry.fallback_task.done():
             entry.fallback_task.cancel()
     return {"ok": True}
+
+
+GK_CATEGORIES = [
+    "general_knowledge", "science", "general", "history", "geography",
+    "sports", "entertainment", "mythology", "food", "politics",
+    "defense", "current_affairs", "math",
+]
+
+
+def resolve_category(category: str) -> str:
+    """Map 'surprise' to a randomly chosen real category. Other values pass through."""
+    if category == "surprise":
+        return random.choice(GK_CATEGORIES)
+    return category

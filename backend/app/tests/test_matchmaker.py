@@ -87,3 +87,35 @@ async def test_cancel_queue_after_match_returns_already_matched():
     res = await matchmaker.cancel_queue(user_id=1)
     assert res["ok"] is False
     assert res["error"] == "ALREADY_MATCHED"
+
+
+@pytest.mark.asyncio
+async def test_bot_fallback_fires_after_timeout(monkeypatch):
+    # Shorten fallback for the test.
+    monkeypatch.setattr(matchmaker, "FALLBACK_SECONDS", 0.1)
+    called = []
+    async def on_bot(entry):
+        called.append(entry)
+    await matchmaker.join_queue(
+        user_id=1, sid="sid1", category="science",
+        on_pair=lambda *a, **kw: None, on_bot_fallback=on_bot,
+    )
+    await asyncio.sleep(0.3)
+    assert len(called) == 1
+    assert called[0].user_id == 1
+    # User entry stays in USER_IN_QUEUE with matched=True (invariant from Task 2.3)
+    assert 1 in matchmaker.USER_IN_QUEUE
+    assert matchmaker.USER_IN_QUEUE[1].matched is True
+
+
+@pytest.mark.asyncio
+async def test_surprise_resolves_to_a_real_category():
+    resolved = matchmaker.resolve_category("surprise")
+    assert resolved in matchmaker.GK_CATEGORIES
+
+
+@pytest.mark.asyncio
+async def test_resolve_category_passthrough():
+    """Non-surprise categories pass through unchanged."""
+    assert matchmaker.resolve_category("science") == "science"
+    assert matchmaker.resolve_category("history") == "history"
