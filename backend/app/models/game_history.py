@@ -19,3 +19,4 @@ class GameHistory(Base):
     guest_id: Mapped[int | None] = mapped_column(Integer, nullable=True, index=True)
     display_name: Mapped[str] = mapped_column(String(50), nullable=False, default="Player")
     game_number: Mapped[int] = mapped_column(Integer, default=1, nullable=False)
+    origin: Mapped[str] = mapped_column(String(20), default="friends", nullable=False, server_default="friends")

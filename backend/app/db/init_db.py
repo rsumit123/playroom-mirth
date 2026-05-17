@@ -42,6 +42,8 @@ def init_db() -> None:
             conn.execute(text("ALTER TABLE game_history ADD COLUMN display_name VARCHAR(50) DEFAULT 'Player' NOT NULL"))
         if "game_number" not in gh_columns:
             conn.execute(text("ALTER TABLE game_history ADD COLUMN game_number INTEGER DEFAULT 1 NOT NULL"))
+        if "origin" not in gh_columns:
+            conn.execute(text("ALTER TABLE game_history ADD COLUMN origin VARCHAR(20) NOT NULL DEFAULT 'friends'"))
 
     # Manual migration: add Google auth columns to users if missing
     user_columns = [col["name"] for col in inspector.get_columns("users")]
