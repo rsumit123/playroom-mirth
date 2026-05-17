@@ -52,7 +52,11 @@ async def join_queue(
       {"ok": True, "status": "matched"}  # paired immediately
       {"ok": False, "error": "ALREADY_IN_QUEUE"}
     """
-    if user_id in USER_IN_QUEUE:
+    # Invariant: USER_IN_QUEUE entries are NEVER removed on pairing or bot-fallback.
+    # They stay (with entry.matched=True) so that cancel_queue can distinguish
+    # "already matched" from "never queued". Entries are cleaned up by the
+    # disconnect/room-end handler in Phase 4.
+    if user_id in USER_IN_QUEUE and not USER_IN_QUEUE[user_id].matched:
         return {"ok": False, "error": "ALREADY_IN_QUEUE"}
 
     entry = QueueEntry(
@@ -69,7 +73,10 @@ async def join_queue(
             entry.matched = True
             if partner.fallback_task and not partner.fallback_task.done():
                 partner.fallback_task.cancel()
-            USER_IN_QUEUE.pop(partner.user_id, None)
+            # Do NOT pop from USER_IN_QUEUE — matched entries stay so that
+            # cancel_queue can return ALREADY_MATCHED instead of NOT_IN_QUEUE.
+            USER_IN_QUEUE[partner.user_id] = partner  # ensure present (already is)
+            USER_IN_QUEUE[user_id] = entry
             await on_pair(partner, entry)
             return {"ok": True, "status": "matched"}
 
@@ -90,8 +97,28 @@ async def join_queue(
                 QUEUES[category].remove(entry)
             except ValueError:
                 pass
-            USER_IN_QUEUE.pop(user_id, None)
+            # Keep entry in USER_IN_QUEUE with matched=True (see invariant above).
         await on_bot_fallback(entry)
 
     entry.fallback_task = asyncio.create_task(_fallback())
     return {"ok": True, "status": "searching", "wait_seconds": FALLBACK_SECONDS}
+
+
+async def cancel_queue(user_id: int) -> dict:
+    """Remove user from queue if still waiting. Returns ALREADY_MATCHED if their
+    entry already paired or fell back to bot. Returns NOT_IN_QUEUE if never queued."""
+    entry = USER_IN_QUEUE.get(user_id)
+    if entry is None:
+        return {"ok": False, "error": "NOT_IN_QUEUE"}
+    async with QUEUE_LOCKS[entry.category]:
+        if entry.matched:
+            return {"ok": False, "error": "ALREADY_MATCHED"}
+        entry.matched = True  # poison so any concurrent fallback no-ops
+        try:
+            QUEUES[entry.category].remove(entry)
+        except ValueError:
+            pass
+        USER_IN_QUEUE.pop(user_id, None)
+        if entry.fallback_task and not entry.fallback_task.done():
+            entry.fallback_task.cancel()
+    return {"ok": True}
