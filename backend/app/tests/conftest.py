@@ -39,7 +39,7 @@ def clear_users():
         db.query(Word).delete()
         db.query(GameInvite).delete()
         db.query(Friendship).delete()
-        db.query(User).delete()
+        db.query(User).filter(User.is_bot == False).delete()  # noqa: E712
         db.commit()
     finally:
         db.close()

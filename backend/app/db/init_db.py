@@ -1,6 +1,6 @@
 from sqlalchemy import inspect, text
 
-from app.db.session import Base, engine
+from app.db.session import Base, engine, SessionLocal
 import app.models  # noqa: F401
 
 
@@ -56,3 +56,7 @@ def init_db() -> None:
             conn.execute(text("ALTER TABLE users ADD COLUMN avatar_url VARCHAR(512)"))
         if "is_bot" not in user_columns:
             conn.execute(text("ALTER TABLE users ADD COLUMN is_bot BOOLEAN NOT NULL DEFAULT 0"))
+
+    from app.services.bot_users import seed_bot_users
+    with SessionLocal() as db:
+        seed_bot_users(db)
