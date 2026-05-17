@@ -23,5 +23,6 @@ class Room(Base):
     turn_seconds: Mapped[int] = mapped_column(Integer, default=120, nullable=False)
     game_type: Mapped[str] = mapped_column(String(20), default="charades", nullable=False)
     trivia_category: Mapped[str] = mapped_column(String(30), default="math", nullable=False)
+    origin: Mapped[str] = mapped_column(String(20), default="friends", nullable=False, server_default="friends")
 
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, nullable=False)

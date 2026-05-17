@@ -24,6 +24,10 @@ def init_db() -> None:
         with engine.begin() as conn:
             conn.execute(text("ALTER TABLE rooms ADD COLUMN trivia_category VARCHAR(30) DEFAULT 'math' NOT NULL"))
 
+    if "origin" not in room_columns:
+        with engine.begin() as conn:
+            conn.execute(text("ALTER TABLE rooms ADD COLUMN origin VARCHAR(20) NOT NULL DEFAULT 'friends'"))
+
     word_columns = [col["name"] for col in inspector.get_columns("words")]
     if "game_type" not in word_columns:
         with engine.begin() as conn:
