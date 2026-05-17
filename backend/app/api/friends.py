@@ -152,6 +152,7 @@ def search_users(
         or_(User.display_name.ilike(f"%{q}%"), User.email.ilike(f"%{q}%")),
         User.id != user.id,
         User.google_id.isnot(None),
+        User.is_bot == False,  # noqa: E712
     ).limit(20).all()
 
     return {
