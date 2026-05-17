@@ -125,6 +125,46 @@ async def cancel_queue(user_id: int) -> dict:
     return {"ok": True}
 
 
+def register_pending_start(
+    room_code: str,
+    expected_user_ids: set[int],
+    on_start,  # async callable(room_code)
+) -> None:
+    """Register a quickmatch room that needs all listed users to send
+    `quickmatch:ready` before the game starts. After START_TIMEOUT_SECONDS,
+    the game starts anyway."""
+    async def _timeout():
+        try:
+            await asyncio.sleep(START_TIMEOUT_SECONDS)
+        except asyncio.CancelledError:
+            return
+        pending = PENDING_STARTS.pop(room_code, None)
+        if pending is None:
+            return
+        await on_start(room_code)
+
+    task = asyncio.create_task(_timeout())
+    PENDING_STARTS[room_code] = {
+        "expected": set(expected_user_ids),
+        "ready": set(),
+        "on_start": on_start,
+        "task": task,
+    }
+
+
+async def register_ready(room_code: str, user_id: int) -> None:
+    pending = PENDING_STARTS.get(room_code)
+    if pending is None:
+        return
+    pending["ready"].add(user_id)
+    if pending["ready"] >= pending["expected"]:
+        # All ready — cancel timeout and start.
+        PENDING_STARTS.pop(room_code, None)
+        if pending["task"] and not pending["task"].done():
+            pending["task"].cancel()
+        await pending["on_start"](room_code)
+
+
 GK_CATEGORIES = [
     "general_knowledge", "science", "general", "history", "geography",
     "sports", "entertainment", "mythology", "food", "politics",

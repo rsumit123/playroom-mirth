@@ -10,20 +10,32 @@ from app.services import matchmaker
 def reset_matchmaker():
     matchmaker.QUEUES.clear()
     matchmaker.USER_IN_QUEUE.clear()
+    matchmaker.PENDING_STARTS.clear()
     yield
     # Cancel any pending fallback tasks before clearing.
-    # Guard with try/except: sync teardown may run after the async event loop closes.
-    all_entries = list(matchmaker.USER_IN_QUEUE.values())
     for q in matchmaker.QUEUES.values():
-        all_entries.extend(q)
-    for e in all_entries:
+        for e in q:
+            if e.fallback_task and not e.fallback_task.done():
+                try:
+                    e.fallback_task.cancel()
+                except RuntimeError:
+                    pass
+    for e in list(matchmaker.USER_IN_QUEUE.values()):
         if e.fallback_task and not e.fallback_task.done():
             try:
                 e.fallback_task.cancel()
             except RuntimeError:
-                pass  # event loop already closed
+                pass
+    for pending in matchmaker.PENDING_STARTS.values():
+        task = pending.get("task")
+        if task and not task.done():
+            try:
+                task.cancel()
+            except RuntimeError:
+                pass
     matchmaker.QUEUES.clear()
     matchmaker.USER_IN_QUEUE.clear()
+    matchmaker.PENDING_STARTS.clear()
 
 
 def test_queue_starts_empty():
@@ -119,3 +131,48 @@ async def test_resolve_category_passthrough():
     """Non-surprise categories pass through unchanged."""
     assert matchmaker.resolve_category("science") == "science"
     assert matchmaker.resolve_category("history") == "history"
+
+
+@pytest.mark.asyncio
+async def test_register_ready_both_clients_starts_game(monkeypatch):
+    monkeypatch.setattr(matchmaker, "START_TIMEOUT_SECONDS", 1.0)
+    started = []
+    async def on_start(room_code):
+        started.append(room_code)
+    matchmaker.register_pending_start("ROOM1", expected_user_ids={1, 2}, on_start=on_start)
+
+    await matchmaker.register_ready(room_code="ROOM1", user_id=1)
+    assert started == []
+
+    await matchmaker.register_ready(room_code="ROOM1", user_id=2)
+    await asyncio.sleep(0.05)  # let on_start coroutine schedule
+    assert started == ["ROOM1"]
+
+
+@pytest.mark.asyncio
+async def test_register_ready_timeout_starts_game(monkeypatch):
+    monkeypatch.setattr(matchmaker, "START_TIMEOUT_SECONDS", 0.1)
+    started = []
+    async def on_start(room_code):
+        started.append(room_code)
+    matchmaker.register_pending_start("ROOM2", expected_user_ids={1, 2}, on_start=on_start)
+    await asyncio.sleep(0.25)
+    assert started == ["ROOM2"]
+
+
+@pytest.mark.asyncio
+async def test_register_ready_unknown_room_noop():
+    """Late ready events for already-started or non-existent rooms must not crash."""
+    # Should be a no-op, not raise.
+    await matchmaker.register_ready(room_code="NOPE", user_id=1)
+
+
+@pytest.mark.asyncio
+async def test_pending_starts_cleaned_after_all_ready(monkeypatch):
+    monkeypatch.setattr(matchmaker, "START_TIMEOUT_SECONDS", 5.0)
+    async def on_start(room_code):
+        pass
+    matchmaker.register_pending_start("ROOM3", expected_user_ids={1}, on_start=on_start)
+    await matchmaker.register_ready("ROOM3", 1)
+    await asyncio.sleep(0.05)
+    assert "ROOM3" not in matchmaker.PENDING_STARTS
