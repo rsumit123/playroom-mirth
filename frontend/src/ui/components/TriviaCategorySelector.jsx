@@ -22,6 +22,7 @@ export default function TriviaCategorySelector({ value, onChange, readOnly = fal
         return (
           <button
             key={cat.value}
+            data-category={cat.value}
             type="button"
             disabled={readOnly}
             className={`relative rounded-xl border-2 px-3 py-3 text-center transition-all select-none ${
