@@ -1553,8 +1553,107 @@ async def quickmatch_cancel(sid, data):
 
 
 async def _quickmatch_pair_humans(entry_a, entry_b, category: str) -> None:
-    """Filled in Task 4.5."""
-    raise NotImplementedError("filled in Task 4.5")
+    """Create a quickmatch room with both users, join their sockets to the
+    room, broadcast `quickmatch:matched`, and register the pending-start gate."""
+
+    with SessionLocal() as db:
+        user_a = db.query(User).filter(User.id == entry_a.user_id).first()
+        user_b = db.query(User).filter(User.id == entry_b.user_id).first()
+        if not user_a or not user_b:
+            return
+
+        payload = RoomCreateRequest(
+            rounds_total=1, difficulty=0, turn_seconds=15,
+            max_players=2, game_type="trivia", trivia_category=category,
+        )
+        lobby = create_room_for_user(db, user_a.id, payload)
+        room = db.query(Room).filter(Room.code == lobby.room.code).first()
+        room.origin = "quickmatch"
+        room.max_players = 2
+        room.min_players = 2
+        join_room_op(db, room, user_b.id, None)
+        db.commit()
+
+        rp_a = db.query(RoomPlayer).filter(
+            RoomPlayer.room_id == room.id, RoomPlayer.user_id == user_a.id,
+        ).first()
+        rp_b = db.query(RoomPlayer).filter(
+            RoomPlayer.room_id == room.id, RoomPlayer.user_id == user_b.id,
+        ).first()
+        room_code = room.code
+        name_a = user_a.display_name or user_a.email
+        name_b = user_b.display_name or user_b.email
+
+    await sio.enter_room(entry_a.sid, room_code)
+    await sio.enter_room(entry_b.sid, room_code)
+    SID_TO_PLAYER[entry_a.sid] = rp_a.id
+    SID_TO_PLAYER[entry_b.sid] = rp_b.id
+    PLAYER_TO_SID[rp_a.id] = entry_a.sid
+    PLAYER_TO_SID[rp_b.id] = entry_b.sid
+    PLAYER_TO_ROOM[rp_a.id] = room_code
+    PLAYER_TO_ROOM[rp_b.id] = room_code
+
+    await sio.emit("quickmatch:matched",
+                   {"room_code": room_code, "opponent_name": name_b},
+                   to=entry_a.sid)
+    await sio.emit("quickmatch:matched",
+                   {"room_code": room_code, "opponent_name": name_a},
+                   to=entry_b.sid)
+
+    async def _start_game(rc):
+        await _quickmatch_start_game(rc)
+
+    matchmaker.register_pending_start(
+        room_code, expected_user_ids={user_a.id, user_b.id}, on_start=_start_game,
+    )
+
+    # Clean up matched entries from USER_IN_QUEUE now that the room is created
+    # and sockets are registered. Phase-4 handlers rely on PLAYER_TO_ROOM for
+    # subsequent routing; USER_IN_QUEUE is no longer needed for these users.
+    matchmaker.USER_IN_QUEUE.pop(entry_a.user_id, None)
+    matchmaker.USER_IN_QUEUE.pop(entry_b.user_id, None)
+
+
+async def _quickmatch_start_game(room_code: str) -> None:
+    """Kick off the trivia game for a quickmatch room. Equivalent to the
+    trivia branch of `game:start` but bypassing the host check."""
+    with SessionLocal() as db:
+        room = db.query(Room).filter(Room.code == room_code).first()
+        if not room:
+            return
+        players = db.query(RoomPlayer).filter(
+            RoomPlayer.room_id == room.id,
+        ).order_by(RoomPlayer.join_order).all()
+        if len(players) < 2:
+            return
+
+        state = RoomGameState(
+            room_id=room.id, room_code=room.code,
+            rounds_total=room.rounds_total, turn_seconds=room.turn_seconds,
+            difficulty=room.difficulty, game_type="trivia",
+            trivia_category=room.trivia_category,
+            origin="quickmatch",
+        )
+        state.player_order = [p.id for p in players]
+        state.scores = {p.id: 0 for p in players}
+        ROOM_STATES[room.code] = state
+
+        room.status = "active"
+        for p in players:
+            p.in_game = True
+        db.commit()
+        _save_state(db, state)
+
+    # Emit game:turn_start as navigation trigger for frontend (matches game:start trivia branch)
+    await sio.emit("game:turn_start", {
+        "game_type": "trivia",
+        "round_index": 1,
+        "turn_seconds": 0,
+        "turn_start_ts": int(time.time()),
+        "describer_id": -1,
+    }, room=room_code)
+
+    await _trivia_start_round(state, room_code)
 
 
 async def _quickmatch_pair_bot(entry, category: str) -> None:
