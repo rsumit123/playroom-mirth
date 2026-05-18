@@ -143,3 +143,46 @@ async def test_quickmatch_ready_starts_game_when_both_ready(monkeypatch):
     # Game has started — pending entry is removed, ROOM_STATES has the room.
     assert room_code not in matchmaker.PENDING_STARTS
     assert room_code in ROOM_STATES
+
+
+@pytest.mark.asyncio
+async def test_quickmatch_leave_forfeits_to_survivor(monkeypatch):
+    monkeypatch.setattr(matchmaker, "START_TIMEOUT_SECONDS", 5.0)
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+    _, ta = _make_user("qm-l-a")
+    _, tb = _make_user("qm-l-b")
+    sid_a = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    sid_b = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid_a,
+                             {"token": ta, "category": "science"})
+    await sio._trigger_event("quickmatch:join", "/", sid_b,
+                             {"token": tb, "category": "science"})
+    room_code = next(iter(matchmaker.PENDING_STARTS))
+    await sio._trigger_event("quickmatch:ready", "/", sid_a,
+                             {"token": ta, "room_code": room_code})
+    await sio._trigger_event("quickmatch:ready", "/", sid_b,
+                             {"token": tb, "room_code": room_code})
+    await asyncio.sleep(0.1)
+
+    from app.services.game_state import ROOM_STATES, SID_TO_PLAYER
+    state = ROOM_STATES[room_code]
+    survivor_pid = SID_TO_PLAYER[sid_b]
+
+    emitted = []
+    orig_emit = sio.emit
+    async def capture(event, payload, room=None, **kw):
+        emitted.append((event, payload))
+        await orig_emit(event, payload, room=room, **kw)
+    monkeypatch.setattr(sio, "emit", capture)
+
+    await sio._trigger_event("game:leave", "/", sid_a,
+                             {"room_code": room_code, "token": ta})
+    await asyncio.sleep(0.1)
+
+    game_end = [p for e, p in emitted if e == "game:game_end"]
+    assert game_end, "expected game:game_end"
+    assert game_end[0]["winner_player_id"] == survivor_pid

@@ -1150,6 +1150,13 @@ async def game_leave(sid, data):
             was_describer = (idx == state.describer_index)
             state.player_order.remove(player_id)
 
+            # Quickmatch forfeit-win: leaving with one survivor ends the match.
+            if state.origin == "quickmatch" and len(state.player_order) == 1:
+                survivor = state.player_order[0]
+                state.scores[survivor] = state.scores.get(survivor, 0)
+                await _auto_end_game(state, room_code, winner_player_id=survivor)
+                return
+
             # If fewer than 2 players remain (charades/scribble need 2), end game
             if not state.player_order or (state.game_type != "trivia" and len(state.player_order) < 2):
                 await _auto_end_game(state, room_code)
