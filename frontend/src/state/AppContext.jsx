@@ -24,6 +24,13 @@ export function AppProvider({ children }) {
   const [activeRooms, setActiveRooms] = useState([])
   const [gameHistory, setGameHistory] = useState([])
   const [ui, setUi] = useState({ loading: 0, toast: null, loadingKeys: {} })
+  const [quickmatch, setQuickmatch] = useState({
+    status: 'idle',  // 'idle' | 'searching' | 'matched' | 'cancelled'
+    category: null,
+    opponentName: null,
+    roomCode: null,
+    waitSeconds: 15,
+  })
 
   useEffect(() => {
     if (auth.token || auth.guestToken) {
@@ -306,6 +313,12 @@ export function AppProvider({ children }) {
     socket.on('trivia:question_result', (payload) => setGame((g) => ({
       ...g, triviaResult: payload, scores: payload.scores || g.scores,
     })))
+    socket.off('quickmatch:searching')
+    socket.off('quickmatch:matched')
+    socket.off('quickmatch:cancelled')
+    socket.on('quickmatch:searching', (p) => setQuickmatch(q => ({ ...q, status: 'searching', waitSeconds: p.wait_seconds })))
+    socket.on('quickmatch:matched', (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code })))
+    socket.on('quickmatch:cancelled', () => setQuickmatch(q => ({ ...q, status: 'cancelled' })))
     socket.on('error', (payload) => {
       const message = formatError(payload?.message)
       setGame((g) => ({ ...g, error: { ...payload, message } }))
@@ -492,6 +505,21 @@ export function AppProvider({ children }) {
     return socket.emit('trivia:answer', { room_code: roomCode, answer_index: answerIndex })
   }
 
+  function quickmatchJoin(category) {
+    const socket = connectSocket()
+    return socket.emit('quickmatch:join', { token: auth.token, category })
+  }
+
+  function quickmatchCancel() {
+    const socket = connectSocket()
+    return socket.emit('quickmatch:cancel', { token: auth.token })
+  }
+
+  function quickmatchReady(roomCode) {
+    const socket = connectSocket()
+    return socket.emit('quickmatch:ready', { token: auth.token, room_code: roomCode })
+  }
+
   async function emitPlayAgain(roomCode) {
     if (!roomCode) { console.log('[PlayAgain] no roomCode'); return }
     const cleanGame = { messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null, roundEnd: null, gameEnd: null }
@@ -579,6 +607,11 @@ export function AppProvider({ children }) {
     emitScribbleUndo,
     emitTriviaAnswer,
     emitPlayAgain,
+    quickmatch,
+    setQuickmatch,
+    quickmatchJoin,
+    quickmatchCancel,
+    quickmatchReady,
     activeRooms,
     fetchActiveRooms,
     leaveActiveRoom,
@@ -587,7 +620,7 @@ export function AppProvider({ children }) {
     clearToast,
     leaveRoom,
     notifKey,
-  }), [auth, room, lobby, game, ui, roomRestoreStatus, selfPlayerId, activeRooms, gameHistory, notifKey])
+  }), [auth, room, lobby, game, ui, roomRestoreStatus, selfPlayerId, activeRooms, gameHistory, quickmatch, notifKey])
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }
