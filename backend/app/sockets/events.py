@@ -142,6 +142,7 @@ def _save_game_history(db, state: RoomGameState) -> None:
             guest_id=rp.guest_id,
             display_name=display_name,
             game_number=game_number,
+            origin=state.origin or "friends",
         ))
 
 

@@ -18,7 +18,7 @@ def get_game_history(
 ):
     rows = (
         db.query(GameHistory)
-        .filter(GameHistory.user_id == user.id)
+        .filter(GameHistory.user_id == user.id, GameHistory.origin == "friends")
         .order_by(GameHistory.played_at.desc())
         .limit(10)
         .all()
