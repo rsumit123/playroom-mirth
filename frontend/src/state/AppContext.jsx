@@ -84,6 +84,23 @@ export function AppProvider({ children }) {
     return () => socket.off('connect', emitPresence)
   }, [auth.token, socketGen])
 
+  // Quickmatch listeners — registered globally so they fire even without entering a lobby first
+  useEffect(() => {
+    if (!auth.token) return
+    const socket = connectSocket()
+    const onSearching = (p) => setQuickmatch(q => ({ ...q, status: 'searching', waitSeconds: p.wait_seconds }))
+    const onMatched = (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code }))
+    const onCancelled = () => setQuickmatch(q => ({ ...q, status: 'cancelled' }))
+    socket.on('quickmatch:searching', onSearching)
+    socket.on('quickmatch:matched', onMatched)
+    socket.on('quickmatch:cancelled', onCancelled)
+    return () => {
+      socket.off('quickmatch:searching', onSearching)
+      socket.off('quickmatch:matched', onMatched)
+      socket.off('quickmatch:cancelled', onCancelled)
+    }
+  }, [auth.token, socketGen])
+
   const startLoading = (key) =>
     setUi((u) => ({
       ...u,

@@ -42,6 +42,7 @@ def seed_bot_users(db: Session) -> None:
             email=_bot_email(name),
             google_id=gid,
             display_name=name,
+            password_hash="",
             is_bot=True,
         ))
     db.commit()

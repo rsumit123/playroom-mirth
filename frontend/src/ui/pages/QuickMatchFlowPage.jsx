@@ -7,7 +7,7 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function QuickMatchFlowPage() {
   const navigate = useNavigate()
-  const { quickmatch, quickmatchJoin, quickmatchCancel, quickmatchReady } = useApp()
+  const { quickmatch, quickmatchJoin, quickmatchCancel, quickmatchReady, bindLobbyEvents } = useApp()
   const [category, setCategory] = useState(null)
 
   function start(cat) {
@@ -22,6 +22,9 @@ export default function QuickMatchFlowPage() {
 
   useEffect(() => {
     if (quickmatch.status === 'matched' && quickmatch.roomCode) {
+      // Wire up lobby/game listeners + send room:register so the backend
+      // associates this socket with the player_id in the new quickmatch room.
+      bindLobbyEvents(quickmatch.roomCode)
       quickmatchReady(quickmatch.roomCode)
     }
   }, [quickmatch.status, quickmatch.roomCode])

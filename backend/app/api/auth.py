@@ -98,7 +98,7 @@ def test_token(payload: dict, db: Session = Depends(get_db)):
     display_name = payload.get("display_name") or f"Tester-{uuid.uuid4().hex[:6]}"
     email = f"test_{uuid.uuid4().hex[:8]}@e2e.local"
     user = User(email=email, google_id=f"test-{uuid.uuid4().hex[:8]}",
-                display_name=display_name, is_bot=False)
+                display_name=display_name, password_hash="", is_bot=False)
     db.add(user)
     db.commit()
     db.refresh(user)
