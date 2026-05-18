@@ -141,12 +141,13 @@ def _save_game_history(db, state: RoomGameState) -> None:
         ))
 
 
-async def _auto_end_game(state: RoomGameState, room_code: str) -> None:
+async def _auto_end_game(state: RoomGameState, room_code: str, winner_player_id: int | None = None) -> None:
     """End game when no connected players remain. Caller MUST hold state.lock."""
     # NOTE: do NOT cancel state.task — this may be called from within the timer task.
     # Pop BEFORE emit so room:register can't find stale state during the emit
     ROOM_STATES.pop(room_code, None)
-    await sio.emit("game:game_end", {"scores": state.scores, "winner_player_id": _resolve_winner(state)}, room=room_code)
+    winner = winner_player_id if winner_player_id is not None else _resolve_winner(state)
+    await sio.emit("game:game_end", {"scores": state.scores, "winner_player_id": winner}, room=room_code)
     try:
         with SessionLocal() as db:
             db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
