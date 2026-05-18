@@ -146,6 +146,19 @@ function playPlayerJoin(ctx) {
   osc.stop(now + 0.1)
 }
 
+function playMatchFound(ctx) {
+  // Soft two-tone ding at reduced gain
+  const osc = ctx.createOscillator()
+  const gain = ctx.createGain()
+  osc.frequency.setValueAtTime(660, ctx.currentTime)
+  osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.15)
+  gain.gain.setValueAtTime(0.08, ctx.currentTime)
+  gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3)
+  osc.connect(gain).connect(ctx.destination)
+  osc.start()
+  osc.stop(ctx.currentTime + 0.35)
+}
+
 const SOUNDS = {
   'turn-start': playTurnStart,
   'correct-guess': playCorrectGuess,
@@ -154,4 +167,5 @@ const SOUNDS = {
   'round-end': playRoundEnd,
   'game-end': playGameEnd,
   'player-join': playPlayerJoin,
+  'match-found': playMatchFound,
 }
