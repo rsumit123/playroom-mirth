@@ -507,6 +507,7 @@ export function AppProvider({ children }) {
 
   function quickmatchJoin(category) {
     const socket = connectSocket()
+    setQuickmatch(q => ({ ...q, category }))
     return socket.emit('quickmatch:join', { token: auth.token, category })
   }
 

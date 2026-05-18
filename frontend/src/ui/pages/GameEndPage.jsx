@@ -5,7 +5,7 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function GameEndPage() {
   const navigate = useNavigate()
-  const { game, lobby, room, leaveRoom, emitPlayAgain } = useApp()
+  const { game, lobby, room, leaveRoom, emitPlayAgain, quickmatch, quickmatchJoin, selfPlayerId } = useApp()
   const playerNames = useMemo(() => {
     const map = {}
     for (const p of lobby?.players || []) {
@@ -21,6 +21,10 @@ export default function GameEndPage() {
     }
   }, [game?.playAgain?.ready])
 
+  const origin = quickmatch.roomCode && quickmatch.roomCode === room?.code ? 'quickmatch' : 'friends'
+  const winnerPlayerId = game?.gameEnd?.winner_player_id ?? null
+  const lastCategory = quickmatch.category || 'surprise'
+
   return (
     <GameEnd
       scores={game?.scores || {}}
@@ -28,6 +32,11 @@ export default function GameEndPage() {
       playAgain={game?.playAgain}
       onPlayAgain={() => emitPlayAgain(room?.code)}
       onHome={() => { leaveRoom(); navigate('/home') }}
+      selfPlayerId={selfPlayerId}
+      winnerPlayerId={winnerPlayerId}
+      origin={origin}
+      onRematch={() => { leaveRoom(); quickmatchJoin(lastCategory); navigate('/quickmatch') }}
+      onNewOpponent={() => { leaveRoom(); navigate('/quickmatch') }}
     />
   )
 }
