@@ -47,6 +47,17 @@ sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
 PLAY_AGAIN_VOTES: dict[str, dict] = {}
 
 
+def _resolve_winner(state) -> int | None:
+    """Return the player_id with the highest score, or None on tie/empty."""
+    if not state.scores:
+        return None
+    max_score = max(state.scores.values())
+    leaders = [pid for pid, s in state.scores.items() if s == max_score]
+    if len(leaders) == 1:
+        return leaders[0]
+    return None
+
+
 
 
 def get_user_from_token(db, token: str | None):
@@ -135,7 +146,7 @@ async def _auto_end_game(state: RoomGameState, room_code: str) -> None:
     # NOTE: do NOT cancel state.task — this may be called from within the timer task.
     # Pop BEFORE emit so room:register can't find stale state during the emit
     ROOM_STATES.pop(room_code, None)
-    await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+    await sio.emit("game:game_end", {"scores": state.scores, "winner_player_id": _resolve_winner(state)}, room=room_code)
     try:
         with SessionLocal() as db:
             db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
@@ -287,7 +298,7 @@ async def _advance_turn(room_code: str) -> None:
             # timer task, so cancelling it would abort this code path (CancelledError).
             # Pop BEFORE emit so room:register can't find stale state during the emit
             ROOM_STATES.pop(room_code, None)
-            await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+            await sio.emit("game:game_end", {"scores": state.scores, "winner_player_id": _resolve_winner(state)}, room=room_code)
             try:
                 with SessionLocal() as db:
                     db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
@@ -816,7 +827,7 @@ async def _trivia_advance(room_code: str) -> None:
                 # (_advance_after_pause), cancelling it would abort the DB write below.
                 # Pop BEFORE emit so room:register can't find stale state during the emit
                 ROOM_STATES.pop(room_code, None)
-                await sio.emit("game:game_end", {"scores": state.scores}, room=room_code)
+                await sio.emit("game:game_end", {"scores": state.scores, "winner_player_id": _resolve_winner(state)}, room=room_code)
                 try:
                     with SessionLocal() as db:
                         db.query(RoomState).filter(RoomState.room_id == state.room_id).delete()
