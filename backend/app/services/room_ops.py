@@ -227,6 +227,8 @@ def get_active_rooms(db: Session, user_id: int | None, guest: Guest | None) -> l
             continue
         if room.status not in ("lobby", "active"):
             continue
+        if room.origin == "quickmatch":
+            continue
         player_count = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).count()
         result.append({
             "room_code": room.code,

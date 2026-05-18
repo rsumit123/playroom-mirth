@@ -186,3 +186,115 @@ async def test_quickmatch_leave_forfeits_to_survivor(monkeypatch):
     game_end = [p for e, p in emitted if e == "game:game_end"]
     assert game_end, "expected game:game_end"
     assert game_end[0]["winner_player_id"] == survivor_pid
+
+
+@pytest.mark.asyncio
+async def test_quickmatch_room_hidden_from_active_listing(monkeypatch):
+    """Quickmatch rooms must not appear in a user's active-rooms listing."""
+    from fastapi.testclient import TestClient
+    from app.main import fastapi_app
+
+    monkeypatch.setattr(matchmaker, "FALLBACK_SECONDS", 0.2)
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+
+    user_id, token = _make_user("qm-h")
+    sid = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid,
+                             {"token": token, "category": "science"})
+    await asyncio.sleep(0.5)
+
+    client = TestClient(fastapi_app)
+    r = client.get("/rooms/active", headers={"Authorization": f"Bearer {token}"})
+    assert r.status_code == 200
+    for room in r.json():
+        # The quickmatch room must not appear in the active listing.
+        assert room.get("origin", "friends") != "quickmatch"
+
+
+@pytest.mark.asyncio
+async def test_room_join_blocked_for_quickmatch_room():
+    """room:join via socket must return NOT_FOUND for quickmatch rooms."""
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+
+    _, ta = _make_user("qm-j-a")
+    _, tb = _make_user("qm-j-b")
+    sid_a = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    sid_b = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid_a,
+                             {"token": ta, "category": "science"})
+    await sio._trigger_event("quickmatch:join", "/", sid_b,
+                             {"token": tb, "category": "science"})
+    # They should now be paired; find the room code.
+    assert matchmaker.USER_IN_QUEUE == {}
+    from app.db.session import SessionLocal as SL
+    from app.models.room import Room
+    db2 = SL()
+    try:
+        room = db2.query(Room).filter(Room.origin == "quickmatch").first()
+        assert room is not None, "quickmatch room should have been created"
+        room_code = room.code
+    finally:
+        db2.close()
+
+    # A third user trying to join via room:join should get NOT_FOUND.
+    _, tc = _make_user("qm-j-c")
+    sid_c = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    res = await sio._trigger_event("room:join", "/", sid_c,
+                                   {"token": tc, "room_code": room_code})
+    assert res["ok"] is False
+    assert res["error"] == "NOT_FOUND"
+
+
+@pytest.mark.asyncio
+async def test_invite_blocked_for_quickmatch_room():
+    """POST /rooms/{room_code}/invite must return 404 for quickmatch rooms."""
+    from fastapi.testclient import TestClient
+    from app.main import fastapi_app
+
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+
+    _, ta = _make_user("qm-i-a")
+    _, tb = _make_user("qm-i-b")
+    sid_a = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    sid_b = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid_a,
+                             {"token": ta, "category": "science"})
+    await sio._trigger_event("quickmatch:join", "/", sid_b,
+                             {"token": tb, "category": "science"})
+    assert matchmaker.USER_IN_QUEUE == {}
+    from app.models.room import Room as RoomModel
+    from app.models.user import User as UserModel
+    db2 = SessionLocal()
+    try:
+        room = db2.query(RoomModel).filter(RoomModel.origin == "quickmatch").first()
+        assert room is not None
+        room_code = room.code
+        # Create a third user to act as an invitee (friendship not needed for the 404 check)
+        suffix = uuid.uuid4().hex[:8]
+        friend = UserModel(email=f"qm-i-f-{suffix}@x.com", google_id=f"g-qm-i-f-{suffix}")
+        db2.add(friend)
+        db2.commit()
+        db2.refresh(friend)
+        friend_id = friend.id
+    finally:
+        db2.close()
+
+    client = TestClient(fastapi_app)
+    r = client.post(
+        f"/rooms/{room_code}/invite",
+        json={"user_id": friend_id},
+        headers={"Authorization": f"Bearer {ta}"},
+    )
+    assert r.status_code == 404

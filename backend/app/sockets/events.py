@@ -602,6 +602,9 @@ async def room_join(sid, data):
         if not room:
             await emit_error(sid, "Room not found", code="NOT_FOUND")
             return {"ok": False, "error": "NOT_FOUND"}
+        if room.origin == "quickmatch":
+            await emit_error(sid, "Room not found", code="NOT_FOUND")
+            return {"ok": False, "error": "NOT_FOUND"}
 
         user = get_user_from_token(db, data.get("token"))
         guest = resolve_guest(db, data.get("guest_token"))

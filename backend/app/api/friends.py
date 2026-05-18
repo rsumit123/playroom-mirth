@@ -180,6 +180,8 @@ def invite_friend_to_room(
     room = db.query(Room).filter(Room.code == room_code).first()
     if not room:
         raise HTTPException(status_code=404, detail="Room not found")
+    if room.origin == "quickmatch":
+        raise HTTPException(status_code=404, detail="Room not found")
 
     # Verify they are friends
     friendship = db.query(Friendship).filter(
