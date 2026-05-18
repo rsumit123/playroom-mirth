@@ -70,3 +70,26 @@ async def test_quickmatch_join_pairs_two_users():
     assert res_b["ok"] is True
     # After the second join, neither user is still in the queue.
     assert matchmaker.USER_IN_QUEUE == {}
+
+
+@pytest.mark.asyncio
+async def test_quickmatch_cancel_while_searching():
+    _, token = _make_user("qm-c")
+    sid = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid,
+                             {"token": token, "category": "science"})
+    res = await sio._trigger_event("quickmatch:cancel", "/", sid,
+                                   {"token": token})
+    assert res["ok"] is True
+    assert matchmaker.USER_IN_QUEUE == {}
+
+
+@pytest.mark.asyncio
+async def test_disconnect_drops_user_from_queue():
+    _, token = _make_user("qm-d")
+    sid = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid,
+                             {"token": token, "category": "science"})
+    await sio._trigger_event("disconnect", "/", sid)
+    await asyncio.sleep(0.05)
+    assert matchmaker.USER_IN_QUEUE == {}

@@ -397,6 +397,10 @@ async def disconnect(sid):
     SID_TO_PLAYER.pop(sid, None)
     if player_id:
         PLAYER_TO_SID.pop(player_id, None)
+    # Drop from quickmatch queue if present (must run before SID_TO_USER pop).
+    _qm_user_id = SID_TO_USER.get(sid)
+    if _qm_user_id and _qm_user_id in matchmaker.USER_IN_QUEUE:
+        await matchmaker.cancel_queue(_qm_user_id)
     # Clean up presence tracking
     user_id = SID_TO_USER.pop(sid, None)
     if user_id and user_id in USER_ONLINE:
@@ -1529,6 +1533,22 @@ async def quickmatch_join(sid, data):
     if res.get("status") == "searching":
         await sio.emit("quickmatch:searching",
                        {"wait_seconds": matchmaker.FALLBACK_SECONDS}, to=sid)
+    return res
+
+
+@sio.on("quickmatch:cancel")
+async def quickmatch_cancel(sid, data):
+    token = data.get("token")
+    if not token:
+        return {"ok": False, "error": "BAD_REQUEST"}
+    with SessionLocal() as db:
+        user = get_user_from_token(db, token)
+    if not user:
+        return {"ok": False, "error": "UNAUTHORIZED"}
+
+    res = await matchmaker.cancel_queue(user.id)
+    if res["ok"]:
+        await sio.emit("quickmatch:cancelled", {}, to=sid)
     return res
 
 
