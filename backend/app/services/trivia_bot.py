@@ -53,3 +53,57 @@ def build_accuracy_slots(questions: list[dict]) -> list[bool]:
         slots.append(random.random() < target)
     random.shuffle(slots)
     return slots
+
+
+async def schedule_bot_answer(
+    state,  # RoomGameState
+    room_code: str,
+    bot_player_id: int,
+    will_answer_correctly: bool,
+    on_all_answered,  # async callable() — runs after lock released if all players done
+    max_delay_override: Optional[float] = None,
+) -> asyncio.Task:
+    """Pick a delay + answer, then submit the bot's answer to state.player_answers
+    inside the room lock. Returns the spawned task (useful for tests / cancellation)."""
+
+    q = state.trivia_questions[state.current_question_index]
+    delay = max_delay_override if max_delay_override is not None else pick_delay(
+        difficulty=q.get("difficulty", 2),
+        time_seconds=q["time_seconds"],
+    )
+
+    if will_answer_correctly:
+        answer_index = q["correct_index"]
+    else:
+        wrong = [i for i in range(len(q["options"])) if i != q["correct_index"]]
+        answer_index = random.choice(wrong)
+
+    async def _task():
+        try:
+            await asyncio.sleep(delay)
+        except asyncio.CancelledError:
+            return
+        try:
+            async with state.lock:
+                # Race: question may have already resolved.
+                if bot_player_id in state.player_answers:
+                    return
+                # Sanity: did the question advance under us?
+                if (
+                    state.trivia_questions
+                    and state.current_question_index < len(state.trivia_questions)
+                    and state.trivia_questions[state.current_question_index] is q
+                ):
+                    state.player_answers[bot_player_id] = {
+                        "answer_index": answer_index,
+                        "timestamp": time.time(),
+                    }
+                    all_answered = len(state.player_answers) >= len(state.player_order)
+                else:
+                    all_answered = False
+            if all_answered:
+                await on_all_answered()
+        except Exception:
+            _logger.exception("bot answer task failed for room %s", room_code)
+
+    return asyncio.create_task(_task())

@@ -3,6 +3,7 @@
 import asyncio
 import random
 import statistics
+import time
 
 import pytest
 
@@ -65,3 +66,63 @@ def test_build_accuracy_slots_shuffled():
     slots = trivia_bot.build_accuracy_slots(questions)
     # Probability of all-correct then all-wrong by chance is tiny; assert mix.
     assert slots[:5] != [True, True, True, True, True] or slots[5:] != [False, False, False, False, False]
+
+
+@pytest.mark.asyncio
+async def test_schedule_bot_answer_writes_to_player_answers():
+    from app.services.game_state import RoomGameState
+    state = RoomGameState(
+        room_id=1, room_code="BOT1", rounds_total=1,
+        turn_seconds=60, difficulty=1, game_type="trivia",
+    )
+    state.player_order = [10, 99]  # 10 = human, 99 = bot
+    state.trivia_questions = [{
+        "question": "Q?", "options": ["a", "b", "c", "d"],
+        "correct_index": 2, "time_seconds": 20, "difficulty": 1,
+    }]
+    state.current_question_index = 0
+    state.question_start_ts = time.time()
+    state.question_time_seconds = 20
+
+    async def on_all_answered():
+        return
+
+    await trivia_bot.schedule_bot_answer(
+        state=state, room_code="BOT1", bot_player_id=99,
+        will_answer_correctly=True, on_all_answered=on_all_answered,
+        max_delay_override=0.05,
+    )
+    await asyncio.sleep(0.2)
+
+    assert 99 in state.player_answers
+    assert state.player_answers[99]["answer_index"] == 2
+
+
+@pytest.mark.asyncio
+async def test_schedule_bot_answer_wrong_when_inaccurate():
+    from app.services.game_state import RoomGameState
+    state = RoomGameState(
+        room_id=1, room_code="BOT2", rounds_total=1,
+        turn_seconds=60, difficulty=1, game_type="trivia",
+    )
+    state.player_order = [10, 99]
+    state.trivia_questions = [{
+        "question": "Q?", "options": ["a", "b", "c", "d"],
+        "correct_index": 0, "time_seconds": 20, "difficulty": 1,
+    }]
+    state.current_question_index = 0
+    state.question_start_ts = time.time()
+    state.question_time_seconds = 20
+
+    async def on_all_answered():
+        return
+
+    await trivia_bot.schedule_bot_answer(
+        state=state, room_code="BOT2", bot_player_id=99,
+        will_answer_correctly=False, on_all_answered=on_all_answered,
+        max_delay_override=0.05,
+    )
+    await asyncio.sleep(0.2)
+
+    assert 99 in state.player_answers
+    assert state.player_answers[99]["answer_index"] != 0
