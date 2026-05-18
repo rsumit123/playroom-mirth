@@ -1,3 +1,6 @@
+import os
+import uuid
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
@@ -85,3 +88,19 @@ def create_test_user(payload: dict, db: Session = Depends(get_db)):
         "access_token": token,
         "user": {"id": user.id, "email": user.email, "display_name": user.display_name, "avatar_url": user.avatar_url},
     }
+
+
+@router.post("/auth/test_token")
+def test_token(payload: dict, db: Session = Depends(get_db)):
+    """Mint a fresh authed user without Google OAuth. Only works when ENVIRONMENT=test."""
+    if os.getenv("ENVIRONMENT") != "test":
+        raise HTTPException(status_code=404, detail="Not Found")
+    display_name = payload.get("display_name") or f"Tester-{uuid.uuid4().hex[:6]}"
+    email = f"test_{uuid.uuid4().hex[:8]}@e2e.local"
+    user = User(email=email, google_id=f"test-{uuid.uuid4().hex[:8]}",
+                display_name=display_name, is_bot=False)
+    db.add(user)
+    db.commit()
+    db.refresh(user)
+    token = create_access_token(subject=str(user.id))
+    return {"token": token, "user": {"id": user.id, "display_name": display_name, "email": email}}
