@@ -39,6 +39,10 @@ from sqlalchemy import func as sa_func
 import time
 import random
 
+from app.services import matchmaker
+from app.services.bot_users import pick_random_bot
+from app.services import trivia_bot
+
 _logger = logging.getLogger("charade.sio")
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
@@ -1492,6 +1496,50 @@ async def scribble_undo(sid, data):
     if state.strokes:
         state.strokes.pop()
     await sio.emit("scribble:undo", {}, room=room_code, skip_sid=sid)
+
+
+@sio.on("quickmatch:join")
+async def quickmatch_join(sid, data):
+    token = data.get("token")
+    category_raw = data.get("category")
+    if not token or not category_raw:
+        await emit_error(sid, "token + category required", code="BAD_REQUEST")
+        return {"ok": False, "error": "BAD_REQUEST"}
+
+    with SessionLocal() as db:
+        user = get_user_from_token(db, token)
+    if not user:
+        await emit_error(sid, "Auth required", code="UNAUTHORIZED")
+        return {"ok": False, "error": "UNAUTHORIZED"}
+
+    SID_TO_USER[sid] = user.id
+
+    category = matchmaker.resolve_category(category_raw)
+
+    async def on_pair(entry_a, entry_b):
+        await _quickmatch_pair_humans(entry_a, entry_b, category)
+
+    async def on_bot_fallback(entry):
+        await _quickmatch_pair_bot(entry, category)
+
+    res = await matchmaker.join_queue(
+        user_id=user.id, sid=sid, category=category,
+        on_pair=on_pair, on_bot_fallback=on_bot_fallback,
+    )
+    if res.get("status") == "searching":
+        await sio.emit("quickmatch:searching",
+                       {"wait_seconds": matchmaker.FALLBACK_SECONDS}, to=sid)
+    return res
+
+
+async def _quickmatch_pair_humans(entry_a, entry_b, category: str) -> None:
+    """Filled in Task 4.5."""
+    raise NotImplementedError("filled in Task 4.5")
+
+
+async def _quickmatch_pair_bot(entry, category: str) -> None:
+    """Filled in Task 4.6."""
+    raise NotImplementedError("filled in Task 4.6")
 
 
 def restore_game_states() -> None:
