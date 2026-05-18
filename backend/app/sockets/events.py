@@ -1649,10 +1649,10 @@ async def _quickmatch_pair_humans(entry_a, entry_b, category: str) -> None:
     PLAYER_TO_ROOM[rp_b.id] = room_code
 
     await sio.emit("quickmatch:matched",
-                   {"room_code": room_code, "opponent_name": name_b},
+                   {"room_code": room_code, "opponent_name": name_b, "is_bot_match": False},
                    to=entry_a.sid)
     await sio.emit("quickmatch:matched",
-                   {"room_code": room_code, "opponent_name": name_a},
+                   {"room_code": room_code, "opponent_name": name_a, "is_bot_match": False},
                    to=entry_b.sid)
 
     async def _start_game(rc):
@@ -1750,7 +1750,7 @@ async def _quickmatch_pair_bot(entry, category: str) -> None:
     matchmaker.USER_IN_QUEUE.pop(user.id, None)
 
     await sio.emit("quickmatch:matched",
-                   {"room_code": room_code, "opponent_name": bot_display},
+                   {"room_code": room_code, "opponent_name": bot_display, "is_bot_match": True},
                    to=entry.sid)
 
     async def _start_game(rc):
@@ -1759,6 +1759,32 @@ async def _quickmatch_pair_bot(entry, category: str) -> None:
     matchmaker.register_pending_start(
         room_code, expected_user_ids={user.id}, on_start=_start_game,
     )
+
+
+@sio.on("quickmatch:rematch_bot")
+async def quickmatch_rematch_bot(sid, data):
+    """Instant bot rematch — bypass the 15s queue and pair the user with a
+    fresh bot in a new room. Used after a quickmatch-vs-bot game ends so the
+    user doesn't sit through another search countdown for a guaranteed bot."""
+    token = data.get("token")
+    category_raw = data.get("category")
+    if not token or not category_raw:
+        await emit_error(sid, "token + category required", code="BAD_REQUEST")
+        return {"ok": False, "error": "BAD_REQUEST"}
+    with SessionLocal() as db:
+        user = get_user_from_token(db, token)
+    if not user:
+        await emit_error(sid, "Auth required", code="UNAUTHORIZED")
+        return {"ok": False, "error": "UNAUTHORIZED"}
+
+    SID_TO_USER[sid] = user.id
+    category = matchmaker.resolve_category(category_raw)
+
+    entry = matchmaker.QueueEntry(
+        user_id=user.id, sid=sid, joined_at=time.time(), category=category,
+    )
+    await _quickmatch_pair_bot(entry, category)
+    return {"ok": True}
 
 
 def restore_game_states() -> None:

@@ -5,7 +5,7 @@ import { useApp } from '../../state/AppContext.jsx'
 
 export default function GameEndPage() {
   const navigate = useNavigate()
-  const { game, lobby, room, leaveRoom, emitPlayAgain, quickmatch, quickmatchJoin, selfPlayerId } = useApp()
+  const { game, lobby, room, leaveRoom, emitPlayAgain, quickmatch, quickmatchJoin, quickmatchRematchBot, selfPlayerId } = useApp()
   const playerNames = useMemo(() => {
     const map = {}
     for (const p of lobby?.players || []) {
@@ -24,6 +24,19 @@ export default function GameEndPage() {
   const origin = quickmatch.roomCode && quickmatch.roomCode === room?.code ? 'quickmatch' : 'friends'
   const winnerPlayerId = game?.gameEnd?.winner_player_id ?? null
   const lastCategory = quickmatch.category || 'surprise'
+  const lastOpponentWasBot = quickmatch.isBot
+
+  function handleRematch() {
+    leaveRoom()
+    if (lastOpponentWasBot) {
+      // Instant bot rematch — skip the 15s queue, server pairs synchronously.
+      quickmatchRematchBot(lastCategory)
+    } else {
+      // Human v1: re-queue. Human-vs-human rematch handshake is deferred to v1.1.
+      quickmatchJoin(lastCategory)
+    }
+    navigate('/quickmatch')
+  }
 
   return (
     <GameEnd
@@ -35,7 +48,7 @@ export default function GameEndPage() {
       selfPlayerId={selfPlayerId}
       winnerPlayerId={winnerPlayerId}
       origin={origin}
-      onRematch={() => { leaveRoom(); quickmatchJoin(lastCategory); navigate('/quickmatch') }}
+      onRematch={handleRematch}
       onNewOpponent={() => { leaveRoom(); navigate('/quickmatch') }}
     />
   )

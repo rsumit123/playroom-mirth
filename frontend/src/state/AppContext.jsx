@@ -30,6 +30,7 @@ export function AppProvider({ children }) {
     opponentName: null,
     roomCode: null,
     waitSeconds: 15,
+    isBot: false,
   })
 
   useEffect(() => {
@@ -89,7 +90,7 @@ export function AppProvider({ children }) {
     if (!auth.token) return
     const socket = connectSocket()
     const onSearching = (p) => setQuickmatch(q => ({ ...q, status: 'searching', waitSeconds: p.wait_seconds }))
-    const onMatched = (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code }))
+    const onMatched = (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code, isBot: !!p.is_bot_match }))
     const onCancelled = () => setQuickmatch(q => ({ ...q, status: 'cancelled' }))
     socket.on('quickmatch:searching', onSearching)
     socket.on('quickmatch:matched', onMatched)
@@ -334,7 +335,7 @@ export function AppProvider({ children }) {
     socket.off('quickmatch:matched')
     socket.off('quickmatch:cancelled')
     socket.on('quickmatch:searching', (p) => setQuickmatch(q => ({ ...q, status: 'searching', waitSeconds: p.wait_seconds })))
-    socket.on('quickmatch:matched', (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code })))
+    socket.on('quickmatch:matched', (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code, isBot: !!p.is_bot_match })))
     socket.on('quickmatch:cancelled', () => setQuickmatch(q => ({ ...q, status: 'cancelled' })))
     socket.on('error', (payload) => {
       const message = formatError(payload?.message)
@@ -538,6 +539,18 @@ export function AppProvider({ children }) {
     return socket.emit('quickmatch:ready', { token: auth.token, room_code: roomCode })
   }
 
+  function quickmatchRematchBot(category) {
+    const socket = connectSocket()
+    // Optimistically flip to 'searching' so the brief gap before the matched
+    // event arrives renders the radar splash, not the category picker.
+    // The server replies near-instantly with quickmatch:matched (no 15s wait).
+    setQuickmatch(q => ({
+      ...q, category, status: 'searching', waitSeconds: 0,
+      opponentName: null, roomCode: null, isBot: false,
+    }))
+    return socket.emit('quickmatch:rematch_bot', { token: auth.token, category })
+  }
+
   async function emitPlayAgain(roomCode) {
     if (!roomCode) { console.log('[PlayAgain] no roomCode'); return }
     const cleanGame = { messages: [], scores: {}, word: null, turn: null, lastGuess: null, error: null, roundEnd: null, gameEnd: null }
@@ -630,6 +643,7 @@ export function AppProvider({ children }) {
     quickmatchJoin,
     quickmatchCancel,
     quickmatchReady,
+    quickmatchRematchBot,
     activeRooms,
     fetchActiveRooms,
     leaveActiveRoom,

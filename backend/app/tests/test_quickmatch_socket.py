@@ -298,3 +298,73 @@ async def test_invite_blocked_for_quickmatch_room():
         headers={"Authorization": f"Bearer {ta}"},
     )
     assert r.status_code == 404
+
+
+@pytest.mark.asyncio
+async def test_rematch_bot_pairs_instantly_without_queue():
+    """quickmatch:rematch_bot must skip the 15s queue and emit matched
+    synchronously — the user has already played a bot game and shouldn't
+    sit through another search countdown for a guaranteed bot pairing."""
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+    _, token = _make_user("qm-rb")
+    sid = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+
+    res = await sio._trigger_event(
+        "quickmatch:rematch_bot", "/", sid,
+        {"token": token, "category": "science"},
+    )
+    assert res["ok"] is True
+
+    # User was never enqueued — no 15s timer started.
+    assert matchmaker.USER_IN_QUEUE == {}
+    # A pending-start gate exists for the new room.
+    assert len(matchmaker.PENDING_STARTS) == 1
+
+
+@pytest.mark.asyncio
+async def test_rematch_bot_rejects_unauthenticated():
+    sid = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    res = await sio._trigger_event(
+        "quickmatch:rematch_bot", "/", sid,
+        {"token": "garbage", "category": "science"},
+    )
+    assert res["ok"] is False
+    assert res["error"] == "UNAUTHORIZED"
+
+
+@pytest.mark.asyncio
+async def test_quickmatch_matched_payload_flags_bot_match():
+    """The quickmatch:matched event must carry is_bot_match=True for bot
+    pairings so the frontend can route Rematch through quickmatch:rematch_bot
+    instead of re-queueing."""
+    monkeypatch_calls = []
+
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+    _, token = _make_user("qm-flag")
+    sid = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+
+    captured = []
+    original_emit = sio.emit
+    async def capture(event, payload=None, **kw):
+        if event == "quickmatch:matched":
+            captured.append(payload)
+        return await original_emit(event, payload, **kw) if payload is not None else await original_emit(event, **kw)
+    sio.emit = capture
+    try:
+        await sio._trigger_event(
+            "quickmatch:rematch_bot", "/", sid,
+            {"token": token, "category": "science"},
+        )
+    finally:
+        sio.emit = original_emit
+
+    assert captured, "expected quickmatch:matched"
+    assert captured[0].get("is_bot_match") is True
