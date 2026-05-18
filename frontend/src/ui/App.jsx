@@ -20,6 +20,7 @@ import AdminDashboardPage from './pages/AdminDashboardPage.jsx'
 import JoinPage from './pages/JoinPage.jsx'
 import PrivacyPage from './pages/PrivacyPage.jsx'
 import FriendsPage from './pages/FriendsPage.jsx'
+import QuickMatchFlowPage from './pages/QuickMatchFlowPage.jsx'
 import TopBar from './components/TopBar.jsx'
 import NotificationDrawer from './components/NotificationDrawer.jsx'
 import * as api from '../lib/api.js'
@@ -157,6 +158,7 @@ function AppShell() {
         <Route path="/game" element={<GamePage />} />
         <Route path="/scribble" element={<ScribbleGamePage />} />
         <Route path="/trivia" element={<TriviaGamePage />} />
+        <Route path="/quickmatch" element={<QuickMatchFlowPage />} />
         <Route path="/round-end" element={<RoundEndPage />} />
         <Route path="/game-end" element={<GameEndPage />} />
         <Route path="/how-to" element={<HowToPage />} />
