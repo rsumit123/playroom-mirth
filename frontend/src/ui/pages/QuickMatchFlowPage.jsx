@@ -26,6 +26,45 @@ export default function QuickMatchFlowPage() {
     }
   }, [quickmatch.status, quickmatch.roomCode])
 
+  // Hardware back button — cancel queue while searching, else go back to trivia
+  useEffect(() => {
+    let handler
+    let cancelled = false
+    import('@capacitor/app').then(({ App: CapApp }) => {
+      if (cancelled) return
+      CapApp.addListener('backButton', () => {
+        if (quickmatch.status === 'searching') cancel()
+        else navigate('/play/trivia')
+      }).then(h => { if (cancelled) h.remove?.(); else handler = h })
+    }).catch(() => { /* non-capacitor (web) — no-op */ })
+    return () => {
+      cancelled = true
+      try { handler?.remove?.() } catch {}
+    }
+  }, [quickmatch.status])
+
+  // App-state — cancel queue if backgrounded for >10s while searching
+  useEffect(() => {
+    if (quickmatch.status !== 'searching') return
+    let backgroundedAt = null
+    let handle = null
+    let cancelled = false
+    import('@capacitor/app').then(({ App: CapApp }) => {
+      if (cancelled) return
+      CapApp.addListener('appStateChange', ({ isActive }) => {
+        if (!isActive) backgroundedAt = Date.now()
+        else if (backgroundedAt && Date.now() - backgroundedAt > 10000) {
+          backgroundedAt = null
+          cancel()
+        }
+      }).then(h => { if (cancelled) h.remove?.(); else handle = h })
+    }).catch(() => {})
+    return () => {
+      cancelled = true
+      try { handle?.remove?.() } catch {}
+    }
+  }, [quickmatch.status])
+
   if (quickmatch.status === 'matched') {
     return (
       <MatchFoundSplash
