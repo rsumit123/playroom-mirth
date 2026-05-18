@@ -107,3 +107,34 @@ async def schedule_bot_answer(
             _logger.exception("bot answer task failed for room %s", room_code)
 
     return asyncio.create_task(_task())
+
+
+async def schedule_workers_for_room(state, room_code: str, sio, on_all_answered) -> None:
+    """For a freshly-started or restored quickmatch room, spawn bot workers for
+    each bot player and schedule their answer to the *current* question if one
+    is in flight."""
+    from app.db.session import SessionLocal
+    from app.models.user import User
+    from app.models.room_player import RoomPlayer
+
+    if not state.trivia_questions:
+        return
+    if state.current_question_index >= len(state.trivia_questions):
+        return
+
+    with SessionLocal() as db:
+        # Identify bot players in the room.
+        rows = db.query(RoomPlayer, User).join(User, RoomPlayer.user_id == User.id) \
+            .filter(RoomPlayer.room_id == state.room_id, User.is_bot == True).all()  # noqa: E712
+
+    # Lazily build accuracy slots if absent (after restart we won't have them).
+    if not hasattr(state, "_bot_accuracy_slots"):
+        state._bot_accuracy_slots = build_accuracy_slots(state.trivia_questions)
+
+    q_idx = state.current_question_index
+    slot = state._bot_accuracy_slots[q_idx] if q_idx < len(state._bot_accuracy_slots) else False
+    for rp, _user in rows:
+        await schedule_bot_answer(
+            state=state, room_code=room_code, bot_player_id=rp.id,
+            will_answer_correctly=slot, on_all_answered=on_all_answered,
+        )
