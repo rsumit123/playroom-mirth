@@ -93,3 +93,20 @@ async def test_disconnect_drops_user_from_queue():
     await sio._trigger_event("disconnect", "/", sid)
     await asyncio.sleep(0.05)
     assert matchmaker.USER_IN_QUEUE == {}
+
+
+@pytest.mark.asyncio
+async def test_bot_fallback_creates_match(monkeypatch):
+    monkeypatch.setattr(matchmaker, "FALLBACK_SECONDS", 0.2)
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+    _, token = _make_user("qm-f")
+    sid = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid,
+                             {"token": token, "category": "science"})
+    await asyncio.sleep(0.6)
+    # The user should now be removed from the queue and assigned to a room.
+    assert matchmaker.USER_IN_QUEUE == {}

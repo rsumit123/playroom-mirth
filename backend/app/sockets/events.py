@@ -757,6 +757,35 @@ async def _trivia_send_question(state: RoomGameState, room_code: str) -> None:
 
     state.task = asyncio.create_task(_timer())
 
+    # Spawn bot answers for any bot players in this room.
+    if not hasattr(state, "_bot_accuracy_slots"):
+        state._bot_accuracy_slots = trivia_bot.build_accuracy_slots(state.trivia_questions)
+
+    with SessionLocal() as db:
+        bot_player_rows = db.query(RoomPlayer, User).join(
+            User, RoomPlayer.user_id == User.id,
+        ).filter(
+            RoomPlayer.room_id == state.room_id,
+            User.is_bot == True,  # noqa: E712
+        ).all()
+
+    q_idx = state.current_question_index
+    slot = state._bot_accuracy_slots[q_idx] if q_idx < len(state._bot_accuracy_slots) else False
+
+    async def _on_all_answered():
+        # Acquire lock and resolve — mirrors _trivia_question_timeout.
+        # _trivia_resolve_question expects caller to hold state.lock (see its docstring).
+        async with state.lock:
+            if state.task and not state.task.done():
+                state.task.cancel()
+            await _trivia_resolve_question(state, room_code)
+
+    for rp, _user in bot_player_rows:
+        await trivia_bot.schedule_bot_answer(
+            state=state, room_code=room_code, bot_player_id=rp.id,
+            will_answer_correctly=slot, on_all_answered=_on_all_answered,
+        )
+
 
 async def _trivia_resolve_question(state: RoomGameState, room_code: str) -> None:
     """Score the current question and emit results. Caller MUST hold state.lock."""
@@ -1657,8 +1686,53 @@ async def _quickmatch_start_game(room_code: str) -> None:
 
 
 async def _quickmatch_pair_bot(entry, category: str) -> None:
-    """Filled in Task 4.6."""
-    raise NotImplementedError("filled in Task 4.6")
+    """Create a quickmatch room for one human + one bot, register sockets,
+    and start the pending-start gate.  Mirrors _quickmatch_pair_humans."""
+
+    with SessionLocal() as db:
+        user = db.query(User).filter(User.id == entry.user_id).first()
+        if not user:
+            return
+        bot = pick_random_bot(db)
+        if not bot:
+            return
+
+        payload = RoomCreateRequest(
+            rounds_total=1, difficulty=0, turn_seconds=15,
+            max_players=2, game_type="trivia", trivia_category=category,
+        )
+        lobby = create_room_for_user(db, user.id, payload)
+        room = db.query(Room).filter(Room.code == lobby.room.code).first()
+        room.origin = "quickmatch"
+        room.max_players = 2
+        room.min_players = 2
+        join_room_op(db, room, bot.id, None)
+        db.commit()
+
+        rp_user = db.query(RoomPlayer).filter(
+            RoomPlayer.room_id == room.id, RoomPlayer.user_id == user.id,
+        ).first()
+        room_code = room.code
+        bot_display = bot.display_name or "Player"
+
+    await sio.enter_room(entry.sid, room_code)
+    SID_TO_PLAYER[entry.sid] = rp_user.id
+    PLAYER_TO_SID[rp_user.id] = entry.sid
+    PLAYER_TO_ROOM[rp_user.id] = room_code
+
+    # Clean up matchmaker queue entry (bot won't naturally pop the human entry)
+    matchmaker.USER_IN_QUEUE.pop(user.id, None)
+
+    await sio.emit("quickmatch:matched",
+                   {"room_code": room_code, "opponent_name": bot_display},
+                   to=entry.sid)
+
+    async def _start_game(rc):
+        await _quickmatch_start_game(rc)
+
+    matchmaker.register_pending_start(
+        room_code, expected_user_ids={user.id}, on_start=_start_game,
+    )
 
 
 def restore_game_states() -> None:
