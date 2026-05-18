@@ -1565,6 +1565,21 @@ async def quickmatch_join(sid, data):
     return res
 
 
+@sio.on("quickmatch:ready")
+async def quickmatch_ready(sid, data):
+    token = data.get("token")
+    room_code = data.get("room_code")
+    if not token or not room_code:
+        return {"ok": False, "error": "BAD_REQUEST"}
+    with SessionLocal() as db:
+        user = get_user_from_token(db, token)
+    if not user:
+        return {"ok": False, "error": "UNAUTHORIZED"}
+
+    await matchmaker.register_ready(room_code, user.id)
+    return {"ok": True}
+
+
 @sio.on("quickmatch:cancel")
 async def quickmatch_cancel(sid, data):
     token = data.get("token")

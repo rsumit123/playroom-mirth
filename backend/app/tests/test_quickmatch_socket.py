@@ -110,3 +110,36 @@ async def test_bot_fallback_creates_match(monkeypatch):
     await asyncio.sleep(0.6)
     # The user should now be removed from the queue and assigned to a room.
     assert matchmaker.USER_IN_QUEUE == {}
+
+
+@pytest.mark.asyncio
+async def test_quickmatch_ready_starts_game_when_both_ready(monkeypatch):
+    """Two humans pair, both send :ready, game should auto-start."""
+    monkeypatch.setattr(matchmaker, "START_TIMEOUT_SECONDS", 5.0)
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+
+    _, ta = _make_user("qm-r-a")
+    _, tb = _make_user("qm-r-b")
+    sid_a = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    sid_b = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid_a,
+                             {"token": ta, "category": "science"})
+    await sio._trigger_event("quickmatch:join", "/", sid_b,
+                             {"token": tb, "category": "science"})
+    # Now both should be in a room. Find it.
+    from app.services.game_state import ROOM_STATES
+    assert len(matchmaker.PENDING_STARTS) == 1
+    room_code = next(iter(matchmaker.PENDING_STARTS))
+
+    await sio._trigger_event("quickmatch:ready", "/", sid_a,
+                             {"token": ta, "room_code": room_code})
+    await sio._trigger_event("quickmatch:ready", "/", sid_b,
+                             {"token": tb, "room_code": room_code})
+    await asyncio.sleep(0.1)
+    # Game has started — pending entry is removed, ROOM_STATES has the room.
+    assert room_code not in matchmaker.PENDING_STARTS
+    assert room_code in ROOM_STATES
