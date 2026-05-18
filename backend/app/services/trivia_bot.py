@@ -39,3 +39,17 @@ def pick_delay(difficulty: int, time_seconds: int) -> float:
         if DELAY_FLOOR <= sample <= cap:
             return sample
         # Resample if out of bounds.
+
+
+def build_accuracy_slots(questions: list[dict]) -> list[bool]:
+    """For each question, decide whether the bot will answer correctly.
+
+    Each slot is a Bernoulli draw at the question's difficulty-tier accuracy.
+    The resulting list is then shuffled to avoid positional patterns (e.g.,
+    'wrong on every 5th question')."""
+    slots = []
+    for q in questions:
+        target = _ACCURACY.get(q.get("difficulty", 2), 0.6)
+        slots.append(random.random() < target)
+    random.shuffle(slots)
+    return slots

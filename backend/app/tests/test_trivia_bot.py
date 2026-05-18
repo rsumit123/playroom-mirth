@@ -33,3 +33,35 @@ def test_pick_delay_floor_and_cap():
     for _ in range(100):
         d = trivia_bot.pick_delay(difficulty=2, time_seconds=15)
         assert 1.5 <= d <= min(8.0, 15 * 0.7)
+
+
+def test_build_accuracy_slots_matches_question_difficulties():
+    random.seed(0)
+    questions = [
+        {"difficulty": 1}, {"difficulty": 1}, {"difficulty": 1},
+        {"difficulty": 2}, {"difficulty": 2}, {"difficulty": 2}, {"difficulty": 2},
+        {"difficulty": 3}, {"difficulty": 3}, {"difficulty": 3},
+    ]
+    slots = trivia_bot.build_accuracy_slots(questions)
+    assert len(slots) == len(questions)
+    for s in slots:
+        assert isinstance(s, bool)
+
+
+def test_build_accuracy_slots_distribution_across_many_matches():
+    random.seed(0)
+    questions = [{"difficulty": 1}] * 1000
+    slots = trivia_bot.build_accuracy_slots(questions)
+    correct = sum(slots)
+    # 80% target ±5%
+    assert 750 <= correct <= 850
+
+
+def test_build_accuracy_slots_shuffled():
+    """Slots should not be in a predictable order — the per-difficulty
+    correctness gets shuffled together."""
+    random.seed(7)
+    questions = [{"difficulty": 1}] * 5 + [{"difficulty": 3}] * 5
+    slots = trivia_bot.build_accuracy_slots(questions)
+    # Probability of all-correct then all-wrong by chance is tiny; assert mix.
+    assert slots[:5] != [True, True, True, True, True] or slots[5:] != [False, False, False, False, False]
