@@ -2,6 +2,7 @@ import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import GameSetup from '../GameSetup.jsx'
 
+
 describe('GameSetup', () => {
   const defaultProps = {
     gameType: 'charades',
@@ -71,5 +72,37 @@ describe('GameSetup', () => {
     render(<GameSetup {...defaultProps} onBack={onBack} />)
     fireEvent.click(screen.getByText(/Back/))
     expect(onBack).toHaveBeenCalledTimes(1)
+  })
+})
+
+describe('GameSetup — Quick Play hero', () => {
+  const defaultProps = {
+    onCreate: vi.fn(),
+    onJoin: vi.fn(),
+    onBack: vi.fn(),
+    loadingCreate: false,
+    loadingJoin: false,
+  }
+
+  it('shows Quick Play hero for signed-in trivia', () => {
+    render(<GameSetup {...defaultProps} gameType="trivia" signedIn onQuickPlay={vi.fn()} />)
+    expect(screen.getByText(/Quick Play/i)).toBeTruthy()
+  })
+
+  it('hides Quick Play hero for guest trivia', () => {
+    render(<GameSetup {...defaultProps} gameType="trivia" signedIn={false} onQuickPlay={vi.fn()} />)
+    expect(screen.queryByText(/Quick Play/i)).toBeNull()
+  })
+
+  it('hides Quick Play hero for charades regardless of auth', () => {
+    render(<GameSetup {...defaultProps} gameType="charades" signedIn onQuickPlay={vi.fn()} />)
+    expect(screen.queryByText(/Quick Play/i)).toBeNull()
+  })
+
+  it('calls onQuickPlay when hero is tapped', () => {
+    const onQuickPlay = vi.fn()
+    render(<GameSetup {...defaultProps} gameType="trivia" signedIn onQuickPlay={onQuickPlay} />)
+    fireEvent.click(screen.getByText(/Play Now/i))
+    expect(onQuickPlay).toHaveBeenCalledOnce()
   })
 })

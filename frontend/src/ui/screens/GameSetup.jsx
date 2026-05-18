@@ -10,7 +10,7 @@ const GAME_LABELS = {
   trivia: 'Trivia',
 }
 
-export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onBack, loadingCreate, loadingJoin }) {
+export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onBack, loadingCreate, loadingJoin, signedIn = false, onQuickPlay }) {
   const [tab, setTab] = useState('create')
   const [rounds, setRounds] = useState(3)
   const [timer, setTimer] = useState(120)
@@ -46,6 +46,23 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
             Join Room
           </button>
         </div>
+
+        {gameType === 'trivia' && signedIn && onQuickPlay && (
+          <>
+            <button
+              className="w-full mb-4 rounded-2xl bg-gradient-to-br from-accent to-accent/80 text-white p-6 shadow-lg active:scale-[0.98] transition text-left"
+              onClick={onQuickPlay}
+            >
+              <div className="text-2xl">⚡</div>
+              <h2 className="font-display text-2xl mt-1">Quick Play</h2>
+              <p className="text-sm opacity-90 mt-1">Match with a live player</p>
+              <div className="mt-3 text-sm font-semibold">Play Now →</div>
+            </button>
+            <div className="my-3 flex items-center gap-2 text-xs text-slate/40">
+              <div className="flex-1 h-px bg-black/10" /> or <div className="flex-1 h-px bg-black/10" />
+            </div>
+          </>
+        )}
 
         {tab === 'create' ? (
           <div className="card p-6 space-y-6 animate-pop">

@@ -5,7 +5,8 @@ import { useApp } from '../../state/AppContext.jsx'
 export default function GameSetupPage() {
   const navigate = useNavigate()
   const { gameType } = useParams()
-  const { createRoom, joinRoom, bindLobbyEvents, ui } = useApp()
+  const { createRoom, joinRoom, bindLobbyEvents, ui, auth } = useApp()
+  const signedIn = !!auth?.user
 
   async function handleCreate(payload) {
     try {
@@ -35,6 +36,8 @@ export default function GameSetupPage() {
       onBack={() => navigate('/home')}
       loadingCreate={Boolean(ui?.loadingKeys?.create_room)}
       loadingJoin={Boolean(ui?.loadingKeys?.join_room)}
+      signedIn={signedIn}
+      onQuickPlay={() => navigate('/quickmatch')}
     />
   )
 }
