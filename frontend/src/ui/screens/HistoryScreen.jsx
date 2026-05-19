@@ -23,73 +23,111 @@ function relativeTime(iso) {
   return `${Math.floor(mo / 12)}y ago`
 }
 
-function StatsCard({ stats }) {
-  if (!stats) {
-    return <div className="card p-4 animate-pop"><div className="h-12 bg-black/5 rounded animate-pulse" /></div>
+// Stats are filtered by the current tab, so we want one tile per game_type
+// (already filtered to the chosen origin). When tab === 'all', collapse rows
+// that share a game_type so we don't show "Trivia friends" and "Trivia
+// quickmatch" as two separate tiles — sum them.
+function collapseByGameType(byGameType) {
+  const map = new Map()
+  for (const s of byGameType) {
+    const cur = map.get(s.game_type)
+    if (!cur) {
+      map.set(s.game_type, { game_type: s.game_type, games_played: s.games_played, wins: s.wins, losses: s.losses })
+    } else {
+      cur.games_played += s.games_played
+      cur.wins += s.wins
+      cur.losses += s.losses
+    }
   }
-  const winRate = stats.total_games > 0 ? Math.round((stats.total_wins / stats.total_games) * 100) : 0
-  return (
-    <div className="card p-4 space-y-3 animate-pop">
-      <div className="grid grid-cols-3 gap-3 text-center">
-        <div>
-          <div className="text-xs text-slate/60">Games</div>
-          <div className="font-display text-2xl">{stats.total_games}</div>
-        </div>
-        <div>
-          <div className="text-xs text-slate/60">Wins</div>
-          <div className="font-display text-2xl text-accent">{stats.total_wins}</div>
-        </div>
-        <div>
-          <div className="text-xs text-slate/60">Win rate</div>
-          <div className="font-display text-2xl">{winRate}%</div>
-        </div>
-      </div>
-      {stats.by_game_type.length > 0 && (
-        <div className="space-y-1.5 pt-1 border-t border-black/5">
-          {stats.by_game_type.slice(0, 4).map((s, i) => (
-            <div key={i} className="flex items-center justify-between text-sm">
-              <div className="flex items-center gap-2">
-                <span className="text-base">{GAME_ICON[s.game_type] || '🎮'}</span>
-                <span className="text-slate/80">{GAME_LABEL[s.game_type] || s.game_type}</span>
-                <span className="text-xs text-slate/40 capitalize">· {s.origin}</span>
-              </div>
-              <div className="text-xs text-slate/60">
-                <span className="text-accent font-semibold">{s.wins}W</span>
-                <span> / </span>
-                <span>{s.losses}L</span>
-                <span className="ml-2 text-slate/40">({s.games_played})</span>
-              </div>
+  return [...map.values()].sort((a, b) => b.games_played - a.games_played)
+}
+
+function StatsTotals({ stats }) {
+  if (!stats) {
+    return (
+      <div className="card p-5 animate-pop">
+        <div className="grid grid-cols-3 gap-4">
+          {[0, 1, 2].map(i => (
+            <div key={i} className="text-center">
+              <div className="h-3 bg-black/5 rounded mb-2 animate-pulse" />
+              <div className="h-7 bg-black/5 rounded animate-pulse" />
             </div>
           ))}
         </div>
-      )}
+      </div>
+    )
+  }
+  const winRate = stats.total_games > 0 ? Math.round((stats.total_wins / stats.total_games) * 100) : 0
+  return (
+    <div className="card p-5 animate-pop">
+      <div className="grid grid-cols-3 gap-3 text-center">
+        <div>
+          <div className="text-[11px] uppercase tracking-wider text-slate/50">Games</div>
+          <div className="font-display text-3xl mt-1">{stats.total_games}</div>
+        </div>
+        <div>
+          <div className="text-[11px] uppercase tracking-wider text-slate/50">Wins</div>
+          <div className="font-display text-3xl text-accent mt-1">{stats.total_wins}</div>
+        </div>
+        <div>
+          <div className="text-[11px] uppercase tracking-wider text-slate/50">Win rate</div>
+          <div className="font-display text-3xl mt-1">{winRate}%</div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function GameTypeTiles({ stats }) {
+  if (!stats || stats.by_game_type.length === 0) return null
+  const tiles = collapseByGameType(stats.by_game_type)
+  return (
+    <div className="grid grid-cols-2 gap-3">
+      {tiles.map((t) => {
+        const rate = t.games_played > 0 ? Math.round((t.wins / t.games_played) * 100) : 0
+        return (
+          <div key={t.game_type} className="card-flat p-4 space-y-1.5">
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">{GAME_ICON[t.game_type] || '🎮'}</span>
+              <span className="font-semibold text-sm">{GAME_LABEL[t.game_type] || t.game_type}</span>
+            </div>
+            <div className="text-xs text-slate/60">{t.games_played} played</div>
+            <div className="text-sm font-medium pt-1">
+              <span className="text-accent">{t.wins}W</span>
+              <span className="text-slate/40 mx-1">·</span>
+              <span className="text-slate/70">{t.losses}L</span>
+              <span className="text-xs text-slate/40 ml-1.5">({rate}%)</span>
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }
 
 function HistoryRow({ row }) {
   return (
-    <div className="card-flat p-3 flex items-center gap-3">
-      <div className="text-2xl shrink-0">{GAME_ICON[row.game_type] || '🎮'}</div>
+    <div className="card-flat p-3.5 flex items-center gap-3">
+      <div className="text-2xl shrink-0 w-8 text-center">{GAME_ICON[row.game_type] || '🎮'}</div>
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2">
-          <span className="font-medium text-sm truncate">{GAME_LABEL[row.game_type] || row.game_type}</span>
+        <div className="flex items-center gap-1.5 flex-wrap">
+          <span className="font-medium text-sm">{GAME_LABEL[row.game_type] || row.game_type}</span>
           {row.origin === 'quickmatch' && (
-            <span className="badge bg-accent/10 text-accent text-[10px]">Quick</span>
+            <span className="badge bg-accent/10 text-accent text-[10px] px-1.5 py-0.5">Quick</span>
           )}
         </div>
-        <div className="text-xs text-slate/50 flex items-center gap-2 mt-0.5">
-          <span>{relativeTime(row.played_at)}</span>
-          <span>·</span>
-          <span>{row.player_count} player{row.player_count === 1 ? '' : 's'}</span>
+        <div className="text-[11px] text-slate/50 mt-0.5">
+          {relativeTime(row.played_at)} · {row.player_count} player{row.player_count === 1 ? '' : 's'}
         </div>
       </div>
       <div className="text-right shrink-0">
-        <div className={`text-sm font-bold ${row.is_winner ? 'text-accent' : 'text-slate/50'}`}>
-          {row.is_winner ? '🏆' : ''} {row.score}
-        </div>
-        <div className="text-[10px] text-slate/40 uppercase tracking-wider">
-          {row.is_winner ? 'Win' : 'Loss'}
+        {row.is_winner ? (
+          <div className="text-base">🏆</div>
+        ) : (
+          <div className="text-[10px] uppercase tracking-wider text-slate/40">Loss</div>
+        )}
+        <div className={`text-sm font-bold mt-0.5 ${row.is_winner ? 'text-accent' : 'text-slate/60'}`}>
+          {row.score}
         </div>
       </div>
     </div>
@@ -108,16 +146,20 @@ export default function HistoryScreen({
   onBack,
 }) {
   return (
-    <div className="game-shell py-6">
-      <div className="page-medium space-y-5">
-        <div className="relative text-center py-1">
-          <button className="btn-ghost-sm touch-target absolute left-0 top-1/2 -translate-y-1/2" onClick={onBack}>&larr; Back</button>
-          <h2 className="font-display text-2xl">Game History</h2>
-          <p className="text-xs text-slate/50">Your scores, wins, and recent matches</p>
+    <div className="game-shell pb-6">
+      <div className="page-medium space-y-5 pt-3">
+        {/* Mobile-friendly header — back chip on its own line, then title block */}
+        <div className="space-y-3">
+          <button className="btn-ghost-sm touch-target inline-flex items-center gap-1" onClick={onBack}>
+            &larr; Back
+          </button>
+          <div>
+            <h1 className="font-display text-2xl">Game History</h1>
+            <p className="text-xs text-slate/50 mt-0.5">Your scores, wins, and matches</p>
+          </div>
         </div>
 
-        <StatsCard stats={stats} />
-
+        {/* Tabs first — they filter both the stats card AND the row list */}
         <div className="segmented">
           {TABS.map(t => (
             <button
@@ -130,32 +172,38 @@ export default function HistoryScreen({
           ))}
         </div>
 
-        {loading && rows.length === 0 ? (
-          <div className="space-y-2">
-            {[0, 1, 2].map(i => (
-              <div key={i} className="card-flat p-3 h-14 bg-black/5 animate-pulse rounded-xl" />
-            ))}
-          </div>
-        ) : rows.length === 0 ? (
-          <div className="card p-8 text-center text-slate/60 animate-pop">
-            <div className="text-4xl mb-2">🎮</div>
-            <p className="font-medium">No games yet in this tab.</p>
-            <p className="text-xs text-slate/50 mt-1">Play a match and your results will show up here.</p>
-          </div>
-        ) : (
-          <div className="space-y-2">
-            {rows.map(r => <HistoryRow key={r.id} row={r} />)}
-            {hasMore && (
-              <button
-                className="btn-ghost-sm w-full touch-target"
-                onClick={onLoadMore}
-                disabled={loadingMore}
-              >
-                {loadingMore ? 'Loading...' : 'Load more'}
-              </button>
-            )}
-          </div>
-        )}
+        <StatsTotals stats={stats} />
+        <GameTypeTiles stats={stats} />
+
+        <div className="pt-1">
+          <div className="text-xs uppercase tracking-wider text-slate/40 px-1 pb-2">Matches</div>
+          {loading && rows.length === 0 ? (
+            <div className="space-y-2">
+              {[0, 1, 2, 3].map(i => (
+                <div key={i} className="card-flat h-16 bg-black/5 animate-pulse rounded-xl" />
+              ))}
+            </div>
+          ) : rows.length === 0 ? (
+            <div className="card p-8 text-center text-slate/60 animate-pop">
+              <div className="text-4xl mb-2">🎮</div>
+              <p className="font-medium">No games yet in this tab.</p>
+              <p className="text-xs text-slate/50 mt-1">Play a match and your results will show up here.</p>
+            </div>
+          ) : (
+            <div className="space-y-2">
+              {rows.map(r => <HistoryRow key={r.id} row={r} />)}
+              {hasMore && (
+                <button
+                  className="btn-ghost-sm w-full touch-target mt-1"
+                  onClick={onLoadMore}
+                  disabled={loadingMore}
+                >
+                  {loadingMore ? 'Loading...' : 'Load more'}
+                </button>
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )

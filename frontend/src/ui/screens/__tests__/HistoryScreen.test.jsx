@@ -29,37 +29,70 @@ function renderScreen(overrides = {}) {
     onBack: vi.fn(),
     ...overrides,
   }
-  const utils = render(<HistoryScreen {...props} />)
-  return { ...utils, props }
+  return { ...render(<HistoryScreen {...props} />), props }
 }
 
 describe('HistoryScreen', () => {
-  it('renders the 3 tabs (All, Quick Play, Friends)', () => {
+  it('renders the back chip and title on separate lines (mobile-friendly header)', () => {
+    renderScreen()
+    const back = screen.getByText(/Back/i)
+    const title = screen.getByText('Game History')
+    expect(back).toBeTruthy()
+    expect(title).toBeTruthy()
+    // Title should not be inside the back button (overlap regression check).
+    expect(back.closest('button')).not.toBe(title.closest('button'))
+  })
+
+  it('renders the 3 filter tabs', () => {
     renderScreen()
     expect(screen.getByText('All')).toBeTruthy()
     expect(screen.getByText('Quick Play')).toBeTruthy()
     expect(screen.getByText('Friends')).toBeTruthy()
   })
 
-  it('renders the stats summary (games, wins, win-rate, per-game breakdown)', () => {
+  it('renders headline totals (games / wins / win-rate)', () => {
     renderScreen()
-    expect(screen.getByText('7')).toBeTruthy() // total games
-    expect(screen.getByText('4')).toBeTruthy() // total wins
-    expect(screen.getByText('57%')).toBeTruthy() // win rate
-    // Both the stats card and the row list mention game names.
-    expect(screen.getAllByText(/Trivia/i).length).toBeGreaterThan(0)
-    expect(screen.getAllByText(/Charades/i).length).toBeGreaterThan(0)
+    expect(screen.getByText('7')).toBeTruthy()
+    expect(screen.getByText('4')).toBeTruthy()
+    expect(screen.getByText('57%')).toBeTruthy()
   })
 
-  it('renders each game row with score and win/loss state', () => {
+  it('renders one tile per game type (collapsing across origins)', () => {
+    renderScreen()
+    // Two game types in stats -> two tiles. Headers appear once each in the stats grid.
+    // (The row list also mentions "Trivia"/"Charades", but those are separate from the tiles.)
+    const trivia = screen.getAllByText(/^Trivia$/)
+    const charades = screen.getAllByText(/^Charades$/)
+    expect(trivia.length).toBeGreaterThanOrEqual(1)
+    expect(charades.length).toBeGreaterThanOrEqual(1)
+  })
+
+  it('collapses same game_type across origins into a single tile (stats summary)', () => {
+    const stats = {
+      total_games: 8, total_wins: 4,
+      by_game_type: [
+        { game_type: 'trivia', origin: 'quickmatch', games_played: 5, wins: 3, losses: 2 },
+        { game_type: 'trivia', origin: 'friends', games_played: 3, wins: 1, losses: 2 },
+      ],
+      by_origin: { quickmatch: 5, friends: 3 },
+    }
+    const { container } = renderScreen({ stats, rows: [] })
+    // Only ONE Trivia tile in the grid (stats tiles), even though by_game_type has two rows.
+    const tiles = container.querySelectorAll('.grid.grid-cols-2 .card-flat')
+    expect(tiles.length).toBe(1)
+    // Combined: 8 played, 4W 4L
+    expect(container.textContent).toContain('8 played')
+    expect(container.textContent).toContain('4W')
+    expect(container.textContent).toContain('4L')
+  })
+
+  it('renders each match row with score + win/loss state', () => {
     const { container } = renderScreen()
-    // Score values appear
     expect(container.textContent).toContain('1450')
-    expect(container.textContent).toContain('Win')
-    expect(container.textContent).toContain('Loss')
+    expect(container.textContent).toMatch(/Loss/i)
   })
 
-  it('marks quickmatch rows with a Quick badge', () => {
+  it('marks quickmatch match-rows with a Quick badge', () => {
     renderScreen()
     expect(screen.getByText(/^Quick$/)).toBeTruthy()
   })
@@ -101,9 +134,11 @@ describe('HistoryScreen', () => {
     expect(onBack).toHaveBeenCalledOnce()
   })
 
-  it('handles stats=null gracefully (skeleton, no crash)', () => {
-    renderScreen({ stats: null })
-    // Did not throw; renders something
-    expect(document.querySelector('.card')).toBeTruthy()
+  it('handles stats=null gracefully (skeleton totals, no game-type tiles, no crash)', () => {
+    const { container } = renderScreen({ stats: null })
+    // Skeletons exist
+    expect(container.querySelectorAll('.animate-pulse').length).toBeGreaterThan(0)
+    // No game-type tiles when stats is null
+    expect(container.querySelector('.grid.grid-cols-2 .card-flat')).toBeNull()
   })
 })

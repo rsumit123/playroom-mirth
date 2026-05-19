@@ -1,8 +1,4 @@
-import { useState } from 'react'
-
-export default function Home({ onSelectGame, onRejoin, onLeaveRoom, onFriends, loadingLeave, activeRooms = [], gameHistory = [], isSignedIn = false }) {
-  const [showHistory, setShowHistory] = useState(false)
-
+export default function Home({ onSelectGame, onRejoin, onLeaveRoom, onFriends, loadingLeave, activeRooms = [], isSignedIn = false }) {
   return (
     <div className="game-shell py-6">
       <div className="page-medium space-y-6">
@@ -130,45 +126,6 @@ export default function Home({ onSelectGame, onRejoin, onLeaveRoom, onFriends, l
           </button>
         </div>
 
-        {/* Recent Games (collapsible) */}
-        {isSignedIn && gameHistory.length > 0 && (
-          <div className="card overflow-hidden animate-pop">
-            <button
-              className="w-full px-5 py-4 flex items-center justify-between text-left"
-              onClick={() => setShowHistory((v) => !v)}
-            >
-              <div className="flex items-center gap-2">
-                <h2 className="font-semibold">Recent Games</h2>
-                <span className="badge bg-accent/10 text-accent text-[10px]">{gameHistory.length}</span>
-              </div>
-              <span className={`text-slate/40 transition-transform duration-200 ${showHistory ? 'rotate-180' : ''}`}>&#9662;</span>
-            </button>
-            {showHistory && (
-              <div className="px-5 pb-5 space-y-2">
-                {gameHistory.map((g) => (
-                  <div key={g.id} className="flex items-center justify-between rounded-xl border border-black/5 px-4 py-3">
-                    <div className="flex items-center gap-3 min-w-0 flex-1">
-                      <span className="text-lg">
-                        {g.game_type === 'scribble' ? '\u270F\uFE0F' : g.game_type === 'trivia' ? '\uD83E\uDDE0' : '\uD83D\uDCAC'}
-                      </span>
-                      <span className="badge bg-accent/10 text-accent text-[10px]">
-                        {g.game_type === 'scribble' ? 'Scribble' : g.game_type === 'trivia' ? 'Trivia' : 'Charades'}
-                      </span>
-                      {g.is_winner && (
-                        <span className="text-sm" title="Winner!">&#127942;</span>
-                      )}
-                    </div>
-                    <div className="flex items-center gap-4 text-xs text-slate/50 shrink-0">
-                      <span>{g.player_count} players</span>
-                      <span>{new Date(g.played_at).toLocaleDateString()}</span>
-                      <span className="font-semibold text-sm text-slate/80">{g.score} pts</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        )}
       </div>
     </div>
   )

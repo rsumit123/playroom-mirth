@@ -21,10 +21,10 @@ export default function HistoryPage() {
     if (!auth?.token) navigate('/home', { replace: true })
   }, [auth?.token])
 
-  const loadStats = useCallback(async () => {
+  const loadStats = useCallback(async (origin) => {
     if (!auth?.token) return
     try {
-      const data = await api.getGameHistoryStats(auth.token, { origin: 'all' })
+      const data = await api.getGameHistoryStats(auth.token, { origin })
       setStats(data)
     } catch { /* leave stats null, UI shows skeleton */ }
   }, [auth?.token])
@@ -35,20 +35,21 @@ export default function HistoryPage() {
     return data
   }, [auth?.token])
 
-  useEffect(() => { loadStats() }, [loadStats])
-
+  // Refetch stats AND rows when the tab changes — stats are scoped to the
+  // current tab so the user sees one consistent context at a time.
   useEffect(() => {
     let cancelled = false
     setLoading(true)
     setRows([])
     setHasMore(false)
-    loadPage(tab, 0).then(data => {
+    setStats(null)
+    Promise.all([loadStats(tab), loadPage(tab, 0)]).then(([, data]) => {
       if (cancelled) return
-      setRows(data)
-      setHasMore(data.length === PAGE_SIZE)
+      setRows(data || [])
+      setHasMore((data || []).length === PAGE_SIZE)
     }).finally(() => { if (!cancelled) setLoading(false) })
     return () => { cancelled = true }
-  }, [tab, loadPage])
+  }, [tab, loadStats, loadPage])
 
   async function handleLoadMore() {
     setLoadingMore(true)
