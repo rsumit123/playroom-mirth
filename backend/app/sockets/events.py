@@ -356,6 +356,32 @@ async def disconnect(sid):
             if rp:
                 rp.connected = False
                 db.commit()
+
+        # Quickmatch trivia: pause the game so the bot doesn't keep scoring
+        # while the human is offline. On reconnect, we resume from the current
+        # question with a fresh timer. On grace timeout, the survivor wins.
+        state = ROOM_STATES.get(room_code)
+        is_quickmatch_pause = (
+            state is not None
+            and state.game_type == "trivia"
+            and state.origin == "quickmatch"
+            and player_id in state.player_order
+        )
+        if is_quickmatch_pause:
+            async with state.lock:
+                state.paused = True
+                if state.task and not state.task.done():
+                    state.task.cancel()
+                for t in state.bot_answer_tasks:
+                    if t and not t.done():
+                        t.cancel()
+                state.bot_answer_tasks = []
+            await sio.emit(
+                "game:paused",
+                {"player_id": player_id, "expires_at": int(time.time() + grace_seconds)},
+                room=room_code,
+            )
+
         # schedule removal after grace period
         if player_id in PLAYER_GRACE_TASKS and not PLAYER_GRACE_TASKS[player_id].done():
             PLAYER_GRACE_TASKS[player_id].cancel()
@@ -368,9 +394,16 @@ async def disconnect(sid):
                     db.commit()
                 else:
                     return  # player reconnected
-            await sio.emit("game:player_removed", {"player_id": player_id}, room=room_code)
-            # Clean up in-memory game state
+            # Quickmatch trivia forfeit: end the game with the survivor as winner.
             state = ROOM_STATES.get(room_code)
+            if state and state.game_type == "trivia" and state.origin == "quickmatch":
+                async with state.lock:
+                    survivors = [pid for pid in state.player_order if pid != player_id]
+                    winner = survivors[0] if survivors else None
+                    await _auto_end_game(state, room_code, winner_player_id=winner)
+                return
+            await sio.emit("game:player_removed", {"player_id": player_id}, room=room_code)
+            # Non-quickmatch cleanup (charades/scribble friend games).
             if not state or player_id not in state.player_order:
                 return
             async with state.lock:
@@ -496,6 +529,23 @@ async def room_register(sid, data):
     state = ROOM_STATES.get(room_code)
     if state and rp.id in state.player_order:
         if state.game_type == "trivia":
+            # If we paused the game on the partner's disconnect (quickmatch),
+            # restart the current question with a fresh timer + bot answers so
+            # the returning player isn't already-behind on time. We also have
+            # to broadcast to the room so the survivor's UI resets.
+            should_resume = (
+                state.paused and state.origin == "quickmatch"
+                and state.trivia_questions
+                and state.current_question_index < len(state.trivia_questions)
+            )
+            if should_resume:
+                async with state.lock:
+                    state.paused = False
+                    state.player_answers = {}
+                await sio.emit("game:resumed", {"player_id": rp.id}, room=room_code)
+                await _trivia_send_question(state, room_code)
+                return {"ok": True}
+
             # Trivia reconnection: send navigation trigger + current question
             await sio.emit("game:turn_start", {
                 "game_type": "trivia",
@@ -784,11 +834,14 @@ async def _trivia_send_question(state: RoomGameState, room_code: str) -> None:
                 state.task.cancel()
             await _trivia_resolve_question(state, room_code)
 
+    # Reset the bot-answer task list — these tasks belong to this question only.
+    state.bot_answer_tasks = []
     for rp, _user in bot_player_rows:
-        await trivia_bot.schedule_bot_answer(
+        task = await trivia_bot.schedule_bot_answer(
             state=state, room_code=room_code, bot_player_id=rp.id,
             will_answer_correctly=slot, on_all_answered=_on_all_answered,
         )
+        state.bot_answer_tasks.append(task)
 
 
 async def _trivia_resolve_question(state: RoomGameState, room_code: str) -> None:
@@ -847,6 +900,11 @@ async def _trivia_question_timeout(room_code: str) -> None:
     if not state:
         return
     async with state.lock:
+        # Paused (quickmatch disconnect grace) — skip resolve. The reconnect
+        # handler will restart this question fresh, or _remove_after_grace will
+        # forfeit-end the game.
+        if state.paused:
+            return
         await _trivia_resolve_question(state, room_code)
 
 

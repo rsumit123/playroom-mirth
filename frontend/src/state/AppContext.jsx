@@ -470,6 +470,18 @@ export function AppProvider({ children }) {
         setGame((g) => ({ ...g, reconnecting: true, reconnectGrace: payload }))
       }
     })
+    socket.off('game:paused')
+    socket.off('game:resumed')
+    // Quickmatch pause-on-disconnect: payload.player_id is the one who left.
+    // The survivor sees "Opponent disconnected" until either resume or forfeit.
+    socket.on('game:paused', (payload) => {
+      if (payload?.player_id && payload.player_id !== selfPlayerId) {
+        setGame((g) => ({ ...g, opponentDisconnected: payload }))
+      }
+    })
+    socket.on('game:resumed', () => {
+      setGame((g) => ({ ...g, opponentDisconnected: null }))
+    })
     socket.on('disconnect', () => setGame((g) => ({ ...g, reconnecting: true, reconnectGrace: { expires_at: Math.floor(Date.now() / 1000) + 60 } })))
     socket.on('connect', () => {
       setGame((g) => ({ ...g, reconnecting: false, reconnectGrace: null }))

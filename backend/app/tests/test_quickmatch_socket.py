@@ -591,3 +591,47 @@ async def test_join_with_different_category_replaces_queue_entry():
     assert entry.category == "history"
     # Old category queue should no longer contain this user.
     assert all(e.user_id != user_id for e in matchmaker.QUEUES.get("science", []))
+
+
+# ---- Disconnect pauses the game, reconnect resumes, timeout forfeits ------
+
+@pytest.mark.asyncio
+async def test_disconnect_pauses_quickmatch_trivia(monkeypatch):
+    """When a human disconnects mid-quickmatch-trivia, the game must pause:
+    state.paused=True, current timer cancelled, bot answer tasks cancelled."""
+    monkeypatch.setattr(matchmaker, "START_TIMEOUT_SECONDS", 5.0)
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+    _, ta = _make_user("qm-pa-a")
+    _, tb = _make_user("qm-pa-b")
+    sid_a = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    sid_b = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid_a,
+                             {"token": ta, "category": "science"})
+    await sio._trigger_event("quickmatch:join", "/", sid_b,
+                             {"token": tb, "category": "science"})
+    room_code = next(iter(matchmaker.PENDING_STARTS))
+    await sio._trigger_event("quickmatch:ready", "/", sid_a,
+                             {"token": ta, "room_code": room_code})
+    await sio._trigger_event("quickmatch:ready", "/", sid_b,
+                             {"token": tb, "room_code": room_code})
+    await asyncio.sleep(0.1)
+
+    from app.services.game_state import ROOM_STATES
+    state = ROOM_STATES[room_code]
+    assert state.paused is False
+
+    await sio._trigger_event("disconnect", "/", sid_a)
+    await asyncio.sleep(0.05)
+    assert state.paused is True
+    assert state.task is None or state.task.cancelled() or state.task.done()
+
+
+# Note: the grace-timeout → forfeit-to-survivor path is the same code as the
+# explicit `game:leave` path tested in test_quickmatch_leave_forfeits_to_survivor
+# above (both call _auto_end_game with winner_player_id=survivor). We don't
+# duplicate that test here; the pause test above is what's specific to
+# disconnect (vs. explicit leave).

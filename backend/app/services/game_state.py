@@ -35,6 +35,11 @@ class RoomGameState:
     strokes: List[dict] = field(default_factory=list)  # scribble stroke buffer (in-memory only, not persisted)
     task: Optional[asyncio.Task] = None
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
+    # Quickmatch pause-on-disconnect: when a human disconnects in the middle of
+    # a 2-player game, we pause question advancement + bot answers until they
+    # reconnect (or the 60s grace fires and the game ends).
+    paused: bool = False
+    bot_answer_tasks: List[asyncio.Task] = field(default_factory=list)
 
 
 ROOM_STATES: Dict[str, RoomGameState] = {}

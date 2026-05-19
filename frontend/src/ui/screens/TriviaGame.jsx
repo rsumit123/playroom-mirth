@@ -118,6 +118,16 @@ export default function TriviaGame({ game, onAnswer, onLeave, playerNames = {} }
             questionIndex={trivia?.question_index}
           />
 
+          {/* Opponent-disconnected banner (quickmatch pause). The current
+              question is frozen on the backend — we just communicate it here
+              so the survivor knows they're not stuck. */}
+          {game?.opponentDisconnected && (
+            <div className="bg-amber-50 border-b border-amber-200 px-4 py-2 text-center text-sm text-amber-800">
+              <span className="font-medium">Opponent disconnected.</span>{' '}
+              <span className="opacity-80">Waiting up to 60s for them to come back…</span>
+            </div>
+          )}
+
           {/* Question + Options */}
           <div className="flex-1 overflow-y-auto px-4 py-6">
             <div className="max-w-lg mx-auto space-y-6">
