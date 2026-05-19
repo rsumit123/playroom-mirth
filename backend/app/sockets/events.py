@@ -1761,6 +1761,68 @@ async def _quickmatch_pair_bot(entry, category: str) -> None:
     )
 
 
+@sio.on("quickmatch:rematch_request")
+async def quickmatch_rematch_request(sid, data):
+    """Human-vs-human rematch. Both ex-opponents must request within
+    REMATCH_TIMEOUT_SECONDS for a fresh paired room to be created."""
+    token = data.get("token")
+    old_room_code = data.get("room_code")
+    if not token or not old_room_code:
+        return {"ok": False, "error": "BAD_REQUEST"}
+    with SessionLocal() as db:
+        user = get_user_from_token(db, token)
+        if not user:
+            return {"ok": False, "error": "UNAUTHORIZED"}
+        room = db.query(Room).filter(Room.code == old_room_code).first()
+        if not room or room.origin != "quickmatch":
+            return {"ok": False, "error": "NOT_QUICKMATCH"}
+        players = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).all()
+        user_ids = {p.user_id for p in players if p.user_id and p.user_id > 0}
+        if user.id not in user_ids:
+            return {"ok": False, "error": "NOT_IN_ROOM"}
+        if len(user_ids) != 2:
+            return {"ok": False, "error": "NOT_TWO_HUMANS"}
+        category = room.trivia_category or "general_knowledge"
+
+    SID_TO_USER[sid] = user.id
+
+    async def _do_pair(sids: dict):
+        items = list(sids.items())
+        entry_a = matchmaker.QueueEntry(
+            user_id=items[0][0], sid=items[0][1],
+            joined_at=time.time(), category=category, matched=True,
+        )
+        entry_b = matchmaker.QueueEntry(
+            user_id=items[1][0], sid=items[1][1],
+            joined_at=time.time(), category=category, matched=True,
+        )
+        await _quickmatch_pair_humans(entry_a, entry_b, category)
+
+    async def _on_declined(declined_sid: str):
+        await sio.emit("quickmatch:rematch_declined", {}, to=declined_sid)
+
+    res = await matchmaker.request_rematch(
+        old_room_code, user.id, sid, user_ids, category,
+        on_pair=_do_pair, on_timeout=_on_declined,
+    )
+    if res.get("status") == "waiting":
+        await sio.emit("quickmatch:rematch_waiting", {}, to=sid)
+    return res
+
+
+@sio.on("quickmatch:rematch_cancel")
+async def quickmatch_rematch_cancel(sid, data):
+    token = data.get("token")
+    old_room_code = data.get("room_code")
+    if not token or not old_room_code:
+        return {"ok": False, "error": "BAD_REQUEST"}
+    with SessionLocal() as db:
+        user = get_user_from_token(db, token)
+    if not user:
+        return {"ok": False, "error": "UNAUTHORIZED"}
+    return await matchmaker.cancel_rematch(old_room_code, user.id)
+
+
 @sio.on("quickmatch:rematch_bot")
 async def quickmatch_rematch_bot(sid, data):
     """Instant bot rematch — bypass the 15s queue and pair the user with a

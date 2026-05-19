@@ -18,6 +18,7 @@ from typing import Optional
 
 FALLBACK_SECONDS = 15
 START_TIMEOUT_SECONDS = 10  # 10s safety for quickmatch:ready gating
+REMATCH_TIMEOUT_SECONDS = 15
 
 
 @dataclass
@@ -37,6 +38,12 @@ QUEUE_LOCKS: dict[str, asyncio.Lock] = defaultdict(asyncio.Lock)
 # Rooms awaiting both clients' quickmatch:ready before game starts.
 # Maps room_code -> { "expected": set[user_id], "ready": set[user_id], "task": asyncio.Task }
 PENDING_STARTS: dict[str, dict] = {}
+
+# Pending human rematch requests, keyed by the OLD (just-finished) quickmatch
+# room_code. Once both ex-opponents request a rematch, the on_pair callback
+# fires (which creates a fresh room via the normal pair-humans flow). After
+# REMATCH_TIMEOUT_SECONDS, on_timeout fires for any still-waiting requester.
+REMATCH_REQUESTS: dict[str, dict] = {}
 
 
 async def join_queue(
@@ -163,6 +170,72 @@ async def register_ready(room_code: str, user_id: int) -> None:
         if pending["task"] and not pending["task"].done():
             pending["task"].cancel()
         await pending["on_start"](room_code)
+
+
+async def request_rematch(
+    old_room_code: str,
+    user_id: int,
+    sid: str,
+    expected_user_ids: set[int],
+    category: str,
+    on_pair,     # async callable(sids: dict[int, str])
+    on_timeout,  # async callable(sid: str)
+) -> dict:
+    """Record one ex-opponent's intent to rematch. When both expected users have
+    requested, fire on_pair with their sids. Otherwise start (or keep) a timeout
+    that will fire on_timeout for each still-waiting requester.
+
+    Returns:
+      {"ok": True, "status": "waiting"}  — first requester, partner still has time
+      {"ok": True, "status": "matched"}  — both in, on_pair already called
+    """
+    state = REMATCH_REQUESTS.get(old_room_code)
+    if state is None:
+        async def _expire():
+            try:
+                await asyncio.sleep(REMATCH_TIMEOUT_SECONDS)
+            except asyncio.CancelledError:
+                return
+            cur = REMATCH_REQUESTS.pop(old_room_code, None)
+            if cur is None:
+                return
+            for waiting_sid in cur["sids"].values():
+                await cur["on_timeout"](waiting_sid)
+
+        task = asyncio.create_task(_expire())
+        REMATCH_REQUESTS[old_room_code] = {
+            "expected": set(expected_user_ids),
+            "sids": {user_id: sid},
+            "category": category,
+            "task": task,
+            "on_pair": on_pair,
+            "on_timeout": on_timeout,
+        }
+        return {"ok": True, "status": "waiting"}
+
+    # Re-request from the same user is idempotent (refresh their sid).
+    state["sids"][user_id] = sid
+    if set(state["sids"].keys()) >= state["expected"]:
+        REMATCH_REQUESTS.pop(old_room_code, None)
+        if state["task"] and not state["task"].done():
+            state["task"].cancel()
+        await state["on_pair"](dict(state["sids"]))
+        return {"ok": True, "status": "matched"}
+    return {"ok": True, "status": "waiting"}
+
+
+async def cancel_rematch(old_room_code: str, user_id: int) -> dict:
+    """Explicitly cancel a pending rematch (user clicked Cancel or left).
+    Notifies the partner via on_timeout (treated as a decline)."""
+    state = REMATCH_REQUESTS.pop(old_room_code, None)
+    if state is None:
+        return {"ok": False, "error": "NOT_PENDING"}
+    if state["task"] and not state["task"].done():
+        state["task"].cancel()
+    for uid, partner_sid in state["sids"].items():
+        if uid != user_id:
+            await state["on_timeout"](partner_sid)
+    return {"ok": True}
 
 
 GK_CATEGORIES = [

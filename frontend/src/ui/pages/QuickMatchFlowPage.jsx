@@ -1,23 +1,35 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import QuickMatchCategoryPicker from '../screens/QuickMatchCategoryPicker.jsx'
 import QuickMatchSearch from '../screens/QuickMatchSearch.jsx'
 import MatchFoundSplash from '../screens/MatchFoundSplash.jsx'
 import { useApp } from '../../state/AppContext.jsx'
 
+const DEFAULT_CATEGORY = 'surprise'
+
 export default function QuickMatchFlowPage() {
   const navigate = useNavigate()
   const { quickmatch, quickmatchJoin, quickmatchCancel, quickmatchReady, bindLobbyEvents, startGameSocket } = useApp()
-  const [category, setCategory] = useState(null)
 
-  function start(cat) {
-    setCategory(cat)
-    quickmatchJoin(cat)
-  }
+  // Frictionless entry: if we land here with no queue active, auto-join with
+  // the random "surprise" category. The user can override mid-search via the
+  // topic chip on the search screen.
+  useEffect(() => {
+    if (quickmatch.status === 'idle' || quickmatch.status === 'cancelled') {
+      quickmatchJoin(DEFAULT_CATEGORY)
+    }
+  }, [quickmatch.status])
 
   function cancel() {
     quickmatchCancel()
     navigate('/play/trivia')
+  }
+
+  function changeCategory(newCategory) {
+    // Re-queue with the new category. Cancel first so the matchmaker drops the
+    // current entry; then join immediately. The user expects the gear chip to
+    // mean "I want this topic NOW", not "next match".
+    quickmatchCancel()
+    quickmatchJoin(newCategory)
   }
 
   useEffect(() => {
@@ -75,24 +87,19 @@ export default function QuickMatchFlowPage() {
     return (
       <MatchFoundSplash
         opponentName={quickmatch.opponentName}
-        category={category}
+        category={quickmatch.category}
         onDone={() => navigate('/trivia')}
       />
     )
   }
-  if (quickmatch.status === 'searching') {
-    return (
-      <QuickMatchSearch
-        waitSeconds={quickmatch.waitSeconds}
-        category={category}
-        onCancel={cancel}
-      />
-    )
-  }
+  // Default: searching (or transitioning into it). The brief idle gap before
+  // the auto-join kicks in shows the searching UI with the chosen category.
   return (
-    <QuickMatchCategoryPicker
-      onStart={start}
-      onBack={() => navigate('/play/trivia')}
+    <QuickMatchSearch
+      waitSeconds={quickmatch.waitSeconds}
+      category={quickmatch.category || DEFAULT_CATEGORY}
+      onCancel={cancel}
+      onChangeCategory={changeCategory}
     />
   )
 }

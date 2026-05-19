@@ -31,10 +31,12 @@ def reset_matchmaker():
     matchmaker.QUEUES.clear()
     matchmaker.USER_IN_QUEUE.clear()
     matchmaker.PENDING_STARTS.clear()
+    matchmaker.REMATCH_REQUESTS.clear()
     yield
     matchmaker.QUEUES.clear()
     matchmaker.USER_IN_QUEUE.clear()
     matchmaker.PENDING_STARTS.clear()
+    matchmaker.REMATCH_REQUESTS.clear()
 
 
 @pytest.mark.asyncio
@@ -414,3 +416,92 @@ async def test_lobby_uses_user_display_name_not_email_prefix():
         assert names[bot.id] == "Rohan", f"expected 'Rohan', got {names[bot.id]!r}"
     finally:
         db.close()
+
+
+# ---- Rematch (human vs human) ----------------------------------------------
+
+async def _pair_two_humans(prefix: str):
+    """Helper: spin up two users, pair them via quickmatch:join, return
+    (token_a, sid_a, token_b, sid_b, room_code)."""
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+    _, ta = _make_user(f"{prefix}-a")
+    _, tb = _make_user(f"{prefix}-b")
+    sid_a = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    sid_b = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    await sio._trigger_event("quickmatch:join", "/", sid_a,
+                             {"token": ta, "category": "science"})
+    await sio._trigger_event("quickmatch:join", "/", sid_b,
+                             {"token": tb, "category": "science"})
+    room_code = next(iter(matchmaker.PENDING_STARTS))
+    return ta, sid_a, tb, sid_b, room_code
+
+
+@pytest.mark.asyncio
+async def test_rematch_first_request_waits():
+    ta, sid_a, _, _, room_code = await _pair_two_humans("rm1")
+    res = await sio._trigger_event(
+        "quickmatch:rematch_request", "/", sid_a,
+        {"token": ta, "room_code": room_code},
+    )
+    assert res["ok"] is True
+    assert res["status"] == "waiting"
+    assert room_code in matchmaker.REMATCH_REQUESTS
+
+
+@pytest.mark.asyncio
+async def test_rematch_both_request_creates_new_room():
+    ta, sid_a, tb, sid_b, room_code = await _pair_two_humans("rm2")
+    pending_before = set(matchmaker.PENDING_STARTS.keys())
+    await sio._trigger_event("quickmatch:rematch_request", "/", sid_a,
+                             {"token": ta, "room_code": room_code})
+    res_b = await sio._trigger_event(
+        "quickmatch:rematch_request", "/", sid_b,
+        {"token": tb, "room_code": room_code},
+    )
+    assert res_b["status"] == "matched"
+    # Old request is gone, and a brand-new PENDING_STARTS entry exists.
+    assert room_code not in matchmaker.REMATCH_REQUESTS
+    pending_after = set(matchmaker.PENDING_STARTS.keys())
+    new_rooms = pending_after - pending_before
+    assert len(new_rooms) == 1, "expected exactly one fresh room created for rematch"
+
+
+@pytest.mark.asyncio
+async def test_rematch_timeout_fires_declined(monkeypatch):
+    monkeypatch.setattr(matchmaker, "REMATCH_TIMEOUT_SECONDS", 0.2)
+    ta, sid_a, _, _, room_code = await _pair_two_humans("rm3")
+    await sio._trigger_event("quickmatch:rematch_request", "/", sid_a,
+                             {"token": ta, "room_code": room_code})
+    await asyncio.sleep(0.4)
+    # Request expired — no longer in registry.
+    assert room_code not in matchmaker.REMATCH_REQUESTS
+
+
+@pytest.mark.asyncio
+async def test_rematch_cancel_clears_pending():
+    ta, sid_a, tb, _, room_code = await _pair_two_humans("rm4")
+    await sio._trigger_event("quickmatch:rematch_request", "/", sid_a,
+                             {"token": ta, "room_code": room_code})
+    assert room_code in matchmaker.REMATCH_REQUESTS
+    res = await sio._trigger_event("quickmatch:rematch_cancel", "/", sid_a,
+                                   {"token": ta, "room_code": room_code})
+    assert res["ok"] is True
+    assert room_code not in matchmaker.REMATCH_REQUESTS
+
+
+@pytest.mark.asyncio
+async def test_rematch_rejects_non_member():
+    """A user who wasn't in the room can't request a rematch."""
+    ta, sid_a, _, _, room_code = await _pair_two_humans("rm5")
+    _, t_outsider = _make_user("rm5-out")
+    sid_out = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    res = await sio._trigger_event(
+        "quickmatch:rematch_request", "/", sid_out,
+        {"token": t_outsider, "room_code": room_code},
+    )
+    assert res["ok"] is False
+    assert res["error"] == "NOT_IN_ROOM"

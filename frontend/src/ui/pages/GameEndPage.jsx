@@ -8,7 +8,7 @@ const SHARE_URL = 'https://playroom.skdev.one'
 
 export default function GameEndPage() {
   const navigate = useNavigate()
-  const { game, lobby, room, leaveRoom, emitPlayAgain, quickmatch, quickmatchJoin, quickmatchRematchBot, selfPlayerId, auth } = useApp()
+  const { game, lobby, room, leaveRoom, emitPlayAgain, quickmatch, quickmatchJoin, quickmatchRematchBot, quickmatchRematchRequest, quickmatchRematchCancel, quickmatchReset, selfPlayerId, auth } = useApp()
   const [currentStreak, setCurrentStreak] = useState(0)
 
   const playerNames = useMemo(() => {
@@ -45,15 +45,36 @@ export default function GameEndPage() {
     return () => { cancelled = true }
   }, [isQuickmatch, auth?.token, game?.gameEnd])
 
+  const oldRoomCode = room?.code
+
   function handleRematch() {
-    leaveRoom()
     if (lastOpponentWasBot) {
+      // Bots always say yes — instant new room, no waiting state.
+      leaveRoom()
       quickmatchRematchBot(lastCategory)
-    } else {
-      quickmatchJoin(lastCategory)
+      navigate('/quickmatch')
+      return
     }
-    navigate('/quickmatch')
+    // Human rematch: stay on GameEnd, wait for opponent's matching request.
+    // We DON'T leaveRoom here — the user has to stay anchored on this screen
+    // while the request is pending. We'll bail out when the new room arrives.
+    quickmatchRematchRequest(oldRoomCode)
   }
+
+  function handleCancelRematch() {
+    quickmatchRematchCancel(oldRoomCode)
+  }
+
+  // When the rematch is accepted by the opponent, the server emits a fresh
+  // `quickmatch:matched` with a new room_code. That's our cue to leave the old
+  // room locally and route through the regular splash-into-trivia flow.
+  useEffect(() => {
+    if (quickmatch.rematchStatus !== 'waiting') return
+    if (!quickmatch.roomCode || quickmatch.roomCode === oldRoomCode) return
+    // New room code arrived — accept the rematch.
+    leaveRoom()
+    navigate('/quickmatch')
+  }, [quickmatch.rematchStatus, quickmatch.roomCode, oldRoomCode])
 
   // Build a shareable summary. We hand the opponent name + score margin to the
   // OS share sheet on devices that support it; clipboard otherwise.
@@ -83,9 +104,12 @@ export default function GameEndPage() {
       winnerPlayerId={winnerPlayerId}
       origin={origin}
       onRematch={handleRematch}
-      onNewOpponent={() => { leaveRoom(); navigate('/quickmatch') }}
+      onNewOpponent={() => { leaveRoom(); quickmatchReset(); navigate('/quickmatch') }}
       currentStreak={currentStreak}
       onShare={isQuickmatch && youWon ? handleShare : undefined}
+      rematchStatus={isQuickmatch && !lastOpponentWasBot ? quickmatch.rematchStatus : 'idle'}
+      onCancelRematch={handleCancelRematch}
+      opponentName={quickmatch.opponentName}
     />
   )
 }

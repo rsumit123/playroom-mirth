@@ -31,6 +31,7 @@ export function AppProvider({ children }) {
     roomCode: null,
     waitSeconds: 15,
     isBot: false,
+    rematchStatus: 'idle',  // 'idle' | 'waiting' | 'declined'
   })
 
   useEffect(() => {
@@ -90,15 +91,21 @@ export function AppProvider({ children }) {
     if (!auth.token) return
     const socket = connectSocket()
     const onSearching = (p) => setQuickmatch(q => ({ ...q, status: 'searching', waitSeconds: p.wait_seconds }))
-    const onMatched = (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code, isBot: !!p.is_bot_match }))
+    const onMatched = (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code, isBot: !!p.is_bot_match, rematchStatus: 'idle' }))
     const onCancelled = () => setQuickmatch(q => ({ ...q, status: 'cancelled' }))
+    const onRematchWaiting = () => setQuickmatch(q => ({ ...q, rematchStatus: 'waiting' }))
+    const onRematchDeclined = () => setQuickmatch(q => ({ ...q, rematchStatus: 'declined' }))
     socket.on('quickmatch:searching', onSearching)
     socket.on('quickmatch:matched', onMatched)
     socket.on('quickmatch:cancelled', onCancelled)
+    socket.on('quickmatch:rematch_waiting', onRematchWaiting)
+    socket.on('quickmatch:rematch_declined', onRematchDeclined)
     return () => {
       socket.off('quickmatch:searching', onSearching)
       socket.off('quickmatch:matched', onMatched)
       socket.off('quickmatch:cancelled', onCancelled)
+      socket.off('quickmatch:rematch_waiting', onRematchWaiting)
+      socket.off('quickmatch:rematch_declined', onRematchDeclined)
     }
   }, [auth.token, socketGen])
 
@@ -334,9 +341,13 @@ export function AppProvider({ children }) {
     socket.off('quickmatch:searching')
     socket.off('quickmatch:matched')
     socket.off('quickmatch:cancelled')
+    socket.off('quickmatch:rematch_waiting')
+    socket.off('quickmatch:rematch_declined')
     socket.on('quickmatch:searching', (p) => setQuickmatch(q => ({ ...q, status: 'searching', waitSeconds: p.wait_seconds })))
-    socket.on('quickmatch:matched', (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code, isBot: !!p.is_bot_match })))
+    socket.on('quickmatch:matched', (p) => setQuickmatch(q => ({ ...q, status: 'matched', opponentName: p.opponent_name, roomCode: p.room_code, isBot: !!p.is_bot_match, rematchStatus: 'idle' })))
     socket.on('quickmatch:cancelled', () => setQuickmatch(q => ({ ...q, status: 'cancelled' })))
+    socket.on('quickmatch:rematch_waiting', () => setQuickmatch(q => ({ ...q, rematchStatus: 'waiting' })))
+    socket.on('quickmatch:rematch_declined', () => setQuickmatch(q => ({ ...q, rematchStatus: 'declined' })))
     socket.on('error', (payload) => {
       const message = formatError(payload?.message)
       setGame((g) => ({ ...g, error: { ...payload, message } }))
@@ -534,6 +545,25 @@ export function AppProvider({ children }) {
     return socket.emit('quickmatch:cancel', { token: auth.token })
   }
 
+  function quickmatchReset() {
+    setQuickmatch({
+      status: 'idle', category: null, opponentName: null,
+      roomCode: null, waitSeconds: 15, isBot: false, rematchStatus: 'idle',
+    })
+  }
+
+  function quickmatchRematchRequest(oldRoomCode) {
+    const socket = connectSocket()
+    setQuickmatch(q => ({ ...q, rematchStatus: 'waiting' }))
+    return socket.emit('quickmatch:rematch_request', { token: auth.token, room_code: oldRoomCode })
+  }
+
+  function quickmatchRematchCancel(oldRoomCode) {
+    const socket = connectSocket()
+    setQuickmatch(q => ({ ...q, rematchStatus: 'idle' }))
+    return socket.emit('quickmatch:rematch_cancel', { token: auth.token, room_code: oldRoomCode })
+  }
+
   function quickmatchReady(roomCode) {
     const socket = connectSocket()
     return socket.emit('quickmatch:ready', { token: auth.token, room_code: roomCode })
@@ -644,6 +674,9 @@ export function AppProvider({ children }) {
     quickmatchCancel,
     quickmatchReady,
     quickmatchRematchBot,
+    quickmatchRematchRequest,
+    quickmatchRematchCancel,
+    quickmatchReset,
     activeRooms,
     fetchActiveRooms,
     leaveActiveRoom,

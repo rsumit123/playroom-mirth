@@ -32,9 +32,14 @@ describe('QuickMatchFlowPage', () => {
     mockApp.quickmatch = { status: 'idle', category: null, opponentName: null, roomCode: null, waitSeconds: 15 }
   })
 
-  it('renders the category picker when idle', () => {
+  it('auto-joins with "surprise" category on idle landing (no picker step)', () => {
+    renderPage()
+    expect(mockApp.quickmatchJoin).toHaveBeenCalledWith('surprise')
+  })
+
+  it('renders the search screen as the default surface (idle still shows searching UI)', () => {
     const { container } = renderPage()
-    expect(container.textContent).toMatch(/Pick a topic/i)
+    expect(container.textContent).toMatch(/Finding a player/i)
   })
 
   it('renders the search screen when searching', () => {

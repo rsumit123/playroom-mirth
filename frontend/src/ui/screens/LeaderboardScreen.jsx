@@ -69,7 +69,7 @@ function Row({ entry, isYou }) {
 
 export default function LeaderboardScreen({ data, loading, onBack, currentUserId }) {
   return (
-    <div className="game-shell pb-6">
+    <div className="game-shell pb-6 safe-area-top">
       <div className="page-medium space-y-5 pt-3">
         <div className="space-y-3">
           <button className="btn-ghost-sm touch-target inline-flex items-center gap-1" onClick={onBack}>

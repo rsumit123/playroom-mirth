@@ -17,9 +17,13 @@ const mockApp = {
     roomCode: 'QM001',
     waitSeconds: 15,
     isBot: false,
+    rematchStatus: 'idle',
   },
   quickmatchJoin: vi.fn(),
   quickmatchRematchBot: vi.fn(),
+  quickmatchRematchRequest: vi.fn(),
+  quickmatchRematchCancel: vi.fn(),
+  quickmatchReset: vi.fn(),
 }
 
 const mockNavigate = vi.fn()
@@ -44,9 +48,14 @@ describe('GameEndPage — quickmatch rematch routing', () => {
   beforeEach(() => {
     mockApp.quickmatchJoin.mockClear()
     mockApp.quickmatchRematchBot.mockClear()
+    mockApp.quickmatchRematchRequest.mockClear()
+    mockApp.quickmatchRematchCancel.mockClear()
+    mockApp.quickmatchReset.mockClear()
     mockApp.leaveRoom.mockClear()
     mockNavigate.mockClear()
     mockApp.quickmatch.isBot = false
+    mockApp.quickmatch.rematchStatus = 'idle'
+    mockApp.quickmatch.roomCode = 'QM001'
   })
 
   it('Rematch after a BOT match calls quickmatchRematchBot (instant — no 15s queue)', () => {
@@ -59,12 +68,41 @@ describe('GameEndPage — quickmatch rematch routing', () => {
     expect(mockNavigate).toHaveBeenCalledWith('/quickmatch')
   })
 
-  it('Rematch after a HUMAN match falls back to the normal queue', () => {
+  it('Rematch after a HUMAN match sends a rematch_request and stays on GameEnd', () => {
     mockApp.quickmatch.isBot = false
     renderPage()
     fireEvent.click(screen.getByText(/Rematch/i))
-    expect(mockApp.quickmatchJoin).toHaveBeenCalledWith('science')
+    expect(mockApp.quickmatchRematchRequest).toHaveBeenCalledWith('QM001')
+    expect(mockApp.quickmatchJoin).not.toHaveBeenCalled()
     expect(mockApp.quickmatchRematchBot).not.toHaveBeenCalled()
+    expect(mockApp.leaveRoom).not.toHaveBeenCalled()
+    expect(mockNavigate).not.toHaveBeenCalled()
+  })
+
+  it('shows the Waiting state when rematchStatus is "waiting" and Cancel sends rematch_cancel', () => {
+    mockApp.quickmatch.isBot = false
+    mockApp.quickmatch.rematchStatus = 'waiting'
+    renderPage()
+    expect(screen.getByText(/Waiting for Priya/i)).toBeTruthy()
+    fireEvent.click(screen.getByText(/^Cancel$/))
+    expect(mockApp.quickmatchRematchCancel).toHaveBeenCalledWith('QM001')
+  })
+
+  it('navigates to /quickmatch when the rematch is accepted (new room_code arrives)', () => {
+    mockApp.quickmatch.isBot = false
+    mockApp.quickmatch.rematchStatus = 'waiting'
+    mockApp.quickmatch.roomCode = 'QM999'  // new room code != room.code='QM001'
+    renderPage()
+    expect(mockApp.leaveRoom).toHaveBeenCalledOnce()
+    expect(mockNavigate).toHaveBeenCalledWith('/quickmatch')
+  })
+
+  it('shows a "didn\'t want a rematch" inline notice when declined', () => {
+    mockApp.quickmatch.isBot = false
+    mockApp.quickmatch.rematchStatus = 'declined'
+    renderPage()
+    expect(screen.getByText(/didn't want a rematch/i)).toBeTruthy()
+    expect(screen.getByText(/Find new opponent/i)).toBeTruthy()
   })
 
   it('New Opponent always goes to the picker, never the rematch shortcut', () => {
@@ -74,5 +112,11 @@ describe('GameEndPage — quickmatch rematch routing', () => {
     expect(mockApp.quickmatchRematchBot).not.toHaveBeenCalled()
     expect(mockApp.quickmatchJoin).not.toHaveBeenCalled()
     expect(mockNavigate).toHaveBeenCalledWith('/quickmatch')
+  })
+
+  it('New Opponent resets quickmatch state so the category picker shows (not stale MatchFoundSplash)', () => {
+    renderPage()
+    fireEvent.click(screen.getByText(/New Opponent/i))
+    expect(mockApp.quickmatchReset).toHaveBeenCalledOnce()
   })
 })

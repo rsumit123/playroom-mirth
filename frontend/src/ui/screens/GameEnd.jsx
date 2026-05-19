@@ -8,6 +8,7 @@ export default function GameEnd({
   scores, playerNames, playAgain, onPlayAgain, onHome,
   selfPlayerId, winnerPlayerId, origin, onRematch, onNewOpponent,
   currentStreak = 0, onShare,
+  rematchStatus = 'idle', onCancelRematch, opponentName,
 }) {
   const [confettiKey, setConfettiKey] = useState(0)
   const [voted, setVoted] = useState(false)
@@ -58,7 +59,7 @@ export default function GameEnd({
   const remaining = playAgain ? playAgain.total - playAgain.voted : null
 
   return (
-    <div className="game-shell">
+    <div className="game-shell safe-area-top">
       <ConfettiBurst trigger={confettiKey} />
 
       <div className="flex-1 overflow-y-auto relative">
@@ -108,15 +109,41 @@ export default function GameEnd({
 
           {isQuickmatch ? (
             <div className="w-full max-w-xs space-y-3">
-              <button className="btn-primary w-full py-3.5 text-base touch-target" onClick={onRematch}>
-                🔁 Rematch
-              </button>
-              <button className="btn-secondary w-full py-3.5 text-base touch-target" onClick={onNewOpponent}>
-                🎲 New Opponent
-              </button>
-              <button className="btn-ghost w-full touch-target" onClick={onHome}>
-                🏠 Home
-              </button>
+              {rematchStatus === 'waiting' ? (
+                <>
+                  <div className="btn-primary w-full py-3.5 text-base opacity-80 cursor-default flex items-center justify-center gap-2">
+                    <span className="inline-block w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
+                    Waiting for {opponentName || 'opponent'}…
+                  </div>
+                  <button className="btn-ghost w-full touch-target" onClick={onCancelRematch}>
+                    Cancel
+                  </button>
+                </>
+              ) : rematchStatus === 'declined' ? (
+                <>
+                  <div className="card-flat p-3 text-sm text-slate/70 text-center">
+                    {opponentName || 'Opponent'} didn't want a rematch.
+                  </div>
+                  <button className="btn-primary w-full py-3.5 text-base touch-target" onClick={onNewOpponent}>
+                    🎲 Find new opponent
+                  </button>
+                  <button className="btn-ghost w-full touch-target" onClick={onHome}>
+                    🏠 Home
+                  </button>
+                </>
+              ) : (
+                <>
+                  <button className="btn-primary w-full py-3.5 text-base touch-target" onClick={onRematch}>
+                    🔁 Rematch
+                  </button>
+                  <button className="btn-secondary w-full py-3.5 text-base touch-target" onClick={onNewOpponent}>
+                    🎲 New Opponent
+                  </button>
+                  <button className="btn-ghost w-full touch-target" onClick={onHome}>
+                    🏠 Home
+                  </button>
+                </>
+              )}
             </div>
           ) : (
             <div className="w-full max-w-xs space-y-3">
