@@ -7,8 +7,9 @@ from pathlib import Path
 from typing import List
 
 
-# Time per question by difficulty
-_TIME_BY_DIFFICULTY = {1: 20, 2: 15, 3: 10}
+# Time per question by difficulty. Minimum 15s — 10s on hard felt brutal in
+# practice (people barely finished reading the question).
+_TIME_BY_DIFFICULTY = {1: 20, 2: 15, 3: 15}
 
 
 def _make_distractors(correct: int, count: int = 3) -> list[int]:

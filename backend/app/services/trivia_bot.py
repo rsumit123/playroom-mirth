@@ -17,18 +17,21 @@ _logger = logging.getLogger(__name__)
 
 
 # Mean/sigma for the truncated-normal answer-delay distribution per difficulty.
+# Tuned so that a confident human can usually beat the bot on speed bonus:
+# bots answer mid-window, leaving room for fast humans to win the speed bonus.
 _DELAY_PARAMS = {
-    1: (2.5, 1.0),  # easy
-    2: (4.0, 1.2),  # medium
-    3: (5.0, 1.5),  # hard
+    1: (5.0, 1.5),  # easy
+    2: (7.0, 1.8),  # medium
+    3: (8.5, 2.0),  # hard
 }
 
 # Target accuracy per difficulty for bot pre-decisions.
-_ACCURACY = {1: 0.80, 2: 0.60, 3: 0.40}
+# Mixed quickmatch (20% easy / 50% medium / 30% hard) → expected ~36% correct.
+_ACCURACY = {1: 0.50, 2: 0.40, 3: 0.20}
 
 DELAY_FLOOR = 1.5
-DELAY_CAP_ABS = 8.0
-DELAY_CAP_FRACTION = 0.7
+DELAY_CAP_ABS = 12.0
+DELAY_CAP_FRACTION = 0.8
 
 
 def pick_delay(difficulty: int, time_seconds: int) -> float:
