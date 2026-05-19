@@ -125,6 +125,7 @@ function AppShell() {
           onHome={() => navigate('/home')}
           onHowTo={() => navigate('/how-to')}
           onHistory={() => navigate('/history')}
+          onFriends={() => navigate('/friends')}
         />
       )}
       <NotificationDrawer

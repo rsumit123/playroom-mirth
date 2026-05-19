@@ -14,13 +14,13 @@ describe('Home', () => {
   it('renders the Charades game card', () => {
     render(<Home {...defaultProps} />)
     expect(screen.getByText('Charades')).toBeInTheDocument()
-    expect(screen.getByText(/Describe words with hints/)).toBeInTheDocument()
+    expect(screen.getByText(/Describe with hints/i)).toBeInTheDocument()
   })
 
   it('renders the Scribble game card', () => {
     render(<Home {...defaultProps} />)
     expect(screen.getByText('Scribble')).toBeInTheDocument()
-    expect(screen.getByText(/Draw the word on a canvas/)).toBeInTheDocument()
+    expect(screen.getByText(/Draw the word/i)).toBeInTheDocument()
   })
 
   it('renders the "Choose a Game" heading', () => {
@@ -76,5 +76,33 @@ describe('Home', () => {
     render(<Home {...defaultProps} onLeaveRoom={onLeaveRoom} activeRooms={activeRooms} />)
     fireEvent.click(screen.getByText('Leave'))
     expect(onLeaveRoom).toHaveBeenCalledWith('XYZ789')
+  })
+
+  // ----- Hero ordering + dropdown migration -----
+
+  it('orders games on the page: Trivia (hero) first, then Scribble, then Charades', () => {
+    const { container } = render(<Home {...defaultProps} isSignedIn />)
+    const order = [...container.querySelectorAll('[data-game]')].map(c => c.getAttribute('data-game'))
+    expect(order).toEqual(['trivia', 'scribble', 'charades'])
+  })
+
+  it('shows a Quick Play badge on Trivia for signed-in users', () => {
+    render(<Home {...defaultProps} isSignedIn />)
+    expect(screen.getByText(/Quick Play/i)).toBeInTheDocument()
+  })
+
+  it('hides the Quick Play badge for guests', () => {
+    render(<Home {...defaultProps} isSignedIn={false} />)
+    expect(screen.queryByText(/Quick Play/i)).not.toBeInTheDocument()
+  })
+
+  it('does NOT render a standalone Friends card on Home (moved to dropdown)', () => {
+    const { container } = render(<Home {...defaultProps} isSignedIn />)
+    expect((container.textContent || '')).not.toMatch(/Add friends, manage requests/i)
+  })
+
+  it('does NOT render a Recent Games section on Home (moved to /history)', () => {
+    const { container } = render(<Home {...defaultProps} isSignedIn />)
+    expect((container.textContent || '')).not.toMatch(/Recent Games/i)
   })
 })

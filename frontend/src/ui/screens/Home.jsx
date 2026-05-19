@@ -1,4 +1,4 @@
-export default function Home({ onSelectGame, onRejoin, onLeaveRoom, onFriends, loadingLeave, activeRooms = [], isSignedIn = false }) {
+export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave, activeRooms = [], isSignedIn = false }) {
   return (
     <div className="game-shell py-6">
       <div className="page-medium space-y-6">
@@ -49,77 +49,72 @@ export default function Home({ onSelectGame, onRejoin, onLeaveRoom, onFriends, l
           </div>
         )}
 
-        {/* Friends shortcut -- signed-in users only */}
-        {isSignedIn && (
-          <button
-            className="card px-5 py-4 flex items-center gap-3 w-full text-left hover:shadow-hover transition"
-            onClick={onFriends}
-          >
-            <div className="h-10 w-10 rounded-xl bg-accent/10 flex items-center justify-center text-xl shrink-0">&#128101;</div>
-            <div className="flex-1 min-w-0">
-              <div className="font-semibold text-sm">Friends</div>
-              <div className="text-xs text-slate/50">Add friends, manage requests</div>
-            </div>
-            <span className="text-slate/30 text-lg">&rsaquo;</span>
-          </button>
-        )}
-
         {/* Game Selector */}
         <div>
           <h2 className="font-display text-2xl mb-1">Choose a Game</h2>
           <p className="text-sm text-slate/60 mb-4">Pick a game and create or join a room</p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
-          {/* Charades card */}
-          <button
-            className="card p-6 text-left hover:shadow-hover transition group"
-            onClick={() => onSelectGame('charades')}
-          >
-            <div className="flex items-start gap-4">
-              <div className="h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center text-2xl shrink-0">
-                &#128172;
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className="font-display text-xl mb-1 group-hover:text-accent transition">Charades</div>
-                <p className="text-sm text-slate/60">
-                  Describe words with hints — no saying the word! Others guess in the chat.
-                </p>
-              </div>
+        {/* Trivia — hero card, full width, slightly bigger */}
+        <button
+          data-game="trivia"
+          className="card p-6 text-left hover:shadow-hover transition group relative overflow-hidden w-full"
+          onClick={() => onSelectGame('trivia')}
+        >
+          <div className="flex items-start gap-4">
+            <div className="h-14 w-14 rounded-xl bg-gradient-to-br from-accent to-accent/70 text-white flex items-center justify-center text-3xl shrink-0 shadow-sm">
+              &#129504;
             </div>
-          </button>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="font-display text-2xl group-hover:text-accent transition">Trivia</span>
+                {isSignedIn && (
+                  <span className="badge bg-accent/10 text-accent text-[10px] uppercase tracking-wider">⚡ Quick Play</span>
+                )}
+              </div>
+              <p className="text-sm text-slate/60 mt-1">
+                Race to answer trivia questions. All players compete at the same time.
+              </p>
+            </div>
+            <span className="text-slate/30 text-lg self-center shrink-0">&rsaquo;</span>
+          </div>
+        </button>
 
-          {/* Scribble card */}
+        {/* Scribble + Charades — same weight, side-by-side on >= sm */}
+        <div className="grid gap-4 sm:grid-cols-2">
+          {/* Scribble */}
           <button
-            className="card p-6 text-left hover:shadow-hover transition group"
+            data-game="scribble"
+            className="card p-5 text-left hover:shadow-hover transition group"
             onClick={() => onSelectGame('scribble')}
           >
-            <div className="flex items-start gap-4">
-              <div className="h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center text-2xl shrink-0">
+            <div className="flex items-start gap-3">
+              <div className="h-11 w-11 rounded-xl bg-accent/10 flex items-center justify-center text-2xl shrink-0">
                 &#9999;&#65039;
               </div>
               <div className="flex-1 min-w-0">
-                <div className="font-display text-xl mb-1 group-hover:text-accent transition">Scribble</div>
-                <p className="text-sm text-slate/60">
-                  Draw the word on a canvas — others try to guess what you're sketching!
+                <div className="font-display text-lg group-hover:text-accent transition">Scribble</div>
+                <p className="text-xs text-slate/60 mt-0.5">
+                  Draw the word — others guess what you're sketching.
                 </p>
               </div>
             </div>
           </button>
 
-          {/* Trivia card */}
+          {/* Charades */}
           <button
-            className="card p-6 text-left hover:shadow-hover transition group"
-            onClick={() => onSelectGame('trivia')}
+            data-game="charades"
+            className="card p-5 text-left hover:shadow-hover transition group"
+            onClick={() => onSelectGame('charades')}
           >
-            <div className="flex items-start gap-4">
-              <div className="h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center text-2xl shrink-0">
-                &#129504;
+            <div className="flex items-start gap-3">
+              <div className="h-11 w-11 rounded-xl bg-accent/10 flex items-center justify-center text-2xl shrink-0">
+                &#128172;
               </div>
               <div className="flex-1 min-w-0">
-                <div className="font-display text-xl mb-1 group-hover:text-accent transition">Trivia</div>
-                <p className="text-sm text-slate/60">
-                  Race to answer trivia questions — math or general knowledge! All players compete at the same time.
+                <div className="font-display text-lg group-hover:text-accent transition">Charades</div>
+                <p className="text-xs text-slate/60 mt-0.5">
+                  Describe with hints — others guess in chat.
                 </p>
               </div>
             </div>

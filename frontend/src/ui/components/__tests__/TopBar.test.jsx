@@ -48,4 +48,25 @@ describe('TopBar — profile dropdown', () => {
     fireEvent.click(screen.getByText('Guest42').closest('button'))
     expect(screen.queryByText(/Game history/i)).toBeNull()
   })
+
+  it('renders the Friends entry when onFriends is provided', () => {
+    render(<TopBar {...baseAuthed} onFriends={vi.fn()} />)
+    openMenu()
+    expect(screen.getByText(/^Friends$/)).toBeTruthy()
+  })
+
+  it('calls onFriends and closes the menu when Friends is clicked', () => {
+    const onFriends = vi.fn()
+    render(<TopBar {...baseAuthed} onFriends={onFriends} />)
+    openMenu()
+    fireEvent.click(screen.getByText(/^Friends$/))
+    expect(onFriends).toHaveBeenCalledOnce()
+    expect(screen.queryByText(/^Friends$/)).toBeNull()
+  })
+
+  it('does NOT render Friends entry for guests', () => {
+    render(<TopBar isAuthed={false} isGuest guestDisplayName="Guest42" onLogout={vi.fn()} onFriends={vi.fn()} />)
+    fireEvent.click(screen.getByText('Guest42').closest('button'))
+    expect(screen.queryByText(/^Friends$/)).toBeNull()
+  })
 })

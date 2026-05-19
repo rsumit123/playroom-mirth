@@ -29,7 +29,6 @@ export default function HomePage() {
     <Home
       onSelectGame={handleSelectGame}
       onRejoin={handleRejoin}
-      onFriends={() => navigate('/friends')}
       onLeaveRoom={leaveActiveRoom}
       loadingLeave={Boolean(ui?.loadingKeys?.leave_room)}
       activeRooms={activeRooms}
