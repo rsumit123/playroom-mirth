@@ -1856,8 +1856,6 @@ async def quickmatch_rematch_bot(sid, data):
     # rematch feels like a real rematch, not a new opponent.
     same_bot_id = None
     old_room_code = data.get("room_code")
-    _logger.info("rematch_bot: user=%s old_room=%r category=%s",
-                 user.id, old_room_code, category)
     if old_room_code:
         with SessionLocal() as db:
             old_room = db.query(Room).filter(Room.code == old_room_code).first()
@@ -1865,9 +1863,6 @@ async def quickmatch_rematch_bot(sid, data):
                 players = db.query(RoomPlayer).filter(
                     RoomPlayer.room_id == old_room.id,
                 ).all()
-                _logger.info("rematch_bot: found room id=%s, %d players: %s",
-                             old_room.id, len(players),
-                             [(p.user_id, p.id) for p in players])
                 for p in players:
                     if p.user_id and p.user_id != user.id:
                         bot_user = db.query(User).filter(
@@ -1876,9 +1871,6 @@ async def quickmatch_rematch_bot(sid, data):
                         if bot_user:
                             same_bot_id = p.user_id
                             break
-            else:
-                _logger.warning("rematch_bot: room %s NOT FOUND", old_room_code)
-    _logger.info("rematch_bot: same_bot_id=%s", same_bot_id)
 
     entry = matchmaker.QueueEntry(
         user_id=user.id, sid=sid, joined_at=time.time(), category=category,
