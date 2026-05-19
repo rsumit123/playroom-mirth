@@ -505,3 +505,89 @@ async def test_rematch_rejects_non_member():
     )
     assert res["ok"] is False
     assert res["error"] == "NOT_IN_ROOM"
+
+
+# ---- Rematch keeps the same bot opponent --------------------------------
+
+def _bot_id_in_room(db, room_id: int, exclude_user_id: int) -> int | None:
+    from app.models.room_player import RoomPlayer
+    from app.models.user import User as UserModel
+    players = db.query(RoomPlayer).filter(RoomPlayer.room_id == room_id).all()
+    for p in players:
+        if p.user_id and p.user_id != exclude_user_id:
+            u = db.query(UserModel).filter(UserModel.id == p.user_id).first()
+            if u and u.is_bot:
+                return u.id
+    return None
+
+
+@pytest.mark.asyncio
+async def test_bot_rematch_reuses_same_bot():
+    """Bot rematch must reuse the same bot from the old room, not a new random
+    bot — otherwise the player's 'rematch' feels like a new opponent."""
+    from app.models.room import Room
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+    finally:
+        db.close()
+
+    user_id, token = _make_user("qm-br")
+    sid = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    # Initial bot match via the rematch_bot shortcut (no old room yet).
+    res1 = await sio._trigger_event(
+        "quickmatch:rematch_bot", "/", sid,
+        {"token": token, "category": "science"},
+    )
+    assert res1["ok"] is True
+    db = SessionLocal()
+    try:
+        first_room = db.query(Room).order_by(Room.id.desc()).first()
+        first_bot_id = _bot_id_in_room(db, first_room.id, user_id)
+        first_code = first_room.code
+    finally:
+        db.close()
+    assert first_bot_id is not None
+
+    # Rematch passing the prior room_code — server must reuse first_bot_id.
+    res2 = await sio._trigger_event(
+        "quickmatch:rematch_bot", "/", sid,
+        {"token": token, "category": "science", "room_code": first_code},
+    )
+    assert res2["ok"] is True
+    db = SessionLocal()
+    try:
+        new_room = db.query(Room).order_by(Room.id.desc()).first()
+        assert new_room.code != first_code
+        second_bot_id = _bot_id_in_room(db, new_room.id, user_id)
+    finally:
+        db.close()
+    assert second_bot_id == first_bot_id, (
+        f"expected same bot id={first_bot_id} on rematch, got {second_bot_id}"
+    )
+
+
+# ---- Switching category mid-search (gear chip) --------------------------
+
+@pytest.mark.asyncio
+async def test_join_with_different_category_replaces_queue_entry():
+    """If a user is already queued for category A and joins for B, the old
+    entry must be dropped and they end up queued for B (not stuck in A with
+    an ALREADY_IN_QUEUE error). This is what powers the gear-chip topic switch."""
+    user_id, token = _make_user("qm-sw")
+    sid = await sio.manager.connect(f"eio-{uuid.uuid4().hex[:6]}", "/")
+    res1 = await sio._trigger_event(
+        "quickmatch:join", "/", sid,
+        {"token": token, "category": "science"},
+    )
+    assert res1["ok"] is True
+    res2 = await sio._trigger_event(
+        "quickmatch:join", "/", sid,
+        {"token": token, "category": "history"},
+    )
+    assert res2["ok"] is True, f"expected ok=True on category switch, got {res2}"
+    entry = matchmaker.USER_IN_QUEUE.get(user_id)
+    assert entry is not None
+    assert entry.category == "history"
+    # Old category queue should no longer contain this user.
+    assert all(e.user_id != user_id for e in matchmaker.QUEUES.get("science", []))

@@ -569,7 +569,7 @@ export function AppProvider({ children }) {
     return socket.emit('quickmatch:ready', { token: auth.token, room_code: roomCode })
   }
 
-  function quickmatchRematchBot(category) {
+  function quickmatchRematchBot(category, oldRoomCode) {
     const socket = connectSocket()
     // Optimistically flip to 'searching' so the brief gap before the matched
     // event arrives renders the radar splash, not the category picker.
@@ -578,7 +578,9 @@ export function AppProvider({ children }) {
       ...q, category, status: 'searching', waitSeconds: 0,
       opponentName: null, roomCode: null, isBot: false,
     }))
-    return socket.emit('quickmatch:rematch_bot', { token: auth.token, category })
+    return socket.emit('quickmatch:rematch_bot', {
+      token: auth.token, category, room_code: oldRoomCode,
+    })
   }
 
   async function emitPlayAgain(roomCode) {

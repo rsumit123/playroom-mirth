@@ -58,11 +58,11 @@ describe('GameEndPage — quickmatch rematch routing', () => {
     mockApp.quickmatch.roomCode = 'QM001'
   })
 
-  it('Rematch after a BOT match calls quickmatchRematchBot (instant — no 15s queue)', () => {
+  it('Rematch after a BOT match calls quickmatchRematchBot with old room_code (so server reuses same bot)', () => {
     mockApp.quickmatch.isBot = true
     renderPage()
     fireEvent.click(screen.getByText(/Rematch/i))
-    expect(mockApp.quickmatchRematchBot).toHaveBeenCalledWith('science')
+    expect(mockApp.quickmatchRematchBot).toHaveBeenCalledWith('science', 'QM001')
     expect(mockApp.quickmatchJoin).not.toHaveBeenCalled()
     expect(mockApp.leaveRoom).toHaveBeenCalledOnce()
     expect(mockNavigate).toHaveBeenCalledWith('/quickmatch')

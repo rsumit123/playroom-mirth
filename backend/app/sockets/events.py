@@ -1711,15 +1711,25 @@ async def _quickmatch_start_game(room_code: str) -> None:
     await _trivia_start_round(state, room_code)
 
 
-async def _quickmatch_pair_bot(entry, category: str) -> None:
+async def _quickmatch_pair_bot(entry, category: str, same_bot_id: int | None = None) -> None:
     """Create a quickmatch room for one human + one bot, register sockets,
-    and start the pending-start gate.  Mirrors _quickmatch_pair_humans."""
+    and start the pending-start gate.  Mirrors _quickmatch_pair_humans.
+
+    If `same_bot_id` is provided (rematch case), reuse that specific bot so the
+    user keeps playing the same opponent. Falls back to a random bot if the id
+    isn't a valid bot (e.g. the bot row was deleted)."""
 
     with SessionLocal() as db:
         user = db.query(User).filter(User.id == entry.user_id).first()
         if not user:
             return
-        bot = pick_random_bot(db)
+        bot = None
+        if same_bot_id:
+            bot = db.query(User).filter(
+                User.id == same_bot_id, User.is_bot == True  # noqa: E712
+            ).first()
+        if not bot:
+            bot = pick_random_bot(db)
         if not bot:
             return
 
@@ -1842,10 +1852,30 @@ async def quickmatch_rematch_bot(sid, data):
     SID_TO_USER[sid] = user.id
     category = matchmaker.resolve_category(category_raw)
 
+    # If the client passed the old room code, reuse the same bot opponent so
+    # rematch feels like a real rematch, not a new opponent.
+    same_bot_id = None
+    old_room_code = data.get("room_code")
+    if old_room_code:
+        with SessionLocal() as db:
+            old_room = db.query(Room).filter(Room.code == old_room_code).first()
+            if old_room:
+                players = db.query(RoomPlayer).filter(
+                    RoomPlayer.room_id == old_room.id,
+                ).all()
+                for p in players:
+                    if p.user_id and p.user_id != user.id:
+                        bot_user = db.query(User).filter(
+                            User.id == p.user_id, User.is_bot == True  # noqa: E712
+                        ).first()
+                        if bot_user:
+                            same_bot_id = p.user_id
+                            break
+
     entry = matchmaker.QueueEntry(
         user_id=user.id, sid=sid, joined_at=time.time(), category=category,
     )
-    await _quickmatch_pair_bot(entry, category)
+    await _quickmatch_pair_bot(entry, category, same_bot_id=same_bot_id)
     return {"ok": True}
 
 

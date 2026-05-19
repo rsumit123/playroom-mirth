@@ -65,7 +65,11 @@ async def join_queue(
     # "already matched" from "never queued". Entries are cleaned up by the
     # disconnect/room-end handler in Phase 4.
     if user_id in USER_IN_QUEUE and not USER_IN_QUEUE[user_id].matched:
-        return {"ok": False, "error": "ALREADY_IN_QUEUE"}
+        # User is switching category mid-search (gear chip). Atomically drop the
+        # old queue entry so the new join lands cleanly. Without this, the gear's
+        # cancel-then-join from the client races with this join handler and the
+        # user stays stuck in the original category.
+        await cancel_queue(user_id)
 
     entry = QueueEntry(
         user_id=user_id, sid=sid, joined_at=time.time(), category=category,

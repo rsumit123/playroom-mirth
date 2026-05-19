@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import QuickMatchSearch from '../screens/QuickMatchSearch.jsx'
 import MatchFoundSplash from '../screens/MatchFoundSplash.jsx'
@@ -11,10 +11,17 @@ export default function QuickMatchFlowPage() {
   const { quickmatch, quickmatchJoin, quickmatchCancel, quickmatchReady, bindLobbyEvents, startGameSocket } = useApp()
 
   // Frictionless entry: if we land here with no queue active, auto-join with
-  // the random "surprise" category. The user can override mid-search via the
-  // topic chip on the search screen.
+  // the random "surprise" category exactly once. The user can override
+  // mid-search via the topic chip on the search screen.
+  //
+  // We deliberately do NOT trigger on 'cancelled' — that state arrives during
+  // the changeCategory cancel-then-join sequence, and re-triggering here would
+  // race with the user's pick and slam them back to 'surprise'.
+  const autoJoinedRef = useRef(false)
   useEffect(() => {
-    if (quickmatch.status === 'idle' || quickmatch.status === 'cancelled') {
+    if (autoJoinedRef.current) return
+    if (quickmatch.status === 'idle') {
+      autoJoinedRef.current = true
       quickmatchJoin(DEFAULT_CATEGORY)
     }
   }, [quickmatch.status])

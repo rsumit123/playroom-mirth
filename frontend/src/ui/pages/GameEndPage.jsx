@@ -49,9 +49,11 @@ export default function GameEndPage() {
 
   function handleRematch() {
     if (lastOpponentWasBot) {
-      // Bots always say yes — instant new room, no waiting state.
+      // Bots always say yes — instant new room, no waiting state. Pass the
+      // old room code so the server reuses the SAME bot opponent.
+      const bot_room = oldRoomCode
       leaveRoom()
-      quickmatchRematchBot(lastCategory)
+      quickmatchRematchBot(lastCategory, bot_room)
       navigate('/quickmatch')
       return
     }
