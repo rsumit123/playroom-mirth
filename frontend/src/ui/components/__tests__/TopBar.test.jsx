@@ -69,4 +69,18 @@ describe('TopBar — profile dropdown', () => {
     fireEvent.click(screen.getByText('Guest42').closest('button'))
     expect(screen.queryByText(/^Friends$/)).toBeNull()
   })
+
+  it('renders the Leaderboard entry when onLeaderboard is provided', () => {
+    render(<TopBar {...baseAuthed} onLeaderboard={vi.fn()} />)
+    openMenu()
+    expect(screen.getByText(/Leaderboard/i)).toBeTruthy()
+  })
+
+  it('calls onLeaderboard and closes the menu when Leaderboard is clicked', () => {
+    const onLeaderboard = vi.fn()
+    render(<TopBar {...baseAuthed} onLeaderboard={onLeaderboard} />)
+    openMenu()
+    fireEvent.click(screen.getByText(/Leaderboard/i))
+    expect(onLeaderboard).toHaveBeenCalledOnce()
+  })
 })

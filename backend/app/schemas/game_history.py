@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 from pydantic import BaseModel
 
@@ -31,3 +31,21 @@ class GameHistoryStats(BaseModel):
     total_wins: int
     by_game_type: List[GameTypeStats]
     by_origin: Dict[str, int]
+
+
+class LeaderboardEntry(BaseModel):
+    rank: int
+    user_id: int
+    display_name: str
+    avatar_url: Optional[str] = None
+    wins: int
+    games_played: int
+
+
+class LeaderboardOut(BaseModel):
+    """Top N leaderboard plus the requesting user's own rank if they're not in
+    the top slice. `you` is None when the caller has never played a qualifying
+    game."""
+    top: List[LeaderboardEntry]
+    you: Optional[LeaderboardEntry] = None
+    current_streak: int = 0  # consecutive wins from the user's most-recent game backward

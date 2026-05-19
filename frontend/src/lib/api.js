@@ -147,6 +147,13 @@ export function getGameHistoryStats(token, { origin = 'all' } = {}) {
   })
 }
 
+export function getLeaderboard(token, { origin = 'quickmatch', limit = 10 } = {}) {
+  const qs = new URLSearchParams({ origin, limit: String(limit) })
+  return request(`/game-history/leaderboard?${qs}`, {
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
+
 export function fetchAdminStats(token) {
   return request('/admin/stats', {
     headers: { Authorization: `Bearer ${token}` }

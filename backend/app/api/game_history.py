@@ -11,6 +11,8 @@ from app.schemas.game_history import (
     GameHistoryOut,
     GameHistoryStats,
     GameTypeStats,
+    LeaderboardEntry,
+    LeaderboardOut,
 )
 
 router = APIRouter(prefix="/game-history", tags=["game-history"])
@@ -97,3 +99,84 @@ def get_game_history_stats(
         by_game_type=by_game_type,
         by_origin=by_origin,
     )
+
+
+@router.get("/leaderboard", response_model=LeaderboardOut)
+def get_leaderboard(
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+    origin: OriginFilter = Query("quickmatch"),
+    limit: int = Query(10, ge=1, le=50),
+):
+    """All-time leaderboard by total wins for the given origin. Returns the
+    top N and the requesting user's own rank if outside the top slice, plus
+    their current win streak (consecutive wins from their most recent game
+    backward)."""
+    wins_expr = func.sum(case((GameHistory.is_winner.is_(True), 1), else_=0))
+    games_expr = func.count(GameHistory.id)
+    q = (
+        db.query(
+            GameHistory.user_id.label("user_id"),
+            wins_expr.label("wins"),
+            games_expr.label("games"),
+        )
+        .filter(GameHistory.user_id > 0)  # exclude guest-id=0 rows
+    )
+    q = _apply_origin(q, origin)
+    q = q.group_by(GameHistory.user_id).order_by(wins_expr.desc(), games_expr.desc())
+
+    # Pull more than `limit` so we can compute the caller's rank without a
+    # second window query — leaderboards stay small.
+    rows = q.limit(max(limit, 200)).all()
+
+    if not rows:
+        return LeaderboardOut(top=[], you=None, current_streak=_current_streak(db, user.id, origin))
+
+    user_ids = [r.user_id for r in rows]
+    users = db.query(User).filter(User.id.in_(user_ids)).all()
+    user_map = {u.id: u for u in users}
+
+    top_entries: list[LeaderboardEntry] = []
+    you_entry: LeaderboardEntry | None = None
+    for i, r in enumerate(rows, start=1):
+        u = user_map.get(r.user_id)
+        if not u:
+            continue
+        entry = LeaderboardEntry(
+            rank=i,
+            user_id=u.id,
+            display_name=u.display_name or u.email.split("@")[0],
+            avatar_url=u.avatar_url,
+            wins=int(r.wins or 0),
+            games_played=int(r.games or 0),
+        )
+        if i <= limit:
+            top_entries.append(entry)
+        if r.user_id == user.id:
+            you_entry = entry
+
+    # If the caller is in the top slice, suppress the duplicate "you" pin.
+    if you_entry and you_entry.rank <= limit:
+        you_entry = None
+
+    return LeaderboardOut(
+        top=top_entries,
+        you=you_entry,
+        current_streak=_current_streak(db, user.id, origin),
+    )
+
+
+def _current_streak(db, user_id: int, origin: OriginFilter) -> int:
+    """Count consecutive wins from the user's most-recent matching game
+    backward. A loss anywhere in that recent run resets to zero."""
+    q = db.query(GameHistory).filter(GameHistory.user_id == user_id)
+    q = _apply_origin(q, origin)
+    # Look at up to 100 games — beyond that it's not a "current" streak.
+    rows = q.order_by(GameHistory.played_at.desc()).limit(100).all()
+    streak = 0
+    for row in rows:
+        if row.is_winner:
+            streak += 1
+        else:
+            break
+    return streak

@@ -22,6 +22,7 @@ import PrivacyPage from './pages/PrivacyPage.jsx'
 import FriendsPage from './pages/FriendsPage.jsx'
 import QuickMatchFlowPage from './pages/QuickMatchFlowPage.jsx'
 import HistoryPage from './pages/HistoryPage.jsx'
+import LeaderboardPage from './pages/LeaderboardPage.jsx'
 import TopBar from './components/TopBar.jsx'
 import NotificationDrawer from './components/NotificationDrawer.jsx'
 import * as api from '../lib/api.js'
@@ -102,7 +103,7 @@ function AppShell() {
     }
   }, [isAuthed])
 
-  const showTopBar = path === '/home' || path === '/lobby' || path === '/friends' || path === '/history' || path.startsWith('/play/')
+  const showTopBar = path === '/home' || path === '/lobby' || path === '/friends' || path === '/history' || path === '/leaderboard' || path.startsWith('/play/')
 
   return (
     <>
@@ -125,6 +126,7 @@ function AppShell() {
           onHome={() => navigate('/home')}
           onHowTo={() => navigate('/how-to')}
           onHistory={() => navigate('/history')}
+          onLeaderboard={() => navigate('/leaderboard')}
           onFriends={() => navigate('/friends')}
         />
       )}
@@ -163,6 +165,7 @@ function AppShell() {
         <Route path="/trivia" element={<TriviaGamePage />} />
         <Route path="/quickmatch" element={<QuickMatchFlowPage />} />
         <Route path="/history" element={<HistoryPage />} />
+        <Route path="/leaderboard" element={<LeaderboardPage />} />
         <Route path="/round-end" element={<RoundEndPage />} />
         <Route path="/game-end" element={<GameEndPage />} />
         <Route path="/how-to" element={<HowToPage />} />

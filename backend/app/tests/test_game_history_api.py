@@ -178,3 +178,132 @@ def test_stats_empty_for_user_with_no_history():
 def test_history_endpoints_require_auth():
     assert client.get("/game-history").status_code == 401
     assert client.get("/game-history/stats").status_code == 401
+
+
+# ---------- Leaderboard endpoint ----------
+
+def test_leaderboard_ranks_users_by_wins_descending():
+    a, ta = _make_user_with_token("lb-a")
+    b, tb = _make_user_with_token("lb-b")
+    c, tc = _make_user_with_token("lb-c")
+    # a: 3 wins, b: 5 wins, c: 1 win — expect order b, a, c.
+    for _ in range(3): _add_row(a.id, game_type="trivia", origin="quickmatch", is_winner=True)
+    for _ in range(5): _add_row(b.id, game_type="trivia", origin="quickmatch", is_winner=True)
+    for _ in range(1): _add_row(c.id, game_type="trivia", origin="quickmatch", is_winner=True)
+
+    r = client.get("/game-history/leaderboard?origin=quickmatch", headers=_auth(ta)).json()
+    ranks = [(e["display_name"], e["wins"], e["rank"]) for e in r["top"]]
+    # First by wins desc.
+    assert ranks[0][1] == 5 and ranks[0][2] == 1
+    assert ranks[1][1] == 3 and ranks[1][2] == 2
+    assert ranks[2][1] == 1 and ranks[2][2] == 3
+
+
+def test_leaderboard_caller_in_top_does_not_get_duplicate_you_pin():
+    a, ta = _make_user_with_token("lb-top")
+    for _ in range(3): _add_row(a.id, game_type="trivia", origin="quickmatch", is_winner=True)
+    r = client.get("/game-history/leaderboard?origin=quickmatch&limit=10", headers=_auth(ta)).json()
+    # Caller is in the top — `you` should be suppressed.
+    assert any(e["user_id"] == a.id for e in r["top"])
+    assert r["you"] is None
+
+
+def test_leaderboard_caller_outside_top_gets_you_pin_with_real_rank():
+    # Build a board with 12 leaders ahead of the caller.
+    leaders = []
+    for i in range(12):
+        u, _ = _make_user_with_token(f"lb-leader-{i}")
+        for _ in range(20 - i):  # 20, 19, 18, ... wins
+            _add_row(u.id, game_type="trivia", origin="quickmatch", is_winner=True)
+        leaders.append(u)
+
+    me, my_token = _make_user_with_token("lb-me")
+    for _ in range(2):
+        _add_row(me.id, game_type="trivia", origin="quickmatch", is_winner=True)
+
+    r = client.get("/game-history/leaderboard?origin=quickmatch&limit=10", headers=_auth(my_token)).json()
+    assert len(r["top"]) == 10
+    assert r["you"] is not None
+    assert r["you"]["user_id"] == me.id
+    assert r["you"]["rank"] == 13  # 12 leaders ahead, caller is rank 13
+    assert r["you"]["wins"] == 2
+
+
+def test_leaderboard_empty_when_no_games_for_origin():
+    _, token = _make_user_with_token("lb-empty")
+    r = client.get("/game-history/leaderboard?origin=quickmatch", headers=_auth(token)).json()
+    assert r["top"] == []
+    assert r["you"] is None
+    assert r["current_streak"] == 0
+
+
+def test_leaderboard_excludes_guest_rows():
+    # Guest users have user_id = 0 in GameHistory; they must not show up.
+    me, token = _make_user_with_token("lb-vs-guest")
+    _add_row(me.id, game_type="trivia", origin="quickmatch", is_winner=True)
+    # Guest row — user_id = 0
+    db = SessionLocal()
+    try:
+        db.add(GameHistory(
+            user_id=0, room_code="G0001", game_type="trivia",
+            score=999, player_count=2, is_winner=True,
+            display_name="GuestX", game_number=1, origin="quickmatch",
+        ))
+        db.commit()
+    finally:
+        db.close()
+
+    r = client.get("/game-history/leaderboard?origin=quickmatch", headers=_auth(token)).json()
+    # Only the real user shows up, never user_id=0.
+    user_ids = {e["user_id"] for e in r["top"]}
+    assert 0 not in user_ids
+    assert me.id in user_ids
+
+
+# ---------- Current streak ----------
+
+def test_current_streak_counts_consecutive_wins_from_most_recent_backwards():
+    from datetime import datetime, timedelta
+    me, token = _make_user_with_token("streak-3")
+    # Manually set played_at so we control order: loss (oldest), win, win, win (newest)
+    base = datetime.utcnow() - timedelta(hours=10)
+    db = SessionLocal()
+    try:
+        for i, (won, age_hours) in enumerate([(False, 4), (True, 3), (True, 2), (True, 1)]):
+            db.add(GameHistory(
+                user_id=me.id, room_code=f"S{i:04d}", game_type="trivia",
+                score=100, player_count=2, is_winner=won,
+                played_at=base + timedelta(hours=10 - age_hours),
+                display_name="me", game_number=1, origin="quickmatch",
+            ))
+        db.commit()
+    finally:
+        db.close()
+
+    r = client.get("/game-history/leaderboard?origin=quickmatch", headers=_auth(token)).json()
+    assert r["current_streak"] == 3
+
+
+def test_current_streak_zero_when_most_recent_is_loss():
+    from datetime import datetime, timedelta
+    me, token = _make_user_with_token("streak-broken")
+    base = datetime.utcnow() - timedelta(hours=5)
+    db = SessionLocal()
+    try:
+        for i, (won, age) in enumerate([(True, 3), (True, 2), (False, 1)]):  # most recent is a loss
+            db.add(GameHistory(
+                user_id=me.id, room_code=f"SB{i:04d}", game_type="trivia",
+                score=100, player_count=2, is_winner=won,
+                played_at=base + timedelta(hours=5 - age),
+                display_name="me", game_number=1, origin="quickmatch",
+            ))
+        db.commit()
+    finally:
+        db.close()
+
+    r = client.get("/game-history/leaderboard?origin=quickmatch", headers=_auth(token)).json()
+    assert r["current_streak"] == 0
+
+
+def test_leaderboard_requires_auth():
+    assert client.get("/game-history/leaderboard").status_code == 401

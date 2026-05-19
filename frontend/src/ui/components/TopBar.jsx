@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import Logo from './Logo.jsx'
 import { toggleMute, isMuted } from '../../lib/sounds.js'
 
-export default function TopBar({ userEmail, userDisplayName, userAvatarUrl, isAuthed, isGuest, guestDisplayName, onLogout, onHome, onHowTo, onHistory, onFriends, notificationCount = 0, onNotifications }) {
+export default function TopBar({ userEmail, userDisplayName, userAvatarUrl, isAuthed, isGuest, guestDisplayName, onLogout, onHome, onHowTo, onHistory, onLeaderboard, onFriends, notificationCount = 0, onNotifications }) {
   const displayLabel = userDisplayName || userEmail || 'Signed in'
   const [muted, setMuted] = useState(isMuted())
   const [menuOpen, setMenuOpen] = useState(false)
@@ -104,6 +104,15 @@ export default function TopBar({ userEmail, userDisplayName, userAvatarUrl, isAu
                     >
                       <span className="text-base">&#128101;</span>
                       Friends
+                    </button>
+                  )}
+                  {onLeaderboard && (
+                    <button
+                      className="w-full px-3 py-2.5 text-left text-sm hover:bg-black/5 flex items-center gap-2"
+                      onClick={() => { onLeaderboard(); setMenuOpen(false) }}
+                    >
+                      <span className="text-base">&#127942;</span>
+                      Leaderboard
                     </button>
                   )}
                   {onHistory && (

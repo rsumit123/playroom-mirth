@@ -7,6 +7,7 @@ import { playSound } from '../../lib/sounds.js'
 export default function GameEnd({
   scores, playerNames, playAgain, onPlayAgain, onHome,
   selfPlayerId, winnerPlayerId, origin, onRematch, onNewOpponent,
+  currentStreak = 0, onShare,
 }) {
   const [confettiKey, setConfettiKey] = useState(0)
   const [voted, setVoted] = useState(false)
@@ -24,6 +25,30 @@ export default function GameEnd({
     .sort((a, b) => b.score - a.score)
   const winner = entries[0]
 
+  // Margin between top two — used to soften the headline for quickmatch losses
+  // ("Rohan won by 80 pts") and to amplify wins ("You won by 150").
+  const margin = entries.length >= 2 ? Math.abs(entries[0].score - entries[1].score) : null
+  const myEntry = entries.find(e => String(e.id) === String(selfPlayerId))
+  const oppEntry = entries.find(e => String(e.id) !== String(selfPlayerId))
+
+  // Soft, narrative context line. Only used in quickmatch — friend-game UI is
+  // unchanged below.
+  let contextLine = null
+  if (isQuickmatch && margin != null) {
+    if (youWon) {
+      contextLine = `You won by ${margin} pt${margin === 1 ? '' : 's'}`
+    } else if (oppEntry) {
+      contextLine = `${oppEntry.name} won by ${margin} pt${margin === 1 ? '' : 's'}`
+    }
+  }
+
+  // Streak badge — bigger payoff for wins (rolling 🔥), gentle ack on losses
+  // when a streak just broke.
+  let streakBadge = null
+  if (isQuickmatch && currentStreak >= 2 && youWon) {
+    streakBadge = `🔥 ${currentStreak}-win streak`
+  }
+
   const handlePlayAgain = () => {
     setVoted(true)
     onPlayAgain()
@@ -36,15 +61,34 @@ export default function GameEnd({
     <div className="game-shell">
       <ConfettiBurst trigger={confettiKey} />
 
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 overflow-y-auto relative">
+        {/* Share icon — wins only, top-right of the panel; uses Web Share API
+            with a clipboard fallback in the page wrapper. */}
+        {isQuickmatch && youWon && onShare && (
+          <button
+            className="absolute top-4 right-4 touch-target h-10 w-10 rounded-full bg-white/80 backdrop-blur border border-black/5 flex items-center justify-center text-lg hover:bg-white transition active:scale-95"
+            onClick={onShare}
+            aria-label="Share your win"
+            title="Share your win"
+          >
+            <span aria-hidden="true">📤</span>
+          </button>
+        )}
         <div className="flex flex-col items-center min-h-full my-auto page-narrow py-8 text-center justify-center">
-          <div className="text-6xl mb-2 animate-trophy-bounce">{isQuickmatch && !youWon ? '😔' : '🏆'}</div>
+          <div className="text-6xl mb-2 animate-trophy-bounce">{isQuickmatch && !youWon ? '🎮' : '🏆'}</div>
           <div className="text-xs uppercase tracking-[0.3em] text-slate/60 mb-1">Game Over</div>
-          <h1 className="font-display text-3xl sm:text-4xl mb-6">
+          <h1 className="font-display text-3xl sm:text-4xl mb-1">
             {isQuickmatch
-              ? (youWon ? 'You Win!' : 'You Lost')
+              ? (youWon ? 'You Win!' : 'Good game!')
               : 'Final Results'}
           </h1>
+          {contextLine && (
+            <div className="text-sm text-slate/60 mb-2">{contextLine}</div>
+          )}
+          {streakBadge && (
+            <div className="badge bg-accent/10 text-accent text-xs mb-4 px-3 py-1">{streakBadge}</div>
+          )}
+          {!streakBadge && <div className="mb-4" />}
 
           {winner && (
             <div className="card px-6 py-5 mb-6 animate-pop text-center">

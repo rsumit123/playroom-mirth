@@ -5,6 +5,7 @@ import Scoreboard from '../components/Scoreboard.jsx'
 import PlayerAvatar from '../components/PlayerAvatar.jsx'
 import GameAlerts, { useGameAlerts } from '../components/GameAlerts.jsx'
 import LeaveGameModal from '../components/LeaveGameModal.jsx'
+import VsOpponentChip from '../components/VsOpponentChip.jsx'
 import { playSound } from '../../lib/sounds.js'
 
 const OPTION_COLORS = [
@@ -107,6 +108,14 @@ export default function TriviaGame({ game, onAnswer, onLeave, playerNames = {} }
               <span className="text-sm font-medium text-correct">Results</span>
             )}
           </div>
+
+          {/* Live 1v1 score chip — only shows when exactly 2 players are in. */}
+          <VsOpponentChip
+            scores={game?.scores || {}}
+            playerNames={playerNames}
+            selfPlayerId={game?.selfPlayerId}
+            playerOrder={game?.player_order}
+          />
 
           {/* Question + Options */}
           <div className="flex-1 overflow-y-auto px-4 py-6">
