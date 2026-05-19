@@ -122,4 +122,13 @@ describe('GameSetup — Quick Play tab', () => {
     fireEvent.click(screen.getByText(/Create Room/i))
     expect(screen.queryByText(/Play Now/i)).toBeNull()
   })
+
+  it('does NOT mention bots or fallback waits in the Quick Play copy', () => {
+    const { container } = render(<GameSetup {...defaultProps} gameType="trivia" signedIn onQuickPlay={vi.fn()} />)
+    const body = container.textContent || ''
+    expect(body).not.toMatch(/bot/i)
+    expect(body).not.toMatch(/fallback/i)
+    // But it does still pitch the feature.
+    expect(body).toMatch(/live player/i)
+  })
 })

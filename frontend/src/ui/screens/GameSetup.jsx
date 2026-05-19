@@ -61,8 +61,8 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
             <div className="text-5xl">⚡</div>
             <h2 className="font-display text-2xl">Quick Play</h2>
             <p className="text-sm text-slate/60">
-              Skip the room setup — get paired with a live player instantly.
-              No one online? You'll play a bot after a short wait.
+              Test yourself against real live players — get paired instantly,
+              no room setup needed.
             </p>
             <button
               className="btn-primary w-full py-3.5 text-base touch-target"

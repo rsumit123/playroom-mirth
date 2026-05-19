@@ -368,3 +368,49 @@ async def test_quickmatch_matched_payload_flags_bot_match():
 
     assert captured, "expected quickmatch:matched"
     assert captured[0].get("is_bot_match") is True
+
+
+@pytest.mark.asyncio
+async def test_lobby_uses_user_display_name_not_email_prefix():
+    """When a User has a display_name, lobby_state must surface that — not the
+    email local-part. This is the bug that made bot 'Rohan' appear in-game as
+    'bot_rohan' (their email prefix) instead of the proper display name."""
+    from app.models.room import Room
+    from app.models.room_player import RoomPlayer
+    from app.services.room_ops import lobby_state
+
+    db = SessionLocal()
+    try:
+        seed_bot_users(db)
+        # Find the bot named "Rohan".
+        bot = db.query(User).filter(User.display_name == "Rohan", User.is_bot == True).first()  # noqa: E712
+        assert bot, "expected seeded bot 'Rohan'"
+        assert bot.email == "bot_rohan@quickmatch.local"
+
+        # Create a real human host alongside the bot so the room has 2 players.
+        host_id, _ = _make_user("display-name-host")
+        host = db.query(User).filter(User.id == host_id).first()
+        host.display_name = "Aditi"
+        db.commit()
+
+        room = Room(
+            code=f"DN{uuid.uuid4().hex[:4].upper()}",
+            host_user_id=host.id, status="lobby", rounds_total=1,
+            difficulty=1, turn_seconds=15, max_players=2, min_players=2,
+            game_type="trivia", origin="quickmatch",
+        )
+        db.add(room)
+        db.commit()
+        db.refresh(room)
+        db.add_all([
+            RoomPlayer(room_id=room.id, user_id=host.id, join_order=1, score=0, in_game=True, connected=True),
+            RoomPlayer(room_id=room.id, user_id=bot.id, join_order=2, score=0, in_game=True, connected=True),
+        ])
+        db.commit()
+
+        snap = lobby_state(db, room)
+        names = {p.user_id: p.display_name for p in snap.players}
+        assert names[host.id] == "Aditi", f"expected 'Aditi', got {names[host.id]!r}"
+        assert names[bot.id] == "Rohan", f"expected 'Rohan', got {names[bot.id]!r}"
+    finally:
+        db.close()

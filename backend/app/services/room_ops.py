@@ -44,12 +44,14 @@ def lobby_state(db: Session, room: Room, self_player_id: int | None = None) -> L
             host_player_id = p.id
             break
 
-    # Look up user emails for display names
+    # Look up users for display names. Prefer the explicit display_name (set
+    # from Google profile for signed-in users; "Priya"/"Rohan" etc. for bots);
+    # fall back to the email local-part only if display_name is unset.
     user_ids = [p.user_id for p in players if p.user_id]
     user_map = {}
     if user_ids:
         users = db.query(User).filter(User.id.in_(user_ids)).all()
-        user_map = {u.id: u.email.split("@")[0] for u in users}
+        user_map = {u.id: (u.display_name or u.email.split("@")[0]) for u in users}
 
     # Look up guest display names
     guest_ids = [p.guest_id for p in players if p.guest_id]
