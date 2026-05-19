@@ -15,7 +15,7 @@ export default function MatchFoundSplash({ opponentName, category, onDone }) {
   }, [onDone])
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-bg safe-area-top">
+    <div className="min-h-[100dvh] flex flex-col items-center justify-center bg-bg safe-area-top safe-area-bottom">
       <div className="mb-6 animate-pop">
         <PlayerAvatar name={opponentName} size="lg" />
       </div>

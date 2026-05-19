@@ -34,7 +34,7 @@ export default function QuickMatchSearch({ waitSeconds = 15, category, onCancel,
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-bg safe-area-top">
+    <div className="min-h-[100dvh] flex flex-col bg-bg safe-area-top safe-area-bottom">
       <div className="flex justify-end px-4 py-3">
         <button className="touch-target text-slate/60" onClick={onCancel} aria-label="Cancel">✕</button>
       </div>
