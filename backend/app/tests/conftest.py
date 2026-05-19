@@ -21,6 +21,7 @@ from app.models.room_state import RoomState
 from app.models.word import Word
 from app.models.friendship import Friendship
 from app.models.game_invite import GameInvite
+from app.models.game_history import GameHistory
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -39,6 +40,9 @@ def clear_users():
         db.query(Word).delete()
         db.query(GameInvite).delete()
         db.query(Friendship).delete()
+        # GameHistory rows must be cleared too — otherwise per-user history
+        # bleeds across tests when SQLite reuses freed user IDs.
+        db.query(GameHistory).delete()
         db.query(User).filter(User.is_bot == False).delete()  # noqa: E712
         db.commit()
     finally:

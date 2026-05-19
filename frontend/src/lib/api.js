@@ -133,8 +133,16 @@ export function deleteAdminWord(token, wordId) {
   })
 }
 
-export function getGameHistory(token) {
-  return request('/game-history', {
+export function getGameHistory(token, { origin = 'friends', limit = 20, offset = 0 } = {}) {
+  const qs = new URLSearchParams({ origin, limit: String(limit), offset: String(offset) })
+  return request(`/game-history?${qs}`, {
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
+
+export function getGameHistoryStats(token, { origin = 'all' } = {}) {
+  const qs = new URLSearchParams({ origin })
+  return request(`/game-history/stats?${qs}`, {
     headers: { Authorization: `Bearer ${token}` }
   })
 }

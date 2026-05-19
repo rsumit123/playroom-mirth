@@ -1,4 +1,6 @@
 from datetime import datetime
+from typing import Dict, List
+
 from pydantic import BaseModel
 
 
@@ -10,5 +12,22 @@ class GameHistoryOut(BaseModel):
     is_winner: bool
     played_at: datetime
     room_code: str
+    origin: str = "friends"
 
     model_config = {"from_attributes": True}
+
+
+class GameTypeStats(BaseModel):
+    """Per-(game_type, origin) summary used by the history page header."""
+    game_type: str
+    origin: str
+    games_played: int
+    wins: int
+    losses: int
+
+
+class GameHistoryStats(BaseModel):
+    total_games: int
+    total_wins: int
+    by_game_type: List[GameTypeStats]
+    by_origin: Dict[str, int]
