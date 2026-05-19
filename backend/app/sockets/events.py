@@ -45,7 +45,15 @@ from app.services import trivia_bot
 
 _logger = logging.getLogger("charade.sio")
 
-sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
+# ping_interval/timeout tightened from defaults (25s/20s) so hard network
+# drops are detected in ~20s worst case instead of ~45s. That keeps the 60s
+# quickmatch reconnect grace meaningful for poor-network scenarios.
+sio = socketio.AsyncServer(
+    async_mode="asgi",
+    cors_allowed_origins="*",
+    ping_interval=10,
+    ping_timeout=10,
+)
 
 # Play-again vote tracking: room_code -> {player_ids: set, total: int, task: asyncio.Task}
 PLAY_AGAIN_VOTES: dict[str, dict] = {}
