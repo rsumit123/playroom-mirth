@@ -1,4 +1,4 @@
-const CATEGORIES = [
+export const CATEGORIES = [
   { value: 'general_knowledge', label: 'General Knowledge', icon: '🧠', desc: 'All topics' },
   { value: 'science', label: 'Science', icon: '🔬' },
   { value: 'general', label: 'General', icon: '💡' },

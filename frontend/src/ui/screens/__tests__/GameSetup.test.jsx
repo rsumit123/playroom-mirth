@@ -75,7 +75,7 @@ describe('GameSetup', () => {
   })
 })
 
-describe('GameSetup — Quick Play hero', () => {
+describe('GameSetup — Quick Play tab', () => {
   const defaultProps = {
     onCreate: vi.fn(),
     onJoin: vi.fn(),
@@ -84,25 +84,42 @@ describe('GameSetup — Quick Play hero', () => {
     loadingJoin: false,
   }
 
-  it('shows Quick Play hero for signed-in trivia', () => {
+  it('shows the Quick Play tab for signed-in trivia (alongside Create / Join)', () => {
     render(<GameSetup {...defaultProps} gameType="trivia" signedIn onQuickPlay={vi.fn()} />)
-    expect(screen.getByText(/Quick Play/i)).toBeTruthy()
+    expect(screen.getAllByText(/Quick Play/i).length).toBeGreaterThan(0)
+    expect(screen.getByText(/Create Room/i)).toBeTruthy()
+    expect(screen.getByText(/Join Room/i)).toBeTruthy()
   })
 
-  it('hides Quick Play hero for guest trivia', () => {
+  it('defaults to the Quick Play tab when available (preferred entry for trivia)', () => {
+    render(<GameSetup {...defaultProps} gameType="trivia" signedIn onQuickPlay={vi.fn()} />)
+    // The Play Now CTA is only inside the Quick Play tab body — its presence proves the tab is active.
+    expect(screen.getByText(/Play Now/i)).toBeTruthy()
+  })
+
+  it('hides Quick Play for guest trivia (Create is the default tab)', () => {
     render(<GameSetup {...defaultProps} gameType="trivia" signedIn={false} onQuickPlay={vi.fn()} />)
     expect(screen.queryByText(/Quick Play/i)).toBeNull()
+    expect(screen.queryByText(/Play Now/i)).toBeNull()
   })
 
-  it('hides Quick Play hero for charades regardless of auth', () => {
+  it('hides Quick Play for non-trivia games regardless of auth', () => {
     render(<GameSetup {...defaultProps} gameType="charades" signedIn onQuickPlay={vi.fn()} />)
     expect(screen.queryByText(/Quick Play/i)).toBeNull()
+    expect(screen.queryByText(/Play Now/i)).toBeNull()
   })
 
-  it('calls onQuickPlay when hero is tapped', () => {
+  it('calls onQuickPlay when Play Now is tapped from the Quick Play tab', () => {
     const onQuickPlay = vi.fn()
     render(<GameSetup {...defaultProps} gameType="trivia" signedIn onQuickPlay={onQuickPlay} />)
     fireEvent.click(screen.getByText(/Play Now/i))
     expect(onQuickPlay).toHaveBeenCalledOnce()
+  })
+
+  it('switches to Create tab and hides the Quick Play body when Create Room is clicked', () => {
+    render(<GameSetup {...defaultProps} gameType="trivia" signedIn onQuickPlay={vi.fn()} />)
+    // Active tab is Quick Play by default — switch.
+    fireEvent.click(screen.getByText(/Create Room/i))
+    expect(screen.queryByText(/Play Now/i)).toBeNull()
   })
 })

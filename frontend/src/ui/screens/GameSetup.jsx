@@ -11,7 +11,8 @@ const GAME_LABELS = {
 }
 
 export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onBack, loadingCreate, loadingJoin, signedIn = false, onQuickPlay }) {
-  const [tab, setTab] = useState('create')
+  const showQuickPlay = gameType === 'trivia' && signedIn && !!onQuickPlay
+  const [tab, setTab] = useState(showQuickPlay ? 'quickplay' : 'create')
   const [rounds, setRounds] = useState(3)
   const [timer, setTimer] = useState(120)
   const [difficulty, setDifficulty] = useState(0)
@@ -33,6 +34,14 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
         </div>
 
         <div className="segmented">
+          {showQuickPlay && (
+            <button
+              className={tab === 'quickplay' ? 'segmented-option-active' : 'segmented-option'}
+              onClick={() => setTab('quickplay')}
+            >
+              ⚡ Quick Play
+            </button>
+          )}
           <button
             className={tab === 'create' ? 'segmented-option-active' : 'segmented-option'}
             onClick={() => setTab('create')}
@@ -47,24 +56,22 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
           </button>
         </div>
 
-        {gameType === 'trivia' && signedIn && onQuickPlay && (
-          <>
+        {tab === 'quickplay' ? (
+          <div className="card p-6 space-y-4 animate-pop text-center">
+            <div className="text-5xl">⚡</div>
+            <h2 className="font-display text-2xl">Quick Play</h2>
+            <p className="text-sm text-slate/60">
+              Skip the room setup — get paired with a live player instantly.
+              No one online? You'll play a bot after a short wait.
+            </p>
             <button
-              className="w-full mb-4 rounded-2xl bg-gradient-to-br from-accent to-accent/80 text-white p-6 shadow-lg active:scale-[0.98] transition text-left"
+              className="btn-primary w-full py-3.5 text-base touch-target"
               onClick={onQuickPlay}
             >
-              <div className="text-2xl">⚡</div>
-              <h2 className="font-display text-2xl mt-1">Quick Play</h2>
-              <p className="text-sm opacity-90 mt-1">Match with a live player</p>
-              <div className="mt-3 text-sm font-semibold">Play Now →</div>
+              Play Now &rarr;
             </button>
-            <div className="my-3 flex items-center gap-2 text-xs text-slate/40">
-              <div className="flex-1 h-px bg-black/10" /> or <div className="flex-1 h-px bg-black/10" />
-            </div>
-          </>
-        )}
-
-        {tab === 'create' ? (
+          </div>
+        ) : tab === 'create' ? (
           <div className="card p-6 space-y-6 animate-pop">
             <RangeSlider label="Rounds" value={rounds} min={1} max={gameType === 'trivia' ? 5 : 10} onChange={setRounds} />
             {gameType !== 'trivia' && (
