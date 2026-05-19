@@ -3,7 +3,15 @@
  * games. Designed to be flat + compact: ~44px tall on mobile, doesn't compete
  * with the question card for attention. Score on each side updates live from
  * scores prop; the player currently in the lead gets the accent treatment.
+ *
+ * Score reactions: when `questionIndex` increments, we diff scores against the
+ * previous question. If a side's score went up they get a floating "+N ⬆️"
+ * pulse; if they're on a 3+ streak we surface a 🔥 next to their score.
  */
+
+import { useEffect, useRef, useState } from 'react'
+
+const STREAK_THRESHOLD = 3
 
 function Initial({ name, isYou }) {
   const letter = (name || '?').trim().slice(0, 1).toUpperCase() || '?'
@@ -16,11 +24,105 @@ function Initial({ name, isYou }) {
   )
 }
 
-export default function VsOpponentChip({ scores, playerNames, selfPlayerId, playerOrder }) {
+function ScoreCell({ name, score, lead, streak, pop, side }) {
+  const alignR = side === 'right'
+  return (
+    <div className={`min-w-0 ${alignR ? 'text-right' : ''} relative`}>
+      <div className={`text-[10px] uppercase tracking-wider text-slate/40 leading-none ${alignR ? 'truncate' : ''}`}>
+        {name}
+      </div>
+      <div className={`font-display text-base leading-tight flex items-center gap-1 ${alignR ? 'justify-end' : ''} ${lead ? 'text-accent' : 'text-ink'}`}>
+        {streak >= STREAK_THRESHOLD && (
+          <span
+            className="text-xs leading-none animate-pop"
+            title={`${streak}-question streak`}
+            aria-label={`${streak} question streak`}
+          >🔥</span>
+        )}
+        <span>{score}</span>
+      </div>
+      {pop && (
+        // key on pop.id forces the floating element to remount + re-run its
+        // entry animation each time the user gets another one right.
+        <div
+          key={pop.id}
+          className={`absolute -top-3 ${alignR ? 'right-0' : 'left-9'} text-[11px] font-bold text-correct pointer-events-none animate-score-pop`}
+          aria-hidden="true"
+        >
+          <span className="inline-flex items-center gap-0.5">
+            <span>⬆</span>
+            <span>+{pop.delta}</span>
+          </span>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default function VsOpponentChip({ scores, playerNames, selfPlayerId, playerOrder, questionIndex }) {
   // Build the two-player breakdown. We only render for exactly 2 players —
   // for friend games with 3+, scoreboard takes over.
   const ids = (playerOrder && playerOrder.length === 2) ? playerOrder : Object.keys(scores || {})
-  if (!ids || ids.length !== 2) return null
+  const validPair = ids && ids.length === 2
+
+  // ─── Score-reaction state ────────────────────────────────────────────────
+  // We diff against the scores snapshot we held at the previous question_index
+  // boundary. Streaks tracked per player id (string keys for stable equality).
+  const lastScoresRef = useRef({})
+  const lastQuestionIndexRef = useRef(null)
+  const [streaks, setStreaks] = useState({})
+  const [pops, setPops] = useState({})  // { [pid]: { id, delta } }
+
+  useEffect(() => {
+    if (!validPair) return
+    if (questionIndex == null) return
+    // First observation — just snapshot, no animation.
+    if (lastQuestionIndexRef.current == null) {
+      lastQuestionIndexRef.current = questionIndex
+      lastScoresRef.current = { ...scores }
+      return
+    }
+    // New question started — diff against the snapshot we held entering the
+    // PREVIOUS question, then update.
+    if (questionIndex === lastQuestionIndexRef.current) return
+    // Reset case: question index went backwards (new game) → wipe everything.
+    if (questionIndex < lastQuestionIndexRef.current) {
+      lastQuestionIndexRef.current = questionIndex
+      lastScoresRef.current = { ...scores }
+      setStreaks({})
+      setPops({})
+      return
+    }
+    const prev = lastScoresRef.current
+    const nextStreaks = { ...streaks }
+    const nextPops = { ...pops }
+    for (const pid of ids) {
+      const before = prev?.[pid] ?? 0
+      const after = scores?.[pid] ?? 0
+      if (after > before) {
+        nextStreaks[pid] = (streaks[pid] || 0) + 1
+        nextPops[pid] = { id: `${questionIndex}-${pid}`, delta: after - before }
+      } else {
+        nextStreaks[pid] = 0
+        // Clear stale pop so it doesn't linger on a wrong answer.
+        delete nextPops[pid]
+      }
+    }
+    setStreaks(nextStreaks)
+    setPops(nextPops)
+    lastQuestionIndexRef.current = questionIndex
+    lastScoresRef.current = { ...scores }
+
+    // Auto-clear pop after the animation finishes.
+    const id = setTimeout(() => setPops(p => {
+      const next = { ...p }
+      for (const pid of ids) delete next[pid]
+      return next
+    }), 1500)
+    return () => clearTimeout(id)
+  }, [questionIndex, validPair])
+
+  if (!validPair) return null
 
   const youId = String(selfPlayerId)
   const meId = ids.find(id => String(id) === youId) ?? ids[0]
@@ -38,12 +140,14 @@ export default function VsOpponentChip({ scores, playerNames, selfPlayerId, play
         {/* You — left */}
         <div className="flex items-center gap-2 min-w-0 flex-1">
           <Initial name="You" isYou />
-          <div className="min-w-0">
-            <div className="text-[10px] uppercase tracking-wider text-slate/40 leading-none">You</div>
-            <div className={`font-display text-base leading-tight ${meLeads ? 'text-accent' : 'text-ink'}`}>
-              {meScore}
-            </div>
-          </div>
+          <ScoreCell
+            name="You"
+            score={meScore}
+            lead={meLeads}
+            streak={streaks[meId] || 0}
+            pop={pops[meId]}
+            side="left"
+          />
         </div>
 
         {/* vs separator */}
@@ -51,12 +155,14 @@ export default function VsOpponentChip({ scores, playerNames, selfPlayerId, play
 
         {/* Opponent — right (mirrored layout so scores meet in the middle) */}
         <div className="flex items-center gap-2 min-w-0 flex-1 justify-end">
-          <div className="min-w-0 text-right">
-            <div className="text-[10px] uppercase tracking-wider text-slate/40 leading-none truncate">{oppName}</div>
-            <div className={`font-display text-base leading-tight ${oppLeads ? 'text-accent' : 'text-ink'}`}>
-              {oppScore}
-            </div>
-          </div>
+          <ScoreCell
+            name={oppName}
+            score={oppScore}
+            lead={oppLeads}
+            streak={streaks[oppId] || 0}
+            pop={pops[oppId]}
+            side="right"
+          />
           <Initial name={oppName} isYou={false} />
         </div>
       </div>

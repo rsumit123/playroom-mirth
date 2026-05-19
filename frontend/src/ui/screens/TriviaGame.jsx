@@ -115,6 +115,7 @@ export default function TriviaGame({ game, onAnswer, onLeave, playerNames = {} }
             playerNames={playerNames}
             selfPlayerId={game?.selfPlayerId}
             playerOrder={game?.player_order}
+            questionIndex={trivia?.question_index}
           />
 
           {/* Question + Options */}
