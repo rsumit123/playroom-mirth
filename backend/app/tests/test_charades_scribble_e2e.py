@@ -165,7 +165,14 @@ def test_scribble_full_game():
             except socketio.exceptions.TimeoutError:
                 continue
 
-            if ev_name == "game:new_word":
+            if ev_name == "game:word_choices":
+                words = ev_data.get("words") or []
+                assert words, f"Expected scribble word choices, got {ev_data}"
+                picked = words[0]
+                print(f"  [{label}] picking word: {picked}")
+                sio.emit("game:word_pick", {"room_code": code, "word": picked})
+
+            elif ev_name == "game:new_word":
                 current_word = ev_data.get("word")
                 word_holder = label
                 print(f"  [{label}] drawing word: {current_word}")

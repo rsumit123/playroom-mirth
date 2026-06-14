@@ -57,7 +57,7 @@ async def test_join_queue_appends_entry():
 
 
 @pytest.mark.asyncio
-async def test_join_queue_rejects_duplicate_user():
+async def test_join_queue_switches_duplicate_user_to_new_category():
     await matchmaker.join_queue(
         user_id=1, sid="sid1", category="science",
         on_pair=lambda *a, **kw: None, on_bot_fallback=lambda *a, **kw: None,
@@ -66,8 +66,11 @@ async def test_join_queue_rejects_duplicate_user():
         user_id=1, sid="sid2", category="history",
         on_pair=lambda *a, **kw: None, on_bot_fallback=lambda *a, **kw: None,
     )
-    assert res["ok"] is False
-    assert res["error"] == "ALREADY_IN_QUEUE"
+    assert res["ok"] is True
+    assert res["status"] == "searching"
+    assert matchmaker.QUEUES["science"] == []
+    assert len(matchmaker.QUEUES["history"]) == 1
+    assert matchmaker.USER_IN_QUEUE[1].category == "history"
 
 
 @pytest.mark.asyncio

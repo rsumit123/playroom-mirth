@@ -72,7 +72,7 @@ def test_generate_question_medium_shape():
 
 def test_generate_question_hard_shape():
     q = generate_question(3)
-    assert q["time_seconds"] == 10
+    assert q["time_seconds"] == 15
     assert len(q["options"]) == 4
 
 

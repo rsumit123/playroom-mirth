@@ -1,0 +1,5072 @@
+[
+  {
+    "id": "ca_easy_380",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with conducting elections to Parliament and State Legislative Assemblies?",
+    "options": [
+      "Election Commission of India",
+      "Supreme Court of India",
+      "High Courts",
+      "Reserve Bank of India"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_381",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Election Commission of India most directly associated with?",
+    "options": [
+      "serving as India's highest constitutional court",
+      "conducting elections to Parliament and State Legislative Assemblies",
+      "issuing writs and supervising state-level judicial administration",
+      "acting as India's central bank and monetary authority"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_382",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with serving as India's highest constitutional court?",
+    "options": [
+      "Reserve Bank of India",
+      "High Courts",
+      "Supreme Court of India",
+      "Securities and Exchange Board of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_383",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Supreme Court of India most directly associated with?",
+    "options": [
+      "regulating India's securities and capital markets",
+      "issuing writs and supervising state-level judicial administration",
+      "acting as India's central bank and monetary authority",
+      "serving as India's highest constitutional court"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_384",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with issuing writs and supervising state-level judicial administration?",
+    "options": [
+      "High Courts",
+      "Reserve Bank of India",
+      "Securities and Exchange Board of India",
+      "Insurance Regulatory and Development Authority of India"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_385",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is High Courts most directly associated with?",
+    "options": [
+      "acting as India's central bank and monetary authority",
+      "issuing writs and supervising state-level judicial administration",
+      "regulating India's securities and capital markets",
+      "regulating India's insurance sector"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_386",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with acting as India's central bank and monetary authority?",
+    "options": [
+      "Insurance Regulatory and Development Authority of India",
+      "Securities and Exchange Board of India",
+      "Reserve Bank of India",
+      "Telecom Regulatory Authority of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_387",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Reserve Bank of India most directly associated with?",
+    "options": [
+      "regulating telecom services and tariffs",
+      "regulating India's securities and capital markets",
+      "regulating India's insurance sector",
+      "acting as India's central bank and monetary authority"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_388",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with regulating India's securities and capital markets?",
+    "options": [
+      "Securities and Exchange Board of India",
+      "Insurance Regulatory and Development Authority of India",
+      "Telecom Regulatory Authority of India",
+      "Food Safety and Standards Authority of India"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_389",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Securities and Exchange Board of India most directly associated with?",
+    "options": [
+      "regulating India's insurance sector",
+      "regulating India's securities and capital markets",
+      "regulating telecom services and tariffs",
+      "setting food safety standards in India"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_390",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with regulating India's insurance sector?",
+    "options": [
+      "Food Safety and Standards Authority of India",
+      "Telecom Regulatory Authority of India",
+      "Insurance Regulatory and Development Authority of India",
+      "National Testing Agency"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_391",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Insurance Regulatory and Development Authority of India most directly associated with?",
+    "options": [
+      "conducting several national-level entrance examinations",
+      "regulating telecom services and tariffs",
+      "setting food safety standards in India",
+      "regulating India's insurance sector"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_392",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with regulating telecom services and tariffs?",
+    "options": [
+      "Telecom Regulatory Authority of India",
+      "Food Safety and Standards Authority of India",
+      "National Testing Agency",
+      "Central Board of Secondary Education"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_393",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Telecom Regulatory Authority of India most directly associated with?",
+    "options": [
+      "setting food safety standards in India",
+      "regulating telecom services and tariffs",
+      "conducting several national-level entrance examinations",
+      "conducting CBSE school board examinations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_394",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with setting food safety standards in India?",
+    "options": [
+      "Central Board of Secondary Education",
+      "National Testing Agency",
+      "Food Safety and Standards Authority of India",
+      "Ministry of External Affairs"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_395",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Food Safety and Standards Authority of India most directly associated with?",
+    "options": [
+      "managing India's diplomacy and embassies",
+      "conducting several national-level entrance examinations",
+      "conducting CBSE school board examinations",
+      "setting food safety standards in India"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_396",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with conducting several national-level entrance examinations?",
+    "options": [
+      "National Testing Agency",
+      "Central Board of Secondary Education",
+      "Ministry of External Affairs",
+      "Ministry of Defence"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_397",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is National Testing Agency most directly associated with?",
+    "options": [
+      "conducting CBSE school board examinations",
+      "conducting several national-level entrance examinations",
+      "managing India's diplomacy and embassies",
+      "overseeing India's armed forces and defence policy"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_398",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with conducting CBSE school board examinations?",
+    "options": [
+      "Ministry of Defence",
+      "Ministry of External Affairs",
+      "Central Board of Secondary Education",
+      "Ministry of Corporate Affairs"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_399",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Central Board of Secondary Education most directly associated with?",
+    "options": [
+      "administering company law and company registrars",
+      "managing India's diplomacy and embassies",
+      "overseeing India's armed forces and defence policy",
+      "conducting CBSE school board examinations"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_400",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with managing India's diplomacy and embassies?",
+    "options": [
+      "Ministry of External Affairs",
+      "Ministry of Defence",
+      "Ministry of Corporate Affairs",
+      "Ministry of Finance"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_401",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Ministry of External Affairs most directly associated with?",
+    "options": [
+      "overseeing India's armed forces and defence policy",
+      "managing India's diplomacy and embassies",
+      "administering company law and company registrars",
+      "presenting the Union Budget and managing fiscal policy"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_402",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with overseeing India's armed forces and defence policy?",
+    "options": [
+      "Ministry of Finance",
+      "Ministry of Corporate Affairs",
+      "Ministry of Defence",
+      "Archaeological Survey of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_403",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Ministry of Defence most directly associated with?",
+    "options": [
+      "protecting monuments of national importance",
+      "administering company law and company registrars",
+      "presenting the Union Budget and managing fiscal policy",
+      "overseeing India's armed forces and defence policy"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_404",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with administering company law and company registrars?",
+    "options": [
+      "Ministry of Corporate Affairs",
+      "Ministry of Finance",
+      "Archaeological Survey of India",
+      "Survey of India"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_405",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Ministry of Corporate Affairs most directly associated with?",
+    "options": [
+      "presenting the Union Budget and managing fiscal policy",
+      "administering company law and company registrars",
+      "protecting monuments of national importance",
+      "preparing official maps and national surveys"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_406",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with presenting the Union Budget and managing fiscal policy?",
+    "options": [
+      "Survey of India",
+      "Archaeological Survey of India",
+      "Ministry of Finance",
+      "Central Pollution Control Board"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_407",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Ministry of Finance most directly associated with?",
+    "options": [
+      "monitoring pollution and environmental standards",
+      "protecting monuments of national importance",
+      "preparing official maps and national surveys",
+      "presenting the Union Budget and managing fiscal policy"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_408",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with protecting monuments of national importance?",
+    "options": [
+      "Archaeological Survey of India",
+      "Survey of India",
+      "Central Pollution Control Board",
+      "Commission for Air Quality Management"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_409",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Archaeological Survey of India most directly associated with?",
+    "options": [
+      "preparing official maps and national surveys",
+      "protecting monuments of national importance",
+      "monitoring pollution and environmental standards",
+      "coordinating air-quality management in Delhi-NCR"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_410",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with preparing official maps and national surveys?",
+    "options": [
+      "Commission for Air Quality Management",
+      "Central Pollution Control Board",
+      "Survey of India",
+      "Indian Council of Medical Research"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_411",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Survey of India most directly associated with?",
+    "options": [
+      "coordinating apex biomedical research in India",
+      "monitoring pollution and environmental standards",
+      "coordinating air-quality management in Delhi-NCR",
+      "preparing official maps and national surveys"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_412",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with monitoring pollution and environmental standards?",
+    "options": [
+      "Central Pollution Control Board",
+      "Commission for Air Quality Management",
+      "Indian Council of Medical Research",
+      "Indian Council of Agricultural Research"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_413",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Central Pollution Control Board most directly associated with?",
+    "options": [
+      "coordinating air-quality management in Delhi-NCR",
+      "monitoring pollution and environmental standards",
+      "coordinating apex biomedical research in India",
+      "coordinating apex agricultural research in India"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_414",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with coordinating air-quality management in Delhi-NCR?",
+    "options": [
+      "Indian Council of Agricultural Research",
+      "Indian Council of Medical Research",
+      "Commission for Air Quality Management",
+      "India Meteorological Department"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_415",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Commission for Air Quality Management most directly associated with?",
+    "options": [
+      "issuing weather and cyclone forecasts",
+      "coordinating apex biomedical research in India",
+      "coordinating apex agricultural research in India",
+      "coordinating air-quality management in Delhi-NCR"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_416",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with coordinating apex biomedical research in India?",
+    "options": [
+      "Indian Council of Medical Research",
+      "Indian Council of Agricultural Research",
+      "India Meteorological Department",
+      "National Center for Seismology"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_417",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Indian Council of Medical Research most directly associated with?",
+    "options": [
+      "coordinating apex agricultural research in India",
+      "coordinating apex biomedical research in India",
+      "issuing weather and cyclone forecasts",
+      "monitoring earthquakes in India"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_418",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with coordinating apex agricultural research in India?",
+    "options": [
+      "National Center for Seismology",
+      "India Meteorological Department",
+      "Indian Council of Agricultural Research",
+      "Central Water Commission"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_419",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Indian Council of Agricultural Research most directly associated with?",
+    "options": [
+      "monitoring river flows and flood forecasting",
+      "issuing weather and cyclone forecasts",
+      "monitoring earthquakes in India",
+      "coordinating apex agricultural research in India"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_420",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with issuing weather and cyclone forecasts?",
+    "options": [
+      "India Meteorological Department",
+      "National Center for Seismology",
+      "Central Water Commission",
+      "National Company Law Tribunal"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_421",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is India Meteorological Department most directly associated with?",
+    "options": [
+      "monitoring earthquakes in India",
+      "issuing weather and cyclone forecasts",
+      "monitoring river flows and flood forecasting",
+      "hearing company-law and corporate insolvency matters"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_422",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with monitoring earthquakes in India?",
+    "options": [
+      "National Company Law Tribunal",
+      "Central Water Commission",
+      "National Center for Seismology",
+      "National Company Law Appellate Tribunal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_423",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is National Center for Seismology most directly associated with?",
+    "options": [
+      "hearing appeals from NCLT and some competition orders",
+      "monitoring river flows and flood forecasting",
+      "hearing company-law and corporate insolvency matters",
+      "monitoring earthquakes in India"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_424",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with monitoring river flows and flood forecasting?",
+    "options": [
+      "Central Water Commission",
+      "National Company Law Tribunal",
+      "National Company Law Appellate Tribunal",
+      "Competition Commission of India"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_425",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Central Water Commission most directly associated with?",
+    "options": [
+      "hearing company-law and corporate insolvency matters",
+      "monitoring river flows and flood forecasting",
+      "hearing appeals from NCLT and some competition orders",
+      "checking anti-competitive agreements and abuse of dominance"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_426",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with hearing company-law and corporate insolvency matters?",
+    "options": [
+      "Competition Commission of India",
+      "National Company Law Appellate Tribunal",
+      "National Company Law Tribunal",
+      "Insolvency and Bankruptcy Board of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_427",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is National Company Law Tribunal most directly associated with?",
+    "options": [
+      "regulating insolvency professionals and IBC processes",
+      "hearing appeals from NCLT and some competition orders",
+      "checking anti-competitive agreements and abuse of dominance",
+      "hearing company-law and corporate insolvency matters"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_428",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with hearing appeals from NCLT and some competition orders?",
+    "options": [
+      "National Company Law Appellate Tribunal",
+      "Competition Commission of India",
+      "Insolvency and Bankruptcy Board of India",
+      "Central Bureau of Investigation"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_429",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is National Company Law Appellate Tribunal most directly associated with?",
+    "options": [
+      "checking anti-competitive agreements and abuse of dominance",
+      "hearing appeals from NCLT and some competition orders",
+      "regulating insolvency professionals and IBC processes",
+      "investigating serious corruption and special crime cases"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_430",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with checking anti-competitive agreements and abuse of dominance?",
+    "options": [
+      "Central Bureau of Investigation",
+      "Insolvency and Bankruptcy Board of India",
+      "Competition Commission of India",
+      "Enforcement Directorate"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_431",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Competition Commission of India most directly associated with?",
+    "options": [
+      "investigating money laundering and foreign exchange violations",
+      "regulating insolvency professionals and IBC processes",
+      "investigating serious corruption and special crime cases",
+      "checking anti-competitive agreements and abuse of dominance"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_432",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with regulating insolvency professionals and IBC processes?",
+    "options": [
+      "Insolvency and Bankruptcy Board of India",
+      "Central Bureau of Investigation",
+      "Enforcement Directorate",
+      "Border Security Force"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_433",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Insolvency and Bankruptcy Board of India most directly associated with?",
+    "options": [
+      "investigating serious corruption and special crime cases",
+      "regulating insolvency professionals and IBC processes",
+      "investigating money laundering and foreign exchange violations",
+      "guarding India's borders with Pakistan and Bangladesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_434",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with investigating serious corruption and special crime cases?",
+    "options": [
+      "Border Security Force",
+      "Enforcement Directorate",
+      "Central Bureau of Investigation",
+      "Central Reserve Police Force"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_435",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Central Bureau of Investigation most directly associated with?",
+    "options": [
+      "handling internal security and law-and-order deployments",
+      "investigating money laundering and foreign exchange violations",
+      "guarding India's borders with Pakistan and Bangladesh",
+      "investigating serious corruption and special crime cases"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_436",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with investigating money laundering and foreign exchange violations?",
+    "options": [
+      "Enforcement Directorate",
+      "Border Security Force",
+      "Central Reserve Police Force",
+      "Central Industrial Security Force"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_437",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Enforcement Directorate most directly associated with?",
+    "options": [
+      "guarding India's borders with Pakistan and Bangladesh",
+      "investigating money laundering and foreign exchange violations",
+      "handling internal security and law-and-order deployments",
+      "guarding airports and critical industrial installations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_438",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with guarding India's borders with Pakistan and Bangladesh?",
+    "options": [
+      "Central Industrial Security Force",
+      "Central Reserve Police Force",
+      "Border Security Force",
+      "Indian Coast Guard"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_439",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Border Security Force most directly associated with?",
+    "options": [
+      "protecting maritime interests and assisting search and rescue",
+      "handling internal security and law-and-order deployments",
+      "guarding airports and critical industrial installations",
+      "guarding India's borders with Pakistan and Bangladesh"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_440",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with handling internal security and law-and-order deployments?",
+    "options": [
+      "Central Reserve Police Force",
+      "Central Industrial Security Force",
+      "Indian Coast Guard",
+      "Defence Research and Development Organisation"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_441",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Central Reserve Police Force most directly associated with?",
+    "options": [
+      "guarding airports and critical industrial installations",
+      "handling internal security and law-and-order deployments",
+      "protecting maritime interests and assisting search and rescue",
+      "developing defence technologies and missile systems"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_442",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with guarding airports and critical industrial installations?",
+    "options": [
+      "Defence Research and Development Organisation",
+      "Indian Coast Guard",
+      "Central Industrial Security Force",
+      "Indian Space Research Organisation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_443",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Central Industrial Security Force most directly associated with?",
+    "options": [
+      "running India's civilian space programme",
+      "protecting maritime interests and assisting search and rescue",
+      "developing defence technologies and missile systems",
+      "guarding airports and critical industrial installations"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_444",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with protecting maritime interests and assisting search and rescue?",
+    "options": [
+      "Indian Coast Guard",
+      "Defence Research and Development Organisation",
+      "Indian Space Research Organisation",
+      "Directorate General of Civil Aviation"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_445",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Indian Coast Guard most directly associated with?",
+    "options": [
+      "developing defence technologies and missile systems",
+      "protecting maritime interests and assisting search and rescue",
+      "running India's civilian space programme",
+      "overseeing civil aviation safety regulation"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_446",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with developing defence technologies and missile systems?",
+    "options": [
+      "Directorate General of Civil Aviation",
+      "Indian Space Research Organisation",
+      "Defence Research and Development Organisation",
+      "Airports Authority of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_447",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Defence Research and Development Organisation most directly associated with?",
+    "options": [
+      "managing many central government civilian airports",
+      "running India's civilian space programme",
+      "overseeing civil aviation safety regulation",
+      "developing defence technologies and missile systems"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_448",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with running India's civilian space programme?",
+    "options": [
+      "Indian Space Research Organisation",
+      "Directorate General of Civil Aviation",
+      "Airports Authority of India",
+      "Bureau of Civil Aviation Security"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_449",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Indian Space Research Organisation most directly associated with?",
+    "options": [
+      "overseeing civil aviation safety regulation",
+      "running India's civilian space programme",
+      "managing many central government civilian airports",
+      "setting and monitoring airport security standards"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_450",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with overseeing civil aviation safety regulation?",
+    "options": [
+      "Bureau of Civil Aviation Security",
+      "Airports Authority of India",
+      "Directorate General of Civil Aviation",
+      "National Payments Corporation of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_451",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Directorate General of Civil Aviation most directly associated with?",
+    "options": [
+      "operating retail payment systems such as UPI",
+      "managing many central government civilian airports",
+      "setting and monitoring airport security standards",
+      "overseeing civil aviation safety regulation"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_452",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with managing many central government civilian airports?",
+    "options": [
+      "Airports Authority of India",
+      "Bureau of Civil Aviation Security",
+      "National Payments Corporation of India",
+      "National Highways Authority of India"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_453",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Airports Authority of India most directly associated with?",
+    "options": [
+      "setting and monitoring airport security standards",
+      "managing many central government civilian airports",
+      "operating retail payment systems such as UPI",
+      "developing and maintaining national highways"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_454",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with setting and monitoring airport security standards?",
+    "options": [
+      "National Highways Authority of India",
+      "National Payments Corporation of India",
+      "Bureau of Civil Aviation Security",
+      "Border Roads Organisation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_455",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Bureau of Civil Aviation Security most directly associated with?",
+    "options": [
+      "building strategic roads in border areas",
+      "operating retail payment systems such as UPI",
+      "developing and maintaining national highways",
+      "setting and monitoring airport security standards"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_456",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with operating retail payment systems such as UPI?",
+    "options": [
+      "National Payments Corporation of India",
+      "National Highways Authority of India",
+      "Border Roads Organisation",
+      "Life Insurance Corporation of India"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_457",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is National Payments Corporation of India most directly associated with?",
+    "options": [
+      "developing and maintaining national highways",
+      "operating retail payment systems such as UPI",
+      "building strategic roads in border areas",
+      "serving as India's largest public-sector life insurer"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_458",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with developing and maintaining national highways?",
+    "options": [
+      "Life Insurance Corporation of India",
+      "Border Roads Organisation",
+      "National Highways Authority of India",
+      "National Statistical Office"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_459",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is National Highways Authority of India most directly associated with?",
+    "options": [
+      "compiling national accounts and major official statistics",
+      "building strategic roads in border areas",
+      "serving as India's largest public-sector life insurer",
+      "developing and maintaining national highways"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_460",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with building strategic roads in border areas?",
+    "options": [
+      "Border Roads Organisation",
+      "Life Insurance Corporation of India",
+      "National Statistical Office",
+      "University Grants Commission"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_461",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Border Roads Organisation most directly associated with?",
+    "options": [
+      "serving as India's largest public-sector life insurer",
+      "building strategic roads in border areas",
+      "compiling national accounts and major official statistics",
+      "coordinating higher education standards in universities"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_462",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with serving as India's largest public-sector life insurer?",
+    "options": [
+      "University Grants Commission",
+      "National Statistical Office",
+      "Life Insurance Corporation of India",
+      "National Medical Commission"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_463",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Life Insurance Corporation of India most directly associated with?",
+    "options": [
+      "regulating medical education and medical professionals",
+      "compiling national accounts and major official statistics",
+      "coordinating higher education standards in universities",
+      "serving as India's largest public-sector life insurer"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_464",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with compiling national accounts and major official statistics?",
+    "options": [
+      "National Statistical Office",
+      "University Grants Commission",
+      "National Medical Commission",
+      "NCERT"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_465",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is National Statistical Office most directly associated with?",
+    "options": [
+      "coordinating higher education standards in universities",
+      "compiling national accounts and major official statistics",
+      "regulating medical education and medical professionals",
+      "developing national curriculum frameworks and school textbooks"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_466",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with coordinating higher education standards in universities?",
+    "options": [
+      "NCERT",
+      "National Medical Commission",
+      "University Grants Commission",
+      "Public Accounts Committee"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_467",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is University Grants Commission most directly associated with?",
+    "options": [
+      "examining government expenditure after it is incurred",
+      "regulating medical education and medical professionals",
+      "developing national curriculum frameworks and school textbooks",
+      "coordinating higher education standards in universities"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_468",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with regulating medical education and medical professionals?",
+    "options": [
+      "National Medical Commission",
+      "NCERT",
+      "Public Accounts Committee",
+      "Finance Commission"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_469",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is National Medical Commission most directly associated with?",
+    "options": [
+      "developing national curriculum frameworks and school textbooks",
+      "regulating medical education and medical professionals",
+      "examining government expenditure after it is incurred",
+      "recommending tax devolution between the Union and states"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_470",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with developing national curriculum frameworks and school textbooks?",
+    "options": [
+      "Finance Commission",
+      "Public Accounts Committee",
+      "NCERT",
+      "Comptroller and Auditor General of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_471",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is NCERT most directly associated with?",
+    "options": [
+      "auditing Union and state government accounts",
+      "examining government expenditure after it is incurred",
+      "recommending tax devolution between the Union and states",
+      "developing national curriculum frameworks and school textbooks"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_472",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with examining government expenditure after it is incurred?",
+    "options": [
+      "Public Accounts Committee",
+      "Finance Commission",
+      "Comptroller and Auditor General of India",
+      "Attorney General for India"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_473",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Public Accounts Committee most directly associated with?",
+    "options": [
+      "recommending tax devolution between the Union and states",
+      "examining government expenditure after it is incurred",
+      "auditing Union and state government accounts",
+      "serving as the Union government's highest law officer"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_474",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with recommending tax devolution between the Union and states?",
+    "options": [
+      "Attorney General for India",
+      "Comptroller and Auditor General of India",
+      "Finance Commission",
+      "Election Commission of India"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_475",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Finance Commission most directly associated with?",
+    "options": [
+      "conducting elections to Parliament and State Legislative Assemblies",
+      "auditing Union and state government accounts",
+      "serving as the Union government's highest law officer",
+      "recommending tax devolution between the Union and states"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_476",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with auditing Union and state government accounts?",
+    "options": [
+      "Comptroller and Auditor General of India",
+      "Attorney General for India",
+      "Election Commission of India",
+      "Supreme Court of India"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_477",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Comptroller and Auditor General of India most directly associated with?",
+    "options": [
+      "serving as the Union government's highest law officer",
+      "auditing Union and state government accounts",
+      "conducting elections to Parliament and State Legislative Assemblies",
+      "serving as India's highest constitutional court"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_478",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which institution or body is most directly associated with serving as the Union government's highest law officer?",
+    "options": [
+      "Supreme Court of India",
+      "Election Commission of India",
+      "Attorney General for India",
+      "High Courts"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_479",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Attorney General for India most directly associated with?",
+    "options": [
+      "issuing writs and supervising state-level judicial administration",
+      "conducting elections to Parliament and State Legislative Assemblies",
+      "serving as India's highest constitutional court",
+      "serving as the Union government's highest law officer"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_444",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with superintendence, direction and control of elections by the Election Commission?",
+    "options": [
+      "Article 324",
+      "Article 329",
+      "Article 326",
+      "Article 32"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_445",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 324 most directly associated with?",
+    "options": [
+      "limiting court interference in election matters except through election petitions",
+      "superintendence, direction and control of elections by the Election Commission",
+      "adult suffrage for elections to the Lok Sabha and State Assemblies",
+      "moving the Supreme Court to enforce fundamental rights"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_446",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with limiting court interference in election matters except through election petitions?",
+    "options": [
+      "Article 32",
+      "Article 326",
+      "Article 329",
+      "Article 226"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_447",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 329 most directly associated with?",
+    "options": [
+      "empowering High Courts to issue writs",
+      "adult suffrage for elections to the Lok Sabha and State Assemblies",
+      "moving the Supreme Court to enforce fundamental rights",
+      "limiting court interference in election matters except through election petitions"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_448",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with adult suffrage for elections to the Lok Sabha and State Assemblies?",
+    "options": [
+      "Article 326",
+      "Article 32",
+      "Article 226",
+      "Article 142"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_449",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 326 most directly associated with?",
+    "options": [
+      "moving the Supreme Court to enforce fundamental rights",
+      "adult suffrage for elections to the Lok Sabha and State Assemblies",
+      "empowering High Courts to issue writs",
+      "allowing the Supreme Court to pass orders for complete justice"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_450",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with moving the Supreme Court to enforce fundamental rights?",
+    "options": [
+      "Article 142",
+      "Article 226",
+      "Article 32",
+      "Article 356"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_451",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 32 most directly associated with?",
+    "options": [
+      "President's Rule in a state after constitutional machinery fails",
+      "empowering High Courts to issue writs",
+      "allowing the Supreme Court to pass orders for complete justice",
+      "moving the Supreme Court to enforce fundamental rights"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_452",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with empowering High Courts to issue writs?",
+    "options": [
+      "Article 226",
+      "Article 142",
+      "Article 356",
+      "Article 280"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_453",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 226 most directly associated with?",
+    "options": [
+      "allowing the Supreme Court to pass orders for complete justice",
+      "empowering High Courts to issue writs",
+      "President's Rule in a state after constitutional machinery fails",
+      "the Finance Commission"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_454",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with allowing the Supreme Court to pass orders for complete justice?",
+    "options": [
+      "Article 280",
+      "Article 356",
+      "Article 142",
+      "Article 148"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_455",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 142 most directly associated with?",
+    "options": [
+      "the Comptroller and Auditor General of India",
+      "President's Rule in a state after constitutional machinery fails",
+      "the Finance Commission",
+      "allowing the Supreme Court to pass orders for complete justice"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_456",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with President's Rule in a state after constitutional machinery fails?",
+    "options": [
+      "Article 356",
+      "Article 280",
+      "Article 148",
+      "Article 76"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_457",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 356 most directly associated with?",
+    "options": [
+      "the Finance Commission",
+      "President's Rule in a state after constitutional machinery fails",
+      "the Comptroller and Auditor General of India",
+      "the Attorney General for India"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_458",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with the Finance Commission?",
+    "options": [
+      "Article 76",
+      "Article 148",
+      "Article 280",
+      "Article 110"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_459",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 280 most directly associated with?",
+    "options": [
+      "the definition of a Money Bill",
+      "the Comptroller and Auditor General of India",
+      "the Attorney General for India",
+      "the Finance Commission"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_460",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with the Comptroller and Auditor General of India?",
+    "options": [
+      "Article 148",
+      "Article 76",
+      "Article 110",
+      "Article 112"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_461",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 148 most directly associated with?",
+    "options": [
+      "the Attorney General for India",
+      "the Comptroller and Auditor General of India",
+      "the definition of a Money Bill",
+      "laying the Annual Financial Statement before Parliament"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_462",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with the Attorney General for India?",
+    "options": [
+      "Article 112",
+      "Article 110",
+      "Article 76",
+      "Article 123"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_463",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 76 most directly associated with?",
+    "options": [
+      "ordinance-making power of the President",
+      "the definition of a Money Bill",
+      "laying the Annual Financial Statement before Parliament",
+      "the Attorney General for India"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_464",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with the definition of a Money Bill?",
+    "options": [
+      "Article 110",
+      "Article 112",
+      "Article 123",
+      "Article 213"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_465",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 110 most directly associated with?",
+    "options": [
+      "laying the Annual Financial Statement before Parliament",
+      "the definition of a Money Bill",
+      "ordinance-making power of the President",
+      "ordinance-making power of a Governor"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_466",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with laying the Annual Financial Statement before Parliament?",
+    "options": [
+      "Article 213",
+      "Article 123",
+      "Article 112",
+      "Article 72"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_467",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 112 most directly associated with?",
+    "options": [
+      "the President's power to grant pardons",
+      "ordinance-making power of the President",
+      "ordinance-making power of a Governor",
+      "laying the Annual Financial Statement before Parliament"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_468",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with ordinance-making power of the President?",
+    "options": [
+      "Article 123",
+      "Article 213",
+      "Article 72",
+      "Article 161"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_469",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 123 most directly associated with?",
+    "options": [
+      "ordinance-making power of a Governor",
+      "ordinance-making power of the President",
+      "the President's power to grant pardons",
+      "a Governor's power to grant pardons for state-law offences"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_470",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with ordinance-making power of a Governor?",
+    "options": [
+      "Article 161",
+      "Article 72",
+      "Article 213",
+      "Article 21"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_471",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 213 most directly associated with?",
+    "options": [
+      "the right to life and personal liberty",
+      "the President's power to grant pardons",
+      "a Governor's power to grant pardons for state-law offences",
+      "ordinance-making power of a Governor"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_472",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with the President's power to grant pardons?",
+    "options": [
+      "Article 72",
+      "Article 161",
+      "Article 21",
+      "Article 14"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_473",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 72 most directly associated with?",
+    "options": [
+      "a Governor's power to grant pardons for state-law offences",
+      "the President's power to grant pardons",
+      "the right to life and personal liberty",
+      "equality before law and equal protection of laws"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_474",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with a Governor's power to grant pardons for state-law offences?",
+    "options": [
+      "Article 14",
+      "Article 21",
+      "Article 161",
+      "Article 19(1)(a)"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_475",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 161 most directly associated with?",
+    "options": [
+      "freedom of speech and expression",
+      "the right to life and personal liberty",
+      "equality before law and equal protection of laws",
+      "a Governor's power to grant pardons for state-law offences"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_476",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with the right to life and personal liberty?",
+    "options": [
+      "Article 21",
+      "Article 14",
+      "Article 19(1)(a)",
+      "Article 21A"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_477",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 21 most directly associated with?",
+    "options": [
+      "equality before law and equal protection of laws",
+      "the right to life and personal liberty",
+      "freedom of speech and expression",
+      "free and compulsory education for children aged 6 to 14"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_478",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with equality before law and equal protection of laws?",
+    "options": [
+      "Article 21A",
+      "Article 19(1)(a)",
+      "Article 14",
+      "Tenth Schedule"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_479",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 14 most directly associated with?",
+    "options": [
+      "the anti-defection law",
+      "freedom of speech and expression",
+      "free and compulsory education for children aged 6 to 14",
+      "equality before law and equal protection of laws"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_480",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with freedom of speech and expression?",
+    "options": [
+      "Article 19(1)(a)",
+      "Article 21A",
+      "Tenth Schedule",
+      "Seventh Schedule"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_481",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 19(1)(a) most directly associated with?",
+    "options": [
+      "free and compulsory education for children aged 6 to 14",
+      "freedom of speech and expression",
+      "the anti-defection law",
+      "distribution of Union, State and Concurrent List subjects"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_482",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with free and compulsory education for children aged 6 to 14?",
+    "options": [
+      "Seventh Schedule",
+      "Tenth Schedule",
+      "Article 21A",
+      "Eighth Schedule"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_483",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Article 21A most directly associated with?",
+    "options": [
+      "recognition of official languages",
+      "the anti-defection law",
+      "distribution of Union, State and Concurrent List subjects",
+      "free and compulsory education for children aged 6 to 14"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_484",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with the anti-defection law?",
+    "options": [
+      "Tenth Schedule",
+      "Seventh Schedule",
+      "Eighth Schedule",
+      "Fifth Schedule"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_485",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Tenth Schedule most directly associated with?",
+    "options": [
+      "distribution of Union, State and Concurrent List subjects",
+      "the anti-defection law",
+      "recognition of official languages",
+      "administration of Scheduled Areas and Scheduled Tribes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_486",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with distribution of Union, State and Concurrent List subjects?",
+    "options": [
+      "Fifth Schedule",
+      "Eighth Schedule",
+      "Seventh Schedule",
+      "Sixth Schedule"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_487",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Seventh Schedule most directly associated with?",
+    "options": [
+      "autonomous tribal areas in parts of the Northeast",
+      "recognition of official languages",
+      "administration of Scheduled Areas and Scheduled Tribes",
+      "distribution of Union, State and Concurrent List subjects"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_488",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with recognition of official languages?",
+    "options": [
+      "Eighth Schedule",
+      "Fifth Schedule",
+      "Sixth Schedule",
+      "Representation of the People Act, 1951"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_489",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Eighth Schedule most directly associated with?",
+    "options": [
+      "administration of Scheduled Areas and Scheduled Tribes",
+      "recognition of official languages",
+      "autonomous tribal areas in parts of the Northeast",
+      "conduct of elections and election petitions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_490",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with administration of Scheduled Areas and Scheduled Tribes?",
+    "options": [
+      "Representation of the People Act, 1951",
+      "Sixth Schedule",
+      "Fifth Schedule",
+      "SEBI Act, 1992"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_491",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Fifth Schedule most directly associated with?",
+    "options": [
+      "statutory powers of India's securities regulator",
+      "autonomous tribal areas in parts of the Northeast",
+      "conduct of elections and election petitions",
+      "administration of Scheduled Areas and Scheduled Tribes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_492",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with autonomous tribal areas in parts of the Northeast?",
+    "options": [
+      "Sixth Schedule",
+      "Representation of the People Act, 1951",
+      "SEBI Act, 1992",
+      "RBI Act, 1934"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_493",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Sixth Schedule most directly associated with?",
+    "options": [
+      "conduct of elections and election petitions",
+      "autonomous tribal areas in parts of the Northeast",
+      "statutory powers of India's securities regulator",
+      "the legal framework for India's central bank"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_494",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with conduct of elections and election petitions?",
+    "options": [
+      "RBI Act, 1934",
+      "SEBI Act, 1992",
+      "Representation of the People Act, 1951",
+      "Insolvency and Bankruptcy Code, 2016"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_495",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Representation of the People Act, 1951 most directly associated with?",
+    "options": [
+      "corporate insolvency resolution and liquidation",
+      "statutory powers of India's securities regulator",
+      "the legal framework for India's central bank",
+      "conduct of elections and election petitions"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_496",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with statutory powers of India's securities regulator?",
+    "options": [
+      "SEBI Act, 1992",
+      "RBI Act, 1934",
+      "Insolvency and Bankruptcy Code, 2016",
+      "Prevention of Money Laundering Act"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_497",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is SEBI Act, 1992 most directly associated with?",
+    "options": [
+      "the legal framework for India's central bank",
+      "statutory powers of India's securities regulator",
+      "corporate insolvency resolution and liquidation",
+      "offences involving laundering of proceeds of crime"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_498",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with the legal framework for India's central bank?",
+    "options": [
+      "Prevention of Money Laundering Act",
+      "Insolvency and Bankruptcy Code, 2016",
+      "RBI Act, 1934",
+      "Companies Act, 2013"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_499",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is RBI Act, 1934 most directly associated with?",
+    "options": [
+      "incorporation, governance and compliance of companies",
+      "corporate insolvency resolution and liquidation",
+      "offences involving laundering of proceeds of crime",
+      "the legal framework for India's central bank"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_500",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with corporate insolvency resolution and liquidation?",
+    "options": [
+      "Insolvency and Bankruptcy Code, 2016",
+      "Prevention of Money Laundering Act",
+      "Companies Act, 2013",
+      "Public Examinations Act, 2024"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_501",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Insolvency and Bankruptcy Code, 2016 most directly associated with?",
+    "options": [
+      "offences involving laundering of proceeds of crime",
+      "corporate insolvency resolution and liquidation",
+      "incorporation, governance and compliance of companies",
+      "penalties for organised cheating and paper leaks in public exams"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_502",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with offences involving laundering of proceeds of crime?",
+    "options": [
+      "Public Examinations Act, 2024",
+      "Companies Act, 2013",
+      "Prevention of Money Laundering Act",
+      "Right to Information Act"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_503",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Prevention of Money Laundering Act most directly associated with?",
+    "options": [
+      "citizens seeking information from public authorities",
+      "incorporation, governance and compliance of companies",
+      "penalties for organised cheating and paper leaks in public exams",
+      "offences involving laundering of proceeds of crime"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_504",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with incorporation, governance and compliance of companies?",
+    "options": [
+      "Companies Act, 2013",
+      "Public Examinations Act, 2024",
+      "Right to Information Act",
+      "Foreign Contribution Regulation Act"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_505",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Companies Act, 2013 most directly associated with?",
+    "options": [
+      "penalties for organised cheating and paper leaks in public exams",
+      "incorporation, governance and compliance of companies",
+      "citizens seeking information from public authorities",
+      "regulating foreign contributions to NGOs and associations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_506",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with penalties for organised cheating and paper leaks in public exams?",
+    "options": [
+      "Foreign Contribution Regulation Act",
+      "Right to Information Act",
+      "Public Examinations Act, 2024",
+      "Environment Protection Act, 1986"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_507",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Public Examinations Act, 2024 most directly associated with?",
+    "options": [
+      "central environmental protection powers",
+      "citizens seeking information from public authorities",
+      "regulating foreign contributions to NGOs and associations",
+      "penalties for organised cheating and paper leaks in public exams"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_508",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with citizens seeking information from public authorities?",
+    "options": [
+      "Right to Information Act",
+      "Foreign Contribution Regulation Act",
+      "Environment Protection Act, 1986",
+      "Wildlife Protection Act, 1972"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_509",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Right to Information Act most directly associated with?",
+    "options": [
+      "regulating foreign contributions to NGOs and associations",
+      "citizens seeking information from public authorities",
+      "central environmental protection powers",
+      "protection of wild animals, birds and plants"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_510",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with regulating foreign contributions to NGOs and associations?",
+    "options": [
+      "Wildlife Protection Act, 1972",
+      "Environment Protection Act, 1986",
+      "Foreign Contribution Regulation Act",
+      "Forest Rights Act, 2006"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_511",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Foreign Contribution Regulation Act most directly associated with?",
+    "options": [
+      "recognition of forest rights of tribal and traditional forest dwellers",
+      "central environmental protection powers",
+      "protection of wild animals, birds and plants",
+      "regulating foreign contributions to NGOs and associations"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_512",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with central environmental protection powers?",
+    "options": [
+      "Environment Protection Act, 1986",
+      "Wildlife Protection Act, 1972",
+      "Forest Rights Act, 2006",
+      "Disaster Management Act, 2005"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_513",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Environment Protection Act, 1986 most directly associated with?",
+    "options": [
+      "protection of wild animals, birds and plants",
+      "central environmental protection powers",
+      "recognition of forest rights of tribal and traditional forest dwellers",
+      "disaster management authorities and response frameworks"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_514",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with protection of wild animals, birds and plants?",
+    "options": [
+      "Disaster Management Act, 2005",
+      "Forest Rights Act, 2006",
+      "Wildlife Protection Act, 1972",
+      "Information Technology Act Section 69A"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_515",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Wildlife Protection Act, 1972 most directly associated with?",
+    "options": [
+      "government directions to block online content",
+      "recognition of forest rights of tribal and traditional forest dwellers",
+      "disaster management authorities and response frameworks",
+      "protection of wild animals, birds and plants"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_516",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with recognition of forest rights of tribal and traditional forest dwellers?",
+    "options": [
+      "Forest Rights Act, 2006",
+      "Disaster Management Act, 2005",
+      "Information Technology Act Section 69A",
+      "Information Technology Act Section 79"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_517",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Forest Rights Act, 2006 most directly associated with?",
+    "options": [
+      "disaster management authorities and response frameworks",
+      "recognition of forest rights of tribal and traditional forest dwellers",
+      "government directions to block online content",
+      "safe-harbour protection for intermediaries subject to conditions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_518",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with disaster management authorities and response frameworks?",
+    "options": [
+      "Information Technology Act Section 79",
+      "Information Technology Act Section 69A",
+      "Disaster Management Act, 2005",
+      "PMLA Section 3"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_519",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Disaster Management Act, 2005 most directly associated with?",
+    "options": [
+      "definition of the offence of money laundering",
+      "government directions to block online content",
+      "safe-harbour protection for intermediaries subject to conditions",
+      "disaster management authorities and response frameworks"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_520",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with government directions to block online content?",
+    "options": [
+      "Information Technology Act Section 69A",
+      "Information Technology Act Section 79",
+      "PMLA Section 3",
+      "PMLA Section 45"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_521",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Information Technology Act Section 69A most directly associated with?",
+    "options": [
+      "safe-harbour protection for intermediaries subject to conditions",
+      "government directions to block online content",
+      "definition of the offence of money laundering",
+      "special bail conditions under the money-laundering law"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_522",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which legal or constitutional provision is most directly associated with safe-harbour protection for intermediaries subject to conditions?",
+    "options": [
+      "PMLA Section 45",
+      "PMLA Section 3",
+      "Information Technology Act Section 79",
+      "IBC Section 7"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_523",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Information Technology Act Section 79 most directly associated with?",
+    "options": [
+      "financial creditor initiation of corporate insolvency",
+      "definition of the offence of money laundering",
+      "special bail conditions under the money-laundering law",
+      "safe-harbour protection for intermediaries subject to conditions"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_245",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with definition of the offence of money laundering?",
+    "options": [
+      "PMLA Section 3",
+      "PMLA Section 45",
+      "IBC Section 7",
+      "IBC Section 9"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_246",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is PMLA Section 3 most directly associated with?",
+    "options": [
+      "special bail conditions under the money-laundering law",
+      "definition of the offence of money laundering",
+      "financial creditor initiation of corporate insolvency",
+      "operational creditor initiation of corporate insolvency"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_247",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with special bail conditions under the money-laundering law?",
+    "options": [
+      "IBC Section 9",
+      "IBC Section 7",
+      "PMLA Section 45",
+      "IBC Section 14"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_248",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is PMLA Section 45 most directly associated with?",
+    "options": [
+      "the moratorium after insolvency admission",
+      "financial creditor initiation of corporate insolvency",
+      "operational creditor initiation of corporate insolvency",
+      "special bail conditions under the money-laundering law"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_249",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with financial creditor initiation of corporate insolvency?",
+    "options": [
+      "IBC Section 7",
+      "IBC Section 9",
+      "IBC Section 14",
+      "IBC Section 29A"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_250",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is IBC Section 7 most directly associated with?",
+    "options": [
+      "operational creditor initiation of corporate insolvency",
+      "financial creditor initiation of corporate insolvency",
+      "the moratorium after insolvency admission",
+      "eligibility restrictions for resolution applicants"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_251",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with operational creditor initiation of corporate insolvency?",
+    "options": [
+      "IBC Section 29A",
+      "IBC Section 14",
+      "IBC Section 9",
+      "IBC Section 53"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_252",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is IBC Section 9 most directly associated with?",
+    "options": [
+      "the liquidation waterfall",
+      "the moratorium after insolvency admission",
+      "eligibility restrictions for resolution applicants",
+      "operational creditor initiation of corporate insolvency"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_253",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with the moratorium after insolvency admission?",
+    "options": [
+      "IBC Section 14",
+      "IBC Section 29A",
+      "IBC Section 53",
+      "Companies Act Section 135"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_254",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is IBC Section 14 most directly associated with?",
+    "options": [
+      "eligibility restrictions for resolution applicants",
+      "the moratorium after insolvency admission",
+      "the liquidation waterfall",
+      "corporate social responsibility obligations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_255",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with eligibility restrictions for resolution applicants?",
+    "options": [
+      "Companies Act Section 135",
+      "IBC Section 53",
+      "IBC Section 29A",
+      "Companies Act Section 188"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_256",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is IBC Section 29A most directly associated with?",
+    "options": [
+      "related party transactions",
+      "the liquidation waterfall",
+      "corporate social responsibility obligations",
+      "eligibility restrictions for resolution applicants"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_257",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with the liquidation waterfall?",
+    "options": [
+      "IBC Section 53",
+      "Companies Act Section 135",
+      "Companies Act Section 188",
+      "Companies Act Section 447"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_258",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is IBC Section 53 most directly associated with?",
+    "options": [
+      "corporate social responsibility obligations",
+      "the liquidation waterfall",
+      "related party transactions",
+      "punishment for fraud"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_259",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with corporate social responsibility obligations?",
+    "options": [
+      "Companies Act Section 447",
+      "Companies Act Section 188",
+      "Companies Act Section 135",
+      "Article 324"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_260",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Companies Act Section 135 most directly associated with?",
+    "options": [
+      "superintendence, direction and control of elections by the Election Commission",
+      "related party transactions",
+      "punishment for fraud",
+      "corporate social responsibility obligations"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_261",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with related party transactions?",
+    "options": [
+      "Companies Act Section 188",
+      "Companies Act Section 447",
+      "Article 324",
+      "Article 329"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_262",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Companies Act Section 188 most directly associated with?",
+    "options": [
+      "punishment for fraud",
+      "related party transactions",
+      "superintendence, direction and control of elections by the Election Commission",
+      "limiting court interference in election matters except through election petitions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_263",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which legal or constitutional provision is most directly associated with punishment for fraud?",
+    "options": [
+      "Article 329",
+      "Article 324",
+      "Companies Act Section 447",
+      "Article 326"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_264",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Companies Act Section 447 most directly associated with?",
+    "options": [
+      "adult suffrage for elections to the Lok Sabha and State Assemblies",
+      "superintendence, direction and control of elections by the Election Commission",
+      "limiting court interference in election matters except through election petitions",
+      "punishment for fraud"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_480",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with linking the Persian Gulf with the Gulf of Oman?",
+    "options": [
+      "Strait of Hormuz",
+      "Palk Strait",
+      "Malacca Strait",
+      "Bab el-Mandeb Strait"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_481",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Strait of Hormuz most directly associated with?",
+    "options": [
+      "separating India and Sri Lanka",
+      "linking the Persian Gulf with the Gulf of Oman",
+      "linking the Indian Ocean and South China Sea trade routes",
+      "linking the Red Sea with the Gulf of Aden"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_482",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with separating India and Sri Lanka?",
+    "options": [
+      "Bab el-Mandeb Strait",
+      "Malacca Strait",
+      "Palk Strait",
+      "Suez Canal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_483",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Palk Strait most directly associated with?",
+    "options": [
+      "connecting the Mediterranean Sea and the Red Sea",
+      "linking the Indian Ocean and South China Sea trade routes",
+      "linking the Red Sea with the Gulf of Aden",
+      "separating India and Sri Lanka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_484",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with linking the Indian Ocean and South China Sea trade routes?",
+    "options": [
+      "Malacca Strait",
+      "Bab el-Mandeb Strait",
+      "Suez Canal",
+      "Gulf of Aden"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_485",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Malacca Strait most directly associated with?",
+    "options": [
+      "linking the Red Sea with the Gulf of Aden",
+      "linking the Indian Ocean and South China Sea trade routes",
+      "connecting the Mediterranean Sea and the Red Sea",
+      "lying between Yemen and Somalia on the route to the Arabian Sea"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_486",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with linking the Red Sea with the Gulf of Aden?",
+    "options": [
+      "Gulf of Aden",
+      "Suez Canal",
+      "Bab el-Mandeb Strait",
+      "Gulf of Mannar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_487",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Bab el-Mandeb Strait most directly associated with?",
+    "options": [
+      "lying between southeast India and Sri Lanka",
+      "connecting the Mediterranean Sea and the Red Sea",
+      "lying between Yemen and Somalia on the route to the Arabian Sea",
+      "linking the Red Sea with the Gulf of Aden"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_488",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with connecting the Mediterranean Sea and the Red Sea?",
+    "options": [
+      "Suez Canal",
+      "Gulf of Aden",
+      "Gulf of Mannar",
+      "Persian Gulf"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_489",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Suez Canal most directly associated with?",
+    "options": [
+      "lying between Yemen and Somalia on the route to the Arabian Sea",
+      "connecting the Mediterranean Sea and the Red Sea",
+      "lying between southeast India and Sri Lanka",
+      "lying between Iran and the Arabian Peninsula"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_490",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with lying between Yemen and Somalia on the route to the Arabian Sea?",
+    "options": [
+      "Persian Gulf",
+      "Gulf of Mannar",
+      "Gulf of Aden",
+      "Chabahar Port"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_491",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Gulf of Aden most directly associated with?",
+    "options": [
+      "giving India a route toward Afghanistan and Central Asia through Iran",
+      "lying between southeast India and Sri Lanka",
+      "lying between Iran and the Arabian Peninsula",
+      "lying between Yemen and Somalia on the route to the Arabian Sea"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_492",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with lying between southeast India and Sri Lanka?",
+    "options": [
+      "Gulf of Mannar",
+      "Persian Gulf",
+      "Chabahar Port",
+      "Gwadar Port"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_493",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Gulf of Mannar most directly associated with?",
+    "options": [
+      "lying between Iran and the Arabian Peninsula",
+      "lying between southeast India and Sri Lanka",
+      "giving India a route toward Afghanistan and Central Asia through Iran",
+      "being associated with Pakistan's CPEC route"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_494",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with lying between Iran and the Arabian Peninsula?",
+    "options": [
+      "Gwadar Port",
+      "Chabahar Port",
+      "Persian Gulf",
+      "Duqm Port"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_495",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Persian Gulf most directly associated with?",
+    "options": [
+      "being associated with Oman's Indian Ocean logistics location",
+      "giving India a route toward Afghanistan and Central Asia through Iran",
+      "being associated with Pakistan's CPEC route",
+      "lying between Iran and the Arabian Peninsula"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_496",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with giving India a route toward Afghanistan and Central Asia through Iran?",
+    "options": [
+      "Chabahar Port",
+      "Gwadar Port",
+      "Duqm Port",
+      "Andaman and Nicobar Islands"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_497",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Chabahar Port most directly associated with?",
+    "options": [
+      "being associated with Pakistan's CPEC route",
+      "giving India a route toward Afghanistan and Central Asia through Iran",
+      "being associated with Oman's Indian Ocean logistics location",
+      "sitting near the approaches to the Malacca Strait"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_498",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with being associated with Pakistan's CPEC route?",
+    "options": [
+      "Andaman and Nicobar Islands",
+      "Duqm Port",
+      "Gwadar Port",
+      "Chagos Archipelago"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_499",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Gwadar Port most directly associated with?",
+    "options": [
+      "containing Diego Garcia",
+      "being associated with Oman's Indian Ocean logistics location",
+      "sitting near the approaches to the Malacca Strait",
+      "being associated with Pakistan's CPEC route"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_500",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with being associated with Oman's Indian Ocean logistics location?",
+    "options": [
+      "Duqm Port",
+      "Andaman and Nicobar Islands",
+      "Chagos Archipelago",
+      "Canary Islands"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_501",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Duqm Port most directly associated with?",
+    "options": [
+      "sitting near the approaches to the Malacca Strait",
+      "being associated with Oman's Indian Ocean logistics location",
+      "containing Diego Garcia",
+      "being an Atlantic archipelago of Spain"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_502",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with sitting near the approaches to the Malacca Strait?",
+    "options": [
+      "Canary Islands",
+      "Chagos Archipelago",
+      "Andaman and Nicobar Islands",
+      "Kharg Island"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_503",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Andaman and Nicobar Islands most directly associated with?",
+    "options": [
+      "being associated with Iran's oil export infrastructure",
+      "containing Diego Garcia",
+      "being an Atlantic archipelago of Spain",
+      "sitting near the approaches to the Malacca Strait"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_504",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with containing Diego Garcia?",
+    "options": [
+      "Chagos Archipelago",
+      "Canary Islands",
+      "Kharg Island",
+      "Vapi"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_505",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Chagos Archipelago most directly associated with?",
+    "options": [
+      "being an Atlantic archipelago of Spain",
+      "containing Diego Garcia",
+      "being associated with Iran's oil export infrastructure",
+      "being a major industrial town in Gujarat"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_506",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with being an Atlantic archipelago of Spain?",
+    "options": [
+      "Vapi",
+      "Kharg Island",
+      "Canary Islands",
+      "Ras Laffan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_507",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Canary Islands most directly associated with?",
+    "options": [
+      "being a major LNG hub in Qatar",
+      "being associated with Iran's oil export infrastructure",
+      "being a major industrial town in Gujarat",
+      "being an Atlantic archipelago of Spain"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_508",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with being associated with Iran's oil export infrastructure?",
+    "options": [
+      "Kharg Island",
+      "Vapi",
+      "Ras Laffan",
+      "Tehran"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_509",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Kharg Island most directly associated with?",
+    "options": [
+      "being a major industrial town in Gujarat",
+      "being associated with Iran's oil export infrastructure",
+      "being a major LNG hub in Qatar",
+      "being the capital of Iran"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_510",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with being a major industrial town in Gujarat?",
+    "options": [
+      "Tehran",
+      "Ras Laffan",
+      "Vapi",
+      "Doha"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_511",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Vapi most directly associated with?",
+    "options": [
+      "being the capital of Qatar",
+      "being a major LNG hub in Qatar",
+      "being the capital of Iran",
+      "being a major industrial town in Gujarat"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_512",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with being a major LNG hub in Qatar?",
+    "options": [
+      "Ras Laffan",
+      "Tehran",
+      "Doha",
+      "Riyadh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_513",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Ras Laffan most directly associated with?",
+    "options": [
+      "being the capital of Iran",
+      "being a major LNG hub in Qatar",
+      "being the capital of Qatar",
+      "being the capital of Saudi Arabia"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_514",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with being the capital of Iran?",
+    "options": [
+      "Riyadh",
+      "Doha",
+      "Tehran",
+      "Strait of Hormuz"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_515",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Tehran most directly associated with?",
+    "options": [
+      "linking the Persian Gulf with the Gulf of Oman",
+      "being the capital of Qatar",
+      "being the capital of Saudi Arabia",
+      "being the capital of Iran"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_516",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with being the capital of Qatar?",
+    "options": [
+      "Doha",
+      "Riyadh",
+      "Strait of Hormuz",
+      "Palk Strait"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_517",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Doha most directly associated with?",
+    "options": [
+      "being the capital of Saudi Arabia",
+      "being the capital of Qatar",
+      "linking the Persian Gulf with the Gulf of Oman",
+      "separating India and Sri Lanka"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_518",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which place or waterway is most directly associated with being the capital of Saudi Arabia?",
+    "options": [
+      "Palk Strait",
+      "Strait of Hormuz",
+      "Riyadh",
+      "Malacca Strait"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_519",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Riyadh most directly associated with?",
+    "options": [
+      "linking the Indian Ocean and South China Sea trade routes",
+      "linking the Persian Gulf with the Gulf of Oman",
+      "separating India and Sri Lanka",
+      "being the capital of Saudi Arabia"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_524",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with maintaining international peace and security with five permanent members?",
+    "options": [
+      "United Nations Security Council",
+      "International Atomic Energy Agency",
+      "World Trade Organization",
+      "International Monetary Fund"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_525",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is United Nations Security Council most directly associated with?",
+    "options": [
+      "nuclear safeguards and nuclear safety",
+      "maintaining international peace and security with five permanent members",
+      "rules-based global trade",
+      "balance-of-payments support and macroeconomic surveillance"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_526",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with nuclear safeguards and nuclear safety?",
+    "options": [
+      "International Monetary Fund",
+      "World Trade Organization",
+      "International Atomic Energy Agency",
+      "World Bank"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_527",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is International Atomic Energy Agency most directly associated with?",
+    "options": [
+      "development finance for member countries",
+      "rules-based global trade",
+      "balance-of-payments support and macroeconomic surveillance",
+      "nuclear safeguards and nuclear safety"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_528",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with rules-based global trade?",
+    "options": [
+      "World Trade Organization",
+      "International Monetary Fund",
+      "World Bank",
+      "World Health Organization"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_529",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is World Trade Organization most directly associated with?",
+    "options": [
+      "balance-of-payments support and macroeconomic surveillance",
+      "rules-based global trade",
+      "development finance for member countries",
+      "international public health coordination"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_530",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with balance-of-payments support and macroeconomic surveillance?",
+    "options": [
+      "World Health Organization",
+      "World Bank",
+      "International Monetary Fund",
+      "UNESCO"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_531",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is International Monetary Fund most directly associated with?",
+    "options": [
+      "education, science, culture and heritage cooperation",
+      "development finance for member countries",
+      "international public health coordination",
+      "balance-of-payments support and macroeconomic surveillance"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_532",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with development finance for member countries?",
+    "options": [
+      "World Bank",
+      "World Health Organization",
+      "UNESCO",
+      "NATO"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_533",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is World Bank most directly associated with?",
+    "options": [
+      "international public health coordination",
+      "development finance for member countries",
+      "education, science, culture and heritage cooperation",
+      "collective defence under the North Atlantic Treaty"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_534",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with international public health coordination?",
+    "options": [
+      "NATO",
+      "UNESCO",
+      "World Health Organization",
+      "G7"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_535",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is World Health Organization most directly associated with?",
+    "options": [
+      "coordination among major advanced economies",
+      "education, science, culture and heritage cooperation",
+      "collective defence under the North Atlantic Treaty",
+      "international public health coordination"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_536",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with education, science, culture and heritage cooperation?",
+    "options": [
+      "UNESCO",
+      "NATO",
+      "G7",
+      "G20"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_537",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is UNESCO most directly associated with?",
+    "options": [
+      "collective defence under the North Atlantic Treaty",
+      "education, science, culture and heritage cooperation",
+      "coordination among major advanced economies",
+      "forum for major developed and emerging economies plus the EU and African Union"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_538",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with collective defence under the North Atlantic Treaty?",
+    "options": [
+      "G20",
+      "G7",
+      "NATO",
+      "BRICS"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_539",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is NATO most directly associated with?",
+    "options": [
+      "grouping originally built around Brazil, Russia, India, China and South Africa",
+      "coordination among major advanced economies",
+      "forum for major developed and emerging economies plus the EU and African Union",
+      "collective defence under the North Atlantic Treaty"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_540",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with coordination among major advanced economies?",
+    "options": [
+      "G7",
+      "G20",
+      "BRICS",
+      "Quad"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_541",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is G7 most directly associated with?",
+    "options": [
+      "forum for major developed and emerging economies plus the EU and African Union",
+      "coordination among major advanced economies",
+      "grouping originally built around Brazil, Russia, India, China and South Africa",
+      "strategic grouping of India, the United States, Japan and Australia"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_542",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with forum for major developed and emerging economies plus the EU and African Union?",
+    "options": [
+      "Quad",
+      "BRICS",
+      "G20",
+      "BIMSTEC"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_543",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is G20 most directly associated with?",
+    "options": [
+      "Bay of Bengal regional cooperation",
+      "grouping originally built around Brazil, Russia, India, China and South Africa",
+      "strategic grouping of India, the United States, Japan and Australia",
+      "forum for major developed and emerging economies plus the EU and African Union"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_544",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with grouping originally built around Brazil, Russia, India, China and South Africa?",
+    "options": [
+      "BRICS",
+      "Quad",
+      "BIMSTEC",
+      "SAARC"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_545",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is BRICS most directly associated with?",
+    "options": [
+      "strategic grouping of India, the United States, Japan and Australia",
+      "grouping originally built around Brazil, Russia, India, China and South Africa",
+      "Bay of Bengal regional cooperation",
+      "South Asian regional cooperation"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_546",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with strategic grouping of India, the United States, Japan and Australia?",
+    "options": [
+      "SAARC",
+      "BIMSTEC",
+      "Quad",
+      "I2U2"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_547",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Quad most directly associated with?",
+    "options": [
+      "grouping of India, Israel, the UAE and the United States",
+      "Bay of Bengal regional cooperation",
+      "South Asian regional cooperation",
+      "strategic grouping of India, the United States, Japan and Australia"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_548",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with Bay of Bengal regional cooperation?",
+    "options": [
+      "BIMSTEC",
+      "SAARC",
+      "I2U2",
+      "OPEC"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_549",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is BIMSTEC most directly associated with?",
+    "options": [
+      "South Asian regional cooperation",
+      "Bay of Bengal regional cooperation",
+      "grouping of India, Israel, the UAE and the United States",
+      "coordination among major oil-exporting countries"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_550",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with South Asian regional cooperation?",
+    "options": [
+      "OPEC",
+      "I2U2",
+      "SAARC",
+      "International Court of Justice"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_551",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is SAARC most directly associated with?",
+    "options": [
+      "settling legal disputes between states",
+      "grouping of India, Israel, the UAE and the United States",
+      "coordination among major oil-exporting countries",
+      "South Asian regional cooperation"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_552",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with grouping of India, Israel, the UAE and the United States?",
+    "options": [
+      "I2U2",
+      "OPEC",
+      "International Court of Justice",
+      "International Criminal Court"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_553",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is I2U2 most directly associated with?",
+    "options": [
+      "coordination among major oil-exporting countries",
+      "grouping of India, Israel, the UAE and the United States",
+      "settling legal disputes between states",
+      "prosecuting individuals for genocide, war crimes and crimes against humanity"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_554",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with coordination among major oil-exporting countries?",
+    "options": [
+      "International Criminal Court",
+      "International Court of Justice",
+      "OPEC",
+      "Booker Prize Foundation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_555",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is OPEC most directly associated with?",
+    "options": [
+      "administering the Booker and International Booker prizes",
+      "settling legal disputes between states",
+      "prosecuting individuals for genocide, war crimes and crimes against humanity",
+      "coordination among major oil-exporting countries"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_556",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with settling legal disputes between states?",
+    "options": [
+      "International Court of Justice",
+      "International Criminal Court",
+      "Booker Prize Foundation",
+      "Sahitya Akademi"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_557",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is International Court of Justice most directly associated with?",
+    "options": [
+      "prosecuting individuals for genocide, war crimes and crimes against humanity",
+      "settling legal disputes between states",
+      "administering the Booker and International Booker prizes",
+      "India's national academy of letters"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_558",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with prosecuting individuals for genocide, war crimes and crimes against humanity?",
+    "options": [
+      "Sahitya Akademi",
+      "Booker Prize Foundation",
+      "International Criminal Court",
+      "United Nations Security Council"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_559",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is International Criminal Court most directly associated with?",
+    "options": [
+      "maintaining international peace and security with five permanent members",
+      "administering the Booker and International Booker prizes",
+      "India's national academy of letters",
+      "prosecuting individuals for genocide, war crimes and crimes against humanity"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_560",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with administering the Booker and International Booker prizes?",
+    "options": [
+      "Booker Prize Foundation",
+      "Sahitya Akademi",
+      "United Nations Security Council",
+      "International Atomic Energy Agency"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_561",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Booker Prize Foundation most directly associated with?",
+    "options": [
+      "India's national academy of letters",
+      "administering the Booker and International Booker prizes",
+      "maintaining international peace and security with five permanent members",
+      "nuclear safeguards and nuclear safety"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_562",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which international organisation or grouping is most directly associated with India's national academy of letters?",
+    "options": [
+      "International Atomic Energy Agency",
+      "United Nations Security Council",
+      "Sahitya Akademi",
+      "World Trade Organization"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_563",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Sahitya Akademi most directly associated with?",
+    "options": [
+      "rules-based global trade",
+      "maintaining international peace and security with five permanent members",
+      "nuclear safeguards and nuclear safety",
+      "India's national academy of letters"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_520",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with health insurance cover under Ayushman Bharat?",
+    "options": [
+      "Pradhan Mantri Jan Arogya Yojana",
+      "Jan Aushadhi Kendras",
+      "PM-KISAN",
+      "Pradhan Mantri Fasal Bima Yojana"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_521",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Pradhan Mantri Jan Arogya Yojana most directly associated with?",
+    "options": [
+      "affordable generic medicines",
+      "health insurance cover under Ayushman Bharat",
+      "income support to eligible farmer families",
+      "crop insurance for farmers"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_522",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with affordable generic medicines?",
+    "options": [
+      "Pradhan Mantri Fasal Bima Yojana",
+      "PM-KISAN",
+      "Jan Aushadhi Kendras",
+      "Pradhan Mantri Jan Dhan Yojana"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_523",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Jan Aushadhi Kendras most directly associated with?",
+    "options": [
+      "financial inclusion through basic bank accounts",
+      "income support to eligible farmer families",
+      "crop insurance for farmers",
+      "affordable generic medicines"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_524",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with income support to eligible farmer families?",
+    "options": [
+      "PM-KISAN",
+      "Pradhan Mantri Fasal Bima Yojana",
+      "Pradhan Mantri Jan Dhan Yojana",
+      "Jal Jeevan Mission"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_525",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is PM-KISAN most directly associated with?",
+    "options": [
+      "crop insurance for farmers",
+      "income support to eligible farmer families",
+      "financial inclusion through basic bank accounts",
+      "rural household tap water connections"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_526",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with crop insurance for farmers?",
+    "options": [
+      "Jal Jeevan Mission",
+      "Pradhan Mantri Jan Dhan Yojana",
+      "Pradhan Mantri Fasal Bima Yojana",
+      "Swachh Bharat Mission"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_527",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Pradhan Mantri Fasal Bima Yojana most directly associated with?",
+    "options": [
+      "sanitation and ending open defecation",
+      "financial inclusion through basic bank accounts",
+      "rural household tap water connections",
+      "crop insurance for farmers"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_528",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with financial inclusion through basic bank accounts?",
+    "options": [
+      "Pradhan Mantri Jan Dhan Yojana",
+      "Jal Jeevan Mission",
+      "Swachh Bharat Mission",
+      "Pradhan Mantri Awas Yojana - Urban"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_529",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Pradhan Mantri Jan Dhan Yojana most directly associated with?",
+    "options": [
+      "rural household tap water connections",
+      "financial inclusion through basic bank accounts",
+      "sanitation and ending open defecation",
+      "affordable housing in urban areas"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_530",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with rural household tap water connections?",
+    "options": [
+      "Pradhan Mantri Awas Yojana - Urban",
+      "Swachh Bharat Mission",
+      "Jal Jeevan Mission",
+      "UDAN"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_531",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Jal Jeevan Mission most directly associated with?",
+    "options": [
+      "regional air connectivity",
+      "sanitation and ending open defecation",
+      "affordable housing in urban areas",
+      "rural household tap water connections"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_532",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with sanitation and ending open defecation?",
+    "options": [
+      "Swachh Bharat Mission",
+      "Pradhan Mantri Awas Yojana - Urban",
+      "UDAN",
+      "Bharatmala Pariyojana"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_533",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Swachh Bharat Mission most directly associated with?",
+    "options": [
+      "affordable housing in urban areas",
+      "sanitation and ending open defecation",
+      "regional air connectivity",
+      "highway corridor development"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_534",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with affordable housing in urban areas?",
+    "options": [
+      "Bharatmala Pariyojana",
+      "UDAN",
+      "Pradhan Mantri Awas Yojana - Urban",
+      "Sagarmala"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_535",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Pradhan Mantri Awas Yojana - Urban most directly associated with?",
+    "options": [
+      "port-led development",
+      "regional air connectivity",
+      "highway corridor development",
+      "affordable housing in urban areas"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_536",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with regional air connectivity?",
+    "options": [
+      "UDAN",
+      "Bharatmala Pariyojana",
+      "Sagarmala",
+      "Pradhan Mantri Ujjwala Yojana"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_537",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is UDAN most directly associated with?",
+    "options": [
+      "highway corridor development",
+      "regional air connectivity",
+      "port-led development",
+      "LPG connections for poor households"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_538",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with highway corridor development?",
+    "options": [
+      "Pradhan Mantri Ujjwala Yojana",
+      "Sagarmala",
+      "Bharatmala Pariyojana",
+      "Ethanol Blended Petrol programme"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_539",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Bharatmala Pariyojana most directly associated with?",
+    "options": [
+      "blending ethanol with petrol",
+      "port-led development",
+      "LPG connections for poor households",
+      "highway corridor development"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_540",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with port-led development?",
+    "options": [
+      "Sagarmala",
+      "Pradhan Mantri Ujjwala Yojana",
+      "Ethanol Blended Petrol programme",
+      "MGNREGA"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_541",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Sagarmala most directly associated with?",
+    "options": [
+      "LPG connections for poor households",
+      "port-led development",
+      "blending ethanol with petrol",
+      "rural employment guarantee"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_542",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with LPG connections for poor households?",
+    "options": [
+      "MGNREGA",
+      "Ethanol Blended Petrol programme",
+      "Pradhan Mantri Ujjwala Yojana",
+      "Atal Pension Yojana"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_543",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Pradhan Mantri Ujjwala Yojana most directly associated with?",
+    "options": [
+      "pension coverage for unorganised workers",
+      "blending ethanol with petrol",
+      "rural employment guarantee",
+      "LPG connections for poor households"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_544",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with blending ethanol with petrol?",
+    "options": [
+      "Ethanol Blended Petrol programme",
+      "MGNREGA",
+      "Atal Pension Yojana",
+      "Pradhan Mantri Jan Arogya Yojana"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_545",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Ethanol Blended Petrol programme most directly associated with?",
+    "options": [
+      "rural employment guarantee",
+      "blending ethanol with petrol",
+      "pension coverage for unorganised workers",
+      "health insurance cover under Ayushman Bharat"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_easy_546",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with rural employment guarantee?",
+    "options": [
+      "Pradhan Mantri Jan Arogya Yojana",
+      "Atal Pension Yojana",
+      "MGNREGA",
+      "Jan Aushadhi Kendras"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_easy_547",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is MGNREGA most directly associated with?",
+    "options": [
+      "affordable generic medicines",
+      "pension coverage for unorganised workers",
+      "health insurance cover under Ayushman Bharat",
+      "rural employment guarantee"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_easy_548",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "Which scheme or programme is most directly associated with pension coverage for unorganised workers?",
+    "options": [
+      "Atal Pension Yojana",
+      "Pradhan Mantri Jan Arogya Yojana",
+      "Jan Aushadhi Kendras",
+      "PM-KISAN"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_easy_549",
+    "category": "current_affairs",
+    "difficulty": 1,
+    "question": "What is Atal Pension Yojana most directly associated with?",
+    "options": [
+      "health insurance cover under Ayushman Bharat",
+      "pension coverage for unorganised workers",
+      "affordable generic medicines",
+      "income support to eligible farmer families"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_564",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with voting on India's policy repo rate?",
+    "options": [
+      "Cash Reserve Ratio",
+      "Repo rate",
+      "Monetary Policy Committee",
+      "Statutory Liquidity Ratio"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_565",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Monetary Policy Committee most directly associated with?",
+    "options": [
+      "banks holding a share of deposits in liquid assets",
+      "short-term RBI lending to banks against securities",
+      "banks keeping a share of deposits as cash with RBI",
+      "voting on India's policy repo rate"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_566",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with short-term RBI lending to banks against securities?",
+    "options": [
+      "Repo rate",
+      "Cash Reserve Ratio",
+      "Statutory Liquidity Ratio",
+      "Open market operations"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_567",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Repo rate most directly associated with?",
+    "options": [
+      "banks keeping a share of deposits as cash with RBI",
+      "short-term RBI lending to banks against securities",
+      "banks holding a share of deposits in liquid assets",
+      "RBI buying or selling government securities to manage liquidity"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_568",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with banks keeping a share of deposits as cash with RBI?",
+    "options": [
+      "Open market operations",
+      "Statutory Liquidity Ratio",
+      "Cash Reserve Ratio",
+      "Consumer Price Index inflation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_569",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Cash Reserve Ratio most directly associated with?",
+    "options": [
+      "the nominal anchor for India's inflation targeting framework",
+      "banks holding a share of deposits in liquid assets",
+      "RBI buying or selling government securities to manage liquidity",
+      "banks keeping a share of deposits as cash with RBI"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_570",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with banks holding a share of deposits in liquid assets?",
+    "options": [
+      "Statutory Liquidity Ratio",
+      "Open market operations",
+      "Consumer Price Index inflation",
+      "Index of Industrial Production"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_571",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Statutory Liquidity Ratio most directly associated with?",
+    "options": [
+      "RBI buying or selling government securities to manage liquidity",
+      "banks holding a share of deposits in liquid assets",
+      "the nominal anchor for India's inflation targeting framework",
+      "tracking output in mining, manufacturing and electricity"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_572",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with RBI buying or selling government securities to manage liquidity?",
+    "options": [
+      "Index of Industrial Production",
+      "Consumer Price Index inflation",
+      "Open market operations",
+      "Know Your Customer"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_573",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Open market operations most directly associated with?",
+    "options": [
+      "verifying customer identity in finance",
+      "the nominal anchor for India's inflation targeting framework",
+      "tracking output in mining, manufacturing and electricity",
+      "RBI buying or selling government securities to manage liquidity"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_574",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with the nominal anchor for India's inflation targeting framework?",
+    "options": [
+      "Consumer Price Index inflation",
+      "Index of Industrial Production",
+      "Know Your Customer",
+      "Unified Payments Interface"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_575",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Consumer Price Index inflation most directly associated with?",
+    "options": [
+      "tracking output in mining, manufacturing and electricity",
+      "the nominal anchor for India's inflation targeting framework",
+      "verifying customer identity in finance",
+      "instant mobile-based bank transfers"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_576",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with tracking output in mining, manufacturing and electricity?",
+    "options": [
+      "Unified Payments Interface",
+      "Know Your Customer",
+      "Index of Industrial Production",
+      "RTGS"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_577",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Index of Industrial Production most directly associated with?",
+    "options": [
+      "large-value real-time gross settlement transfers",
+      "verifying customer identity in finance",
+      "instant mobile-based bank transfers",
+      "tracking output in mining, manufacturing and electricity"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_578",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with verifying customer identity in finance?",
+    "options": [
+      "Know Your Customer",
+      "Unified Payments Interface",
+      "RTGS",
+      "NACH"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_579",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Know Your Customer most directly associated with?",
+    "options": [
+      "instant mobile-based bank transfers",
+      "verifying customer identity in finance",
+      "large-value real-time gross settlement transfers",
+      "bulk recurring payments such as subsidies and salaries"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_580",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with instant mobile-based bank transfers?",
+    "options": [
+      "NACH",
+      "RTGS",
+      "Unified Payments Interface",
+      "Air Quality Index"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_581",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Unified Payments Interface most directly associated with?",
+    "options": [
+      "communicating pollution levels to the public",
+      "large-value real-time gross settlement transfers",
+      "bulk recurring payments such as subsidies and salaries",
+      "instant mobile-based bank transfers"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_582",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with large-value real-time gross settlement transfers?",
+    "options": [
+      "RTGS",
+      "NACH",
+      "Air Quality Index",
+      "PM2.5"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_583",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is RTGS most directly associated with?",
+    "options": [
+      "bulk recurring payments such as subsidies and salaries",
+      "large-value real-time gross settlement transfers",
+      "communicating pollution levels to the public",
+      "fine particulate matter smaller than 2.5 micrometres"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_584",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with bulk recurring payments such as subsidies and salaries?",
+    "options": [
+      "PM2.5",
+      "Air Quality Index",
+      "NACH",
+      "Graded Response Action Plan"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_585",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is NACH most directly associated with?",
+    "options": [
+      "stage-wise pollution response in Delhi-NCR",
+      "communicating pollution levels to the public",
+      "fine particulate matter smaller than 2.5 micrometres",
+      "bulk recurring payments such as subsidies and salaries"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_586",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with communicating pollution levels to the public?",
+    "options": [
+      "Air Quality Index",
+      "PM2.5",
+      "Graded Response Action Plan",
+      "Biogas"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_587",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Air Quality Index most directly associated with?",
+    "options": [
+      "fine particulate matter smaller than 2.5 micrometres",
+      "communicating pollution levels to the public",
+      "stage-wise pollution response in Delhi-NCR",
+      "fuel produced by anaerobic decomposition of organic matter"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_588",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with fine particulate matter smaller than 2.5 micrometres?",
+    "options": [
+      "Biogas",
+      "Graded Response Action Plan",
+      "PM2.5",
+      "Methane"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_589",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is PM2.5 most directly associated with?",
+    "options": [
+      "the main combustible component of biogas",
+      "stage-wise pollution response in Delhi-NCR",
+      "fuel produced by anaerobic decomposition of organic matter",
+      "fine particulate matter smaller than 2.5 micrometres"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_590",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with stage-wise pollution response in Delhi-NCR?",
+    "options": [
+      "Graded Response Action Plan",
+      "Biogas",
+      "Methane",
+      "Paris Agreement"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_591",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Graded Response Action Plan most directly associated with?",
+    "options": [
+      "fuel produced by anaerobic decomposition of organic matter",
+      "stage-wise pollution response in Delhi-NCR",
+      "the main combustible component of biogas",
+      "the main global climate treaty"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_592",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with fuel produced by anaerobic decomposition of organic matter?",
+    "options": [
+      "Paris Agreement",
+      "Methane",
+      "Biogas",
+      "IPCC"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_593",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Biogas most directly associated with?",
+    "options": [
+      "scientific assessments on climate change",
+      "the main combustible component of biogas",
+      "the main global climate treaty",
+      "fuel produced by anaerobic decomposition of organic matter"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_594",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with the main combustible component of biogas?",
+    "options": [
+      "Methane",
+      "Paris Agreement",
+      "IPCC",
+      "Ramsar Convention"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_595",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Methane most directly associated with?",
+    "options": [
+      "the main global climate treaty",
+      "the main combustible component of biogas",
+      "scientific assessments on climate change",
+      "wetlands of international importance"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_596",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with the main global climate treaty?",
+    "options": [
+      "Ramsar Convention",
+      "IPCC",
+      "Paris Agreement",
+      "CITES"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_597",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Paris Agreement most directly associated with?",
+    "options": [
+      "international trade in endangered species",
+      "scientific assessments on climate change",
+      "wetlands of international importance",
+      "the main global climate treaty"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_598",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with scientific assessments on climate change?",
+    "options": [
+      "IPCC",
+      "Ramsar Convention",
+      "CITES",
+      "Nuclear Non-Proliferation Treaty"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_599",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is IPCC most directly associated with?",
+    "options": [
+      "wetlands of international importance",
+      "scientific assessments on climate change",
+      "international trade in endangered species",
+      "preventing the spread of nuclear weapons"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_medium_600",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with wetlands of international importance?",
+    "options": [
+      "Nuclear Non-Proliferation Treaty",
+      "CITES",
+      "Ramsar Convention",
+      "Chemical Weapons Convention"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_medium_601",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is Ramsar Convention most directly associated with?",
+    "options": [
+      "banning development and stockpiling of chemical weapons",
+      "international trade in endangered species",
+      "preventing the spread of nuclear weapons",
+      "wetlands of international importance"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_medium_602",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "Which concept, treaty or technical term is most directly associated with international trade in endangered species?",
+    "options": [
+      "CITES",
+      "Nuclear Non-Proliferation Treaty",
+      "Chemical Weapons Convention",
+      "UNCLOS"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_medium_603",
+    "category": "current_affairs",
+    "difficulty": 2,
+    "question": "What is CITES most directly associated with?",
+    "options": [
+      "preventing the spread of nuclear weapons",
+      "international trade in endangered species",
+      "banning development and stockpiling of chemical weapons",
+      "the legal framework for the use of the oceans"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_265",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with preventing the spread of nuclear weapons?",
+    "options": [
+      "UNCLOS",
+      "Chemical Weapons Convention",
+      "Nuclear Non-Proliferation Treaty",
+      "Marrakesh Agreement"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_266",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Nuclear Non-Proliferation Treaty most directly associated with?",
+    "options": [
+      "creation of the World Trade Organization",
+      "banning development and stockpiling of chemical weapons",
+      "the legal framework for the use of the oceans",
+      "preventing the spread of nuclear weapons"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_267",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with banning development and stockpiling of chemical weapons?",
+    "options": [
+      "Chemical Weapons Convention",
+      "UNCLOS",
+      "Marrakesh Agreement",
+      "TRIPS Agreement"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_268",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Chemical Weapons Convention most directly associated with?",
+    "options": [
+      "the legal framework for the use of the oceans",
+      "banning development and stockpiling of chemical weapons",
+      "creation of the World Trade Organization",
+      "intellectual property rules under the WTO"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_269",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with the legal framework for the use of the oceans?",
+    "options": [
+      "TRIPS Agreement",
+      "Marrakesh Agreement",
+      "UNCLOS",
+      "GATS"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_270",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is UNCLOS most directly associated with?",
+    "options": [
+      "trade in services under the WTO",
+      "creation of the World Trade Organization",
+      "intellectual property rules under the WTO",
+      "the legal framework for the use of the oceans"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_271",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with creation of the World Trade Organization?",
+    "options": [
+      "Marrakesh Agreement",
+      "TRIPS Agreement",
+      "GATS",
+      "Vienna Convention on Diplomatic Relations"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_272",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Marrakesh Agreement most directly associated with?",
+    "options": [
+      "intellectual property rules under the WTO",
+      "creation of the World Trade Organization",
+      "trade in services under the WTO",
+      "rules for diplomatic missions and embassy protections"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_273",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with intellectual property rules under the WTO?",
+    "options": [
+      "Vienna Convention on Diplomatic Relations",
+      "GATS",
+      "TRIPS Agreement",
+      "Chicago Convention"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_274",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is TRIPS Agreement most directly associated with?",
+    "options": [
+      "international civil aviation rules",
+      "trade in services under the WTO",
+      "rules for diplomatic missions and embassy protections",
+      "intellectual property rules under the WTO"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_275",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with trade in services under the WTO?",
+    "options": [
+      "GATS",
+      "Vienna Convention on Diplomatic Relations",
+      "Chicago Convention",
+      "Basel Convention"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_276",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is GATS most directly associated with?",
+    "options": [
+      "rules for diplomatic missions and embassy protections",
+      "trade in services under the WTO",
+      "international civil aviation rules",
+      "transboundary movement of hazardous waste"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_277",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with rules for diplomatic missions and embassy protections?",
+    "options": [
+      "Basel Convention",
+      "Chicago Convention",
+      "Vienna Convention on Diplomatic Relations",
+      "Minamata Convention"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_278",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Vienna Convention on Diplomatic Relations most directly associated with?",
+    "options": [
+      "mercury pollution control",
+      "international civil aviation rules",
+      "transboundary movement of hazardous waste",
+      "rules for diplomatic missions and embassy protections"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_279",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with international civil aviation rules?",
+    "options": [
+      "Chicago Convention",
+      "Basel Convention",
+      "Minamata Convention",
+      "Fast breeder reactor"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_280",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Chicago Convention most directly associated with?",
+    "options": [
+      "transboundary movement of hazardous waste",
+      "international civil aviation rules",
+      "mercury pollution control",
+      "producing more fissile material than it consumes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_281",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with transboundary movement of hazardous waste?",
+    "options": [
+      "Fast breeder reactor",
+      "Minamata Convention",
+      "Basel Convention",
+      "Thorium fuel cycle"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_282",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Basel Convention most directly associated with?",
+    "options": [
+      "using thorium-232 to breed fissile uranium-233",
+      "mercury pollution control",
+      "producing more fissile material than it consumes",
+      "transboundary movement of hazardous waste"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_283",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with mercury pollution control?",
+    "options": [
+      "Minamata Convention",
+      "Fast breeder reactor",
+      "Thorium fuel cycle",
+      "Pressurised heavy water reactor"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_284",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Minamata Convention most directly associated with?",
+    "options": [
+      "producing more fissile material than it consumes",
+      "mercury pollution control",
+      "using thorium-232 to breed fissile uranium-233",
+      "using heavy water as moderator and coolant in many Indian reactors"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_285",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with producing more fissile material than it consumes?",
+    "options": [
+      "Pressurised heavy water reactor",
+      "Thorium fuel cycle",
+      "Fast breeder reactor",
+      "Criticality"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_286",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Fast breeder reactor most directly associated with?",
+    "options": [
+      "a sustained nuclear fission chain reaction",
+      "using thorium-232 to breed fissile uranium-233",
+      "using heavy water as moderator and coolant in many Indian reactors",
+      "producing more fissile material than it consumes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_287",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with using thorium-232 to breed fissile uranium-233?",
+    "options": [
+      "Thorium fuel cycle",
+      "Pressurised heavy water reactor",
+      "Criticality",
+      "Free-return trajectory"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_288",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Thorium fuel cycle most directly associated with?",
+    "options": [
+      "using heavy water as moderator and coolant in many Indian reactors",
+      "using thorium-232 to breed fissile uranium-233",
+      "a sustained nuclear fission chain reaction",
+      "a lunar flight path that can return without major propulsion after injection"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_289",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with using heavy water as moderator and coolant in many Indian reactors?",
+    "options": [
+      "Free-return trajectory",
+      "Criticality",
+      "Pressurised heavy water reactor",
+      "Artemis programme"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_290",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Pressurised heavy water reactor most directly associated with?",
+    "options": [
+      "NASA's programme to return humans to the Moon",
+      "a sustained nuclear fission chain reaction",
+      "a lunar flight path that can return without major propulsion after injection",
+      "using heavy water as moderator and coolant in many Indian reactors"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_291",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with a sustained nuclear fission chain reaction?",
+    "options": [
+      "Criticality",
+      "Free-return trajectory",
+      "Artemis programme",
+      "BrahMos"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_292",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Criticality most directly associated with?",
+    "options": [
+      "a lunar flight path that can return without major propulsion after injection",
+      "a sustained nuclear fission chain reaction",
+      "NASA's programme to return humans to the Moon",
+      "a supersonic cruise missile jointly developed by India and Russia"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_293",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with a lunar flight path that can return without major propulsion after injection?",
+    "options": [
+      "BrahMos",
+      "Artemis programme",
+      "Free-return trajectory",
+      "Agni missile family"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_294",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Free-return trajectory most directly associated with?",
+    "options": [
+      "India's ballistic missile family",
+      "NASA's programme to return humans to the Moon",
+      "a supersonic cruise missile jointly developed by India and Russia",
+      "a lunar flight path that can return without major propulsion after injection"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_295",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with NASA's programme to return humans to the Moon?",
+    "options": [
+      "Artemis programme",
+      "BrahMos",
+      "Agni missile family",
+      "Astra missile"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_296",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Artemis programme most directly associated with?",
+    "options": [
+      "a supersonic cruise missile jointly developed by India and Russia",
+      "NASA's programme to return humans to the Moon",
+      "India's ballistic missile family",
+      "India's beyond-visual-range air-to-air missile"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_297",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with a supersonic cruise missile jointly developed by India and Russia?",
+    "options": [
+      "Astra missile",
+      "Agni missile family",
+      "BrahMos",
+      "Pinaka"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_298",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is BrahMos most directly associated with?",
+    "options": [
+      "India's indigenous rocket artillery system",
+      "India's ballistic missile family",
+      "India's beyond-visual-range air-to-air missile",
+      "a supersonic cruise missile jointly developed by India and Russia"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_299",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with India's ballistic missile family?",
+    "options": [
+      "Agni missile family",
+      "Prithvi missile family",
+      "K missile family",
+      "Shaurya missile"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_300",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Agni missile family most directly associated with?",
+    "options": [
+      "India's air-defence missile system",
+      "India's ballistic missile family",
+      "India's rocket artillery system",
+      "India's anti-tank guided missile programme"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ca_hard_301",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with India's beyond-visual-range air-to-air missile?",
+    "options": [
+      "Nag missile",
+      "Akash missile",
+      "Astra missile",
+      "Pralay missile"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "ca_hard_302",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Astra missile most directly associated with?",
+    "options": [
+      "India's short-range ballistic missile",
+      "India's surface-to-air missile system",
+      "India's anti-tank guided missile",
+      "India's beyond-visual-range air-to-air missile"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "ca_hard_303",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "Which concept, treaty or technical term is most directly associated with India's indigenous rocket artillery system?",
+    "options": [
+      "Pinaka",
+      "Akash",
+      "Nag",
+      "Pralay"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "ca_hard_304",
+    "category": "current_affairs",
+    "difficulty": 3,
+    "question": "What is Pinaka most directly associated with?",
+    "options": [
+      "India's surface-to-air missile system",
+      "India's indigenous rocket artillery system",
+      "India's anti-tank guided missile",
+      "India's short-range ballistic missile"
+    ],
+    "correct_index": 1
+  }
+]
