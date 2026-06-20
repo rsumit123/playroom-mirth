@@ -86,8 +86,8 @@ export default function GameEndPage() {
       .map(([id, score]) => ({ id, score, name: playerNames[id] || 'Opponent' }))
       .find(e => String(e.id) !== String(selfPlayerId))
     const oppText = opp ? ` vs ${opp.name}` : ''
-    const text = `🏆 Won my Trivia Quick Play${oppText} with ${myScore} pts on Playroom! Play me at ${SHARE_URL}`
-    const payload = { title: 'Playroom — Trivia win', text, url: SHARE_URL }
+    const text = `🏆 Won my Trivia Quick Play${oppText} with ${myScore} pts on Mirth! Play me at ${SHARE_URL}`
+    const payload = { title: 'Mirth — Trivia win', text, url: SHARE_URL }
     if (typeof navigator !== 'undefined' && navigator.share) {
       navigator.share(payload).catch(() => { /* user cancelled */ })
     } else if (typeof navigator !== 'undefined' && navigator.clipboard) {

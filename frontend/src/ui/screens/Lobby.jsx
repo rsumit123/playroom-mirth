@@ -67,7 +67,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, onInvit
   const gameLabel = gameType === 'scribble' ? 'Scribble' : gameType === 'trivia' ? 'Trivia' : 'Charades'
 
   function handleShare() {
-    const payload = { title: 'PlayRoom', text: `Join my ${gameLabel} room!`, url: inviteUrl }
+    const payload = { title: 'Mirth', text: `Join my ${gameLabel} room!`, url: inviteUrl }
     if (navigator.share) {
       navigator.share(payload)
     } else {

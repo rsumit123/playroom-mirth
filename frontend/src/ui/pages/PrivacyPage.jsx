@@ -8,7 +8,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-semibold text-ink text-base mb-2">Overview</h2>
           <p>
-            PlayRoom is a multiplayer party game app. We are committed to protecting your privacy.
+            Mirth is a multiplayer party game app. We are committed to protecting your privacy.
             This policy explains what data we collect, how we use it, and your rights.
           </p>
         </section>
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-semibold text-ink text-base mb-2">Children's Privacy</h2>
           <p>
-            PlayRoom is not directed at children under 13. We do not knowingly collect
+            Mirth is not directed at children under 13. We do not knowingly collect
             personal information from children under 13.
           </p>
         </section>

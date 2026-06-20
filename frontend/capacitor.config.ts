@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.skdev.playroom',
-  appName: 'PlayRoom',
+  appName: 'Mirth',
   webDir: 'dist',
   server: {
     // For local dev, uncomment and set your machine's local IP:

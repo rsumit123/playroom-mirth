@@ -9,10 +9,10 @@ export default function Logo({ compact = false, onClick, className = '' }) {
       onClick={onClick}
     >
       <div className={`${sizeClasses} rounded-xl bg-accent text-white flex items-center justify-center font-display shadow-soft`}>
-        PR
+        M
       </div>
       <div className={compact ? 'hidden sm:block' : ''}>
-        <div className={`font-display ${titleClasses}`}>PlayRoom</div>
+        <div className={`font-display ${titleClasses}`}>Mirth</div>
         <div className="text-xs uppercase tracking-[0.25em] text-slate/60">Party Games</div>
       </div>
     </Wrapper>

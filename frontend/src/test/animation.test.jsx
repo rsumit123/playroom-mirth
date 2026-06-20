@@ -12,7 +12,7 @@ describe('animation components', () => {
     expect(container.querySelectorAll('span').length).toBeGreaterThan(0)
   })
 
-  it('renders Welcome with PlayRoom branding', () => {
+  it('renders Welcome with Mirth branding', () => {
     const { getByText } = render(<Welcome onGuest={() => {}} onGoogleLogin={() => {}} onHowTo={() => {}} />)
     expect(getByText('Play as Guest')).toBeInTheDocument()
   })
