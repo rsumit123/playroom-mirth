@@ -245,7 +245,7 @@ async def cancel_rematch(old_room_code: str, user_id: int) -> dict:
 GK_CATEGORIES = [
     "general_knowledge", "science", "general", "history", "geography",
     "sports", "entertainment", "mythology", "food", "politics",
-    "defense", "current_affairs", "math",
+    "defense", "current_affairs", "indian_law", "math",
 ]
 
 

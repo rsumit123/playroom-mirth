@@ -11,6 +11,7 @@ export const CATEGORIES = [
   { value: 'politics', label: 'Politics', icon: '🏛️' },
   { value: 'defense', label: 'War & Defense', icon: '🪖' },
   { value: 'current_affairs', label: 'Current Affairs', icon: '📰' },
+  { value: 'indian_law', label: 'Indian Law', icon: '⚖️' },
   { value: 'math', label: 'Math', icon: '🔢' },
 ]
 

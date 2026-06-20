@@ -15,6 +15,7 @@ const ALL_CATEGORY_LABELS = [
   'Politics',
   'War & Defense',
   'Current Affairs',
+  'Indian Law',
   'Math',
 ]
 
@@ -26,9 +27,9 @@ describe('TriviaCategorySelector', () => {
     }
   })
 
-  it('renders 13 selectable buttons', () => {
+  it('renders 14 selectable buttons', () => {
     const { container } = render(<TriviaCategorySelector value="math" onChange={vi.fn()} />)
-    expect(container.querySelectorAll('button').length).toBe(13)
+    expect(container.querySelectorAll('button').length).toBe(14)
   })
 
   it('calls onChange with the category value when clicked', () => {
@@ -45,6 +46,8 @@ describe('TriviaCategorySelector', () => {
     expect(onChange).toHaveBeenLastCalledWith('current_affairs')
     fireEvent.click(screen.getByText('War & Defense'))
     expect(onChange).toHaveBeenLastCalledWith('defense')
+    fireEvent.click(screen.getByText('Indian Law'))
+    expect(onChange).toHaveBeenLastCalledWith('indian_law')
     fireEvent.click(screen.getByText('General Knowledge'))
     expect(onChange).toHaveBeenLastCalledWith('general_knowledge')
   })

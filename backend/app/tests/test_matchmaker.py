@@ -1,6 +1,7 @@
 """Matchmaker service — queue mechanics, pairing, bot fallback."""
 
 import asyncio
+from pathlib import Path
 import pytest
 
 from app.services import matchmaker
@@ -127,6 +128,16 @@ async def test_bot_fallback_fires_after_timeout(monkeypatch):
 async def test_surprise_resolves_to_a_real_category():
     resolved = matchmaker.resolve_category("surprise")
     assert resolved in matchmaker.GK_CATEGORIES
+
+
+def test_indian_law_is_quickmatch_category():
+    assert "indian_law" in matchmaker.GK_CATEGORIES
+
+
+def test_indian_law_is_trivia_gk_subcategory():
+    source = Path(__file__).parents[1] / "sockets" / "events.py"
+    text = source.read_text()
+    assert '"indian_law"' in text
 
 
 @pytest.mark.asyncio
