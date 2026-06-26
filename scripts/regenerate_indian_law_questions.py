@@ -17,21 +17,70 @@ BANK = ROOT / "backend/app/data/gk_questions.json"
 
 
 def choose_options(answer: str, pool: list[str], salt: int) -> tuple[list[str], int]:
-    distractors = [item for item in pool if item != answer]
+    """Pick nearby distractors so at least two options feel plausibly confusable."""
+    distractors = grouped_distractors(answer, salt)
+    if len(distractors) < 3:
+        distractors = nearby_distractors(answer, pool, salt)
+    if len(distractors) < 3:
+        distractors = [item for item in pool if item != answer]
     if len(distractors) < 3:
         raise ValueError(f"Not enough distractors for {answer}")
-    start = salt % len(distractors)
-    picked: list[str] = []
-    i = start
-    while len(picked) < 3:
-        item = distractors[i % len(distractors)]
-        if item not in picked:
-            picked.append(item)
-        i += 7
+    picked = distractors[:3]
     insert_at = salt % 4
     options = picked[:]
     options.insert(insert_at, answer)
     return options, insert_at
+
+
+def grouped_distractors(answer: str, salt: int) -> list[str]:
+    group = option_group_for(answer)
+    if group:
+        candidates: list[str] = []
+        seen = {answer.lower()}
+        for item in group:
+            key = item.lower()
+            if key in seen:
+                continue
+            candidates.append(item)
+            seen.add(key)
+        if len(candidates) < 3:
+            return candidates
+        start = salt % min(3, len(candidates))
+        ordered = candidates[start:] + candidates[:start]
+        return ordered
+    return []
+
+
+def option_group_for(answer: str) -> list[str] | None:
+    answer_key = answer.lower()
+    for group in OPTION_GROUPS:
+        if any(item.lower() == answer_key for item in group):
+            return group
+    return None
+
+
+def nearby_distractors(answer: str, pool: list[str], salt: int) -> list[str]:
+    """Return distractors close to the answer in the curated fact order."""
+    if answer not in pool:
+        return []
+    index = pool.index(answer)
+    nearby: list[str] = []
+    for distance in range(1, len(pool)):
+        positions = [index - distance, index + distance]
+        if salt % 2:
+            positions.reverse()
+        for pos in positions:
+            if 0 <= pos < len(pool):
+                item = pool[pos]
+                if item != answer and item not in nearby:
+                    nearby.append(item)
+        if len(nearby) >= 6:
+            break
+    if len(nearby) <= 3:
+        return nearby
+    start = salt % min(3, len(nearby))
+    ordered = nearby[start:] + nearby[:start]
+    return ordered
 
 
 ARTICLE_FACTS = [
@@ -607,6 +656,436 @@ PRACTICAL_FACTS = [
 ]
 
 
+OPTION_GROUPS = [
+    [
+        "being informed of grounds of arrest",
+        "right to consult and be defended by a legal practitioner",
+        "production within 24 hours excluding journey time",
+        "arrest memo",
+        "informing a nominated person about the arrest",
+        "medical examination after arrest",
+        "bail application",
+        "remand hearing",
+    ],
+    [
+        "legal aid through legal services authorities",
+        "Lok Adalat",
+        "mediation",
+        "arbitration",
+        "conciliation",
+        "pre-litigation settlement",
+        "settlement agreement",
+        "court-annexed mediation",
+    ],
+    [
+        "cybercrime.gov.in",
+        "E-Daakhil or e-Jagriti consumer filing",
+        "RTI Online",
+        "eCourts portal",
+        "SHe-Box portal",
+        "Cybercrime portal",
+        "E-Daakhil",
+    ],
+    [
+        "1930",
+        "1915",
+        "15100",
+        "Police control room 112",
+        "women helpline 181",
+        "child helpline 1098",
+        "ambulance helpline 108",
+    ],
+    [
+        "consumer protection law",
+        "service deficiency complaint",
+        "defective goods complaint",
+        "purchase invoice",
+        "Consumer Commission",
+        "National Consumer Helpline 1915",
+        "District Consumer Commission",
+    ],
+    [
+        "Negotiable Instruments law",
+        "Cheque dishonour",
+        "Promissory note",
+        "bank return memo",
+        "legal notice for cheque dishonour",
+        "cheque bounce complaint",
+    ],
+    [
+        "Internal Committee under POSH",
+        "Local Committee under POSH",
+        "POSH Internal Committee",
+        "POSH Local Committee",
+        "SHe-Box",
+        "SHe-Box portal",
+        "workplace harassment complaint",
+        "POSH inquiry report",
+    ],
+    [
+        "residence order",
+        "monetary relief",
+        "Protection Officer",
+        "Residence order",
+        "Monetary relief",
+        "Protection order",
+        "custody order",
+        "compensation order",
+        "maintenance order",
+    ],
+    [
+        "POCSO Act",
+        "POCSO child",
+        "Mandatory reporting under POCSO",
+        "Child-friendly POCSO procedure",
+        "POCSO Special Court",
+        "Identity protection for sexual offence victims",
+        "Juvenile Justice Board",
+        "Child Welfare Committee",
+    ],
+    [
+        "first appeal under RTI",
+        "Information Commission",
+        "Public Information Officer",
+        "First Appellate Authority",
+        "Central Information Commission",
+        "State Information Commission",
+        "RTI application",
+        "second appeal under RTI",
+    ],
+    [
+        "sale deed",
+        "encumbrance certificate",
+        "mutation",
+        "lease deed or rent agreement",
+        "Sale deed",
+        "Gift deed",
+        "Lease deed",
+        "Mutation",
+        "Encumbrance certificate",
+        "RERA registration",
+        "Sub-Registrar",
+        "Tehsil office",
+    ],
+    [
+        "interim injunction or stay order",
+        "appearance before court",
+        "cross-examination",
+        "electronic evidence certificate",
+        "summons notice",
+        "Interim order",
+        "Stay order",
+        "Injunction",
+        "Affidavit",
+        "Vakalatnama",
+    ],
+    [
+        "EPFO",
+        "FSSAI",
+        "TRAI",
+        "SEBI",
+        "RERA Authority",
+        "State Pollution Control Board",
+        "Registrar of Companies",
+        "Legal Metrology Department",
+        "Labour Commissioner",
+        "UIDAI",
+    ],
+    [
+        "Motor Accident Claims Tribunal",
+        "National Green Tribunal",
+        "NCLT",
+        "NCLAT",
+        "DRT",
+        "CAT",
+        "Armed Forces Tribunal",
+        "Income Tax Appellate Tribunal",
+        "Special Court",
+        "Tribunal",
+    ],
+    [
+        "res judicata",
+        "nemo judex in causa sua",
+        "audi alteram partem",
+        "vicarious liability",
+        "strict liability",
+        "Natural justice",
+        "Res judicata",
+        "Nemo judex in causa sua",
+        "Audi alteram partem",
+        "Strict liability",
+        "Vicarious liability",
+    ],
+    [
+        "prosecution",
+        "preponderance of probabilities",
+        "beyond reasonable doubt",
+        "dying declaration",
+        "expert evidence",
+        "chain of custody",
+        "Burden of proof",
+        "Beyond reasonable doubt",
+        "Preponderance of probabilities",
+        "Dying declaration",
+        "Expert evidence",
+        "Chain of custody",
+    ],
+    [
+        "Article 32 petition",
+        "Article 226 petition",
+        "habeas corpus",
+        "mandamus",
+        "quo warranto",
+        "certiorari",
+        "prohibition",
+        "Habeas corpus",
+        "Mandamus",
+        "Certiorari",
+        "Prohibition",
+        "Quo warranto",
+    ],
+    [
+        "amicus curiae",
+        "interim order",
+        "in camera proceeding",
+        "Amicus curiae",
+        "Court of record",
+        "Sub judice",
+        "Functus officio",
+        "court commissioner",
+    ],
+    [
+        "police complaint",
+        "summons notice",
+        "FIR",
+        "Zero FIR",
+        "Charge sheet",
+        "Closure report",
+        "Protest petition",
+        "Search warrant",
+        "Warrant",
+        "Summons",
+    ],
+    [
+        "address proof",
+        "identity proof",
+        "rent receipt",
+        "rent agreement",
+        "salary slip",
+        "employment contract",
+        "purchase invoice",
+        "Legal heir certificate",
+        "Succession certificate",
+        "Will",
+    ],
+    [
+        "Cognizable offence",
+        "Non-cognizable offence",
+        "Bailable offence",
+        "Non-bailable offence",
+        "Compoundable offence",
+        "Anticipatory bail",
+        "Regular bail",
+        "Default bail",
+    ],
+    [
+        "Remand",
+        "Judicial custody",
+        "Police custody",
+        "Personal bond",
+        "Surety",
+        "Plea bargaining",
+        "Cognizance",
+        "Framing of charge",
+    ],
+    [
+        "Appeal",
+        "Revision",
+        "Review",
+        "PIL",
+        "Locus standi",
+        "Jurisdiction",
+        "Territorial jurisdiction",
+        "Pecuniary jurisdiction",
+        "Subject-matter jurisdiction",
+    ],
+    [
+        "Plaint",
+        "Written statement",
+        "Decree",
+        "Execution",
+        "Limitation period",
+        "Cause of action",
+        "Ex parte order",
+        "Specific performance",
+    ],
+    [
+        "Mens rea",
+        "Actus reus",
+        "Acquittal",
+        "Conviction",
+        "Public prosecutor",
+        "Legal aid counsel",
+        "Victim compensation",
+    ],
+    [
+        "Hostile witness",
+        "Confession to police officer",
+        "Admission",
+        "Primary evidence",
+        "Secondary evidence",
+        "Leading question",
+        "Perjury",
+        "Estoppel",
+    ],
+    [
+        "Ratio decidendi",
+        "Obiter dicta",
+        "Per incuriam",
+        "Ultra vires",
+        "Delegated legislation",
+        "Promissory estoppel",
+        "Doctrine of proportionality",
+        "Doctrine of legitimate expectation",
+        "Colourable legislation",
+        "Pith and substance",
+        "Repugnancy",
+        "Severability",
+        "Basic structure doctrine",
+    ],
+    [
+        "Consumer",
+        "Defective goods",
+        "Deficiency in service",
+        "Unfair trade practice",
+        "Product liability",
+        "MRP",
+        "Consumer mediation",
+        "CCPA",
+        "District Consumer Commission",
+        "State Consumer Commission",
+        "National Consumer Commission",
+    ],
+    [
+        "Phishing",
+        "OTP fraud",
+        "Cybercrime portal",
+        "CERT-In",
+        "Intermediary under IT law",
+        "Electronic record",
+        "Digital signature",
+        "Sensitive personal data",
+        "Data fiduciary",
+        "Consent under data protection",
+    ],
+    [
+        "Dowry demand",
+        "Maintenance",
+        "Marriage registration",
+        "Civil marriage",
+        "Restitution of conjugal rights",
+        "Mutual consent divorce",
+        "Adoption",
+        "Guardianship",
+        "Probate",
+    ],
+    [
+        "Mortgage",
+        "Easement",
+        "Indemnity",
+        "Guarantee",
+        "Bailment",
+        "Pledge",
+        "Agency",
+        "Offer",
+        "Acceptance",
+        "Consideration",
+        "Void agreement",
+        "Voidable contract",
+    ],
+    [
+        "Arbitration clause",
+        "Arbitral award",
+        "Conciliation",
+        "Mediation",
+        "Lok Adalat award",
+        "Ombudsman",
+        "amici curiae panel",
+        "settlement agreement",
+    ],
+    [
+        "Supreme Court of India",
+        "High Court",
+        "District Court",
+        "Family Court",
+        "Sessions Court",
+        "Magistrate",
+        "Police Station",
+        "eCourts portal",
+    ],
+    [
+        "Election Commission of India",
+        "Finance Commission",
+        "CAG",
+        "UPSC",
+        "State Public Service Commission",
+        "National Human Rights Commission",
+        "National Commission for Women",
+        "National Commission for Protection of Child Rights",
+        "National Commission for Scheduled Castes",
+        "National Commission for Scheduled Tribes",
+        "National Commission for Backward Classes",
+    ],
+    [
+        "Competition Commission of India",
+        "RBI",
+        "IRDAI",
+        "PFRDA",
+        "BIS",
+        "Data Protection Board of India",
+        "Central Pollution Control Board",
+        "National Biodiversity Authority",
+    ],
+    [
+        "Gram Nyayalaya",
+        "Gram Sabha",
+        "Municipal Corporation",
+        "District Magistrate",
+        "Tehsil office",
+        "State Legal Services Authority",
+        "Taluk Legal Services Committee",
+    ],
+    [
+        "Dr. B.R. Ambedkar",
+        "M.C. Setalvad",
+        "H.J. Kania",
+        "Fathima Beevi",
+        "Leila Seth",
+        "Anna Chandy",
+        "Cornelia Sorabji",
+        "Justice Y.V. Chandrachud",
+        "Nani Palkhivala",
+        "K.K. Venugopal",
+        "Soli Sorabjee",
+        "Harish Salve",
+        "Sir Benegal Narsing Rau",
+    ],
+    [
+        "Constituent Assembly",
+        "Drafting Committee",
+        "Supreme Court of India",
+        "Federal Court of India",
+        "Government of India Act, 1935",
+    ],
+    [
+        "26 January 1950",
+        "26 November 1949",
+        "28 January 1950",
+        "15 August 1947",
+    ],
+]
+
+
 def build_questions() -> list[dict]:
     questions: list[dict] = []
     article_pool = [f"Article {num}" for num, _, _ in ARTICLE_FACTS]
@@ -893,6 +1372,18 @@ def validate(questions: list[dict]) -> None:
             raise ValueError(f"Bad difficulty in {q['id']}")
         if len(q["options"]) != 4 or len(set(q["options"])) != 4:
             raise ValueError(f"Bad options in {q['id']}")
+        if len({option.lower() for option in q["options"]}) != 4:
+            raise ValueError(f"Bad options in {q['id']}")
+        group = option_group_for(q["options"][q["correct_index"]])
+        if group:
+            group_keys = {item.lower() for item in group}
+            confusing = sum(
+                1
+                for idx, option in enumerate(q["options"])
+                if idx != q["correct_index"] and option.lower() in group_keys
+            )
+            if confusing < 2:
+                raise ValueError(f"Not enough grouped distractors in {q['id']}")
         if q["correct_index"] not in {0, 1, 2, 3}:
             raise ValueError(f"Bad correct_index in {q['id']}")
         if not q["options"][q["correct_index"]].strip():
