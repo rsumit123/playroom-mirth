@@ -101,7 +101,7 @@ export default function GameEndPage() {
       playerNames={playerNames}
       playAgain={game?.playAgain}
       onPlayAgain={() => emitPlayAgain(room?.code)}
-      onHome={() => { leaveRoom(); navigate('/home') }}
+      onHome={() => { leaveRoom(); quickmatchReset(); navigate('/home') }}
       selfPlayerId={selfPlayerId}
       winnerPlayerId={winnerPlayerId}
       origin={origin}

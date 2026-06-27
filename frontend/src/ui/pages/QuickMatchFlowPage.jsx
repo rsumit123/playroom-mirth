@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import QuickMatchSearch from '../screens/QuickMatchSearch.jsx'
 import MatchFoundSplash from '../screens/MatchFoundSplash.jsx'
@@ -8,7 +8,27 @@ const DEFAULT_CATEGORY = 'surprise'
 
 export default function QuickMatchFlowPage() {
   const navigate = useNavigate()
-  const { quickmatch, quickmatchJoin, quickmatchCancel, quickmatchReady, bindLobbyEvents, startGameSocket } = useApp()
+  const { quickmatch, quickmatchJoin, quickmatchCancel, quickmatchReady, quickmatchReset, bindLobbyEvents, startGameSocket } = useApp()
+
+  // Defensive: if we mount with `matched` already set, it's stale carry-over
+  // from a prior game (e.g. user clicked Home from GameEnd then came back).
+  // In the normal flow, `matched` only arrives AFTER mount — during the search
+  // countdown — so seeing it at mount-time is always wrong. We block the
+  // matched UI/effects synchronously via `staleBlocked` (so the splash never
+  // flashes), fire the reset in an effect, and clear the block once status
+  // moves away from 'matched' (i.e. the reset has landed).
+  const [staleBlocked, setStaleBlocked] = useState(quickmatch.status === 'matched')
+  useEffect(() => {
+    if (staleBlocked) {
+      quickmatchReset()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  useEffect(() => {
+    if (staleBlocked && quickmatch.status !== 'matched') {
+      setStaleBlocked(false)
+    }
+  }, [quickmatch.status, staleBlocked])
 
   // Frictionless entry: if we land here with no queue active, auto-join with
   // the random "surprise" category exactly once. The user can override
@@ -40,6 +60,7 @@ export default function QuickMatchFlowPage() {
   }
 
   useEffect(() => {
+    if (staleBlocked) return  // about to reset — don't bind against a dead room
     if (quickmatch.status === 'matched' && quickmatch.roomCode) {
       // bindLobbyEvents registers room:register on connect + room:lobby_update.
       // startGameSocket registers game:game_end / game:round_end / game:player_removed
@@ -49,7 +70,7 @@ export default function QuickMatchFlowPage() {
       startGameSocket()
       quickmatchReady(quickmatch.roomCode)
     }
-  }, [quickmatch.status, quickmatch.roomCode])
+  }, [quickmatch.status, quickmatch.roomCode, staleBlocked])
 
   // Hardware back button — cancel queue while searching, else go back to trivia
   useEffect(() => {
@@ -90,7 +111,7 @@ export default function QuickMatchFlowPage() {
     }
   }, [quickmatch.status])
 
-  if (quickmatch.status === 'matched') {
+  if (quickmatch.status === 'matched' && !staleBlocked) {
     return (
       <MatchFoundSplash
         opponentName={quickmatch.opponentName}

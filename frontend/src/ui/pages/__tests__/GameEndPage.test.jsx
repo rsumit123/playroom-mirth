@@ -119,4 +119,13 @@ describe('GameEndPage — quickmatch rematch routing', () => {
     fireEvent.click(screen.getByText(/New Opponent/i))
     expect(mockApp.quickmatchReset).toHaveBeenCalledOnce()
   })
+
+  it('Home ALSO resets quickmatch state (regression: tapping Quick Play later was matching the same bot instantly + getting stuck on the trivia screen)', () => {
+    mockApp.quickmatch.isBot = true
+    renderPage()
+    fireEvent.click(screen.getByText(/🏠 Home/i))
+    expect(mockApp.leaveRoom).toHaveBeenCalledOnce()
+    expect(mockApp.quickmatchReset).toHaveBeenCalledOnce()
+    expect(mockNavigate).toHaveBeenCalledWith('/home')
+  })
 })
