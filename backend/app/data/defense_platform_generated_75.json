@@ -1,0 +1,977 @@
+[
+  {
+    "id": "def_easy_179",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which engine family powers the Dassault Rafale fighter aircraft?",
+    "options": [
+      "Safran/Snecma M88",
+      "GE F414",
+      "Eurojet EJ200",
+      "Saturn AL-31FP"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_180",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which engine powers India's Tejas Mk1 and Mk1A fighter aircraft?",
+    "options": [
+      "GE F414-INS6",
+      "GE F404-IN20",
+      "Kaveri",
+      "Safran M88"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_181",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which engine powers the Sukhoi Su-30MKI fighter aircraft?",
+    "options": [
+      "Safran M88",
+      "GE F404-IN20",
+      "Saturn AL-31FP",
+      "Eurojet EJ200"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_182",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which main gun calibre is used by the K9 Vajra self-propelled howitzer?",
+    "options": [
+      "105 mm",
+      "125 mm",
+      "214 mm",
+      "155 mm"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_183",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which main gun calibre is used by the M777 ultra-light howitzer?",
+    "options": [
+      "155 mm",
+      "120 mm",
+      "130 mm",
+      "214 mm"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_184",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian rocket artillery system uses 214 mm rockets?",
+    "options": [
+      "Smerch",
+      "Pinaka",
+      "Grad",
+      "K9 Vajra"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_185",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Russian-origin rocket artillery system in Indian service uses 300 mm rockets?",
+    "options": [
+      "Pinaka",
+      "Grad",
+      "Smerch",
+      "Dhanush"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_186",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Army self-propelled artillery gun is based on the South Korean K9 Thunder?",
+    "options": [
+      "Dhanush",
+      "ATAGS",
+      "M777",
+      "K9 Vajra"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_187",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian towed artillery gun is an upgraded 155 mm version derived from the Bofors design lineage?",
+    "options": [
+      "Dhanush",
+      "K9 Vajra",
+      "Pinaka",
+      "Smerch"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_188",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian tank has the service name Bhishma?",
+    "options": [
+      "Arjun",
+      "T-90",
+      "T-72",
+      "BMP-2"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_189",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian main battle tank is indigenous and named after a Mahabharata warrior?",
+    "options": [
+      "T-90 Bhishma",
+      "T-72 Ajeya",
+      "Arjun",
+      "BMP-2 Sarath"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_190",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which infantry combat vehicle in Indian service is commonly known as Sarath?",
+    "options": [
+      "T-90",
+      "Arjun",
+      "K9 Vajra",
+      "BMP-2"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_191",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy submarine class is based on the Scorpene design?",
+    "options": [
+      "Kalvari class",
+      "Arihant class",
+      "Shishumar class",
+      "Sindhughosh class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_192",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy aircraft carrier was commissioned in 2022 as India's first indigenous aircraft carrier?",
+    "options": [
+      "INS Vikramaditya",
+      "INS Vikrant",
+      "INS Viraat",
+      "INS Vishal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_193",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy aircraft carrier was originally the Russian Admiral Gorshkov?",
+    "options": [
+      "INS Vikrant",
+      "INS Viraat",
+      "INS Vikramaditya",
+      "INS Vishal"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_194",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which aircraft is the Indian Navy's long-range maritime patrol aircraft based on the Boeing 737?",
+    "options": [
+      "C-17 Globemaster III",
+      "C-130J Super Hercules",
+      "Netra AEW&C",
+      "P-8I Poseidon"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_195",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which transport aircraft is India's heavy strategic airlifter made by Boeing?",
+    "options": [
+      "C-17 Globemaster III",
+      "C-130J Super Hercules",
+      "P-8I Poseidon",
+      "Dornier Do 228"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_196",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which transport aircraft is used by India for tactical airlift and special operations?",
+    "options": [
+      "C-17 Globemaster III",
+      "C-130J Super Hercules",
+      "IL-78",
+      "P-8I Poseidon"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_197",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian AEW&C aircraft is commonly called Netra?",
+    "options": [
+      "P-8I Poseidon",
+      "IL-78",
+      "DRDO Netra",
+      "C-17 Globemaster III"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_198",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which air defence system is jointly developed by India and Israel as MRSAM?",
+    "options": [
+      "Akash",
+      "Trishul",
+      "Nag",
+      "Barak-8"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_199",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile is India's beyond-visual-range air-to-air missile developed by DRDO?",
+    "options": [
+      "Astra",
+      "Akash",
+      "Nag",
+      "Pralay"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_200",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian missile is a helicopter-launched version from the Nag missile family?",
+    "options": [
+      "Astra",
+      "HELINA",
+      "Akash",
+      "Prithvi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_201",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian missile is a subsonic long-range cruise missile programme?",
+    "options": [
+      "BrahMos",
+      "Akash",
+      "Nirbhay",
+      "Nag"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_202",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian weapon is a quasi-ballistic surface-to-surface missile?",
+    "options": [
+      "Astra",
+      "HELINA",
+      "MRSAM",
+      "Pralay"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_203",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which air defence missile system did India buy from Russia under the S-400 Triumf name?",
+    "options": [
+      "S-400",
+      "S-300",
+      "Patriot PAC-3",
+      "THAAD"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_187",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which engine family received the 4E upgrade standard for the Rafale?",
+    "options": [
+      "GE F404",
+      "Safran/Snecma M88",
+      "Eurojet EJ200",
+      "Saturn AL-31FP"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_188",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which GE engine family is planned for India's Tejas Mk2 fighter?",
+    "options": [
+      "GE F404",
+      "Safran M88",
+      "GE F414",
+      "Kaveri"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_189",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which fighter uses thrust-vectoring AL-31FP engines in Indian service?",
+    "options": [
+      "Rafale",
+      "Tejas Mk1A",
+      "Mirage 2000",
+      "Sukhoi Su-30MKI"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_190",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which HAL combat helicopter is optimized for high-altitude operations?",
+    "options": [
+      "HAL Prachand",
+      "HAL Dhruv",
+      "AH-64E Apache",
+      "CH-47F Chinook"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_191",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which HAL helicopter family is the basis for the Rudra armed helicopter?",
+    "options": [
+      "Cheetah",
+      "Dhruv ALH",
+      "Chetak",
+      "Prachand"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_192",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which attack helicopter in Indian service is manufactured by Boeing?",
+    "options": [
+      "HAL Prachand",
+      "Mi-17V5",
+      "AH-64E Apache",
+      "Dhruv ALH"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_193",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which heavy-lift helicopter in Indian service uses tandem rotors?",
+    "options": [
+      "AH-64E Apache",
+      "Mi-17V5",
+      "HAL Prachand",
+      "CH-47F Chinook"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_194",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which 155 mm artillery system is light enough to be airlifted by Chinook helicopters?",
+    "options": [
+      "M777",
+      "K9 Vajra",
+      "Smerch",
+      "Pinaka"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_195",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What does ATAGS stand for in India's 155 mm artillery programme?",
+    "options": [
+      "Automated Tactical Air Gun System",
+      "Advanced Towed Artillery Gun System",
+      "Advanced Tank Artillery Guidance System",
+      "Army Tactical Artillery Gun Shell"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_196",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian rocket artillery variant is associated with about 75 km guided rockets?",
+    "options": [
+      "Pinaka Mk-I",
+      "BM-21 Grad",
+      "Guided Pinaka",
+      "Dhanush"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_197",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which larger Russian-origin rocket system complements Pinaka in Indian Army rocket artillery?",
+    "options": [
+      "Dhanush",
+      "ATAGS",
+      "M777",
+      "Smerch"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_198",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian artillery rocket system first proved itself in the Kargil War?",
+    "options": [
+      "Pinaka",
+      "Smerch",
+      "ATAGS",
+      "Dhanush"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_199",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which missile forms the naval and land-based supersonic cruise missile family jointly made by India and Russia?",
+    "options": [
+      "Nirbhay",
+      "BrahMos",
+      "Pralay",
+      "Astra"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_200",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which IAF fighter is a twin-engine heavy multirole aircraft with canards and thrust vectoring?",
+    "options": [
+      "Tejas Mk1A",
+      "Rafale",
+      "Sukhoi Su-30MKI",
+      "MiG-29K"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_201",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian missile is a medium-range surface-to-air weapon system developed by DRDO?",
+    "options": [
+      "Astra",
+      "Nag",
+      "BrahMos",
+      "Akash"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_202",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which missile system is also known as the New Generation Anti-Radiation Missile?",
+    "options": [
+      "Rudram-1",
+      "Astra Mk1",
+      "HELINA",
+      "Pralay"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_203",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which missile is India's anti-tank guided missile named after a serpent?",
+    "options": [
+      "Astra",
+      "Nag",
+      "Akash",
+      "Prithvi"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_204",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian submarine-launched ballistic missile is also called Sagarika?",
+    "options": [
+      "K-4",
+      "Agni-V",
+      "K-15",
+      "Prithvi-II"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_205",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian submarine-launched ballistic missile is associated with a roughly 3,500 km class range?",
+    "options": [
+      "K-15",
+      "Pralay",
+      "Astra",
+      "K-4"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_206",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian nuclear submarine class carries ballistic missiles?",
+    "options": [
+      "Arihant class",
+      "Kalvari class",
+      "Shishumar class",
+      "Sindhughosh class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_207",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian destroyer class includes INS Visakhapatnam?",
+    "options": [
+      "Kolkata class",
+      "Visakhapatnam class",
+      "Shivalik class",
+      "Talwar class"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_208",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian destroyer class includes INS Kolkata?",
+    "options": [
+      "Visakhapatnam class",
+      "Nilgiri class",
+      "Kolkata class",
+      "Kamorta class"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_209",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian frigate class is built under Project 17A?",
+    "options": [
+      "Shivalik class",
+      "Talwar class",
+      "Kolkata class",
+      "Nilgiri class"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_210",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian anti-submarine warfare corvette class includes INS Kamorta?",
+    "options": [
+      "Kamorta class",
+      "Kora class",
+      "Khukri class",
+      "Nilgiri class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_211",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy fighter operates from aircraft carriers and has folding wings?",
+    "options": [
+      "Su-30MKI",
+      "MiG-29K",
+      "Mirage 2000",
+      "Jaguar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_212",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which airborne refuelling aircraft type has India used based on the Ilyushin Il-78?",
+    "options": [
+      "C-17",
+      "P-8I",
+      "IL-78MKI",
+      "C-130J"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_213",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which radar type is central to modern fighter radars such as Uttam AESA?",
+    "options": [
+      "Pulse-Doppler only",
+      "Mechanical optical sight",
+      "Infrared searchlight",
+      "Active electronically scanned array"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_214",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which indigenous AESA radar is associated with Tejas Mk1A?",
+    "options": [
+      "Uttam AESA",
+      "Bars radar",
+      "Zhuk-ME",
+      "Sea Giraffe"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_215",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Russian radar family is associated with India's Su-30MKI?",
+    "options": [
+      "Uttam AESA",
+      "N011M Bars",
+      "EL/M-2052",
+      "RBE2"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_216",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which French radar family is associated with Rafale F3R/F4 aircraft?",
+    "options": [
+      "N011M Bars",
+      "Uttam AESA",
+      "RBE2 AESA",
+      "Zhuk-ME"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_hard_140",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "What calibre is the Pinaka multiple rocket launcher?",
+    "options": [
+      "122 mm",
+      "155 mm",
+      "300 mm",
+      "214 mm"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_141",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "What calibre is the BM-30 Smerch rocket system?",
+    "options": [
+      "300 mm",
+      "214 mm",
+      "122 mm",
+      "155 mm"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_142",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "What calibre is the BM-21 Grad rocket system?",
+    "options": [
+      "214 mm",
+      "122 mm",
+      "300 mm",
+      "155 mm"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_143",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "What is the barrel length class of the K9 Vajra howitzer?",
+    "options": [
+      "39 calibre",
+      "45 calibre",
+      "52 calibre",
+      "23 calibre"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_hard_144",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "What is the barrel length class of the M777 howitzer?",
+    "options": [
+      "45 calibre",
+      "52 calibre",
+      "23 calibre",
+      "39 calibre"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_145",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "What is the barrel length class of the Dhanush 155 mm gun?",
+    "options": [
+      "45 calibre",
+      "39 calibre",
+      "52 calibre",
+      "23 calibre"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_146",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which main gun calibre is associated with the T-90 Bhishma tank?",
+    "options": [
+      "120 mm",
+      "125 mm",
+      "105 mm",
+      "155 mm"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_147",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which main gun calibre is associated with the Arjun main battle tank?",
+    "options": [
+      "125 mm",
+      "105 mm",
+      "120 mm",
+      "155 mm"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_hard_148",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which engine powers the M1 Abrams main battle tank?",
+    "options": [
+      "Diesel V12 engine",
+      "Turboprop engine",
+      "Ramjet engine",
+      "Gas turbine engine"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_149",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which artillery platform is a 155 mm tracked self-propelled howitzer in Indian service?",
+    "options": [
+      "K9 Vajra",
+      "M777",
+      "ATAGS",
+      "Dhanush"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_150",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Pralay description is most accurate?",
+    "options": [
+      "Subsonic cruise missile",
+      "Quasi-ballistic surface-to-surface missile",
+      "Anti-radiation missile",
+      "Shipborne torpedo"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_151",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Rudram-1 description is most accurate?",
+    "options": [
+      "Submarine-launched ballistic missile",
+      "Anti-tank guided missile",
+      "Anti-radiation missile",
+      "Medium-range SAM"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_hard_152",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Astra Mk-1 description is most accurate?",
+    "options": [
+      "Surface-to-surface ballistic missile",
+      "Anti-ship cruise missile",
+      "Man-portable air defence missile",
+      "Beyond-visual-range air-to-air missile"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_153",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Kalvari-class submarine propulsion type is conventional diesel-electric?",
+    "options": [
+      "Diesel-electric attack submarine",
+      "Nuclear ballistic missile submarine",
+      "Nuclear attack submarine",
+      "Aircraft carrier"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_154",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Arihant-class submarine role is correct?",
+    "options": [
+      "Diesel-electric attack submarine",
+      "Nuclear ballistic missile submarine",
+      "Mine countermeasure vessel",
+      "Fleet tanker"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_155",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which aircraft is India's carrier-borne MiG-29 variant?",
+    "options": [
+      "MiG-29UPG",
+      "MiG-29SMT",
+      "MiG-29K",
+      "MiG-35"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_hard_156",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which fighter did India use for the 2019 Balakot air strike?",
+    "options": [
+      "Rafale",
+      "Tejas",
+      "MiG-29K",
+      "Mirage 2000"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_157",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Indian Navy ship class is named after Project 15B?",
+    "options": [
+      "Visakhapatnam class destroyer",
+      "Nilgiri class frigate",
+      "Kamorta class corvette",
+      "Kalvari class submarine"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_158",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Project 17A corresponds to which Indian Navy warship type?",
+    "options": [
+      "Visakhapatnam class destroyer",
+      "Nilgiri class frigate",
+      "Arihant class submarine",
+      "Vikrant class carrier"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_159",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "The Indian service name Vajra refers to which Mirage 2000 platform type?",
+    "options": [
+      "Transport aircraft",
+      "Attack helicopter",
+      "Fighter aircraft",
+      "Maritime patrol aircraft"
+    ],
+    "correct_index": 2
+  }
+]

@@ -1,0 +1,3502 @@
+[
+  {
+    "id": "def_easy_229",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which artillery system is best described as: Advanced 155 mm towed artillery gun?",
+    "options": [
+      "ATAGS",
+      "Dhanush",
+      "K9 Vajra",
+      "M777"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_230",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with ATAGS?",
+    "options": [
+      "155 mm/45 calibre",
+      "155 mm/52 calibre",
+      "155 mm/39 calibre",
+      "214 mm rockets"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_247",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits ATAGS?",
+    "options": [
+      "Tracked self-propelled artillery",
+      "Air-portable towed artillery",
+      "Towed artillery",
+      "Truck-mounted rocket artillery"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_248",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with ATAGS?",
+    "options": [
+      "South Korea/India",
+      "United States/United Kingdom",
+      "Sweden",
+      "India"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_180",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies ATAGS?",
+    "options": [
+      "DRDO-led indigenous artillery programme",
+      "Bofors-lineage upgraded Indian gun",
+      "Indian version of the K9 Thunder",
+      "Can be moved by Chinook helicopter"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_231",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which artillery system is best described as: Indian 155 mm towed howitzer?",
+    "options": [
+      "ATAGS",
+      "Dhanush",
+      "K9 Vajra",
+      "M777"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_232",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with Dhanush?",
+    "options": [
+      "155 mm/52 calibre",
+      "155 mm/39 calibre",
+      "155 mm/45 calibre",
+      "214 mm rockets"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_249",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits Dhanush?",
+    "options": [
+      "Tracked self-propelled artillery",
+      "Air-portable towed artillery",
+      "Truck-mounted rocket artillery",
+      "Towed artillery"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_250",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Dhanush?",
+    "options": [
+      "India",
+      "South Korea/India",
+      "United States/United Kingdom",
+      "Sweden"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_181",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Dhanush?",
+    "options": [
+      "DRDO-led indigenous artillery programme",
+      "Bofors-lineage upgraded Indian gun",
+      "Indian version of the K9 Thunder",
+      "Can be moved by Chinook helicopter"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_233",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which artillery system is best described as: Tracked self-propelled howitzer?",
+    "options": [
+      "ATAGS",
+      "Dhanush",
+      "K9 Vajra",
+      "M777"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_234",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with K9 Vajra?",
+    "options": [
+      "155 mm/45 calibre",
+      "155 mm/39 calibre",
+      "214 mm rockets",
+      "155 mm/52 calibre"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_251",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits K9 Vajra?",
+    "options": [
+      "Tracked self-propelled artillery",
+      "Towed artillery",
+      "Air-portable towed artillery",
+      "Truck-mounted rocket artillery"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_252",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with K9 Vajra?",
+    "options": [
+      "India",
+      "South Korea/India",
+      "United States/United Kingdom",
+      "Sweden"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_182",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies K9 Vajra?",
+    "options": [
+      "DRDO-led indigenous artillery programme",
+      "Bofors-lineage upgraded Indian gun",
+      "Indian version of the K9 Thunder",
+      "Can be moved by Chinook helicopter"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_235",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which artillery system is best described as: Ultra-light towed howitzer?",
+    "options": [
+      "ATAGS",
+      "Dhanush",
+      "K9 Vajra",
+      "M777"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_236",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with M777?",
+    "options": [
+      "155 mm/39 calibre",
+      "155 mm/52 calibre",
+      "155 mm/45 calibre",
+      "214 mm rockets"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_253",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits M777?",
+    "options": [
+      "Towed artillery",
+      "Air-portable towed artillery",
+      "Tracked self-propelled artillery",
+      "Truck-mounted rocket artillery"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_254",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with M777?",
+    "options": [
+      "India",
+      "South Korea/India",
+      "United States/United Kingdom",
+      "Sweden"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_183",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies M777?",
+    "options": [
+      "DRDO-led indigenous artillery programme",
+      "Bofors-lineage upgraded Indian gun",
+      "Indian version of the K9 Thunder",
+      "Can be moved by Chinook helicopter"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_237",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Swedish 155 mm howitzer became famous in Indian service during the Kargil War?",
+    "options": [
+      "Bofors FH77B",
+      "ATAGS",
+      "Dhanush",
+      "K9 Vajra"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_238",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with Bofors FH77B?",
+    "options": [
+      "155 mm/52 calibre",
+      "155 mm/39 calibre",
+      "155 mm/45 calibre",
+      "214 mm rockets"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_255",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits Bofors FH77B?",
+    "options": [
+      "Tracked self-propelled artillery",
+      "Air-portable towed artillery",
+      "Towed artillery",
+      "Truck-mounted rocket artillery"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_256",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Bofors FH77B?",
+    "options": [
+      "India",
+      "South Korea/India",
+      "United States/United Kingdom",
+      "Sweden"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_184",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Bofors FH77B?",
+    "options": [
+      "Famous Indian Army gun from the Kargil War",
+      "DRDO-led indigenous artillery programme",
+      "Bofors-lineage upgraded Indian gun",
+      "Indian version of the K9 Thunder"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_239",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which artillery system is best described as: Multi-barrel rocket launcher?",
+    "options": [
+      "ATAGS",
+      "Pinaka",
+      "Dhanush",
+      "K9 Vajra"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_240",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with Pinaka?",
+    "options": [
+      "155 mm/52 calibre",
+      "155 mm/45 calibre",
+      "214 mm rockets",
+      "155 mm/39 calibre"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_257",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits Pinaka?",
+    "options": [
+      "Towed artillery",
+      "Tracked self-propelled artillery",
+      "Air-portable towed artillery",
+      "Truck-mounted rocket artillery"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_258",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Pinaka?",
+    "options": [
+      "India",
+      "South Korea/India",
+      "United States/United Kingdom",
+      "Sweden"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_185",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Pinaka?",
+    "options": [
+      "DRDO-led indigenous artillery programme",
+      "Indian DRDO rocket artillery system",
+      "Bofors-lineage upgraded Indian gun",
+      "Indian version of the K9 Thunder"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_241",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which artillery system is best described as: Heavy multiple rocket launcher?",
+    "options": [
+      "ATAGS",
+      "Dhanush",
+      "BM-30 Smerch",
+      "K9 Vajra"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_242",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with BM-30 Smerch?",
+    "options": [
+      "155 mm/52 calibre",
+      "155 mm/45 calibre",
+      "155 mm/39 calibre",
+      "300 mm rockets"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_259",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits BM-30 Smerch?",
+    "options": [
+      "Truck-mounted rocket artillery",
+      "Towed artillery",
+      "Tracked self-propelled artillery",
+      "Air-portable towed artillery"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_260",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with BM-30 Smerch?",
+    "options": [
+      "India",
+      "Russia",
+      "South Korea/India",
+      "United States/United Kingdom"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_186",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies BM-30 Smerch?",
+    "options": [
+      "DRDO-led indigenous artillery programme",
+      "Bofors-lineage upgraded Indian gun",
+      "Russian-origin heavy rocket artillery",
+      "Indian version of the K9 Thunder"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_243",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Soviet-origin 122 mm multiple rocket launcher is commonly called Grad?",
+    "options": [
+      "ATAGS",
+      "Dhanush",
+      "K9 Vajra",
+      "BM-21 Grad"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_244",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with BM-21 Grad?",
+    "options": [
+      "122 mm rockets",
+      "155 mm/52 calibre",
+      "155 mm/45 calibre",
+      "155 mm/39 calibre"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_261",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits BM-21 Grad?",
+    "options": [
+      "Towed artillery",
+      "Truck-mounted rocket artillery",
+      "Tracked self-propelled artillery",
+      "Air-portable towed artillery"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_262",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with BM-21 Grad?",
+    "options": [
+      "India",
+      "South Korea/India",
+      "Soviet Union/Russia",
+      "United States/United Kingdom"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_187",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies BM-21 Grad?",
+    "options": [
+      "DRDO-led indigenous artillery programme",
+      "Bofors-lineage upgraded Indian gun",
+      "Indian version of the K9 Thunder",
+      "Widely used 122 mm rocket artillery system"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_245",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which artillery system is best described as: 130 mm towed field gun?",
+    "options": [
+      "M-46 field gun",
+      "ATAGS",
+      "Dhanush",
+      "K9 Vajra"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_246",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with M-46 field gun?",
+    "options": [
+      "155 mm/52 calibre",
+      "130 mm",
+      "155 mm/45 calibre",
+      "155 mm/39 calibre"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_263",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits M-46 field gun?",
+    "options": [
+      "Tracked self-propelled artillery",
+      "Air-portable towed artillery",
+      "Towed artillery",
+      "Truck-mounted rocket artillery"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_264",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with M-46 field gun?",
+    "options": [
+      "India",
+      "South Korea/India",
+      "United States/United Kingdom",
+      "Soviet Union"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_188",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies M-46 field gun?",
+    "options": [
+      "Long-serving 130 mm Indian Army field gun",
+      "DRDO-led indigenous artillery programme",
+      "Bofors-lineage upgraded Indian gun",
+      "Indian version of the K9 Thunder"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_247",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which artillery system is best described as: Light towed field gun?",
+    "options": [
+      "ATAGS",
+      "105 mm Indian Field Gun",
+      "Dhanush",
+      "K9 Vajra"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_248",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What calibre is associated with 105 mm Indian Field Gun?",
+    "options": [
+      "155 mm/52 calibre",
+      "155 mm/45 calibre",
+      "105 mm",
+      "155 mm/39 calibre"
+    ],
+    "correct_index": 2,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_265",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What mobility/type best fits 105 mm Indian Field Gun?",
+    "options": [
+      "Tracked self-propelled artillery",
+      "Air-portable towed artillery",
+      "Truck-mounted rocket artillery",
+      "Towed artillery"
+    ],
+    "correct_index": 3,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_medium_266",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with 105 mm Indian Field Gun?",
+    "options": [
+      "India",
+      "South Korea/India",
+      "United States/United Kingdom",
+      "Sweden"
+    ],
+    "correct_index": 0,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_hard_189",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies 105 mm Indian Field Gun?",
+    "options": [
+      "DRDO-led indigenous artillery programme",
+      "Indian light field artillery gun",
+      "Bofors-lineage upgraded Indian gun",
+      "Indian version of the K9 Thunder"
+    ],
+    "correct_index": 1,
+    "source_note": "artillery_rocket_artillery"
+  },
+  {
+    "id": "def_easy_249",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Kalashnikov-pattern rifle is being manufactured in India at Korwa/Amethi?",
+    "options": [
+      "SIG716",
+      "INSAS rifle",
+      "AK-203",
+      "Tavor X95"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_250",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with AK-203?",
+    "options": [
+      "7.62x51 mm NATO",
+      "5.56x45 mm",
+      "7.62x54R mm",
+      "7.62x39 mm"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_267",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits AK-203?",
+    "options": [
+      "Kalashnikov rifle family",
+      "SIG Sauer rifle family",
+      "Indian small-arms family",
+      "IWI Tavor family"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_268",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with AK-203?",
+    "options": [
+      "United States",
+      "Russia/India",
+      "India",
+      "Israel"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_190",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies AK-203?",
+    "options": [
+      "Indian Army 7.62 mm frontline rifle procurement",
+      "Indigenous rifle family used by Indian forces",
+      "Manufactured in India at Korwa/Amethi",
+      "Bullpup layout used by Indian special forces"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_251",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which infantry weapon is best described as: Battle rifle?",
+    "options": [
+      "AK-203",
+      "INSAS rifle",
+      "Tavor X95",
+      "SIG716"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_252",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with SIG716?",
+    "options": [
+      "7.62x51 mm NATO",
+      "7.62x39 mm",
+      "5.56x45 mm",
+      "7.62x54R mm"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_269",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits SIG716?",
+    "options": [
+      "Kalashnikov rifle family",
+      "SIG Sauer rifle family",
+      "Indian small-arms family",
+      "IWI Tavor family"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_270",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with SIG716?",
+    "options": [
+      "Russia/India",
+      "India",
+      "United States",
+      "Israel"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_191",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies SIG716?",
+    "options": [
+      "Manufactured in India at Korwa/Amethi",
+      "Indigenous rifle family used by Indian forces",
+      "Bullpup layout used by Indian special forces",
+      "Indian Army 7.62 mm frontline rifle procurement"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_253",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which indigenous Indian 5.56 mm rifle family was used widely by Indian forces?",
+    "options": [
+      "INSAS rifle",
+      "AK-203",
+      "SIG716",
+      "Tavor X95"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_254",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with INSAS rifle?",
+    "options": [
+      "7.62x39 mm",
+      "5.56x45 mm",
+      "7.62x51 mm NATO",
+      "7.62x54R mm"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_271",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits INSAS rifle?",
+    "options": [
+      "Kalashnikov rifle family",
+      "SIG Sauer rifle family",
+      "Indian small-arms family",
+      "IWI Tavor family"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_272",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with INSAS rifle?",
+    "options": [
+      "Russia/India",
+      "United States",
+      "Israel",
+      "India"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_192",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies INSAS rifle?",
+    "options": [
+      "Indigenous rifle family used by Indian forces",
+      "Manufactured in India at Korwa/Amethi",
+      "Indian Army 7.62 mm frontline rifle procurement",
+      "Bullpup layout used by Indian special forces"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_255",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which infantry weapon is best described as: Bullpup assault rifle/carbine?",
+    "options": [
+      "AK-203",
+      "Tavor X95",
+      "SIG716",
+      "INSAS rifle"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_256",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with Tavor X95?",
+    "options": [
+      "7.62x39 mm",
+      "7.62x51 mm NATO",
+      "5.56x45 mm",
+      "7.62x54R mm"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_273",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits Tavor X95?",
+    "options": [
+      "Kalashnikov rifle family",
+      "SIG Sauer rifle family",
+      "Indian small-arms family",
+      "IWI Tavor family"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_274",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Tavor X95?",
+    "options": [
+      "Israel",
+      "Russia/India",
+      "United States",
+      "India"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_193",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Tavor X95?",
+    "options": [
+      "Manufactured in India at Korwa/Amethi",
+      "Bullpup layout used by Indian special forces",
+      "Indian Army 7.62 mm frontline rifle procurement",
+      "Indigenous rifle family used by Indian forces"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_257",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which IWI light machine gun uses 7.62x51 mm NATO ammunition?",
+    "options": [
+      "AK-203",
+      "SIG716",
+      "Negev NG7",
+      "INSAS rifle"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_258",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with Negev NG7?",
+    "options": [
+      "7.62x39 mm",
+      "5.56x45 mm",
+      "7.62x54R mm",
+      "7.62x51 mm NATO"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_275",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits Negev NG7?",
+    "options": [
+      "IWI Negev family",
+      "Kalashnikov rifle family",
+      "SIG Sauer rifle family",
+      "Indian small-arms family"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_276",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Negev NG7?",
+    "options": [
+      "Russia/India",
+      "Israel",
+      "United States",
+      "India"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_194",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Negev NG7?",
+    "options": [
+      "Manufactured in India at Korwa/Amethi",
+      "Indian Army 7.62 mm frontline rifle procurement",
+      "7.62 mm light machine gun inducted by Indian forces",
+      "Indigenous rifle family used by Indian forces"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_259",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which infantry weapon is best described as: Designated marksman rifle?",
+    "options": [
+      "AK-203",
+      "SIG716",
+      "INSAS rifle",
+      "Dragunov SVD"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_260",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with Dragunov SVD?",
+    "options": [
+      "7.62x54R mm",
+      "7.62x39 mm",
+      "7.62x51 mm NATO",
+      "5.56x45 mm"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_277",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits Dragunov SVD?",
+    "options": [
+      "Kalashnikov rifle family",
+      "Soviet marksman rifle family",
+      "SIG Sauer rifle family",
+      "Indian small-arms family"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_278",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Dragunov SVD?",
+    "options": [
+      "Russia/India",
+      "United States",
+      "Soviet Union/Russia",
+      "India"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_195",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Dragunov SVD?",
+    "options": [
+      "Manufactured in India at Korwa/Amethi",
+      "Indian Army 7.62 mm frontline rifle procurement",
+      "Indigenous rifle family used by Indian forces",
+      "Long-serving marksman rifle in Indian service"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_261",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which infantry weapon is best described as: Anti-materiel rifle?",
+    "options": [
+      "Vidhwansak",
+      "AK-203",
+      "SIG716",
+      "INSAS rifle"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_262",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with Vidhwansak?",
+    "options": [
+      "7.62x39 mm",
+      "12.7 mm",
+      "7.62x51 mm NATO",
+      "5.56x45 mm"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_279",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits Vidhwansak?",
+    "options": [
+      "Kalashnikov rifle family",
+      "SIG Sauer rifle family",
+      "Heavy sniper/anti-materiel rifle",
+      "Indian small-arms family"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_280",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Vidhwansak?",
+    "options": [
+      "Russia/India",
+      "United States",
+      "Israel",
+      "India"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_196",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Vidhwansak?",
+    "options": [
+      "Indian heavy anti-materiel rifle",
+      "Manufactured in India at Korwa/Amethi",
+      "Indian Army 7.62 mm frontline rifle procurement",
+      "Indigenous rifle family used by Indian forces"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_263",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which infantry weapon is best described as: Recoilless rifle?",
+    "options": [
+      "AK-203",
+      "Carl Gustaf",
+      "SIG716",
+      "INSAS rifle"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_264",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with Carl Gustaf?",
+    "options": [
+      "7.62x39 mm",
+      "7.62x51 mm NATO",
+      "84 mm",
+      "5.56x45 mm"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_281",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits Carl Gustaf?",
+    "options": [
+      "Kalashnikov rifle family",
+      "SIG Sauer rifle family",
+      "Indian small-arms family",
+      "Shoulder-fired support weapon"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_282",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with the 84 mm Carl Gustaf recoilless rifle?",
+    "options": [
+      "Sweden",
+      "Russia/India",
+      "United States",
+      "India"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_197",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Carl Gustaf as an infantry support weapon?",
+    "options": [
+      "Manufactured in India at Korwa/Amethi",
+      "Reusable anti-armour support weapon",
+      "Indian Army 7.62 mm frontline rifle procurement",
+      "Indigenous rifle family used by Indian forces"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_265",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which infantry weapon is best described as: Submachine gun?",
+    "options": [
+      "AK-203",
+      "SIG716",
+      "MP5",
+      "INSAS rifle"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_266",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with MP5?",
+    "options": [
+      "7.62x39 mm",
+      "7.62x51 mm NATO",
+      "5.56x45 mm",
+      "9x19 mm"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_283",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits MP5?",
+    "options": [
+      "Heckler & Koch submachine gun",
+      "Kalashnikov rifle family",
+      "SIG Sauer rifle family",
+      "Indian small-arms family"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_284",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with MP5?",
+    "options": [
+      "Russia/India",
+      "Germany",
+      "United States",
+      "India"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_198",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies MP5?",
+    "options": [
+      "Manufactured in India at Korwa/Amethi",
+      "Indian Army 7.62 mm frontline rifle procurement",
+      "Compact weapon used by police and special units",
+      "Indigenous rifle family used by Indian forces"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_267",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which historic Commonwealth light machine gun used .303 British ammunition?",
+    "options": [
+      "AK-203",
+      "SIG716",
+      "INSAS rifle",
+      "Bren gun"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_268",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What cartridge/calibre is associated with Bren gun?",
+    "options": [
+      ".303 British",
+      "7.62x39 mm",
+      "7.62x51 mm NATO",
+      "5.56x45 mm"
+    ],
+    "correct_index": 0,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_285",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon family best fits Bren gun?",
+    "options": [
+      "Kalashnikov rifle family",
+      "Commonwealth light machine gun",
+      "SIG Sauer rifle family",
+      "Indian small-arms family"
+    ],
+    "correct_index": 1,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_medium_286",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Bren gun?",
+    "options": [
+      "Russia/India",
+      "United States",
+      "United Kingdom/Czechoslovakia",
+      "India"
+    ],
+    "correct_index": 2,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_hard_199",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Bren gun?",
+    "options": [
+      "Manufactured in India at Korwa/Amethi",
+      "Indian Army 7.62 mm frontline rifle procurement",
+      "Indigenous rifle family used by Indian forces",
+      "Historic light machine gun used by Indian troops"
+    ],
+    "correct_index": 3,
+    "source_note": "small_arms_infantry_weapons"
+  },
+  {
+    "id": "def_easy_269",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Third-generation anti-tank guided missile?",
+    "options": [
+      "Nag",
+      "HELINA",
+      "Dhruvastra",
+      "MPATGM"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_270",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits Nag?",
+    "options": [
+      "Attack helicopter",
+      "NAMICA ground launcher",
+      "Helicopter",
+      "Infantry tripod/launcher"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_287",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits Nag?",
+    "options": [
+      "Wire-guided SACLOS",
+      "Electro-optical fire-and-forget/observe",
+      "Imaging infrared seeker",
+      "Unguided rocket"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_288",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Nag?",
+    "options": [
+      "France/Germany",
+      "Soviet Union/Russia",
+      "Israel",
+      "India"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_200",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Nag?",
+    "options": [
+      "DRDO fire-and-forget ATGM",
+      "Helicopter-launched Nag-family missile",
+      "Air-launched Nag-family weapon",
+      "Indian man-portable ATGM programme"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_271",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Helicopter-launched anti-tank missile?",
+    "options": [
+      "Nag",
+      "HELINA",
+      "Dhruvastra",
+      "MPATGM"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_272",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits HELINA?",
+    "options": [
+      "NAMICA ground launcher",
+      "Helicopter",
+      "Attack helicopter",
+      "Infantry tripod/launcher"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_289",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits HELINA?",
+    "options": [
+      "Wire-guided SACLOS",
+      "Electro-optical fire-and-forget/observe",
+      "Unguided rocket",
+      "Imaging infrared seeker"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_290",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with HELINA?",
+    "options": [
+      "India",
+      "France/Germany",
+      "Soviet Union/Russia",
+      "Israel"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_201",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies HELINA?",
+    "options": [
+      "DRDO fire-and-forget ATGM",
+      "Helicopter-launched Nag-family missile",
+      "Air-launched Nag-family weapon",
+      "Indian man-portable ATGM programme"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_273",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Air-launched anti-tank guided missile?",
+    "options": [
+      "Nag",
+      "HELINA",
+      "Dhruvastra",
+      "MPATGM"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_274",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits Dhruvastra?",
+    "options": [
+      "NAMICA ground launcher",
+      "Attack helicopter",
+      "Infantry tripod/launcher",
+      "Helicopter"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_291",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits Dhruvastra?",
+    "options": [
+      "Imaging infrared seeker",
+      "Wire-guided SACLOS",
+      "Electro-optical fire-and-forget/observe",
+      "Unguided rocket"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_292",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Dhruvastra?",
+    "options": [
+      "France/Germany",
+      "India",
+      "Soviet Union/Russia",
+      "Israel"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_202",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Dhruvastra?",
+    "options": [
+      "DRDO fire-and-forget ATGM",
+      "Helicopter-launched Nag-family missile",
+      "Air-launched Nag-family weapon",
+      "Indian man-portable ATGM programme"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_275",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Man-portable anti-tank guided missile?",
+    "options": [
+      "Nag",
+      "HELINA",
+      "Dhruvastra",
+      "MPATGM"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_276",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits MPATGM?",
+    "options": [
+      "Infantry tripod/launcher",
+      "NAMICA ground launcher",
+      "Attack helicopter",
+      "Helicopter"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_293",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits MPATGM?",
+    "options": [
+      "Wire-guided SACLOS",
+      "Imaging infrared seeker",
+      "Electro-optical fire-and-forget/observe",
+      "Unguided rocket"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_294",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with MPATGM?",
+    "options": [
+      "France/Germany",
+      "Soviet Union/Russia",
+      "India",
+      "Israel"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_203",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies MPATGM?",
+    "options": [
+      "DRDO fire-and-forget ATGM",
+      "Helicopter-launched Nag-family missile",
+      "Air-launched Nag-family weapon",
+      "Indian man-portable ATGM programme"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_277",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Infantry anti-tank guided missile?",
+    "options": [
+      "Milan-2T",
+      "Nag",
+      "HELINA",
+      "Dhruvastra"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_278",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits Milan-2T?",
+    "options": [
+      "NAMICA ground launcher",
+      "Portable launcher",
+      "Attack helicopter",
+      "Helicopter"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_295",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits Milan-2T?",
+    "options": [
+      "Imaging infrared seeker",
+      "Electro-optical fire-and-forget/observe",
+      "Wire-guided SACLOS",
+      "Unguided rocket"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_296",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Milan-2T?",
+    "options": [
+      "India",
+      "Soviet Union/Russia",
+      "Israel",
+      "France/Germany"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_204",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Milan-2T?",
+    "options": [
+      "BDL-produced Milan family ATGM",
+      "DRDO fire-and-forget ATGM",
+      "Helicopter-launched Nag-family missile",
+      "Air-launched Nag-family weapon"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_279",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Anti-tank guided missile?",
+    "options": [
+      "Nag",
+      "Konkurs-M",
+      "HELINA",
+      "Dhruvastra"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_280",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits Konkurs-M?",
+    "options": [
+      "NAMICA ground launcher",
+      "Attack helicopter",
+      "Vehicle or ground launcher",
+      "Helicopter"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_297",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits Konkurs-M?",
+    "options": [
+      "Imaging infrared seeker",
+      "Electro-optical fire-and-forget/observe",
+      "Unguided rocket",
+      "Wire-guided SACLOS"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_298",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Konkurs-M?",
+    "options": [
+      "Soviet Union/Russia",
+      "India",
+      "France/Germany",
+      "Israel"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_205",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Konkurs-M?",
+    "options": [
+      "DRDO fire-and-forget ATGM",
+      "Long-serving Russian-origin ATGM",
+      "Helicopter-launched Nag-family missile",
+      "Air-launched Nag-family weapon"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_281",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Long-range anti-tank guided missile?",
+    "options": [
+      "Nag",
+      "HELINA",
+      "Spike LR",
+      "Dhruvastra"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_282",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits Spike LR?",
+    "options": [
+      "NAMICA ground launcher",
+      "Attack helicopter",
+      "Helicopter",
+      "Portable or vehicle launcher"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_299",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits Spike LR?",
+    "options": [
+      "Electro-optical fire-and-forget/observe",
+      "Imaging infrared seeker",
+      "Wire-guided SACLOS",
+      "Unguided rocket"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_300",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Spike LR?",
+    "options": [
+      "India",
+      "Israel",
+      "France/Germany",
+      "Soviet Union/Russia"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_206",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Spike LR?",
+    "options": [
+      "DRDO fire-and-forget ATGM",
+      "Helicopter-launched Nag-family missile",
+      "Israeli long-range ATGM family",
+      "Air-launched Nag-family weapon"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_283",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Rocket-propelled grenade launcher?",
+    "options": [
+      "Nag",
+      "HELINA",
+      "Dhruvastra",
+      "RPG-7"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_284",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits RPG-7?",
+    "options": [
+      "Shoulder-fired launcher",
+      "NAMICA ground launcher",
+      "Attack helicopter",
+      "Helicopter"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_301",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits RPG-7?",
+    "options": [
+      "Imaging infrared seeker",
+      "Unguided rocket",
+      "Wire-guided SACLOS",
+      "Electro-optical fire-and-forget/observe"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_302",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with RPG-7?",
+    "options": [
+      "India",
+      "France/Germany",
+      "Soviet Union/Russia",
+      "Israel"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_207",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies RPG-7?",
+    "options": [
+      "DRDO fire-and-forget ATGM",
+      "Helicopter-launched Nag-family missile",
+      "Air-launched Nag-family weapon",
+      "Reusable shoulder-fired anti-armour launcher"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_285",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Recoilless anti-armour weapon?",
+    "options": [
+      "Carl Gustaf",
+      "Nag",
+      "HELINA",
+      "Dhruvastra"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_286",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits Carl Gustaf?",
+    "options": [
+      "NAMICA ground launcher",
+      "Shoulder-fired launcher",
+      "Attack helicopter",
+      "Helicopter"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_303",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits Carl Gustaf?",
+    "options": [
+      "Imaging infrared seeker",
+      "Wire-guided SACLOS",
+      "Unguided recoilless round",
+      "Electro-optical fire-and-forget/observe"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_304",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Carl Gustaf in the anti-armour role?",
+    "options": [
+      "India",
+      "France/Germany",
+      "Soviet Union/Russia",
+      "Sweden"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_208",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Carl Gustaf as an anti-armour weapon?",
+    "options": [
+      "84 mm reusable infantry support weapon",
+      "DRDO fire-and-forget ATGM",
+      "Helicopter-launched Nag-family missile",
+      "Air-launched Nag-family weapon"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_287",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which anti-armour weapon is best described as: Tracked Nag missile carrier?",
+    "options": [
+      "Nag",
+      "NAMICA",
+      "HELINA",
+      "Dhruvastra"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_288",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What launch platform best fits NAMICA?",
+    "options": [
+      "NAMICA ground launcher",
+      "Attack helicopter",
+      "BMP-2 based carrier",
+      "Helicopter"
+    ],
+    "correct_index": 2,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_305",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What guidance style best fits NAMICA?",
+    "options": [
+      "Imaging infrared seeker",
+      "Wire-guided SACLOS",
+      "Electro-optical fire-and-forget/observe",
+      "Nag missile fire-control system"
+    ],
+    "correct_index": 3,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_medium_306",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with NAMICA?",
+    "options": [
+      "India",
+      "France/Germany",
+      "Soviet Union/Russia",
+      "Israel"
+    ],
+    "correct_index": 0,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_hard_209",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies NAMICA?",
+    "options": [
+      "DRDO fire-and-forget ATGM",
+      "Carrier vehicle for Nag ATGMs",
+      "Helicopter-launched Nag-family missile",
+      "Air-launched Nag-family weapon"
+    ],
+    "correct_index": 1,
+    "source_note": "anti_tank_weapons"
+  },
+  {
+    "id": "def_easy_289",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Israeli MALE UAV has been used by India for long-endurance surveillance?",
+    "options": [
+      "Searcher Mk II",
+      "TAPAS BH-201",
+      "IAI Heron",
+      "Rustom-I"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_290",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits IAI Heron?",
+    "options": [
+      "Reconnaissance and surveillance",
+      "Long-endurance surveillance",
+      "Surveillance technology development",
+      "Intelligence, surveillance and reconnaissance"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_307",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with IAI Heron?",
+    "options": [
+      "Israel",
+      "India",
+      "United States",
+      "India/Israel"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_308",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits IAI Heron?",
+    "options": [
+      "Runway or assisted launch",
+      "Runway take-off",
+      "Catapult launch",
+      "Launcher-assisted take-off"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_210",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies IAI Heron?",
+    "options": [
+      "Tactical ISR UAV used by Indian forces",
+      "Also known as Rustom-II",
+      "MALE surveillance UAV used by India",
+      "DRDO UAV technology demonstrator"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_291",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which unmanned system is best described as: Tactical surveillance UAV?",
+    "options": [
+      "IAI Heron",
+      "TAPAS BH-201",
+      "Rustom-I",
+      "Searcher Mk II"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_292",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits Searcher Mk II?",
+    "options": [
+      "Reconnaissance and surveillance",
+      "Intelligence, surveillance and reconnaissance",
+      "Long-endurance surveillance",
+      "Surveillance technology development"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_309",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Searcher Mk II?",
+    "options": [
+      "India",
+      "Israel",
+      "United States",
+      "India/Israel"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_310",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits Searcher Mk II?",
+    "options": [
+      "Runway take-off",
+      "Catapult launch",
+      "Runway or assisted launch",
+      "Launcher-assisted take-off"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_211",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Searcher Mk II?",
+    "options": [
+      "MALE surveillance UAV used by India",
+      "Also known as Rustom-II",
+      "DRDO UAV technology demonstrator",
+      "Tactical ISR UAV used by Indian forces"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_293",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which unmanned system is best described as: DRDO MALE UAV?",
+    "options": [
+      "TAPAS BH-201",
+      "IAI Heron",
+      "Searcher Mk II",
+      "Rustom-I"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_294",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits TAPAS BH-201?",
+    "options": [
+      "Intelligence, surveillance and reconnaissance",
+      "Long-endurance surveillance",
+      "Reconnaissance and surveillance",
+      "Surveillance technology development"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_311",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with TAPAS BH-201?",
+    "options": [
+      "Israel",
+      "United States",
+      "India",
+      "India/Israel"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_312",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits TAPAS BH-201?",
+    "options": [
+      "Runway or assisted launch",
+      "Catapult launch",
+      "Launcher-assisted take-off",
+      "Runway take-off"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_212",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies TAPAS BH-201?",
+    "options": [
+      "Also known as Rustom-II",
+      "MALE surveillance UAV used by India",
+      "Tactical ISR UAV used by Indian forces",
+      "DRDO UAV technology demonstrator"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_295",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which unmanned system is best described as: Tactical UAV demonstrator?",
+    "options": [
+      "IAI Heron",
+      "Rustom-I",
+      "Searcher Mk II",
+      "TAPAS BH-201"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_296",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits Rustom-I?",
+    "options": [
+      "Intelligence, surveillance and reconnaissance",
+      "Reconnaissance and surveillance",
+      "Surveillance technology development",
+      "Long-endurance surveillance"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_313",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Rustom-I?",
+    "options": [
+      "Israel",
+      "United States",
+      "India/Israel",
+      "India"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_314",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits Rustom-I?",
+    "options": [
+      "Runway take-off",
+      "Runway or assisted launch",
+      "Catapult launch",
+      "Launcher-assisted take-off"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_213",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Rustom-I?",
+    "options": [
+      "MALE surveillance UAV used by India",
+      "DRDO UAV technology demonstrator",
+      "Tactical ISR UAV used by Indian forces",
+      "Also known as Rustom-II"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_297",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which DRDO tactical UAV used catapult launch for battlefield reconnaissance?",
+    "options": [
+      "IAI Heron",
+      "Searcher Mk II",
+      "DRDO Nishant",
+      "TAPAS BH-201"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_298",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits DRDO Nishant?",
+    "options": [
+      "Intelligence, surveillance and reconnaissance",
+      "Reconnaissance and surveillance",
+      "Long-endurance surveillance",
+      "Battlefield reconnaissance"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_315",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with DRDO Nishant?",
+    "options": [
+      "India",
+      "Israel",
+      "United States",
+      "India/Israel"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_316",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits DRDO Nishant?",
+    "options": [
+      "Runway take-off",
+      "Catapult launch",
+      "Runway or assisted launch",
+      "Launcher-assisted take-off"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_214",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies DRDO Nishant?",
+    "options": [
+      "MALE surveillance UAV used by India",
+      "Tactical ISR UAV used by Indian forces",
+      "Catapult-launched Indian tactical UAV",
+      "Also known as Rustom-II"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_299",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which unmanned system is best described as: Pilotless target aircraft?",
+    "options": [
+      "IAI Heron",
+      "Searcher Mk II",
+      "TAPAS BH-201",
+      "DRDO Lakshya"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_300",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits DRDO Lakshya?",
+    "options": [
+      "Target training for air defence",
+      "Intelligence, surveillance and reconnaissance",
+      "Reconnaissance and surveillance",
+      "Long-endurance surveillance"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_317",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with DRDO Lakshya?",
+    "options": [
+      "Israel",
+      "India",
+      "United States",
+      "India/Israel"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_318",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits DRDO Lakshya?",
+    "options": [
+      "Runway take-off",
+      "Runway or assisted launch",
+      "Launcher-assisted take-off",
+      "Catapult launch"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_215",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies DRDO Lakshya?",
+    "options": [
+      "MALE surveillance UAV used by India",
+      "Tactical ISR UAV used by Indian forces",
+      "Also known as Rustom-II",
+      "Reusable aerial target system"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_301",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which unmanned system is best described as: High-endurance remotely piloted aircraft?",
+    "options": [
+      "MQ-9B SeaGuardian",
+      "IAI Heron",
+      "Searcher Mk II",
+      "TAPAS BH-201"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_302",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits MQ-9B SeaGuardian?",
+    "options": [
+      "Intelligence, surveillance and reconnaissance",
+      "Maritime surveillance and strike-capable ISR",
+      "Reconnaissance and surveillance",
+      "Long-endurance surveillance"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_319",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with MQ-9B SeaGuardian?",
+    "options": [
+      "Israel",
+      "India",
+      "United States",
+      "India/Israel"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_320",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits MQ-9B SeaGuardian?",
+    "options": [
+      "Runway or assisted launch",
+      "Catapult launch",
+      "Launcher-assisted take-off",
+      "Runway take-off"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_216",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies MQ-9B SeaGuardian?",
+    "options": [
+      "Predator-family maritime RPAS",
+      "MALE surveillance UAV used by India",
+      "Tactical ISR UAV used by Indian forces",
+      "Also known as Rustom-II"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_303",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Hermes 900-derived MALE UAV is assembled in India as Drishti-10?",
+    "options": [
+      "IAI Heron",
+      "Drishti-10 Starliner",
+      "Searcher Mk II",
+      "TAPAS BH-201"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_304",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits Drishti-10 Starliner?",
+    "options": [
+      "Intelligence, surveillance and reconnaissance",
+      "Reconnaissance and surveillance",
+      "Maritime and land ISR",
+      "Long-endurance surveillance"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_321",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Drishti-10 Starliner?",
+    "options": [
+      "Israel",
+      "India",
+      "United States",
+      "India/Israel"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_322",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits Drishti-10 Starliner?",
+    "options": [
+      "Runway take-off",
+      "Runway or assisted launch",
+      "Catapult launch",
+      "Launcher-assisted take-off"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_217",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Drishti-10 Starliner?",
+    "options": [
+      "MALE surveillance UAV used by India",
+      "Hermes 900-derived UAV assembled in India",
+      "Tactical ISR UAV used by Indian forces",
+      "Also known as Rustom-II"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_305",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which unmanned system is best described as: Mini quadcopter UAV?",
+    "options": [
+      "IAI Heron",
+      "Searcher Mk II",
+      "Netra UAV",
+      "TAPAS BH-201"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_306",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits Netra UAV?",
+    "options": [
+      "Intelligence, surveillance and reconnaissance",
+      "Reconnaissance and surveillance",
+      "Long-endurance surveillance",
+      "Short-range surveillance"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_323",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Netra UAV?",
+    "options": [
+      "India",
+      "Israel",
+      "United States",
+      "India/Israel"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_324",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits Netra UAV?",
+    "options": [
+      "Runway take-off",
+      "Vertical take-off",
+      "Runway or assisted launch",
+      "Catapult launch"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_218",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Netra UAV?",
+    "options": [
+      "MALE surveillance UAV used by India",
+      "Tactical ISR UAV used by Indian forces",
+      "Indian mini UAV used for tactical surveillance",
+      "Also known as Rustom-II"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_307",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which unmanned system is best described as: Loitering munition?",
+    "options": [
+      "IAI Heron",
+      "Searcher Mk II",
+      "TAPAS BH-201",
+      "Nagastra-1"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_308",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What mission best fits Nagastra-1?",
+    "options": [
+      "Precision attack after loitering",
+      "Intelligence, surveillance and reconnaissance",
+      "Reconnaissance and surveillance",
+      "Long-endurance surveillance"
+    ],
+    "correct_index": 0,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_325",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Nagastra-1?",
+    "options": [
+      "Israel",
+      "India",
+      "United States",
+      "India/Israel"
+    ],
+    "correct_index": 1,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_medium_326",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch method best fits Nagastra-1?",
+    "options": [
+      "Runway take-off",
+      "Runway or assisted launch",
+      "Portable launcher",
+      "Catapult launch"
+    ],
+    "correct_index": 2,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_hard_219",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Nagastra-1?",
+    "options": [
+      "MALE surveillance UAV used by India",
+      "Tactical ISR UAV used by Indian forces",
+      "Also known as Rustom-II",
+      "Indian loitering munition"
+    ],
+    "correct_index": 3,
+    "source_note": "drones_uavs_loitering"
+  },
+  {
+    "id": "def_easy_309",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which DRDO indigenous medium-range SAM system came before Akash-NG?",
+    "options": [
+      "Akash",
+      "Akash-NG",
+      "QRSAM",
+      "VL-SRSAM"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_310",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits Akash?",
+    "options": [
+      "Short to medium range",
+      "Medium range",
+      "Short range",
+      "Long range"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_327",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits Akash?",
+    "options": [
+      "Ground-based launcher",
+      "Mobile ground launcher",
+      "Ground-based mobile launcher",
+      "Naval vertical launch system"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_328",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Akash?",
+    "options": [
+      "India/Israel",
+      "Russia",
+      "Israel",
+      "India"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_220",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Akash?",
+    "options": [
+      "DRDO indigenous SAM system",
+      "New-generation Akash family missile",
+      "Quick-reaction SAM for mobile formations",
+      "Shipborne short-range air defence missile"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_311",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which air defence system is best described as: New-generation surface-to-air missile?",
+    "options": [
+      "Akash",
+      "Akash-NG",
+      "QRSAM",
+      "VL-SRSAM"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_312",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits Akash-NG?",
+    "options": [
+      "Short to medium range",
+      "Short range",
+      "Medium range",
+      "Long range"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_329",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits Akash-NG?",
+    "options": [
+      "Ground-based mobile launcher",
+      "Mobile ground launcher",
+      "Naval vertical launch system",
+      "Ground-based launcher"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_330",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Akash-NG?",
+    "options": [
+      "India",
+      "India/Israel",
+      "Russia",
+      "Israel"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_221",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Akash-NG?",
+    "options": [
+      "DRDO indigenous SAM system",
+      "New-generation Akash family missile",
+      "Quick-reaction SAM for mobile formations",
+      "Shipborne short-range air defence missile"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_313",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which air defence system is best described as: Quick-reaction surface-to-air missile?",
+    "options": [
+      "Akash",
+      "Akash-NG",
+      "QRSAM",
+      "VL-SRSAM"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_314",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits QRSAM?",
+    "options": [
+      "Medium range",
+      "Short range",
+      "Long range",
+      "Short to medium range"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_331",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits QRSAM?",
+    "options": [
+      "Mobile ground launcher",
+      "Ground-based mobile launcher",
+      "Ground-based launcher",
+      "Naval vertical launch system"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_332",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with QRSAM?",
+    "options": [
+      "India/Israel",
+      "India",
+      "Russia",
+      "Israel"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_222",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies QRSAM?",
+    "options": [
+      "DRDO indigenous SAM system",
+      "New-generation Akash family missile",
+      "Quick-reaction SAM for mobile formations",
+      "Shipborne short-range air defence missile"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_315",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which air defence system is best described as: Vertical-launch short-range surface-to-air missile?",
+    "options": [
+      "Akash",
+      "Akash-NG",
+      "QRSAM",
+      "VL-SRSAM"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_316",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits VL-SRSAM?",
+    "options": [
+      "Short range",
+      "Medium range",
+      "Short to medium range",
+      "Long range"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_333",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits VL-SRSAM?",
+    "options": [
+      "Ground-based mobile launcher",
+      "Naval vertical launch system",
+      "Ground-based launcher",
+      "Mobile ground launcher"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_334",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with VL-SRSAM?",
+    "options": [
+      "India/Israel",
+      "Russia",
+      "India",
+      "Israel"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_223",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies VL-SRSAM?",
+    "options": [
+      "DRDO indigenous SAM system",
+      "New-generation Akash family missile",
+      "Quick-reaction SAM for mobile formations",
+      "Shipborne short-range air defence missile"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_317",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which India-Israel missile family is also known as MRSAM or Barak-8?",
+    "options": [
+      "MRSAM/Barak-8",
+      "Akash",
+      "Akash-NG",
+      "QRSAM"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_318",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits MRSAM/Barak-8?",
+    "options": [
+      "Short to medium range",
+      "Medium range",
+      "Short range",
+      "Long range"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_335",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits MRSAM/Barak-8?",
+    "options": [
+      "Ground-based mobile launcher",
+      "Ground-based launcher",
+      "Ground and naval launchers",
+      "Mobile ground launcher"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_336",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with MRSAM/Barak-8?",
+    "options": [
+      "India",
+      "Russia",
+      "Israel",
+      "India/Israel"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_224",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies MRSAM/Barak-8?",
+    "options": [
+      "Joint India-Israel air defence missile",
+      "DRDO indigenous SAM system",
+      "New-generation Akash family missile",
+      "Quick-reaction SAM for mobile formations"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_319",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which air defence system is best described as: Long-range air defence system?",
+    "options": [
+      "Akash",
+      "S-400 Triumf",
+      "Akash-NG",
+      "QRSAM"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_320",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits S-400 Triumf?",
+    "options": [
+      "Medium range",
+      "Short to medium range",
+      "Long range",
+      "Short range"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_337",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits S-400 Triumf?",
+    "options": [
+      "Ground-based mobile launcher",
+      "Ground-based launcher",
+      "Mobile ground launcher",
+      "Mobile ground launchers"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_338",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with S-400 Triumf?",
+    "options": [
+      "Russia",
+      "India",
+      "India/Israel",
+      "Israel"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_225",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies S-400 Triumf?",
+    "options": [
+      "DRDO indigenous SAM system",
+      "Russian long-range air defence system bought by India",
+      "New-generation Akash family missile",
+      "Quick-reaction SAM for mobile formations"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_321",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Israeli quick-reaction air defence system uses Python and Derby missiles?",
+    "options": [
+      "Akash",
+      "Akash-NG",
+      "SPYDER",
+      "QRSAM"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_322",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits SPYDER?",
+    "options": [
+      "Medium range",
+      "Short to medium range",
+      "Long range",
+      "Short range"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_339",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits SPYDER?",
+    "options": [
+      "Mobile ground launcher",
+      "Ground-based mobile launcher",
+      "Ground-based launcher",
+      "Naval vertical launch system"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_340",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with SPYDER?",
+    "options": [
+      "India",
+      "Israel",
+      "India/Israel",
+      "Russia"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_226",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies SPYDER?",
+    "options": [
+      "DRDO indigenous SAM system",
+      "New-generation Akash family missile",
+      "Uses Python and Derby missile family",
+      "Quick-reaction SAM for mobile formations"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_323",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which air defence system is best described as: Man-portable air defence system?",
+    "options": [
+      "Akash",
+      "Akash-NG",
+      "QRSAM",
+      "Igla-S"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_324",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits Igla-S?",
+    "options": [
+      "Very short range",
+      "Medium range",
+      "Short to medium range",
+      "Short range"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_341",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits Igla-S?",
+    "options": [
+      "Ground-based mobile launcher",
+      "Shoulder-fired launcher",
+      "Ground-based launcher",
+      "Mobile ground launcher"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_342",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with Igla-S?",
+    "options": [
+      "India",
+      "India/Israel",
+      "Russia",
+      "Israel"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_227",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies Igla-S?",
+    "options": [
+      "DRDO indigenous SAM system",
+      "New-generation Akash family missile",
+      "Quick-reaction SAM for mobile formations",
+      "MANPADS used for point air defence"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_325",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which air defence system is best described as: Anti-aircraft gun?",
+    "options": [
+      "L-70 gun",
+      "Akash",
+      "Akash-NG",
+      "QRSAM"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_326",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits L-70 gun?",
+    "options": [
+      "Medium range",
+      "Short range",
+      "Short to medium range",
+      "Long range"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_343",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits L-70 gun?",
+    "options": [
+      "Ground-based mobile launcher",
+      "Ground-based launcher",
+      "Towed gun system",
+      "Mobile ground launcher"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_344",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with L-70 gun?",
+    "options": [
+      "India",
+      "India/Israel",
+      "Russia",
+      "Sweden"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_228",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies L-70 gun?",
+    "options": [
+      "40 mm air defence gun",
+      "DRDO indigenous SAM system",
+      "New-generation Akash family missile",
+      "Quick-reaction SAM for mobile formations"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_327",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which air defence system is best described as: Twin-barrel anti-aircraft gun?",
+    "options": [
+      "Akash",
+      "ZU-23-2",
+      "Akash-NG",
+      "QRSAM"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_easy_328",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What range class best fits ZU-23-2?",
+    "options": [
+      "Medium range",
+      "Short to medium range",
+      "Short range",
+      "Long range"
+    ],
+    "correct_index": 2,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_345",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What launch platform best fits ZU-23-2?",
+    "options": [
+      "Ground-based mobile launcher",
+      "Ground-based launcher",
+      "Mobile ground launcher",
+      "Towed or vehicle-mounted gun"
+    ],
+    "correct_index": 3,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_medium_346",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What is the origin most associated with ZU-23-2?",
+    "options": [
+      "Soviet Union/Russia",
+      "India",
+      "India/Israel",
+      "Russia"
+    ],
+    "correct_index": 0,
+    "source_note": "air_defence_systems"
+  },
+  {
+    "id": "def_hard_229",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which description best identifies ZU-23-2?",
+    "options": [
+      "DRDO indigenous SAM system",
+      "23 mm twin anti-aircraft gun",
+      "New-generation Akash family missile",
+      "Quick-reaction SAM for mobile formations"
+    ],
+    "correct_index": 1,
+    "source_note": "air_defence_systems"
+  }
+]

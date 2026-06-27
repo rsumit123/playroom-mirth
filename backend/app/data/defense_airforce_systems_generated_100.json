@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "def_easy_329",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which concept means attacking from outside the immediate reach of enemy defences?",
+    "options": [
+      "Standoff strike",
+      "Dogfighting",
+      "Aerial refuelling",
+      "Formation landing"
+    ],
+    "correct_index": 0,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_easy_330",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which IAF fighter is a French-origin omnirole aircraft with Meteor and SCALP capability?",
+    "options": [
+      "Mirage 2000",
+      "Rafale",
+      "Jaguar",
+      "MiG-29UPG"
+    ],
+    "correct_index": 1,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_easy_331",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian fighter is manufactured by HAL as the Light Combat Aircraft?",
+    "options": [
+      "Rafale",
+      "Mirage 2000",
+      "Tejas",
+      "Jaguar"
+    ],
+    "correct_index": 2,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_easy_332",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which IAF aircraft is strongly associated with the 2019 Balakot strike?",
+    "options": [
+      "Rafale",
+      "Tejas",
+      "MiG-29UPG",
+      "Mirage 2000"
+    ],
+    "correct_index": 3,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_easy_333",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which upgraded MiG-29 variant serves the IAF in the air-superiority role?",
+    "options": [
+      "MiG-29UPG",
+      "MiG-29K",
+      "MiG-21 Bison",
+      "MiG-27"
+    ],
+    "correct_index": 0,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_easy_334",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which IAF aircraft is a deep-strike platform originally developed by Britain and France?",
+    "options": [
+      "Mirage 2000",
+      "Jaguar",
+      "Rafale",
+      "Tejas"
+    ],
+    "correct_index": 1,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_easy_335",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which aircraft is the IAF's heavy strategic airlifter?",
+    "options": [
+      "C-130J Super Hercules",
+      "IL-78MKI",
+      "C-17 Globemaster III",
+      "C-295"
+    ],
+    "correct_index": 2,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_easy_336",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which aircraft is the IAF's tactical airlifter used for special operations?",
+    "options": [
+      "C-17 Globemaster III",
+      "IL-78MKI",
+      "Netra AEW&C",
+      "C-130J Super Hercules"
+    ],
+    "correct_index": 3,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_easy_337",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which IAF aircraft is primarily an aerial refuelling tanker?",
+    "options": [
+      "IL-78MKI",
+      "C-17 Globemaster III",
+      "Netra AEW&C",
+      "C-130J Super Hercules"
+    ],
+    "correct_index": 0,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_easy_338",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which larger IAF AWACS platform is based on the Il-76 airframe?",
+    "options": [
+      "Phalcon AWACS",
+      "Netra AEW&C",
+      "IL-78MKI",
+      "C-295"
+    ],
+    "correct_index": 0,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_easy_339",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which IAF helicopter is a medium-lift transport workhorse?",
+    "options": [
+      "CH-47F Chinook",
+      "Mi-17V5",
+      "AH-64E Apache",
+      "HAL Prachand"
+    ],
+    "correct_index": 1,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_easy_340",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which IAF helicopter is a dedicated attack helicopter made by Boeing?",
+    "options": [
+      "CH-47F Chinook",
+      "Mi-17V5",
+      "HAL Dhruv",
+      "AH-64E Apache"
+    ],
+    "correct_index": 3,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_easy_341",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian helicopter is HAL's Light Combat Helicopter?",
+    "options": [
+      "Prachand",
+      "Rudra",
+      "Dhruv",
+      "Chetak"
+    ],
+    "correct_index": 0,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_easy_342",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which armed helicopter is based on the HAL Dhruv family?",
+    "options": [
+      "Prachand",
+      "Rudra",
+      "Apache",
+      "Chinook"
+    ],
+    "correct_index": 1,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_easy_343",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile type is meant to engage aircraft beyond visual range?",
+    "options": [
+      "WVR air-to-air missile",
+      "Anti-radiation missile",
+      "BVR air-to-air missile",
+      "Cruise missile"
+    ],
+    "correct_index": 2,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_easy_344",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "In air combat, what does WVR usually mean?",
+    "options": [
+      "Weapon-velocity rating",
+      "Wide-vector radar",
+      "Wing-vortex regime",
+      "Within-visual-range"
+    ],
+    "correct_index": 3,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_easy_345",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile type is most relevant in close-range dogfighting?",
+    "options": [
+      "Infrared WVR missile",
+      "Submarine-launched missile",
+      "Anti-ship cruise missile",
+      "Anti-tank missile"
+    ],
+    "correct_index": 0,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_easy_346",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which mission attacks enemy radar and air-defence emitters?",
+    "options": [
+      "Airlift",
+      "SEAD",
+      "Aerial refuelling",
+      "Air policing"
+    ],
+    "correct_index": 1,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_easy_347",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which aircraft sensor type can scan electronically without mechanically steering the antenna?",
+    "options": [
+      "Pulse-only altimeter",
+      "Optical gunsight",
+      "AESA radar",
+      "Magnetic compass"
+    ],
+    "correct_index": 2,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_easy_348",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which cockpit system helps a pilot cue weapons by looking toward a target?",
+    "options": [
+      "Drop tank",
+      "Airbrake",
+      "Refuelling probe",
+      "Helmet-mounted sight"
+    ],
+    "correct_index": 3,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_easy_349",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile category does Astra belong to?",
+    "options": [
+      "BVR air-to-air missile",
+      "Anti-radiation missile",
+      "WVR air-to-air missile",
+      "Anti-tank missile"
+    ],
+    "correct_index": 0,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_easy_350",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile category does Rudram-1 belong to?",
+    "options": [
+      "WVR air-to-air missile",
+      "Anti-radiation missile",
+      "Anti-tank missile",
+      "Submarine-launched missile"
+    ],
+    "correct_index": 1,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_easy_351",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Rafale missile is known for long-range BVR air combat?",
+    "options": [
+      "SCALP",
+      "HAMMER",
+      "Meteor",
+      "Rudram-1"
+    ],
+    "correct_index": 2,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_easy_352",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Rafale weapon is a long-range cruise missile for deep strike?",
+    "options": [
+      "Meteor",
+      "MICA",
+      "Astra",
+      "SCALP"
+    ],
+    "correct_index": 3,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_easy_353",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Rafale weapon is a precision-guided bomb kit?",
+    "options": [
+      "HAMMER",
+      "Meteor",
+      "MICA",
+      "R-77"
+    ],
+    "correct_index": 0,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_easy_354",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile family includes both IR and RF air-to-air variants on Rafale?",
+    "options": [
+      "Meteor",
+      "MICA",
+      "SCALP",
+      "HAMMER"
+    ],
+    "correct_index": 1,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_easy_355",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Russian-origin BVR missile family is associated with Su-30MKI and MiG-29UPG?",
+    "options": [
+      "R-73",
+      "R-27",
+      "R-77",
+      "Kh-31"
+    ],
+    "correct_index": 2,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_easy_356",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Russian-origin WVR missile family is associated with close air combat?",
+    "options": [
+      "R-77",
+      "Kh-59",
+      "R-27",
+      "R-73"
+    ],
+    "correct_index": 3,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_easy_357",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which IAF aircraft type carries airborne warning and control radar?",
+    "options": [
+      "AWACS/AEW&C aircraft",
+      "Aerial tanker",
+      "Attack helicopter",
+      "Trainer aircraft"
+    ],
+    "correct_index": 0,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_easy_358",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which aircraft role moves troops and cargo across long distances?",
+    "options": [
+      "Air superiority",
+      "Strategic airlift",
+      "SEAD",
+      "Close air support"
+    ],
+    "correct_index": 1,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_medium_347",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which platform role best fits Rafale in IAF service?",
+    "options": [
+      "Heavy airlifter",
+      "Aerial tanker",
+      "Omnirole fighter",
+      "AEW&C aircraft"
+    ],
+    "correct_index": 2,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_medium_348",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which platform role best fits Su-30MKI?",
+    "options": [
+      "Light utility helicopter",
+      "Strategic airlifter",
+      "Basic trainer",
+      "Heavy multirole fighter"
+    ],
+    "correct_index": 3,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_medium_349",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which platform role best fits Tejas Mk1/Mk1A?",
+    "options": [
+      "Light multirole fighter",
+      "Heavy bomber",
+      "Aerial tanker",
+      "Attack helicopter"
+    ],
+    "correct_index": 0,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_medium_350",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which platform role best fits Jaguar in IAF service?",
+    "options": [
+      "AEW&C aircraft",
+      "Deep-strike aircraft",
+      "Heavy-lift helicopter",
+      "Aerial tanker"
+    ],
+    "correct_index": 1,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_medium_351",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which platform role best fits Mirage 2000 in IAF service?",
+    "options": [
+      "Heavy airlifter",
+      "Trainer helicopter",
+      "Multirole strike fighter",
+      "Aerial tanker"
+    ],
+    "correct_index": 2,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_medium_352",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which aircraft role best fits MiG-29UPG?",
+    "options": [
+      "Strategic airlifter",
+      "Attack helicopter",
+      "AEW&C platform",
+      "Air-superiority fighter"
+    ],
+    "correct_index": 3,
+    "source_note": "air_platforms"
+  },
+  {
+    "id": "def_medium_353",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which aircraft role best fits C-17 Globemaster III?",
+    "options": [
+      "Heavy strategic airlift",
+      "Aerial refuelling",
+      "Close air support",
+      "Airborne warning"
+    ],
+    "correct_index": 0,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_medium_354",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which aircraft role best fits C-130J Super Hercules?",
+    "options": [
+      "Heavy strategic airlift",
+      "Tactical airlift and special operations",
+      "Airborne early warning",
+      "Dedicated air superiority"
+    ],
+    "correct_index": 1,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_medium_355",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which aircraft role best fits IL-78MKI?",
+    "options": [
+      "Tactical airlift",
+      "Airborne early warning",
+      "Aerial refuelling",
+      "Close air support"
+    ],
+    "correct_index": 2,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_medium_356",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which aircraft role best fits Netra AEW&C?",
+    "options": [
+      "Aerial refuelling",
+      "Heavy strategic airlift",
+      "Attack helicopter",
+      "Airborne early warning and control"
+    ],
+    "correct_index": 3,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_medium_357",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which helicopter role best fits AH-64E Apache?",
+    "options": [
+      "Attack helicopter",
+      "Heavy-lift helicopter",
+      "AEW&C helicopter",
+      "Basic trainer"
+    ],
+    "correct_index": 0,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_medium_358",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which helicopter role best fits CH-47F Chinook?",
+    "options": [
+      "Attack helicopter",
+      "Heavy-lift helicopter",
+      "Light observation helicopter",
+      "AEW&C helicopter"
+    ],
+    "correct_index": 1,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_medium_359",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which helicopter role best fits Prachand?",
+    "options": [
+      "Heavy-lift helicopter",
+      "Aerial tanker",
+      "High-altitude light combat helicopter",
+      "Maritime patrol aircraft"
+    ],
+    "correct_index": 2,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_medium_360",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which helicopter role best fits Mi-17V5?",
+    "options": [
+      "Carrier-borne fighter",
+      "AEW&C aircraft",
+      "Strategic airlifter",
+      "Medium-lift transport helicopter"
+    ],
+    "correct_index": 3,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_medium_361",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which air-combat term describes engaging targets before pilots can see them visually?",
+    "options": [
+      "BVR combat",
+      "WVR combat",
+      "Taxiing",
+      "Formation landing"
+    ],
+    "correct_index": 0,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_medium_362",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which air-combat term describes close-range visual engagements?",
+    "options": [
+      "BVR combat",
+      "WVR combat",
+      "Strategic airlift",
+      "Aerial refuelling"
+    ],
+    "correct_index": 1,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_medium_363",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which capability is most useful for a fighter in BVR combat?",
+    "options": [
+      "Cargo ramp",
+      "Tandem rotors",
+      "Radar and active radar missiles",
+      "Towed decoy only"
+    ],
+    "correct_index": 2,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_medium_364",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which capability is most useful in close WVR dogfighting?",
+    "options": [
+      "Cargo pallet loading",
+      "Aerial refuelling boom",
+      "Long runway braking",
+      "High off-boresight missile cueing"
+    ],
+    "correct_index": 3,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_medium_365",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which mission type tries to reduce enemy air-defence radar threats?",
+    "options": [
+      "SEAD",
+      "Strategic airlift",
+      "Combat search logistics",
+      "Basic flying training"
+    ],
+    "correct_index": 0,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_medium_366",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which mission type focuses on gaining control of the air against enemy aircraft?",
+    "options": [
+      "Aerial refuelling",
+      "Air superiority",
+      "Troop transport",
+      "Maritime sealift"
+    ],
+    "correct_index": 1,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_medium_367",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which mission type attacks enemy ground targets behind the front line?",
+    "options": [
+      "Air superiority patrol",
+      "Aerial refuelling",
+      "Air interdiction",
+      "Airborne early warning"
+    ],
+    "correct_index": 2,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_medium_368",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which mission type supports friendly ground troops near the battlefield?",
+    "options": [
+      "Strategic airlift",
+      "Airborne early warning",
+      "Aerial refuelling",
+      "Close air support"
+    ],
+    "correct_index": 3,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_medium_369",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which sensor is associated with Rafale's modern radar family?",
+    "options": [
+      "RBE2 AESA",
+      "N011M Bars",
+      "Uttam AESA",
+      "EL/M-2248 MF-STAR"
+    ],
+    "correct_index": 0,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_medium_370",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which avionics system helps aircraft identify friendly aircraft electronically?",
+    "options": [
+      "Radar warning receiver",
+      "AESA radar",
+      "IFF transponder",
+      "Laser designator"
+    ],
+    "correct_index": 2,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_medium_371",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which radar concept uses many transmit-receive modules for electronic scanning?",
+    "options": [
+      "Mechanical radar",
+      "Radar altimeter",
+      "Weather radar",
+      "AESA radar"
+    ],
+    "correct_index": 3,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_medium_372",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which airborne system lets commanders see farther than ground radar limited by terrain?",
+    "options": [
+      "Drop tank",
+      "Gun pod",
+      "Airbrake",
+      "AWACS/AEW&C"
+    ],
+    "correct_index": 3,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_medium_373",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which system warns a fighter that hostile radar may be tracking it?",
+    "options": [
+      "Radar warning receiver",
+      "Cargo winch",
+      "Weather vane",
+      "Landing hook"
+    ],
+    "correct_index": 0,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_medium_374",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which defensive aids are released to confuse missiles?",
+    "options": [
+      "Drop tanks",
+      "Chaff and flares",
+      "Wheel chocks",
+      "Cargo pallets"
+    ],
+    "correct_index": 1,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_medium_375",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which missile is an Indian BVR air-to-air weapon?",
+    "options": [
+      "Rudram-1",
+      "SCALP",
+      "Astra",
+      "HAMMER"
+    ],
+    "correct_index": 2,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_376",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which missile is designed to home on enemy radar emissions?",
+    "options": [
+      "Astra",
+      "Meteor",
+      "MICA",
+      "Rudram-1"
+    ],
+    "correct_index": 3,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_377",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "SCALP is best matched with which strike role?",
+    "options": [
+      "Air-launched deep strike",
+      "Close dogfight",
+      "Aerial refuelling",
+      "Anti-tank ambush"
+    ],
+    "correct_index": 0,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_378",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "HAMMER is closest to which aircraft weapon category?",
+    "options": [
+      "BVR missile",
+      "Precision-guided bomb kit",
+      "Anti-radiation missile",
+      "Aerial refuelling pod"
+    ],
+    "correct_index": 1,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_379",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Meteor is primarily used in which air-combat envelope?",
+    "options": [
+      "Anti-radiation missile",
+      "Precision bomb kit",
+      "Long-range BVR combat",
+      "Cruise missile"
+    ],
+    "correct_index": 2,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_380",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "R-73 is primarily used in which air-combat envelope?",
+    "options": [
+      "BVR radar combat",
+      "Deep strike",
+      "Aerial refuelling",
+      "Close WVR combat"
+    ],
+    "correct_index": 3,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_381",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "R-77 is primarily used in which air-combat envelope?",
+    "options": [
+      "BVR radar-guided combat",
+      "Close infrared combat",
+      "Precision bombing",
+      "Anti-tank attack"
+    ],
+    "correct_index": 0,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_382",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon type best describes MICA?",
+    "options": [
+      "Heavy torpedo",
+      "Air-to-air missile family",
+      "Rocket artillery",
+      "Infantry mortar"
+    ],
+    "correct_index": 1,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_383",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which platform pairing is most natural for Meteor in Indian service?",
+    "options": [
+      "C-17",
+      "Apache",
+      "Rafale",
+      "IL-78MKI"
+    ],
+    "correct_index": 2,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_384",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which platform pairing is most natural for Astra in Indian service?",
+    "options": [
+      "C-130J",
+      "Chinook",
+      "IL-78MKI",
+      "Su-30MKI"
+    ],
+    "correct_index": 3,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_385",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which platform pairing is most natural for Rudram-1 testing and carriage?",
+    "options": [
+      "Su-30MKI",
+      "C-17",
+      "Prachand",
+      "C-295"
+    ],
+    "correct_index": 0,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_medium_386",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which concept describes using tankers to extend fighter range?",
+    "options": [
+      "Air interdiction",
+      "Aerial refuelling",
+      "Dogfighting",
+      "Taxiing"
+    ],
+    "correct_index": 1,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_hard_230",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Why are active radar-homing missiles important in BVR combat?",
+    "options": [
+      "They replace aircraft engines",
+      "They make aircraft invisible",
+      "They can guide themselves in the terminal phase",
+      "They carry cargo pallets"
+    ],
+    "correct_index": 2,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_hard_231",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "What does high off-boresight missile capability help a pilot do?",
+    "options": [
+      "Carry more fuel in the wing",
+      "Land on shorter runways",
+      "Refuel cargo aircraft",
+      "Engage targets away from the aircraft nose direction"
+    ],
+    "correct_index": 3,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_hard_232",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "What is the main purpose of a helmet-mounted sight in air combat?",
+    "options": [
+      "Cue sensors or missiles toward where the pilot looks",
+      "Increase cargo capacity",
+      "Reduce runway length",
+      "Act as an oxygen generator"
+    ],
+    "correct_index": 0,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_hard_233",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "What is the main advantage of AESA radar over older mechanically scanned radar?",
+    "options": [
+      "Larger landing gear",
+      "Fast electronic beam steering",
+      "Manual target plotting",
+      "Lower cockpit visibility"
+    ],
+    "correct_index": 1,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_hard_234",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which term best fits a fighter patrol meant to protect friendly airspace?",
+    "options": [
+      "Strategic airlift",
+      "Aerial refuelling orbit",
+      "Combat air patrol",
+      "Ground convoy"
+    ],
+    "correct_index": 2,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_hard_235",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which term best fits a mission to escort strike aircraft against enemy fighters?",
+    "options": [
+      "Cargo drop",
+      "Airborne refuelling",
+      "Radar calibration only",
+      "Fighter escort"
+    ],
+    "correct_index": 3,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_hard_236",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which term best fits attacking runways, depots, or bridges behind enemy lines?",
+    "options": [
+      "Air interdiction",
+      "Close formation taxi",
+      "Aerial refuelling",
+      "Airfield maintenance"
+    ],
+    "correct_index": 0,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_hard_237",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which term best fits destroying or disrupting hostile radar-guided air defences?",
+    "options": [
+      "Airlift",
+      "SEAD",
+      "Meteorology",
+      "Search and rescue logistics"
+    ],
+    "correct_index": 1,
+    "source_note": "air_combat_concepts"
+  },
+  {
+    "id": "def_hard_238",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which term best fits an aircraft that detects and manages air battles from altitude?",
+    "options": [
+      "CIWS",
+      "ATGM",
+      "AEW&C",
+      "MRLS"
+    ],
+    "correct_index": 2,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_hard_239",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which aircraft is a better fit for heavy cargo into major airbases than austere special-ops strips?",
+    "options": [
+      "C-130J Super Hercules",
+      "Apache",
+      "Rafale",
+      "C-17 Globemaster III"
+    ],
+    "correct_index": 3,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_hard_240",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which aircraft is a better fit for special-operations tactical airlift than heavy strategic airlift?",
+    "options": [
+      "C-130J Super Hercules",
+      "C-17 Globemaster III",
+      "IL-78MKI",
+      "Netra AEW&C"
+    ],
+    "correct_index": 0,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_hard_241",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which platform is a better fit for aerial refuelling than airborne warning?",
+    "options": [
+      "Netra AEW&C",
+      "IL-78MKI",
+      "Phalcon AWACS",
+      "C-295"
+    ],
+    "correct_index": 1,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_hard_242",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which platform is a better fit for airborne warning than aerial refuelling?",
+    "options": [
+      "IL-78MKI",
+      "C-130J",
+      "Netra AEW&C",
+      "C-17"
+    ],
+    "correct_index": 2,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_hard_243",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which helicopter is a better fit for lifting artillery loads than anti-armour attack?",
+    "options": [
+      "AH-64E Apache",
+      "Prachand",
+      "Rudra",
+      "CH-47F Chinook"
+    ],
+    "correct_index": 3,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_hard_244",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which helicopter is a better fit for anti-armour attack than heavy-lift transport?",
+    "options": [
+      "AH-64E Apache",
+      "CH-47F Chinook",
+      "Mi-17V5",
+      "Chetak"
+    ],
+    "correct_index": 0,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_hard_245",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Indian helicopter is more specialized for high-altitude combat than general utility lift?",
+    "options": [
+      "Dhruv",
+      "Prachand",
+      "Chetak",
+      "Cheetah"
+    ],
+    "correct_index": 1,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_hard_246",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which missile is a better fit for BVR air combat than SEAD?",
+    "options": [
+      "Rudram-1",
+      "SCALP",
+      "Astra",
+      "HAMMER"
+    ],
+    "correct_index": 2,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_hard_247",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which missile is a better fit for SEAD than air-to-air combat?",
+    "options": [
+      "Astra",
+      "Meteor",
+      "R-73",
+      "Rudram-1"
+    ],
+    "correct_index": 3,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_hard_248",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which weapon is a better fit for deep strike than dogfighting?",
+    "options": [
+      "SCALP",
+      "R-73",
+      "MICA IR",
+      "Helmet-mounted sight"
+    ],
+    "correct_index": 0,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_hard_249",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which weapon is a better fit for close WVR combat than deep strike?",
+    "options": [
+      "SCALP",
+      "R-73",
+      "Rudram-1",
+      "BrahMos-A"
+    ],
+    "correct_index": 1,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_hard_250",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Rafale weapon is a better fit for BVR air combat than precision bombing?",
+    "options": [
+      "HAMMER",
+      "SCALP",
+      "Meteor",
+      "Rudram-1"
+    ],
+    "correct_index": 2,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_hard_251",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Rafale weapon is a better fit for precision bombing than BVR air combat?",
+    "options": [
+      "Meteor",
+      "R-77",
+      "Astra",
+      "HAMMER"
+    ],
+    "correct_index": 3,
+    "source_note": "air_weapons"
+  },
+  {
+    "id": "def_hard_252",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which radar family is a better fit for Rafale than Su-30MKI?",
+    "options": [
+      "RBE2 AESA",
+      "N011M Bars",
+      "Zhuk-ME",
+      "Uttam AESA"
+    ],
+    "correct_index": 0,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_hard_253",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which radar family is a better fit for Su-30MKI than Rafale?",
+    "options": [
+      "RBE2 AESA",
+      "N011M Bars",
+      "Uttam AESA",
+      "EL/M-2052"
+    ],
+    "correct_index": 1,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_hard_254",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which term describes resistance to hostile jamming in radar and communications?",
+    "options": [
+      "ECCM",
+      "ECM",
+      "IFF",
+      "RWR"
+    ],
+    "correct_index": 0,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_hard_255",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which feature helps fighters survive missile threats by creating false targets?",
+    "options": [
+      "Cargo ramp",
+      "Wing fence only",
+      "Runway arrester barrier",
+      "Chaff and flare dispensers"
+    ],
+    "correct_index": 3,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_hard_256",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which feature helps a fighter know it is being painted by hostile radar?",
+    "options": [
+      "Radar warning receiver",
+      "Drop tank",
+      "Cargo pallet",
+      "Brake parachute"
+    ],
+    "correct_index": 0,
+    "source_note": "sensors_avionics"
+  },
+  {
+    "id": "def_hard_257",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which role best separates an attack helicopter from a heavy-lift helicopter?",
+    "options": [
+      "Moving oversized cargo",
+      "Armed attack against ground targets",
+      "Aerial refuelling",
+      "Airborne early warning"
+    ],
+    "correct_index": 1,
+    "source_note": "helicopters"
+  },
+  {
+    "id": "def_hard_258",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which role best separates a tanker from a transport aircraft?",
+    "options": [
+      "Dropping paratroopers only",
+      "Detecting enemy radar only",
+      "Refuelling aircraft in flight",
+      "Dogfighting"
+    ],
+    "correct_index": 2,
+    "source_note": "support_aircraft"
+  },
+  {
+    "id": "def_hard_259",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which air-combat concept best explains why AWACS aircraft are valuable?",
+    "options": [
+      "They replace runway lighting",
+      "They tow artillery",
+      "They launch infantry mortars",
+      "They extend detection and battle management range"
+    ],
+    "correct_index": 3,
+    "source_note": "sensors_avionics"
+  }
+]

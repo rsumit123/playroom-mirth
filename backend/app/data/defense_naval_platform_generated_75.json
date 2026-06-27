@@ -1,0 +1,977 @@
+[
+  {
+    "id": "def_easy_204",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy destroyer class is built under Project 15B?",
+    "options": [
+      "Visakhapatnam class",
+      "Kolkata class",
+      "Delhi class",
+      "Rajput class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_205",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy destroyer class is built under Project 15A?",
+    "options": [
+      "Visakhapatnam class",
+      "Kolkata class",
+      "Delhi class",
+      "Rajput class"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_206",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy frigate class is built under Project 17A?",
+    "options": [
+      "Shivalik class",
+      "Talwar class",
+      "Nilgiri class",
+      "Brahmaputra class"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_207",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy frigate class is built under Project 17?",
+    "options": [
+      "Nilgiri class",
+      "Talwar class",
+      "Godavari class",
+      "Shivalik class"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_208",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy class is best known as an anti-submarine warfare corvette?",
+    "options": [
+      "Kamorta class",
+      "Kora class",
+      "Khukri class",
+      "Abhay class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_209",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy aircraft is used for long-range maritime patrol and ASW?",
+    "options": [
+      "MiG-29K",
+      "P-8I Poseidon",
+      "Chetak",
+      "Dornier Do 228"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_210",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which carrier-borne fighter operates from Indian aircraft carriers?",
+    "options": [
+      "Su-30MKI",
+      "Mirage 2000",
+      "MiG-29K",
+      "Jaguar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_211",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which helicopter type is India's new multi-role naval helicopter?",
+    "options": [
+      "Ka-31",
+      "Chetak",
+      "Sea King",
+      "MH-60R Seahawk"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_212",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian naval weapon is a heavyweight torpedo?",
+    "options": [
+      "Varunastra",
+      "BrahMos",
+      "Barak-8",
+      "RBU-6000"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_213",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which naval weapon is a shipborne close-in weapon system?",
+    "options": [
+      "Barak-8",
+      "AK-630",
+      "Varunastra",
+      "RBU-6000"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_214",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which naval weapon is an anti-submarine rocket launcher?",
+    "options": [
+      "AK-630",
+      "Barak-8",
+      "RBU-6000",
+      "BrahMos"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_215",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile family gives Indian warships long-range surface-to-air defence?",
+    "options": [
+      "BrahMos",
+      "Varunastra",
+      "RBU-6000",
+      "Barak-8/MRSAM"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_216",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which missile gives many Indian warships supersonic anti-ship strike capability?",
+    "options": [
+      "BrahMos",
+      "Barak-8",
+      "Varunastra",
+      "AK-630"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_217",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy platform is a landing platform dock?",
+    "options": [
+      "INS Deepak",
+      "INS Jalashwa",
+      "INS Vikrant",
+      "INS Kamorta"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_218",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy class is a fleet tanker class?",
+    "options": [
+      "Kamorta class",
+      "Kolkata class",
+      "Deepak class",
+      "Kalvari class"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_219",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian Navy ship class is used for shallow-water anti-submarine warfare?",
+    "options": [
+      "Kamorta class",
+      "Kora class",
+      "Talwar class",
+      "Arnala class"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_220",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which class does INS Mormugao belong to?",
+    "options": [
+      "Visakhapatnam class",
+      "Kolkata class",
+      "Delhi class",
+      "Rajput class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_221",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which class does INS Chennai belong to?",
+    "options": [
+      "Visakhapatnam class",
+      "Kolkata class",
+      "Delhi class",
+      "Rajput class"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_222",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which class includes INS Satpura and INS Sahyadri?",
+    "options": [
+      "Nilgiri class",
+      "Talwar class",
+      "Shivalik class",
+      "Kamorta class"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_223",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which class includes INS Trishul and INS Tabar?",
+    "options": [
+      "Shivalik class",
+      "Nilgiri class",
+      "Brahmaputra class",
+      "Talwar class"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_224",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which class does INS Kavaratti belong to?",
+    "options": [
+      "Kamorta class",
+      "Kora class",
+      "Khukri class",
+      "Abhay class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_easy_225",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which class does INS Kirch belong to?",
+    "options": [
+      "Kamorta class",
+      "Kora class",
+      "Khukri class",
+      "Veer class"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_easy_226",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which shipyard builds many major Indian destroyers and frigates in Mumbai?",
+    "options": [
+      "GRSE",
+      "Cochin Shipyard",
+      "Mazagon Dock Shipbuilders",
+      "Goa Shipyard"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_easy_227",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which shipyard is strongly associated with Kamorta-class corvettes?",
+    "options": [
+      "Mazagon Dock Shipbuilders",
+      "Cochin Shipyard",
+      "Goa Shipyard",
+      "GRSE"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_easy_228",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which shipyard built India's indigenous aircraft carrier INS Vikrant?",
+    "options": [
+      "Cochin Shipyard",
+      "Mazagon Dock Shipbuilders",
+      "GRSE",
+      "Goa Shipyard"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_217",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Project 15B produced which type of Indian Navy warship?",
+    "options": [
+      "Stealth frigate",
+      "Guided-missile destroyer",
+      "ASW corvette",
+      "Fleet tanker"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_218",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Project 17A produced which type of Indian Navy warship?",
+    "options": [
+      "Guided-missile destroyer",
+      "ASW corvette",
+      "Stealth guided-missile frigate",
+      "Landing platform dock"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_219",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Project 28 is most closely associated with which Indian Navy platform type?",
+    "options": [
+      "Stealth frigate",
+      "Guided-missile destroyer",
+      "Fleet tanker",
+      "ASW corvette"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_220",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which class is the successor/improved derivative of the Kolkata-class destroyer?",
+    "options": [
+      "Visakhapatnam class",
+      "Delhi class",
+      "Rajput class",
+      "Talwar class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_221",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which class is the predecessor of the Project 17A Nilgiri-class frigates?",
+    "options": [
+      "Talwar class",
+      "Shivalik class",
+      "Godavari class",
+      "Brahmaputra class"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_222",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy class includes INS Visakhapatnam, INS Mormugao, INS Imphal, and INS Surat?",
+    "options": [
+      "Kolkata class",
+      "Delhi class",
+      "Visakhapatnam class",
+      "Rajput class"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_223",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy class includes INS Kolkata, INS Kochi, and INS Chennai?",
+    "options": [
+      "Visakhapatnam class",
+      "Delhi class",
+      "Talwar class",
+      "Kolkata class"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_224",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy class includes INS Kamorta, INS Kadmatt, INS Kiltan, and INS Kavaratti?",
+    "options": [
+      "Kamorta class",
+      "Kora class",
+      "Khukri class",
+      "Abhay class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_225",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy class includes INS Shivalik, INS Satpura, and INS Sahyadri?",
+    "options": [
+      "Nilgiri class",
+      "Shivalik class",
+      "Talwar class",
+      "Brahmaputra class"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_226",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy class includes INS Talwar, INS Trishul, and INS Tabar?",
+    "options": [
+      "Shivalik class",
+      "Nilgiri class",
+      "Talwar class",
+      "Godavari class"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_227",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which shipborne weapon is mainly for close defence against incoming missiles and aircraft?",
+    "options": [
+      "Varunastra torpedo",
+      "BrahMos missile",
+      "RBU-6000 launcher",
+      "AK-630 CIWS"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_228",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon is mainly used by warships against submarines at close range?",
+    "options": [
+      "RBU-6000 launcher",
+      "AK-630 CIWS",
+      "Barak-8 missile",
+      "BrahMos missile"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_229",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which weapon is mainly a ship-launched heavyweight torpedo?",
+    "options": [
+      "Barak-8",
+      "Varunastra",
+      "BrahMos",
+      "AK-630"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_230",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which missile is mainly used by Indian warships for area air defence?",
+    "options": [
+      "BrahMos",
+      "Varunastra",
+      "Barak-8/MRSAM",
+      "RBU-6000"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_231",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which missile is mainly used by Indian warships for anti-ship and land-attack strike?",
+    "options": [
+      "Barak-8/MRSAM",
+      "Varunastra",
+      "AK-630",
+      "BrahMos"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_232",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which radar is widely associated with Indian Navy Kolkata, Visakhapatnam, and Nilgiri-class combatants?",
+    "options": [
+      "EL/M-2248 MF-STAR",
+      "Revathi",
+      "RAWL-02",
+      "Aparna"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_233",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which radar is associated with Kamorta-class corvettes for air surveillance?",
+    "options": [
+      "MF-STAR",
+      "Revathi",
+      "RBE2 AESA",
+      "N011M Bars"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_234",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which sonar family is associated with hull-mounted sonar on Kamorta-class corvettes?",
+    "options": [
+      "Revathi",
+      "MF-STAR",
+      "HUMSA",
+      "Uttam AESA"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_235",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy aircraft is optimized for carrier operations rather than maritime patrol?",
+    "options": [
+      "P-8I Poseidon",
+      "Dornier Do 228",
+      "IL-38SD",
+      "MiG-29K"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_236",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy aircraft is optimized for long-range maritime patrol rather than carrier combat?",
+    "options": [
+      "P-8I Poseidon",
+      "MiG-29K",
+      "Ka-31",
+      "MH-60R Seahawk"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_237",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which helicopter is primarily a shipborne multi-role ASW helicopter?",
+    "options": [
+      "MiG-29K",
+      "MH-60R Seahawk",
+      "P-8I Poseidon",
+      "Dornier Do 228"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_238",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which helicopter is best known as an airborne early-warning helicopter in Indian naval service?",
+    "options": [
+      "MH-60R Seahawk",
+      "Chetak",
+      "Ka-31",
+      "Sea King"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_239",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which naval platform is mainly for amphibious lift and landing operations?",
+    "options": [
+      "INS Deepak",
+      "INS Kamorta",
+      "INS Kolkata",
+      "INS Jalashwa"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_240",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which naval platform type refuels and replenishes warships at sea?",
+    "options": [
+      "Fleet tanker",
+      "ASW corvette",
+      "Guided-missile destroyer",
+      "Survey vessel"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_241",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which class name fits India's ASW shallow-water craft programme?",
+    "options": [
+      "Kamorta class",
+      "Arnala class",
+      "Talwar class",
+      "Kolkata class"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_242",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which anti-submarine system combines a missile flight profile with torpedo delivery?",
+    "options": [
+      "Varunastra",
+      "RBU-6000",
+      "SMART",
+      "Barak-8"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_medium_243",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian naval missile was a ship-launched ballistic missile tested from patrol vessels?",
+    "options": [
+      "K-15",
+      "Pralay",
+      "BrahMos",
+      "Dhanush"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_medium_244",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which class is a guided-missile corvette class rather than an ASW corvette class?",
+    "options": [
+      "Kora class",
+      "Kamorta class",
+      "Arnala class",
+      "Abhay class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_medium_245",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy frigate class was built in Russia?",
+    "options": [
+      "Shivalik class",
+      "Talwar class",
+      "Nilgiri class",
+      "Godavari class"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_medium_246",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian Navy frigate class was the first stealth warship class designed and built in India?",
+    "options": [
+      "Talwar class",
+      "Nilgiri class",
+      "Shivalik class",
+      "Brahmaputra class"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_hard_160",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Project 15B ship is named after a city in Goa?",
+    "options": [
+      "INS Visakhapatnam",
+      "INS Imphal",
+      "INS Surat",
+      "INS Mormugao"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_161",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Project 15B ship is named after a city in the Northeast?",
+    "options": [
+      "INS Imphal",
+      "INS Mormugao",
+      "INS Surat",
+      "INS Visakhapatnam"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_162",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Project 15B ship is named after a Gujarat port city?",
+    "options": [
+      "INS Imphal",
+      "INS Surat",
+      "INS Mormugao",
+      "INS Visakhapatnam"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_163",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Kolkata-class destroyer is named after Tamil Nadu's capital?",
+    "options": [
+      "INS Kolkata",
+      "INS Kochi",
+      "INS Chennai",
+      "INS Mysore"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_hard_164",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Kolkata-class destroyer is named after Kerala's port city?",
+    "options": [
+      "INS Kolkata",
+      "INS Chennai",
+      "INS Delhi",
+      "INS Kochi"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_165",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Shivalik-class frigate is named after a mountain range in central India?",
+    "options": [
+      "INS Satpura",
+      "INS Shivalik",
+      "INS Sahyadri",
+      "INS Talwar"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_166",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Shivalik-class frigate is named after the Western Ghats?",
+    "options": [
+      "INS Shivalik",
+      "INS Sahyadri",
+      "INS Satpura",
+      "INS Tabar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_167",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Among these frigate names, which one literally means sword?",
+    "options": [
+      "INS Trishul",
+      "INS Tabar",
+      "INS Talwar",
+      "INS Tarkash"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_hard_168",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Talwar-class frigate name refers to a trident?",
+    "options": [
+      "INS Talwar",
+      "INS Tabar",
+      "INS Teg",
+      "INS Trishul"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_169",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Kamorta-class corvette is the lead ship of Project 28?",
+    "options": [
+      "INS Kamorta",
+      "INS Kadmatt",
+      "INS Kiltan",
+      "INS Kavaratti"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_170",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Project 28 corvette was commissioned as the fourth ship of the class?",
+    "options": [
+      "INS Kamorta",
+      "INS Kavaratti",
+      "INS Kadmatt",
+      "INS Kiltan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_171",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Kora-class corvette is the lead ship of its class?",
+    "options": [
+      "INS Kirch",
+      "INS Kulish",
+      "INS Karmuk",
+      "INS Kora"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_172",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which naval gun calibre is common on many modern Indian surface combatants?",
+    "options": [
+      "57 mm",
+      "100 mm",
+      "127 mm",
+      "76 mm"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_173",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which torpedo calibre is commonly associated with heavyweight ship-launched torpedo tubes?",
+    "options": [
+      "533 mm",
+      "324 mm",
+      "650 mm",
+      "400 mm"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_174",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which system is the main area-air-defence missile on Kolkata and Visakhapatnam-class destroyers?",
+    "options": [
+      "AK-630",
+      "Barak-8/MRSAM",
+      "Varunastra",
+      "RBU-6000"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_175",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which weapon is the main supersonic strike missile on Kolkata and Visakhapatnam-class destroyers?",
+    "options": [
+      "Barak-8/MRSAM",
+      "Varunastra",
+      "BrahMos",
+      "AK-630"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "def_hard_176",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which radar acronym expands to Multi-Function Surveillance, Track and Guidance Radar?",
+    "options": [
+      "HUMSA",
+      "RAWL",
+      "Revathi",
+      "MF-STAR"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "def_hard_177",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which sonar name is an Indian hull-mounted sonar family used on naval ships?",
+    "options": [
+      "HUMSA",
+      "MF-STAR",
+      "Revathi",
+      "Kavach"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "def_hard_178",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which decoy system is used by Indian warships against anti-ship missile threats?",
+    "options": [
+      "HUMSA",
+      "Kavach",
+      "MF-STAR",
+      "Varunastra"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "def_hard_179",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Indian Navy class is more correctly an ASW shallow-water craft than a corvette?",
+    "options": [
+      "Kamorta class",
+      "Kora class",
+      "Arnala class",
+      "Khukri class"
+    ],
+    "correct_index": 2
+  }
+]
