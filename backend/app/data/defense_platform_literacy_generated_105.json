@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "def_easy_359",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Army corps is most associated with combat bridges, obstacles, and field fortifications?",
+    "options": [
+      "Corps of Engineers",
+      "Army Service Corps",
+      "Army Medical Corps",
+      "Corps of Signals"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_360",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Army corps keeps battlefield communications and networks running?",
+    "options": [
+      "Army Ordnance Corps",
+      "Corps of Signals",
+      "Corps of Engineers",
+      "Armoured Corps"
+    ],
+    "correct_index": 1,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_361",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Army corps is responsible for repair and recovery of military equipment?",
+    "options": [
+      "Corps of EME",
+      "Infantry",
+      "Army Medical Corps",
+      "Corps of Military Police"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_362",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Army service handles supplies such as rations, fuel, and transport support?",
+    "options": [
+      "Army Service Corps",
+      "Corps of Signals",
+      "Army Air Defence",
+      "Mechanised Infantry"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_363",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Army corps provides medical care to soldiers in peace and war?",
+    "options": [
+      "Army Medical Corps",
+      "Army Ordnance Corps",
+      "Corps of Engineers",
+      "Regiment of Artillery"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_364",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which organization builds and maintains strategic roads in India's border areas?",
+    "options": [
+      "Border Roads Organisation",
+      "National Highways Authority",
+      "Indian Coast Guard",
+      "Central Reserve Police Force"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_365",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What is the common Army term for soldiers of the Corps of Engineers?",
+    "options": [
+      "Sappers",
+      "Gunners",
+      "Sailors",
+      "Air warriors"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_366",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which bridge type is famous for quick military construction without heavy machinery?",
+    "options": [
+      "Bailey bridge",
+      "Cable-stayed bridge",
+      "Suspension bridge",
+      "Arch bridge"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_367",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which support function moves ammunition, fuel, food, and spares to fighting units?",
+    "options": [
+      "Logistics",
+      "Camouflage",
+      "Saluting",
+      "Drill"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_368",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Army branch is linked with ammunition and stores management?",
+    "options": [
+      "Army Ordnance Corps",
+      "Army Medical Corps",
+      "Corps of Signals",
+      "Judge Advocate General branch"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_easy_369",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which force protects India's maritime zones and conducts search and rescue at sea?",
+    "options": [
+      "Indian Coast Guard",
+      "Railway Protection Force",
+      "Central Industrial Security Force",
+      "Assam Rifles"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_easy_370",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which ministry does the Indian Coast Guard come under?",
+    "options": [
+      "Ministry of Defence",
+      "Ministry of Home Affairs",
+      "Ministry of Shipping",
+      "Ministry of External Affairs"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_easy_371",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which force is best known for guarding India's borders with Pakistan and Bangladesh?",
+    "options": [
+      "Border Security Force",
+      "Central Reserve Police Force",
+      "Central Industrial Security Force",
+      "Indo-Tibetan Border Police"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_easy_372",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which force is best known for guarding India's border with China in the Himalayas?",
+    "options": [
+      "Indo-Tibetan Border Police",
+      "Central Reserve Police Force",
+      "Railway Protection Force",
+      "National Security Guard"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_easy_373",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which force is mainly associated with internal security and riot-control duties?",
+    "options": [
+      "Central Reserve Police Force",
+      "Indian Coast Guard",
+      "Corps of EME",
+      "Army Service Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_easy_374",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which force guards many airports and critical industrial facilities in India?",
+    "options": [
+      "Central Industrial Security Force",
+      "Border Security Force",
+      "Assam Rifles",
+      "Sashastra Seema Bal"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_easy_375",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which force is closely associated with security in India's North-East and the Myanmar border?",
+    "options": [
+      "Assam Rifles",
+      "Central Industrial Security Force",
+      "Indian Coast Guard",
+      "Army Ordnance Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_easy_376",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which CAPF guards India's open borders with Nepal and Bhutan?",
+    "options": [
+      "Sashastra Seema Bal",
+      "Border Security Force",
+      "Central Reserve Police Force",
+      "Defence Security Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_easy_377",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which tri-service agency handles military cyber operations?",
+    "options": [
+      "Defence Cyber Agency",
+      "Defence Space Agency",
+      "National Cadet Corps",
+      "Border Roads Organisation"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_easy_378",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian defence agency focuses on military use of space?",
+    "options": [
+      "Defence Space Agency",
+      "Defence Cyber Agency",
+      "Indian Coast Guard",
+      "Army Service Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_easy_379",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What does ASAT stand for in defence discussions?",
+    "options": [
+      "Anti-satellite",
+      "Air-sea attack",
+      "Armoured support artillery",
+      "Advanced shipborne torpedo"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_easy_380",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Mission Shakti demonstrated which Indian capability?",
+    "options": [
+      "Anti-satellite interception",
+      "Aircraft-carrier landing",
+      "Mountain bridging",
+      "Submarine rescue"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_easy_381",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which countermeasure confuses radar-guided missiles by releasing metallic strips?",
+    "options": [
+      "Chaff",
+      "Flares",
+      "Smoke grenade",
+      "Sonobuoy"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_easy_382",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which countermeasure is mainly used to decoy heat-seeking missiles?",
+    "options": [
+      "Flares",
+      "Chaff",
+      "IFF",
+      "Sonar buoy"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_easy_383",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which system warns an aircraft that hostile radar may be tracking it?",
+    "options": [
+      "Radar warning receiver",
+      "Drop tank",
+      "Cargo winch",
+      "Arrester hook"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_easy_384",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which system helps identify friendly aircraft and reduce mistaken engagements?",
+    "options": [
+      "IFF",
+      "RWR",
+      "ECM pod",
+      "Flight data recorder"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_easy_385",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "What does India's No First Use policy refer to?",
+    "options": [
+      "Nuclear weapons",
+      "Aircraft carriers",
+      "Military satellites",
+      "Border roads"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_easy_386",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which term means the ability to retaliate after absorbing a nuclear attack?",
+    "options": [
+      "Second-strike capability",
+      "Close air support",
+      "River crossing",
+      "Search and rescue"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_easy_387",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which three legs form a nuclear triad?",
+    "options": [
+      "Land, air, and sea",
+      "Infantry, cavalry, and artillery",
+      "Radar, sonar, and lidar",
+      "Fuel, food, and water"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_easy_388",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which command is associated with management of India's nuclear forces?",
+    "options": [
+      "Strategic Forces Command",
+      "Training Command",
+      "Eastern Naval Command",
+      "Army Service Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_easy_389",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian company is best known for making aircraft such as Tejas and Dhruv?",
+    "options": [
+      "HAL",
+      "BEL",
+      "BDL",
+      "MIDHANI"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_easy_390",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian DPSU is strongly associated with defence electronics and radars?",
+    "options": [
+      "BEL",
+      "HAL",
+      "MDL",
+      "GRSE"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_easy_391",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Indian DPSU is strongly associated with missile production?",
+    "options": [
+      "BDL",
+      "BEL",
+      "HAL",
+      "GSL"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_easy_392",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Mumbai shipyard is known for building major warships and submarines?",
+    "options": [
+      "Mazagon Dock Shipbuilders",
+      "Garden Reach Shipbuilders",
+      "Goa Shipyard",
+      "Hindustan Shipyard"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_easy_393",
+    "category": "defense",
+    "difficulty": 1,
+    "question": "Which Kolkata shipyard is known for building Indian Navy warships?",
+    "options": [
+      "Garden Reach Shipbuilders",
+      "Mazagon Dock Shipbuilders",
+      "Goa Shipyard",
+      "Cochin Shipyard"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_medium_387",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which combat-support task is most directly handled by Army engineers during an advance?",
+    "options": [
+      "Breaching obstacles",
+      "Writing air traffic rules",
+      "Running naval sonar",
+      "Issuing court warrants"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_388",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which support arm is most likely to lay and maintain field communication links?",
+    "options": [
+      "Corps of Signals",
+      "Army Medical Corps",
+      "Army Ordnance Corps",
+      "Armoured Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_389",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which corps would usually recover a disabled tank or repair a generator in the field?",
+    "options": [
+      "Corps of EME",
+      "Corps of Signals",
+      "Army Education Corps",
+      "Army Postal Service"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_390",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which support service is most directly linked to fuel convoys and supply columns?",
+    "options": [
+      "Army Service Corps",
+      "Corps of Engineers",
+      "Intelligence Corps",
+      "Army Air Defence"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_391",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Army branch would be the most relevant for ammunition depots and ordnance stores?",
+    "options": [
+      "Army Ordnance Corps",
+      "Army Medical Corps",
+      "Corps of Signals",
+      "Remount Veterinary Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_392",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which military task means opening a safe route through mines or obstacles?",
+    "options": [
+      "Breaching",
+      "Dogfighting",
+      "Sonar ranging",
+      "Court martial"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_393",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which military task means making roads, bridges, and camps usable for forces?",
+    "options": [
+      "Field engineering",
+      "Air policing",
+      "Signals intelligence",
+      "Maritime boarding"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_394",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which support system matters most when a formation fights far from its bases?",
+    "options": [
+      "Supply chain depth",
+      "Parade alignment",
+      "Medal precedence",
+      "Uniform tailoring"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_395",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which organization is most relevant when a mountain road near the LAC needs strategic maintenance?",
+    "options": [
+      "Border Roads Organisation",
+      "Central Industrial Security Force",
+      "Indian Coast Guard",
+      "National Security Guard"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_396",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which support role turns a damaged vehicle from a battlefield liability into a reusable asset?",
+    "options": [
+      "Recovery and repair",
+      "Ceremonial drill",
+      "Naval boarding",
+      "Air traffic control"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_medium_397",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Coast Guard mission protects the sea from oil spills and marine pollution?",
+    "options": [
+      "Pollution response",
+      "Tank gunnery",
+      "Mountain warfare",
+      "Airborne refuelling"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_medium_398",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Coast Guard mission involves boarding suspicious vessels for law-enforcement checks?",
+    "options": [
+      "Maritime law enforcement",
+      "Field artillery survey",
+      "Air defence control",
+      "Combat bridging"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_medium_399",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which force is more suitable for airport perimeter security than border patrolling?",
+    "options": [
+      "CISF",
+      "BSF",
+      "ITBP",
+      "SSB"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_medium_400",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which force is more associated with counter-insurgency and internal-security deployments than coastal rescue?",
+    "options": [
+      "CRPF",
+      "Indian Coast Guard",
+      "Army Medical Corps",
+      "Corps of Signals"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_medium_401",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which CAPF is most directly linked with the Indo-Nepal and Indo-Bhutan borders?",
+    "options": [
+      "SSB",
+      "ITBP",
+      "BSF",
+      "CISF"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_medium_402",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which force would be the closest fit for guarding high-altitude Himalayan border posts?",
+    "options": [
+      "ITBP",
+      "CISF",
+      "Indian Coast Guard",
+      "Railway Protection Force"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_medium_403",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which force is sometimes called the Sentinels of the North East?",
+    "options": [
+      "Assam Rifles",
+      "CISF",
+      "SSB",
+      "Indian Coast Guard"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_medium_404",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which term covers using the electromagnetic spectrum to detect, jam, or deceive an enemy?",
+    "options": [
+      "Electronic warfare",
+      "Mountain logistics",
+      "Amphibious landing",
+      "Battlefield medicine"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_405",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What does ECM usually mean in air and electronic warfare?",
+    "options": [
+      "Electronic countermeasures",
+      "Engine control module only",
+      "Emergency convoy movement",
+      "External cargo module"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_406",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "What does ECCM mean in electronic warfare?",
+    "options": [
+      "Electronic counter-countermeasures",
+      "Emergency coastal combat mission",
+      "Engine cooling control module",
+      "Extended cargo carriage mode"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_407",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which intelligence type is based on intercepted signals?",
+    "options": [
+      "SIGINT",
+      "HUMINT",
+      "OSINT only",
+      "Imagery briefing"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_408",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which intelligence type focuses specifically on communications?",
+    "options": [
+      "COMINT",
+      "ELINT",
+      "MASINT",
+      "GEOINT"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_409",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which intelligence type focuses on electronic emissions such as radars?",
+    "options": [
+      "ELINT",
+      "COMINT",
+      "HUMINT",
+      "FININT"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_410",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which action best describes jamming in electronic warfare?",
+    "options": [
+      "Interfering with enemy signals",
+      "Repairing tank tracks",
+      "Building pontoon bridges",
+      "Refuelling aircraft"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_411",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which capability lets a force operate even when an enemy tries to jam its systems?",
+    "options": [
+      "Anti-jam resilience",
+      "Parade drill",
+      "Deep-sea diving",
+      "Cargo palletization"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_412",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which orbit is most commonly discussed for direct-ascent ASAT demonstrations?",
+    "options": [
+      "Low Earth orbit",
+      "Geostationary orbit only",
+      "Lunar orbit",
+      "Solar orbit"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_413",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian agency is paired most naturally with military cyber defence and cyber operations?",
+    "options": [
+      "Defence Cyber Agency",
+      "Defence Space Agency",
+      "Indian Coast Guard",
+      "Border Roads Organisation"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_414",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which Indian agency is paired most naturally with military space situational awareness?",
+    "options": [
+      "Defence Space Agency",
+      "Defence Cyber Agency",
+      "Army Service Corps",
+      "Central Reserve Police Force"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_medium_415",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which phrase best captures credible minimum deterrence?",
+    "options": [
+      "Keeping enough nuclear capability to deter attack",
+      "Keeping the largest possible army",
+      "Using aircraft only for transport",
+      "Replacing all missiles with guns"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_medium_416",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which leg of a nuclear triad is hardest for an enemy to locate continuously?",
+    "options": [
+      "Sea-based submarines",
+      "Fixed parade grounds",
+      "Open truck convoys",
+      "Border check-posts"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_medium_417",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which doctrine-level idea is No First Use meant to signal?",
+    "options": [
+      "Nuclear restraint after a nuclear attack",
+      "First use of artillery in every battle",
+      "No use of aircraft before ships",
+      "No deployment outside deserts"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_medium_418",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Why is survivability important for nuclear deterrence?",
+    "options": [
+      "It makes retaliation credible",
+      "It improves parade turnout",
+      "It reduces bridge length",
+      "It changes uniform colour"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_medium_419",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which organization handles India's strategic nuclear delivery forces?",
+    "options": [
+      "Strategic Forces Command",
+      "Army Training Command",
+      "Southern Naval Command",
+      "Border Roads Organisation"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_medium_420",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which company is the natural answer for Indian combat aircraft manufacturing?",
+    "options": [
+      "HAL",
+      "BDL",
+      "MIDHANI",
+      "AWEIL"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_medium_421",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which company is the natural answer for Akash and other missile production work?",
+    "options": [
+      "BDL",
+      "GRSE",
+      "GSL",
+      "AVNL"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_medium_422",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which company is the natural answer for Indian defence electronics?",
+    "options": [
+      "BEL",
+      "MDL",
+      "HAL",
+      "MIDHANI"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_medium_423",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which shipyard is most associated with Scorpene-class submarine construction in India?",
+    "options": [
+      "Mazagon Dock Shipbuilders",
+      "Garden Reach Shipbuilders",
+      "Goa Shipyard",
+      "Cochin Shipyard"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_medium_424",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which DPSU is known for specialist metals and alloys for strategic sectors?",
+    "options": [
+      "MIDHANI",
+      "BEL",
+      "BDL",
+      "GRSE"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_medium_425",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which DPSU grouping is associated with armoured vehicles after ordnance-factory restructuring?",
+    "options": [
+      "Armoured Vehicles Nigam Limited",
+      "Bharat Electronics Limited",
+      "Garden Reach Shipbuilders",
+      "Mazagon Dock Shipbuilders"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_medium_426",
+    "category": "defense",
+    "difficulty": 2,
+    "question": "Which DPSU grouping is associated with artillery and small arms?",
+    "options": [
+      "Advanced Weapons and Equipment India Limited",
+      "Bharat Dynamics Limited",
+      "Hindustan Aeronautics Limited",
+      "Goa Shipyard Limited"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_hard_260",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which support arm would be central to creating a passage through an obstacle belt under fire?",
+    "options": [
+      "Corps of Engineers",
+      "Army Ordnance Corps",
+      "Army Medical Corps",
+      "Army Education Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_hard_261",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which support arm would be central to secure command links between a brigade HQ and forward units?",
+    "options": [
+      "Corps of Signals",
+      "Army Service Corps",
+      "Corps of EME",
+      "Army Dental Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_hard_262",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which support arm would be central to battlefield recovery of an immobilized infantry combat vehicle?",
+    "options": [
+      "Corps of EME",
+      "Army Medical Corps",
+      "Army Postal Service",
+      "Remount Veterinary Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_hard_263",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which logistics problem is usually the biggest risk during sustained high-altitude operations?",
+    "options": [
+      "Keeping supplies moving forward",
+      "Naming parade formations",
+      "Choosing ceremonial music",
+      "Painting aircraft markings"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_hard_264",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which engineering capability lets troops cross a river before permanent bridges are available?",
+    "options": [
+      "Pontoon bridging",
+      "Aerial refuelling",
+      "Sonar classification",
+      "Runway arresting"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_hard_265",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which term best describes reducing an enemy obstacle so assault forces can pass?",
+    "options": [
+      "Obstacle breaching",
+      "Combat air patrol",
+      "Convoy saluting",
+      "Harbour dredging"
+    ],
+    "correct_index": 0,
+    "source_note": "combat_support"
+  },
+  {
+    "id": "def_hard_266",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which force is the better fit for coastal security coordination than land-border fence patrols?",
+    "options": [
+      "Indian Coast Guard",
+      "ITBP",
+      "SSB",
+      "CISF"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_hard_267",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which force is the better fit for industrial-unit security than maritime search and rescue?",
+    "options": [
+      "CISF",
+      "Indian Coast Guard",
+      "Assam Rifles",
+      "Army Service Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_hard_268",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which force is the better fit for North-East counter-insurgency support than airport security?",
+    "options": [
+      "Assam Rifles",
+      "CISF",
+      "Indian Coast Guard",
+      "AWEIL"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_hard_269",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which pairing is correct for CAPF border responsibilities?",
+    "options": [
+      "SSB: Nepal and Bhutan",
+      "CISF: Myanmar frontier",
+      "Coast Guard: Rajasthan desert",
+      "CRPF: exclusive economic zone"
+    ],
+    "correct_index": 0,
+    "source_note": "coast_guard_capf"
+  },
+  {
+    "id": "def_hard_270",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which capability is most useful against a radar-guided missile rather than an infrared missile?",
+    "options": [
+      "Chaff",
+      "Flares",
+      "Combat boots",
+      "Pontoon boats"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_271",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which capability is most useful against a heat-seeking missile rather than a radar-guided missile?",
+    "options": [
+      "Flares",
+      "Chaff",
+      "IFF code",
+      "Sonobuoy pattern"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_272",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which EW concept means denying an enemy reliable use of its radios or radar?",
+    "options": [
+      "Jamming",
+      "Air dropping",
+      "Mine ploughing",
+      "Hull cleaning"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_273",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which EW concept means protecting friendly systems from enemy jamming?",
+    "options": [
+      "ECCM",
+      "COMINT",
+      "Airlift",
+      "Ordnance stocking"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_274",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which signal-intelligence branch is the better match for radar emissions?",
+    "options": [
+      "ELINT",
+      "COMINT",
+      "HUMINT",
+      "OSINT"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_275",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which signal-intelligence branch is the better match for voice or data messages?",
+    "options": [
+      "COMINT",
+      "ELINT",
+      "MASINT",
+      "IMINT"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_276",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which aircraft self-protection cue comes from detecting radar energy aimed at the aircraft?",
+    "options": [
+      "Radar warning receiver alert",
+      "Fuel-flow warning only",
+      "Cabin altitude callout",
+      "Landing gear horn"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_277",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Indian test is the standard reference point for proven ASAT capability?",
+    "options": [
+      "Mission Shakti",
+      "Operation Cactus",
+      "Exercise Malabar",
+      "Operation Pawan"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_278",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which domain does the Defence Space Agency primarily relate to?",
+    "options": [
+      "Military use of space",
+      "Ammunition depot management",
+      "Coastal pollution response",
+      "Infantry medical evacuation"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_279",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which tri-service body is the best fit for cyber warfare coordination?",
+    "options": [
+      "Defence Cyber Agency",
+      "Strategic Forces Command",
+      "Army Service Corps",
+      "Indian Coast Guard"
+    ],
+    "correct_index": 0,
+    "source_note": "cyber_space_ew"
+  },
+  {
+    "id": "def_hard_280",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which deterrence idea depends most on submarines being difficult to track?",
+    "options": [
+      "Survivable second strike",
+      "Close air support",
+      "Convoy escort",
+      "Minefield marking"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_hard_281",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which phrase best separates a nuclear triad from ordinary missile forces?",
+    "options": [
+      "Delivery from land, air, and sea",
+      "Only short-range battlefield rockets",
+      "Only naval guns and torpedoes",
+      "Only unarmed training aircraft"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_hard_282",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which doctrine-level posture avoids threatening nuclear use at the start of a conflict?",
+    "options": [
+      "No First Use",
+      "First salvo doctrine",
+      "Area bombing",
+      "Forward artillery only"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_hard_283",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which command name is most directly linked to India's strategic nuclear delivery forces?",
+    "options": [
+      "Strategic Forces Command",
+      "Integrated Training Command",
+      "Army Service Corps",
+      "Western Air Command"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_hard_284",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which term means keeping nuclear forces large enough for deterrence but not pursuing unlimited buildup?",
+    "options": [
+      "Credible minimum deterrence",
+      "Mass mobilization",
+      "Forward defence only",
+      "Total air superiority"
+    ],
+    "correct_index": 0,
+    "source_note": "nuclear_doctrine"
+  },
+  {
+    "id": "def_hard_285",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "In Indian defence manufacturing, BEL is best linked with what work?",
+    "options": [
+      "Defence electronics",
+      "Aircraft final assembly",
+      "Submarine hull building",
+      "Border-police deployment"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_hard_286",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "For missile-system production, which Indian DPSU is the strongest match?",
+    "options": [
+      "BDL",
+      "GRSE",
+      "MIDHANI",
+      "CISF"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_hard_287",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which DPSU is most closely tied to Indian aircraft and helicopter production?",
+    "options": [
+      "HAL",
+      "BEL",
+      "MDL",
+      "SSB"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_hard_288",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which Indian shipyard pairing is the strongest fit?",
+    "options": [
+      "MDL: Mumbai warship and submarine yard",
+      "GSL: aircraft engine maker",
+      "GRSE: missile-only factory",
+      "HAL: coastal patrol police"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  },
+  {
+    "id": "def_hard_289",
+    "category": "defense",
+    "difficulty": 3,
+    "question": "Which DPSU is most associated with special metals for aerospace, defence, and nuclear sectors?",
+    "options": [
+      "MIDHANI",
+      "CISF",
+      "SSB",
+      "Army Medical Corps"
+    ],
+    "correct_index": 0,
+    "source_note": "defense_industry"
+  }
+]
