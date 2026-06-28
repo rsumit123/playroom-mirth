@@ -21,9 +21,20 @@ export default function QuickMatchSearch({ waitSeconds = 15, category, onCancel,
     setRemaining(waitSeconds)
   }, [waitSeconds, category])
 
+  // Decrement once per second, clamping at 0 and self-stopping. The old version
+  // used a stale-closure `if (remaining <= 0) return` outside the interval, so
+  // the callback decremented forever and the user saw a negative number when
+  // the server's bot fallback didn't arrive in time.
   useEffect(() => {
-    if (remaining <= 0) return
-    const id = setInterval(() => setRemaining(r => r - 1), 1000)
+    const id = setInterval(() => {
+      setRemaining(r => {
+        if (r <= 0) {
+          clearInterval(id)
+          return 0
+        }
+        return r - 1
+      })
+    }, 1000)
     return () => clearInterval(id)
   }, [category])
 

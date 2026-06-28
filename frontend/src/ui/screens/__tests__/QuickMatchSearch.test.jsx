@@ -64,4 +64,16 @@ describe('QuickMatchSearch', () => {
     expect(screen.getByText('13')).toBeTruthy()
     vi.useRealTimers()
   })
+
+  it('countdown CLAMPS at 0 — does not go negative when waitSeconds elapses (regression: user saw -10 when bot fallback was slow)', () => {
+    vi.useFakeTimers()
+    render(<QuickMatchSearch waitSeconds={15} category="science" onCancel={vi.fn()} />)
+    // Run 30 seconds — well past the 15s wait window. The legitimate countdown
+    // should hit 0 and stop, not display -15.
+    act(() => { vi.advanceTimersByTime(30000) })
+    expect(screen.getByText('0')).toBeTruthy()
+    expect(screen.queryByText(/-1/)).toBeNull()
+    expect(screen.queryByText(/-10/)).toBeNull()
+    vi.useRealTimers()
+  })
 })
