@@ -1,0 +1,1332 @@
+[
+  {
+    "id": "pol_easy_255",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which word in the Preamble means India is not ruled by a monarch?",
+    "options": [
+      "Republic",
+      "Secular",
+      "Socialist",
+      "Federal"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_256",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Preamble value means all religions get equal respect from the State?",
+    "options": [
+      "Secular",
+      "Sovereign",
+      "Socialist",
+      "Republic"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_257",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Preamble value means people choose their government?",
+    "options": [
+      "Democratic",
+      "Socialist",
+      "Sovereign",
+      "Federal"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_258",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Preamble value means India makes its own decisions as an independent country?",
+    "options": [
+      "Sovereign",
+      "Secular",
+      "Fraternity",
+      "Republic"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_259",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional idea promotes brotherhood among citizens?",
+    "options": [
+      "Fraternity",
+      "Liberty",
+      "Equality",
+      "Secularism"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_260",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which part of the Constitution contains Fundamental Duties?",
+    "options": [
+      "Part IVA",
+      "Part III",
+      "Part IV",
+      "Part V"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_261",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional duties apply mainly to citizens?",
+    "options": [
+      "Fundamental Duties",
+      "Fundamental Rights",
+      "Directive Principles",
+      "Constitutional remedies"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_262",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional principles guide the State in making social-welfare laws?",
+    "options": [
+      "Directive Principles",
+      "Fundamental Rights",
+      "Fundamental Duties",
+      "Basic structure"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_263",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Are Directive Principles directly enforceable by courts?",
+    "options": [
+      "No",
+      "Yes, always",
+      "Only during elections",
+      "Only in villages"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_264",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which duty asks citizens to protect public property?",
+    "options": [
+      "Fundamental Duty",
+      "Cabinet duty",
+      "Election duty",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_265",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional idea lets courts check whether a law violates the Constitution?",
+    "options": [
+      "Judicial review",
+      "Basic structure",
+      "Writ jurisdiction",
+      "Separation of powers"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_easy_266",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which doctrine says Parliament cannot destroy the Constitution's core identity?",
+    "options": [
+      "Basic structure doctrine",
+      "Judicial review",
+      "Separation of powers",
+      "Collective responsibility"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_easy_267",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which court is the highest court within a state?",
+    "options": [
+      "High Court",
+      "District Court",
+      "Gram Nyayalaya",
+      "Lok Adalat"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_268",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which court hears many appeals from district courts in a state?",
+    "options": [
+      "High Court",
+      "District Court",
+      "Sessions Court",
+      "Supreme Court"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_269",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state-level body makes laws for a state?",
+    "options": [
+      "State Legislature",
+      "Municipal Corporation",
+      "Finance Commission",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_270",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which house is the directly elected house in most state legislatures?",
+    "options": [
+      "Vidhan Sabha",
+      "Vidhan Parishad",
+      "Rajya Sabha",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_271",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which official is the constitutional head of a state?",
+    "options": [
+      "Governor",
+      "Chief Minister",
+      "Speaker",
+      "Mayor"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_272",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who leads the elected government in an Indian state?",
+    "options": [
+      "Chief Minister",
+      "Governor",
+      "High Court Chief Justice",
+      "State Election Commissioner"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_273",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body advises the Governor through the Chief Minister?",
+    "options": [
+      "State Council of Ministers",
+      "State Cabinet Secretariat",
+      "Legislative Assembly",
+      "Advocate General's office"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_274",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state officer gives legal advice to the state government?",
+    "options": [
+      "Advocate General",
+      "Attorney General",
+      "CAG",
+      "Lokpal"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_275",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional amendment is linked with Panchayati Raj?",
+    "options": [
+      "73rd Amendment",
+      "42nd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_276",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional amendment is linked with municipalities?",
+    "options": [
+      "74th Amendment",
+      "44th Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_277",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local forum lets village voters directly review Panchayat work?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_278",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local body handles village-level development work?",
+    "options": [
+      "Gram Panchayat",
+      "Gram Sabha",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_279",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which elected representative handles many ward-level city issues?",
+    "options": [
+      "Ward councillor",
+      "Mayor",
+      "Municipal Commissioner",
+      "MLA"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_280",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is famous for villagers hugging trees to prevent felling?",
+    "options": [
+      "Chipko Movement",
+      "Appiko Movement",
+      "Narmada Bachao Andolan",
+      "Silent Valley movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_281",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with displacement and rehabilitation around Narmada dams?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "Non-Cooperation Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_282",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement helped make transparency in government a public demand?",
+    "options": [
+      "Right to Information movement",
+      "Swadeshi movement",
+      "Khilafat movement",
+      "Blue Revolution"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_283",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which anti-corruption campaign is closely linked with demand for a Jan Lokpal?",
+    "options": [
+      "India Against Corruption",
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_284",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local groups often help rural women save and borrow small amounts together?",
+    "options": [
+      "Self-help groups",
+      "Cooperative societies",
+      "Gram Sabhas",
+      "Ward committees"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_285",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local system gives citizens a direct voice in village development?",
+    "options": [
+      "Gram Sabha participation",
+      "Social audit meeting",
+      "Panchayat standing committee",
+      "Ward committee"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_286",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional schedule lists Panchayat subjects?",
+    "options": [
+      "Eleventh Schedule",
+      "Seventh Schedule",
+      "Eighth Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_235",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Preamble value means the State should not privilege one religion over another?",
+    "options": [
+      "Secular",
+      "Republic",
+      "Socialist",
+      "Sovereign"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_236",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Preamble value is most connected with reducing social and economic inequality?",
+    "options": [
+      "Socialist",
+      "Republic",
+      "Secular",
+      "Sovereign"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_237",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Preamble value is closest to equal legal and political status for citizens?",
+    "options": [
+      "Equality",
+      "Emergency",
+      "Ordinance",
+      "Federalism"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_238",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Preamble value supports freedom of thought, expression, belief, faith, and worship?",
+    "options": [
+      "Liberty",
+      "Fraternity",
+      "Sovereignty",
+      "Cabinet rule"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_239",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the main purpose of Fundamental Duties?",
+    "options": [
+      "Set citizen responsibilities",
+      "Create election symbols",
+      "Run courts directly",
+      "Decide tax rates"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_240",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which duty asks citizens to develop scientific temper?",
+    "options": [
+      "Fundamental Duty",
+      "Directive Principle",
+      "Fundamental Right",
+      "Constitutional convention"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_241",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which duty asks citizens to protect the natural environment?",
+    "options": [
+      "Fundamental Duty",
+      "Directive Principle",
+      "Fundamental Right",
+      "State List subject"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_242",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional principles are non-justiciable but important for governance?",
+    "options": [
+      "Directive Principles",
+      "Fundamental Rights",
+      "Writs",
+      "Election petitions"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_243",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which idea best describes Directive Principles?",
+    "options": [
+      "Policy goals for the State",
+      "Criminal punishments",
+      "Election symbols",
+      "Court vacation rules"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_244",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional idea balances individual rights with social-welfare goals?",
+    "options": [
+      "Rights and Directive Principles",
+      "Ballot and symbols",
+      "Speaker and whip",
+      "Mayor and councillor"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_245",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which doctrine came from the Kesavananda Bharati case?",
+    "options": [
+      "Basic structure doctrine",
+      "Collective responsibility",
+      "No-confidence motion",
+      "Model Code"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_246",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which power lets courts strike down unconstitutional laws?",
+    "options": [
+      "Judicial review",
+      "Writ jurisdiction",
+      "Basic structure doctrine",
+      "Curative jurisdiction"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_247",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court can issue writs under Article 226?",
+    "options": [
+      "High Court",
+      "Supreme Court",
+      "District Court",
+      "Tribunal"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_248",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court can issue writs for more than only Fundamental Rights?",
+    "options": [
+      "High Court",
+      "Supreme Court",
+      "District Court",
+      "Lok Adalat"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_249",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court supervises subordinate courts within a state?",
+    "options": [
+      "High Court",
+      "Supreme Court",
+      "District Court",
+      "State Law Department"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_250",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court is the final interpreter of the Constitution in India?",
+    "options": [
+      "Supreme Court",
+      "High Court",
+      "Constitution Bench only",
+      "President"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_251",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state house can remove a state government through a confidence vote?",
+    "options": [
+      "Vidhan Sabha",
+      "Vidhan Parishad",
+      "Rajya Sabha",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_252",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state house is also called the Legislative Assembly?",
+    "options": [
+      "Vidhan Sabha",
+      "Vidhan Parishad",
+      "Lok Sabha",
+      "Municipal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_253",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the usual name for a state's upper house?",
+    "options": [
+      "Vidhan Parishad",
+      "Vidhan Sabha",
+      "Rajya Sabha",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_254",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state office is similar to the President's constitutional role at Union level?",
+    "options": [
+      "Governor",
+      "Chief Minister",
+      "Speaker",
+      "Advocate General"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_255",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who is collectively responsible to the State Legislative Assembly?",
+    "options": [
+      "State Council of Ministers",
+      "Chief Minister alone",
+      "Governor's Secretariat",
+      "Advocate General's office"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_256",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state official is the leader of the majority government in the Assembly?",
+    "options": [
+      "Chief Minister",
+      "Governor",
+      "Speaker",
+      "Leader of Opposition"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_257",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state law officer is similar to the Attorney General at Union level?",
+    "options": [
+      "Advocate General",
+      "Solicitor General",
+      "Law Secretary",
+      "Public Prosecutor"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_258",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body conducts elections to municipalities and Panchayats?",
+    "options": [
+      "State Election Commission",
+      "Election Commission of India",
+      "UPSC",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_259",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule lists functions of municipalities?",
+    "options": [
+      "Twelfth Schedule",
+      "Eleventh Schedule",
+      "Seventh Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_260",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule lists functions of Panchayats?",
+    "options": [
+      "Eleventh Schedule",
+      "Twelfth Schedule",
+      "Eighth Schedule",
+      "First Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_261",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which amendment gave constitutional status to Panchayati Raj institutions?",
+    "options": [
+      "73rd Amendment",
+      "74th Amendment",
+      "42nd Amendment",
+      "52nd Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_262",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which amendment gave constitutional status to urban local bodies?",
+    "options": [
+      "74th Amendment",
+      "73rd Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_263",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local institution directly includes every registered voter in a village?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Zila Parishad",
+      "Block Samiti"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_264",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which urban body is usually responsible for local sanitation and roads?",
+    "options": [
+      "Municipality",
+      "Municipal corporation",
+      "Ward committee",
+      "Development authority"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_265",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement linked forest protection with local community rights?",
+    "options": [
+      "Chipko Movement",
+      "India Against Corruption",
+      "Narmada Bachao Andolan",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_266",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement raised rehabilitation concerns around large dam projects?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "RTI movement",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_267",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which grassroots campaign helped push the demand for an information law?",
+    "options": [
+      "RTI movement",
+      "Mazdoor Kisan Shakti Sangathan campaign",
+      "Jan Lokpal movement",
+      "Social audit movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_268",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is associated with non-violent anti-corruption protests for Lokpal?",
+    "options": [
+      "India Against Corruption",
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_192",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Preamble value is most directly tied to the absence of hereditary rule?",
+    "options": [
+      "Republic",
+      "Secular",
+      "Socialist",
+      "Fraternity"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_193",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Preamble value is most directly tied to national independence in external affairs?",
+    "options": [
+      "Sovereign",
+      "Democratic",
+      "Socialist",
+      "Fraternity"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_194",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional value connects dignity of the individual with unity of the nation?",
+    "options": [
+      "Fraternity",
+      "Judicial review",
+      "Collective responsibility",
+      "Separation of powers"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_195",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Fundamental Duty is most directly linked with rational public thinking?",
+    "options": [
+      "Develop scientific temper",
+      "Pay income tax only",
+      "Vote in every election",
+      "Join a political party"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_196",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Fundamental Duty is most directly linked with forests, lakes, rivers, and wildlife?",
+    "options": [
+      "Protect the natural environment",
+      "Develop scientific temper",
+      "Safeguard public property",
+      "Promote harmony"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_197",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional principle is a guide for lawmaking but not directly enforceable in court?",
+    "options": [
+      "Directive Principle",
+      "Fundamental Right",
+      "Writ",
+      "Election petition"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_198",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which doctrine prevents even a constitutional amendment from destroying core constitutional features?",
+    "options": [
+      "Basic structure doctrine",
+      "Colourable legislation",
+      "Collective responsibility",
+      "Pleasure doctrine"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_199",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case is the standard reference for the basic structure doctrine?",
+    "options": [
+      "Kesavananda Bharati",
+      "Shah Bano",
+      "Vishaka",
+      "Navtej Johar"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_200",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case reinforced the balance between Fundamental Rights and Directive Principles?",
+    "options": [
+      "Minerva Mills",
+      "S.R. Bommai",
+      "Kihoto Hollohan",
+      "Indra Sawhney"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_201",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which power lets High Courts protect legal rights beyond only Fundamental Rights?",
+    "options": [
+      "Article 226 writ jurisdiction",
+      "Article 32 writ jurisdiction",
+      "Supervisory jurisdiction",
+      "Appellate jurisdiction"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_202",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which High Court power is most useful for challenging illegal state action?",
+    "options": [
+      "Writ jurisdiction",
+      "Budget approval",
+      "Voter-list preparation",
+      "Party recognition"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_203",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which court is usually approached first for many state-government service and local-authority disputes?",
+    "options": [
+      "High Court",
+      "Administrative tribunal",
+      "District Court",
+      "Supreme Court"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_204",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which state office may invite a party leader to form government after an election?",
+    "options": [
+      "Governor",
+      "Speaker",
+      "Chief Minister",
+      "Election Commissioner"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_hard_205",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which state institution checks whether the ministry still enjoys Assembly confidence?",
+    "options": [
+      "Vidhan Sabha",
+      "Vidhan Parishad",
+      "Governor",
+      "Speaker"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_hard_206",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which house is permanent in some states and not directly elected in full?",
+    "options": [
+      "Vidhan Parishad",
+      "Vidhan Sabha",
+      "Lok Sabha",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_hard_207",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which law officer represents and advises the state government in legal matters?",
+    "options": [
+      "Advocate General",
+      "Attorney General",
+      "Solicitor General",
+      "Public Prosecutor"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_hard_208",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local institution is the strongest example of direct democracy in village governance?",
+    "options": [
+      "Gram Sabha",
+      "Rajya Sabha",
+      "Vidhan Parishad",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_209",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which amendment is most tied to women's reservation in local bodies?",
+    "options": [
+      "73rd and 74th Amendments",
+      "42nd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_210",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule is linked with subjects such as urban planning and public health in municipalities?",
+    "options": [
+      "Twelfth Schedule",
+      "Eleventh Schedule",
+      "Seventh Schedule",
+      "Ninth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_211",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule is linked with subjects such as agriculture and rural development for Panchayats?",
+    "options": [
+      "Eleventh Schedule",
+      "Twelfth Schedule",
+      "Eighth Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_212",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement made environmental protection a grassroots democratic issue in the Himalayas?",
+    "options": [
+      "Chipko Movement",
+      "India Against Corruption",
+      "Narmada Bachao Andolan",
+      "Total Revolution"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_213",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement connected dam development with rehabilitation and consent concerns?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Appiko Movement",
+      "Silent Valley movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_214",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which grassroots demand turned government records into a citizen-access issue?",
+    "options": [
+      "Right to Information",
+      "Social audit",
+      "Public hearing",
+      "Citizen charter"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_215",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which anti-corruption movement helped popularize the demand for a Jan Lokpal?",
+    "options": [
+      "India Against Corruption",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "Narmada Bachao Andolan"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_216",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which form of local participation lets citizens review works rather than only vote once in five years?",
+    "options": [
+      "Gram Sabha oversight",
+      "Social audit",
+      "Ward committee review",
+      "Panchayat committee review"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_217",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local unit is closest to urban residents for ward-level civic complaints?",
+    "options": [
+      "Ward councillor",
+      "Mayor",
+      "Municipal Commissioner",
+      "Ward committee"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_218",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local-government idea means decisions should be made as close to citizens as possible?",
+    "options": [
+      "Decentralisation",
+      "Devolution",
+      "Subsidiarity",
+      "Local self-government"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_219",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which grassroots institution is meant to improve accountability of Panchayat spending?",
+    "options": [
+      "Gram Sabha",
+      "Vidhan Parishad",
+      "Lok Sabha Secretariat",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_220",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is a better example of environmental grassroots politics than electoral party politics?",
+    "options": [
+      "Chipko Movement",
+      "Appiko Movement",
+      "Narmada Bachao Andolan",
+      "Silent Valley movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  }
+]

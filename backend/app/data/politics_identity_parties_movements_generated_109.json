@@ -1,0 +1,1528 @@
+[
+  {
+    "id": "pol_easy_346",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission is most linked with OBC reservation politics?",
+    "options": [
+      "Mandal Commission",
+      "Sarkaria Commission",
+      "Finance Commission",
+      "Kothari Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_347",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which party is closely associated with Bahujan politics?",
+    "options": [
+      "Bahujan Samaj Party",
+      "Telugu Desam Party",
+      "Dravida Munnetra Kazhagam",
+      "Biju Janata Dal"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_348",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to politics organized around caste identity?",
+    "options": [
+      "Caste politics",
+      "Coalition politics",
+      "Fiscal federalism",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_349",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which idea means the State should treat all religions with equal respect?",
+    "options": [
+      "Secularism",
+      "Socialism",
+      "Federalism",
+      "Regionalism"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_350",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission is the direct forum for minority-community safeguards?",
+    "options": [
+      "National Commission for Minorities",
+      "National Commission for Women",
+      "National Commission for Scheduled Tribes",
+      "National Commission for Backward Classes"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_351",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which schedule gives special arrangements for tribal areas in parts of the North-East?",
+    "options": [
+      "Sixth Schedule",
+      "Seventh Schedule",
+      "Tenth Schedule",
+      "Twelfth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_352",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which demand is associated with the Darjeeling hills?",
+    "options": [
+      "Gorkhaland",
+      "Bodoland",
+      "Vidarbha",
+      "Bundelkhand"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_353",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which demand is associated with Bodo identity politics in Assam?",
+    "options": [
+      "Bodoland",
+      "Gorkhaland",
+      "Telangana",
+      "Uttarakhand"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_354",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which party is strongly associated with Dravidian politics in Tamil Nadu?",
+    "options": [
+      "DMK",
+      "TDP",
+      "BJD",
+      "Akali Dal"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_355",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "TDP is best known as a regional party from which political space?",
+    "options": [
+      "Telugu regional politics",
+      "Dravidian politics",
+      "Odia regional politics",
+      "Sikh regional politics"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_356",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "BJD is best known as a regional party from which state?",
+    "options": [
+      "Odisha",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Punjab"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_357",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which party is strongly associated with Sikh and Punjab politics?",
+    "options": [
+      "Akali Dal",
+      "DMK",
+      "BJD",
+      "TMC"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_358",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Trinamool Congress is best known as a regional force from which state?",
+    "options": [
+      "West Bengal",
+      "Odisha",
+      "Andhra Pradesh",
+      "Jammu and Kashmir"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_359",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term describes several parties sharing power in government?",
+    "options": [
+      "Coalition government",
+      "One-party system",
+      "Judicial review",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_360",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which phrase means no party has a clear majority in the legislature?",
+    "options": [
+      "Hung house",
+      "Money Bill",
+      "Model Code",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_361",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which group is a pressure group in politics?",
+    "options": [
+      "Trade union",
+      "Election Commission",
+      "High Court",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_easy_362",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which pressure group represents organized labour?",
+    "options": [
+      "Trade union",
+      "Business chamber",
+      "Farmers' union",
+      "Student union"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_easy_363",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which pressure group represents cultivators' interests?",
+    "options": [
+      "Farmers' union",
+      "Trade union",
+      "Business chamber",
+      "Bar association"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_easy_364",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term means voters reject a sitting government?",
+    "options": [
+      "Anti-incumbency",
+      "Coalition",
+      "Delimitation",
+      "Devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_easy_365",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to the share of eligible voters who vote?",
+    "options": [
+      "Turnout",
+      "Vote bank",
+      "Swing",
+      "Quota"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_easy_366",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term means a group seen as voting predictably for a party?",
+    "options": [
+      "Vote bank",
+      "Hung house",
+      "Whip",
+      "Writ"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_easy_367",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to voters who may shift between parties?",
+    "options": [
+      "Swing voters",
+      "Postal voters",
+      "Proxy voters",
+      "Tendered voters"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_easy_368",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which organization is known for civil-liberties work in India?",
+    "options": [
+      "PUCL",
+      "UPSC",
+      "CAG",
+      "NCBC"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_369",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with women's safety at workplaces through Vishaka?",
+    "options": [
+      "Women's rights movement",
+      "Environmental movement",
+      "Farmer movement",
+      "Language movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_370",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is linked with protests against dowry deaths?",
+    "options": [
+      "Women's movement",
+      "Civil-liberties movement",
+      "Environmental movement",
+      "Language movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_371",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is best linked with forest conservation by villagers?",
+    "options": [
+      "Chipko Movement",
+      "Anti-arrack movement",
+      "Civil liberties movement",
+      "JP movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_372",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is best linked with dam-displacement issues?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Anti-arrack movement",
+      "Right to Food campaign"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_373",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with women protesting liquor abuse in Andhra Pradesh?",
+    "options": [
+      "Anti-arrack movement",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "RTI movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_374",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term describes politicians from the same family repeatedly holding office?",
+    "options": [
+      "Dynastic politics",
+      "Coalition politics",
+      "Federal politics",
+      "Pressure politics"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_easy_375",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to criminal cases becoming an issue in candidate politics?",
+    "options": [
+      "Criminalisation of politics",
+      "Coalition politics",
+      "Fiscal federalism",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_easy_376",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term describes women's presence in elected bodies?",
+    "options": [
+      "Women's representation",
+      "Vote-bank politics",
+      "Anti-incumbency",
+      "Delimitation"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_easy_377",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to wealth and class background of elected representatives?",
+    "options": [
+      "Socio-economic profile",
+      "Electoral roll",
+      "Party whip",
+      "Model Code"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_easy_378",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which party system term describes many parties competing seriously?",
+    "options": [
+      "Multi-party system",
+      "Two-party system",
+      "One-party rule",
+      "Non-party democracy"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_379",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which concept links caste groups with electoral mobilization?",
+    "options": [
+      "Social coalition",
+      "Judicial review",
+      "Tax devolution",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_380",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which issue links Shah Bano and personal-law politics?",
+    "options": [
+      "Religion and gender justice",
+      "River-water sharing",
+      "Industrial licensing",
+      "State reorganization"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_381",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term means political appeal based on religious identity?",
+    "options": [
+      "Communal politics",
+      "Coalition politics",
+      "Green politics",
+      "Fiscal politics"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_332",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which case is most associated with the Mandal reservation framework?",
+    "options": [
+      "Indra Sawhney",
+      "S.R. Bommai",
+      "Puttaswamy",
+      "Vishaka"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_333",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which social category did Mandal politics mainly bring into national focus?",
+    "options": [
+      "OBCs",
+      "Anglo-Indians",
+      "Linguistic minorities",
+      "Non-resident Indians"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_334",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which political slogan is closest to Bahujan politics?",
+    "options": [
+      "Majority of marginalized groups",
+      "Single national language",
+      "Pure market economy",
+      "Centralized planning"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_335",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional arrangement protects many tribal areas in the North-East?",
+    "options": [
+      "Sixth Schedule councils",
+      "GST Council",
+      "Public Accounts Committee",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_336",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which regional aspiration is linked with the Bodo movement?",
+    "options": [
+      "Bodoland",
+      "Gorkhaland",
+      "Vidarbha",
+      "Harit Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_337",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which regional aspiration is linked with the Darjeeling hills?",
+    "options": [
+      "Gorkhaland",
+      "Bodoland",
+      "Telangana",
+      "Saurashtra"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_338",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which issue best describes communal politics?",
+    "options": [
+      "Religious identity in political mobilization",
+      "River-water sharing",
+      "Public-sector disinvestment",
+      "Civil-service recruitment"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_339",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which concept best describes Dravidian parties' social base?",
+    "options": [
+      "Regional-linguistic identity",
+      "River-basin identity",
+      "Civil-service identity",
+      "Judicial identity"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_340",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which party is most associated with Dravidian ideology?",
+    "options": [
+      "DMK",
+      "TDP",
+      "BJD",
+      "Akali Dal"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_341",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which party is most associated with Telugu regional assertion?",
+    "options": [
+      "TDP",
+      "DMK",
+      "TMC",
+      "National Conference"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_342",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which party's base is most clearly tied to Odia regional politics?",
+    "options": [
+      "BJD",
+      "TDP",
+      "AIADMK",
+      "Shiv Sena"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_343",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Shiv Sena is most closely linked with which regional-political base?",
+    "options": [
+      "Marathi regional politics",
+      "Odia regional politics",
+      "Telugu regional politics",
+      "Sikh regional politics"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_344",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "National Conference is best understood as which kind of party?",
+    "options": [
+      "Kashmir regional party",
+      "Telugu regional party",
+      "Dravidian party",
+      "Odia regional party"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_345",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which coalition idea means allies agree on a shared policy agenda?",
+    "options": [
+      "Common minimum programme",
+      "Vote bank",
+      "Party whip",
+      "Model Code"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_346",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase means a party supports government without joining the cabinet?",
+    "options": [
+      "Outside support",
+      "Inner-party election",
+      "Postal vote",
+      "Floor crossing"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_347",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best describes coalition politics?",
+    "options": [
+      "Government by alliance partners",
+      "Government by courts",
+      "Government by audit reports",
+      "Government by commissions"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_348",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which group is a pressure group rather than a political party?",
+    "options": [
+      "Business chamber",
+      "Regional party",
+      "National party",
+      "Ruling coalition"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_medium_349",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pressure group mainly represents workers?",
+    "options": [
+      "Trade union",
+      "Farmers' union",
+      "Business chamber",
+      "Resident welfare association"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_medium_350",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pressure group mainly represents industry interests?",
+    "options": [
+      "Business chamber",
+      "Trade union",
+      "Farmers' union",
+      "Student union"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_medium_351",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pressure group mainly represents agrarian interests?",
+    "options": [
+      "Farmers' union",
+      "Business chamber",
+      "Trade union",
+      "Bar association"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_medium_352",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which electoral behavior idea means voters punish a sitting government?",
+    "options": [
+      "Anti-incumbency",
+      "Coalition formation",
+      "Delimitation",
+      "Party recognition"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_medium_353",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which electoral behavior idea means social groups vote as blocs?",
+    "options": [
+      "Vote-bank politics",
+      "Postal voting",
+      "Tendered voting",
+      "Floor test"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_medium_354",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which electoral trend tracks rising participation by women voters?",
+    "options": [
+      "Rising women turnout",
+      "Vote-bank politics",
+      "Anti-incumbency",
+      "Swing voting"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_medium_355",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which factor can change voting behavior across elections?",
+    "options": [
+      "Anti-incumbency mood",
+      "Court roster",
+      "Audit paragraph",
+      "Writ jurisdiction"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_medium_356",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which term describes candidates with serious pending criminal cases entering politics?",
+    "options": [
+      "Criminalisation of politics",
+      "Coalition politics",
+      "Cooperative federalism",
+      "Constitutional morality"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_medium_357",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which term describes family networks shaping candidate selection?",
+    "options": [
+      "Dynastic politics",
+      "Pressure-group politics",
+      "Civil-liberties politics",
+      "Fiscal politics"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_medium_358",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which profile issue asks whether MLAs and MPs reflect ordinary social diversity?",
+    "options": [
+      "Representative social profile",
+      "Election-symbol allotment",
+      "River-water sharing",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_medium_359",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which organization is associated with democratic-rights activism?",
+    "options": [
+      "PUDR",
+      "UPSC",
+      "CAG",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_360",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which organization is associated with civil liberties activism?",
+    "options": [
+      "PUCL",
+      "NITI Aayog",
+      "NCBC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_361",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which period made civil liberties a major issue in Indian politics?",
+    "options": [
+      "Emergency",
+      "Green Revolution",
+      "Planning Commission era",
+      "GST rollout"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_362",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is linked with workplace sexual-harassment guidelines?",
+    "options": [
+      "Women's movement",
+      "Environmental movement",
+      "Farmer movement",
+      "Language movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_363",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which law area is most connected to anti-dowry activism?",
+    "options": [
+      "Women's rights",
+      "Environmental law",
+      "Electoral law",
+      "Water disputes"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_364",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is linked with liquor prohibition demands by women?",
+    "options": [
+      "Anti-arrack movement",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "Gorkhaland movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_365",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which environmental movement protected trees through local protest?",
+    "options": [
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Silent Valley movement",
+      "India Against Corruption"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_366",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which environmental movement opposed ecological damage in Kerala?",
+    "options": [
+      "Silent Valley movement",
+      "Chipko Movement",
+      "Appiko Movement",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_367",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement opposed displacement from large dam projects?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Silent Valley movement",
+      "Anti-arrack movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_368",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is a Karnataka forest-conservation counterpart to Chipko?",
+    "options": [
+      "Appiko Movement",
+      "Narmada Bachao Andolan",
+      "Anti-arrack movement",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_283",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which politics concept best explains Mandal-era mobilization?",
+    "options": [
+      "Caste-based social justice",
+      "River-water federalism",
+      "Public-sector planning",
+      "Civil-service neutrality"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_284",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which political current is best linked with Kanshi Ram and BSP?",
+    "options": [
+      "Bahujan politics",
+      "Dravidian politics",
+      "Hindutva politics",
+      "Gandhian economics"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_285",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which identity issue is most linked with Article 350B-type protections?",
+    "options": [
+      "Linguistic minorities",
+      "OBC reservations",
+      "Women's movements",
+      "Environmental movements"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_286",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which institution type is central to Sixth Schedule autonomy?",
+    "options": [
+      "Autonomous district councils",
+      "GST Council",
+      "Finance Commission",
+      "Municipal corporations"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_287",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which political demand is an ethnic-regional autonomy demand in Assam?",
+    "options": [
+      "Bodoland",
+      "Gorkhaland",
+      "Vidarbha",
+      "Bundelkhand"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_288",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which political demand is an ethnic-regional autonomy demand in West Bengal hills?",
+    "options": [
+      "Gorkhaland",
+      "Bodoland",
+      "Harit Pradesh",
+      "Saurashtra"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_289",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which concept best captures religion as a basis of electoral mobilization?",
+    "options": [
+      "Communal politics",
+      "Coalition bargaining",
+      "Economic planning",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_290",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which debate combines religion, gender, and personal law?",
+    "options": [
+      "Uniform Civil Code debate",
+      "River tribunal debate",
+      "Delimitation debate",
+      "Disinvestment debate"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_291",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which party family is closest to Dravidian social-justice politics?",
+    "options": [
+      "DMK-AIADMK",
+      "TDP-BJD",
+      "BSP-SP",
+      "Akali-NC"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_292",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which party is closest to a Telugu regional-party example?",
+    "options": [
+      "TDP",
+      "DMK",
+      "Akali Dal",
+      "National Conference"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_293",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "For Odisha-centred regional politics, which party is the clearest example?",
+    "options": [
+      "BJD",
+      "TMC",
+      "DMK",
+      "AIADMK"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_294",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which party is closest to a Punjab Sikh-regional party example?",
+    "options": [
+      "Akali Dal",
+      "BJD",
+      "TDP",
+      "DMK"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_295",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "National Conference is primarily rooted in which regional politics?",
+    "options": [
+      "Kashmir",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Odisha"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_296",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which term best describes party support based on caste, class, region, and religion together?",
+    "options": [
+      "Social base",
+      "Judicial base",
+      "Fiscal base",
+      "Audit base"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_297",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which coalition condition often produces bargaining among allies?",
+    "options": [
+      "Hung Parliament",
+      "Single-party majority",
+      "Judicial review",
+      "Finance Commission award"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_298",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which coalition tool states shared policies among alliance partners?",
+    "options": [
+      "Common minimum programme",
+      "Election symbol order",
+      "Audit report",
+      "Writ petition"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_299",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which phrase describes backing a government without ministerial posts?",
+    "options": [
+      "Outside support",
+      "Cabinet berth",
+      "Party recognition",
+      "Whip violation"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_300",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which kind of pressure group best fits CII or FICCI?",
+    "options": [
+      "Business association",
+      "Trade union",
+      "Farmers' union",
+      "Student union"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_hard_301",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which kind of pressure group best fits a national farmers' union?",
+    "options": [
+      "Agrarian interest group",
+      "Business association",
+      "Bar association",
+      "Student union"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_hard_302",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which kind of pressure group best fits a workers' federation?",
+    "options": [
+      "Trade union",
+      "Business chamber",
+      "Farmers' union",
+      "Resident group"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_hard_303",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which electoral behavior term best describes voting against the ruling party due to dissatisfaction?",
+    "options": [
+      "Anti-incumbency",
+      "Vote transfer",
+      "Party recognition",
+      "Floor test"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_hard_304",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which electoral behavior term describes a reliable caste or community support base?",
+    "options": [
+      "Vote bank",
+      "Postal ballot",
+      "Tendered vote",
+      "Counting agent"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_hard_305",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which electoral trend is about more women participating as voters?",
+    "options": [
+      "Rising women turnout",
+      "Floor crossing",
+      "Delimitation freeze",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_hard_306",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which legislator-profile issue concerns candidates' declared assets?",
+    "options": [
+      "Wealth profile",
+      "Vote-bank profile",
+      "River-profile",
+      "Writ profile"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_hard_307",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which legislator-profile issue concerns family dominance in tickets?",
+    "options": [
+      "Dynastic politics",
+      "Pressure-group lobbying",
+      "Civil-liberties activism",
+      "Federal bargaining"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_hard_308",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which legislator-profile issue concerns pending serious cases among candidates?",
+    "options": [
+      "Criminalisation of politics",
+      "Coalition management",
+      "Caste census",
+      "Environmental clearance"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_hard_309",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which civil-liberties organization is often abbreviated PUCL?",
+    "options": [
+      "People's Union for Civil Liberties",
+      "Planning Union for Cooperative Labour",
+      "Public Utilities Commission League",
+      "Panchayat Union for Civic Law"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_310",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which rights organization is often abbreviated PUDR?",
+    "options": [
+      "People's Union for Democratic Rights",
+      "Public Union for District Reform",
+      "Planning Unit for Development Review",
+      "Panchayat Union for Democratic Roads"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_311",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement area responds to unlawful detention and custodial abuse?",
+    "options": [
+      "Civil liberties movement",
+      "Environmental movement",
+      "Regional party movement",
+      "Coalition movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_312",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which women's movement issue is linked with the Vishaka case?",
+    "options": [
+      "Workplace sexual harassment",
+      "River-water sharing",
+      "Civil-service recruitment",
+      "Land ceiling"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_313",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which women's movement issue is linked with anti-dowry campaigns?",
+    "options": [
+      "Dowry violence",
+      "Forest conservation",
+      "State reorganization",
+      "Industrial licensing"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_314",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which women's movement is linked with liquor prohibition in Andhra Pradesh?",
+    "options": [
+      "Anti-arrack movement",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "JP movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_315",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which environmental movement is most closely linked with the Western Ghats in Karnataka?",
+    "options": [
+      "Appiko Movement",
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Silent Valley movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_316",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which environmental movement is most closely linked with Kerala rainforest protection?",
+    "options": [
+      "Silent Valley movement",
+      "Appiko Movement",
+      "Chipko Movement",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_317",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement linked development, displacement, and environmental concerns?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Anti-arrack movement",
+      "Bhoodan Movement",
+      "JP movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_318",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement linked forest conservation with local community protest in Uttarakhand?",
+    "options": [
+      "Chipko Movement",
+      "Appiko Movement",
+      "Silent Valley movement",
+      "India Against Corruption"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  }
+]

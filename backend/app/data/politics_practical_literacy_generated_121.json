@@ -1,0 +1,1696 @@
+[
+  {
+    "id": "pol_easy_215",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body conducts Lok Sabha and Assembly elections in India?",
+    "options": [
+      "Election Commission of India",
+      "Finance Commission",
+      "NITI Aayog",
+      "Central Vigilance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_216",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What does NOTA allow a voter to record?",
+    "options": [
+      "None of the above",
+      "Postal ballot",
+      "Tendered vote",
+      "Rejected nomination"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_217",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which machine records votes in most Indian polling booths?",
+    "options": [
+      "EVM",
+      "VVPAT",
+      "Ballot unit only",
+      "Postal ballot"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_218",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which paper trail system helps voters verify the symbol they chose?",
+    "options": [
+      "VVPAT",
+      "EVM control unit",
+      "Postal ballot",
+      "Electoral roll"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_219",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which document is commonly called the voter ID card?",
+    "options": [
+      "EPIC",
+      "PAN",
+      "Aadhaar only",
+      "Passport"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_220",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which election rulebook starts after polls are announced?",
+    "options": [
+      "Model Code of Conduct",
+      "Representation petition",
+      "Election manifesto",
+      "Voter-list revision"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_221",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the officer in charge of conducting an election in a constituency?",
+    "options": [
+      "Returning Officer",
+      "Presiding Officer",
+      "Booth Level Officer",
+      "Polling Agent"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_222",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which official list decides whether a person can vote in an election?",
+    "options": [
+      "Electoral roll",
+      "Voter slip",
+      "EPIC database",
+      "Candidate list"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_223",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body conducts Panchayat and municipal elections in a state?",
+    "options": [
+      "State Election Commission",
+      "Election Commission of India",
+      "Union Public Service Commission",
+      "Finance Ministry"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_224",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which mark helps prevent a voter from voting twice?",
+    "options": [
+      "Indelible ink",
+      "VVPAT slip",
+      "Polling stamp",
+      "Voter slip"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_225",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which house is directly elected by Indian voters?",
+    "options": [
+      "Lok Sabha",
+      "Rajya Sabha",
+      "State Legislative Council",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_226",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which house represents the states in Parliament?",
+    "options": [
+      "Rajya Sabha",
+      "Lok Sabha",
+      "Gram Sabha",
+      "Municipal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_227",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which officer presides over the Lok Sabha?",
+    "options": [
+      "Speaker",
+      "Deputy Chairman",
+      "President",
+      "Leader of the House"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_228",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which parliamentary device lets MPs ask ministers about government work?",
+    "options": [
+      "Question Hour",
+      "Zero Hour",
+      "Calling attention",
+      "Private member business"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_229",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which vote tests whether the government still has majority support?",
+    "options": [
+      "No-confidence motion",
+      "Confidence motion",
+      "Censure motion",
+      "Adjournment motion"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_230",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which instruction tells party legislators how to vote in the House?",
+    "options": [
+      "Whip",
+      "Writ",
+      "Notice",
+      "Motion"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_231",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which bill deals mainly with taxation or government spending?",
+    "options": [
+      "Money Bill",
+      "Private Bill",
+      "Local Bill",
+      "Ordinary notice"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_232",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which head of government leads a state council of ministers?",
+    "options": [
+      "Chief Minister",
+      "Governor",
+      "Mayor",
+      "Speaker"
+    ],
+    "correct_index": 0,
+    "source_note": "executive"
+  },
+  {
+    "id": "pol_easy_233",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional head formally appoints a state Chief Minister?",
+    "options": [
+      "Governor",
+      "President",
+      "Speaker",
+      "Chief Justice of High Court"
+    ],
+    "correct_index": 0,
+    "source_note": "executive"
+  },
+  {
+    "id": "pol_easy_234",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which temporary law can the President issue when Parliament is not in session?",
+    "options": [
+      "Ordinance",
+      "Rule",
+      "Resolution",
+      "Notification"
+    ],
+    "correct_index": 0,
+    "source_note": "executive"
+  },
+  {
+    "id": "pol_easy_235",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which village forum includes all registered voters of that village?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Ward Committee",
+      "Block Samiti"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_236",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is usually the elected head of a Gram Panchayat?",
+    "options": [
+      "Sarpanch",
+      "Ward councillor",
+      "Mayor",
+      "Block officer"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_237",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who represents a city ward in a municipal body?",
+    "options": [
+      "Councillor",
+      "Mayor",
+      "Sarpanch",
+      "MLA"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_238",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the political head of many municipal corporations?",
+    "options": [
+      "Mayor",
+      "Municipal Commissioner",
+      "Ward councillor",
+      "District Collector"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_239",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body is closest to ordinary village-level local government?",
+    "options": [
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad",
+      "Municipal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_240",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which law is used to request information from a public authority?",
+    "options": [
+      "RTI Act",
+      "Companies Act",
+      "Arms Act",
+      "Forest Act"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_241",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the first officer a citizen usually approaches under RTI?",
+    "options": [
+      "Public Information Officer",
+      "Returning Officer",
+      "Police Commissioner",
+      "Speaker"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_242",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body hears second appeals under central RTI matters?",
+    "options": [
+      "Central Information Commission",
+      "Finance Commission",
+      "Election Commission",
+      "Planning Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_243",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which court order is used to produce a detained person before court?",
+    "options": [
+      "Habeas corpus",
+      "Mandamus",
+      "Certiorari",
+      "Quo warranto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_244",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which legal action can raise a public-interest issue in court?",
+    "options": [
+      "PIL",
+      "Writ petition",
+      "RTI appeal",
+      "Election petition"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_245",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body audits Union and state government accounts?",
+    "options": [
+      "CAG",
+      "UPSC",
+      "NHRC",
+      "CVC"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_246",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body investigates human-rights complaints in India?",
+    "options": [
+      "NHRC",
+      "CAG",
+      "UPSC",
+      "GST Council"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_247",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body recruits civil servants through national competitive exams?",
+    "options": [
+      "UPSC",
+      "CAG",
+      "Lokpal",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_248",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which anti-corruption ombudsman handles complaints against many central public officials?",
+    "options": [
+      "Lokpal",
+      "Lokayukta",
+      "CVC",
+      "CBI"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_249",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body deals with vigilance and corruption-prevention in central government organizations?",
+    "options": [
+      "CVC",
+      "CAG",
+      "NHRC",
+      "SEC"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_250",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which council brings the Union and states together for GST decisions?",
+    "options": [
+      "GST Council",
+      "Finance Commission",
+      "Inter-State Council",
+      "NITI Aayog Governing Council"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_251",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which schedule divides subjects into Union, State, and Concurrent lists?",
+    "options": [
+      "Seventh Schedule",
+      "Tenth Schedule",
+      "Eighth Schedule",
+      "First Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_252",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list contains subjects mainly handled by state governments?",
+    "options": [
+      "State List",
+      "Union List",
+      "Concurrent List",
+      "Residuary List"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_253",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list contains subjects on which both Union and states can legislate?",
+    "options": [
+      "Concurrent List",
+      "Union List only",
+      "State List only",
+      "Eighth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_254",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which principle means India has both Union and state governments?",
+    "options": [
+      "Federalism",
+      "Monarchy",
+      "Apartheid",
+      "Colonial rule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_189",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What should a voter check before polling day to avoid being turned away?",
+    "options": [
+      "Name in electoral roll",
+      "EPIC number only",
+      "Polling-agent list",
+      "Candidate affidavit"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_190",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the main purpose of VVPAT in elections?",
+    "options": [
+      "Let voters verify the recorded choice",
+      "Replace the EVM entirely",
+      "Register new voters",
+      "Allot election symbols"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_191",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What does the Model Code of Conduct mainly try to ensure?",
+    "options": [
+      "Fair election campaigning",
+      "Final voter-list revision",
+      "Counting of postal ballots",
+      "Candidate nomination scrutiny"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_192",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which officer usually accepts candidate nomination papers in a constituency?",
+    "options": [
+      "Returning Officer",
+      "Presiding Officer",
+      "Booth Level Officer",
+      "Counting Supervisor"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_193",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which poll official manages the actual polling station on voting day?",
+    "options": [
+      "Presiding Officer",
+      "Returning Officer",
+      "Booth Level Officer",
+      "Counting Observer"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_194",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which election record is revised to add, delete, or correct voter names?",
+    "options": [
+      "Electoral roll",
+      "Candidate affidavit",
+      "Result sheet",
+      "Polling diary"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_195",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body recognizes national and state political parties?",
+    "options": [
+      "Election Commission of India",
+      "State Election Commission",
+      "Registrar of Societies",
+      "Ministry of Law and Justice"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_196",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which symbol-related job belongs to the Election Commission?",
+    "options": [
+      "Allotting election symbols",
+      "Approving party manifestos",
+      "Printing voter slips only",
+      "Counting VVPAT slips"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_197",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which option is meant for voters who reject all listed candidates?",
+    "options": [
+      "NOTA",
+      "Postal ballot",
+      "Tendered vote",
+      "Proxy vote"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_198",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which system is meant for some voters who cannot vote at their polling station?",
+    "options": [
+      "Postal ballot",
+      "Tendered vote",
+      "NOTA",
+      "Proxy vote"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_199",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the main purpose of Question Hour?",
+    "options": [
+      "Holding ministers accountable",
+      "Electing the Speaker",
+      "Passing only budgets",
+      "Selecting judges"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_200",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is Zero Hour used for in Parliament?",
+    "options": [
+      "Raising urgent public matters",
+      "Asking listed oral questions",
+      "Voting on Money Bills only",
+      "Electing the Speaker"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_201",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which committee examines CAG audit reports?",
+    "options": [
+      "Public Accounts Committee",
+      "Business Advisory Committee",
+      "Rules Committee",
+      "Ethics Committee only"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_202",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What does a party whip mainly enforce?",
+    "options": [
+      "Party voting discipline",
+      "Question Hour order",
+      "Committee witness summons",
+      "Budget speech timing"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_203",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who certifies whether a bill is a Money Bill in Lok Sabha?",
+    "options": [
+      "Speaker",
+      "President",
+      "CAG",
+      "Chief Election Commissioner"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_204",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which bill is introduced by an MP who is not a minister?",
+    "options": [
+      "Private member bill",
+      "Money Bill",
+      "Appropriation Bill",
+      "Finance Bill only"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_205",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which motion can force a government to prove its majority?",
+    "options": [
+      "No-confidence motion",
+      "Calling attention notice",
+      "Zero Hour mention",
+      "Adjournment for lunch"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_206",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which parliamentary question expects an oral answer and follow-up questions?",
+    "options": [
+      "Starred question",
+      "Unstarred question",
+      "Short title",
+      "White paper"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_207",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which parliamentary question usually receives a written answer?",
+    "options": [
+      "Unstarred question",
+      "Starred question",
+      "Confidence motion",
+      "Appropriation demand"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_208",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the main role of parliamentary committees?",
+    "options": [
+      "Detailed scrutiny of work and bills",
+      "Questioning ministers in Question Hour",
+      "Certifying Money Bills",
+      "Issuing party whips"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_209",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local body should a villager attend to question Panchayat spending?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_210",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which representative is the closest elected contact for a city ward issue?",
+    "options": [
+      "Ward councillor",
+      "Mayor",
+      "Municipal Commissioner",
+      "MLA"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_211",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local body handles urban services such as streetlights and local roads?",
+    "options": [
+      "Municipality",
+      "Gram Panchayat",
+      "Zila Parishad",
+      "State Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_212",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which village-level plan is most directly discussed by local voters?",
+    "options": [
+      "Gram Panchayat work plan",
+      "Union Budget",
+      "Supreme Court roster",
+      "Foreign treaty"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_213",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which level is most directly linked with a district collector's administration?",
+    "options": [
+      "District",
+      "Ward",
+      "Block only",
+      "Parliamentary session"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_214",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the first appeal under RTI used for?",
+    "options": [
+      "Challenging a poor or missing PIO reply",
+      "Appealing election results",
+      "Seeking bail from a court",
+      "Changing a party whip"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_215",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which RTI officer is responsible for giving information held by a public authority?",
+    "options": [
+      "PIO",
+      "First Appellate Authority",
+      "Information Commissioner",
+      "Public Prosecutor"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_216",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the normal RTI response deadline for most requests?",
+    "options": [
+      "30 days",
+      "24 hours",
+      "6 months",
+      "5 years"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_217",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which RTI deadline applies when life or liberty is involved?",
+    "options": [
+      "48 hours",
+      "30 days",
+      "90 days",
+      "One year"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_218",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court tool can order a public official to perform a legal duty?",
+    "options": [
+      "Mandamus",
+      "Habeas corpus",
+      "Bail bond",
+      "Manifesto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_219",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court tool questions a person's legal authority to hold public office?",
+    "options": [
+      "Quo warranto",
+      "Certiorari",
+      "Habeas corpus",
+      "Postal ballot"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_220",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which writ is most directly linked to unlawful detention?",
+    "options": [
+      "Habeas corpus",
+      "Mandamus",
+      "Prohibition",
+      "Quo warranto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_221",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which case is best known for recognizing privacy as a fundamental right?",
+    "options": [
+      "Puttaswamy case",
+      "Shah Bano case",
+      "Bommai case",
+      "Kesavananda case"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_222",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which legal route is used when a larger public wrong needs court attention?",
+    "options": [
+      "Public Interest Litigation",
+      "RTI first appeal",
+      "Election petition",
+      "Privilege motion"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_223",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution audits government receipts and spending?",
+    "options": [
+      "CAG",
+      "CVC",
+      "UPSC",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_224",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution is linked to anti-corruption vigilance in Union government bodies?",
+    "options": [
+      "CVC",
+      "CAG",
+      "UPSC",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_225",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution examines complaints of human-rights violations?",
+    "options": [
+      "NHRC",
+      "UPSC",
+      "GST Council",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_226",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution selects candidates for civil services exams?",
+    "options": [
+      "UPSC",
+      "Lokpal",
+      "CVC",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_227",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution recommends sharing Union taxes with states?",
+    "options": [
+      "Finance Commission",
+      "CVC",
+      "UPSC",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_228",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution is India's central anti-corruption ombudsman?",
+    "options": [
+      "Lokpal",
+      "Lokayukta",
+      "CVC",
+      "CBI"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_229",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state-level ombudsman is the counterpart of Lokpal?",
+    "options": [
+      "Lokayukta",
+      "CVC",
+      "CAG",
+      "State Election Commissioner"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_230",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body is chaired by the Union Finance Minister for GST decisions?",
+    "options": [
+      "GST Council",
+      "Election Commission",
+      "NHRC",
+      "CVC"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_231",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which list gives Parliament exclusive lawmaking power over defence?",
+    "options": [
+      "Union List",
+      "State List",
+      "Concurrent List",
+      "Municipal List"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_232",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which list includes subjects where both Parliament and states can make laws?",
+    "options": [
+      "Concurrent List",
+      "Union List only",
+      "State List only",
+      "Eighth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_233",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule is central to understanding Centre-state subject division?",
+    "options": [
+      "Seventh Schedule",
+      "Tenth Schedule",
+      "Twelfth Schedule",
+      "Eighth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_234",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform reserved one-third seats for women in Panchayats and municipalities?",
+    "options": [
+      "73rd and 74th Amendments",
+      "42nd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_157",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which election role is responsible for counting and declaring the result in a constituency?",
+    "options": [
+      "Returning Officer",
+      "Presiding Officer",
+      "Polling Agent",
+      "Booth Level Officer"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_158",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which official is the best local contact for voter-list correction at booth level?",
+    "options": [
+      "Booth Level Officer",
+      "Presiding Officer",
+      "Polling Agent",
+      "Counting Observer"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_159",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which vote type is used if someone's vote has already been wrongly cast by another person?",
+    "options": [
+      "Tendered vote",
+      "Postal ballot",
+      "Proxy vote",
+      "NOTA"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_160",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which election document records the order and symbols of contesting candidates?",
+    "options": [
+      "Ballot paper",
+      "Electoral roll",
+      "Voter slip",
+      "Candidate affidavit"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_161",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which polling-station role verifies voters before they cast votes?",
+    "options": [
+      "Polling Officer",
+      "Presiding Officer",
+      "Polling Agent",
+      "Counting Supervisor"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_162",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which election complaint is most directly linked to misuse of official machinery?",
+    "options": [
+      "MCC violation",
+      "Election petition",
+      "RTI first appeal",
+      "Candidate affidavit defect"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_163",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which official appoints polling personnel at district level during elections?",
+    "options": [
+      "District Election Officer",
+      "Returning Officer",
+      "Presiding Officer",
+      "Booth Level Officer"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_164",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which parliamentary device lets MPs seek urgent ministerial attention to a public issue?",
+    "options": [
+      "Calling attention",
+      "Zero Hour",
+      "Starred question",
+      "Privilege motion"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_165",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which committee is most associated with examining government spending after CAG audit?",
+    "options": [
+      "Public Accounts Committee",
+      "Estimates Committee",
+      "Rules Committee",
+      "Privileges Committee"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_166",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which committee examines whether government funds were spent as Parliament approved?",
+    "options": [
+      "Public Accounts Committee",
+      "Ethics Committee",
+      "House Committee",
+      "Library Committee"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_167",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which device can punish a legislator for defying a party line in key votes?",
+    "options": [
+      "Anti-defection law",
+      "RTI Act",
+      "Model Code only",
+      "Finance Commission order"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_168",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule contains India's anti-defection provisions?",
+    "options": [
+      "Tenth Schedule",
+      "Seventh Schedule",
+      "Eighth Schedule",
+      "Twelfth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_169",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which situation most clearly tests collective responsibility of the cabinet?",
+    "options": [
+      "No-confidence motion",
+      "Starred question",
+      "Zero Hour mention",
+      "Private member resolution"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_170",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which type of question allows supplementary questions in Parliament?",
+    "options": [
+      "Starred question",
+      "Unstarred question",
+      "Short title",
+      "Gazette question"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_171",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which House has limited power over a certified Money Bill?",
+    "options": [
+      "Rajya Sabha",
+      "Lok Sabha",
+      "State Legislative Council",
+      "Joint sitting"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_172",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which urban representative should a resident approach first for a broken streetlight in a ward?",
+    "options": [
+      "Ward councillor",
+      "Mayor",
+      "Municipal Commissioner",
+      "MLA"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_173",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local meeting is meant to approve and review Panchayat-level work?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_174",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which urban body is usually responsible for local sanitation and municipal roads?",
+    "options": [
+      "Municipal corporation",
+      "Supreme Court",
+      "Election Commission",
+      "Rajya Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_175",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which amendment is most directly linked with Panchayati Raj institutions?",
+    "options": [
+      "73rd Amendment",
+      "42nd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_176",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which amendment is most directly linked with urban local bodies?",
+    "options": [
+      "74th Amendment",
+      "44th Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_177",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which RTI appeal goes to the Information Commission after the first appeal fails?",
+    "options": [
+      "Second appeal",
+      "Curative petition",
+      "Postal ballot",
+      "Confidence motion"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_178",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which public authority officer can face penalty for wrongly denying RTI information?",
+    "options": [
+      "PIO",
+      "Returning Officer only",
+      "Mayor only",
+      "Party whip"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_179",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which writ stops a lower court or tribunal from exceeding its jurisdiction?",
+    "options": [
+      "Prohibition",
+      "Habeas corpus",
+      "Mandamus",
+      "Quo warranto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_180",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which writ can quash an order of a lower court or tribunal?",
+    "options": [
+      "Certiorari",
+      "Habeas corpus",
+      "Mandamus",
+      "Quo warranto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_181",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which writ tells a public authority to do what the law requires?",
+    "options": [
+      "Mandamus",
+      "Habeas corpus",
+      "Certiorari",
+      "Prohibition"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_182",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case is most linked with basic structure doctrine?",
+    "options": [
+      "Kesavananda Bharati",
+      "Vishaka",
+      "Shah Bano",
+      "Navtej Johar"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_183",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case is most linked with Centre-state misuse of President's Rule?",
+    "options": [
+      "S.R. Bommai",
+      "Puttaswamy",
+      "Maneka Gandhi",
+      "Vishaka"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_184",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which institution's reports are examined by the Public Accounts Committee?",
+    "options": [
+      "CAG",
+      "NHRC",
+      "UPSC",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_185",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body is often called the integrity institution for central vigilance?",
+    "options": [
+      "CVC",
+      "Finance Commission",
+      "UPSC",
+      "State Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_186",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body can inquire into human-rights violations by public servants?",
+    "options": [
+      "NHRC",
+      "CAG",
+      "UPSC",
+      "GST Council"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_187",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body conducts exams such as Civil Services and Engineering Services?",
+    "options": [
+      "UPSC",
+      "CAG",
+      "CVC",
+      "Lokayukta"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_188",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional body recommends tax devolution between Union and states?",
+    "options": [
+      "Finance Commission",
+      "GST Council",
+      "Election Commission",
+      "Planning Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_189",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body is the best fit for complaints against central public servants for corruption?",
+    "options": [
+      "Lokpal",
+      "Finance Commission",
+      "NHRC",
+      "Rajya Sabha Secretariat"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_190",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which council embodies cooperative federalism in indirect-tax decisions?",
+    "options": [
+      "GST Council",
+      "CVC",
+      "UPSC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_191",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which subject-list conflict is settled by giving Union law priority in many Concurrent List cases?",
+    "options": [
+      "Concurrent List conflict",
+      "Eighth Schedule listing",
+      "Party-symbol dispute",
+      "Voter-ID correction"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  }
+]

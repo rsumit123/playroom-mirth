@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "pol_easy_287",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which amendment is linked with Panchayati Raj institutions?",
+    "options": [
+      "73rd Amendment",
+      "74th Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_288",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which amendment is linked with urban local bodies?",
+    "options": [
+      "74th Amendment",
+      "73rd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_289",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body is the general assembly of village voters?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_290",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which elected body works at the village level?",
+    "options": [
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad",
+      "Municipal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_291",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local body works at the district level in Panchayati Raj?",
+    "options": [
+      "Zila Parishad",
+      "Gram Panchayat",
+      "Ward Committee",
+      "Municipality"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_292",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which urban local body usually governs a large city?",
+    "options": [
+      "Municipal Corporation",
+      "Municipal Council",
+      "Nagar Panchayat",
+      "Gram Panchayat"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_293",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which elected representative usually handles a city ward?",
+    "options": [
+      "Ward councillor",
+      "Sarpanch",
+      "Zila Parishad chairperson",
+      "Block Pramukh"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_294",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which village representative is usually called Sarpanch?",
+    "options": [
+      "Panchayat head",
+      "Ward councillor",
+      "Municipal chairperson",
+      "District Collector"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_295",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with forest protection by local communities?",
+    "options": [
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "India Against Corruption",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_296",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with displacement issues around large dams?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Appiko Movement",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_297",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement made access to government records a civic demand?",
+    "options": [
+      "RTI movement",
+      "Jan Lokpal movement",
+      "Chipko Movement",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_298",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which campaign is closely associated with the demand for Jan Lokpal?",
+    "options": [
+      "India Against Corruption",
+      "RTI movement",
+      "Chipko Movement",
+      "Narmada Bachao Andolan"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_299",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission conducts national and state elections?",
+    "options": [
+      "Election Commission",
+      "Finance Commission",
+      "UPSC",
+      "National Human Rights Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_300",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which authority audits government accounts?",
+    "options": [
+      "CAG",
+      "Finance Commission",
+      "UPSC",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_301",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission recommends sharing Union taxes with states?",
+    "options": [
+      "Finance Commission",
+      "Election Commission",
+      "UPSC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_302",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission conducts civil services examinations?",
+    "options": [
+      "UPSC",
+      "Finance Commission",
+      "Election Commission",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_303",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "A complaint about Scheduled Caste safeguards should point to which commission?",
+    "options": [
+      "National Commission for Scheduled Castes",
+      "National Commission for Scheduled Tribes",
+      "National Commission for Minorities",
+      "National Commission for Women"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_304",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission is meant specifically for Scheduled Tribe safeguards?",
+    "options": [
+      "National Commission for Scheduled Tribes",
+      "National Commission for Scheduled Castes",
+      "National Commission for Backward Classes",
+      "National Commission for Women"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_305",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission focuses on women's rights and safeguards?",
+    "options": [
+      "National Commission for Women",
+      "National Human Rights Commission",
+      "National Commission for Minorities",
+      "National Commission for Backward Classes"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_306",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission deals with human-rights complaints?",
+    "options": [
+      "National Human Rights Commission",
+      "National Commission for Women",
+      "National Commission for Minorities",
+      "National Commission for Scheduled Castes"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_307",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission focuses on notified minority communities?",
+    "options": [
+      "National Commission for Minorities",
+      "National Commission for Women",
+      "National Commission for Scheduled Tribes",
+      "National Commission for Backward Classes"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_308",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission focuses on socially and educationally backward classes?",
+    "options": [
+      "National Commission for Backward Classes",
+      "National Commission for Scheduled Castes",
+      "National Commission for Scheduled Tribes",
+      "National Commission for Minorities"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_309",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which official is associated with audit reports placed before legislatures?",
+    "options": [
+      "CAG",
+      "UPSC Chairperson",
+      "Chief Election Commissioner",
+      "Finance Commission Chairperson"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_310",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body supervises election symbols and party recognition?",
+    "options": [
+      "Election Commission",
+      "Finance Commission",
+      "UPSC",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_269",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which grassroots institution can question Panchayat spending directly?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_270",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which level sits between Gram Panchayat and Zila Parishad in many Panchayati Raj systems?",
+    "options": [
+      "Block Samiti",
+      "Gram Sabha",
+      "Municipal Council",
+      "Ward Committee"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_271",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local body is most relevant for drainage and streetlights in a town?",
+    "options": [
+      "Municipality",
+      "Gram Panchayat",
+      "Zila Parishad",
+      "State Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_272",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local body is most relevant for village roads and water works?",
+    "options": [
+      "Gram Panchayat",
+      "Municipal Corporation",
+      "Ward Committee",
+      "State Legislature"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_273",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule lists Panchayat functions?",
+    "options": [
+      "Eleventh Schedule",
+      "Twelfth Schedule",
+      "Seventh Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_274",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule lists municipal functions?",
+    "options": [
+      "Twelfth Schedule",
+      "Eleventh Schedule",
+      "Seventh Schedule",
+      "Eighth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_275",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which concept means giving local bodies real powers and funds?",
+    "options": [
+      "Devolution",
+      "Dissolution",
+      "Defection",
+      "Delimitation"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_276",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which process lets villagers publicly check records of local works?",
+    "options": [
+      "Social audit",
+      "VVPAT count",
+      "Question Hour",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_277",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement inspired similar forest-protection campaigns such as Appiko?",
+    "options": [
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "India Against Corruption",
+      "RTI movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_278",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is most linked with Medha Patkar?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "India Against Corruption",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_279",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which campaign used public hearings to demand transparency in records and wages?",
+    "options": [
+      "RTI movement",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_280",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which grassroots issue best matches India Against Corruption?",
+    "options": [
+      "Anti-corruption accountability",
+      "Forest conservation",
+      "Dam rehabilitation",
+      "Land donation"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_281",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body prepares and updates electoral rolls for elections it conducts?",
+    "options": [
+      "Election Commission",
+      "Finance Commission",
+      "UPSC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_282",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body recommends fiscal transfers between Union and states?",
+    "options": [
+      "Finance Commission",
+      "GST Council",
+      "CAG",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_283",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body audits whether public money was used as authorized?",
+    "options": [
+      "CAG",
+      "Finance Commission",
+      "CVC",
+      "Lokpal"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_284",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body conducts Civil Services and other central recruitment exams?",
+    "options": [
+      "UPSC",
+      "SSC",
+      "Finance Commission",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_285",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "NCSC is the abbreviation for which type of national commission?",
+    "options": [
+      "Scheduled Castes",
+      "Scheduled Tribes",
+      "Women",
+      "Minorities"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_286",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Scheduled Tribes commission is commonly abbreviated as what?",
+    "options": [
+      "NCST",
+      "NCSC",
+      "NCBC",
+      "NCW"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_287",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission is the best fit for complaints on women's safeguards?",
+    "options": [
+      "NCW",
+      "NHRC",
+      "NCM",
+      "NCBC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_288",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission is the best fit for broad human-rights violations?",
+    "options": [
+      "NHRC",
+      "NCW",
+      "NCSC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_289",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission is the best fit for minority-community safeguards?",
+    "options": [
+      "NCM",
+      "NCW",
+      "NCSC",
+      "NCST"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_290",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission received constitutional status through the 102nd Amendment?",
+    "options": [
+      "NCBC",
+      "NCW",
+      "NCM",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_291",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "UPSC is best known for which function?",
+    "options": [
+      "Recruitment exams",
+      "Tax sharing",
+      "Party symbols",
+      "Audit reports"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_292",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "CAG's core public role is closest to which function?",
+    "options": [
+      "Government audit",
+      "Election rolls",
+      "Civil services exam",
+      "Tax devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_293",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Finance Commission is most directly linked with which function?",
+    "options": [
+      "Tax devolution",
+      "Party recognition",
+      "Human-rights inquiries",
+      "Recruitment exams"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_294",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Election Commission work is most directly linked with which function?",
+    "options": [
+      "Poll conduct",
+      "Audit reports",
+      "Civil-service exams",
+      "Minority safeguards"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_221",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local institution is closest to direct democracy in rural India?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_222",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform gave constitutional backing to district-level Panchayati Raj bodies?",
+    "options": [
+      "73rd Amendment",
+      "74th Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_223",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform gave constitutional backing to ward-level urban governance?",
+    "options": [
+      "74th Amendment",
+      "73rd Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_224",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local mechanism best checks whether Panchayat works actually happened?",
+    "options": [
+      "Social audit",
+      "No-confidence motion",
+      "Money Bill",
+      "VVPAT slip"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_225",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local principle means functions, funds, and functionaries move to local bodies?",
+    "options": [
+      "Devolution",
+      "Delimitation",
+      "Defection",
+      "Dissolution"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_226",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which institution links all registered village voters to Panchayat accountability?",
+    "options": [
+      "Gram Sabha",
+      "Block Samiti",
+      "Zila Parishad",
+      "State Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_227",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is the better match for forest rights and ecological protection?",
+    "options": [
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "India Against Corruption",
+      "Jan Lokpal movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_228",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is the better match for rehabilitation of dam-affected people?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Appiko Movement",
+      "RTI movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_229",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is the better match for public access to official records?",
+    "options": [
+      "RTI movement",
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_230",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is the better match for Lokpal-focused anti-corruption protests?",
+    "options": [
+      "India Against Corruption",
+      "RTI movement",
+      "Chipko Movement",
+      "Narmada Bachao Andolan"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_231",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional body is independent of the executive for election conduct?",
+    "options": [
+      "Election Commission",
+      "Finance Commission",
+      "UPSC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_232",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional authority is independent for audit of public accounts?",
+    "options": [
+      "CAG",
+      "Election Commission",
+      "Finance Commission",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_233",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional body is periodically constituted for Union-state fiscal sharing?",
+    "options": [
+      "Finance Commission",
+      "GST Council",
+      "CAG",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_234",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional body protects merit-based recruitment to Union services?",
+    "options": [
+      "UPSC",
+      "Election Commission",
+      "Finance Commission",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_235",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which commission handles constitutional safeguards for Scheduled Castes?",
+    "options": [
+      "NCSC",
+      "NCST",
+      "NCBC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_236",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "For Scheduled Tribe safeguard issues, which commission is the direct fit?",
+    "options": [
+      "NCST",
+      "NCSC",
+      "NCBC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_237",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A women's legal-safeguard issue most directly fits which commission?",
+    "options": [
+      "NCW",
+      "NCSC",
+      "NCST",
+      "NCBC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_238",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which commission is statutory and focuses on human-rights protection?",
+    "options": [
+      "NHRC",
+      "NCW",
+      "NCM",
+      "NCSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_239",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Minority-community safeguards are mainly handled by which commission?",
+    "options": [
+      "NCM",
+      "NHRC",
+      "NCW",
+      "NCST"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_240",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which commission is constitutionally linked with backward classes after 102nd Amendment?",
+    "options": [
+      "NCBC",
+      "NCSC",
+      "NCST",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_241",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A denial of Scheduled Caste protections is closest to which forum?",
+    "options": [
+      "NCSC",
+      "NCST",
+      "NCBC",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_242",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A tribal-safeguards complaint is closest to which forum?",
+    "options": [
+      "NCST",
+      "NCSC",
+      "NCBC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_243",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A complaint about women's legal safeguards best fits which body?",
+    "options": [
+      "NCW",
+      "NHRC",
+      "NCM",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_244",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A minority-community safeguard complaint best fits which body?",
+    "options": [
+      "NCM",
+      "NCW",
+      "NCST",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_245",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for advice on tax sharing with states?",
+    "options": [
+      "Finance Commission",
+      "CAG",
+      "Election Commission",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_246",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for audit findings on government spending?",
+    "options": [
+      "CAG",
+      "Finance Commission",
+      "UPSC",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_247",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for allotment of election symbols?",
+    "options": [
+      "Election Commission",
+      "UPSC",
+      "Finance Commission",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_248",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for Civil Services Examination rules?",
+    "options": [
+      "UPSC",
+      "Election Commission",
+      "Finance Commission",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_249",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for broad human-rights inquiry powers?",
+    "options": [
+      "NHRC",
+      "NCW",
+      "NCSC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_250",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for examining OBC inclusion issues?",
+    "options": [
+      "NCBC",
+      "NCSC",
+      "NCST",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  }
+]

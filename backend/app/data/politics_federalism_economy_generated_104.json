@@ -1,0 +1,1458 @@
+[
+  {
+    "id": "pol_easy_311",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list includes defence and foreign affairs?",
+    "options": [
+      "Union List",
+      "State List",
+      "Concurrent List",
+      "Municipal List"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_312",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list includes police and public order?",
+    "options": [
+      "State List",
+      "Union List",
+      "Concurrent List",
+      "Residuary List"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_313",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list lets both Parliament and states make laws?",
+    "options": [
+      "Concurrent List",
+      "Union List",
+      "State List",
+      "Eleventh Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_314",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which idea means Centre and states work together instead of acting separately?",
+    "options": [
+      "Cooperative federalism",
+      "Unitary rule",
+      "Judicial review",
+      "Party whip"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_315",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which council is linked with cooperative federalism in GST decisions?",
+    "options": [
+      "GST Council",
+      "Finance Commission",
+      "Inter-State Council",
+      "NITI Aayog"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_316",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body recommends how Union taxes are shared with states?",
+    "options": [
+      "Finance Commission",
+      "GST Council",
+      "CAG",
+      "Planning Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_317",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional post often becomes important in Centre-state disputes?",
+    "options": [
+      "Governor",
+      "Speaker",
+      "Mayor",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_318",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which case is strongly linked with limiting misuse of President's Rule?",
+    "options": [
+      "S.R. Bommai",
+      "Kesavananda Bharati",
+      "Puttaswamy",
+      "Vishaka"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_319",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission reviewed Centre-state relations in the 1980s?",
+    "options": [
+      "Sarkaria Commission",
+      "Mandal Commission",
+      "Kothari Commission",
+      "Santhanam Committee"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_320",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission later reviewed Centre-state relations after Sarkaria?",
+    "options": [
+      "Punchhi Commission",
+      "Finance Commission",
+      "Election Commission",
+      "National Commission for Women"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_321",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which type of dispute is Cauvery best known for?",
+    "options": [
+      "River-water sharing",
+      "Border demarcation",
+      "Language policy",
+      "Tax devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_easy_322",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Cauvery water sharing mainly concerns which states?",
+    "options": [
+      "Karnataka and Tamil Nadu",
+      "Punjab and Haryana",
+      "Maharashtra and Gujarat",
+      "Assam and Meghalaya"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_easy_323",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Mahadayi water dispute is most associated with which state pair?",
+    "options": [
+      "Goa and Karnataka",
+      "Tamil Nadu and Kerala",
+      "Punjab and Rajasthan",
+      "Bihar and Jharkhand"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_easy_324",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which dispute is linked with Punjab and Haryana river-water sharing?",
+    "options": [
+      "Ravi-Beas dispute",
+      "Cauvery dispute",
+      "Mahadayi dispute",
+      "Krishna dispute"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_easy_325",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which reorganization issue created Andhra as an early linguistic state?",
+    "options": [
+      "Telugu-speaking state demand",
+      "River-water tribunal demand",
+      "GST dispute",
+      "Coalfield merger"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_326",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which statehood movement led to creation of Telangana?",
+    "options": [
+      "Regional aspiration in Andhra Pradesh",
+      "Linguistic merger with Karnataka",
+      "River dispute with Kerala",
+      "Tribal council in Assam"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_327",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state was created from Bihar in 2000?",
+    "options": [
+      "Jharkhand",
+      "Telangana",
+      "Chhattisgarh",
+      "Uttarakhand"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_328",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Chhattisgarh was carved out of which parent state?",
+    "options": [
+      "Madhya Pradesh",
+      "Bihar",
+      "Uttar Pradesh",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_329",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state was created from Uttar Pradesh in 2000?",
+    "options": [
+      "Uttarakhand",
+      "Jharkhand",
+      "Chhattisgarh",
+      "Telangana"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_330",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body did NITI Aayog replace?",
+    "options": [
+      "Planning Commission",
+      "Finance Commission",
+      "Election Commission",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_331",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which model is linked with India's early Five Year Plans?",
+    "options": [
+      "Nehruvian planning",
+      "LPG reforms",
+      "Green Revolution",
+      "Disinvestment"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_332",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which economic approach did early India follow?",
+    "options": [
+      "Mixed economy",
+      "Pure laissez-faire",
+      "Command economy only",
+      "Gold standard economy"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_333",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which sector was central to Nehruvian industrialization?",
+    "options": [
+      "Public sector",
+      "Only cottage industry",
+      "Only private banks",
+      "Only agriculture"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_334",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which economist is linked with the Second Five Year Plan model?",
+    "options": [
+      "P.C. Mahalanobis",
+      "M.S. Swaminathan",
+      "Verghese Kurien",
+      "C. Rangarajan"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_335",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Gandhian idea emphasizes self-reliant village communities?",
+    "options": [
+      "Gram Swaraj",
+      "Licence Raj",
+      "Disinvestment",
+      "Fiscal devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_easy_336",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Gandhian economic idea asks wealth holders to act for social good?",
+    "options": [
+      "Trusteeship",
+      "Privatization",
+      "Deficit financing",
+      "Tariff reduction"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_easy_337",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is linked with voluntary land donation?",
+    "options": [
+      "Bhoodan Movement",
+      "Green Revolution",
+      "LPG reforms",
+      "Narmada Bachao Andolan"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_easy_338",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which reform targeted the old zamindari system?",
+    "options": [
+      "Zamindari abolition",
+      "Bank nationalization",
+      "GST reform",
+      "Disinvestment"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_easy_339",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which agricultural change is associated with high-yielding seeds and irrigation?",
+    "options": [
+      "Green Revolution",
+      "White Revolution",
+      "Blue Revolution",
+      "Operation Flood"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_easy_340",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is strongly associated with India's Green Revolution?",
+    "options": [
+      "M.S. Swaminathan",
+      "P.C. Mahalanobis",
+      "Verghese Kurien",
+      "D.R. Gadgil"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_easy_341",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which crop was central to India's Green Revolution success?",
+    "options": [
+      "Wheat",
+      "Tea",
+      "Jute",
+      "Rubber"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_easy_342",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term describes the pre-1991 system of heavy industrial licensing?",
+    "options": [
+      "Licence Raj",
+      "Green Revolution",
+      "Gram Swaraj",
+      "Federalism"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_easy_343",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which reforms are commonly called LPG reforms?",
+    "options": [
+      "Liberalization, Privatization, Globalization",
+      "Land, Panchayat, Governance",
+      "Labour, Police, Governor",
+      "Language, Planning, Growth"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_easy_344",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Prime Minister is linked with 1991 economic reforms?",
+    "options": [
+      "P.V. Narasimha Rao",
+      "Jawaharlal Nehru",
+      "Indira Gandhi",
+      "Morarji Desai"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_easy_345",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Finance Minister is linked with the 1991 reforms?",
+    "options": [
+      "Manmohan Singh",
+      "Yashwant Sinha",
+      "Pranab Mukherjee",
+      "C.D. Deshmukh"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_295",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which list conflict usually gives Union law priority when Parliament and a state both legislate?",
+    "options": [
+      "Concurrent List conflict",
+      "Union List conflict",
+      "State List conflict",
+      "Eighth Schedule conflict"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_296",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution was created to discuss Centre-state issues under Article 263?",
+    "options": [
+      "Inter-State Council",
+      "GST Council",
+      "Finance Commission",
+      "Zonal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_297",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best describes the Indian model of federalism?",
+    "options": [
+      "Federal system with unitary features",
+      "Loose confederation",
+      "Pure unitary state",
+      "Two-nation federation"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_298",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which feature shows an integrationist tendency in Indian federalism?",
+    "options": [
+      "Single citizenship",
+      "Dual citizenship",
+      "Separate state constitutions for all states",
+      "Independent state armies"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_299",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which service structure helps integrate administration across Union and states?",
+    "options": [
+      "All India Services",
+      "Only state civil services",
+      "Only municipal cadres",
+      "Only judicial cadres"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_300",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which power lets Parliament alter state boundaries by law?",
+    "options": [
+      "Reorganization of states",
+      "Judicial review",
+      "Money Bill certification",
+      "No-confidence motion"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_301",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission is best matched with Governor's role and Centre-state relations?",
+    "options": [
+      "Sarkaria Commission",
+      "Mandal Commission",
+      "Balwantrai Mehta Committee",
+      "Kothari Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_302",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which later commission also reviewed Centre-state relations?",
+    "options": [
+      "Punchhi Commission",
+      "Finance Commission",
+      "NITI Aayog",
+      "National Commission for Minorities"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_303",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which case made federalism part of the basic-structure discussion?",
+    "options": [
+      "S.R. Bommai",
+      "Shah Bano",
+      "Navtej Johar",
+      "Vishaka"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_304",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which river dispute is most linked with Karnataka and Tamil Nadu?",
+    "options": [
+      "Cauvery",
+      "Ravi-Beas",
+      "Mahadayi",
+      "Sutlej-Yamuna"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_medium_305",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which river dispute is most linked with Goa and Karnataka?",
+    "options": [
+      "Mahadayi",
+      "Cauvery",
+      "Ravi-Beas",
+      "Krishna"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_medium_306",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which river dispute is most linked with Punjab and Haryana?",
+    "options": [
+      "Ravi-Beas",
+      "Cauvery",
+      "Mahadayi",
+      "Godavari"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_medium_307",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which mechanism is used for many inter-state river water disputes?",
+    "options": [
+      "Water disputes tribunal",
+      "Finance Commission award",
+      "Election petition",
+      "Lokpal inquiry"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_medium_308",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which regional aspiration led to Telangana's creation?",
+    "options": [
+      "Separate statehood",
+      "Union territory status",
+      "River tribunal demand",
+      "Municipal merger"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_medium_309",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which idea was central to linguistic reorganization of states?",
+    "options": [
+      "Language-based state identity",
+      "River basin boundaries",
+      "Tax-sharing formula",
+      "Military commands"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_medium_310",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution drove centralized economic planning before NITI Aayog?",
+    "options": [
+      "Planning Commission",
+      "Finance Commission",
+      "GST Council",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_311",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which model emphasized heavy industry and capital goods?",
+    "options": [
+      "Mahalanobis model",
+      "Gandhian trusteeship",
+      "Green Revolution package",
+      "LPG reforms"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_312",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best describes Nehruvian economic planning?",
+    "options": [
+      "State-led mixed economy",
+      "Village-only production",
+      "Full market deregulation",
+      "No public sector"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_313",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution symbolized public-sector-led industrialization?",
+    "options": [
+      "Public sector enterprise",
+      "Self-help group",
+      "State Election Commission",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_314",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which policy tool reduced direct government ownership in some PSUs?",
+    "options": [
+      "Disinvestment",
+      "Land ceiling",
+      "Social audit",
+      "Water tribunal"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_315",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Gandhian idea focuses on village self-rule?",
+    "options": [
+      "Gram Swaraj",
+      "Licence Raj",
+      "Fiscal federalism",
+      "Import substitution"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_medium_316",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Gandhian idea asks industrialists to hold wealth in trust for society?",
+    "options": [
+      "Trusteeship",
+      "Disinvestment",
+      "Liberalization",
+      "Deficit financing"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_medium_317",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which agrarian reform aimed to remove intermediary landlords?",
+    "options": [
+      "Zamindari abolition",
+      "Bank nationalization",
+      "LPG reforms",
+      "GST rollout"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_318",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which agrarian reform limits how much land one can hold?",
+    "options": [
+      "Land ceiling",
+      "Tenancy eviction",
+      "Urban zoning",
+      "Tariff reduction"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_319",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform tries to protect cultivators who lease land?",
+    "options": [
+      "Tenancy reform",
+      "Disinvestment",
+      "Industrial licensing",
+      "Fiscal devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_320",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is most linked with Vinoba Bhave?",
+    "options": [
+      "Bhoodan Movement",
+      "Green Revolution",
+      "Operation Flood",
+      "Chipko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_321",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which package best describes the Green Revolution?",
+    "options": [
+      "HYV seeds, irrigation, fertilizers",
+      "Land donation, trusteeship, khadi",
+      "Privatization, globalization, deregulation",
+      "Audit, taxation, devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_medium_322",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which region became a major early beneficiary of Green Revolution wheat gains?",
+    "options": [
+      "Punjab-Haryana belt",
+      "Konkan coast",
+      "North-East hills",
+      "Deccan dry plateau only"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_medium_323",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best captures a common criticism of the Green Revolution?",
+    "options": [
+      "Regional and crop imbalance",
+      "End of irrigation",
+      "No role for technology",
+      "Abolition of markets"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_medium_324",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform direction reduced the Licence Raj after 1991?",
+    "options": [
+      "Industrial delicensing",
+      "Zamindari abolition",
+      "Panchayat reservation",
+      "River tribunal"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_325",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform direction opened more sectors to private and foreign investment?",
+    "options": [
+      "Liberalization",
+      "Land ceiling",
+      "Trusteeship",
+      "Cooperative federalism"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_326",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best describes globalization in the 1991 reform context?",
+    "options": [
+      "Greater integration with world economy",
+      "Village self-rule only",
+      "State boundary change",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_327",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform direction means reducing state ownership in enterprises?",
+    "options": [
+      "Privatization",
+      "Tenancy reform",
+      "Green Revolution",
+      "Gram Swaraj"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_328",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pair correctly matches political economy ideas?",
+    "options": [
+      "Nehruvian: planning",
+      "Gandhian: Licence Raj",
+      "LPG: land ceilings",
+      "Green Revolution: trusteeship"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_329",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pair correctly matches economic reform ideas?",
+    "options": [
+      "LPG: liberalization",
+      "Bhoodan: industrial delicensing",
+      "Mahalanobis: village-only production",
+      "Green Revolution: tax devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_330",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pair correctly matches agrarian policy ideas?",
+    "options": [
+      "Land ceiling: redistribution",
+      "Disinvestment: tenancy security",
+      "Licence Raj: irrigation package",
+      "GST Council: crop pricing"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_331",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pair correctly matches Green Revolution ideas?",
+    "options": [
+      "HYV seeds: productivity push",
+      "Trusteeship: fertilizer subsidy",
+      "Licence Raj: wheat breeding",
+      "Disinvestment: irrigation canals"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_251",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional feature most clearly reflects a strong Centre in Indian federalism?",
+    "options": [
+      "Residuary powers with Union",
+      "Separate state citizenship",
+      "State veto over Union laws",
+      "Independent state armies"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_252",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which idea best explains why All India Services are called integrationist?",
+    "options": [
+      "They link Union and state administration",
+      "They replace state legislatures",
+      "They conduct municipal elections",
+      "They audit state budgets"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_253",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Centre-state issue did Sarkaria and Punchhi both examine?",
+    "options": [
+      "Governor and emergency powers",
+      "Civil service exam syllabus",
+      "Municipal ward boundaries",
+      "Minority commission powers"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_254",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body is a forum for discussing inter-state and Centre-state issues?",
+    "options": [
+      "Inter-State Council",
+      "Public Accounts Committee",
+      "Election Commission",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_255",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which doctrine protects federalism from destructive constitutional change?",
+    "options": [
+      "Basic structure doctrine",
+      "Money Bill doctrine",
+      "Pleasure doctrine",
+      "Colourable legislation only"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_256",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case made President's Rule subject to stronger judicial scrutiny?",
+    "options": [
+      "S.R. Bommai",
+      "Kihoto Hollohan",
+      "Indra Sawhney",
+      "Maneka Gandhi"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_257",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which river dispute best illustrates federal tension between Karnataka and Tamil Nadu?",
+    "options": [
+      "Cauvery",
+      "Ravi-Beas",
+      "Mahadayi",
+      "Narmada"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_hard_258",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which river dispute best illustrates federal tension between Goa and Karnataka?",
+    "options": [
+      "Mahadayi",
+      "Cauvery",
+      "Ravi-Beas",
+      "Godavari"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_hard_259",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which river dispute best illustrates federal tension involving Punjab and Haryana?",
+    "options": [
+      "Ravi-Beas",
+      "Cauvery",
+      "Mahadayi",
+      "Krishna"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_hard_260",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional subject is directly tied to tribunals for river-water sharing?",
+    "options": [
+      "Inter-state water disputes",
+      "Finance Commission grants",
+      "Election symbols",
+      "Civil-service recruitment"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_hard_261",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which demand best fits regional aspiration politics?",
+    "options": [
+      "Separate statehood",
+      "Audit of Union accounts",
+      "Civil-service recruitment",
+      "Money Bill certification"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_hard_262",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which political process converted linguistic identity into state boundaries?",
+    "options": [
+      "States reorganization",
+      "Disinvestment",
+      "Judicial review",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_hard_263",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which model is most tied to capital-goods-led industrial planning?",
+    "options": [
+      "Mahalanobis model",
+      "Gandhian trusteeship",
+      "LPG reforms",
+      "Bhoodan"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_hard_264",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which planning idea is closest to import substitution and public-sector growth?",
+    "options": [
+      "Nehruvian mixed economy",
+      "Gandhian village economy",
+      "LPG reforms",
+      "Green Revolution package"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_hard_265",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which economic view is closest to small-scale, village-centred production?",
+    "options": [
+      "Gandhian economics",
+      "Mahalanobis model",
+      "LPG reforms",
+      "Public-sector monopoly"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_hard_266",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Gandhian concept treats ownership as a social responsibility?",
+    "options": [
+      "Trusteeship",
+      "Privatization",
+      "Fiscal federalism",
+      "Industrial licensing"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_hard_267",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which policy approach protected domestic industry through controls and licences?",
+    "options": [
+      "Licence Raj",
+      "Green Revolution",
+      "Bhoodan",
+      "GST federalism"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_268",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform is the opposite of heavy industrial licensing?",
+    "options": [
+      "Industrial delicensing",
+      "Land ceiling",
+      "Gram Swaraj",
+      "River adjudication"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_269",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform idea is closest to reducing the government's ownership stake?",
+    "options": [
+      "Disinvestment",
+      "Tenancy protection",
+      "Cooperative federalism",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_270",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform idea is closest to opening the economy to global trade and capital?",
+    "options": [
+      "Globalization",
+      "Zamindari abolition",
+      "Gram Swaraj",
+      "States reorganization"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_271",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which agrarian reform most directly attacked intermediary landlordism?",
+    "options": [
+      "Zamindari abolition",
+      "Green Revolution",
+      "Disinvestment",
+      "Industrial delicensing"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_hard_272",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which agrarian reform tries to redistribute surplus land above a legal limit?",
+    "options": [
+      "Land ceiling",
+      "Tenancy eviction",
+      "Licence Raj",
+      "Public sector expansion"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_hard_273",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which agrarian reform gives security to cultivators who rent land?",
+    "options": [
+      "Tenancy reform",
+      "Disinvestment",
+      "Import substitution",
+      "Fiscal devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_hard_274",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement sought voluntary land redistribution rather than state acquisition?",
+    "options": [
+      "Bhoodan Movement",
+      "Green Revolution",
+      "LPG reforms",
+      "Operation Flood"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_hard_275",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Green Revolution input package is the closest match?",
+    "options": [
+      "HYV seeds plus irrigation and fertilizers",
+      "Trusteeship plus khadi and village crafts",
+      "Delicensing plus foreign investment",
+      "Land donation plus social audit"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_276",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which leader-scientist is most associated with India's Green Revolution?",
+    "options": [
+      "M.S. Swaminathan",
+      "P.C. Mahalanobis",
+      "Verghese Kurien",
+      "Norman Borlaug only"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_277",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which criticism is commonly linked with Green Revolution outcomes?",
+    "options": [
+      "Regional inequality",
+      "End of wheat farming",
+      "No use of irrigation",
+      "Abolition of procurement"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_278",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which phrase best captures the shift from planning-era controls to 1991 reforms?",
+    "options": [
+      "From Licence Raj to liberalization",
+      "From federalism to monarchy",
+      "From Gram Sabha to Rajya Sabha",
+      "From courts to commissions"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_279",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which pair correctly contrasts Nehruvian and Gandhian economics?",
+    "options": [
+      "Heavy industry vs village economy",
+      "Privatization vs globalization",
+      "Tax devolution vs audit",
+      "River tribunals vs statehood"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_hard_280",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which pair correctly contrasts Green Revolution and land reforms?",
+    "options": [
+      "Technology package vs land redistribution",
+      "Audit reports vs tax sharing",
+      "Statehood vs river disputes",
+      "Writs vs tribunals"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_281",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which pair correctly links 1991 reforms?",
+    "options": [
+      "Delicensing and liberalization",
+      "Zamindari and Bhoodan",
+      "Gram Swaraj and trusteeship",
+      "Cauvery and Mahadayi"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_282",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which pair correctly links federalism and economic policy?",
+    "options": [
+      "Finance Commission: tax sharing",
+      "CAG: statehood demand",
+      "UPSC: river tribunal",
+      "ECI: land ceiling"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  }
+]

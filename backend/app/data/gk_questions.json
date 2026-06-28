@@ -52091,14 +52091,15 @@
     "id": "pol_easy_181",
     "category": "politics",
     "difficulty": 1,
-    "question": "Who was the first Prime Minister of India?",
+    "question": "Which list must contain your name for you to vote at a polling booth?",
     "options": [
-      "Sardar Vallabhbhai Patel",
-      "Jawaharlal Nehru",
-      "Lal Bahadur Shastri",
-      "Rajendra Prasad"
+      "Electoral roll",
+      "Income-tax return",
+      "Passport register",
+      "Driving-test list"
     ],
-    "correct_index": 1
+    "correct_index": 0,
+    "source_note": "politics_duplicate_rewrite"
   },
   {
     "id": "pol_easy_182",
@@ -52143,14 +52144,15 @@
     "id": "pol_easy_185",
     "category": "politics",
     "difficulty": 1,
-    "question": "Which article of the Indian Constitution abolishes untouchability?",
+    "question": "Which tool lets a citizen ask a public authority for official records?",
     "options": [
-      "Article 14",
-      "Article 15",
-      "Article 17",
-      "Article 19"
+      "RTI application",
+      "Election manifesto",
+      "Party whip",
+      "Confidence motion"
     ],
-    "correct_index": 2
+    "correct_index": 0,
+    "source_note": "politics_duplicate_rewrite"
   },
   {
     "id": "pol_easy_186",
@@ -52169,14 +52171,15 @@
     "id": "pol_easy_187",
     "category": "politics",
     "difficulty": 1,
-    "question": "Who was the first President of India?",
+    "question": "Which local body meeting lets village voters directly question Panchayat work?",
     "options": [
-      "V. V. Giri",
-      "Rajendra Prasad",
-      "S. Radhakrishnan",
-      "Zakir Husain"
+      "Gram Sabha",
+      "Rajya Sabha",
+      "Cabinet meeting",
+      "Lok Sabha"
     ],
-    "correct_index": 1
+    "correct_index": 0,
+    "source_note": "politics_duplicate_rewrite"
   },
   {
     "id": "pol_easy_188",
@@ -107628,5 +107631,7131 @@
     ],
     "correct_index": 0,
     "source_note": "defense_industry"
+  },
+  {
+    "id": "pol_easy_215",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body conducts Lok Sabha and Assembly elections in India?",
+    "options": [
+      "Election Commission of India",
+      "Finance Commission",
+      "NITI Aayog",
+      "Central Vigilance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_216",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "What does NOTA allow a voter to record?",
+    "options": [
+      "None of the above",
+      "Postal ballot",
+      "Tendered vote",
+      "Rejected nomination"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_217",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which machine records votes in most Indian polling booths?",
+    "options": [
+      "EVM",
+      "VVPAT",
+      "Ballot unit only",
+      "Postal ballot"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_218",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which paper trail system helps voters verify the symbol they chose?",
+    "options": [
+      "VVPAT",
+      "EVM control unit",
+      "Postal ballot",
+      "Electoral roll"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_219",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which document is commonly called the voter ID card?",
+    "options": [
+      "EPIC",
+      "PAN",
+      "Aadhaar only",
+      "Passport"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_220",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which election rulebook starts after polls are announced?",
+    "options": [
+      "Model Code of Conduct",
+      "Representation petition",
+      "Election manifesto",
+      "Voter-list revision"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_221",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the officer in charge of conducting an election in a constituency?",
+    "options": [
+      "Returning Officer",
+      "Presiding Officer",
+      "Booth Level Officer",
+      "Polling Agent"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_222",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which official list decides whether a person can vote in an election?",
+    "options": [
+      "Electoral roll",
+      "Voter slip",
+      "EPIC database",
+      "Candidate list"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_223",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body conducts Panchayat and municipal elections in a state?",
+    "options": [
+      "State Election Commission",
+      "Election Commission of India",
+      "Union Public Service Commission",
+      "Finance Ministry"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_224",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which mark helps prevent a voter from voting twice?",
+    "options": [
+      "Indelible ink",
+      "VVPAT slip",
+      "Polling stamp",
+      "Voter slip"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_easy_225",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which house is directly elected by Indian voters?",
+    "options": [
+      "Lok Sabha",
+      "Rajya Sabha",
+      "State Legislative Council",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_226",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which house represents the states in Parliament?",
+    "options": [
+      "Rajya Sabha",
+      "Lok Sabha",
+      "Gram Sabha",
+      "Municipal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_227",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which officer presides over the Lok Sabha?",
+    "options": [
+      "Speaker",
+      "Deputy Chairman",
+      "President",
+      "Leader of the House"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_228",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which parliamentary device lets MPs ask ministers about government work?",
+    "options": [
+      "Question Hour",
+      "Zero Hour",
+      "Calling attention",
+      "Private member business"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_229",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which vote tests whether the government still has majority support?",
+    "options": [
+      "No-confidence motion",
+      "Confidence motion",
+      "Censure motion",
+      "Adjournment motion"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_230",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which instruction tells party legislators how to vote in the House?",
+    "options": [
+      "Whip",
+      "Writ",
+      "Notice",
+      "Motion"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_231",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which bill deals mainly with taxation or government spending?",
+    "options": [
+      "Money Bill",
+      "Private Bill",
+      "Local Bill",
+      "Ordinary notice"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_easy_232",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which head of government leads a state council of ministers?",
+    "options": [
+      "Chief Minister",
+      "Governor",
+      "Mayor",
+      "Speaker"
+    ],
+    "correct_index": 0,
+    "source_note": "executive"
+  },
+  {
+    "id": "pol_easy_233",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional head formally appoints a state Chief Minister?",
+    "options": [
+      "Governor",
+      "President",
+      "Speaker",
+      "Chief Justice of High Court"
+    ],
+    "correct_index": 0,
+    "source_note": "executive"
+  },
+  {
+    "id": "pol_easy_234",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which temporary law can the President issue when Parliament is not in session?",
+    "options": [
+      "Ordinance",
+      "Rule",
+      "Resolution",
+      "Notification"
+    ],
+    "correct_index": 0,
+    "source_note": "executive"
+  },
+  {
+    "id": "pol_easy_235",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which village forum includes all registered voters of that village?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Ward Committee",
+      "Block Samiti"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_236",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is usually the elected head of a Gram Panchayat?",
+    "options": [
+      "Sarpanch",
+      "Ward councillor",
+      "Mayor",
+      "Block officer"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_237",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who represents a city ward in a municipal body?",
+    "options": [
+      "Councillor",
+      "Mayor",
+      "Sarpanch",
+      "MLA"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_238",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the political head of many municipal corporations?",
+    "options": [
+      "Mayor",
+      "Municipal Commissioner",
+      "Ward councillor",
+      "District Collector"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_239",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body is closest to ordinary village-level local government?",
+    "options": [
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad",
+      "Municipal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_easy_240",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which law is used to request information from a public authority?",
+    "options": [
+      "RTI Act",
+      "Companies Act",
+      "Arms Act",
+      "Forest Act"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_241",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is the first officer a citizen usually approaches under RTI?",
+    "options": [
+      "Public Information Officer",
+      "Returning Officer",
+      "Police Commissioner",
+      "Speaker"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_242",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body hears second appeals under central RTI matters?",
+    "options": [
+      "Central Information Commission",
+      "Finance Commission",
+      "Election Commission",
+      "Planning Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_243",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which court order is used to produce a detained person before court?",
+    "options": [
+      "Habeas corpus",
+      "Mandamus",
+      "Certiorari",
+      "Quo warranto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_244",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which legal action can raise a public-interest issue in court?",
+    "options": [
+      "PIL",
+      "Writ petition",
+      "RTI appeal",
+      "Election petition"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_easy_245",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body audits Union and state government accounts?",
+    "options": [
+      "CAG",
+      "UPSC",
+      "NHRC",
+      "CVC"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_246",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body investigates human-rights complaints in India?",
+    "options": [
+      "NHRC",
+      "CAG",
+      "UPSC",
+      "GST Council"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_247",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body recruits civil servants through national competitive exams?",
+    "options": [
+      "UPSC",
+      "CAG",
+      "Lokpal",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_248",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which anti-corruption ombudsman handles complaints against many central public officials?",
+    "options": [
+      "Lokpal",
+      "Lokayukta",
+      "CVC",
+      "CBI"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_249",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body deals with vigilance and corruption-prevention in central government organizations?",
+    "options": [
+      "CVC",
+      "CAG",
+      "NHRC",
+      "SEC"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_easy_250",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which council brings the Union and states together for GST decisions?",
+    "options": [
+      "GST Council",
+      "Finance Commission",
+      "Inter-State Council",
+      "NITI Aayog Governing Council"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_251",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which schedule divides subjects into Union, State, and Concurrent lists?",
+    "options": [
+      "Seventh Schedule",
+      "Tenth Schedule",
+      "Eighth Schedule",
+      "First Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_252",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list contains subjects mainly handled by state governments?",
+    "options": [
+      "State List",
+      "Union List",
+      "Concurrent List",
+      "Residuary List"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_253",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list contains subjects on which both Union and states can legislate?",
+    "options": [
+      "Concurrent List",
+      "Union List only",
+      "State List only",
+      "Eighth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_254",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which principle means India has both Union and state governments?",
+    "options": [
+      "Federalism",
+      "Monarchy",
+      "Apartheid",
+      "Colonial rule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_189",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What should a voter check before polling day to avoid being turned away?",
+    "options": [
+      "Name in electoral roll",
+      "EPIC number only",
+      "Polling-agent list",
+      "Candidate affidavit"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_190",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the main purpose of VVPAT in elections?",
+    "options": [
+      "Let voters verify the recorded choice",
+      "Replace the EVM entirely",
+      "Register new voters",
+      "Allot election symbols"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_191",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What does the Model Code of Conduct mainly try to ensure?",
+    "options": [
+      "Fair election campaigning",
+      "Final voter-list revision",
+      "Counting of postal ballots",
+      "Candidate nomination scrutiny"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_192",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which officer usually accepts candidate nomination papers in a constituency?",
+    "options": [
+      "Returning Officer",
+      "Presiding Officer",
+      "Booth Level Officer",
+      "Counting Supervisor"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_193",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which poll official manages the actual polling station on voting day?",
+    "options": [
+      "Presiding Officer",
+      "Returning Officer",
+      "Booth Level Officer",
+      "Counting Observer"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_194",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which election record is revised to add, delete, or correct voter names?",
+    "options": [
+      "Electoral roll",
+      "Candidate affidavit",
+      "Result sheet",
+      "Polling diary"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_195",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body recognizes national and state political parties?",
+    "options": [
+      "Election Commission of India",
+      "State Election Commission",
+      "Registrar of Societies",
+      "Ministry of Law and Justice"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_196",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which symbol-related job belongs to the Election Commission?",
+    "options": [
+      "Allotting election symbols",
+      "Approving party manifestos",
+      "Printing voter slips only",
+      "Counting VVPAT slips"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_197",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which option is meant for voters who reject all listed candidates?",
+    "options": [
+      "NOTA",
+      "Postal ballot",
+      "Tendered vote",
+      "Proxy vote"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_198",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which system is meant for some voters who cannot vote at their polling station?",
+    "options": [
+      "Postal ballot",
+      "Tendered vote",
+      "NOTA",
+      "Proxy vote"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_medium_199",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the main purpose of Question Hour?",
+    "options": [
+      "Holding ministers accountable",
+      "Electing the Speaker",
+      "Passing only budgets",
+      "Selecting judges"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_200",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is Zero Hour used for in Parliament?",
+    "options": [
+      "Raising urgent public matters",
+      "Asking listed oral questions",
+      "Voting on Money Bills only",
+      "Electing the Speaker"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_201",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which committee examines CAG audit reports?",
+    "options": [
+      "Public Accounts Committee",
+      "Business Advisory Committee",
+      "Rules Committee",
+      "Ethics Committee only"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_202",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What does a party whip mainly enforce?",
+    "options": [
+      "Party voting discipline",
+      "Question Hour order",
+      "Committee witness summons",
+      "Budget speech timing"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_203",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who certifies whether a bill is a Money Bill in Lok Sabha?",
+    "options": [
+      "Speaker",
+      "President",
+      "CAG",
+      "Chief Election Commissioner"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_204",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which bill is introduced by an MP who is not a minister?",
+    "options": [
+      "Private member bill",
+      "Money Bill",
+      "Appropriation Bill",
+      "Finance Bill only"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_205",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which motion can force a government to prove its majority?",
+    "options": [
+      "No-confidence motion",
+      "Calling attention notice",
+      "Zero Hour mention",
+      "Adjournment for lunch"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_206",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which parliamentary question expects an oral answer and follow-up questions?",
+    "options": [
+      "Starred question",
+      "Unstarred question",
+      "Short title",
+      "White paper"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_207",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which parliamentary question usually receives a written answer?",
+    "options": [
+      "Unstarred question",
+      "Starred question",
+      "Confidence motion",
+      "Appropriation demand"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_208",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the main role of parliamentary committees?",
+    "options": [
+      "Detailed scrutiny of work and bills",
+      "Questioning ministers in Question Hour",
+      "Certifying Money Bills",
+      "Issuing party whips"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_medium_209",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local body should a villager attend to question Panchayat spending?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_210",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which representative is the closest elected contact for a city ward issue?",
+    "options": [
+      "Ward councillor",
+      "Mayor",
+      "Municipal Commissioner",
+      "MLA"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_211",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local body handles urban services such as streetlights and local roads?",
+    "options": [
+      "Municipality",
+      "Gram Panchayat",
+      "Zila Parishad",
+      "State Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_212",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which village-level plan is most directly discussed by local voters?",
+    "options": [
+      "Gram Panchayat work plan",
+      "Union Budget",
+      "Supreme Court roster",
+      "Foreign treaty"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_213",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which level is most directly linked with a district collector's administration?",
+    "options": [
+      "District",
+      "Ward",
+      "Block only",
+      "Parliamentary session"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_medium_214",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the first appeal under RTI used for?",
+    "options": [
+      "Challenging a poor or missing PIO reply",
+      "Appealing election results",
+      "Seeking bail from a court",
+      "Changing a party whip"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_215",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which RTI officer is responsible for giving information held by a public authority?",
+    "options": [
+      "PIO",
+      "First Appellate Authority",
+      "Information Commissioner",
+      "Public Prosecutor"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_216",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the normal RTI response deadline for most requests?",
+    "options": [
+      "30 days",
+      "24 hours",
+      "6 months",
+      "5 years"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_217",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which RTI deadline applies when life or liberty is involved?",
+    "options": [
+      "48 hours",
+      "30 days",
+      "90 days",
+      "One year"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_218",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court tool can order a public official to perform a legal duty?",
+    "options": [
+      "Mandamus",
+      "Habeas corpus",
+      "Bail bond",
+      "Manifesto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_219",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court tool questions a person's legal authority to hold public office?",
+    "options": [
+      "Quo warranto",
+      "Certiorari",
+      "Habeas corpus",
+      "Postal ballot"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_220",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which writ is most directly linked to unlawful detention?",
+    "options": [
+      "Habeas corpus",
+      "Mandamus",
+      "Prohibition",
+      "Quo warranto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_221",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which case is best known for recognizing privacy as a fundamental right?",
+    "options": [
+      "Puttaswamy case",
+      "Shah Bano case",
+      "Bommai case",
+      "Kesavananda case"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_222",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which legal route is used when a larger public wrong needs court attention?",
+    "options": [
+      "Public Interest Litigation",
+      "RTI first appeal",
+      "Election petition",
+      "Privilege motion"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_medium_223",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution audits government receipts and spending?",
+    "options": [
+      "CAG",
+      "CVC",
+      "UPSC",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_224",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution is linked to anti-corruption vigilance in Union government bodies?",
+    "options": [
+      "CVC",
+      "CAG",
+      "UPSC",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_225",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution examines complaints of human-rights violations?",
+    "options": [
+      "NHRC",
+      "UPSC",
+      "GST Council",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_226",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution selects candidates for civil services exams?",
+    "options": [
+      "UPSC",
+      "Lokpal",
+      "CVC",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_227",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution recommends sharing Union taxes with states?",
+    "options": [
+      "Finance Commission",
+      "CVC",
+      "UPSC",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_228",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution is India's central anti-corruption ombudsman?",
+    "options": [
+      "Lokpal",
+      "Lokayukta",
+      "CVC",
+      "CBI"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_229",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state-level ombudsman is the counterpart of Lokpal?",
+    "options": [
+      "Lokayukta",
+      "CVC",
+      "CAG",
+      "State Election Commissioner"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_medium_230",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body is chaired by the Union Finance Minister for GST decisions?",
+    "options": [
+      "GST Council",
+      "Election Commission",
+      "NHRC",
+      "CVC"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_231",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which list gives Parliament exclusive lawmaking power over defence?",
+    "options": [
+      "Union List",
+      "State List",
+      "Concurrent List",
+      "Municipal List"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_232",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which list includes subjects where both Parliament and states can make laws?",
+    "options": [
+      "Concurrent List",
+      "Union List only",
+      "State List only",
+      "Eighth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_233",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule is central to understanding Centre-state subject division?",
+    "options": [
+      "Seventh Schedule",
+      "Tenth Schedule",
+      "Twelfth Schedule",
+      "Eighth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_234",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform reserved one-third seats for women in Panchayats and municipalities?",
+    "options": [
+      "73rd and 74th Amendments",
+      "42nd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_157",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which election role is responsible for counting and declaring the result in a constituency?",
+    "options": [
+      "Returning Officer",
+      "Presiding Officer",
+      "Polling Agent",
+      "Booth Level Officer"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_158",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which official is the best local contact for voter-list correction at booth level?",
+    "options": [
+      "Booth Level Officer",
+      "Presiding Officer",
+      "Polling Agent",
+      "Counting Observer"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_159",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which vote type is used if someone's vote has already been wrongly cast by another person?",
+    "options": [
+      "Tendered vote",
+      "Postal ballot",
+      "Proxy vote",
+      "NOTA"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_160",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which election document records the order and symbols of contesting candidates?",
+    "options": [
+      "Ballot paper",
+      "Electoral roll",
+      "Voter slip",
+      "Candidate affidavit"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_161",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which polling-station role verifies voters before they cast votes?",
+    "options": [
+      "Polling Officer",
+      "Presiding Officer",
+      "Polling Agent",
+      "Counting Supervisor"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_162",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which election complaint is most directly linked to misuse of official machinery?",
+    "options": [
+      "MCC violation",
+      "Election petition",
+      "RTI first appeal",
+      "Candidate affidavit defect"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_163",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which official appoints polling personnel at district level during elections?",
+    "options": [
+      "District Election Officer",
+      "Returning Officer",
+      "Presiding Officer",
+      "Booth Level Officer"
+    ],
+    "correct_index": 0,
+    "source_note": "elections"
+  },
+  {
+    "id": "pol_hard_164",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which parliamentary device lets MPs seek urgent ministerial attention to a public issue?",
+    "options": [
+      "Calling attention",
+      "Zero Hour",
+      "Starred question",
+      "Privilege motion"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_165",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which committee is most associated with examining government spending after CAG audit?",
+    "options": [
+      "Public Accounts Committee",
+      "Estimates Committee",
+      "Rules Committee",
+      "Privileges Committee"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_166",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which committee examines whether government funds were spent as Parliament approved?",
+    "options": [
+      "Public Accounts Committee",
+      "Ethics Committee",
+      "House Committee",
+      "Library Committee"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_167",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which device can punish a legislator for defying a party line in key votes?",
+    "options": [
+      "Anti-defection law",
+      "RTI Act",
+      "Model Code only",
+      "Finance Commission order"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_168",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule contains India's anti-defection provisions?",
+    "options": [
+      "Tenth Schedule",
+      "Seventh Schedule",
+      "Eighth Schedule",
+      "Twelfth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_169",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which situation most clearly tests collective responsibility of the cabinet?",
+    "options": [
+      "No-confidence motion",
+      "Starred question",
+      "Zero Hour mention",
+      "Private member resolution"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_170",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which type of question allows supplementary questions in Parliament?",
+    "options": [
+      "Starred question",
+      "Unstarred question",
+      "Short title",
+      "Gazette question"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_171",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which House has limited power over a certified Money Bill?",
+    "options": [
+      "Rajya Sabha",
+      "Lok Sabha",
+      "State Legislative Council",
+      "Joint sitting"
+    ],
+    "correct_index": 0,
+    "source_note": "parliament"
+  },
+  {
+    "id": "pol_hard_172",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which urban representative should a resident approach first for a broken streetlight in a ward?",
+    "options": [
+      "Ward councillor",
+      "Mayor",
+      "Municipal Commissioner",
+      "MLA"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_173",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local meeting is meant to approve and review Panchayat-level work?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_174",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which urban body is usually responsible for local sanitation and municipal roads?",
+    "options": [
+      "Municipal corporation",
+      "Supreme Court",
+      "Election Commission",
+      "Rajya Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_175",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which amendment is most directly linked with Panchayati Raj institutions?",
+    "options": [
+      "73rd Amendment",
+      "42nd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_176",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which amendment is most directly linked with urban local bodies?",
+    "options": [
+      "74th Amendment",
+      "44th Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "local_government"
+  },
+  {
+    "id": "pol_hard_177",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which RTI appeal goes to the Information Commission after the first appeal fails?",
+    "options": [
+      "Second appeal",
+      "Curative petition",
+      "Postal ballot",
+      "Confidence motion"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_178",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which public authority officer can face penalty for wrongly denying RTI information?",
+    "options": [
+      "PIO",
+      "Returning Officer only",
+      "Mayor only",
+      "Party whip"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_179",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which writ stops a lower court or tribunal from exceeding its jurisdiction?",
+    "options": [
+      "Prohibition",
+      "Habeas corpus",
+      "Mandamus",
+      "Quo warranto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_180",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which writ can quash an order of a lower court or tribunal?",
+    "options": [
+      "Certiorari",
+      "Habeas corpus",
+      "Mandamus",
+      "Quo warranto"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_181",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which writ tells a public authority to do what the law requires?",
+    "options": [
+      "Mandamus",
+      "Habeas corpus",
+      "Certiorari",
+      "Prohibition"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_182",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case is most linked with basic structure doctrine?",
+    "options": [
+      "Kesavananda Bharati",
+      "Vishaka",
+      "Shah Bano",
+      "Navtej Johar"
+    ],
+    "correct_index": 0,
+    "source_note": "citizen_rights"
+  },
+  {
+    "id": "pol_hard_183",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case is most linked with Centre-state misuse of President's Rule?",
+    "options": [
+      "S.R. Bommai",
+      "Puttaswamy",
+      "Maneka Gandhi",
+      "Vishaka"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_184",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which institution's reports are examined by the Public Accounts Committee?",
+    "options": [
+      "CAG",
+      "NHRC",
+      "UPSC",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_185",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body is often called the integrity institution for central vigilance?",
+    "options": [
+      "CVC",
+      "Finance Commission",
+      "UPSC",
+      "State Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_186",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body can inquire into human-rights violations by public servants?",
+    "options": [
+      "NHRC",
+      "CAG",
+      "UPSC",
+      "GST Council"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_187",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body conducts exams such as Civil Services and Engineering Services?",
+    "options": [
+      "UPSC",
+      "CAG",
+      "CVC",
+      "Lokayukta"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_188",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional body recommends tax devolution between Union and states?",
+    "options": [
+      "Finance Commission",
+      "GST Council",
+      "Election Commission",
+      "Planning Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_189",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body is the best fit for complaints against central public servants for corruption?",
+    "options": [
+      "Lokpal",
+      "Finance Commission",
+      "NHRC",
+      "Rajya Sabha Secretariat"
+    ],
+    "correct_index": 0,
+    "source_note": "institutions"
+  },
+  {
+    "id": "pol_hard_190",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which council embodies cooperative federalism in indirect-tax decisions?",
+    "options": [
+      "GST Council",
+      "CVC",
+      "UPSC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_191",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which subject-list conflict is settled by giving Union law priority in many Concurrent List cases?",
+    "options": [
+      "Concurrent List conflict",
+      "Eighth Schedule listing",
+      "Party-symbol dispute",
+      "Voter-ID correction"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_255",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which word in the Preamble means India is not ruled by a monarch?",
+    "options": [
+      "Republic",
+      "Secular",
+      "Socialist",
+      "Federal"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_256",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Preamble value means all religions get equal respect from the State?",
+    "options": [
+      "Secular",
+      "Sovereign",
+      "Socialist",
+      "Republic"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_257",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Preamble value means people choose their government?",
+    "options": [
+      "Democratic",
+      "Socialist",
+      "Sovereign",
+      "Federal"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_258",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Preamble value means India makes its own decisions as an independent country?",
+    "options": [
+      "Sovereign",
+      "Secular",
+      "Fraternity",
+      "Republic"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_259",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional idea promotes brotherhood among citizens?",
+    "options": [
+      "Fraternity",
+      "Liberty",
+      "Equality",
+      "Secularism"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_260",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which part of the Constitution contains Fundamental Duties?",
+    "options": [
+      "Part IVA",
+      "Part III",
+      "Part IV",
+      "Part V"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_261",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional duties apply mainly to citizens?",
+    "options": [
+      "Fundamental Duties",
+      "Fundamental Rights",
+      "Directive Principles",
+      "Constitutional remedies"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_262",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional principles guide the State in making social-welfare laws?",
+    "options": [
+      "Directive Principles",
+      "Fundamental Rights",
+      "Fundamental Duties",
+      "Basic structure"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_263",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Are Directive Principles directly enforceable by courts?",
+    "options": [
+      "No",
+      "Yes, always",
+      "Only during elections",
+      "Only in villages"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_264",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which duty asks citizens to protect public property?",
+    "options": [
+      "Fundamental Duty",
+      "Cabinet duty",
+      "Election duty",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_easy_265",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional idea lets courts check whether a law violates the Constitution?",
+    "options": [
+      "Judicial review",
+      "Basic structure",
+      "Writ jurisdiction",
+      "Separation of powers"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_easy_266",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which doctrine says Parliament cannot destroy the Constitution's core identity?",
+    "options": [
+      "Basic structure doctrine",
+      "Judicial review",
+      "Separation of powers",
+      "Collective responsibility"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_easy_267",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which court is the highest court within a state?",
+    "options": [
+      "High Court",
+      "District Court",
+      "Gram Nyayalaya",
+      "Lok Adalat"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_268",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which court hears many appeals from district courts in a state?",
+    "options": [
+      "High Court",
+      "District Court",
+      "Sessions Court",
+      "Supreme Court"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_269",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state-level body makes laws for a state?",
+    "options": [
+      "State Legislature",
+      "Municipal Corporation",
+      "Finance Commission",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_270",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which house is the directly elected house in most state legislatures?",
+    "options": [
+      "Vidhan Sabha",
+      "Vidhan Parishad",
+      "Rajya Sabha",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_271",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which official is the constitutional head of a state?",
+    "options": [
+      "Governor",
+      "Chief Minister",
+      "Speaker",
+      "Mayor"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_272",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who leads the elected government in an Indian state?",
+    "options": [
+      "Chief Minister",
+      "Governor",
+      "High Court Chief Justice",
+      "State Election Commissioner"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_273",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body advises the Governor through the Chief Minister?",
+    "options": [
+      "State Council of Ministers",
+      "State Cabinet Secretariat",
+      "Legislative Assembly",
+      "Advocate General's office"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_274",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state officer gives legal advice to the state government?",
+    "options": [
+      "Advocate General",
+      "Attorney General",
+      "CAG",
+      "Lokpal"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_easy_275",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional amendment is linked with Panchayati Raj?",
+    "options": [
+      "73rd Amendment",
+      "42nd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_276",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional amendment is linked with municipalities?",
+    "options": [
+      "74th Amendment",
+      "44th Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_277",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local forum lets village voters directly review Panchayat work?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_278",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local body handles village-level development work?",
+    "options": [
+      "Gram Panchayat",
+      "Gram Sabha",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_279",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which elected representative handles many ward-level city issues?",
+    "options": [
+      "Ward councillor",
+      "Mayor",
+      "Municipal Commissioner",
+      "MLA"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_280",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is famous for villagers hugging trees to prevent felling?",
+    "options": [
+      "Chipko Movement",
+      "Appiko Movement",
+      "Narmada Bachao Andolan",
+      "Silent Valley movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_281",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with displacement and rehabilitation around Narmada dams?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "Non-Cooperation Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_282",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement helped make transparency in government a public demand?",
+    "options": [
+      "Right to Information movement",
+      "Swadeshi movement",
+      "Khilafat movement",
+      "Blue Revolution"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_283",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which anti-corruption campaign is closely linked with demand for a Jan Lokpal?",
+    "options": [
+      "India Against Corruption",
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_284",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local groups often help rural women save and borrow small amounts together?",
+    "options": [
+      "Self-help groups",
+      "Cooperative societies",
+      "Gram Sabhas",
+      "Ward committees"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_285",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local system gives citizens a direct voice in village development?",
+    "options": [
+      "Gram Sabha participation",
+      "Social audit meeting",
+      "Panchayat standing committee",
+      "Ward committee"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_286",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional schedule lists Panchayat subjects?",
+    "options": [
+      "Eleventh Schedule",
+      "Seventh Schedule",
+      "Eighth Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_235",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Preamble value means the State should not privilege one religion over another?",
+    "options": [
+      "Secular",
+      "Republic",
+      "Socialist",
+      "Sovereign"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_236",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Preamble value is most connected with reducing social and economic inequality?",
+    "options": [
+      "Socialist",
+      "Republic",
+      "Secular",
+      "Sovereign"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_237",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Preamble value is closest to equal legal and political status for citizens?",
+    "options": [
+      "Equality",
+      "Emergency",
+      "Ordinance",
+      "Federalism"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_238",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Preamble value supports freedom of thought, expression, belief, faith, and worship?",
+    "options": [
+      "Liberty",
+      "Fraternity",
+      "Sovereignty",
+      "Cabinet rule"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_239",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the main purpose of Fundamental Duties?",
+    "options": [
+      "Set citizen responsibilities",
+      "Create election symbols",
+      "Run courts directly",
+      "Decide tax rates"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_240",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which duty asks citizens to develop scientific temper?",
+    "options": [
+      "Fundamental Duty",
+      "Directive Principle",
+      "Fundamental Right",
+      "Constitutional convention"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_241",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which duty asks citizens to protect the natural environment?",
+    "options": [
+      "Fundamental Duty",
+      "Directive Principle",
+      "Fundamental Right",
+      "State List subject"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_242",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional principles are non-justiciable but important for governance?",
+    "options": [
+      "Directive Principles",
+      "Fundamental Rights",
+      "Writs",
+      "Election petitions"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_243",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which idea best describes Directive Principles?",
+    "options": [
+      "Policy goals for the State",
+      "Criminal punishments",
+      "Election symbols",
+      "Court vacation rules"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_244",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional idea balances individual rights with social-welfare goals?",
+    "options": [
+      "Rights and Directive Principles",
+      "Ballot and symbols",
+      "Speaker and whip",
+      "Mayor and councillor"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_medium_245",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which doctrine came from the Kesavananda Bharati case?",
+    "options": [
+      "Basic structure doctrine",
+      "Collective responsibility",
+      "No-confidence motion",
+      "Model Code"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_246",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which power lets courts strike down unconstitutional laws?",
+    "options": [
+      "Judicial review",
+      "Writ jurisdiction",
+      "Basic structure doctrine",
+      "Curative jurisdiction"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_247",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court can issue writs under Article 226?",
+    "options": [
+      "High Court",
+      "Supreme Court",
+      "District Court",
+      "Tribunal"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_248",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court can issue writs for more than only Fundamental Rights?",
+    "options": [
+      "High Court",
+      "Supreme Court",
+      "District Court",
+      "Lok Adalat"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_249",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court supervises subordinate courts within a state?",
+    "options": [
+      "High Court",
+      "Supreme Court",
+      "District Court",
+      "State Law Department"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_250",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which court is the final interpreter of the Constitution in India?",
+    "options": [
+      "Supreme Court",
+      "High Court",
+      "Constitution Bench only",
+      "President"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_medium_251",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state house can remove a state government through a confidence vote?",
+    "options": [
+      "Vidhan Sabha",
+      "Vidhan Parishad",
+      "Rajya Sabha",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_252",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state house is also called the Legislative Assembly?",
+    "options": [
+      "Vidhan Sabha",
+      "Vidhan Parishad",
+      "Lok Sabha",
+      "Municipal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_253",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "What is the usual name for a state's upper house?",
+    "options": [
+      "Vidhan Parishad",
+      "Vidhan Sabha",
+      "Rajya Sabha",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_254",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state office is similar to the President's constitutional role at Union level?",
+    "options": [
+      "Governor",
+      "Chief Minister",
+      "Speaker",
+      "Advocate General"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_255",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Who is collectively responsible to the State Legislative Assembly?",
+    "options": [
+      "State Council of Ministers",
+      "Chief Minister alone",
+      "Governor's Secretariat",
+      "Advocate General's office"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_256",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state official is the leader of the majority government in the Assembly?",
+    "options": [
+      "Chief Minister",
+      "Governor",
+      "Speaker",
+      "Leader of Opposition"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_257",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which state law officer is similar to the Attorney General at Union level?",
+    "options": [
+      "Advocate General",
+      "Solicitor General",
+      "Law Secretary",
+      "Public Prosecutor"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_medium_258",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body conducts elections to municipalities and Panchayats?",
+    "options": [
+      "State Election Commission",
+      "Election Commission of India",
+      "UPSC",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_259",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule lists functions of municipalities?",
+    "options": [
+      "Twelfth Schedule",
+      "Eleventh Schedule",
+      "Seventh Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_260",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule lists functions of Panchayats?",
+    "options": [
+      "Eleventh Schedule",
+      "Twelfth Schedule",
+      "Eighth Schedule",
+      "First Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_261",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which amendment gave constitutional status to Panchayati Raj institutions?",
+    "options": [
+      "73rd Amendment",
+      "74th Amendment",
+      "42nd Amendment",
+      "52nd Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_262",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which amendment gave constitutional status to urban local bodies?",
+    "options": [
+      "74th Amendment",
+      "73rd Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_263",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local institution directly includes every registered voter in a village?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Zila Parishad",
+      "Block Samiti"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_264",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which urban body is usually responsible for local sanitation and roads?",
+    "options": [
+      "Municipality",
+      "Municipal corporation",
+      "Ward committee",
+      "Development authority"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_265",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement linked forest protection with local community rights?",
+    "options": [
+      "Chipko Movement",
+      "India Against Corruption",
+      "Narmada Bachao Andolan",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_266",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement raised rehabilitation concerns around large dam projects?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "RTI movement",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_267",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which grassroots campaign helped push the demand for an information law?",
+    "options": [
+      "RTI movement",
+      "Mazdoor Kisan Shakti Sangathan campaign",
+      "Jan Lokpal movement",
+      "Social audit movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_268",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is associated with non-violent anti-corruption protests for Lokpal?",
+    "options": [
+      "India Against Corruption",
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_192",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Preamble value is most directly tied to the absence of hereditary rule?",
+    "options": [
+      "Republic",
+      "Secular",
+      "Socialist",
+      "Fraternity"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_193",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Preamble value is most directly tied to national independence in external affairs?",
+    "options": [
+      "Sovereign",
+      "Democratic",
+      "Socialist",
+      "Fraternity"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_194",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional value connects dignity of the individual with unity of the nation?",
+    "options": [
+      "Fraternity",
+      "Judicial review",
+      "Collective responsibility",
+      "Separation of powers"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_195",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Fundamental Duty is most directly linked with rational public thinking?",
+    "options": [
+      "Develop scientific temper",
+      "Pay income tax only",
+      "Vote in every election",
+      "Join a political party"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_196",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Fundamental Duty is most directly linked with forests, lakes, rivers, and wildlife?",
+    "options": [
+      "Protect the natural environment",
+      "Develop scientific temper",
+      "Safeguard public property",
+      "Promote harmony"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_197",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional principle is a guide for lawmaking but not directly enforceable in court?",
+    "options": [
+      "Directive Principle",
+      "Fundamental Right",
+      "Writ",
+      "Election petition"
+    ],
+    "correct_index": 0,
+    "source_note": "constitutional_values"
+  },
+  {
+    "id": "pol_hard_198",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which doctrine prevents even a constitutional amendment from destroying core constitutional features?",
+    "options": [
+      "Basic structure doctrine",
+      "Colourable legislation",
+      "Collective responsibility",
+      "Pleasure doctrine"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_199",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case is the standard reference for the basic structure doctrine?",
+    "options": [
+      "Kesavananda Bharati",
+      "Shah Bano",
+      "Vishaka",
+      "Navtej Johar"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_200",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case reinforced the balance between Fundamental Rights and Directive Principles?",
+    "options": [
+      "Minerva Mills",
+      "S.R. Bommai",
+      "Kihoto Hollohan",
+      "Indra Sawhney"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_201",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which power lets High Courts protect legal rights beyond only Fundamental Rights?",
+    "options": [
+      "Article 226 writ jurisdiction",
+      "Article 32 writ jurisdiction",
+      "Supervisory jurisdiction",
+      "Appellate jurisdiction"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_202",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which High Court power is most useful for challenging illegal state action?",
+    "options": [
+      "Writ jurisdiction",
+      "Budget approval",
+      "Voter-list preparation",
+      "Party recognition"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_203",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which court is usually approached first for many state-government service and local-authority disputes?",
+    "options": [
+      "High Court",
+      "Administrative tribunal",
+      "District Court",
+      "Supreme Court"
+    ],
+    "correct_index": 0,
+    "source_note": "judiciary"
+  },
+  {
+    "id": "pol_hard_204",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which state office may invite a party leader to form government after an election?",
+    "options": [
+      "Governor",
+      "Speaker",
+      "Chief Minister",
+      "Election Commissioner"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_hard_205",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which state institution checks whether the ministry still enjoys Assembly confidence?",
+    "options": [
+      "Vidhan Sabha",
+      "Vidhan Parishad",
+      "Governor",
+      "Speaker"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_hard_206",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which house is permanent in some states and not directly elected in full?",
+    "options": [
+      "Vidhan Parishad",
+      "Vidhan Sabha",
+      "Lok Sabha",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_hard_207",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which law officer represents and advises the state government in legal matters?",
+    "options": [
+      "Advocate General",
+      "Attorney General",
+      "Solicitor General",
+      "Public Prosecutor"
+    ],
+    "correct_index": 0,
+    "source_note": "state_government"
+  },
+  {
+    "id": "pol_hard_208",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local institution is the strongest example of direct democracy in village governance?",
+    "options": [
+      "Gram Sabha",
+      "Rajya Sabha",
+      "Vidhan Parishad",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_209",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which amendment is most tied to women's reservation in local bodies?",
+    "options": [
+      "73rd and 74th Amendments",
+      "42nd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_210",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule is linked with subjects such as urban planning and public health in municipalities?",
+    "options": [
+      "Twelfth Schedule",
+      "Eleventh Schedule",
+      "Seventh Schedule",
+      "Ninth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_211",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which schedule is linked with subjects such as agriculture and rural development for Panchayats?",
+    "options": [
+      "Eleventh Schedule",
+      "Twelfth Schedule",
+      "Eighth Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_212",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement made environmental protection a grassroots democratic issue in the Himalayas?",
+    "options": [
+      "Chipko Movement",
+      "India Against Corruption",
+      "Narmada Bachao Andolan",
+      "Total Revolution"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_213",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement connected dam development with rehabilitation and consent concerns?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Appiko Movement",
+      "Silent Valley movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_214",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which grassroots demand turned government records into a citizen-access issue?",
+    "options": [
+      "Right to Information",
+      "Social audit",
+      "Public hearing",
+      "Citizen charter"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_215",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which anti-corruption movement helped popularize the demand for a Jan Lokpal?",
+    "options": [
+      "India Against Corruption",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "Narmada Bachao Andolan"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_216",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which form of local participation lets citizens review works rather than only vote once in five years?",
+    "options": [
+      "Gram Sabha oversight",
+      "Social audit",
+      "Ward committee review",
+      "Panchayat committee review"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_217",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local unit is closest to urban residents for ward-level civic complaints?",
+    "options": [
+      "Ward councillor",
+      "Mayor",
+      "Municipal Commissioner",
+      "Ward committee"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_218",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local-government idea means decisions should be made as close to citizens as possible?",
+    "options": [
+      "Decentralisation",
+      "Devolution",
+      "Subsidiarity",
+      "Local self-government"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_219",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which grassroots institution is meant to improve accountability of Panchayat spending?",
+    "options": [
+      "Gram Sabha",
+      "Vidhan Parishad",
+      "Lok Sabha Secretariat",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_220",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is a better example of environmental grassroots politics than electoral party politics?",
+    "options": [
+      "Chipko Movement",
+      "Appiko Movement",
+      "Narmada Bachao Andolan",
+      "Silent Valley movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_287",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which amendment is linked with Panchayati Raj institutions?",
+    "options": [
+      "73rd Amendment",
+      "74th Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_288",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which amendment is linked with urban local bodies?",
+    "options": [
+      "74th Amendment",
+      "73rd Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_289",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body is the general assembly of village voters?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_290",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which elected body works at the village level?",
+    "options": [
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad",
+      "Municipal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_291",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which local body works at the district level in Panchayati Raj?",
+    "options": [
+      "Zila Parishad",
+      "Gram Panchayat",
+      "Ward Committee",
+      "Municipality"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_292",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which urban local body usually governs a large city?",
+    "options": [
+      "Municipal Corporation",
+      "Municipal Council",
+      "Nagar Panchayat",
+      "Gram Panchayat"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_293",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which elected representative usually handles a city ward?",
+    "options": [
+      "Ward councillor",
+      "Sarpanch",
+      "Zila Parishad chairperson",
+      "Block Pramukh"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_294",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which village representative is usually called Sarpanch?",
+    "options": [
+      "Panchayat head",
+      "Ward councillor",
+      "Municipal chairperson",
+      "District Collector"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_easy_295",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with forest protection by local communities?",
+    "options": [
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "India Against Corruption",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_296",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with displacement issues around large dams?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Appiko Movement",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_297",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement made access to government records a civic demand?",
+    "options": [
+      "RTI movement",
+      "Jan Lokpal movement",
+      "Chipko Movement",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_298",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which campaign is closely associated with the demand for Jan Lokpal?",
+    "options": [
+      "India Against Corruption",
+      "RTI movement",
+      "Chipko Movement",
+      "Narmada Bachao Andolan"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_easy_299",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission conducts national and state elections?",
+    "options": [
+      "Election Commission",
+      "Finance Commission",
+      "UPSC",
+      "National Human Rights Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_300",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which authority audits government accounts?",
+    "options": [
+      "CAG",
+      "Finance Commission",
+      "UPSC",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_301",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission recommends sharing Union taxes with states?",
+    "options": [
+      "Finance Commission",
+      "Election Commission",
+      "UPSC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_302",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission conducts civil services examinations?",
+    "options": [
+      "UPSC",
+      "Finance Commission",
+      "Election Commission",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_303",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "A complaint about Scheduled Caste safeguards should point to which commission?",
+    "options": [
+      "National Commission for Scheduled Castes",
+      "National Commission for Scheduled Tribes",
+      "National Commission for Minorities",
+      "National Commission for Women"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_304",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission is meant specifically for Scheduled Tribe safeguards?",
+    "options": [
+      "National Commission for Scheduled Tribes",
+      "National Commission for Scheduled Castes",
+      "National Commission for Backward Classes",
+      "National Commission for Women"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_305",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission focuses on women's rights and safeguards?",
+    "options": [
+      "National Commission for Women",
+      "National Human Rights Commission",
+      "National Commission for Minorities",
+      "National Commission for Backward Classes"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_306",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission deals with human-rights complaints?",
+    "options": [
+      "National Human Rights Commission",
+      "National Commission for Women",
+      "National Commission for Minorities",
+      "National Commission for Scheduled Castes"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_307",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission focuses on notified minority communities?",
+    "options": [
+      "National Commission for Minorities",
+      "National Commission for Women",
+      "National Commission for Scheduled Tribes",
+      "National Commission for Backward Classes"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_308",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission focuses on socially and educationally backward classes?",
+    "options": [
+      "National Commission for Backward Classes",
+      "National Commission for Scheduled Castes",
+      "National Commission for Scheduled Tribes",
+      "National Commission for Minorities"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_309",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which official is associated with audit reports placed before legislatures?",
+    "options": [
+      "CAG",
+      "UPSC Chairperson",
+      "Chief Election Commissioner",
+      "Finance Commission Chairperson"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_310",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body supervises election symbols and party recognition?",
+    "options": [
+      "Election Commission",
+      "Finance Commission",
+      "UPSC",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_269",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which grassroots institution can question Panchayat spending directly?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_270",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which level sits between Gram Panchayat and Zila Parishad in many Panchayati Raj systems?",
+    "options": [
+      "Block Samiti",
+      "Gram Sabha",
+      "Municipal Council",
+      "Ward Committee"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_271",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local body is most relevant for drainage and streetlights in a town?",
+    "options": [
+      "Municipality",
+      "Gram Panchayat",
+      "Zila Parishad",
+      "State Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_272",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which local body is most relevant for village roads and water works?",
+    "options": [
+      "Gram Panchayat",
+      "Municipal Corporation",
+      "Ward Committee",
+      "State Legislature"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_273",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule lists Panchayat functions?",
+    "options": [
+      "Eleventh Schedule",
+      "Twelfth Schedule",
+      "Seventh Schedule",
+      "Tenth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_274",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which schedule lists municipal functions?",
+    "options": [
+      "Twelfth Schedule",
+      "Eleventh Schedule",
+      "Seventh Schedule",
+      "Eighth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_275",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which concept means giving local bodies real powers and funds?",
+    "options": [
+      "Devolution",
+      "Dissolution",
+      "Defection",
+      "Delimitation"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_276",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which process lets villagers publicly check records of local works?",
+    "options": [
+      "Social audit",
+      "VVPAT count",
+      "Question Hour",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_medium_277",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement inspired similar forest-protection campaigns such as Appiko?",
+    "options": [
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "India Against Corruption",
+      "RTI movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_278",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is most linked with Medha Patkar?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "India Against Corruption",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_279",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which campaign used public hearings to demand transparency in records and wages?",
+    "options": [
+      "RTI movement",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "Appiko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_280",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which grassroots issue best matches India Against Corruption?",
+    "options": [
+      "Anti-corruption accountability",
+      "Forest conservation",
+      "Dam rehabilitation",
+      "Land donation"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_medium_281",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body prepares and updates electoral rolls for elections it conducts?",
+    "options": [
+      "Election Commission",
+      "Finance Commission",
+      "UPSC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_282",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body recommends fiscal transfers between Union and states?",
+    "options": [
+      "Finance Commission",
+      "GST Council",
+      "CAG",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_283",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body audits whether public money was used as authorized?",
+    "options": [
+      "CAG",
+      "Finance Commission",
+      "CVC",
+      "Lokpal"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_284",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which body conducts Civil Services and other central recruitment exams?",
+    "options": [
+      "UPSC",
+      "SSC",
+      "Finance Commission",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_285",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "NCSC is the abbreviation for which type of national commission?",
+    "options": [
+      "Scheduled Castes",
+      "Scheduled Tribes",
+      "Women",
+      "Minorities"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_286",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Scheduled Tribes commission is commonly abbreviated as what?",
+    "options": [
+      "NCST",
+      "NCSC",
+      "NCBC",
+      "NCW"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_287",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission is the best fit for complaints on women's safeguards?",
+    "options": [
+      "NCW",
+      "NHRC",
+      "NCM",
+      "NCBC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_288",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission is the best fit for broad human-rights violations?",
+    "options": [
+      "NHRC",
+      "NCW",
+      "NCSC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_289",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission is the best fit for minority-community safeguards?",
+    "options": [
+      "NCM",
+      "NCW",
+      "NCSC",
+      "NCST"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_290",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission received constitutional status through the 102nd Amendment?",
+    "options": [
+      "NCBC",
+      "NCW",
+      "NCM",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_291",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "UPSC is best known for which function?",
+    "options": [
+      "Recruitment exams",
+      "Tax sharing",
+      "Party symbols",
+      "Audit reports"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_292",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "CAG's core public role is closest to which function?",
+    "options": [
+      "Government audit",
+      "Election rolls",
+      "Civil services exam",
+      "Tax devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_293",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "The Finance Commission is most directly linked with which function?",
+    "options": [
+      "Tax devolution",
+      "Party recognition",
+      "Human-rights inquiries",
+      "Recruitment exams"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_medium_294",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Election Commission work is most directly linked with which function?",
+    "options": [
+      "Poll conduct",
+      "Audit reports",
+      "Civil-service exams",
+      "Minority safeguards"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_221",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local institution is closest to direct democracy in rural India?",
+    "options": [
+      "Gram Sabha",
+      "Gram Panchayat",
+      "Block Samiti",
+      "Zila Parishad"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_222",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform gave constitutional backing to district-level Panchayati Raj bodies?",
+    "options": [
+      "73rd Amendment",
+      "74th Amendment",
+      "52nd Amendment",
+      "101st Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_223",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform gave constitutional backing to ward-level urban governance?",
+    "options": [
+      "74th Amendment",
+      "73rd Amendment",
+      "61st Amendment",
+      "86th Amendment"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_224",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local mechanism best checks whether Panchayat works actually happened?",
+    "options": [
+      "Social audit",
+      "No-confidence motion",
+      "Money Bill",
+      "VVPAT slip"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_225",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which local principle means functions, funds, and functionaries move to local bodies?",
+    "options": [
+      "Devolution",
+      "Delimitation",
+      "Defection",
+      "Dissolution"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_226",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which institution links all registered village voters to Panchayat accountability?",
+    "options": [
+      "Gram Sabha",
+      "Block Samiti",
+      "Zila Parishad",
+      "State Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots"
+  },
+  {
+    "id": "pol_hard_227",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is the better match for forest rights and ecological protection?",
+    "options": [
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "India Against Corruption",
+      "Jan Lokpal movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_228",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is the better match for rehabilitation of dam-affected people?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Appiko Movement",
+      "RTI movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_229",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is the better match for public access to official records?",
+    "options": [
+      "RTI movement",
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_230",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement is the better match for Lokpal-focused anti-corruption protests?",
+    "options": [
+      "India Against Corruption",
+      "RTI movement",
+      "Chipko Movement",
+      "Narmada Bachao Andolan"
+    ],
+    "correct_index": 0,
+    "source_note": "grassroots_movements"
+  },
+  {
+    "id": "pol_hard_231",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional body is independent of the executive for election conduct?",
+    "options": [
+      "Election Commission",
+      "Finance Commission",
+      "UPSC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_232",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional authority is independent for audit of public accounts?",
+    "options": [
+      "CAG",
+      "Election Commission",
+      "Finance Commission",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_233",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional body is periodically constituted for Union-state fiscal sharing?",
+    "options": [
+      "Finance Commission",
+      "GST Council",
+      "CAG",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_234",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional body protects merit-based recruitment to Union services?",
+    "options": [
+      "UPSC",
+      "Election Commission",
+      "Finance Commission",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_235",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which commission handles constitutional safeguards for Scheduled Castes?",
+    "options": [
+      "NCSC",
+      "NCST",
+      "NCBC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_236",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "For Scheduled Tribe safeguard issues, which commission is the direct fit?",
+    "options": [
+      "NCST",
+      "NCSC",
+      "NCBC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_237",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A women's legal-safeguard issue most directly fits which commission?",
+    "options": [
+      "NCW",
+      "NCSC",
+      "NCST",
+      "NCBC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_238",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which commission is statutory and focuses on human-rights protection?",
+    "options": [
+      "NHRC",
+      "NCW",
+      "NCM",
+      "NCSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_239",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Minority-community safeguards are mainly handled by which commission?",
+    "options": [
+      "NCM",
+      "NHRC",
+      "NCW",
+      "NCST"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_240",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which commission is constitutionally linked with backward classes after 102nd Amendment?",
+    "options": [
+      "NCBC",
+      "NCSC",
+      "NCST",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_241",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A denial of Scheduled Caste protections is closest to which forum?",
+    "options": [
+      "NCSC",
+      "NCST",
+      "NCBC",
+      "NHRC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_242",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A tribal-safeguards complaint is closest to which forum?",
+    "options": [
+      "NCST",
+      "NCSC",
+      "NCBC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_243",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A complaint about women's legal safeguards best fits which body?",
+    "options": [
+      "NCW",
+      "NHRC",
+      "NCM",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_244",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "A minority-community safeguard complaint best fits which body?",
+    "options": [
+      "NCM",
+      "NCW",
+      "NCST",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_245",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for advice on tax sharing with states?",
+    "options": [
+      "Finance Commission",
+      "CAG",
+      "Election Commission",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_246",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for audit findings on government spending?",
+    "options": [
+      "CAG",
+      "Finance Commission",
+      "UPSC",
+      "Election Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_247",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for allotment of election symbols?",
+    "options": [
+      "Election Commission",
+      "UPSC",
+      "Finance Commission",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_248",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for Civil Services Examination rules?",
+    "options": [
+      "UPSC",
+      "Election Commission",
+      "Finance Commission",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_249",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for broad human-rights inquiry powers?",
+    "options": [
+      "NHRC",
+      "NCW",
+      "NCSC",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_hard_250",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body would be the best fit for examining OBC inclusion issues?",
+    "options": [
+      "NCBC",
+      "NCSC",
+      "NCST",
+      "NCM"
+    ],
+    "correct_index": 0,
+    "source_note": "commissions"
+  },
+  {
+    "id": "pol_easy_311",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list includes defence and foreign affairs?",
+    "options": [
+      "Union List",
+      "State List",
+      "Concurrent List",
+      "Municipal List"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_312",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list includes police and public order?",
+    "options": [
+      "State List",
+      "Union List",
+      "Concurrent List",
+      "Residuary List"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_313",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which list lets both Parliament and states make laws?",
+    "options": [
+      "Concurrent List",
+      "Union List",
+      "State List",
+      "Eleventh Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_314",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which idea means Centre and states work together instead of acting separately?",
+    "options": [
+      "Cooperative federalism",
+      "Unitary rule",
+      "Judicial review",
+      "Party whip"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_315",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which council is linked with cooperative federalism in GST decisions?",
+    "options": [
+      "GST Council",
+      "Finance Commission",
+      "Inter-State Council",
+      "NITI Aayog"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_316",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body recommends how Union taxes are shared with states?",
+    "options": [
+      "Finance Commission",
+      "GST Council",
+      "CAG",
+      "Planning Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_317",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which constitutional post often becomes important in Centre-state disputes?",
+    "options": [
+      "Governor",
+      "Speaker",
+      "Mayor",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_318",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which case is strongly linked with limiting misuse of President's Rule?",
+    "options": [
+      "S.R. Bommai",
+      "Kesavananda Bharati",
+      "Puttaswamy",
+      "Vishaka"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_319",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission reviewed Centre-state relations in the 1980s?",
+    "options": [
+      "Sarkaria Commission",
+      "Mandal Commission",
+      "Kothari Commission",
+      "Santhanam Committee"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_320",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission later reviewed Centre-state relations after Sarkaria?",
+    "options": [
+      "Punchhi Commission",
+      "Finance Commission",
+      "Election Commission",
+      "National Commission for Women"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_321",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which type of dispute is Cauvery best known for?",
+    "options": [
+      "River-water sharing",
+      "Border demarcation",
+      "Language policy",
+      "Tax devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_easy_322",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Cauvery water sharing mainly concerns which states?",
+    "options": [
+      "Karnataka and Tamil Nadu",
+      "Punjab and Haryana",
+      "Maharashtra and Gujarat",
+      "Assam and Meghalaya"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_easy_323",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Mahadayi water dispute is most associated with which state pair?",
+    "options": [
+      "Goa and Karnataka",
+      "Tamil Nadu and Kerala",
+      "Punjab and Rajasthan",
+      "Bihar and Jharkhand"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_easy_324",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which dispute is linked with Punjab and Haryana river-water sharing?",
+    "options": [
+      "Ravi-Beas dispute",
+      "Cauvery dispute",
+      "Mahadayi dispute",
+      "Krishna dispute"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_easy_325",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which reorganization issue created Andhra as an early linguistic state?",
+    "options": [
+      "Telugu-speaking state demand",
+      "River-water tribunal demand",
+      "GST dispute",
+      "Coalfield merger"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_326",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which statehood movement led to creation of Telangana?",
+    "options": [
+      "Regional aspiration in Andhra Pradesh",
+      "Linguistic merger with Karnataka",
+      "River dispute with Kerala",
+      "Tribal council in Assam"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_327",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state was created from Bihar in 2000?",
+    "options": [
+      "Jharkhand",
+      "Telangana",
+      "Chhattisgarh",
+      "Uttarakhand"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_328",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Chhattisgarh was carved out of which parent state?",
+    "options": [
+      "Madhya Pradesh",
+      "Bihar",
+      "Uttar Pradesh",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_329",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which state was created from Uttar Pradesh in 2000?",
+    "options": [
+      "Uttarakhand",
+      "Jharkhand",
+      "Chhattisgarh",
+      "Telangana"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_easy_330",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which body did NITI Aayog replace?",
+    "options": [
+      "Planning Commission",
+      "Finance Commission",
+      "Election Commission",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_331",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which model is linked with India's early Five Year Plans?",
+    "options": [
+      "Nehruvian planning",
+      "LPG reforms",
+      "Green Revolution",
+      "Disinvestment"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_332",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which economic approach did early India follow?",
+    "options": [
+      "Mixed economy",
+      "Pure laissez-faire",
+      "Command economy only",
+      "Gold standard economy"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_333",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which sector was central to Nehruvian industrialization?",
+    "options": [
+      "Public sector",
+      "Only cottage industry",
+      "Only private banks",
+      "Only agriculture"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_334",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which economist is linked with the Second Five Year Plan model?",
+    "options": [
+      "P.C. Mahalanobis",
+      "M.S. Swaminathan",
+      "Verghese Kurien",
+      "C. Rangarajan"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_easy_335",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Gandhian idea emphasizes self-reliant village communities?",
+    "options": [
+      "Gram Swaraj",
+      "Licence Raj",
+      "Disinvestment",
+      "Fiscal devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_easy_336",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Gandhian economic idea asks wealth holders to act for social good?",
+    "options": [
+      "Trusteeship",
+      "Privatization",
+      "Deficit financing",
+      "Tariff reduction"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_easy_337",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is linked with voluntary land donation?",
+    "options": [
+      "Bhoodan Movement",
+      "Green Revolution",
+      "LPG reforms",
+      "Narmada Bachao Andolan"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_easy_338",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which reform targeted the old zamindari system?",
+    "options": [
+      "Zamindari abolition",
+      "Bank nationalization",
+      "GST reform",
+      "Disinvestment"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_easy_339",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which agricultural change is associated with high-yielding seeds and irrigation?",
+    "options": [
+      "Green Revolution",
+      "White Revolution",
+      "Blue Revolution",
+      "Operation Flood"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_easy_340",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Who is strongly associated with India's Green Revolution?",
+    "options": [
+      "M.S. Swaminathan",
+      "P.C. Mahalanobis",
+      "Verghese Kurien",
+      "D.R. Gadgil"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_easy_341",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which crop was central to India's Green Revolution success?",
+    "options": [
+      "Wheat",
+      "Tea",
+      "Jute",
+      "Rubber"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_easy_342",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term describes the pre-1991 system of heavy industrial licensing?",
+    "options": [
+      "Licence Raj",
+      "Green Revolution",
+      "Gram Swaraj",
+      "Federalism"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_easy_343",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which reforms are commonly called LPG reforms?",
+    "options": [
+      "Liberalization, Privatization, Globalization",
+      "Land, Panchayat, Governance",
+      "Labour, Police, Governor",
+      "Language, Planning, Growth"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_easy_344",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Prime Minister is linked with 1991 economic reforms?",
+    "options": [
+      "P.V. Narasimha Rao",
+      "Jawaharlal Nehru",
+      "Indira Gandhi",
+      "Morarji Desai"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_easy_345",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which Finance Minister is linked with the 1991 reforms?",
+    "options": [
+      "Manmohan Singh",
+      "Yashwant Sinha",
+      "Pranab Mukherjee",
+      "C.D. Deshmukh"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_295",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which list conflict usually gives Union law priority when Parliament and a state both legislate?",
+    "options": [
+      "Concurrent List conflict",
+      "Union List conflict",
+      "State List conflict",
+      "Eighth Schedule conflict"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_296",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution was created to discuss Centre-state issues under Article 263?",
+    "options": [
+      "Inter-State Council",
+      "GST Council",
+      "Finance Commission",
+      "Zonal Council"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_297",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best describes the Indian model of federalism?",
+    "options": [
+      "Federal system with unitary features",
+      "Loose confederation",
+      "Pure unitary state",
+      "Two-nation federation"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_298",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which feature shows an integrationist tendency in Indian federalism?",
+    "options": [
+      "Single citizenship",
+      "Dual citizenship",
+      "Separate state constitutions for all states",
+      "Independent state armies"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_299",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which service structure helps integrate administration across Union and states?",
+    "options": [
+      "All India Services",
+      "Only state civil services",
+      "Only municipal cadres",
+      "Only judicial cadres"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_300",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which power lets Parliament alter state boundaries by law?",
+    "options": [
+      "Reorganization of states",
+      "Judicial review",
+      "Money Bill certification",
+      "No-confidence motion"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_301",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which commission is best matched with Governor's role and Centre-state relations?",
+    "options": [
+      "Sarkaria Commission",
+      "Mandal Commission",
+      "Balwantrai Mehta Committee",
+      "Kothari Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_302",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which later commission also reviewed Centre-state relations?",
+    "options": [
+      "Punchhi Commission",
+      "Finance Commission",
+      "NITI Aayog",
+      "National Commission for Minorities"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_303",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which case made federalism part of the basic-structure discussion?",
+    "options": [
+      "S.R. Bommai",
+      "Shah Bano",
+      "Navtej Johar",
+      "Vishaka"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_medium_304",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which river dispute is most linked with Karnataka and Tamil Nadu?",
+    "options": [
+      "Cauvery",
+      "Ravi-Beas",
+      "Mahadayi",
+      "Sutlej-Yamuna"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_medium_305",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which river dispute is most linked with Goa and Karnataka?",
+    "options": [
+      "Mahadayi",
+      "Cauvery",
+      "Ravi-Beas",
+      "Krishna"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_medium_306",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which river dispute is most linked with Punjab and Haryana?",
+    "options": [
+      "Ravi-Beas",
+      "Cauvery",
+      "Mahadayi",
+      "Godavari"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_medium_307",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which mechanism is used for many inter-state river water disputes?",
+    "options": [
+      "Water disputes tribunal",
+      "Finance Commission award",
+      "Election petition",
+      "Lokpal inquiry"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_medium_308",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which regional aspiration led to Telangana's creation?",
+    "options": [
+      "Separate statehood",
+      "Union territory status",
+      "River tribunal demand",
+      "Municipal merger"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_medium_309",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which idea was central to linguistic reorganization of states?",
+    "options": [
+      "Language-based state identity",
+      "River basin boundaries",
+      "Tax-sharing formula",
+      "Military commands"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_medium_310",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution drove centralized economic planning before NITI Aayog?",
+    "options": [
+      "Planning Commission",
+      "Finance Commission",
+      "GST Council",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_311",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which model emphasized heavy industry and capital goods?",
+    "options": [
+      "Mahalanobis model",
+      "Gandhian trusteeship",
+      "Green Revolution package",
+      "LPG reforms"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_312",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best describes Nehruvian economic planning?",
+    "options": [
+      "State-led mixed economy",
+      "Village-only production",
+      "Full market deregulation",
+      "No public sector"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_313",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which institution symbolized public-sector-led industrialization?",
+    "options": [
+      "Public sector enterprise",
+      "Self-help group",
+      "State Election Commission",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_314",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which policy tool reduced direct government ownership in some PSUs?",
+    "options": [
+      "Disinvestment",
+      "Land ceiling",
+      "Social audit",
+      "Water tribunal"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_315",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Gandhian idea focuses on village self-rule?",
+    "options": [
+      "Gram Swaraj",
+      "Licence Raj",
+      "Fiscal federalism",
+      "Import substitution"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_medium_316",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which Gandhian idea asks industrialists to hold wealth in trust for society?",
+    "options": [
+      "Trusteeship",
+      "Disinvestment",
+      "Liberalization",
+      "Deficit financing"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_medium_317",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which agrarian reform aimed to remove intermediary landlords?",
+    "options": [
+      "Zamindari abolition",
+      "Bank nationalization",
+      "LPG reforms",
+      "GST rollout"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_318",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which agrarian reform limits how much land one can hold?",
+    "options": [
+      "Land ceiling",
+      "Tenancy eviction",
+      "Urban zoning",
+      "Tariff reduction"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_319",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform tries to protect cultivators who lease land?",
+    "options": [
+      "Tenancy reform",
+      "Disinvestment",
+      "Industrial licensing",
+      "Fiscal devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_320",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is most linked with Vinoba Bhave?",
+    "options": [
+      "Bhoodan Movement",
+      "Green Revolution",
+      "Operation Flood",
+      "Chipko Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_321",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which package best describes the Green Revolution?",
+    "options": [
+      "HYV seeds, irrigation, fertilizers",
+      "Land donation, trusteeship, khadi",
+      "Privatization, globalization, deregulation",
+      "Audit, taxation, devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_medium_322",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which region became a major early beneficiary of Green Revolution wheat gains?",
+    "options": [
+      "Punjab-Haryana belt",
+      "Konkan coast",
+      "North-East hills",
+      "Deccan dry plateau only"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_medium_323",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best captures a common criticism of the Green Revolution?",
+    "options": [
+      "Regional and crop imbalance",
+      "End of irrigation",
+      "No role for technology",
+      "Abolition of markets"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_medium_324",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform direction reduced the Licence Raj after 1991?",
+    "options": [
+      "Industrial delicensing",
+      "Zamindari abolition",
+      "Panchayat reservation",
+      "River tribunal"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_325",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform direction opened more sectors to private and foreign investment?",
+    "options": [
+      "Liberalization",
+      "Land ceiling",
+      "Trusteeship",
+      "Cooperative federalism"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_326",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best describes globalization in the 1991 reform context?",
+    "options": [
+      "Greater integration with world economy",
+      "Village self-rule only",
+      "State boundary change",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_327",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which reform direction means reducing state ownership in enterprises?",
+    "options": [
+      "Privatization",
+      "Tenancy reform",
+      "Green Revolution",
+      "Gram Swaraj"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_328",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pair correctly matches political economy ideas?",
+    "options": [
+      "Nehruvian: planning",
+      "Gandhian: Licence Raj",
+      "LPG: land ceilings",
+      "Green Revolution: trusteeship"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_medium_329",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pair correctly matches economic reform ideas?",
+    "options": [
+      "LPG: liberalization",
+      "Bhoodan: industrial delicensing",
+      "Mahalanobis: village-only production",
+      "Green Revolution: tax devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_medium_330",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pair correctly matches agrarian policy ideas?",
+    "options": [
+      "Land ceiling: redistribution",
+      "Disinvestment: tenancy security",
+      "Licence Raj: irrigation package",
+      "GST Council: crop pricing"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_medium_331",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pair correctly matches Green Revolution ideas?",
+    "options": [
+      "HYV seeds: productivity push",
+      "Trusteeship: fertilizer subsidy",
+      "Licence Raj: wheat breeding",
+      "Disinvestment: irrigation canals"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_251",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional feature most clearly reflects a strong Centre in Indian federalism?",
+    "options": [
+      "Residuary powers with Union",
+      "Separate state citizenship",
+      "State veto over Union laws",
+      "Independent state armies"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_252",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which idea best explains why All India Services are called integrationist?",
+    "options": [
+      "They link Union and state administration",
+      "They replace state legislatures",
+      "They conduct municipal elections",
+      "They audit state budgets"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_253",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Centre-state issue did Sarkaria and Punchhi both examine?",
+    "options": [
+      "Governor and emergency powers",
+      "Civil service exam syllabus",
+      "Municipal ward boundaries",
+      "Minority commission powers"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_254",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which body is a forum for discussing inter-state and Centre-state issues?",
+    "options": [
+      "Inter-State Council",
+      "Public Accounts Committee",
+      "Election Commission",
+      "UPSC"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_255",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which doctrine protects federalism from destructive constitutional change?",
+    "options": [
+      "Basic structure doctrine",
+      "Money Bill doctrine",
+      "Pleasure doctrine",
+      "Colourable legislation only"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_256",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which case made President's Rule subject to stronger judicial scrutiny?",
+    "options": [
+      "S.R. Bommai",
+      "Kihoto Hollohan",
+      "Indra Sawhney",
+      "Maneka Gandhi"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_hard_257",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which river dispute best illustrates federal tension between Karnataka and Tamil Nadu?",
+    "options": [
+      "Cauvery",
+      "Ravi-Beas",
+      "Mahadayi",
+      "Narmada"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_hard_258",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which river dispute best illustrates federal tension between Goa and Karnataka?",
+    "options": [
+      "Mahadayi",
+      "Cauvery",
+      "Ravi-Beas",
+      "Godavari"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_hard_259",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which river dispute best illustrates federal tension involving Punjab and Haryana?",
+    "options": [
+      "Ravi-Beas",
+      "Cauvery",
+      "Mahadayi",
+      "Krishna"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_hard_260",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which constitutional subject is directly tied to tribunals for river-water sharing?",
+    "options": [
+      "Inter-state water disputes",
+      "Finance Commission grants",
+      "Election symbols",
+      "Civil-service recruitment"
+    ],
+    "correct_index": 0,
+    "source_note": "inter_state_disputes"
+  },
+  {
+    "id": "pol_hard_261",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which demand best fits regional aspiration politics?",
+    "options": [
+      "Separate statehood",
+      "Audit of Union accounts",
+      "Civil-service recruitment",
+      "Money Bill certification"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_hard_262",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which political process converted linguistic identity into state boundaries?",
+    "options": [
+      "States reorganization",
+      "Disinvestment",
+      "Judicial review",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "regional_aspirations"
+  },
+  {
+    "id": "pol_hard_263",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which model is most tied to capital-goods-led industrial planning?",
+    "options": [
+      "Mahalanobis model",
+      "Gandhian trusteeship",
+      "LPG reforms",
+      "Bhoodan"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_hard_264",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which planning idea is closest to import substitution and public-sector growth?",
+    "options": [
+      "Nehruvian mixed economy",
+      "Gandhian village economy",
+      "LPG reforms",
+      "Green Revolution package"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_hard_265",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which economic view is closest to small-scale, village-centred production?",
+    "options": [
+      "Gandhian economics",
+      "Mahalanobis model",
+      "LPG reforms",
+      "Public-sector monopoly"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_hard_266",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Gandhian concept treats ownership as a social responsibility?",
+    "options": [
+      "Trusteeship",
+      "Privatization",
+      "Fiscal federalism",
+      "Industrial licensing"
+    ],
+    "correct_index": 0,
+    "source_note": "gandhian_economics"
+  },
+  {
+    "id": "pol_hard_267",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which policy approach protected domestic industry through controls and licences?",
+    "options": [
+      "Licence Raj",
+      "Green Revolution",
+      "Bhoodan",
+      "GST federalism"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_268",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform is the opposite of heavy industrial licensing?",
+    "options": [
+      "Industrial delicensing",
+      "Land ceiling",
+      "Gram Swaraj",
+      "River adjudication"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_269",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform idea is closest to reducing the government's ownership stake?",
+    "options": [
+      "Disinvestment",
+      "Tenancy protection",
+      "Cooperative federalism",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_270",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which reform idea is closest to opening the economy to global trade and capital?",
+    "options": [
+      "Globalization",
+      "Zamindari abolition",
+      "Gram Swaraj",
+      "States reorganization"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_271",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which agrarian reform most directly attacked intermediary landlordism?",
+    "options": [
+      "Zamindari abolition",
+      "Green Revolution",
+      "Disinvestment",
+      "Industrial delicensing"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_hard_272",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which agrarian reform tries to redistribute surplus land above a legal limit?",
+    "options": [
+      "Land ceiling",
+      "Tenancy eviction",
+      "Licence Raj",
+      "Public sector expansion"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_hard_273",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which agrarian reform gives security to cultivators who rent land?",
+    "options": [
+      "Tenancy reform",
+      "Disinvestment",
+      "Import substitution",
+      "Fiscal devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_hard_274",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement sought voluntary land redistribution rather than state acquisition?",
+    "options": [
+      "Bhoodan Movement",
+      "Green Revolution",
+      "LPG reforms",
+      "Operation Flood"
+    ],
+    "correct_index": 0,
+    "source_note": "land_reforms"
+  },
+  {
+    "id": "pol_hard_275",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which Green Revolution input package is the closest match?",
+    "options": [
+      "HYV seeds plus irrigation and fertilizers",
+      "Trusteeship plus khadi and village crafts",
+      "Delicensing plus foreign investment",
+      "Land donation plus social audit"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_276",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which leader-scientist is most associated with India's Green Revolution?",
+    "options": [
+      "M.S. Swaminathan",
+      "P.C. Mahalanobis",
+      "Verghese Kurien",
+      "Norman Borlaug only"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_277",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which criticism is commonly linked with Green Revolution outcomes?",
+    "options": [
+      "Regional inequality",
+      "End of wheat farming",
+      "No use of irrigation",
+      "Abolition of procurement"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_278",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which phrase best captures the shift from planning-era controls to 1991 reforms?",
+    "options": [
+      "From Licence Raj to liberalization",
+      "From federalism to monarchy",
+      "From Gram Sabha to Rajya Sabha",
+      "From courts to commissions"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_279",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which pair correctly contrasts Nehruvian and Gandhian economics?",
+    "options": [
+      "Heavy industry vs village economy",
+      "Privatization vs globalization",
+      "Tax devolution vs audit",
+      "River tribunals vs statehood"
+    ],
+    "correct_index": 0,
+    "source_note": "planning"
+  },
+  {
+    "id": "pol_hard_280",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which pair correctly contrasts Green Revolution and land reforms?",
+    "options": [
+      "Technology package vs land redistribution",
+      "Audit reports vs tax sharing",
+      "Statehood vs river disputes",
+      "Writs vs tribunals"
+    ],
+    "correct_index": 0,
+    "source_note": "green_revolution"
+  },
+  {
+    "id": "pol_hard_281",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which pair correctly links 1991 reforms?",
+    "options": [
+      "Delicensing and liberalization",
+      "Zamindari and Bhoodan",
+      "Gram Swaraj and trusteeship",
+      "Cauvery and Mahadayi"
+    ],
+    "correct_index": 0,
+    "source_note": "liberalization"
+  },
+  {
+    "id": "pol_hard_282",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which pair correctly links federalism and economic policy?",
+    "options": [
+      "Finance Commission: tax sharing",
+      "CAG: statehood demand",
+      "UPSC: river tribunal",
+      "ECI: land ceiling"
+    ],
+    "correct_index": 0,
+    "source_note": "federalism"
+  },
+  {
+    "id": "pol_easy_346",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission is most linked with OBC reservation politics?",
+    "options": [
+      "Mandal Commission",
+      "Sarkaria Commission",
+      "Finance Commission",
+      "Kothari Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_347",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which party is closely associated with Bahujan politics?",
+    "options": [
+      "Bahujan Samaj Party",
+      "Telugu Desam Party",
+      "Dravida Munnetra Kazhagam",
+      "Biju Janata Dal"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_348",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to politics organized around caste identity?",
+    "options": [
+      "Caste politics",
+      "Coalition politics",
+      "Fiscal federalism",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_349",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which idea means the State should treat all religions with equal respect?",
+    "options": [
+      "Secularism",
+      "Socialism",
+      "Federalism",
+      "Regionalism"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_350",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which commission is the direct forum for minority-community safeguards?",
+    "options": [
+      "National Commission for Minorities",
+      "National Commission for Women",
+      "National Commission for Scheduled Tribes",
+      "National Commission for Backward Classes"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_351",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which schedule gives special arrangements for tribal areas in parts of the North-East?",
+    "options": [
+      "Sixth Schedule",
+      "Seventh Schedule",
+      "Tenth Schedule",
+      "Twelfth Schedule"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_352",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which demand is associated with the Darjeeling hills?",
+    "options": [
+      "Gorkhaland",
+      "Bodoland",
+      "Vidarbha",
+      "Bundelkhand"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_353",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which demand is associated with Bodo identity politics in Assam?",
+    "options": [
+      "Bodoland",
+      "Gorkhaland",
+      "Telangana",
+      "Uttarakhand"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_354",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which party is strongly associated with Dravidian politics in Tamil Nadu?",
+    "options": [
+      "DMK",
+      "TDP",
+      "BJD",
+      "Akali Dal"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_355",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "TDP is best known as a regional party from which political space?",
+    "options": [
+      "Telugu regional politics",
+      "Dravidian politics",
+      "Odia regional politics",
+      "Sikh regional politics"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_356",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "BJD is best known as a regional party from which state?",
+    "options": [
+      "Odisha",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Punjab"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_357",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which party is strongly associated with Sikh and Punjab politics?",
+    "options": [
+      "Akali Dal",
+      "DMK",
+      "BJD",
+      "TMC"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_358",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Trinamool Congress is best known as a regional force from which state?",
+    "options": [
+      "West Bengal",
+      "Odisha",
+      "Andhra Pradesh",
+      "Jammu and Kashmir"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_359",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term describes several parties sharing power in government?",
+    "options": [
+      "Coalition government",
+      "One-party system",
+      "Judicial review",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_360",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which phrase means no party has a clear majority in the legislature?",
+    "options": [
+      "Hung house",
+      "Money Bill",
+      "Model Code",
+      "Gram Sabha"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_361",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which group is a pressure group in politics?",
+    "options": [
+      "Trade union",
+      "Election Commission",
+      "High Court",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_easy_362",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which pressure group represents organized labour?",
+    "options": [
+      "Trade union",
+      "Business chamber",
+      "Farmers' union",
+      "Student union"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_easy_363",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which pressure group represents cultivators' interests?",
+    "options": [
+      "Farmers' union",
+      "Trade union",
+      "Business chamber",
+      "Bar association"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_easy_364",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term means voters reject a sitting government?",
+    "options": [
+      "Anti-incumbency",
+      "Coalition",
+      "Delimitation",
+      "Devolution"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_easy_365",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to the share of eligible voters who vote?",
+    "options": [
+      "Turnout",
+      "Vote bank",
+      "Swing",
+      "Quota"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_easy_366",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term means a group seen as voting predictably for a party?",
+    "options": [
+      "Vote bank",
+      "Hung house",
+      "Whip",
+      "Writ"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_easy_367",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to voters who may shift between parties?",
+    "options": [
+      "Swing voters",
+      "Postal voters",
+      "Proxy voters",
+      "Tendered voters"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_easy_368",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which organization is known for civil-liberties work in India?",
+    "options": [
+      "PUCL",
+      "UPSC",
+      "CAG",
+      "NCBC"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_369",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with women's safety at workplaces through Vishaka?",
+    "options": [
+      "Women's rights movement",
+      "Environmental movement",
+      "Farmer movement",
+      "Language movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_370",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is linked with protests against dowry deaths?",
+    "options": [
+      "Women's movement",
+      "Civil-liberties movement",
+      "Environmental movement",
+      "Language movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_371",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is best linked with forest conservation by villagers?",
+    "options": [
+      "Chipko Movement",
+      "Anti-arrack movement",
+      "Civil liberties movement",
+      "JP movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_372",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is best linked with dam-displacement issues?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Anti-arrack movement",
+      "Right to Food campaign"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_373",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which movement is associated with women protesting liquor abuse in Andhra Pradesh?",
+    "options": [
+      "Anti-arrack movement",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "RTI movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_easy_374",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term describes politicians from the same family repeatedly holding office?",
+    "options": [
+      "Dynastic politics",
+      "Coalition politics",
+      "Federal politics",
+      "Pressure politics"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_easy_375",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to criminal cases becoming an issue in candidate politics?",
+    "options": [
+      "Criminalisation of politics",
+      "Coalition politics",
+      "Fiscal federalism",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_easy_376",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term describes women's presence in elected bodies?",
+    "options": [
+      "Women's representation",
+      "Vote-bank politics",
+      "Anti-incumbency",
+      "Delimitation"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_easy_377",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term refers to wealth and class background of elected representatives?",
+    "options": [
+      "Socio-economic profile",
+      "Electoral roll",
+      "Party whip",
+      "Model Code"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_easy_378",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which party system term describes many parties competing seriously?",
+    "options": [
+      "Multi-party system",
+      "Two-party system",
+      "One-party rule",
+      "Non-party democracy"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_easy_379",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which concept links caste groups with electoral mobilization?",
+    "options": [
+      "Social coalition",
+      "Judicial review",
+      "Tax devolution",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_380",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which issue links Shah Bano and personal-law politics?",
+    "options": [
+      "Religion and gender justice",
+      "River-water sharing",
+      "Industrial licensing",
+      "State reorganization"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_easy_381",
+    "category": "politics",
+    "difficulty": 1,
+    "question": "Which term means political appeal based on religious identity?",
+    "options": [
+      "Communal politics",
+      "Coalition politics",
+      "Green politics",
+      "Fiscal politics"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_332",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which case is most associated with the Mandal reservation framework?",
+    "options": [
+      "Indra Sawhney",
+      "S.R. Bommai",
+      "Puttaswamy",
+      "Vishaka"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_333",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which social category did Mandal politics mainly bring into national focus?",
+    "options": [
+      "OBCs",
+      "Anglo-Indians",
+      "Linguistic minorities",
+      "Non-resident Indians"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_334",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which political slogan is closest to Bahujan politics?",
+    "options": [
+      "Majority of marginalized groups",
+      "Single national language",
+      "Pure market economy",
+      "Centralized planning"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_335",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which constitutional arrangement protects many tribal areas in the North-East?",
+    "options": [
+      "Sixth Schedule councils",
+      "GST Council",
+      "Public Accounts Committee",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_336",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which regional aspiration is linked with the Bodo movement?",
+    "options": [
+      "Bodoland",
+      "Gorkhaland",
+      "Vidarbha",
+      "Harit Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_337",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which regional aspiration is linked with the Darjeeling hills?",
+    "options": [
+      "Gorkhaland",
+      "Bodoland",
+      "Telangana",
+      "Saurashtra"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_338",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which issue best describes communal politics?",
+    "options": [
+      "Religious identity in political mobilization",
+      "River-water sharing",
+      "Public-sector disinvestment",
+      "Civil-service recruitment"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_medium_339",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which concept best describes Dravidian parties' social base?",
+    "options": [
+      "Regional-linguistic identity",
+      "River-basin identity",
+      "Civil-service identity",
+      "Judicial identity"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_340",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which party is most associated with Dravidian ideology?",
+    "options": [
+      "DMK",
+      "TDP",
+      "BJD",
+      "Akali Dal"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_341",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which party is most associated with Telugu regional assertion?",
+    "options": [
+      "TDP",
+      "DMK",
+      "TMC",
+      "National Conference"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_342",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which party's base is most clearly tied to Odia regional politics?",
+    "options": [
+      "BJD",
+      "TDP",
+      "AIADMK",
+      "Shiv Sena"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_343",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Shiv Sena is most closely linked with which regional-political base?",
+    "options": [
+      "Marathi regional politics",
+      "Odia regional politics",
+      "Telugu regional politics",
+      "Sikh regional politics"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_344",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "National Conference is best understood as which kind of party?",
+    "options": [
+      "Kashmir regional party",
+      "Telugu regional party",
+      "Dravidian party",
+      "Odia regional party"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_345",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which coalition idea means allies agree on a shared policy agenda?",
+    "options": [
+      "Common minimum programme",
+      "Vote bank",
+      "Party whip",
+      "Model Code"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_346",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase means a party supports government without joining the cabinet?",
+    "options": [
+      "Outside support",
+      "Inner-party election",
+      "Postal vote",
+      "Floor crossing"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_347",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which phrase best describes coalition politics?",
+    "options": [
+      "Government by alliance partners",
+      "Government by courts",
+      "Government by audit reports",
+      "Government by commissions"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_medium_348",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which group is a pressure group rather than a political party?",
+    "options": [
+      "Business chamber",
+      "Regional party",
+      "National party",
+      "Ruling coalition"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_medium_349",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pressure group mainly represents workers?",
+    "options": [
+      "Trade union",
+      "Farmers' union",
+      "Business chamber",
+      "Resident welfare association"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_medium_350",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pressure group mainly represents industry interests?",
+    "options": [
+      "Business chamber",
+      "Trade union",
+      "Farmers' union",
+      "Student union"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_medium_351",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which pressure group mainly represents agrarian interests?",
+    "options": [
+      "Farmers' union",
+      "Business chamber",
+      "Trade union",
+      "Bar association"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_medium_352",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which electoral behavior idea means voters punish a sitting government?",
+    "options": [
+      "Anti-incumbency",
+      "Coalition formation",
+      "Delimitation",
+      "Party recognition"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_medium_353",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which electoral behavior idea means social groups vote as blocs?",
+    "options": [
+      "Vote-bank politics",
+      "Postal voting",
+      "Tendered voting",
+      "Floor test"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_medium_354",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which electoral trend tracks rising participation by women voters?",
+    "options": [
+      "Rising women turnout",
+      "Vote-bank politics",
+      "Anti-incumbency",
+      "Swing voting"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_medium_355",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which factor can change voting behavior across elections?",
+    "options": [
+      "Anti-incumbency mood",
+      "Court roster",
+      "Audit paragraph",
+      "Writ jurisdiction"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_medium_356",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which term describes candidates with serious pending criminal cases entering politics?",
+    "options": [
+      "Criminalisation of politics",
+      "Coalition politics",
+      "Cooperative federalism",
+      "Constitutional morality"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_medium_357",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which term describes family networks shaping candidate selection?",
+    "options": [
+      "Dynastic politics",
+      "Pressure-group politics",
+      "Civil-liberties politics",
+      "Fiscal politics"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_medium_358",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which profile issue asks whether MLAs and MPs reflect ordinary social diversity?",
+    "options": [
+      "Representative social profile",
+      "Election-symbol allotment",
+      "River-water sharing",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_medium_359",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which organization is associated with democratic-rights activism?",
+    "options": [
+      "PUDR",
+      "UPSC",
+      "CAG",
+      "Finance Commission"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_360",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which organization is associated with civil liberties activism?",
+    "options": [
+      "PUCL",
+      "NITI Aayog",
+      "NCBC",
+      "CAG"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_361",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which period made civil liberties a major issue in Indian politics?",
+    "options": [
+      "Emergency",
+      "Green Revolution",
+      "Planning Commission era",
+      "GST rollout"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_362",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is linked with workplace sexual-harassment guidelines?",
+    "options": [
+      "Women's movement",
+      "Environmental movement",
+      "Farmer movement",
+      "Language movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_363",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which law area is most connected to anti-dowry activism?",
+    "options": [
+      "Women's rights",
+      "Environmental law",
+      "Electoral law",
+      "Water disputes"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_364",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is linked with liquor prohibition demands by women?",
+    "options": [
+      "Anti-arrack movement",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "Gorkhaland movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_365",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which environmental movement protected trees through local protest?",
+    "options": [
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Silent Valley movement",
+      "India Against Corruption"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_366",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which environmental movement opposed ecological damage in Kerala?",
+    "options": [
+      "Silent Valley movement",
+      "Chipko Movement",
+      "Appiko Movement",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_367",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement opposed displacement from large dam projects?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Chipko Movement",
+      "Silent Valley movement",
+      "Anti-arrack movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_medium_368",
+    "category": "politics",
+    "difficulty": 2,
+    "question": "Which movement is a Karnataka forest-conservation counterpart to Chipko?",
+    "options": [
+      "Appiko Movement",
+      "Narmada Bachao Andolan",
+      "Anti-arrack movement",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_283",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which politics concept best explains Mandal-era mobilization?",
+    "options": [
+      "Caste-based social justice",
+      "River-water federalism",
+      "Public-sector planning",
+      "Civil-service neutrality"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_284",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which political current is best linked with Kanshi Ram and BSP?",
+    "options": [
+      "Bahujan politics",
+      "Dravidian politics",
+      "Hindutva politics",
+      "Gandhian economics"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_285",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which identity issue is most linked with Article 350B-type protections?",
+    "options": [
+      "Linguistic minorities",
+      "OBC reservations",
+      "Women's movements",
+      "Environmental movements"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_286",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which institution type is central to Sixth Schedule autonomy?",
+    "options": [
+      "Autonomous district councils",
+      "GST Council",
+      "Finance Commission",
+      "Municipal corporations"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_287",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which political demand is an ethnic-regional autonomy demand in Assam?",
+    "options": [
+      "Bodoland",
+      "Gorkhaland",
+      "Vidarbha",
+      "Bundelkhand"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_288",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which political demand is an ethnic-regional autonomy demand in West Bengal hills?",
+    "options": [
+      "Gorkhaland",
+      "Bodoland",
+      "Harit Pradesh",
+      "Saurashtra"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_289",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which concept best captures religion as a basis of electoral mobilization?",
+    "options": [
+      "Communal politics",
+      "Coalition bargaining",
+      "Economic planning",
+      "Public audit"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_290",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which debate combines religion, gender, and personal law?",
+    "options": [
+      "Uniform Civil Code debate",
+      "River tribunal debate",
+      "Delimitation debate",
+      "Disinvestment debate"
+    ],
+    "correct_index": 0,
+    "source_note": "identity_politics"
+  },
+  {
+    "id": "pol_hard_291",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which party family is closest to Dravidian social-justice politics?",
+    "options": [
+      "DMK-AIADMK",
+      "TDP-BJD",
+      "BSP-SP",
+      "Akali-NC"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_292",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which party is closest to a Telugu regional-party example?",
+    "options": [
+      "TDP",
+      "DMK",
+      "Akali Dal",
+      "National Conference"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_293",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "For Odisha-centred regional politics, which party is the clearest example?",
+    "options": [
+      "BJD",
+      "TMC",
+      "DMK",
+      "AIADMK"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_294",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which party is closest to a Punjab Sikh-regional party example?",
+    "options": [
+      "Akali Dal",
+      "BJD",
+      "TDP",
+      "DMK"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_295",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "National Conference is primarily rooted in which regional politics?",
+    "options": [
+      "Kashmir",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Odisha"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_296",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which term best describes party support based on caste, class, region, and religion together?",
+    "options": [
+      "Social base",
+      "Judicial base",
+      "Fiscal base",
+      "Audit base"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_297",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which coalition condition often produces bargaining among allies?",
+    "options": [
+      "Hung Parliament",
+      "Single-party majority",
+      "Judicial review",
+      "Finance Commission award"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_298",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which coalition tool states shared policies among alliance partners?",
+    "options": [
+      "Common minimum programme",
+      "Election symbol order",
+      "Audit report",
+      "Writ petition"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_299",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which phrase describes backing a government without ministerial posts?",
+    "options": [
+      "Outside support",
+      "Cabinet berth",
+      "Party recognition",
+      "Whip violation"
+    ],
+    "correct_index": 0,
+    "source_note": "party_system"
+  },
+  {
+    "id": "pol_hard_300",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which kind of pressure group best fits CII or FICCI?",
+    "options": [
+      "Business association",
+      "Trade union",
+      "Farmers' union",
+      "Student union"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_hard_301",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which kind of pressure group best fits a national farmers' union?",
+    "options": [
+      "Agrarian interest group",
+      "Business association",
+      "Bar association",
+      "Student union"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_hard_302",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which kind of pressure group best fits a workers' federation?",
+    "options": [
+      "Trade union",
+      "Business chamber",
+      "Farmers' union",
+      "Resident group"
+    ],
+    "correct_index": 0,
+    "source_note": "pressure_groups"
+  },
+  {
+    "id": "pol_hard_303",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which electoral behavior term best describes voting against the ruling party due to dissatisfaction?",
+    "options": [
+      "Anti-incumbency",
+      "Vote transfer",
+      "Party recognition",
+      "Floor test"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_hard_304",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which electoral behavior term describes a reliable caste or community support base?",
+    "options": [
+      "Vote bank",
+      "Postal ballot",
+      "Tendered vote",
+      "Counting agent"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_hard_305",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which electoral trend is about more women participating as voters?",
+    "options": [
+      "Rising women turnout",
+      "Floor crossing",
+      "Delimitation freeze",
+      "Judicial review"
+    ],
+    "correct_index": 0,
+    "source_note": "electoral_behavior"
+  },
+  {
+    "id": "pol_hard_306",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which legislator-profile issue concerns candidates' declared assets?",
+    "options": [
+      "Wealth profile",
+      "Vote-bank profile",
+      "River-profile",
+      "Writ profile"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_hard_307",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which legislator-profile issue concerns family dominance in tickets?",
+    "options": [
+      "Dynastic politics",
+      "Pressure-group lobbying",
+      "Civil-liberties activism",
+      "Federal bargaining"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_hard_308",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which legislator-profile issue concerns pending serious cases among candidates?",
+    "options": [
+      "Criminalisation of politics",
+      "Coalition management",
+      "Caste census",
+      "Environmental clearance"
+    ],
+    "correct_index": 0,
+    "source_note": "legislator_profile"
+  },
+  {
+    "id": "pol_hard_309",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which civil-liberties organization is often abbreviated PUCL?",
+    "options": [
+      "People's Union for Civil Liberties",
+      "Planning Union for Cooperative Labour",
+      "Public Utilities Commission League",
+      "Panchayat Union for Civic Law"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_310",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which rights organization is often abbreviated PUDR?",
+    "options": [
+      "People's Union for Democratic Rights",
+      "Public Union for District Reform",
+      "Planning Unit for Development Review",
+      "Panchayat Union for Democratic Roads"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_311",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement area responds to unlawful detention and custodial abuse?",
+    "options": [
+      "Civil liberties movement",
+      "Environmental movement",
+      "Regional party movement",
+      "Coalition movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_312",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which women's movement issue is linked with the Vishaka case?",
+    "options": [
+      "Workplace sexual harassment",
+      "River-water sharing",
+      "Civil-service recruitment",
+      "Land ceiling"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_313",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which women's movement issue is linked with anti-dowry campaigns?",
+    "options": [
+      "Dowry violence",
+      "Forest conservation",
+      "State reorganization",
+      "Industrial licensing"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_314",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which women's movement is linked with liquor prohibition in Andhra Pradesh?",
+    "options": [
+      "Anti-arrack movement",
+      "Chipko Movement",
+      "Bhoodan Movement",
+      "JP movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_315",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which environmental movement is most closely linked with the Western Ghats in Karnataka?",
+    "options": [
+      "Appiko Movement",
+      "Chipko Movement",
+      "Narmada Bachao Andolan",
+      "Silent Valley movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_316",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which environmental movement is most closely linked with Kerala rainforest protection?",
+    "options": [
+      "Silent Valley movement",
+      "Appiko Movement",
+      "Chipko Movement",
+      "Bhoodan Movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_317",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement linked development, displacement, and environmental concerns?",
+    "options": [
+      "Narmada Bachao Andolan",
+      "Anti-arrack movement",
+      "Bhoodan Movement",
+      "JP movement"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
+  },
+  {
+    "id": "pol_hard_318",
+    "category": "politics",
+    "difficulty": 3,
+    "question": "Which movement linked forest conservation with local community protest in Uttarakhand?",
+    "options": [
+      "Chipko Movement",
+      "Appiko Movement",
+      "Silent Valley movement",
+      "India Against Corruption"
+    ],
+    "correct_index": 0,
+    "source_note": "social_movements"
   }
 ]
