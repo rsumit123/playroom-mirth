@@ -1,0 +1,1528 @@
+[
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which monsoon first brings widespread seasonal rain to Kerala?",
+    "options": [
+      "Arabian Sea branch",
+      "Southwest monsoon",
+      "October heat",
+      "Cyclonic rainfall"
+    ],
+    "correct_index": 1,
+    "source_note": "climate_monsoon",
+    "id": "geo_easy_320"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which monsoon is most important for Tamil Nadu's main rainy season?",
+    "options": [
+      "October heat",
+      "Cyclonic rainfall",
+      "Northeast monsoon",
+      "Southwest monsoon"
+    ],
+    "correct_index": 2,
+    "source_note": "climate_monsoon",
+    "id": "geo_easy_321"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Heavy rain on the windward Western Ghats is caused mainly by what?",
+    "options": [
+      "Cyclonic rainfall",
+      "Southwest monsoon",
+      "Northeast monsoon",
+      "Orographic rainfall"
+    ],
+    "correct_index": 3,
+    "source_note": "climate_monsoon",
+    "id": "geo_easy_322"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which hot dry summer wind is common over northwestern India?",
+    "options": [
+      "Loo",
+      "Southwest monsoon",
+      "Northeast monsoon",
+      "Western disturbance"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_easy_323"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Pre-monsoon showers in Kerala and Karnataka are often called what?",
+    "options": [
+      "Northeast monsoon",
+      "Mango showers",
+      "Western disturbance",
+      "Nor'wester"
+    ],
+    "correct_index": 1,
+    "source_note": "climate_monsoon",
+    "id": "geo_easy_324"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which monsoon branch gives very heavy rain to Meghalaya?",
+    "options": [
+      "Western disturbance",
+      "Nor'wester",
+      "Bay of Bengal branch",
+      "Loo"
+    ],
+    "correct_index": 2,
+    "source_note": "climate_monsoon",
+    "id": "geo_easy_325"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which monsoon branch strikes the Western Ghats directly?",
+    "options": [
+      "Nor'wester",
+      "Loo",
+      "Mango showers",
+      "Arabian Sea branch"
+    ],
+    "correct_index": 3,
+    "source_note": "climate_monsoon",
+    "id": "geo_easy_326"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which condition makes interior Deccan areas drier than the Konkan coast?",
+    "options": [
+      "Rain shadow",
+      "Loo",
+      "Mango showers",
+      "Orographic rainfall"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_easy_327"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Winter rainfall in Punjab and Haryana is mainly linked to what?",
+    "options": [
+      "Northeast monsoon",
+      "Western disturbance",
+      "Nor'wester",
+      "Loo"
+    ],
+    "correct_index": 1,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_342"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Kalbaisakhi storms in eastern India are also known as what?",
+    "options": [
+      "Western disturbance",
+      "Loo",
+      "Nor'wester",
+      "Mango showers"
+    ],
+    "correct_index": 2,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_343"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Retreating monsoon rainfall is strongest along which coast?",
+    "options": [
+      "Kutch Coast",
+      "Malabar Coast",
+      "Konkan Coast",
+      "Coromandel Coast"
+    ],
+    "correct_index": 3,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_344"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Mawsynram's rainfall is mainly boosted by which monsoon branch?",
+    "options": [
+      "Bay of Bengal branch",
+      "Loo",
+      "Mango showers",
+      "Rain shadow"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_345"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The leeward side of the Western Ghats is best described by which term?",
+    "options": [
+      "Mango showers",
+      "Rain shadow",
+      "Orographic rainfall",
+      "Bay of Bengal branch"
+    ],
+    "correct_index": 1,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_346"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "October heat is most closely linked with which seasonal transition?",
+    "options": [
+      "Retreating monsoon",
+      "Advancing monsoon",
+      "Winter monsoon",
+      "Pre-monsoon season"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_347"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which weather system gives winter snow to parts of the western Himalaya?",
+    "options": [
+      "Bay of Bengal branch",
+      "Arabian Sea branch",
+      "October heat",
+      "Western disturbance"
+    ],
+    "correct_index": 3,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_348"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which rainfall type happens when moist air rises over mountains?",
+    "options": [
+      "Orographic rainfall",
+      "Arabian Sea branch",
+      "October heat",
+      "Cyclonic rainfall"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_349"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Tamil Nadu coast gets much rain after the southwest monsoon because of what?",
+    "options": [
+      "October heat",
+      "Northeast monsoon",
+      "Cyclonic rainfall",
+      "Southwest monsoon"
+    ],
+    "correct_index": 1,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_350"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Arabian Sea monsoon branch is most directly blocked by which range?",
+    "options": [
+      "Rajmahal Hills",
+      "Aravalli Range",
+      "Western Ghats",
+      "Vindhya Range"
+    ],
+    "correct_index": 2,
+    "source_note": "climate_monsoon",
+    "id": "geo_medium_351"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The rain-shadow belt around Bengaluru is mainly east of which range?",
+    "options": [
+      "Western Ghats",
+      "Eastern Ghats",
+      "Aravalli Range",
+      "Satpura Range"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_311"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Chennai region depends more than Mumbai on which monsoon phase?",
+    "options": [
+      "Northeast monsoon",
+      "Arabian Sea branch",
+      "October heat",
+      "Cyclonic rainfall"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_312"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which branch of the southwest monsoon turns toward the Ganga plain after entering the northeast?",
+    "options": [
+      "October heat",
+      "Bay of Bengal branch",
+      "Cyclonic rainfall",
+      "Southwest monsoon"
+    ],
+    "correct_index": 1,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_313"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Western Rajasthan's aridity is partly linked to which range lying parallel to monsoon winds?",
+    "options": [
+      "Pir Panjal Range",
+      "Patkai Hills",
+      "Aravalli Range",
+      "Western Ghats"
+    ],
+    "correct_index": 2,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_314"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which season is associated with tropical cyclones affecting the Odisha-Andhra coast?",
+    "options": [
+      "Pre-monsoon season",
+      "Post-monsoon season",
+      "Winter season",
+      "Peak southwest monsoon"
+    ],
+    "correct_index": 1,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_315"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which coastal belt gets intense rain from the Arabian Sea monsoon branch?",
+    "options": [
+      "Konkan and Malabar",
+      "Coromandel and Kutch",
+      "Bundelkhand and Malwa",
+      "Ladakh and Zanskar"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_316"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which term best explains why Cherrapunji is very wet but Shillong is less wet?",
+    "options": [
+      "Orographic setting",
+      "Rain-shadow effect",
+      "Monsoon-break phase",
+      "Western disturbance"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_317"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which climate factor helps Ladakh remain very dry?",
+    "options": [
+      "Himalayan rain shadow",
+      "Continentality",
+      "Western disturbance",
+      "Orographic uplift"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_318"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Deccan interior gets less monsoon rain mainly after winds cross which barrier?",
+    "options": [
+      "Eastern Himalaya",
+      "Satpura Range",
+      "Aravalli Range",
+      "Western Ghats"
+    ],
+    "correct_index": 3,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_319"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which monsoon phenomenon is most tied to tea-growing rain in Assam?",
+    "options": [
+      "Bay of Bengal moisture",
+      "Western disturbance",
+      "Northeast monsoon",
+      "Arabian Sea branch"
+    ],
+    "correct_index": 0,
+    "source_note": "climate_monsoon",
+    "id": "geo_hard_320"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Black soil is especially suitable for which crop?",
+    "options": [
+      "Rice",
+      "Cotton",
+      "Wheat",
+      "Sugarcane"
+    ],
+    "correct_index": 1,
+    "source_note": "soils_crops_resources",
+    "id": "geo_easy_328"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Jute grows best in which broad soil setting?",
+    "options": [
+      "Forest soil",
+      "Regur soil",
+      "Alluvial soil",
+      "Black soil"
+    ],
+    "correct_index": 2,
+    "source_note": "soils_crops_resources",
+    "id": "geo_easy_329"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Tea plantations prefer which broad terrain?",
+    "options": [
+      "Humid hill slopes",
+      "Deltaic lowlands",
+      "Arid plains",
+      "Coastal salt flats"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_easy_330"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Coffee plantations in India are strongly linked with which state?",
+    "options": [
+      "Karnataka",
+      "Kerala",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_easy_331"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "The Ganga plain is mainly known for which soil?",
+    "options": [
+      "Laterite soil",
+      "Alluvial soil",
+      "Red soil",
+      "Arid soil"
+    ],
+    "correct_index": 1,
+    "source_note": "soils_crops_resources",
+    "id": "geo_easy_332"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "The Deccan cotton belt is mainly associated with which soil?",
+    "options": [
+      "Red soil",
+      "Arid soil",
+      "Black soil",
+      "Mountain soil"
+    ],
+    "correct_index": 2,
+    "source_note": "soils_crops_resources",
+    "id": "geo_easy_333"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Desert areas of western Rajasthan mainly have which soil?",
+    "options": [
+      "Red soil",
+      "Mountain soil",
+      "Peaty soil",
+      "Arid soil"
+    ],
+    "correct_index": 3,
+    "source_note": "soils_crops_resources",
+    "id": "geo_easy_334"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "High rainfall and leaching often produce which soil?",
+    "options": [
+      "Laterite soil",
+      "Mountain soil",
+      "Peaty soil",
+      "Saline soil"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_easy_335"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Regur is another name for which soil?",
+    "options": [
+      "Alluvial soil",
+      "Black soil",
+      "Laterite soil",
+      "Red soil"
+    ],
+    "correct_index": 1,
+    "source_note": "soils_crops_resources",
+    "id": "geo_medium_352"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Khadar is the newer form of which soil?",
+    "options": [
+      "Laterite soil",
+      "Red soil",
+      "Alluvial soil",
+      "Arid soil"
+    ],
+    "correct_index": 2,
+    "source_note": "soils_crops_resources",
+    "id": "geo_medium_353"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Bhangar is the older form of which soil?",
+    "options": [
+      "Red soil",
+      "Arid soil",
+      "Mountain soil",
+      "Alluvial soil"
+    ],
+    "correct_index": 3,
+    "source_note": "soils_crops_resources",
+    "id": "geo_medium_354"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Laterite soil is common along which high-rainfall belt?",
+    "options": [
+      "Western Ghats",
+      "Eastern Himalaya",
+      "Meghalaya Plateau",
+      "Nilgiri Hills"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_medium_356"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Saline soils are most likely in which setting?",
+    "options": [
+      "Arid and poorly drained areas",
+      "Humid alluvial plains",
+      "Lateritic uplands",
+      "Mountain forest slopes"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_medium_357"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Peaty soil in India is commonly associated with which state?",
+    "options": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Goa",
+      "Kerala"
+    ],
+    "correct_index": 3,
+    "source_note": "soils_crops_resources",
+    "id": "geo_medium_358"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The black-soil region of Maharashtra is strongly linked with which crop?",
+    "options": [
+      "Cotton",
+      "Rice",
+      "Wheat",
+      "Sugarcane"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_medium_359"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The deltaic plains of West Bengal are strongly linked with which fibre crop?",
+    "options": [
+      "Wheat",
+      "Jute",
+      "Sugarcane",
+      "Rubber"
+    ],
+    "correct_index": 1,
+    "source_note": "soils_crops_resources",
+    "id": "geo_medium_360"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Terai belt is naturally suited to which broad condition?",
+    "options": [
+      "Moist alluvial lowland",
+      "Arid pediplain",
+      "Lateritic upland",
+      "Coastal salt flat"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_medium_361"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which soil is formed by intense leaching under high rainfall?",
+    "options": [
+      "Peaty soil",
+      "Saline soil",
+      "Forest soil",
+      "Laterite soil"
+    ],
+    "correct_index": 3,
+    "source_note": "soils_crops_resources",
+    "id": "geo_hard_321"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which soil type is most associated with basaltic Deccan lava?",
+    "options": [
+      "Black soil",
+      "Saline soil",
+      "Forest soil",
+      "Regur soil"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_hard_322"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which soil deposit is renewed by frequent river floods?",
+    "options": [
+      "Khadar",
+      "Bhangar",
+      "Regur",
+      "Laterite crust"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_hard_323"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which older alluvial terrace is usually above flood level?",
+    "options": [
+      "Red soil",
+      "Khadar",
+      "Bhangar",
+      "Peaty soil"
+    ],
+    "correct_index": 2,
+    "source_note": "soils_crops_resources",
+    "id": "geo_hard_324"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which mineral belt is most associated with the Chota Nagpur Plateau?",
+    "options": [
+      "Coal and iron ore",
+      "Bauxite and laterite",
+      "Copper and mica",
+      "Limestone and dolomite"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_hard_325"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Jharia and Raniganj are best known for which resource?",
+    "options": [
+      "Coal",
+      "Bauxite",
+      "Gold",
+      "Mica"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops_resources",
+    "id": "geo_hard_326"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Kolar is historically associated with which resource?",
+    "options": [
+      "Coal",
+      "Bauxite",
+      "Gold",
+      "Mica"
+    ],
+    "correct_index": 2,
+    "source_note": "soils_crops_resources",
+    "id": "geo_hard_328"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Deendayal Port is in which state?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Gujarat"
+    ],
+    "correct_index": 3,
+    "source_note": "ports_transport",
+    "id": "geo_easy_336"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Mormugao Port is in which state?",
+    "options": [
+      "Goa",
+      "Maharashtra",
+      "Karnataka",
+      "Kerala"
+    ],
+    "correct_index": 0,
+    "source_note": "ports_transport",
+    "id": "geo_easy_337"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "New Mangalore Port is in which state?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "ports_transport",
+    "id": "geo_easy_338"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Cochin Port is in which state?",
+    "options": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Kerala",
+      "Goa"
+    ],
+    "correct_index": 2,
+    "source_note": "ports_transport",
+    "id": "geo_easy_339"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Paradip Port is in which state?",
+    "options": [
+      "West Bengal",
+      "Jharkhand",
+      "Chhattisgarh",
+      "Odisha"
+    ],
+    "correct_index": 3,
+    "source_note": "ports_transport",
+    "id": "geo_easy_340"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Visakhapatnam Port is in which state?",
+    "options": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Tamil Nadu",
+      "Odisha"
+    ],
+    "correct_index": 0,
+    "source_note": "ports_transport",
+    "id": "geo_easy_341"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Chennai Port is in which state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "ports_transport",
+    "id": "geo_easy_342"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Kolkata-Haldia Port is in which state?",
+    "options": [
+      "Odisha",
+      "Bihar",
+      "West Bengal",
+      "Assam"
+    ],
+    "correct_index": 2,
+    "source_note": "ports_transport",
+    "id": "geo_easy_343"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Jawaharlal Nehru Port is located near which city?",
+    "options": [
+      "Paradip",
+      "Chennai",
+      "Kochi",
+      "Mumbai"
+    ],
+    "correct_index": 3,
+    "source_note": "ports_transport",
+    "id": "geo_medium_362"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Kamarajar Port is also known by which place name?",
+    "options": [
+      "Ennore",
+      "Tuticorin",
+      "Mormugao",
+      "Haldia"
+    ],
+    "correct_index": 0,
+    "source_note": "ports_transport",
+    "id": "geo_medium_363"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "V.O. Chidambaranar Port is associated with which city?",
+    "options": [
+      "Mangaluru",
+      "Thoothukudi",
+      "Kandla",
+      "Kochi"
+    ],
+    "correct_index": 1,
+    "source_note": "ports_transport",
+    "id": "geo_medium_364"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Konkan Railway runs mainly along which coast?",
+    "options": [
+      "Kutch coast",
+      "Eastern coast",
+      "Western coast",
+      "Sundarbans coast"
+    ],
+    "correct_index": 2,
+    "source_note": "ports_transport",
+    "id": "geo_medium_365"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Golden Quadrilateral links Delhi, Mumbai, Chennai and which city?",
+    "options": [
+      "Guwahati",
+      "Srinagar",
+      "Kochi",
+      "Kolkata"
+    ],
+    "correct_index": 3,
+    "source_note": "ports_transport",
+    "id": "geo_medium_366"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "NH 44 is best known for linking Srinagar with which southern endpoint?",
+    "options": [
+      "Kanyakumari",
+      "Chennai",
+      "Rameswaram",
+      "Kochi"
+    ],
+    "correct_index": 0,
+    "source_note": "ports_transport",
+    "id": "geo_medium_367"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Darjeeling Himalayan Railway is in which state?",
+    "options": [
+      "Odisha",
+      "West Bengal",
+      "Bihar",
+      "Assam"
+    ],
+    "correct_index": 1,
+    "source_note": "ports_transport",
+    "id": "geo_medium_368"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Nilgiri Mountain Railway is mainly in which state?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "ports_transport",
+    "id": "geo_medium_369"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Kalka-Shimla Railway is in which state?",
+    "options": [
+      "Uttarakhand",
+      "Jammu and Kashmir",
+      "Punjab",
+      "Himachal Pradesh"
+    ],
+    "correct_index": 3,
+    "source_note": "ports_transport",
+    "id": "geo_medium_370"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which port is located on the Hooghly river system?",
+    "options": [
+      "Kolkata-Haldia Port",
+      "Cochin Port",
+      "V.O. Chidambaranar Port",
+      "Chennai Port"
+    ],
+    "correct_index": 0,
+    "source_note": "ports_transport",
+    "id": "geo_hard_329"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which major port is located at Kandla?",
+    "options": [
+      "Chennai Port",
+      "Deendayal Port",
+      "Kamarajar Port",
+      "Visakhapatnam Port"
+    ],
+    "correct_index": 1,
+    "source_note": "ports_transport",
+    "id": "geo_hard_330"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Nhava Sheva is another name associated with which port?",
+    "options": [
+      "Kamarajar Port",
+      "Visakhapatnam Port",
+      "Jawaharlal Nehru Port",
+      "Paradip Port"
+    ],
+    "correct_index": 2,
+    "source_note": "ports_transport",
+    "id": "geo_hard_331"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which major port serves Goa?",
+    "options": [
+      "Visakhapatnam Port",
+      "Paradip Port",
+      "Kolkata-Haldia Port",
+      "Mormugao Port"
+    ],
+    "correct_index": 3,
+    "source_note": "ports_transport",
+    "id": "geo_hard_332"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which port is a major outlet for Odisha's mineral hinterland?",
+    "options": [
+      "Paradip Port",
+      "Visakhapatnam Port",
+      "Kolkata-Haldia Port",
+      "Deendayal Port"
+    ],
+    "correct_index": 0,
+    "source_note": "ports_transport",
+    "id": "geo_hard_333"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which railway is famous for connecting Mettupalayam and Ooty?",
+    "options": [
+      "Nilgiri Mountain Railway",
+      "Darjeeling Himalayan Railway",
+      "Kalka-Shimla Railway",
+      "Matheran Hill Railway"
+    ],
+    "correct_index": 0,
+    "source_note": "ports_transport",
+    "id": "geo_hard_334"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which transport corridor is often called India's main north-south highway spine?",
+    "options": [
+      "NH 44",
+      "NH 66",
+      "Golden Quadrilateral",
+      "North-South Corridor"
+    ],
+    "correct_index": 0,
+    "source_note": "ports_transport",
+    "id": "geo_hard_335"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which railway route is most associated with tunnels along the west coast?",
+    "options": [
+      "Konkan Railway",
+      "Nilgiri Mountain Railway",
+      "Darjeeling Himalayan Railway",
+      "Kalka-Shimla Railway"
+    ],
+    "correct_index": 0,
+    "source_note": "ports_transport",
+    "id": "geo_hard_336"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Chilika Lake is in which state?",
+    "options": [
+      "Odisha",
+      "West Bengal",
+      "Jharkhand",
+      "Chhattisgarh"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_easy_344"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Sambhar Lake is in which state?",
+    "options": [
+      "Gujarat",
+      "Haryana",
+      "Madhya Pradesh",
+      "Rajasthan"
+    ],
+    "correct_index": 3,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_easy_347"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Pulicat Lake lies mainly along Andhra Pradesh and which state?",
+    "options": [
+      "Tamil Nadu",
+      "Kerala",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_easy_348"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Vembanad Lake is in which state?",
+    "options": [
+      "Tamil Nadu",
+      "Kerala",
+      "Karnataka",
+      "Goa"
+    ],
+    "correct_index": 1,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_easy_349"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Kolleru Lake is in which state?",
+    "options": [
+      "Telangana",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Odisha"
+    ],
+    "correct_index": 2,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_easy_350"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Deepor Beel is in which state?",
+    "options": [
+      "Meghalaya",
+      "Arunachal Pradesh",
+      "Nagaland",
+      "Assam"
+    ],
+    "correct_index": 3,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_easy_351"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Keibul Lamjao National Park is linked with which wetland?",
+    "options": [
+      "Loktak Lake",
+      "Pulicat Lake",
+      "Vembanad-Kol",
+      "Kolleru Lake"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_medium_371"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "East Kolkata Wetlands are in which state?",
+    "options": [
+      "Odisha",
+      "Bihar",
+      "West Bengal",
+      "Assam"
+    ],
+    "correct_index": 2,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_medium_373"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Harike Wetland is mainly associated with which state?",
+    "options": [
+      "Haryana",
+      "Rajasthan",
+      "Himachal Pradesh",
+      "Punjab"
+    ],
+    "correct_index": 3,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_medium_374"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Keoladeo Ghana is best known as which type of habitat?",
+    "options": [
+      "Bird wetland",
+      "Mangrove swamp",
+      "Brackish lagoon",
+      "Freshwater marsh"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_medium_375"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Point Calimere is associated with which coastal state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_medium_376"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Ashtamudi Lake is in which state?",
+    "options": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Kerala",
+      "Goa"
+    ],
+    "correct_index": 2,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_medium_377"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Nalsarovar Bird Sanctuary is in which state?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Gujarat"
+    ],
+    "correct_index": 3,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_medium_378"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The phumdi floating habitat is associated with which lake?",
+    "options": [
+      "Loktak Lake",
+      "Harike Wetland",
+      "Keoladeo Ghana",
+      "Bhitarkanika mangroves"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_hard_337"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Chilika is best described as what?",
+    "options": [
+      "Brackish coastal lagoon",
+      "Freshwater oxbow lake",
+      "Crater lake",
+      "Salt lake"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_hard_338"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Nalabana bird sanctuary lies within which lagoon?",
+    "options": [
+      "Bhitarkanika mangroves",
+      "East Kolkata Wetlands",
+      "Chilika Lake",
+      "Loktak Lake"
+    ],
+    "correct_index": 2,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_hard_339"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Vembanad-Kol wetland is most associated with which state?",
+    "options": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Goa",
+      "Kerala"
+    ],
+    "correct_index": 3,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_hard_340"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Rann of Kutch is best described as which ecosystem?",
+    "options": [
+      "Seasonal salt marsh",
+      "Brackish lagoon",
+      "Mangrove swamp",
+      "Freshwater marsh"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_hard_341"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Sundarbans wetlands are dominated by which ecosystem?",
+    "options": [
+      "Mangroves",
+      "Coral reefs",
+      "Salt marshes",
+      "Seagrass beds"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_hard_342"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Kolleru Lake lies between which river deltas?",
+    "options": [
+      "Narmada and Tapi",
+      "Ganga and Yamuna",
+      "Godavari and Krishna",
+      "Mahanadi and Brahmani"
+    ],
+    "correct_index": 2,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_hard_343"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Bhoj Wetland is associated with which city?",
+    "options": [
+      "Kochi",
+      "Guwahati",
+      "Jaipur",
+      "Bhopal"
+    ],
+    "correct_index": 3,
+    "source_note": "wetlands_ecosystems",
+    "id": "geo_hard_344"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which important latitude passes through central India?",
+    "options": [
+      "Tropic of Cancer",
+      "Equator",
+      "Tropic of Capricorn",
+      "Arctic Circle"
+    ],
+    "correct_index": 0,
+    "source_note": "map_location_literacy",
+    "id": "geo_easy_352"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Indian Standard Time is based on which longitude?",
+    "options": [
+      "68 degrees E",
+      "82.5 degrees E",
+      "77 degrees E",
+      "97 degrees E"
+    ],
+    "correct_index": 1,
+    "source_note": "map_location_literacy",
+    "id": "geo_easy_353"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which channel separates the Andaman and Nicobar groups?",
+    "options": [
+      "Nine Degree Channel",
+      "Duncan Passage",
+      "Ten Degree Channel",
+      "Palk Strait"
+    ],
+    "correct_index": 2,
+    "source_note": "map_location_literacy",
+    "id": "geo_easy_354"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which channel is associated with Lakshadweep and Minicoy?",
+    "options": [
+      "Ten Degree Channel",
+      "Palk Strait",
+      "Duncan Passage",
+      "Nine Degree Channel"
+    ],
+    "correct_index": 3,
+    "source_note": "map_location_literacy",
+    "id": "geo_easy_355"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Tropic of Cancer is closest to which latitude?",
+    "options": [
+      "23.5 degrees N",
+      "0 degrees",
+      "23.5 degrees S",
+      "66.5 degrees N"
+    ],
+    "correct_index": 0,
+    "source_note": "map_location_literacy",
+    "id": "geo_medium_379"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "India's standard meridian passes near which Uttar Pradesh city?",
+    "options": [
+      "Jaipur",
+      "Prayagraj",
+      "Mumbai",
+      "Guwahati"
+    ],
+    "correct_index": 1,
+    "source_note": "map_location_literacy",
+    "id": "geo_medium_380"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Siliguri Corridor is important because it links mainland India with which region?",
+    "options": [
+      "Malwa",
+      "Kutch",
+      "North East India",
+      "Konkan"
+    ],
+    "correct_index": 2,
+    "source_note": "map_location_literacy",
+    "id": "geo_medium_381"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "India's westernmost longitude is closest to which value?",
+    "options": [
+      "68 degrees E",
+      "77 degrees E",
+      "82.5 degrees E",
+      "97 degrees E"
+    ],
+    "correct_index": 0,
+    "source_note": "map_location_literacy",
+    "id": "geo_hard_345"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "India's easternmost longitude is closest to which value?",
+    "options": [
+      "77 degrees E",
+      "97 degrees E",
+      "82.5 degrees E",
+      "68 degrees E"
+    ],
+    "correct_index": 1,
+    "source_note": "map_location_literacy",
+    "id": "geo_hard_346"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which line explains why Gujarat and Arunachal have different sunrise times?",
+    "options": [
+      "Latitude",
+      "Altitude",
+      "Longitude",
+      "Tide line"
+    ],
+    "correct_index": 2,
+    "source_note": "map_location_literacy",
+    "id": "geo_hard_347"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Why is IST a single time despite India's east-west width?",
+    "options": [
+      "Standard meridian",
+      "Prime meridian",
+      "International Date Line",
+      "Tropic of Cancer"
+    ],
+    "correct_index": 0,
+    "source_note": "map_location_literacy",
+    "id": "geo_hard_348"
+  }
+]

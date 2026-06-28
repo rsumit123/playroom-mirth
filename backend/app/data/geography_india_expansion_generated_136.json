@@ -1,0 +1,1906 @@
+[
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Where in India would you place Ranthambore National Park?",
+    "options": [
+      "Gujarat",
+      "Haryana",
+      "Rajasthan",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "protected_areas",
+    "id": "geo_easy_196"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Identify the state linked with Bandipur National Park.",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Karnataka"
+    ],
+    "correct_index": 3,
+    "source_note": "protected_areas",
+    "id": "geo_easy_197"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Map clue: Similipal National Park. Pick the state.",
+    "options": [
+      "West Bengal",
+      "Jharkhand",
+      "Odisha",
+      "Chhattisgarh"
+    ],
+    "correct_index": 2,
+    "source_note": "protected_areas",
+    "id": "geo_easy_200"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Sundarbans National Park points to which Indian state?",
+    "options": [
+      "Odisha",
+      "Bihar",
+      "Assam",
+      "West Bengal"
+    ],
+    "correct_index": 3,
+    "source_note": "protected_areas",
+    "id": "geo_easy_201"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Where in India would you place Dudhwa National Park?",
+    "options": [
+      "Bihar",
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Uttarakhand"
+    ],
+    "correct_index": 1,
+    "source_note": "protected_areas",
+    "id": "geo_easy_203"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Map clue: Silent Valley National Park. Pick the state.",
+    "options": [
+      "Tamil Nadu",
+      "Kerala",
+      "Karnataka",
+      "Goa"
+    ],
+    "correct_index": 1,
+    "source_note": "protected_areas",
+    "id": "geo_easy_207"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Tadoba-Andhari Tiger Reserve points to which Indian state?",
+    "options": [
+      "Gujarat",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Karnataka"
+    ],
+    "correct_index": 2,
+    "source_note": "protected_areas",
+    "id": "geo_easy_208"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Ahmedabad is located on which river?",
+    "options": [
+      "Periyar",
+      "Subarnarekha",
+      "Damodar",
+      "Sabarmati"
+    ],
+    "correct_index": 3,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_209"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Varanasi is located on which river?",
+    "options": [
+      "Ganga",
+      "Subarnarekha",
+      "Damodar",
+      "Brahmani"
+    ],
+    "correct_index": 0,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_210"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Delhi is located on which river?",
+    "options": [
+      "Damodar",
+      "Yamuna",
+      "Brahmani",
+      "Indravati"
+    ],
+    "correct_index": 1,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_211"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Guwahati is located on which river?",
+    "options": [
+      "Brahmani",
+      "Indravati",
+      "Brahmaputra",
+      "Chambal"
+    ],
+    "correct_index": 2,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_212"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Cuttack is located near the delta of which river system?",
+    "options": [
+      "Indravati",
+      "Chambal",
+      "Betwa",
+      "Mahanadi"
+    ],
+    "correct_index": 3,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_213"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Vijayawada is located on which river?",
+    "options": [
+      "Krishna",
+      "Chambal",
+      "Betwa",
+      "Son"
+    ],
+    "correct_index": 0,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_214"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Nashik is located on which major river?",
+    "options": [
+      "Betwa",
+      "Godavari",
+      "Son",
+      "Kosi"
+    ],
+    "correct_index": 1,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_215"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Jabalpur is associated with marble rocks along which river?",
+    "options": [
+      "Son",
+      "Kosi",
+      "Narmada",
+      "Gandak"
+    ],
+    "correct_index": 2,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_216"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Surat lies near the mouth of which river?",
+    "options": [
+      "Kosi",
+      "Gandak",
+      "Ghaghara",
+      "Tapi"
+    ],
+    "correct_index": 3,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_217"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Tiruchirappalli is located on which river?",
+    "options": [
+      "Kaveri",
+      "Gandak",
+      "Ghaghara",
+      "Tungabhadra"
+    ],
+    "correct_index": 0,
+    "source_note": "rivers_cities",
+    "id": "geo_easy_218"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which coast is Mumbai located on?",
+    "options": [
+      "Coromandel Coast",
+      "Konkan Coast",
+      "Malabar Coast",
+      "Utkal Coast"
+    ],
+    "correct_index": 1,
+    "source_note": "coasts",
+    "id": "geo_easy_219"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which coast is Chennai located on?",
+    "options": [
+      "Malabar Coast",
+      "Kannada Coast",
+      "Coromandel Coast",
+      "Konkan Coast"
+    ],
+    "correct_index": 2,
+    "source_note": "coasts",
+    "id": "geo_easy_220"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which coast is Kochi associated with?",
+    "options": [
+      "Utkal Coast",
+      "Konkan Coast",
+      "Coromandel Coast",
+      "Malabar Coast"
+    ],
+    "correct_index": 3,
+    "source_note": "coasts",
+    "id": "geo_easy_221"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Indian state has the Thar Desert?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Haryana",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "physical_regions",
+    "id": "geo_easy_222"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which plateau covers much of peninsular India?",
+    "options": [
+      "Malwa Plateau",
+      "Deccan Plateau",
+      "Shillong Plateau",
+      "Chota Nagpur Plateau"
+    ],
+    "correct_index": 1,
+    "source_note": "physical_regions",
+    "id": "geo_easy_223"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which island group lies in the Bay of Bengal?",
+    "options": [
+      "Andaman and Nicobar Islands",
+      "Lakshadweep",
+      "Diu",
+      "Pamban Island"
+    ],
+    "correct_index": 0,
+    "source_note": "islands",
+    "id": "geo_easy_224"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state shares a long border with Pakistan and has the Thar Desert?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Haryana",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "borders",
+    "id": "geo_easy_226"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Indian state borders Bangladesh on three sides?",
+    "options": [
+      "Mizoram",
+      "Tripura",
+      "Meghalaya",
+      "Assam"
+    ],
+    "correct_index": 1,
+    "source_note": "borders",
+    "id": "geo_easy_227"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Indian state connects mainland India to the North East through the Siliguri corridor?",
+    "options": [
+      "Odisha",
+      "Bihar",
+      "West Bengal",
+      "Assam"
+    ],
+    "correct_index": 2,
+    "source_note": "borders",
+    "id": "geo_easy_228"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Himalayan state borders Nepal, Bhutan and China?",
+    "options": [
+      "Arunachal Pradesh",
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Sikkim"
+    ],
+    "correct_index": 3,
+    "source_note": "borders",
+    "id": "geo_easy_229"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state is famous for the backwaters around Alappuzha?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Goa"
+    ],
+    "correct_index": 0,
+    "source_note": "water_bodies",
+    "id": "geo_easy_230"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Name the river is central to the Sundarbans delta?",
+    "options": [
+      "Luni",
+      "Ganga",
+      "Teesta",
+      "Sutlej"
+    ],
+    "correct_index": 1,
+    "source_note": "deltas",
+    "id": "geo_easy_231"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Name the river forms the famous Majuli river island area?",
+    "options": [
+      "Teesta",
+      "Sutlej",
+      "Brahmaputra",
+      "Beas"
+    ],
+    "correct_index": 2,
+    "source_note": "river_islands",
+    "id": "geo_easy_232"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Indian state is known for the Rann of Kutch?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Gujarat"
+    ],
+    "correct_index": 3,
+    "source_note": "physical_regions",
+    "id": "geo_easy_233"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state has the Chilika lagoon?",
+    "options": [
+      "Odisha",
+      "West Bengal",
+      "Jharkhand",
+      "Chhattisgarh"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands",
+    "id": "geo_easy_234"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state has Loktak Lake?",
+    "options": [
+      "Mizoram",
+      "Manipur",
+      "Nagaland",
+      "Assam"
+    ],
+    "correct_index": 1,
+    "source_note": "wetlands",
+    "id": "geo_easy_235"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which Union Territory has Wular Lake?",
+    "options": [
+      "Jammu and Kashmir",
+      "Ladakh",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands",
+    "id": "geo_easy_236"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state has Sambhar Salt Lake?",
+    "options": [
+      "Gujarat",
+      "Haryana",
+      "Madhya Pradesh",
+      "Rajasthan"
+    ],
+    "correct_index": 3,
+    "source_note": "wetlands",
+    "id": "geo_easy_237"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state has Pulicat Lake along its coast?",
+    "options": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Tamil Nadu",
+      "Odisha"
+    ],
+    "correct_index": 0,
+    "source_note": "wetlands",
+    "id": "geo_easy_238"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Tehri Dam is built on which river?",
+    "options": [
+      "Ganga",
+      "Bhagirathi",
+      "Yamuna",
+      "Brahmaputra"
+    ],
+    "correct_index": 1,
+    "source_note": "dams_rivers",
+    "id": "geo_medium_200"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Sardar Sarovar Dam is built on which river?",
+    "options": [
+      "Brahmaputra",
+      "Godavari",
+      "Krishna",
+      "Narmada"
+    ],
+    "correct_index": 3,
+    "source_note": "dams_rivers",
+    "id": "geo_medium_202"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Bhakra Dam is built on which river?",
+    "options": [
+      "Sutlej",
+      "Godavari",
+      "Krishna",
+      "Narmada"
+    ],
+    "correct_index": 0,
+    "source_note": "dams_rivers",
+    "id": "geo_medium_203"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Nagarjuna Sagar Dam is built on which river?",
+    "options": [
+      "Narmada",
+      "Krishna",
+      "Tapi",
+      "Mahanadi"
+    ],
+    "correct_index": 1,
+    "source_note": "dams_rivers",
+    "id": "geo_medium_204"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Tungabhadra Dam is built on which river?",
+    "options": [
+      "Narmada",
+      "Tapi",
+      "Tungabhadra",
+      "Mahanadi"
+    ],
+    "correct_index": 2,
+    "source_note": "dams_rivers",
+    "id": "geo_medium_205"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Ukai Dam is built on which river?",
+    "options": [
+      "Mahanadi",
+      "Kaveri",
+      "Sabarmati",
+      "Tapi"
+    ],
+    "correct_index": 3,
+    "source_note": "dams_rivers",
+    "id": "geo_medium_206"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Idukki Dam is built across which river system?",
+    "options": [
+      "Periyar",
+      "Mahanadi",
+      "Kaveri",
+      "Sabarmati"
+    ],
+    "correct_index": 0,
+    "source_note": "dams_rivers",
+    "id": "geo_medium_207"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Rana Pratap Sagar Dam is built on which river?",
+    "options": [
+      "Kaveri",
+      "Chambal",
+      "Sabarmati",
+      "Luni"
+    ],
+    "correct_index": 1,
+    "source_note": "dams_rivers",
+    "id": "geo_medium_208"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Maithon Dam is associated with which river system?",
+    "options": [
+      "Sabarmati",
+      "Luni",
+      "Damodar",
+      "Teesta"
+    ],
+    "correct_index": 2,
+    "source_note": "dams_rivers",
+    "id": "geo_medium_209"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Beas is a tributary of which river system?",
+    "options": [
+      "Godavari",
+      "Mahanadi",
+      "Ganga",
+      "Indus"
+    ],
+    "correct_index": 3,
+    "source_note": "tributaries",
+    "id": "geo_medium_210"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Chambal is a tributary of which river?",
+    "options": [
+      "Beas",
+      "Yamuna",
+      "Ravi",
+      "Chenab"
+    ],
+    "correct_index": 1,
+    "source_note": "tributaries",
+    "id": "geo_medium_212"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Betwa is a tributary of which river?",
+    "options": [
+      "Ravi",
+      "Chenab",
+      "Yamuna",
+      "Jhelum"
+    ],
+    "correct_index": 2,
+    "source_note": "tributaries",
+    "id": "geo_medium_213"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Son is a tributary of which river?",
+    "options": [
+      "Chenab",
+      "Jhelum",
+      "Periyar",
+      "Ganga"
+    ],
+    "correct_index": 3,
+    "source_note": "tributaries",
+    "id": "geo_medium_214"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Kosi is a tributary of which river?",
+    "options": [
+      "Ganga",
+      "Jhelum",
+      "Periyar",
+      "Subarnarekha"
+    ],
+    "correct_index": 0,
+    "source_note": "tributaries",
+    "id": "geo_medium_215"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Teesta ultimately joins which major river system?",
+    "options": [
+      "Periyar",
+      "Brahmaputra",
+      "Subarnarekha",
+      "Damodar"
+    ],
+    "correct_index": 1,
+    "source_note": "tributaries",
+    "id": "geo_medium_216"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Indravati is a major tributary of which river?",
+    "options": [
+      "Subarnarekha",
+      "Damodar",
+      "Godavari",
+      "Brahmani"
+    ],
+    "correct_index": 2,
+    "source_note": "tributaries",
+    "id": "geo_medium_217"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Tungabhadra is a tributary of which river?",
+    "options": [
+      "Damodar",
+      "Brahmani",
+      "Indravati",
+      "Krishna"
+    ],
+    "correct_index": 3,
+    "source_note": "tributaries",
+    "id": "geo_medium_218"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Bhima is a major tributary of which river?",
+    "options": [
+      "Krishna",
+      "Brahmani",
+      "Indravati",
+      "Chambal"
+    ],
+    "correct_index": 0,
+    "source_note": "tributaries",
+    "id": "geo_medium_219"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Nathu La pass is in which state?",
+    "options": [
+      "Arunachal Pradesh",
+      "Himachal Pradesh",
+      "Sikkim",
+      "Uttarakhand"
+    ],
+    "correct_index": 2,
+    "source_note": "mountain_passes",
+    "id": "geo_medium_221"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Zoji La connects Kashmir Valley with which region?",
+    "options": [
+      "Ladakh",
+      "Jammu and Kashmir",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "correct_index": 0,
+    "source_note": "mountain_passes",
+    "id": "geo_medium_222"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Shipki La is associated with which state?",
+    "options": [
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Jammu and Kashmir",
+      "Punjab"
+    ],
+    "correct_index": 0,
+    "source_note": "mountain_passes",
+    "id": "geo_medium_223"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Bomdila pass is associated with which state?",
+    "options": [
+      "Assam",
+      "Arunachal Pradesh",
+      "Nagaland",
+      "Sikkim"
+    ],
+    "correct_index": 1,
+    "source_note": "mountain_passes",
+    "id": "geo_medium_224"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Palghat Gap connects Kerala with which neighbouring state?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "mountain_passes",
+    "id": "geo_medium_225"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Thal Ghat links Mumbai with which plateau region?",
+    "options": [
+      "Ladakh Plateau",
+      "Malwa Plateau",
+      "Shillong Plateau",
+      "Deccan Plateau"
+    ],
+    "correct_index": 3,
+    "source_note": "mountain_passes",
+    "id": "geo_medium_226"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Bhor Ghat links Mumbai with which plateau region?",
+    "options": [
+      "Deccan Plateau",
+      "Chota Nagpur Plateau",
+      "Tibetan Plateau",
+      "Bundelkhand Plateau"
+    ],
+    "correct_index": 0,
+    "source_note": "mountain_passes",
+    "id": "geo_medium_227"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Black soil is most closely associated with which crop?",
+    "options": [
+      "Jute",
+      "Cotton",
+      "Rubber",
+      "Tea"
+    ],
+    "correct_index": 1,
+    "source_note": "soils_crops",
+    "id": "geo_medium_228"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Alluvial soil is most widespread in which Indian plain?",
+    "options": [
+      "Western Ghats",
+      "Ladakh Plateau",
+      "Northern Plains",
+      "Thar Desert"
+    ],
+    "correct_index": 2,
+    "source_note": "soils_crops",
+    "id": "geo_medium_229"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Laterite soil is common in which kind of Indian region?",
+    "options": [
+      "Cold desert region",
+      "Glacial valley region",
+      "Dry salt marsh region",
+      "High rainfall plateau region"
+    ],
+    "correct_index": 3,
+    "source_note": "soils_crops",
+    "id": "geo_medium_230"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Red soil gets its colour mainly from which mineral compound?",
+    "options": [
+      "Iron oxide",
+      "Aluminium oxide",
+      "Calcium carbonate",
+      "Magnesium carbonate"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops",
+    "id": "geo_medium_231"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Tea plantations in India are strongly associated with which type of terrain?",
+    "options": [
+      "Humid hill slopes",
+      "Deltaic lowlands",
+      "Black-soil plains",
+      "Arid alluvial plains"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops",
+    "id": "geo_medium_232"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Jute cultivation in India is most associated with which deltaic region?",
+    "options": [
+      "Ganga-Brahmaputra delta",
+      "Mahanadi delta",
+      "Godavari delta",
+      "Kaveri delta"
+    ],
+    "correct_index": 0,
+    "source_note": "soils_crops",
+    "id": "geo_medium_233"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Chota Nagpur Plateau is especially known for which resource?",
+    "options": [
+      "Minerals",
+      "Fossil fuels",
+      "Forest produce",
+      "Hydropower"
+    ],
+    "correct_index": 0,
+    "source_note": "resources",
+    "id": "geo_medium_234"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Jharia in Jharkhand is best known for which mineral resource?",
+    "options": [
+      "Coal",
+      "Bauxite",
+      "Copper",
+      "Mica"
+    ],
+    "correct_index": 0,
+    "source_note": "resources",
+    "id": "geo_medium_235"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Kolar in Karnataka is historically linked with which mineral?",
+    "options": [
+      "Gold",
+      "Coal",
+      "Bauxite",
+      "Mica"
+    ],
+    "correct_index": 0,
+    "source_note": "resources",
+    "id": "geo_medium_236"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Singhbhum is well known for which mineral belt?",
+    "options": [
+      "Copper",
+      "Mica",
+      "Bauxite",
+      "Iron ore"
+    ],
+    "correct_index": 0,
+    "source_note": "resources",
+    "id": "geo_medium_237"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Koraput-Kalahandi belt is associated with which mineral?",
+    "options": [
+      "Bauxite",
+      "Coal",
+      "Mica",
+      "Iron ore"
+    ],
+    "correct_index": 0,
+    "source_note": "resources",
+    "id": "geo_medium_238"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Mumbai Port is on which coast?",
+    "options": [
+      "Western coast",
+      "Eastern coast",
+      "Northern coast",
+      "Island-only coast"
+    ],
+    "correct_index": 0,
+    "source_note": "ports",
+    "id": "geo_medium_239"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Chennai Port is on which coast?",
+    "options": [
+      "Gulf of Kutch coast",
+      "Eastern coast",
+      "Island-only coast",
+      "Western coast"
+    ],
+    "correct_index": 1,
+    "source_note": "ports",
+    "id": "geo_medium_240"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Map clue: Paradip Port. Choose the best match.",
+    "options": [
+      "West Bengal",
+      "Jharkhand",
+      "Odisha",
+      "Chhattisgarh"
+    ],
+    "correct_index": 2,
+    "source_note": "ports",
+    "id": "geo_medium_241"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Kandla, now Deendayal Port, is best placed with which option?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Gujarat"
+    ],
+    "correct_index": 3,
+    "source_note": "ports",
+    "id": "geo_medium_242"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Identify the geography match for Mormugao Port.",
+    "options": [
+      "Goa",
+      "Maharashtra",
+      "Karnataka",
+      "Kerala"
+    ],
+    "correct_index": 0,
+    "source_note": "ports",
+    "id": "geo_medium_243"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which state or region is linked with New Mangalore Port?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "ports",
+    "id": "geo_medium_244"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Map clue: Tuticorin, or V.O. Chidambaranar Port,. Choose the best match.",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "ports",
+    "id": "geo_medium_245"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Kolkata Port is located on which river?",
+    "options": [
+      "Godavari",
+      "Krishna",
+      "Mahanadi",
+      "Hooghly"
+    ],
+    "correct_index": 3,
+    "source_note": "ports",
+    "id": "geo_medium_246"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Western Ghats are closer to which coast?",
+    "options": [
+      "Arabian Sea coast",
+      "Sundarbans coast",
+      "Bay of Bengal coast",
+      "Rann of Kutch coast"
+    ],
+    "correct_index": 0,
+    "source_note": "physical_regions",
+    "id": "geo_medium_247"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Eastern Ghats are discontinuous mainly because they are cut by what?",
+    "options": [
+      "Rivers",
+      "Fault lines",
+      "Coastal erosion",
+      "Lava flows"
+    ],
+    "correct_index": 0,
+    "source_note": "physical_regions",
+    "id": "geo_medium_248"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Aravalli Range runs mainly through which state?",
+    "options": [
+      "Gujarat",
+      "Haryana",
+      "Rajasthan",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "physical_regions",
+    "id": "geo_medium_249"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Nilgiri Hills are near the meeting of which two Ghats?",
+    "options": [
+      "Western and Eastern Ghats",
+      "Vindhya and Satpura",
+      "Karakoram and Zanskar",
+      "Garo and Khasi Hills"
+    ],
+    "correct_index": 0,
+    "source_note": "physical_regions",
+    "id": "geo_medium_250"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Satpura Range lies mainly between which two rivers?",
+    "options": [
+      "Narmada and Tapi",
+      "Ganga and Yamuna",
+      "Krishna and Kaveri",
+      "Brahmaputra and Teesta"
+    ],
+    "correct_index": 0,
+    "source_note": "physical_regions",
+    "id": "geo_medium_251"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "The Vindhya Range is usually treated as a boundary between North India and which region?",
+    "options": [
+      "Deccan region",
+      "Gangetic plain",
+      "Trans-Himalaya",
+      "Sundarbans delta"
+    ],
+    "correct_index": 0,
+    "source_note": "physical_regions",
+    "id": "geo_medium_252"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Nokrek Biosphere Reserve points to which Indian state?",
+    "options": [
+      "Assam",
+      "Meghalaya",
+      "Mizoram",
+      "Tripura"
+    ],
+    "correct_index": 1,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_176"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which state matches this geography clue: Dibru-Saikhowa Biosphere Reserve?",
+    "options": [
+      "Meghalaya",
+      "Arunachal Pradesh",
+      "Assam",
+      "Nagaland"
+    ],
+    "correct_index": 2,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_177"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Where in India would you place Pachmarhi Biosphere Reserve?",
+    "options": [
+      "Chhattisgarh",
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 3,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_178"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Achanakmar-Amarkantak Biosphere Reserve lies mainly across Madhya Pradesh and which state?",
+    "options": [
+      "Chhattisgarh",
+      "Madhya Pradesh",
+      "Odisha",
+      "Jharkhand"
+    ],
+    "correct_index": 0,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_179"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Agasthyamalai Biosphere Reserve spans Kerala and which state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_180"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Great Nicobar Biosphere Reserve is in which island group?",
+    "options": [
+      "Andaman and Nicobar Islands",
+      "Lakshadweep",
+      "Daman and Diu",
+      "Puducherry"
+    ],
+    "correct_index": 0,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_181"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Map clue: Khangchendzonga Biosphere Reserve. Pick the state.",
+    "options": [
+      "Arunachal Pradesh",
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Sikkim"
+    ],
+    "correct_index": 3,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_182"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Panna Biosphere Reserve points to which Indian state?",
+    "options": [
+      "Madhya Pradesh",
+      "Chhattisgarh",
+      "Rajasthan",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_183"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which state matches this geography clue: Seshachalam Biosphere Reserve?",
+    "options": [
+      "Telangana",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Odisha"
+    ],
+    "correct_index": 1,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_184"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Where in India would you place Cold Desert Biosphere Reserve?",
+    "options": [
+      "Uttarakhand",
+      "Jammu and Kashmir",
+      "Himachal Pradesh",
+      "Punjab"
+    ],
+    "correct_index": 2,
+    "source_note": "biosphere_reserves",
+    "id": "geo_hard_185"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Bhitarkanika is best known for which coastal ecosystem?",
+    "options": [
+      "Mangroves",
+      "Coral reefs",
+      "Seagrass beds",
+      "Salt marshes"
+    ],
+    "correct_index": 0,
+    "source_note": "ecosystems",
+    "id": "geo_hard_186"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Gulf of Mannar is especially known for which marine ecosystem?",
+    "options": [
+      "Coral reefs",
+      "Mangroves",
+      "Seagrass beds",
+      "Salt marshes"
+    ],
+    "correct_index": 0,
+    "source_note": "ecosystems",
+    "id": "geo_hard_187"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Sundarbans is best known for which ecosystem?",
+    "options": [
+      "Mangrove delta",
+      "Brackish lagoon",
+      "Tidal mudflat",
+      "Salt marsh"
+    ],
+    "correct_index": 0,
+    "source_note": "ecosystems",
+    "id": "geo_hard_188"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Keibul Lamjao National Park is famous for which feature?",
+    "options": [
+      "Floating phumdi habitat",
+      "Brackish lagoon",
+      "Mangrove swamp",
+      "Freshwater marsh"
+    ],
+    "correct_index": 0,
+    "source_note": "ecosystems",
+    "id": "geo_hard_189"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Desert National Park protects which landscape?",
+    "options": [
+      "Thar Desert ecosystem",
+      "Cold desert ecosystem",
+      "Salt-marsh ecosystem",
+      "Dry deciduous forest"
+    ],
+    "correct_index": 0,
+    "source_note": "ecosystems",
+    "id": "geo_hard_190"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The source region of the Narmada is near which place?",
+    "options": [
+      "Amarkantak",
+      "Talakaveri",
+      "Mansarovar",
+      "Gangotri"
+    ],
+    "correct_index": 0,
+    "source_note": "river_origins",
+    "id": "geo_hard_191"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The source of the Kaveri is at which place?",
+    "options": [
+      "Rohtang",
+      "Talakaveri",
+      "Amarkantak",
+      "Yamunotri"
+    ],
+    "correct_index": 1,
+    "source_note": "river_origins",
+    "id": "geo_hard_192"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Bhagirathi originates from which glacier area?",
+    "options": [
+      "Siachen Glacier",
+      "Zemu Glacier",
+      "Gangotri Glacier",
+      "Pindari Glacier"
+    ],
+    "correct_index": 2,
+    "source_note": "river_origins",
+    "id": "geo_hard_193"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Yamuna originates from which glacier region?",
+    "options": [
+      "Amarkantak",
+      "Talakaveri",
+      "Gangotri",
+      "Yamunotri"
+    ],
+    "correct_index": 3,
+    "source_note": "river_origins",
+    "id": "geo_hard_194"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Godavari originates near which Maharashtra town?",
+    "options": [
+      "Trimbak",
+      "Gangotri",
+      "Mahabaleshwar",
+      "Amarkantak"
+    ],
+    "correct_index": 0,
+    "source_note": "river_origins",
+    "id": "geo_hard_195"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Krishna originates near which Western Ghats town?",
+    "options": [
+      "Trimbak",
+      "Mahabaleshwar",
+      "Talakaveri",
+      "Amarkantak"
+    ],
+    "correct_index": 1,
+    "source_note": "river_origins",
+    "id": "geo_hard_196"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Tapi originates in which state?",
+    "options": [
+      "Chhattisgarh",
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 3,
+    "source_note": "river_origins",
+    "id": "geo_hard_198"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Luni river drains mainly into which region?",
+    "options": [
+      "Rann of Kutch",
+      "Thar Desert",
+      "Sambhar Salt Lake",
+      "Little Rann"
+    ],
+    "correct_index": 0,
+    "source_note": "river_systems",
+    "id": "geo_hard_199"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Damodar is often associated with which plateau region?",
+    "options": [
+      "Malwa Plateau",
+      "Chota Nagpur Plateau",
+      "Ladakh Plateau",
+      "Shillong Plateau"
+    ],
+    "correct_index": 1,
+    "source_note": "river_systems",
+    "id": "geo_hard_200"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Shivalik Hills are the outermost range of which mountain system?",
+    "options": [
+      "Himalayas",
+      "Aravalli Range",
+      "Western Ghats",
+      "Satpura Range"
+    ],
+    "correct_index": 0,
+    "source_note": "mountain_systems",
+    "id": "geo_hard_201"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Zanskar Range is part of which broad region?",
+    "options": [
+      "Trans-Himalaya",
+      "Greater Himalaya",
+      "Lesser Himalaya",
+      "Shivalik"
+    ],
+    "correct_index": 0,
+    "source_note": "mountain_systems",
+    "id": "geo_hard_202"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Karakoram Range lies mainly to the north of which Indian region?",
+    "options": [
+      "Ladakh",
+      "Jammu and Kashmir",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "correct_index": 0,
+    "source_note": "mountain_systems",
+    "id": "geo_hard_203"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Pir Panjal Range is most associated with which region?",
+    "options": [
+      "Jammu and Kashmir",
+      "Ladakh",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "correct_index": 0,
+    "source_note": "mountain_systems",
+    "id": "geo_hard_204"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Patkai hills lie near India's border with which country?",
+    "options": [
+      "Pakistan",
+      "Sri Lanka",
+      "Myanmar",
+      "Maldives"
+    ],
+    "correct_index": 2,
+    "source_note": "mountain_systems",
+    "id": "geo_hard_205"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Garo, Khasi and Jaintia hills are in which state?",
+    "options": [
+      "Assam",
+      "Mizoram",
+      "Tripura",
+      "Meghalaya"
+    ],
+    "correct_index": 3,
+    "source_note": "mountain_systems",
+    "id": "geo_hard_206"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Bhabar belt lies just south of which Himalayan zone?",
+    "options": [
+      "Shivalik foothills",
+      "Lesser Himalaya",
+      "Greater Himalaya",
+      "Trans-Himalaya"
+    ],
+    "correct_index": 0,
+    "source_note": "physical_regions",
+    "id": "geo_hard_207"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Terai belt is known for which landscape condition?",
+    "options": [
+      "Marshy grassland and forests",
+      "Arid scrubland",
+      "Alpine meadow",
+      "Salt-pan plain"
+    ],
+    "correct_index": 0,
+    "source_note": "physical_regions",
+    "id": "geo_hard_208"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Malwa Plateau is best placed with which option?",
+    "options": [
+      "Chhattisgarh",
+      "Rajasthan",
+      "Madhya Pradesh",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "physical_regions",
+    "id": "geo_hard_209"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Identify the geography match for The Shillong Plateau.",
+    "options": [
+      "Assam",
+      "Mizoram",
+      "Tripura",
+      "Meghalaya"
+    ],
+    "correct_index": 3,
+    "source_note": "physical_regions",
+    "id": "geo_hard_210"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Barren Island volcano is in which island group?",
+    "options": [
+      "Andaman and Nicobar Islands",
+      "Lakshadweep",
+      "Daman and Diu",
+      "Puducherry"
+    ],
+    "correct_index": 0,
+    "source_note": "islands",
+    "id": "geo_hard_211"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Minicoy is part of which Union Territory?",
+    "options": [
+      "Lakshadweep",
+      "Andaman and Nicobar Islands",
+      "Puducherry",
+      "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "correct_index": 0,
+    "source_note": "islands",
+    "id": "geo_hard_212"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Gulf of Kutch lies along which state?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Gujarat"
+    ],
+    "correct_index": 3,
+    "source_note": "maritime_geography",
+    "id": "geo_hard_214"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Gulf of Khambhat lies along which state?",
+    "options": [
+      "Gujarat",
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "maritime_geography",
+    "id": "geo_hard_215"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Nine Degree Channel is associated with which island group?",
+    "options": [
+      "Lakshadweep",
+      "Andaman Islands",
+      "Nicobar Islands",
+      "Pamban Island"
+    ],
+    "correct_index": 0,
+    "source_note": "maritime_geography",
+    "id": "geo_hard_217"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The retreating monsoon gives important rainfall to which coast?",
+    "options": [
+      "Kutch Coast",
+      "Malabar Coast",
+      "Konkan Coast",
+      "Coromandel Coast"
+    ],
+    "correct_index": 3,
+    "source_note": "climate",
+    "id": "geo_hard_218"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Western disturbances are most important for winter rain in which region?",
+    "options": [
+      "Northwestern India",
+      "Northeastern India",
+      "Peninsular east coast",
+      "Western coastal plain"
+    ],
+    "correct_index": 0,
+    "source_note": "climate",
+    "id": "geo_hard_219"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Orographic rainfall on the windward side is strongly associated with which range?",
+    "options": [
+      "Western Ghats",
+      "Eastern Ghats",
+      "Aravalli Range",
+      "Satpura Range"
+    ],
+    "correct_index": 0,
+    "source_note": "climate",
+    "id": "geo_hard_220"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The rain-shadow area east of the Western Ghats is mainly caused by what?",
+    "options": [
+      "Moist winds losing rain on windward slopes",
+      "Cold current reducing evaporation",
+      "Cyclone landfall on leeward slopes",
+      "Winter western disturbance"
+    ],
+    "correct_index": 0,
+    "source_note": "climate",
+    "id": "geo_hard_221"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Leeward side of the Western Ghats is generally what?",
+    "options": [
+      "Drier than the windward side",
+      "Wetter than the windward side",
+      "Equally wet all year",
+      "Dominated by winter snowfall"
+    ],
+    "correct_index": 0,
+    "source_note": "climate",
+    "id": "geo_hard_223"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "India's southwest monsoon usually first reaches which state?",
+    "options": [
+      "Tamil Nadu",
+      "Kerala",
+      "Karnataka",
+      "Goa"
+    ],
+    "correct_index": 1,
+    "source_note": "climate",
+    "id": "geo_hard_224"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Deccan rain-shadow region lies mainly east of which mountain chain?",
+    "options": [
+      "Western Ghats",
+      "Eastern Ghats",
+      "Aravalli Range",
+      "Satpura Range"
+    ],
+    "correct_index": 0,
+    "source_note": "climate",
+    "id": "geo_hard_225"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Laterite soils form best under which broad climate condition?",
+    "options": [
+      "High rainfall and leaching",
+      "Arid salt deposition",
+      "Permanent snow cover",
+      "River flood renewal"
+    ],
+    "correct_index": 0,
+    "source_note": "soils",
+    "id": "geo_hard_226"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "The Bhangar alluvium is generally older than which alluvial deposit?",
+    "options": [
+      "Peaty soil",
+      "Khadar",
+      "Regur",
+      "Laterite"
+    ],
+    "correct_index": 1,
+    "source_note": "soils",
+    "id": "geo_hard_228"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Khadar soil is renewed mainly by what?",
+    "options": [
+      "River floods",
+      "Wind deposition",
+      "Volcanic ash fall",
+      "Coastal tides"
+    ],
+    "correct_index": 0,
+    "source_note": "soils",
+    "id": "geo_hard_229"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Arid soil in India is most associated with which region?",
+    "options": [
+      "Western Rajasthan",
+      "Kutch region",
+      "Ladakh plateau",
+      "Deccan interior"
+    ],
+    "correct_index": 0,
+    "source_note": "soils",
+    "id": "geo_hard_230"
+  }
+]

@@ -1,0 +1,1136 @@
+[
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Kaziranga landscape points to which Indian state?",
+    "options": [
+      "Meghalaya",
+      "Arunachal Pradesh",
+      "Assam",
+      "Nagaland"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_296"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which state matches this geography clue: tea gardens?",
+    "options": [
+      "Meghalaya",
+      "Arunachal Pradesh",
+      "Nagaland",
+      "Assam"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_271"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Where in India would you place Brahmaputra Valley?",
+    "options": [
+      "Assam",
+      "Meghalaya",
+      "Arunachal Pradesh",
+      "Nagaland"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_297"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Identify the state linked with Eastern Himalaya.",
+    "options": [
+      "Assam",
+      "Arunachal Pradesh",
+      "Nagaland",
+      "Sikkim"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_281"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Map clue: Siang valley. Pick the state.",
+    "options": [
+      "Arunachal Pradesh",
+      "Assam",
+      "Nagaland",
+      "Sikkim"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_273"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Gangetic plain points to which Indian state?",
+    "options": [
+      "Uttar Pradesh",
+      "Bihar",
+      "Jharkhand",
+      "West Bengal"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_282"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which state matches this geography clue: Kosi belt?",
+    "options": [
+      "Uttar Pradesh",
+      "Jharkhand",
+      "Bihar",
+      "West Bengal"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_299"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Where in India would you place alluvial agriculture?",
+    "options": [
+      "Uttar Pradesh",
+      "Jharkhand",
+      "West Bengal",
+      "Bihar"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_274"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Map clue: rice-growing plains. Pick the state.",
+    "options": [
+      "Madhya Pradesh",
+      "Odisha",
+      "Jharkhand",
+      "Chhattisgarh"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_275"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Indravati basin points to which Indian state?",
+    "options": [
+      "Chhattisgarh",
+      "Madhya Pradesh",
+      "Odisha",
+      "Jharkhand"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_276"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state matches this geography clue: Mandovi-Zuari estuary?",
+    "options": [
+      "Maharashtra",
+      "Goa",
+      "Karnataka",
+      "Kerala"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_284"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Where in India would you place Western Ghats edge?",
+    "options": [
+      "Maharashtra",
+      "Karnataka",
+      "Goa",
+      "Kerala"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_302"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Identify the state linked with coastal tourism belt.",
+    "options": [
+      "Maharashtra",
+      "Karnataka",
+      "Kerala",
+      "Goa"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_277"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Map clue: Gir landscape. Pick the state.",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Gujarat",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_304"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Groundnut-cotton belt points to which Indian state?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Gujarat"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_278"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which state matches this geography clue: Gir landscape?",
+    "options": [
+      "Gujarat",
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_279"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Where in India would you place Aravalli foothills?",
+    "options": [
+      "Rajasthan",
+      "Haryana",
+      "Punjab",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_286"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Identify the state linked with Ghaggar plain.",
+    "options": [
+      "Rajasthan",
+      "Punjab",
+      "Haryana",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_305"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Map clue: Dhauladhar range. Pick the state.",
+    "options": [
+      "Uttarakhand",
+      "Himachal Pradesh",
+      "Jammu and Kashmir",
+      "Punjab"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_287"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Kullu valley points to which Indian state?",
+    "options": [
+      "Uttarakhand",
+      "Jammu and Kashmir",
+      "Himachal Pradesh",
+      "Punjab"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_307"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which state matches this geography clue: apple-growing hills?",
+    "options": [
+      "Uttarakhand",
+      "Jammu and Kashmir",
+      "Punjab",
+      "Himachal Pradesh"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_281"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Where in India would you place Kullu valley?",
+    "options": [
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Jammu and Kashmir",
+      "Punjab"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_282"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Western Ghats coffee belt points to which Indian state?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_289"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which state matches this geography clue: Malnad region?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_310"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Where in India would you place Deccan plateau?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Karnataka"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_284"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Identify the state linked with Malnad region.",
+    "options": [
+      "Karnataka",
+      "Kerala",
+      "Tamil Nadu",
+      "Andhra Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_285"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Map clue: spice-growing hills. Pick the state.",
+    "options": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Goa",
+      "Kerala"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_286"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Malabar backwaters points to which Indian state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Goa"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_312"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state matches this geography clue: Malwa Plateau?",
+    "options": [
+      "Chhattisgarh",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_291"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Where in India would you place Narmada valley?",
+    "options": [
+      "Chhattisgarh",
+      "Rajasthan",
+      "Madhya Pradesh",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_313"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Identify the state linked with central highlands.",
+    "options": [
+      "Chhattisgarh",
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_287"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Map clue: Sahyadri escarpment. Pick the state.",
+    "options": [
+      "Gujarat",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Karnataka"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_314"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Black-soil cotton belt points to which Indian state?",
+    "options": [
+      "Gujarat",
+      "Madhya Pradesh",
+      "Karnataka",
+      "Maharashtra"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_289"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which state matches this geography clue: Konkan coast?",
+    "options": [
+      "Maharashtra",
+      "Gujarat",
+      "Madhya Pradesh",
+      "Karnataka"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_315"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Where in India would you place Loktak Lake basin?",
+    "options": [
+      "Mizoram",
+      "Manipur",
+      "Nagaland",
+      "Assam"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_293"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Identify the state linked with Imphal valley.",
+    "options": [
+      "Mizoram",
+      "Nagaland",
+      "Manipur",
+      "Assam"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_316"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Mawsynram-Cherrapunji belt points to which Indian state?",
+    "options": [
+      "Assam",
+      "Mizoram",
+      "Meghalaya",
+      "Tripura"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_317"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which state matches this geography clue: limestone caves?",
+    "options": [
+      "Assam",
+      "Mizoram",
+      "Tripura",
+      "Meghalaya"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_292"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Identify the state linked with Lushai Hills.",
+    "options": [
+      "Manipur",
+      "Mizoram",
+      "Tripura",
+      "Assam"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_295"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Map clue: Dampa landscape. Pick the state.",
+    "options": [
+      "Mizoram",
+      "Manipur",
+      "Tripura",
+      "Assam"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_294"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which state matches this geography clue: Dzukou valley region?",
+    "options": [
+      "Manipur",
+      "Assam",
+      "Nagaland",
+      "Arunachal Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_320"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Where in India would you place hill agriculture?",
+    "options": [
+      "Manipur",
+      "Assam",
+      "Arunachal Pradesh",
+      "Nagaland"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_295"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Map clue: Similipal landscape. Pick the state.",
+    "options": [
+      "West Bengal",
+      "Jharkhand",
+      "Chhattisgarh",
+      "Odisha"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_296"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state matches this geography clue: Sutlej-Beas plain?",
+    "options": [
+      "Haryana",
+      "Punjab",
+      "Rajasthan",
+      "Himachal Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_298"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Where in India would you place alluvial canal belt?",
+    "options": [
+      "Haryana",
+      "Rajasthan",
+      "Punjab",
+      "Himachal Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_323"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Identify the state linked with wheat granary.",
+    "options": [
+      "Haryana",
+      "Rajasthan",
+      "Himachal Pradesh",
+      "Punjab"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_298"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Map clue: Aravalli range. Pick the state.",
+    "options": [
+      "Gujarat",
+      "Haryana",
+      "Rajasthan",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_325"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Arid inland drainage points to which Indian state?",
+    "options": [
+      "Gujarat",
+      "Haryana",
+      "Madhya Pradesh",
+      "Rajasthan"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_299"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which state matches this geography clue: Aravalli range?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Haryana",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_300"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Where in India would you place Teesta valley?",
+    "options": [
+      "Arunachal Pradesh",
+      "Sikkim",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_300"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Identify the state linked with Khangchendzonga landscape.",
+    "options": [
+      "Arunachal Pradesh",
+      "Himachal Pradesh",
+      "Sikkim",
+      "Uttarakhand"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_326"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Which state matches this geography clue: Coromandel coast?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Andhra Pradesh",
+      "Tamil Nadu"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_302"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Tripura Hills points to which Indian state?",
+    "options": [
+      "Mizoram",
+      "Tripura",
+      "Meghalaya",
+      "Assam"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_303"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which state matches this geography clue: Gomati basin?",
+    "options": [
+      "Mizoram",
+      "Meghalaya",
+      "Tripura",
+      "Assam"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_331"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Where in India would you place Bangladesh-facing valleys?",
+    "options": [
+      "Mizoram",
+      "Meghalaya",
+      "Assam",
+      "Tripura"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_305"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Identify the state linked with Gomati basin.",
+    "options": [
+      "Tripura",
+      "Mizoram",
+      "Meghalaya",
+      "Assam"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_306"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Map clue: alluvial plains. Pick the state.",
+    "options": [
+      "Bihar",
+      "Madhya Pradesh",
+      "Uttarakhand",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_307"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Ganga-Yamuna Doab points to which Indian state?",
+    "options": [
+      "Uttar Pradesh",
+      "Bihar",
+      "Madhya Pradesh",
+      "Uttarakhand"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_333"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state matches this geography clue: Garhwal Himalaya?",
+    "options": [
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Uttar Pradesh",
+      "Jammu and Kashmir"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_305"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Where in India would you place Kumaon Himalaya?",
+    "options": [
+      "Himachal Pradesh",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "Jammu and Kashmir"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_334"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Identify the state linked with Gangotri-Yamunotri source region.",
+    "options": [
+      "Himachal Pradesh",
+      "Uttar Pradesh",
+      "Jammu and Kashmir",
+      "Uttarakhand"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_308"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Map clue: Darjeeling Himalaya. Pick the state.",
+    "options": [
+      "Odisha",
+      "Bihar",
+      "West Bengal",
+      "Assam"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_335"
+  },
+  {
+    "category": "geography",
+    "difficulty": 3,
+    "question": "Hooghly plain points to which Indian state?",
+    "options": [
+      "Odisha",
+      "Bihar",
+      "Assam",
+      "West Bengal"
+    ],
+    "correct_index": 3,
+    "source_note": "state_feature_literacy",
+    "id": "geo_hard_310"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which state matches this geography clue: Sundarbans delta?",
+    "options": [
+      "West Bengal",
+      "Odisha",
+      "Bihar",
+      "Assam"
+    ],
+    "correct_index": 0,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_336"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Where in India would you place Krishna-Godavari delta?",
+    "options": [
+      "Telangana",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Odisha"
+    ],
+    "correct_index": 1,
+    "source_note": "state_feature_literacy",
+    "id": "geo_easy_307"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Identify the state linked with Eastern Ghats slopes.",
+    "options": [
+      "Telangana",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Odisha"
+    ],
+    "correct_index": 2,
+    "source_note": "state_feature_literacy",
+    "id": "geo_medium_337"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Pakistan and has Kutch?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Maharashtra",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 1,
+    "source_note": "borders",
+    "id": "geo_easy_308"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Pakistan and has Amritsar?",
+    "options": [
+      "Haryana",
+      "Rajasthan",
+      "Himachal Pradesh",
+      "Punjab"
+    ],
+    "correct_index": 3,
+    "source_note": "borders",
+    "id": "geo_easy_310"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Nepal and has the Kumaon region?",
+    "options": [
+      "Uttarakhand",
+      "Himachal Pradesh",
+      "Uttar Pradesh",
+      "Jammu and Kashmir"
+    ],
+    "correct_index": 0,
+    "source_note": "borders",
+    "id": "geo_easy_311"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Nepal and has the Terai belt?",
+    "options": [
+      "Bihar",
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Uttarakhand"
+    ],
+    "correct_index": 1,
+    "source_note": "borders",
+    "id": "geo_easy_312"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Nepal and has the Kosi belt?",
+    "options": [
+      "Uttar Pradesh",
+      "Jharkhand",
+      "Bihar",
+      "West Bengal"
+    ],
+    "correct_index": 2,
+    "source_note": "borders",
+    "id": "geo_easy_313"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Bhutan and has the Dooars region?",
+    "options": [
+      "Odisha",
+      "Bihar",
+      "Assam",
+      "West Bengal"
+    ],
+    "correct_index": 3,
+    "source_note": "borders",
+    "id": "geo_easy_314"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Bhutan and has the Manas landscape?",
+    "options": [
+      "Assam",
+      "Meghalaya",
+      "Arunachal Pradesh",
+      "Nagaland"
+    ],
+    "correct_index": 0,
+    "source_note": "borders",
+    "id": "geo_easy_315"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Bangladesh and contains the Sundarbans?",
+    "options": [
+      "Odisha",
+      "West Bengal",
+      "Bihar",
+      "Assam"
+    ],
+    "correct_index": 1,
+    "source_note": "borders",
+    "id": "geo_easy_316"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Bangladesh and has the Khasi Hills?",
+    "options": [
+      "Assam",
+      "Mizoram",
+      "Meghalaya",
+      "Tripura"
+    ],
+    "correct_index": 2,
+    "source_note": "borders",
+    "id": "geo_easy_317"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Myanmar and has the Moreh area?",
+    "options": [
+      "Mizoram",
+      "Nagaland",
+      "Assam",
+      "Manipur"
+    ],
+    "correct_index": 3,
+    "source_note": "borders",
+    "id": "geo_easy_318"
+  },
+  {
+    "category": "geography",
+    "difficulty": 1,
+    "question": "Which state borders Myanmar and has the Lushai Hills?",
+    "options": [
+      "Mizoram",
+      "Manipur",
+      "Tripura",
+      "Assam"
+    ],
+    "correct_index": 0,
+    "source_note": "borders",
+    "id": "geo_easy_319"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which neighbour fits this clue: is across the Radcliffe Line from Punjab and Rajasthan?",
+    "options": [
+      "China",
+      "Pakistan",
+      "Nepal",
+      "Bhutan"
+    ],
+    "correct_index": 1,
+    "source_note": "borders",
+    "id": "geo_medium_338"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Identify the country for this geography clue: lies north of Sikkim across the Himalaya.",
+    "options": [
+      "Nepal",
+      "Bhutan",
+      "China",
+      "Bangladesh"
+    ],
+    "correct_index": 2,
+    "source_note": "borders",
+    "id": "geo_medium_339"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Country clue: lies east of Nagaland and Manipur. Pick the country.",
+    "options": [
+      "Nepal",
+      "Bhutan",
+      "Bangladesh",
+      "Myanmar"
+    ],
+    "correct_index": 3,
+    "source_note": "borders",
+    "id": "geo_medium_340"
+  },
+  {
+    "category": "geography",
+    "difficulty": 2,
+    "question": "Which neighbour fits this clue: lies south of the Palk Strait?",
+    "options": [
+      "Sri Lanka",
+      "Bhutan",
+      "Bangladesh",
+      "Myanmar"
+    ],
+    "correct_index": 0,
+    "source_note": "maritime_borders",
+    "id": "geo_medium_341"
+  }
+]
