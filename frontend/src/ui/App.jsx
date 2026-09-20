@@ -12,6 +12,7 @@ import LobbyPage from './pages/LobbyPage.jsx'
 import GamePage from './pages/GamePage.jsx'
 import ScribbleGamePage from './pages/ScribbleGamePage.jsx'
 import TriviaGamePage from './pages/TriviaGamePage.jsx'
+import PokerGamePage from './pages/PokerGamePage.jsx'
 import RoundEndPage from './pages/RoundEndPage.jsx'
 import GameEndPage from './pages/GameEndPage.jsx'
 import HowToPage from './pages/HowToPage.jsx'
@@ -163,6 +164,7 @@ function AppShell() {
         <Route path="/game" element={<GamePage />} />
         <Route path="/scribble" element={<ScribbleGamePage />} />
         <Route path="/trivia" element={<TriviaGamePage />} />
+        <Route path="/poker" element={<PokerGamePage />} />
         <Route path="/quickmatch" element={<QuickMatchFlowPage />} />
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />

@@ -4,6 +4,13 @@ import Lobby from '../screens/Lobby.jsx'
 import { useApp } from '../../state/AppContext.jsx'
 import * as api from '../../lib/api.js'
 
+const ROUTE_FOR_GAME = {
+  scribble: '/scribble',
+  trivia: '/trivia',
+  poker: '/poker',
+  charades: '/game',
+}
+
 export default function LobbyPage() {
   const navigate = useNavigate()
   const location = useLocation()
@@ -44,7 +51,7 @@ export default function LobbyPage() {
     if (game?.turn) {
       startGameSocket()
       const gameType = game.turn.game_type || lobby?.room?.game_type || 'charades'
-      navigate(gameType === 'scribble' ? '/scribble' : gameType === 'trivia' ? '/trivia' : '/game')
+      navigate(ROUTE_FOR_GAME[gameType] || '/game')
     }
   }, [game?.turn])
 
@@ -75,7 +82,7 @@ export default function LobbyPage() {
     startGameSocket()
     emitGameStart(lobby.room.code)
     const gameType = lobby?.room?.game_type || 'charades'
-    navigate(gameType === 'scribble' ? '/scribble' : gameType === 'trivia' ? '/trivia' : '/game')
+    navigate(ROUTE_FOR_GAME[gameType] || '/game')
   }
 
   return (

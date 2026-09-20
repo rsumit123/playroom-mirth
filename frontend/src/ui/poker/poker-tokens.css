@@ -1,0 +1,122 @@
+.poker-root {
+  /* Scoped, not global: PlayRoom is a light Tailwind app and these are the
+     card room's own colours. */
+  /* Room */
+  --forest: #12211A;
+  /* The room itself is nearly black, so the felt is the lit thing in it. */
+  --room: #080C0A;
+  --felt: #1F5B3B;
+  --felt-deep: #163F2B;
+  --walnut: #5A3A22;
+  --walnut-light: #8A5B36;
+
+  /* Surfaces lifted off the room */
+  --surface: #172A20;
+  --surface-2: #24402F;
+  --surface-sunk: rgba(9, 18, 13, 0.55);
+  --line: rgba(243, 236, 218, 0.12);
+  --line-strong: rgba(243, 236, 218, 0.22);
+
+  /* Ink */
+  --ivory: #F3ECDA;
+  --ink: #0F1A14;
+  --mist: #B9C6BD;
+  --mist-dim: rgba(185, 198, 189, 0.72);
+
+  /* Accents, used sparingly */
+  --copper: #B8763A;
+  --copper-lift: #C9853F;
+  --brass: #C9A24A;
+  --ember: #C4553D;
+  --ember-text: #E5947C;
+  --moss: #4FA37A;
+  /* The 'stay in the hand' fill: dark enough for ivory text at AA. */
+  --moss-deep: #1E5A3C;
+
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+
+  --radius-control: 10px;
+  --radius-card: 6px;
+  --radius-panel: 16px;
+
+  --shadow-panel: 0 18px 40px rgba(0, 0, 0, 0.38);
+  --shadow-lift: 0 12px 28px rgba(0, 0, 0, 0.45);
+
+  --felt-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23g)' opacity='0.42'/%3E%3C/svg%3E");
+}
+
+/* The room the table sits in. In the standalone game this was painted on the
+   body; here it belongs to the poker screen alone. */
+.poker-root {
+  position: relative;
+  min-height: 100dvh;
+  overflow-x: clip;
+  background: var(--room);
+  color: var(--ivory);
+  font-family: var(--font-sans);
+  display: flex;
+  flex-direction: column;
+}
+.poker-root::before,
+.poker-root::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.poker-root::before {
+  background:
+    radial-gradient(420px 300px at 12% 12%, rgba(201, 162, 74, 0.17), transparent 60%),
+    radial-gradient(300px 260px at 88% 6%, rgba(184, 118, 58, 0.15), transparent 62%),
+    radial-gradient(360px 300px at 92% 82%, rgba(201, 162, 74, 0.13), transparent 62%),
+    radial-gradient(280px 240px at 6% 88%, rgba(184, 118, 58, 0.12), transparent 62%),
+    radial-gradient(900px 620px at 50% -10%, rgba(243, 236, 218, 0.05), transparent 60%);
+}
+.poker-root::after {
+  background: radial-gradient(120% 90% at 50% 42%, transparent 38%, rgba(0, 0, 0, 0.55) 100%);
+}
+.poker-root > * { position: relative; z-index: 1; }
+
+.poker-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+}
+.poker-leave {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(243, 236, 218, 0.04);
+  color: var(--mist-dim);
+  font-size: 15px;
+  cursor: pointer;
+}
+.poker-blinds {
+  padding: 1px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--mist);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.poker-opening { padding: 40px 20px; text-align: center; color: var(--mist); }
+
+/* The felt grows into what the controls leave, and the controls keep their
+   floor whether or not there is anything in them. */
+.poker-root .felt-wrap { flex: 1; display: grid; place-items: center; justify-items: start; }
+.poker-root .action-slot {
+  flex: none;
+  align-self: center;
+  width: 100%;
+  min-height: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
