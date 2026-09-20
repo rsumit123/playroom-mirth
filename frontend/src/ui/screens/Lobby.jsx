@@ -1,3 +1,4 @@
+import { gameLabel } from '../../lib/gameLabels.js'
 import { useEffect, useRef, useState } from 'react'
 import Spinner from '../components/Spinner.jsx'
 import { playSound } from '../../lib/sounds.js'
@@ -66,10 +67,10 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, onInvit
   }
 
   const gameType = roomMeta?.game_type || 'charades'
-  const gameLabel = gameType === 'scribble' ? 'Scribble' : gameType === 'trivia' ? 'Trivia' : 'Charades'
+  const gameLabelText = gameLabel(gameType)
 
   function handleShare() {
-    const payload = { title: 'Mirth', text: `Join my ${gameLabel} room!`, url: inviteUrl }
+    const payload = { title: 'Mirth', text: `Join my ${gameLabelText} room!`, url: inviteUrl }
     if (navigator.share) {
       navigator.share(payload)
     } else {
@@ -85,7 +86,7 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, onInvit
         <div className="card p-6 text-center space-y-3">
           <div className="flex items-center justify-center gap-2">
             <div className="text-xs uppercase tracking-[0.3em] text-slate/60">Room Code</div>
-            <span className="badge bg-accent/10 text-accent text-[10px]">{gameLabel}</span>
+            <span className="badge bg-accent/10 text-accent text-[10px]">{gameLabelText}</span>
           </div>
           <div className="font-display text-4xl sm:text-5xl tracking-[0.2em] text-accent">{code}</div>
           <div className="flex items-center justify-center gap-3">

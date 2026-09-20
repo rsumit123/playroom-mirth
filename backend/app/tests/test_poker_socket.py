@@ -179,3 +179,38 @@ async def test_nobody_sees_a_live_hand_they_are_not_holding():
                 continue
             for card in player["hole_cards"]:
                 assert json.dumps(card) not in body, "another seat's live cards leaked"
+
+
+@pytest.mark.asyncio
+async def test_a_finished_session_leaves_net_chips_behind_as_the_score():
+    """Poker has no points. What a session is worth to a player is the chips
+    they walked away with, above or below what they sat down with."""
+    from app.models.game_history import GameHistory
+    from app.services import poker
+    from app.sockets import poker_events
+
+    room_code, _, _ = await _seat_two_and_start()
+    state = ROOM_STATES[room_code]
+    seats = list(state.player_order)
+
+    # Hand the whole table to one seat, the way busting somebody out would.
+    blob = dict(state.poker)
+    hand = dict(blob["hand"])
+    hand["players"] = [
+        {**player, "stack": 2000 if player["seat_id"] == seats[0] else 0}
+        for player in hand["players"]
+    ]
+    hand["street"] = "complete"
+    blob["hand"] = hand
+    state.poker = blob
+
+    await poker_events._deal_next(poker_events.sio if hasattr(poker_events, "sio") else sio, state)
+
+    assert room_code not in ROOM_STATES, "the session should be over"
+    with SessionLocal() as db:
+        rows = db.query(GameHistory).filter(GameHistory.room_code == room_code).all()
+        assert len(rows) == 2
+        by_score = sorted(row.score for row in rows)
+        # One seat is up a thousand, the other down the same.
+        assert by_score == [-1000, 1000]
+        assert sum(row.is_winner for row in rows) == 1

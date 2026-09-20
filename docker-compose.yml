@@ -11,6 +11,9 @@ services:
       - DATABASE_URL=sqlite:///./data/charade.db
       - JWT_SECRET_KEY=${JWT_SECRET_KEY:-dev-secret-change}
       - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      # Poker's house players. Without it they still act - they check when that
+      # is free and fold otherwise - but no model is asked anything.
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
     volumes:
       - ./backend/data:/app/data
     restart: unless-stopped

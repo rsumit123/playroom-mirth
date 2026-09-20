@@ -1,3 +1,4 @@
+import { gameLabel } from '../../lib/gameLabels.js'
 export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave, activeRooms = [], isSignedIn = false }) {
   return (
     <div className="game-shell py-6">
@@ -17,7 +18,7 @@ export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave
                     <div className="flex items-center gap-2">
                       <div className="font-display text-lg tracking-wider">{ar.room_code}</div>
                       <span className="badge bg-accent/10 text-accent text-[10px]">
-                        {ar.game_type === 'scribble' ? 'Scribble' : ar.game_type === 'trivia' ? 'Trivia' : 'Charades'}
+                        {gameLabel(ar.game_type)}
                       </span>
                     </div>
                     <div className="text-xs text-slate/50">

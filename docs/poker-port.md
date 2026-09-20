@@ -59,3 +59,23 @@ frontend build, vitest before every commit; Playwright for socket changes.
 
 Merge to main when a full hand plays end to end: the VM deploys from main, so a
 half-ported game there is a broken production.
+
+## Where it got to
+
+Slices 1 to 6 are done on `feature/poker`. Three full hands played through the
+socket layer in a scripted two-handed session - blinds, preflop to river,
+showdown, pot awarded, next deal - which was the merge gate.
+
+Still to do before anyone can play it:
+
+1. Merge `feature/poker` to main.
+2. On the VM: `cd ~/charade-chat && git pull && docker compose up --build -d`.
+   The new columns are added on startup by `init_db`; `OPENROUTER_API_KEY` is
+   already in the VM's `.env` and passed through by compose.
+3. Rebuild the frontend with the production env vars and deploy to Vercel.
+4. Android: `npm run build && npx cap sync android`, then a signed release at
+   versionCode 15 / 2.3.0. This is the only step that needs the keystore.
+
+Two pre-existing failures in this repo, both on main and neither from this
+work: `test_scoreboard.py::test_trivia_game_saves_history_and_scoreboard`
+fails deterministically, and the Playwright suite fails at guest login.

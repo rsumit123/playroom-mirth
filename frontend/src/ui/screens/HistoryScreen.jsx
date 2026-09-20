@@ -5,7 +5,7 @@ const TABS = [
 ]
 
 const GAME_ICON = { trivia: '🧠', charades: '💬', scribble: '✏️' }
-const GAME_LABEL = { trivia: 'Trivia', charades: 'Charades', scribble: 'Scribble' }
+const GAME_LABEL = { trivia: 'Trivia', charades: 'Charades', scribble: 'Scribble', poker: 'Poker' }
 
 function relativeTime(iso) {
   const then = new Date(iso).getTime()
