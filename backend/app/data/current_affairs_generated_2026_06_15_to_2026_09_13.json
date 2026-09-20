@@ -1,0 +1,2901 @@
+[
+ {
+  "id": "ca_easy_550",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which ministry issues directions to block online content under Section 69A of the Information Technology Act?",
+  "options": [
+   "Ministry of Electronics and Information Technology",
+   "Ministry of Home Affairs",
+   "Ministry of Information and Broadcasting",
+   "Ministry of Communications"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_551",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which state became the first in independent India to implement a Uniform Civil Code?",
+  "options": [
+   "Gujarat",
+   "Uttarakhand",
+   "Madhya Pradesh",
+   "Assam"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_552",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which body conducts the Civil Services Examination in India?",
+  "options": [
+   "Union Public Service Commission",
+   "National Testing Agency",
+   "Department of Personnel and Training",
+   "Staff Selection Commission"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_553",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which Article of the Constitution guarantees freedom of conscience and the right to profess, practise and propagate religion?",
+  "options": [
+   "Article 29",
+   "Article 25",
+   "Article 30",
+   "Article 19"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_554",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which institution sets India's benchmark repo rate?",
+  "options": [
+   "NITI Aayog",
+   "The Reserve Bank of India",
+   "SEBI",
+   "The Ministry of Finance"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_555",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which regulator oversees India's stock markets and mutual funds?",
+  "options": [
+   "The Competition Commission of India",
+   "IRDAI",
+   "The Reserve Bank of India",
+   "SEBI"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_556",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The SARFAESI Act allows banks to recover dues by taking possession of collateral. What does the 'S' in SARFAESI stand for?",
+  "options": [
+   "Securitisation",
+   "Stabilisation",
+   "Sequestration",
+   "Settlement"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_557",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which tribunal primarily handles bank loan recovery cases in India?",
+  "options": [
+   "The National Green Tribunal",
+   "The Debt Recovery Tribunal",
+   "The Income Tax Appellate Tribunal",
+   "The Central Administrative Tribunal"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_558",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "A loan on which interest or principal has been overdue for more than 90 days is classified by Indian banks as what?",
+  "options": [
+   "A contingent liability",
+   "A deferred asset",
+   "A capital reserve",
+   "A non-performing asset"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_559",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which four countries make up the Quad grouping?",
+  "options": [
+   "India, United States, United Kingdom, France",
+   "India, China, Russia, Brazil",
+   "India, Japan, South Korea, Singapore",
+   "India, United States, Japan, Australia"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_560",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The BRICS grouping originally comprised Brazil, Russia, India, China and which other country?",
+  "options": [
+   "Argentina",
+   "Saudi Arabia",
+   "Indonesia",
+   "South Africa"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_561",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Where is the headquarters of the New Development Bank, set up by BRICS countries?",
+  "options": [
+   "Johannesburg",
+   "Shanghai",
+   "Moscow",
+   "New Delhi"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_562",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which United Nations body has the primary responsibility for maintaining international peace and security?",
+  "options": [
+   "The Security Council",
+   "The General Assembly",
+   "The International Court of Justice",
+   "The Economic and Social Council"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_563",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which UN agency designates World Heritage Sites?",
+  "options": [
+   "UNICEF",
+   "UNEP",
+   "UNDP",
+   "UNESCO"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_564",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "BIMSTEC brings together countries around which bay?",
+  "options": [
+   "The Bay of Biscay",
+   "The Bay of Bengal",
+   "The Gulf of Aden",
+   "The Persian Gulf"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_565",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The Paris Agreement, adopted in 2015, primarily addresses which global issue?",
+  "options": [
+   "Refugee protection",
+   "Nuclear disarmament",
+   "Climate change",
+   "International trade disputes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_566",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "India's Exclusive Economic Zone extends how far from its coastal baseline?",
+  "options": [
+   "350 nautical miles",
+   "200 nautical miles",
+   "12 nautical miles",
+   "24 nautical miles"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_567",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which international convention is often called the 'constitution for the oceans'?",
+  "options": [
+   "The Ramsar Convention",
+   "The Chicago Convention",
+   "The UN Convention on the Law of the Sea",
+   "The Basel Convention"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_568",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which Indian ministry is responsible for the Directorate General of Shipping?",
+  "options": [
+   "The Ministry of External Affairs",
+   "The Ministry of Defence",
+   "The Ministry of Civil Aviation",
+   "The Ministry of Ports, Shipping and Waterways"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_569",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which organisation is responsible for India's civilian space programme?",
+  "options": [
+   "ISRO",
+   "BARC",
+   "CSIR",
+   "DRDO"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_570",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "A semiconductor fabrication plant is commonly referred to by which short name?",
+  "options": [
+   "A fab",
+   "A foundry press",
+   "A mill",
+   "A forge"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_571",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which Indian agency is the national nodal body for responding to computer security incidents?",
+  "options": [
+   "C-DAC",
+   "NIC",
+   "CERT-In",
+   "TRAI"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_572",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "India's law governing the processing of digital personal data was enacted in which year?",
+  "options": [
+   "2019",
+   "2016",
+   "2021",
+   "2023"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_573",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which Indian law governs the termination of pregnancy?",
+  "options": [
+   "The Juvenile Justice Act",
+   "The Surrogacy Regulation Act",
+   "The Medical Termination of Pregnancy Act",
+   "The Mental Healthcare Act"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_574",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The Rights of Persons with Disabilities Act, which expanded the list of recognised disabilities, was passed in which year?",
+  "options": [
+   "2020",
+   "2016",
+   "2009",
+   "1995"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_575",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which Indian legislation is the principal law regulating road transport and traffic offences?",
+  "options": [
+   "The Motor Vehicles Act",
+   "The Carriage by Road Act",
+   "The Control of National Highways Act",
+   "The Indian Railways Act"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_576",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The 'Good Samaritan' protections in Indian law are meant to encourage bystanders to do what?",
+  "options": [
+   "Report financial fraud",
+   "Testify in criminal trials",
+   "Help road accident victims",
+   "Donate organs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_577",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The FIFA World Cup expanded to how many teams from the 2026 edition?",
+  "options": [
+   "40",
+   "32",
+   "48",
+   "64"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_578",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The 2026 FIFA World Cup is being co-hosted by the United States, Canada and which other country?",
+  "options": [
+   "Jamaica",
+   "Mexico",
+   "Costa Rica",
+   "Brazil"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_579",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which body governs cricket worldwide?",
+  "options": [
+   "The BCCI",
+   "FIFA",
+   "The Asian Cricket Council",
+   "The International Cricket Council"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_580",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which document serves as the official identity and service record of an Indian merchant navy seafarer?",
+  "options": [
+   "The Seafarer Identity Passbook",
+   "The Mariner's Logbook",
+   "The Maritime Service Licence",
+   "The Continuous Discharge Certificate"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_581",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Under India's IT Rules, a significant social media intermediary must appoint which India-based officer to handle user complaints?",
+  "options": [
+   "A Nodal Content Manager",
+   "A Chief Compliance Auditor",
+   "A Resident Grievance Officer",
+   "A Data Protection Officer"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_582",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The Gulf of Oman opens westward into the Strait of Hormuz and eastward into which larger sea?",
+  "options": [
+   "The Andaman Sea",
+   "The Caspian Sea",
+   "The Red Sea",
+   "The Arabian Sea"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_583",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which notification regulates construction and development activity along India's coastline?",
+  "options": [
+   "The Marine Fisheries Regulation Act",
+   "The Coastal Regulation Zone notification",
+   "The Island Protection Zone Order",
+   "The Wetland Conservation Rules"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_584",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which propulsion system does the BrahMos missile use during its cruise phase?",
+  "options": [
+   "A turbofan",
+   "A ramjet",
+   "A solid rocket motor",
+   "A pulse detonation engine"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_585",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Who is eligible to be appointed Chairperson of the National Human Rights Commission?",
+  "options": [
+   "A former Chief Justice of India or a former Supreme Court judge",
+   "A sitting High Court Chief Justice",
+   "A former Attorney General of India",
+   "Any retired civil servant of Secretary rank"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_586",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The Special Intensive Revision exercise carried out by the Election Commission deals with what?",
+  "options": [
+   "Electoral rolls",
+   "Polling booth construction",
+   "Election expenditure audits",
+   "Party symbol allotment"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_587",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Who is qualified to be registered as a voter in an Indian parliamentary constituency?",
+  "options": [
+   "Any citizen of India who holds a valid Indian passport",
+   "Any income-tax payer aged 18 or above residing in India",
+   "A citizen of India aged 18 or above and ordinarily resident there",
+   "Any person aged 21 or above who is ordinarily resident there"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_588",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Ladakh was constituted as a separate Union Territory in which year?",
+  "options": [
+   "2017",
+   "2021",
+   "2019",
+   "2014"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_589",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which hills in Jammu are home to the Shri Mata Vaishno Devi shrine?",
+  "options": [
+   "The Pir Panjal range",
+   "The Trikuta hills",
+   "The Shivalik hills",
+   "The Dhauladhar range"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_590",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which US office leads trade negotiations and trade enforcement actions for the United States?",
+  "options": [
+   "The Securities and Exchange Commission",
+   "The Federal Reserve",
+   "The United States Trade Representative",
+   "The Department of Commerce alone"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_591",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "A data centre's electricity demand is most directly driven by which two needs?",
+  "options": [
+   "Water treatment and landscaping",
+   "Running servers and cooling them",
+   "Employee transport and catering",
+   "Lighting and security"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_592",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "BrahMos missiles fitted on Indian warships are primarily designed to strike what?",
+  "options": [
+   "Submarines operating deep beneath the ocean surface",
+   "Incoming ballistic missiles during their terminal phase",
+   "Reconnaissance satellites orbiting in low Earth orbit",
+   "Surface targets such as ships and land installations"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_easy_593",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The annual Rath Yatra chariot festival is most famously associated with which city?",
+  "options": [
+   "Dwarka",
+   "Madurai",
+   "Puri",
+   "Varanasi"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_594",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Solar and wind power are described as 'intermittent' because they depend on what?",
+  "options": [
+   "Government subsidies",
+   "Transmission line voltage",
+   "Weather and time of day",
+   "The price of coal"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_595",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The term 'Indo-Pacific' refers to the combined region of which two oceans?",
+  "options": [
+   "The Pacific Ocean and the Arctic Ocean",
+   "The Atlantic Ocean and the Southern Ocean",
+   "The Indian Ocean and the Pacific Ocean",
+   "The Indian Ocean and the Atlantic Ocean"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_596",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The southwest monsoon normally arrives first over which Indian state?",
+  "options": [
+   "West Bengal",
+   "Odisha",
+   "Kerala",
+   "Gujarat"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_597",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "An FIR in Indian criminal procedure is registered at which stage?",
+  "options": [
+   "Only after a magistrate's order",
+   "When information about a cognizable offence is received",
+   "After the charge sheet is filed",
+   "At the conclusion of the trial"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_598",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Reservation for Other Backward Classes in central government jobs and education is set at what percentage?",
+  "options": [
+   "27%",
+   "15%",
+   "33%",
+   "22.5%"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_599",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Who formally appoints the Secretary-General of the United Nations?",
+  "options": [
+   "The General Assembly, on the Security Council's recommendation",
+   "The International Court of Justice, by a judicial order",
+   "The Economic and Social Council, by a two-thirds majority",
+   "The Security Council, acting alone on its own authority"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_600",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The Atal Setu, India's longest sea bridge, connects Mumbai to which area?",
+  "options": [
+   "Navi Mumbai",
+   "Alibaug",
+   "Thane",
+   "Pune"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_601",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Under India's digital personal data law, a person whose data is processed is called what?",
+  "options": [
+   "A Data Subject",
+   "A Data Owner",
+   "A Data Principal",
+   "A Data Custodian"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_602",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which central authority in India can act against misleading advertisements?",
+  "options": [
+   "The Press Council of India",
+   "The Central Consumer Protection Authority",
+   "The Advertising Standards Council of India",
+   "The Competition Commission of India"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_603",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which Indian agency promotes the export of processed food and agricultural products?",
+  "options": [
+   "ICAR",
+   "APEDA",
+   "NABARD",
+   "FSSAI"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_604",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The Gulf of Aden lies between Yemen and which continent's coastline?",
+  "options": [
+   "Asia Minor",
+   "Europe",
+   "Africa",
+   "Australia"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_605",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Gaganyaan is India's mission to do what?",
+  "options": [
+   "Land a robotic rover on the surface of planet Mars",
+   "Place a large solar observatory beyond Earth's orbit",
+   "Send Indian astronauts to space aboard an Indian craft",
+   "Build a permanently crewed research base on the Moon"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_606",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The Indus Waters Treaty governs river sharing between India and which country?",
+  "options": [
+   "Pakistan",
+   "China",
+   "Bangladesh",
+   "Nepal"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_607",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Delimitation in the Indian electoral context refers to what?",
+  "options": [
+   "Limiting campaign spending",
+   "Redrawing the boundaries of constituencies",
+   "Restricting the number of candidates",
+   "Capping the term of legislators"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_608",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "What does an 'IPO' allow a company to do?",
+  "options": [
+   "Convert debt into government bonds",
+   "Offer its shares to the public for the first time",
+   "Merge with a competitor",
+   "Buy back its own shares"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_609",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Which two are India's principal stock exchanges?",
+  "options": [
+   "The NSE and the BSE",
+   "The MCX and the NCDEX",
+   "The RBI and SEBI",
+   "The NSDL and the CDSL"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_easy_610",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Ayushman Bharat's health insurance component primarily provides what?",
+  "options": [
+   "Monthly cash transfers to households for medical expenses",
+   "Free medicines dispensed at all registered private pharmacies",
+   "Cashless hospital treatment up to an annual cover per family",
+   "Partial subsidy on premiums for private health insurance"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_611",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Indian citizenship at the commencement of the Constitution is dealt with in which Part?",
+  "options": [
+   "Part I",
+   "Part III",
+   "Part II",
+   "Part IV"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_easy_612",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "ASEAN is a grouping of countries in which region?",
+  "options": [
+   "West Asia",
+   "Southeast Asia",
+   "South Asia",
+   "Central Asia"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_613",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "Chandrayaan-3 achieved a soft landing near which region of the Moon?",
+  "options": [
+   "The Sea of Tranquility",
+   "The south pole",
+   "The equator",
+   "The far side highlands"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_easy_614",
+  "category": "current_affairs",
+  "difficulty": 1,
+  "question": "The Rath Yatra at Puri involves pulling chariots carrying deities including which principal deity?",
+  "options": [
+   "Ranganatha",
+   "Jagannath",
+   "Venkateswara",
+   "Vitthal"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_604",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Under the Information Technology Act, safe harbour protection for intermediaries that host third-party content comes from which section?",
+  "options": [
+   "Section 66A",
+   "Section 79",
+   "Section 43A",
+   "Section 69A"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_605",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The doctrine of 'basic structure', limiting Parliament's amending power, was laid down in which case?",
+  "options": [
+   "Golaknath v. State of Punjab",
+   "Kesavananda Bharati v. State of Kerala",
+   "Maneka Gandhi v. Union of India",
+   "Minerva Mills v. Union of India"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_606",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Under the Constitution, who has the power to create or abolish a State Legislative Council?",
+  "options": [
+   "The Governor, acting on the advice of the state cabinet",
+   "Parliament, on a resolution of the state assembly",
+   "The state legislative assembly, acting entirely on its own",
+   "The President, by issuing a special proclamation"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_607",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Election Commission's power to superintend and control elections flows from which Article?",
+  "options": [
+   "Article 324",
+   "Article 326",
+   "Article 329",
+   "Article 325"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_608",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "A proclamation of President's Rule in a state must ordinarily be approved by Parliament within what period?",
+  "options": [
+   "One year",
+   "Six months",
+   "Two months",
+   "Fourteen days"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_609",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The 'Right to Privacy' was affirmed as a fundamental right by the Supreme Court in which judgment?",
+  "options": [
+   "Shreya Singhal v. Union of India",
+   "Navtej Singh Johar v. Union of India",
+   "K.S. Puttaswamy v. Union of India",
+   "Indra Sawhney v. Union of India"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_610",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Under the SARFAESI Act, a secured creditor issues a demand notice to a defaulting borrower under which section?",
+  "options": [
+   "Section 5",
+   "Section 13(2)",
+   "Section 29",
+   "Section 17"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_611",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "What is the minimum period a borrower gets to repay after a SARFAESI demand notice before the lender can take possession?",
+  "options": [
+   "180 days",
+   "90 days",
+   "30 days",
+   "60 days"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_612",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Insolvency and Bankruptcy Code prescribes what outer time limit for completing a corporate insolvency resolution process?",
+  "options": [
+   "365 days",
+   "180 days",
+   "330 days",
+   "270 days"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_613",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which index does the RBI primarily target under its inflation-targeting framework?",
+  "options": [
+   "Index of Industrial Production",
+   "Wholesale Price Index",
+   "GDP deflator",
+   "Consumer Price Index"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_614",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's inflation-targeting framework sets a target of 4% with a tolerance band of what?",
+  "options": [
+   "Plus or minus 2 percentage points",
+   "Plus or minus 3 percentage points",
+   "Plus or minus 0.5 percentage point",
+   "Plus or minus 1 percentage point"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_615",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which scheme offers financial incentives to manufacturers based on incremental sales to boost domestic production?",
+  "options": [
+   "The Production Linked Incentive scheme",
+   "The National Manufacturing Policy",
+   "The Startup India initiative",
+   "The Make in India mission"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_616",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Malabar naval exercise is conducted by the navies of which four countries?",
+  "options": [
+   "India, the United States, Japan and Australia",
+   "India, Singapore, Indonesia and Thailand",
+   "India, Russia, China and Brazil",
+   "India, France, the United Kingdom and Germany"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_617",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which organisation's dispute settlement body handles trade disputes between member countries?",
+  "options": [
+   "The OECD",
+   "The International Monetary Fund",
+   "The World Trade Organization",
+   "The World Bank"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_618",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The International Court of Justice, the principal judicial organ of the UN, sits in which city?",
+  "options": [
+   "New York",
+   "Geneva",
+   "The Hague",
+   "Vienna"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_619",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which international task force sets standards against money laundering and terrorist financing?",
+  "options": [
+   "The Bank for International Settlements",
+   "The Egmont Group",
+   "The Financial Action Task Force",
+   "The Financial Stability Board"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_620",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Operation Sindoor, referenced in Indian defence discussions, is associated with which neighbouring country?",
+  "options": [
+   "Bangladesh",
+   "China",
+   "Myanmar",
+   "Pakistan"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_621",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which regime controls the export of missile technology and was joined by India in 2016?",
+  "options": [
+   "The Wassenaar Arrangement",
+   "The Missile Technology Control Regime",
+   "The Australia Group",
+   "The Nuclear Suppliers Group"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_622",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Shanghai Cooperation Organisation was founded primarily to address which concern?",
+  "options": [
+   "Regional security and counter-terrorism",
+   "Maritime trade tariffs in the Indian Ocean",
+   "Joint civilian space exploration programmes",
+   "Monetary union among member economies"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_623",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India and Turkey's relations have been strained partly by Turkey's position on which issue?",
+  "options": [
+   "Tibet",
+   "Taiwan",
+   "Kashmir",
+   "The South China Sea"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_624",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's semiconductor manufacturing push is coordinated under which mission?",
+  "options": [
+   "The National Supercomputing Mission",
+   "The National Quantum Mission",
+   "The India Semiconductor Mission",
+   "The Digital India Mission"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_625",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Aditya-L1 mission was placed in a halo orbit around which point?",
+  "options": [
+   "The Sun-Earth Lagrange point L1",
+   "The Sun-Earth Lagrange point L2",
+   "The Moon's south pole",
+   "A geostationary transfer orbit"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_626",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which reactor type forms the mainstay of India's current nuclear power fleet?",
+  "options": [
+   "Pressurised Water Reactors",
+   "Fast Breeder Reactors",
+   "Pressurised Heavy Water Reactors",
+   "Boiling Water Reactors"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_627",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The third stage of India's nuclear programme is designed to use which fuel?",
+  "options": [
+   "Plutonium-239",
+   "Enriched uranium",
+   "Thorium",
+   "Deuterium"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_628",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Green hydrogen is distinguished from other forms of hydrogen by what feature of its production?",
+  "options": [
+   "Steam reforming of natural gas",
+   "Extraction from underground reservoirs",
+   "Electrolysis powered by renewable energy",
+   "Coal gasification with carbon capture"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_629",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "An 'agentic' AI system is one that can primarily do what?",
+  "options": [
+   "Encrypt data end to end across untrusted networks",
+   "Generate high-resolution images from short text prompts",
+   "Compress large language models to run on small devices",
+   "Take multi-step actions towards a goal with limited human input"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_630",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Oil flowing through the Strait of Hormuz is equivalent to roughly what share of global petroleum liquids consumption?",
+  "options": [
+   "About two-thirds",
+   "About half",
+   "About a twentieth",
+   "About a fifth"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_631",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Strait of Hormuz lies between Iran and which other country?",
+  "options": [
+   "Saudi Arabia",
+   "Qatar",
+   "Yemen",
+   "Oman"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_632",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "A ship registered in a country other than that of its owners is said to be sailing under what?",
+  "options": [
+   "A charter flag",
+   "A bareboat licence",
+   "A cabotage permit",
+   "A flag of convenience"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_633",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which UN agency sets global standards for the safety and security of shipping?",
+  "options": [
+   "The International Labour Organization",
+   "The World Customs Organization",
+   "The International Transport Forum",
+   "The International Maritime Organization"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_634",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Graded Response Action Plan is invoked to tackle which problem?",
+  "options": [
+   "Drought in Marathwada",
+   "Air pollution in the Delhi-NCR region",
+   "Coastal erosion in Kerala",
+   "Urban flooding in Mumbai"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_635",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Under Indian law, terminating a pregnancy beyond 24 weeks generally requires approval from what?",
+  "options": [
+   "The state health minister",
+   "Two registered pharmacists",
+   "A medical board",
+   "A district court"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_636",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The National Trust Act of 1999 provides for the welfare of persons with which conditions?",
+  "options": [
+   "Autism, cerebral palsy, mental retardation and multiple disabilities",
+   "Leprosy and tuberculosis",
+   "Visual and hearing impairment only",
+   "Chronic kidney disease"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_637",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The principle of 'parens patriae', sometimes invoked by Indian courts, refers to the state acting as what?",
+  "options": [
+   "Prosecutor of last resort",
+   "Guardian of those unable to protect themselves",
+   "Arbiter between two states",
+   "Custodian of public property"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_638",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Democratic Republic of Congo, a debutant at the expanded FIFA World Cup, is located in which region of Africa?",
+  "options": [
+   "Southern Africa",
+   "Central Africa",
+   "The Horn of Africa",
+   "West Africa"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_639",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which Article of the Constitution provides for a Gram Sabha in every village?",
+  "options": [
+   "Article 40",
+   "Article 243B",
+   "Article 243G",
+   "Article 243A"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_640",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Tejas Mk1A is generally classified as belonging to which generation of fighter aircraft?",
+  "options": [
+   "Fifth generation",
+   "4.5 generation",
+   "Third generation",
+   "Sixth generation"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_641",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Preparation of electoral rolls for parliamentary and assembly constituencies is governed principally by which law?",
+  "options": [
+   "The Election Commission (Conditions of Service) Act, 1991",
+   "The Representation of the People Act, 1951",
+   "The Delimitation Act, 2002",
+   "The Representation of the People Act, 1950"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_642",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "An appeal against an Electoral Registration Officer's decision on a voter claim lies to which authority?",
+  "options": [
+   "The District Magistrate or an officer designated by the Election Commission",
+   "The State Election Commission",
+   "The High Court",
+   "The Chief Secretary"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_643",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Demands for including Ladakh in the Sixth Schedule are aimed at securing what?",
+  "options": [
+   "A separate high court for the region",
+   "Exemption from central taxation",
+   "Reserved seats in the Rajya Sabha",
+   "Autonomous councils with powers over land and local customs"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_644",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Sixth Schedule of the Constitution currently applies to tribal areas in which states?",
+  "options": [
+   "Rajasthan, Gujarat, Maharashtra and Madhya Pradesh",
+   "Assam, Meghalaya, Tripura and Mizoram",
+   "Jharkhand, Odisha, Chhattisgarh and Bihar",
+   "Nagaland, Manipur, Sikkim and Arunachal Pradesh"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_645",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Under which Article was the special status of Jammu and Kashmir effectively abrogated in 2019?",
+  "options": [
+   "Article 35A",
+   "Article 356",
+   "Article 371",
+   "Article 370"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_646",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Section 301 of US trade law allows the United States to do what?",
+  "options": [
+   "Take action against foreign trade practices deemed unfair",
+   "Block foreign acquisitions on national security grounds",
+   "Restrict outbound investment in strategic sectors",
+   "Impose sanctions on individuals for human rights abuses"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_647",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "A tariff imposed to counter subsidies given by an exporting country's government is called what?",
+  "options": [
+   "An anti-dumping duty",
+   "A safeguard duty",
+   "A retaliatory tariff",
+   "A countervailing duty"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_648",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Under WTO rules, the principle requiring a member to extend the same trade terms to all members is called what?",
+  "options": [
+   "Special and differential treatment",
+   "Most Favoured Nation treatment",
+   "National treatment",
+   "Reciprocity"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_649",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's second phase of semiconductor incentives is aimed principally at building what?",
+  "options": [
+   "A national fibre-optic backbone",
+   "Rare-earth mining capacity",
+   "Public cloud data centres for government use",
+   "A domestic chip manufacturing and packaging ecosystem"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_650",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "In chip manufacturing, 'ATMP' refers to which stage?",
+  "options": [
+   "Advanced thermal material processing",
+   "Assembly, testing, marking and packaging",
+   "Analog transistor mask patterning",
+   "Automated ticket management protocol"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_651",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which Indian shipyard is the principal builder of the Navy's guided-missile destroyers?",
+  "options": [
+   "Mazagon Dock Shipbuilders",
+   "Hindustan Shipyard",
+   "Cochin Shipyard",
+   "Garden Reach Shipbuilders and Engineers"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_652",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The prefix 'INS' before an Indian warship's name stands for what?",
+  "options": [
+   "Indian Nautical Squadron",
+   "Indian Naval Ship",
+   "Indian National Ship",
+   "Indian Navy Service"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_653",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Ravidassia tradition draws primarily on the teachings of which saint-poet?",
+  "options": [
+   "Namdev",
+   "Guru Ravidas",
+   "Kabir",
+   "Tukaram"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_654",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Guru Ravidas's devotional verses are included in which scripture?",
+  "options": [
+   "The Guru Granth Sahib",
+   "The Ramcharitmanas",
+   "The Vachanas",
+   "The Dasam Granth"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_655",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "A long-term contract under which a producer sells electricity to a buyer at an agreed price is called what?",
+  "options": [
+   "A feed-in guarantee",
+   "A capacity auction",
+   "A power purchase agreement",
+   "A renewable energy certificate"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_656",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Round-the-clock renewable power supply typically requires pairing generation with what?",
+  "options": [
+   "Demand-side tariffs",
+   "Higher transmission voltage",
+   "Energy storage",
+   "Carbon offset purchases"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_657",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's 'SAGAR' vision relates to cooperation in which domain?",
+  "options": [
+   "Space launch services",
+   "The maritime and Indian Ocean region",
+   "Higher education exchange",
+   "Cross-border river water sharing"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_658",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The Indian Ocean Rim Association brings together countries sharing what?",
+  "options": [
+   "Nuclear energy programmes",
+   "A coastline on the Indian Ocean",
+   "A common currency peg",
+   "Membership of the Commonwealth"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_659",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which Indian city hosts the largest concentration of data centre capacity?",
+  "options": [
+   "Jaipur",
+   "Lucknow",
+   "Mumbai",
+   "Guwahati"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_660",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The India Meteorological Department classifies a season's rainfall as 'normal' when it falls within what range of the long period average?",
+  "options": [
+   "90% to 110%",
+   "98% to 102%",
+   "96% to 104%",
+   "85% to 115%"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_661",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "El Nino refers to the unusual warming of surface waters in which ocean?",
+  "options": [
+   "The equatorial Pacific",
+   "The equatorial Atlantic",
+   "The Southern Ocean",
+   "The northern Indian Ocean"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_662",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "A cloudburst is officially defined in India as rainfall exceeding roughly how much in one hour over a small area?",
+  "options": [
+   "25 mm",
+   "200 mm",
+   "100 mm",
+   "50 mm"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_663",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which Supreme Court judgment held that registration of an FIR is mandatory when information discloses a cognizable offence?",
+  "options": [
+   "Joginder Kumar v. State of Uttar Pradesh",
+   "Arnesh Kumar v. State of Bihar",
+   "Lalita Kumari v. Government of Uttar Pradesh",
+   "D.K. Basu v. State of West Bengal"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_664",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "'Secondary victimisation' refers to further harm suffered by a victim from what source?",
+  "options": [
+   "A repeat offence committed later by the very same accused",
+   "Loss of income and employment in the years after the crime",
+   "The response of institutions and society during the justice process",
+   "Physical injuries that only become apparent much later"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_665",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "A report filed by police stating that no case is made out after investigation is commonly called what?",
+  "options": [
+   "A closure report",
+   "An interim charge sheet",
+   "A committal order",
+   "A case diary"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_666",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The concept of the 'creamy layer' excludes from reservation benefits those who fall into which group?",
+  "options": [
+   "Those with government jobs only",
+   "Members living in urban areas",
+   "The relatively advanced members of a backward class",
+   "First-generation graduates"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_667",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "The UN Secretary-General serves a term of how many years, renewable once by convention?",
+  "options": [
+   "Five",
+   "Four",
+   "Six",
+   "Three"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_668",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "How many members of the UN Security Council hold permanent seats with veto power?",
+  "options": [
+   "Ten",
+   "Fifteen",
+   "Seven",
+   "Five"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_669",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which agency is the planning authority for the Navi Mumbai region?",
+  "options": [
+   "MMRDA",
+   "BMC",
+   "CIDCO",
+   "MHADA"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_670",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "A 'greenfield' city project refers to development on what kind of land?",
+  "options": [
+   "Previously undeveloped land",
+   "Land within an existing city core",
+   "Reclaimed industrial land",
+   "Forest land cleared for housing"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_671",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Under India's Digital Personal Data Protection Act, an entity that determines the purpose and means of processing is called what?",
+  "options": [
+   "A Data Fiduciary",
+   "A Data Processor",
+   "A Data Controller",
+   "A Data Steward"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_672",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's data protection law requires verifiable consent from whom before processing a child's personal data?",
+  "options": [
+   "A district magistrate",
+   "The child alone",
+   "A school authority",
+   "A parent or lawful guardian"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_673",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Under India's Digital Personal Data Protection Act, a 'child' means a person below what age?",
+  "options": [
+   "18 years",
+   "16 years",
+   "13 years",
+   "14 years"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_674",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "'Surrogate advertising' refers to promoting a restricted product by advertising what instead?",
+  "options": [
+   "A different product sharing the same brand name",
+   "An unbranded generic version",
+   "A charitable cause",
+   "A competitor's product"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_675",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Under India's consumer law, a celebrity endorsing a misleading advertisement can face what consequence?",
+  "options": [
+   "Loss of citizenship rights",
+   "A penalty and a ban on making endorsements",
+   "Automatic disqualification from public office",
+   "Imprisonment without fine"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_676",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's buffalo meat exports are commonly referred to in trade by which term?",
+  "options": [
+   "Mutton",
+   "Carabeef",
+   "Venison",
+   "Veal"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_677",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "US Central Command's area of responsibility principally covers which region?",
+  "options": [
+   "Europe and the Atlantic",
+   "Sub-Saharan Africa",
+   "The Middle East and Central Asia",
+   "East Asia and the Pacific"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_678",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's anti-piracy naval deployments have focused on which waters?",
+  "options": [
+   "The Baltic Sea",
+   "The Caribbean Sea",
+   "The South China Sea",
+   "The Gulf of Aden and the western Indian Ocean"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_679",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "ISRO officially refers to an Indian astronaut on the Gaganyaan mission by which term?",
+  "options": [
+   "Gaganyatri",
+   "Astronavik",
+   "Taikonaut",
+   "Cosmonaut"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_680",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which institution brokered the Indus Waters Treaty?",
+  "options": [
+   "The Commonwealth",
+   "The Asian Development Bank",
+   "The United Nations",
+   "The World Bank"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_681",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Delimitation exercises in India are carried out by a commission constituted under what?",
+  "options": [
+   "An Act of Parliament",
+   "A resolution of the Election Commission",
+   "A Supreme Court direction",
+   "A Presidential ordinance"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_682",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "A mutual fund's 'net asset value' represents what?",
+  "options": [
+   "The fund's annual profit",
+   "The dividend paid per unit",
+   "The total fees charged by the fund",
+   "The per-unit market value of the fund's holdings"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_683",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which SEBI-regulated intermediary holds securities in electronic form on behalf of investors?",
+  "options": [
+   "A depository",
+   "A clearing member",
+   "A merchant banker",
+   "A portfolio manager"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_684",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Insider trading involves dealing in securities on the basis of what?",
+  "options": [
+   "Analyst recommendations",
+   "Publicly announced quarterly results",
+   "Historical price charts",
+   "Unpublished price-sensitive information"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_685",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Health and Wellness Centres renamed under Ayushman Bharat deliver which kind of care?",
+  "options": [
+   "Organ transplant services",
+   "Tertiary cancer care",
+   "Specialised cardiac surgery",
+   "Comprehensive primary health care"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_686",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which Indian law governs the acquisition and termination of citizenship after 1950?",
+  "options": [
+   "The Citizenship Act, 1955",
+   "The Registration of Foreigners Act, 1939",
+   "The Passports Act, 1967",
+   "The Foreigners Act, 1946"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_medium_687",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's Constitution provides for which kind of citizenship?",
+  "options": [
+   "Separate state and union citizenship",
+   "Citizenship by province of birth",
+   "Single citizenship for the whole country",
+   "Dual citizenship for all citizens"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_688",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's National Education Policy announced in 2020 proposed which school structure?",
+  "options": [
+   "8+4+2",
+   "10+2",
+   "6+4+2+2",
+   "5+3+3+4"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_689",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which law makes free and compulsory education a right for children aged 6 to 14?",
+  "options": [
+   "The Juvenile Justice Act, 2015",
+   "The National Commission for Protection of Child Rights Act, 2005",
+   "The Child Labour (Prohibition and Regulation) Act, 1986",
+   "The Right to Education Act, 2009"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_medium_690",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's engagement with ASEAN is guided by which policy?",
+  "options": [
+   "The Look West Policy",
+   "The Connect Central Asia Policy",
+   "The Act East Policy",
+   "The Neighbourhood First Policy"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_691",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which grouping did BRICS expand to include new members from 2024 onwards?",
+  "options": [
+   "Countries including Argentina, Bangladesh and Kenya",
+   "Countries including Mexico, Nigeria and Vietnam",
+   "Countries including Egypt, Ethiopia, Iran and the UAE",
+   "Countries including Turkey, Indonesia and Malaysia"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_692",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's polar satellite launch vehicle is best known for launching satellites into which orbit?",
+  "options": [
+   "Lunar transfer orbit",
+   "Highly elliptical Molniya orbit",
+   "Sun-synchronous polar orbit",
+   "Geostationary orbit"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_693",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "NavIC is India's system for providing what?",
+  "options": [
+   "Deep space communication",
+   "Regional satellite navigation",
+   "Weather forecasting",
+   "Earth observation imagery"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_medium_694",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "Which fund requires parliamentary authorisation before money can be withdrawn from it?",
+  "options": [
+   "The National Calamity Fund",
+   "The Contingency Fund of India",
+   "The Consolidated Fund of India",
+   "The Public Account of India"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_medium_695",
+  "category": "current_affairs",
+  "difficulty": 2,
+  "question": "India's national regulator for approving new drugs and clinical trials is known by which abbreviation?",
+  "options": [
+   "DBT",
+   "NPPA",
+   "ICMR",
+   "CDSCO"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_305",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Under the SARFAESI Act, a borrower aggrieved by a secured creditor's enforcement action may appeal to the Debt Recovery Tribunal under which section?",
+  "options": [
+   "Section 17",
+   "Section 18",
+   "Section 14",
+   "Section 13(4)"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_306",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which authority under the SARFAESI Act assists a secured creditor in taking physical possession of a secured asset?",
+  "options": [
+   "The Registrar of Companies",
+   "The District Magistrate or Chief Metropolitan Magistrate",
+   "The National Company Law Tribunal",
+   "The Debt Recovery Tribunal"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_307",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Article makes the law declared by the Supreme Court binding on all courts within India?",
+  "options": [
+   "Article 144",
+   "Article 142",
+   "Article 141",
+   "Article 137"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_308",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The blocking of online content under Section 69A is governed by rules notified in which year?",
+  "options": [
+   "2009",
+   "2021",
+   "2011",
+   "2000"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_309",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Supreme Court judgment struck down Section 66A of the Information Technology Act?",
+  "options": [
+   "Anuradha Bhasin v. Union of India",
+   "Shreya Singhal v. Union of India",
+   "K.S. Puttaswamy v. Union of India",
+   "Faheema Shirin v. State of Kerala"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_310",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which body is empowered to recommend the transfer of High Court judges in India?",
+  "options": [
+   "The Union Cabinet",
+   "The National Judicial Appointments Commission",
+   "The Department of Justice",
+   "The Supreme Court collegium"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_311",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The concept of an 'intermediary' is defined in which section of the Information Technology Act?",
+  "options": [
+   "Section 69A",
+   "Section 2(1)(w)",
+   "Section 43A",
+   "Section 79"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_312",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "India's Exclusive Economic Zone rights were codified domestically in an Act passed in which year?",
+  "options": [
+   "1976",
+   "1982",
+   "1993",
+   "1958"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_313",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Under UNCLOS, the right of ships to pass through a strait used for international navigation without impediment is called what?",
+  "options": [
+   "Transit passage",
+   "Right of approach",
+   "Freedom of navigation",
+   "Innocent passage"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_314",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Indian Act principally governs the registration, safety and crewing of merchant ships?",
+  "options": [
+   "The Coasting Vessels Act, 1838",
+   "The Major Port Authorities Act, 2021",
+   "The Indian Ports Act, 1908",
+   "The Merchant Shipping Act, 1958"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_315",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Prototype Fast Breeder Reactor being commissioned in India is located at which site?",
+  "options": [
+   "Kalpakkam",
+   "Kakrapar",
+   "Tarapur",
+   "Kudankulam"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_316",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Indian organisation operates the Kalpakkam fast breeder programme?",
+  "options": [
+   "NTPC",
+   "BARC",
+   "Bhavini",
+   "NPCIL"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_317",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Missile Technology Control Regime restricts the transfer of missiles capable of delivering a 500 kg payload beyond what range?",
+  "options": [
+   "1,000 km",
+   "150 km",
+   "500 km",
+   "300 km"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_318",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which article of the WTO's GATT permits members to impose restrictions on security grounds?",
+  "options": [
+   "Article XI",
+   "Article XX",
+   "Article XXIV",
+   "Article XXI"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_319",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The New Development Bank's first president was from which country?",
+  "options": [
+   "India",
+   "China",
+   "Brazil",
+   "Russia"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_320",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Under the Paris Agreement, the pledges that countries submit outlining their climate action are known as what?",
+  "options": [
+   "Nationally Determined Contributions",
+   "Intended Emission Caps",
+   "Common but Differentiated Targets",
+   "Kyoto Commitments"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_321",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which body administers India's Carbon Credit Trading Scheme?",
+  "options": [
+   "The Central Electricity Regulatory Commission",
+   "The Ministry of Environment, Forest and Climate Change",
+   "The Bureau of Energy Efficiency",
+   "NITI Aayog"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_322",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Medical Termination of Pregnancy Act was substantially amended to raise the upper gestational limit for certain categories in which year?",
+  "options": [
+   "2017",
+   "2021",
+   "2019",
+   "2023"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_323",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Under the amended MTP framework, the upper limit for termination for specified categories of women was raised to how many weeks?",
+  "options": [
+   "24 weeks",
+   "22 weeks",
+   "20 weeks",
+   "28 weeks"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_324",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Supreme Court judgment held that unmarried women are entitled to abortion up to 24 weeks on par with married women?",
+  "options": [
+   "Laxmi Mandal v. Deen Dayal Hospital",
+   "Devika Biswas v. Union of India",
+   "Suchita Srivastava v. Chandigarh Administration",
+   "X v. Principal Secretary, Health and Family Welfare, NCT of Delhi"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_325",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Rights of Persons with Disabilities Act, 2016 recognises how many specified disabilities?",
+  "options": [
+   "27",
+   "21",
+   "14",
+   "7"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_326",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Indian scheme provides all-weather road connectivity to eligible unconnected rural habitations?",
+  "options": [
+   "Bharatmala Pariyojana",
+   "Pradhan Mantri Awas Yojana - Gramin",
+   "Setu Bharatam",
+   "Pradhan Mantri Gram Sadak Yojana"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_327",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Article bars a person from being excluded from the electoral roll on grounds of religion, race, caste or sex?",
+  "options": [
+   "Article 15",
+   "Article 325",
+   "Article 16",
+   "Article 326"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_328",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Under the Representation of the People Act, 1951, an election to a House of Parliament can be challenged only by what means?",
+  "options": [
+   "A reference to the President",
+   "A writ petition before the Supreme Court",
+   "An election petition before the High Court",
+   "A complaint to the Election Commission"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_329",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Autonomous District Councils in Sixth Schedule areas are empowered to make laws on which subjects?",
+  "options": [
+   "Defence, foreign affairs and interstate commerce",
+   "Land, forest management, inheritance and social custom",
+   "Currency, banking and insurance regulation",
+   "Railways, national highways and civil aviation"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_330",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which WTO agreement governs the use of anti-dumping measures?",
+  "options": [
+   "The Agreement on Trade-Related Investment Measures",
+   "The Agreement on Safeguards",
+   "The Agreement on Subsidies and Countervailing Measures",
+   "The Agreement on Implementation of Article VI of GATT 1994"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_331",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The WTO's Appellate Body has been unable to hear new appeals in recent years primarily because of what?",
+  "options": [
+   "Withdrawal of developing countries",
+   "A blockage in appointing its members",
+   "A formal amendment removing its powers",
+   "A shortage of funding"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_332",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The smallest feature size a chip fabrication process can reliably print is commonly described using which term?",
+  "options": [
+   "Gate ratio",
+   "Die yield",
+   "Process node",
+   "Wafer pitch"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_333",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Extreme ultraviolet lithography machines used for leading-edge chips are supplied almost exclusively by which company?",
+  "options": [
+   "Lam Research",
+   "Applied Materials",
+   "ASML",
+   "Tokyo Electron"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_334",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Indian naval command is headquartered at Visakhapatnam?",
+  "options": [
+   "The Eastern Naval Command",
+   "The Southern Naval Command",
+   "The Andaman and Nicobar Command",
+   "The Western Naval Command"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_335",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Puri's Jagannath temple is one of the four principal shrines of which pilgrimage circuit?",
+  "options": [
+   "The Shakti Peetha circuit",
+   "The Panch Kedar",
+   "The Char Dham",
+   "The Jyotirlinga circuit"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_336",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "India's renewable purchase obligations require designated consumers to source a minimum share of power from where?",
+  "options": [
+   "Renewable energy sources",
+   "Nuclear generating stations",
+   "State-owned utilities only",
+   "Domestic coal-based plants"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_337",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "India's Information Fusion Centre for the Indian Ocean Region is based at which location?",
+  "options": [
+   "Kochi",
+   "Visakhapatnam",
+   "Port Blair",
+   "Gurugram"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_338",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Indian Ocean Dipole influences the monsoon through temperature differences between which two areas?",
+  "options": [
+   "The western and eastern tropical Indian Ocean",
+   "The Bay of Bengal and the Andaman Sea",
+   "The Indian Ocean and the Southern Ocean",
+   "The Arabian Sea and the Red Sea"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_339",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "India's monsoon 'long period average' rainfall is calculated over what period of the year?",
+  "options": [
+   "June to September",
+   "May to August",
+   "July to October",
+   "April to July"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_340",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which law replaced the Code of Criminal Procedure in India?",
+  "options": [
+   "The Bharatiya Sakshya Adhiniyam",
+   "The Bharatiya Nagarik Suraksha Sanhita",
+   "The Criminal Law Amendment Act",
+   "The Bharatiya Nyaya Sanhita"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_341",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Victim compensation schemes in Indian criminal law are administered principally by which body?",
+  "options": [
+   "The National Human Rights Commission",
+   "State Legal Services Authorities",
+   "The Ministry of Home Affairs",
+   "District Collectors"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_342",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "In camera proceedings in sensitive criminal trials are held for what purpose?",
+  "options": [
+   "To permit trial without a judge",
+   "To speed up the trial",
+   "To allow media livestreaming",
+   "To protect the privacy of the victim and witnesses"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_343",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Supreme Court in Indra Sawhney capped total reservation at what percentage, barring exceptional circumstances?",
+  "options": [
+   "49.5%",
+   "33%",
+   "50%",
+   "60%"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_344",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Reservation in promotion for SCs and STs was subjected to conditions of backwardness and inadequate representation in which judgment?",
+  "options": [
+   "Indra Sawhney v. Union of India",
+   "M. Nagaraj v. Union of India",
+   "E.V. Chinnaiah v. State of Andhra Pradesh",
+   "Ashoka Kumar Thakur v. Union of India"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_345",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Non-permanent members of the UN Security Council are elected for a term of how long?",
+  "options": [
+   "Five years",
+   "One year",
+   "Three years",
+   "Two years"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_346",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The UN Charter provision allowing collective self-defence against an armed attack is contained in which article?",
+  "options": [
+   "Article 2(4)",
+   "Article 51",
+   "Article 42",
+   "Article 39"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_347",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "India's smart cities were selected through what process?",
+  "options": [
+   "A lottery among municipal corporations",
+   "Direct selection by state governments",
+   "Population-based automatic inclusion",
+   "A competitive challenge among nominated cities"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_348",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which body is to be established under India's Digital Personal Data Protection Act to adjudicate breaches?",
+  "options": [
+   "The Data Protection Board of India",
+   "The National Information Commission",
+   "The Data Protection Authority of India",
+   "The Cyber Appellate Tribunal"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_349",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "'Age assurance' requirements on online platforms are aimed primarily at doing what?",
+  "options": [
+   "Preventing minors from accessing unsuitable content or services",
+   "Confirming device ownership",
+   "Verifying tax residency of users",
+   "Authenticating payment instruments"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_350",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Indian law replaced the Consumer Protection Act of 1986?",
+  "options": [
+   "The Essential Commodities Act, 1955",
+   "The Legal Metrology Act, 2009",
+   "The Consumer Protection Act, 2019",
+   "The Consumer Rights Act, 2015"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_351",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "A Geographical Indication tag protects a product that owes its qualities to what?",
+  "options": [
+   "Its patented formula",
+   "Its geographical origin",
+   "Its export volume",
+   "Its manufacturer's brand"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_352",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which multinational naval task force operates against piracy in the waters off Somalia?",
+  "options": [
+   "Task Force 50",
+   "Combined Task Force 151",
+   "Operation Sea Guardian",
+   "NATO Standing Maritime Group 2"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_353",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which ISRO launch vehicle has been human-rated for the Gaganyaan programme?",
+  "options": [
+   "The SSLV",
+   "The GSLV Mk II",
+   "The PSLV",
+   "The LVM3"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_354",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Orders of a Delimitation Commission in India have what legal status?",
+  "options": [
+   "They lapse unless approved by Parliament",
+   "They have the force of law and cannot be questioned in any court",
+   "They may be appealed to the Supreme Court",
+   "They require ratification by state assemblies"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_355",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which constitutional amendment froze the number of Lok Sabha seats allocated to states based on the 1971 census?",
+  "options": [
+   "The 44th Amendment",
+   "The 42nd Amendment",
+   "The 52nd Amendment",
+   "The 61st Amendment"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_356",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which SEBI regulation governs substantial acquisition of shares and takeovers of listed companies?",
+  "options": [
+   "The PIT Regulations",
+   "The SAST Regulations",
+   "The ICDR Regulations",
+   "The LODR Regulations"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_357",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "An appeal against a SEBI order lies to which tribunal?",
+  "options": [
+   "The Telecom Disputes Settlement Tribunal",
+   "The Securities Appellate Tribunal",
+   "The Debt Recovery Appellate Tribunal",
+   "The National Company Law Appellate Tribunal"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_358",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Jan Aushadhi scheme makes medicines affordable primarily by promoting what?",
+  "options": [
+   "Imported branded drugs",
+   "Ayurvedic formulations only",
+   "Insurance-linked drug purchases",
+   "Generic medicines"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_359",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "An Overseas Citizen of India cardholder is denied which of the following rights?",
+  "options": [
+   "The right to take up employment in the private sector",
+   "The right to vote in Indian elections",
+   "The right to enter India without obtaining a visa",
+   "The right to own residential property in India"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_360",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Indian law was enacted to curb malpractice in public recruitment and entrance examinations?",
+  "options": [
+   "The Indian Evidence Act, 1872",
+   "The Public Examinations (Prevention of Unfair Means) Act, 2024",
+   "The Prevention of Corruption Act, 1988",
+   "The Official Secrets Act, 1923"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_361",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The BRICS Contingent Reserve Arrangement is designed to help members deal with what?",
+  "options": [
+   "Long-term infrastructure financing",
+   "Food security emergencies",
+   "Short-term balance of payments pressures",
+   "Climate adaptation costs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_362",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which organisation's members are bound by the principle of consensus-based decision making at its summits, and includes Indonesia, Thailand and Vietnam?",
+  "options": [
+   "SAARC",
+   "The Pacific Islands Forum",
+   "BIMSTEC",
+   "ASEAN"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_363",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Indian launch site hosts the Satish Dhawan Space Centre?",
+  "options": [
+   "Kourou",
+   "Thumba",
+   "Balasore",
+   "Sriharikota"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_364",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "India's first dedicated solar mission carries how many scientific payloads?",
+  "options": [
+   "Four",
+   "Ten",
+   "Two",
+   "Seven"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_365",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Contingency Fund of India is placed at the disposal of which authority?",
+  "options": [
+   "The President",
+   "The Prime Minister",
+   "The Speaker",
+   "The Finance Minister"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "ca_hard_366",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The National Commission for Backward Classes was given constitutional status by which amendment?",
+  "options": [
+   "The 101st Amendment",
+   "The 103rd Amendment",
+   "The 93rd Amendment",
+   "The 102nd Amendment"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_367",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which treaty's dispute resolution mechanism provides for a Neutral Expert and a Court of Arbitration?",
+  "options": [
+   "The Teesta Agreement",
+   "The Mahakali Treaty",
+   "The Indus Waters Treaty",
+   "The Ganges Waters Treaty"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "ca_hard_368",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Permanent Indus Commission is required under the treaty to meet at least how often?",
+  "options": [
+   "Twice a year",
+   "Once a year",
+   "Once every ten years",
+   "Once every five years"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "ca_hard_369",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "The Atal Bhujal Yojana focuses on the sustainable management of which resource?",
+  "options": [
+   "Coastal fisheries",
+   "Solar capacity",
+   "Forest cover",
+   "Groundwater"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "ca_hard_370",
+  "category": "current_affairs",
+  "difficulty": 3,
+  "question": "Which Indian shipyard builds the Navy's Scorpene-class submarines?",
+  "options": [
+   "Goa Shipyard",
+   "Mazagon Dock Shipbuilders",
+   "Garden Reach Shipbuilders and Engineers",
+   "Cochin Shipyard"
+  ],
+  "correct_index": 1
+ }
+]
