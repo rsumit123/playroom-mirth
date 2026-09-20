@@ -1,3 +1,7 @@
+import logging
+import os
+import sys
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -14,6 +18,17 @@ from app.db.seed_words import seed_words
 from app.sockets.server import build_socket_app
 from app.sockets.events import restore_game_states, schedule_restored_states
 from app.services.game_state import cancel_all_timers
+
+# Uvicorn configures its own loggers and nothing else, so everything the app
+# logged - a house player's reasoning, a failed turn - was being dropped on the
+# floor in the container.
+_app_log = logging.getLogger("app")
+if not _app_log.handlers:
+    _handler = logging.StreamHandler(sys.stdout)
+    _handler.setFormatter(logging.Formatter("%(levelname)s:    %(name)s %(message)s"))
+    _app_log.addHandler(_handler)
+    _app_log.setLevel(os.getenv("LOG_LEVEL", "INFO"))
+    _app_log.propagate = False
 
 fastapi_app = FastAPI(title="Charade Chat")
 fastapi_app.add_middleware(
