@@ -32,3 +32,15 @@ describe('seating a model at a poker table', () => {
     expect(screen.getByText(/sign in to play the stronger models/i)).toBeInTheDocument()
   })
 })
+
+describe('what a poker lobby does not ask', () => {
+  it('leaves out rounds, the turn timer and word difficulty', () => {
+    const table = {
+      room: { code: 'AB7K92', max_players: 2, game_type: 'poker', rounds_total: 1, difficulty: 1, turn_seconds: 30 },
+      players: [{ id: 1, display_name: 'Ana', in_game: true }],
+      host_player_id: 1,
+    }
+    render(<Lobby lobby={table} selfPlayerId={1} isSignedIn onAddBot={vi.fn()} />)
+    expect(screen.queryByText('Game Settings')).toBeNull()
+  })
+})

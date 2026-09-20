@@ -97,6 +97,8 @@ export default function Welcome({ onGuest, onGoogleLogin, onHowTo, loadingGuest,
           <span className="badge bg-accent/10 text-accent">Scribble</span>
           <span className="text-slate/30">&middot;</span>
           <span className="badge bg-accent/10 text-accent">Trivia</span>
+          <span className="text-slate/30">&middot;</span>
+          <span className="badge bg-accent/10 text-accent">Poker</span>
         </div>
 
         <div className="w-full space-y-4 max-w-xs">

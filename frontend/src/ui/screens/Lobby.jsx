@@ -193,8 +193,10 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, onInvit
           </div>
         )}
 
-        {/* Settings (host only) */}
-        {isHost && (
+        {/* Settings (host only). A poker table is described by its seats, chips
+            and blinds, chosen before it was created; rounds, a turn timer and a
+            word difficulty mean nothing there. */}
+        {isHost && !isPoker && (
           <div className="card p-5 space-y-4">
             <h2 className="font-semibold">Game Settings</h2>
             <RangeSlider label="Rounds" value={Number(settings.rounds)} min={1} max={gameType === 'trivia' ? 5 : 10}
