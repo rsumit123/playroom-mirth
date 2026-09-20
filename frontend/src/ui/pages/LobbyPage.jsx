@@ -14,7 +14,7 @@ const ROUTE_FOR_GAME = {
 export default function LobbyPage() {
   const navigate = useNavigate()
   const location = useLocation()
-  const { lobby, game, auth, leaveRoom, emitGameStart, startGameSocket, saveRoomSettings, selfPlayerId, ui, roomRestoreStatus, bindLobbyEvents } = useApp()
+  const { lobby, game, auth, leaveRoom, emitGameStart, emitAddPokerBot, startGameSocket, saveRoomSettings, selfPlayerId, ui, roomRestoreStatus, bindLobbyEvents } = useApp()
   const [friends, setFriends] = useState([])
 
   const isJoining = Boolean(ui?.loadingKeys?.join_room)
@@ -99,6 +99,7 @@ export default function LobbyPage() {
       isSignedIn={Boolean(auth?.token)}
       friends={friends}
       onInviteFriend={handleInviteFriend}
+      onAddBot={(tier) => lobby?.room?.code && emitAddPokerBot(lobby.room.code, tier)}
     />
   )
 }

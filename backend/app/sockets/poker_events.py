@@ -19,11 +19,19 @@ from app.models.room import Room
 from app.models.room_player import RoomPlayer
 from app.services import poker
 from app.services.game_state import ROOM_STATES, PLAYER_TO_SID, RoomGameState
+from app.services.poker_ai import seats as house
 
 _logger = logging.getLogger(__name__)
 
 
-async def start_poker_game(sio, db, room: Room, players: list[RoomPlayer], names: dict[int, str]) -> RoomGameState:
+async def start_poker_game(
+    sio,
+    db,
+    room: Room,
+    players: list[RoomPlayer],
+    names: dict[int, str],
+    ai_seats: dict[int, str] | None = None,
+) -> RoomGameState:
     """Seat everyone, deal the first hand, and start the clock."""
     state = RoomGameState(
         room_id=room.id,
@@ -37,6 +45,8 @@ async def start_poker_game(sio, db, room: Room, players: list[RoomPlayer], names
         origin=room.origin or "friends",
     )
     state.poker_names = dict(names)
+    state.poker_seats = dict(ai_seats or {})
+    state.poker_reads = {}
     state.poker = poker.new_table(state.player_order, room.starting_chips, room.small_blind)
     ROOM_STATES[room.code] = state
     room.status = "active"
@@ -52,6 +62,7 @@ async def start_poker_game(sio, db, room: Room, players: list[RoomPlayer], names
 
     await publish(sio, state)
     _arm(sio, state)
+    _nudge_house(sio, state)
     return state
 
 
@@ -100,6 +111,7 @@ def register_poker_handlers(sio) -> None:
 
         await publish(sio, state)
         _arm(sio, state)
+        _nudge_house(sio, state)
         return ack
 
     @sio.on("poker:next_hand")
@@ -151,6 +163,7 @@ async def _clock(sio, state: RoomGameState) -> None:
                 _save_state_lazy(db, state)
         await publish(sio, state)
         _arm(sio, state)
+        _nudge_house(sio, state)
     except asyncio.CancelledError:  # pragma: no cover - ordinary cancellation
         raise
     except Exception:  # pragma: no cover - a dead clock must not kill the table
@@ -159,6 +172,10 @@ async def _clock(sio, state: RoomGameState) -> None:
 
 async def _deal_next(sio, state: RoomGameState) -> None:
     async with state.lock:
+        if state.poker and state.poker_seats:
+            # What each seat showed about itself, which is the only thing a
+            # house player remembers between hands.
+            house.remember(state.poker_reads, state.poker)
         following = poker.deal_next(state.poker or {})
         if following is None:
             await _finish(sio, state)
@@ -168,6 +185,7 @@ async def _deal_next(sio, state: RoomGameState) -> None:
             _save_state_lazy(db, state)
     await publish(sio, state)
     _arm(sio, state)
+    _nudge_house(sio, state)
 
 
 async def _finish(sio, state: RoomGameState) -> None:
@@ -190,3 +208,92 @@ def _save_state_lazy(db, state: RoomGameState) -> None:
 
     _save_state(db, state)
     db.commit()
+
+
+def _nudge_house(sio, state: RoomGameState) -> None:
+    """If the seat that owes an action is a model, let it think."""
+    if not state.poker or not state.poker_seats:
+        return
+    seat_id = poker.current_seat(state.poker)
+    tier = state.poker_seats.get(seat_id)
+    if seat_id is None or not tier:
+        return
+    asyncio.create_task(_play_house_turn(sio, state, seat_id, tier))
+
+
+async def _play_house_turn(sio, state: RoomGameState, seat_id: int, tier: str) -> None:
+    blob = state.poker
+    try:
+        action = await house.decide(blob, seat_id, tier, state.poker_reads, state.poker_names)
+        if state.poker is not blob:
+            return  # the table moved on while it was thinking
+        async with state.lock:
+            updated, ack = poker.submit(blob, seat_id, action)
+            if not ack.get("ok"):
+                updated, ack = poker.fold_for_timeout(blob)
+                if not ack.get("ok"):
+                    return
+            state.poker = updated
+            with SessionLocal() as db:
+                _save_state_lazy(db, state)
+        await publish(sio, state)
+        _arm(sio, state)
+        _nudge_house(sio, state)
+    except asyncio.CancelledError:  # pragma: no cover
+        raise
+    except Exception:  # pragma: no cover - one bad turn must not stop the table
+        _logger.exception("house player at seat %s failed its turn", seat_id)
+
+
+def register_poker_lobby_handlers(sio) -> None:
+    """Seating and unseating house players, before the first hand."""
+
+    @sio.on("poker:add_bot")
+    async def poker_add_bot(sid, data):  # noqa: ANN001 - socket.io handler
+        from app.services.room_ops import lobby_state
+        from app.sockets.events import emit_error, get_user_from_token, resolve_guest
+
+        payload = data or {}
+        tier = payload.get("tier") or house.GUEST_TIER
+        with SessionLocal() as db:
+            room = db.query(Room).filter(Room.code == payload.get("room_code")).first()
+            if not room or room.game_type != "poker":
+                await emit_error(sid, "No poker table here", code="NOT_FOUND")
+                return {"ok": False, "error": "NOT_FOUND"}
+            if room.status != "lobby":
+                return {"ok": False, "error": "ALREADY_STARTED"}
+
+            user = get_user_from_token(db, payload.get("token"))
+            guest = resolve_guest(db, payload.get("guest_token"))
+            host = (user and room.host_user_id == user.id) or (guest and room.host_guest_id == guest.id)
+            if not host:
+                await emit_error(sid, "Only the host can seat a model", code="FORBIDDEN")
+                return {"ok": False, "error": "FORBIDDEN"}
+
+            # Every decision costs money, so a guest gets the cheap seat and
+            # somebody who signed in can pick.
+            if not house.is_allowed(tier, signed_in=bool(user)):
+                await emit_error(sid, "Sign in to seat that one", code="TIER_NOT_ALLOWED")
+                return {"ok": False, "error": "TIER_NOT_ALLOWED"}
+
+            seated = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).all()
+            if len(seated) >= room.max_players:
+                return {"ok": False, "error": "TABLE_FULL"}
+
+            from app.services.bot_users import pick_random_bot
+
+            bot = pick_random_bot(db, exclude_user_ids={p.user_id for p in seated if p.user_id})
+            db.add(RoomPlayer(
+                room_id=room.id,
+                user_id=bot.id,
+                guest_id=None,
+                join_order=max((p.join_order for p in seated), default=0) + 1,
+                score=0,
+                connected=True,
+                in_game=True,
+                ai_tier=tier,
+            ))
+            db.commit()
+            lobby = lobby_state(db, room)
+        await sio.emit("room:lobby_update", lobby.model_dump(), room=room.code)
+        return {"ok": True, "tier": tier}

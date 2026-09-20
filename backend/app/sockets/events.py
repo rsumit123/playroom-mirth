@@ -1034,7 +1034,8 @@ async def game_start(sid, data):
                 await emit_error(sid, "Poker needs two to four players", code="BAD_REQUEST")
                 return {"ok": False, "error": "BAD_REQUEST"}
             names = _display_names(db, players)
-            state = await start_poker_game(sio, db, room, players, names)
+            ai_seats = {rp.id: rp.ai_tier for rp in players if rp.ai_tier}
+            state = await start_poker_game(sio, db, room, players, names, ai_seats)
             _save_state(db, state)
             db.commit()
             return {"ok": True}
@@ -2005,6 +2006,10 @@ async def schedule_restored_states() -> None:
 
 # Poker's handlers live in their own module so this one does not grow another
 # five hundred lines. Registered here, where sio is already built.
-from app.sockets.poker_events import register_poker_handlers  # noqa: E402
+from app.sockets.poker_events import (  # noqa: E402
+    register_poker_handlers,
+    register_poker_lobby_handlers,
+)
 
 register_poker_handlers(sio)
+register_poker_lobby_handlers(sio)

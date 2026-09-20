@@ -49,9 +49,11 @@ def lobby_state(db: Session, room: Room, self_player_id: int | None = None) -> L
     # fall back to the email local-part only if display_name is unset.
     user_ids = [p.user_id for p in players if p.user_id]
     user_map = {}
+    bot_ids: set[int] = set()
     if user_ids:
         users = db.query(User).filter(User.id.in_(user_ids)).all()
         user_map = {u.id: (u.display_name or u.email.split("@")[0]) for u in users}
+        bot_ids = {u.id for u in users if u.is_bot}
 
     # Look up guest display names
     guest_ids = [p.guest_id for p in players if p.guest_id]
@@ -64,6 +66,8 @@ def lobby_state(db: Session, room: Room, self_player_id: int | None = None) -> L
     guest_counter = 0
     for p in players:
         lp = LobbyPlayer.model_validate(p)
+        lp.is_bot = bool(p.user_id and p.user_id in bot_ids)
+        lp.ai_tier = getattr(p, "ai_tier", None)
         if p.user_id and p.user_id in user_map:
             lp.display_name = user_map[p.user_id]
         elif p.guest_id and p.guest_id in guest_name_map:

@@ -508,6 +508,14 @@ export function AppProvider({ children }) {
     return socket.emit('room:join', data)
   }
 
+  function emitAddPokerBot(roomCode, tier) {
+    const socket = connectSocket()
+    const data = auth.token
+      ? { room_code: roomCode, tier, token: auth.token }
+      : { room_code: roomCode, tier, guest_token: auth.guestToken }
+    return socket.emitWithAck('poker:add_bot', data)
+  }
+
   function emitGameStart(roomCode) {
     const socket = connectSocket()
     const data = auth.token ? { room_code: roomCode, token: auth.token } : { room_code: roomCode, guest_token: auth.guestToken }
@@ -675,6 +683,7 @@ export function AppProvider({ children }) {
     emitRoomCreate,
     emitRoomJoin,
     emitGameStart,
+    emitAddPokerBot,
     emitNextRound,
     emitChat,
     emitScribbleDraw,

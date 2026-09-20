@@ -9,7 +9,7 @@ import RoomScoreboard from '../components/RoomScoreboard.jsx'
 import InviteFriendsDrawer from '../components/InviteFriendsDrawer.jsx'
 import * as api from '../../lib/api.js'
 
-export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, onInviteFriend, selfPlayerId, loadingSave, isSignedIn = false, friends = [] }) {
+export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, onInviteFriend, onAddBot, selfPlayerId, loadingSave, isSignedIn = false, friends = [] }) {
   const code = lobby?.room?.code || '------'
   const players = lobby?.players || []
   const roomMeta = lobby?.room
@@ -17,6 +17,8 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, onInvit
   const maxPlayers = roomMeta?.max_players ?? 20
   const canStart = players.length >= minPlayers
   const isHost = selfPlayerId && lobby?.host_player_id && String(selfPlayerId) === String(lobby.host_player_id)
+  const isPoker = roomMeta?.game_type === 'poker'
+  const signedIn = isSignedIn
   const [settings, setSettings] = useState({
     rounds: lobby?.room?.rounds_total ?? 3,
     difficulty: lobby?.room?.difficulty ?? 2,
@@ -146,6 +148,27 @@ export default function Lobby({ lobby, onStart, onLeave, onSaveSettings, onInvit
               </div>
             ))}
           </div>
+
+          {/* At a poker table an open seat is somewhere to sit a model. */}
+          {isPoker && isHost && players.length < maxPlayers && (
+            <div className="space-y-2" data-testid="seat-a-model">
+              <span className="text-xs text-slate/60 font-medium">Sit a model at the table</span>
+              <div className="segmented">
+                {['Easy', 'Medium', 'Hard'].map((tier) => (
+                  <button
+                    key={tier}
+                    className="segmented-option"
+                    disabled={!signedIn && tier !== 'Easy'}
+                    title={!signedIn && tier !== 'Easy' ? 'Sign in to play the stronger models' : undefined}
+                    onClick={() => onAddBot?.(tier)}
+                  >
+                    {tier}
+                  </button>
+                ))}
+              </div>
+              {!signedIn && <p className="text-xs text-slate/50">Sign in to play the stronger models.</p>}
+            </div>
+          )}
         </div>
 
         {/* Room scoreboard (shown after at least one game) */}

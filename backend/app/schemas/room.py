@@ -58,6 +58,9 @@ class LobbyPlayer(BaseModel):
     connected: bool
     in_game: bool
     display_name: str = "Player"
+    # Poker house players. Empty for every other kind of seat.
+    is_bot: bool = False
+    ai_tier: Optional[str] = None
 
     class Config:
         from_attributes = True

@@ -37,6 +37,10 @@ class RoomGameState:
     # that go with it. See services/poker.py.
     poker: Optional[dict] = None
     poker_names: Dict[int, str] = field(default_factory=dict)
+    # seat id -> AI tier, for the seats a model is sitting in, and what those
+    # models have noticed about everyone at the table so far.
+    poker_seats: Dict[int, str] = field(default_factory=dict)
+    poker_reads: Dict[int, dict] = field(default_factory=dict)
     task: Optional[asyncio.Task] = None
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
     # Quickmatch pause-on-disconnect: when a human disconnects in the middle of
@@ -91,6 +95,8 @@ def serialize_state(state: RoomGameState) -> str:
         "origin": state.origin,
         "poker": state.poker,
         "poker_names": {str(k): v for k, v in state.poker_names.items()},
+        "poker_seats": {str(k): v for k, v in state.poker_seats.items()},
+        "poker_reads": {str(k): v for k, v in state.poker_reads.items()},
     }
     return json.dumps(payload)
 
@@ -124,6 +130,8 @@ def deserialize_state(raw: str) -> RoomGameState:
         origin=data.get("origin", "friends"),
         poker=data.get("poker"),
         poker_names={int(k): v for k, v in data.get("poker_names", {}).items()},
+        poker_seats={int(k): v for k, v in data.get("poker_seats", {}).items()},
+        poker_reads={int(k): v for k, v in data.get("poker_reads", {}).items()},
     )
 
 

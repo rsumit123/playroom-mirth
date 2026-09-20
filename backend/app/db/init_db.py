@@ -36,6 +36,11 @@ def init_db() -> None:
         with engine.begin() as conn:
             conn.execute(text("ALTER TABLE rooms ADD COLUMN small_blind INTEGER NOT NULL DEFAULT 5"))
 
+    player_columns = [col["name"] for col in inspector.get_columns("room_players")]
+    if "ai_tier" not in player_columns:
+        with engine.begin() as conn:
+            conn.execute(text("ALTER TABLE room_players ADD COLUMN ai_tier VARCHAR(10)"))
+
     word_columns = [col["name"] for col in inspector.get_columns("words")]
     if "game_type" not in word_columns:
         with engine.begin() as conn:

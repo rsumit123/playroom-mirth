@@ -1,0 +1,118 @@
+from __future__ import annotations
+
+from dataclasses import dataclass, replace
+
+
+@dataclass(frozen=True, slots=True)
+class TierPolicy:
+    tier: str
+    model_pool: tuple[str, ...]
+    prompt_version: str
+    schema_version: str
+    temperature: float
+    max_tokens: int
+    latency_budget_ms: int
+    fallback_chain: tuple[str, ...]
+    hand_id: str | None = None
+    guidance: str = ""
+    # A tier ladder, not a switch: the easy seat has no memory of earlier hands
+    # at all, the medium seat sees the numbers, and only the hard seat is told
+    # what they mean.
+    sees_reads: bool = True
+    interprets_reads: bool = True
+
+    def lock_for_hand(self, hand_id: str) -> "TierPolicy":
+        return replace(self, hand_id=hand_id)
+
+    def to_record(self) -> dict[str, object]:
+        return {
+            "tier": self.tier,
+            "model_pool": list(self.model_pool),
+            "prompt_version": self.prompt_version,
+            "schema_version": self.schema_version,
+            "temperature": self.temperature,
+            "max_tokens": self.max_tokens,
+            "latency_budget_ms": self.latency_budget_ms,
+            "fallback_chain": list(self.fallback_chain),
+            "hand_id": self.hand_id,
+            "guidance": self.guidance,
+            "sees_reads": self.sees_reads,
+            "interprets_reads": self.interprets_reads,
+        }
+
+
+_POLICIES = {
+    "Easy": TierPolicy(
+        "Easy",
+        ("openai/gpt-4o-mini",),
+        "holdem-easy-v2",
+        "action-v2",
+        0.9,
+        700,
+        7000,
+        ("openai/gpt-4o-mini",),
+        guidance=(
+            "a cheerful recreational player. You see plenty of flops and rarely make a big "
+            "bluff. Keep your bets small and fold when someone bets big into you."
+        ),
+        sees_reads=False,
+        interprets_reads=False,
+    ),
+    "Medium": TierPolicy(
+        "Medium",
+        ("openai/gpt-4o-mini", "openai/gpt-4o"),
+        "holdem-medium-v2",
+        "action-v2",
+        0.5,
+        800,
+        9000,
+        ("openai/gpt-4o-mini",),
+        guidance=(
+            "a solid regular. You play a tight, aggressive game: fold weak hands before the "
+            "flop, raise your strong ones for value, and respect a big bet unless you hold "
+            "something that beats it."
+        ),
+        interprets_reads=False,
+    ),
+    "Hard": TierPolicy(
+        "Hard",
+        ("google/gemini-3.7-flash",),
+        "holdem-hard-v2",
+        "action-v2",
+        0.25,
+        900,
+        20000,
+        ("openai/gpt-4o-mini",),
+        guidance=(
+            "a strong, thoughtful player. You size bets to the pot, read the story your "
+            "opponent's betting tells, pick your bluffs carefully, and fold when the odds "
+            "are against you."
+        ),
+    ),
+}
+
+
+def policy_for_tier(tier: str) -> TierPolicy:
+    try:
+        return _POLICIES[tier]
+    except KeyError as exc:
+        raise ValueError(f"unknown AI tier: {tier}") from exc
+
+
+TIERS = ("Easy", "Medium", "Hard")
+
+# Shown to players, so they know which model is sitting across the table.
+MODEL_LABELS = {
+    "openai/gpt-4o-mini": "GPT-4o mini",
+    "openai/gpt-4o": "GPT-4o",
+    "google/gemini-3.7-flash": "Gemini 3.7 Flash",
+}
+
+
+def model_for_tier(tier: str) -> str:
+    return policy_for_tier(tier).model_pool[0]
+
+
+def model_label_for_tier(tier: str) -> str:
+    model = model_for_tier(tier)
+    return MODEL_LABELS.get(model, model)
