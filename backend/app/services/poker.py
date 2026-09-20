@@ -24,6 +24,7 @@ from app.services.holdem.engine import (
     resolve_showdown,
     start_hand,
 )
+from app.services.holdem.cards import Card
 from app.services.holdem.evaluator import evaluate_hand
 from app.services.holdem.state import HoldemState
 
@@ -62,8 +63,10 @@ def projection_for(blob: Mapping[str, Any], seat_id: int | None, names: Mapping[
     Never broadcast this: the whole point is that it carries hole cards.
     """
     hand = _hand(blob)
-    public = dict(public_projection(hand))
-    public["names"] = {player.seat_id: names.get(player.seat_id) for player in hand.players}
+    # The engine speaks in Cards and tuples; Socket.IO speaks JSON. The old
+    # server had FastAPI's encoder in between and this never came up.
+    public = _plain(public_projection(hand))
+    public["names"] = {str(player.seat_id): names.get(player.seat_id) for player in hand.players}
 
     view: dict[str, Any] = {
         "public": public,
@@ -149,6 +152,17 @@ def stacks(blob: Mapping[str, Any]) -> dict[int, int]:
 
 def current_seat(blob: Mapping[str, Any]) -> int | None:
     return _hand(blob).current_seat
+
+
+def _plain(value: Any) -> Any:
+    """Cards, tuples and mappings, as things json.dumps will take."""
+    if isinstance(value, Card):
+        return {"rank": value.rank, "suit": value.suit}
+    if isinstance(value, Mapping):
+        return {str(key): _plain(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [_plain(item) for item in value]
+    return value
 
 
 def _hand(blob: Mapping[str, Any]) -> HoldemState:

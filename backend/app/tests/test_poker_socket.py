@@ -140,3 +140,42 @@ async def test_a_seat_cannot_act_out_of_turn():
     })
     assert ack["ok"] is False
     assert ack["error"] == "NOT_YOUR_TURN"
+
+
+@pytest.mark.asyncio
+async def test_nobody_sees_a_live_hand_they_are_not_holding():
+    """Cards come face up only at a real showdown. Mid hand, a seat's view must
+    carry its own two cards and nobody else's."""
+    from app.services import poker
+    from app.services.game_state import PLAYER_TO_SID
+
+    room_code, _, _ = await _seat_two_and_start()
+    state = ROOM_STATES[room_code]
+
+    # Play to the flop: call, then check.
+    for _ in range(4):
+        blob = state.poker
+        seat = blob["hand"]["current_seat"]
+        if seat is None or blob["hand"]["street"] != "preflop":
+            break
+        legal = {option["type"] for option in poker.projection_for(blob, seat, {})["legal_actions"]}
+        move = {"type": "call", "amount": blob["hand"]["current_bet"]} if "call" in legal else {"type": "check"}
+        await sio._trigger_event("poker:action", "/", PLAYER_TO_SID[seat], {
+            "room_code": room_code, "action": move, "expected_revision": blob["revision"],
+            "idempotency_key": f"flop-{blob['revision']}",
+        })
+        state = ROOM_STATES[room_code]
+
+    blob = state.poker
+    assert blob["hand"]["street"] in {"flop", "turn", "river"}, "expected to have reached the board"
+    assert blob["hand"]["community_cards"], "the board should be out"
+
+    for seat in state.player_order:
+        view = poker.projection_for(blob, seat, {})
+        body = json.dumps(view)
+        assert view["public"]["showdown"] == []
+        for player in blob["hand"]["players"]:
+            if player["seat_id"] == seat:
+                continue
+            for card in player["hole_cards"]:
+                assert json.dumps(card) not in body, "another seat's live cards leaked"
