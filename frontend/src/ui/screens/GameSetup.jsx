@@ -8,7 +8,17 @@ const GAME_LABELS = {
   charades: 'Charades',
   scribble: 'Scribble',
   trivia: 'Trivia',
+  poker: 'Poker',
 }
+
+// Poker is played in chips over blinds rather than in rounds against a timer,
+// so the table is described by what is on it, not by how long a turn lasts.
+const CHIP_OPTIONS = [500, 1000, 5000]
+const BLIND_OPTIONS = [
+  { small: 5, label: '5 / 10' },
+  { small: 10, label: '10 / 20' },
+  { small: 25, label: '25 / 50' },
+]
 
 export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onBack, loadingCreate, loadingJoin, signedIn = false, onQuickPlay }) {
   const showQuickPlay = gameType === 'trivia' && signedIn && !!onQuickPlay
@@ -18,7 +28,11 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
   const [difficulty, setDifficulty] = useState(0)
   const [triviaCategory, setTriviaCategory] = useState('general_knowledge')
   const [maxPlayers, setMaxPlayers] = useState(20)
+  const [seats, setSeats] = useState(2)
+  const [startingChips, setStartingChips] = useState(1000)
+  const [smallBlind, setSmallBlind] = useState(5)
   const [roomCode, setRoomCode] = useState('')
+  const isPoker = gameType === 'poker'
 
   const label = GAME_LABELS[gameType] || gameType
 
@@ -72,6 +86,55 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
           </div>
         ) : tab === 'create' ? (
           <div className="card p-6 space-y-6 animate-pop">
+            {isPoker ? (
+              <>
+                <div className="space-y-2">
+                  <span className="text-xs text-slate/60 font-medium">Seats</span>
+                  <div className="segmented">
+                    {[2, 3, 4].map((count) => (
+                      <button
+                        key={count}
+                        className={seats === count ? 'segmented-option-active' : 'segmented-option'}
+                        onClick={() => setSeats(count)}
+                      >
+                        {count}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <span className="text-xs text-slate/60 font-medium">Starting chips</span>
+                  <div className="segmented">
+                    {CHIP_OPTIONS.map((chips) => (
+                      <button
+                        key={chips}
+                        className={startingChips === chips ? 'segmented-option-active' : 'segmented-option'}
+                        onClick={() => setStartingChips(chips)}
+                      >
+                        {chips.toLocaleString()}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <span className="text-xs text-slate/60 font-medium">Blinds</span>
+                  <div className="segmented">
+                    {BLIND_OPTIONS.map((option) => (
+                      <button
+                        key={option.small}
+                        className={smallBlind === option.small ? 'segmented-option-active' : 'segmented-option'}
+                        onClick={() => setSmallBlind(option.small)}
+                      >
+                        {option.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </>
+            ) : (
+            <>
             <RangeSlider label="Rounds" value={rounds} min={1} max={gameType === 'trivia' ? 5 : 10} onChange={setRounds} />
             {gameType !== 'trivia' && (
               <RangeSlider label="Timer" value={timer} min={30} max={120} step={10} unit="s" onChange={setTimer} />
@@ -90,23 +153,38 @@ export default function GameSetup({ gameType = 'charades', onCreate, onJoin, onB
             </div>
 
             <RangeSlider label="Max Players" value={maxPlayers} min={2} max={20} onChange={setMaxPlayers} />
+            </>
+            )}
 
             <button
               className="btn-primary w-full py-3.5 text-base touch-target flex items-center justify-center gap-2"
               onClick={() =>
-                onCreate({
-                  rounds_total: rounds,
-                  difficulty: difficulty,
-                  turn_seconds: gameType === 'trivia' ? 0 : timer,
-                  max_players: maxPlayers,
-                  game_type: gameType,
-                  trivia_category: gameType === 'trivia' ? triviaCategory : 'math',
-                })
+                onCreate(
+                  isPoker
+                    ? {
+                        rounds_total: 1,
+                        difficulty: 1,
+                        turn_seconds: 30,
+                        max_players: seats,
+                        game_type: 'poker',
+                        trivia_category: 'math',
+                        starting_chips: startingChips,
+                        small_blind: smallBlind,
+                      }
+                    : {
+                        rounds_total: rounds,
+                        difficulty: difficulty,
+                        turn_seconds: gameType === 'trivia' ? 0 : timer,
+                        max_players: maxPlayers,
+                        game_type: gameType,
+                        trivia_category: gameType === 'trivia' ? triviaCategory : 'math',
+                      },
+                )
               }
               disabled={loadingCreate}
             >
               {loadingCreate ? <Spinner size={18} /> : null}
-              Create Room
+              {isPoker ? 'Create Table' : 'Create Room'}
             </button>
           </div>
         ) : (

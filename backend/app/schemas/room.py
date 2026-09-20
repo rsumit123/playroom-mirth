@@ -10,6 +10,9 @@ class RoomCreateRequest(BaseModel):
     max_players: int = 20
     game_type: str = "charades"
     trivia_category: str = "math"
+    # Poker only. Seats are max_players; the big blind is twice the small one.
+    starting_chips: int = 1000
+    small_blind: int = 5
 
 
 class RoomCreateGuestRequest(RoomCreateRequest):
@@ -39,6 +42,8 @@ class RoomOut(BaseModel):
     turn_seconds: int
     game_type: str = "charades"
     trivia_category: str = "math"
+    starting_chips: int = 1000
+    small_blind: int = 5
 
     class Config:
         from_attributes = True

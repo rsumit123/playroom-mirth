@@ -93,6 +93,8 @@ def create_room_for_user(db: Session, user_id: int, payload: RoomCreateRequest) 
         turn_seconds=payload.turn_seconds,
         game_type=payload.game_type,
         trivia_category=payload.trivia_category,
+        starting_chips=payload.starting_chips,
+        small_blind=payload.small_blind,
     )
     db.add(room)
     db.commit()
@@ -130,6 +132,8 @@ def create_room_for_guest(db: Session, payload: RoomCreateGuestRequest) -> Lobby
         turn_seconds=payload.turn_seconds,
         game_type=payload.game_type,
         trivia_category=payload.trivia_category,
+        starting_chips=payload.starting_chips,
+        small_blind=payload.small_blind,
     )
     db.add(room)
     db.commit()

@@ -22,6 +22,10 @@ class Room(Base):
     difficulty: Mapped[int] = mapped_column(Integer, default=1, nullable=False)
     turn_seconds: Mapped[int] = mapped_column(Integer, default=120, nullable=False)
     game_type: Mapped[str] = mapped_column(String(20), default="charades", nullable=False)
+    # Poker: the shape of the table. Seats come from max_players, and the big
+    # blind is twice the small one, so these are the only two it needs.
+    starting_chips: Mapped[int] = mapped_column(Integer, default=1000, nullable=False, server_default="1000")
+    small_blind: Mapped[int] = mapped_column(Integer, default=5, nullable=False, server_default="5")
     trivia_category: Mapped[str] = mapped_column(String(30), default="math", nullable=False)
     origin: Mapped[str] = mapped_column(String(20), default="friends", nullable=False, server_default="friends")
 

@@ -234,3 +234,46 @@ def test_room_create_via_api_with_scribble(client):
     assert create.status_code == 201
     room_data = create.json()["room"]
     assert room_data["game_type"] == "scribble"
+
+
+
+def test_a_poker_room_carries_the_shape_of_the_table():
+    """Seats come from max_players and the big blind is twice the small one, so
+    a poker table needs only these two beyond the ordinary room fields."""
+    req = RoomCreateRequest(
+        rounds_total=1,
+        difficulty=1,
+        turn_seconds=30,
+        max_players=3,
+        game_type="poker",
+        starting_chips=5000,
+        small_blind=25,
+    )
+    assert req.starting_chips == 5000
+    assert req.small_blind == 25
+
+    db = SessionLocal()
+    try:
+        room = Room(
+            code="POK001",
+            rounds_total=req.rounds_total,
+            difficulty=req.difficulty,
+            turn_seconds=req.turn_seconds,
+            max_players=req.max_players,
+            game_type=req.game_type,
+            starting_chips=req.starting_chips,
+            small_blind=req.small_blind,
+        )
+        db.add(room)
+        db.commit()
+        db.refresh(room)
+        out = RoomOut.model_validate(room)
+        assert out.game_type == "poker"
+        assert (out.max_players, out.starting_chips, out.small_blind) == (3, 5000, 25)
+    finally:
+        db.close()
+
+
+def test_a_table_that_says_nothing_about_chips_gets_the_ordinary_ones():
+    req = RoomCreateRequest(rounds_total=1, difficulty=1, turn_seconds=30, game_type="poker")
+    assert (req.starting_chips, req.small_blind) == (1000, 5)

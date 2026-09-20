@@ -101,6 +101,25 @@ export default function Home({ onSelectGame, onRejoin, onLeaveRoom, loadingLeave
             </div>
           </button>
 
+          {/* Poker */}
+          <button
+            data-game="poker"
+            className="card p-5 text-left hover:shadow-hover transition group"
+            onClick={() => onSelectGame('poker')}
+          >
+            <div className="flex items-start gap-3">
+              <div className="h-11 w-11 rounded-xl bg-accent/10 flex items-center justify-center text-2xl shrink-0">
+                &#9824;&#65039;
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="font-display text-lg group-hover:text-accent transition">Poker</div>
+                <p className="text-xs text-slate/60 mt-0.5">
+                  Texas Hold'em with friends, or against language models.
+                </p>
+              </div>
+            </div>
+          </button>
+
           {/* Charades */}
           <button
             data-game="charades"

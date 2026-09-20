@@ -80,10 +80,16 @@ describe('Home', () => {
 
   // ----- Hero ordering + dropdown migration -----
 
-  it('orders games on the page: Trivia (hero) first, then Scribble, then Charades', () => {
+  it('orders games on the page: Trivia (hero) first, then Scribble, Poker, Charades', () => {
     const { container } = render(<Home {...defaultProps} isSignedIn />)
     const order = [...container.querySelectorAll('[data-game]')].map(c => c.getAttribute('data-game'))
-    expect(order).toEqual(['trivia', 'scribble', 'charades'])
+    expect(order).toEqual(['trivia', 'scribble', 'poker', 'charades'])
+  })
+
+  it('offers poker, and says what it is', () => {
+    render(<Home {...defaultProps} isSignedIn />)
+    expect(screen.getByText('Poker')).toBeInTheDocument()
+    expect(screen.getByText(/language models/i)).toBeInTheDocument()
   })
 
   it('shows a Quick Play badge on Trivia for signed-in users', () => {
