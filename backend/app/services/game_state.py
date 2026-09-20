@@ -33,6 +33,10 @@ class RoomGameState:
     used_question_ids: Set[str] = field(default_factory=set)
     origin: str = "friends"
     strokes: List[dict] = field(default_factory=list)  # scribble stroke buffer (in-memory only, not persisted)
+    # Poker: one hand at a time, serialized, with the revision and the clocks
+    # that go with it. See services/poker.py.
+    poker: Optional[dict] = None
+    poker_names: Dict[int, str] = field(default_factory=dict)
     task: Optional[asyncio.Task] = None
     lock: asyncio.Lock = field(default_factory=asyncio.Lock)
     # Quickmatch pause-on-disconnect: when a human disconnects in the middle of
@@ -85,6 +89,8 @@ def serialize_state(state: RoomGameState) -> str:
         "trivia_category": state.trivia_category,
         "used_question_ids": list(state.used_question_ids),
         "origin": state.origin,
+        "poker": state.poker,
+        "poker_names": {str(k): v for k, v in state.poker_names.items()},
     }
     return json.dumps(payload)
 
@@ -116,6 +122,8 @@ def deserialize_state(raw: str) -> RoomGameState:
         trivia_category=data.get("trivia_category", "math"),
         used_question_ids=set(data.get("used_question_ids", [])),
         origin=data.get("origin", "friends"),
+        poker=data.get("poker"),
+        poker_names={int(k): v for k, v in data.get("poker_names", {}).items()},
     )
 
 

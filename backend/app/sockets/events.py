@@ -99,6 +99,29 @@ def _save_state(db, state: RoomGameState) -> None:
     db.commit()
 
 
+def _display_names(db, players) -> dict[int, str]:
+    """Seat id to the name that seat plays under, users and guests alike."""
+    user_ids = [rp.user_id for rp in players if rp.user_id]
+    user_names: dict[int, str] = {}
+    if user_ids:
+        for user in db.query(User).filter(User.id.in_(user_ids)).all():
+            user_names[user.id] = user.display_name or user.email.split("@")[0]
+    guest_ids = [rp.guest_id for rp in players if rp.guest_id]
+    guest_names: dict[int, str] = {}
+    if guest_ids:
+        for guest in db.query(Guest).filter(Guest.id.in_(guest_ids)).all():
+            guest_names[guest.id] = guest.display_name or f"Guest {guest.id}"
+    names: dict[int, str] = {}
+    for index, rp in enumerate(players, start=1):
+        if rp.user_id and rp.user_id in user_names:
+            names[rp.id] = user_names[rp.user_id]
+        elif rp.guest_id and rp.guest_id in guest_names:
+            names[rp.id] = guest_names[rp.guest_id]
+        else:
+            names[rp.id] = f"Guest {index}"
+    return names
+
+
 def _save_game_history(db, state: RoomGameState) -> None:
     """Persist game results for all players (including guests)."""
     _logger.debug("save_game_history room=%s type=%s players=%s scores=%s", state.room_code, state.game_type, state.player_order, state.scores)
@@ -1002,6 +1025,19 @@ async def game_start(sid, data):
         if len(players) < room.min_players:
             await emit_error(sid, "Not enough players", code="BAD_REQUEST")
             return {"ok": False, "error": "BAD_REQUEST"}
+
+        # Poker: no words, no rounds, no describer. Seats, chips and a deal.
+        if room.game_type == "poker":
+            from app.sockets.poker_events import start_poker_game
+
+            if not 2 <= len(players) <= 4:
+                await emit_error(sid, "Poker needs two to four players", code="BAD_REQUEST")
+                return {"ok": False, "error": "BAD_REQUEST"}
+            names = _display_names(db, players)
+            state = await start_poker_game(sio, db, room, players, names)
+            _save_state(db, state)
+            db.commit()
+            return {"ok": True}
 
         # Trivia: skip word selection, use question generator
         if room.game_type == "trivia":
@@ -1965,3 +2001,10 @@ async def schedule_restored_states() -> None:
             await _trivia_send_question(state, state.room_code)
         else:
             await _schedule_turn_timer(state)
+
+
+# Poker's handlers live in their own module so this one does not grow another
+# five hundred lines. Registered here, where sio is already built.
+from app.sockets.poker_events import register_poker_handlers  # noqa: E402
+
+register_poker_handlers(sio)
