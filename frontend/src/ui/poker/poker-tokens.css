@@ -79,14 +79,14 @@
 }
 .poker-root > * { position: relative; z-index: 1; }
 
-.poker-header {
+.poker-root .poker-header {
   display: flex;
   align-items: center;
   gap: 10px;
   min-height: 40px;
   padding: 0 10px;
 }
-.poker-leave {
+.poker-root .poker-leave {
   display: grid;
   place-items: center;
   width: 38px;
@@ -98,7 +98,7 @@
   font-size: 15px;
   cursor: pointer;
 }
-.poker-blinds {
+.poker-root .poker-blinds {
   padding: 1px 8px;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
@@ -106,7 +106,7 @@
   font-size: 11px;
   font-variant-numeric: tabular-nums;
 }
-.poker-opening { padding: 40px 20px; text-align: center; color: var(--mist); }
+.poker-root .poker-opening { padding: 40px 20px; text-align: center; color: var(--mist); }
 
 /* The felt grows into what the controls leave, and the controls keep their
    floor whether or not there is anything in them. */

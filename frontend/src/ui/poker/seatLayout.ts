@@ -41,11 +41,13 @@ export function seatPositions(seatIds: number[], mySeat: number, seatCount?: num
     return positions;
   }
 
-  // Assign by the seat's offset around the full table rather than its index in
-  // the players still in the hand, so a bust-out does not shuffle everyone.
-  for (const seat of sorted) {
-    const offset = ((seat - mySeat) % seated + seated) % seated;
+  // Seats go clockwise from your own chair. Count round the table by position
+  // in the list, not by arithmetic on the ids: in PlayRoom a seat id is the
+  // room_player row, so ids like 860 and 862 are two seats apart in name only,
+  // and (862 - 860) % 2 handed the opponent the hero's chair.
+  sorted.forEach((seat, index) => {
+    const offset = (index - start + sorted.length) % sorted.length;
     positions[seat] = offset === 0 ? HERO_SLOT : slots[Math.min(offset - 1, slots.length - 1)];
-  }
+  });
   return positions;
 }
