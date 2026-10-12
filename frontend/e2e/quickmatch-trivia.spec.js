@@ -17,11 +17,12 @@ test('two signed-in users matchmake and play a quickmatch game', async ({ browse
   await pageA.getByText(/Play Now/i).click()
   await pageB.getByText(/Play Now/i).click()
 
-  // Both pick Science and start
-  await pageA.getByText('Science').click()
-  await pageA.getByText(/Start Searching/i).click()
-  await pageB.getByText('Science').click()
-  await pageB.getByText(/Start Searching/i).click()
+  // Play Now auto-joins with "surprise", which the server resolves to a random
+  // category per player, so both switch to the same topic to be paired.
+  for (const page of [pageA, pageB]) {
+    await page.getByRole('button', { name: 'Change topic' }).click()
+    await page.getByRole('dialog', { name: 'Choose topic' }).getByText('Science').click()
+  }
 
   // Splash should appear within a few seconds
   await expect(pageA.getByText(/MATCH FOUND/i)).toBeVisible({ timeout: 5000 })
@@ -39,8 +40,6 @@ test('single user falls back to bot after 15s', async ({ page }) => {
   await loginAsTestUser(page, 'LonelyPlayer')
   await page.goto('/play/trivia')
   await page.getByText(/Play Now/i).click()
-  await page.getByText('Science').click()
-  await page.getByText(/Start Searching/i).click()
 
   // Bot fallback fires ~15s in
   await expect(page.getByText(/MATCH FOUND/i)).toBeVisible({ timeout: 20000 })

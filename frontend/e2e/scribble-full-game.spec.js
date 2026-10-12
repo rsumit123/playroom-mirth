@@ -106,7 +106,10 @@ test.describe('Scribble - Full 2-Player Game', () => {
       const drawer = p1Role.includes('Drawing') ? player1 : player2
       const guesser = p1Role.includes('Drawing') ? player2 : player1
 
-      // ========== Drawer sees word ==========
+      // ========== Drawer picks a word, then sees it ==========
+      const choosePrompt = drawer.getByText(/choose a word to draw/i)
+      await expect(choosePrompt).toBeVisible({ timeout: 5000 })
+      await choosePrompt.locator('xpath=..').getByRole('button').first().click()
       const wordElement = drawer.locator('.font-display.text-2xl.text-accent').first()
       await expect(wordElement).toBeVisible({ timeout: 5000 })
       const secretWord = (await wordElement.textContent()).trim()
@@ -136,8 +139,12 @@ test.describe('Scribble - Full 2-Player Game', () => {
       await guessInput.fill(secretWord)
       await guesser.getByRole('button', { name: /guess/i }).click()
 
-      // ========== Correct guess feedback with points ==========
-      await expect(guesser.getByText(/guessed/).first()).toBeVisible({ timeout: 5000 })
+      // ========== Correct guess feedback, or the turn already moved on ==========
+      // With one guesser, a correct guess ends the turn at once and the next
+      // turn_start clears the banner, so the guesser may already be choosing.
+      await expect(
+        guesser.getByText(/guessed/).or(guesser.getByText(/choose a word to draw/i)).first()
+      ).toBeVisible({ timeout: 5000 })
 
       // ========== Wait for game to progress ==========
       await Promise.race([
