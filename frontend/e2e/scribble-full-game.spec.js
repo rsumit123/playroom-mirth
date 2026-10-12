@@ -112,9 +112,10 @@ test.describe('Scribble - Full 2-Player Game', () => {
       await choosePrompt.locator('xpath=..').getByRole('button').first().click()
       const wordElement = drawer.locator('.font-display.text-2xl.text-accent').first()
       await expect(wordElement).toBeVisible({ timeout: 5000 })
+      // The bar shows "..." until the server confirms the picked word.
+      await expect(wordElement).not.toHaveText('...', { timeout: 5000 })
       const secretWord = (await wordElement.textContent()).trim()
       expect(secretWord).toBeTruthy()
-      expect(secretWord).not.toBe('...')
 
       // ========== Drawer sees canvas ==========
       await expect(drawer.locator('canvas').first()).toBeVisible()
