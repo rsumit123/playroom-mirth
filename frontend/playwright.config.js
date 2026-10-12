@@ -6,8 +6,9 @@ export default defineConfig({
   // specs would pair players across tests.
   workers: 1,
   retries: process.env.CI ? 1 : 0,
-  reporter: process.env.CI ? [['list'], ['html', { open: 'never' }]] : 'list',
-  use: { baseURL: 'http://localhost:5173' },
+  // `line` prints each failure as it happens, so a timed-out CI job still shows why.
+  reporter: process.env.CI ? [['line'], ['html', { open: 'never' }]] : 'list',
+  use: { baseURL: 'http://localhost:5173', trace: 'retain-on-failure' },
   projects: [
     { name: 'Mobile Chrome', use: { ...devices['Pixel 5'] } },
     { name: 'Mobile Safari', use: { ...devices['iPhone 13'] } },

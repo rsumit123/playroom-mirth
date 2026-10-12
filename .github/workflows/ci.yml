@@ -104,7 +104,8 @@ jobs:
 
       - name: Playwright (Mobile Chrome)
         working-directory: frontend
-        run: npx playwright test --project "Mobile Chrome"
+        timeout-minutes: 20
+        run: npx playwright test --project "Mobile Chrome" --max-failures=5
 
       - name: Backend log
         if: failure()
