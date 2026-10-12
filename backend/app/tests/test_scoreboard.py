@@ -2,11 +2,15 @@
 Test that game history is saved and the scoreboard endpoint works.
 Plays a full trivia game via Socket.IO against the running local server.
 """
+import os
 import time
+import pytest
 import requests
 import socketio
 
-API = "http://localhost:8005"
+API = os.getenv("LIVE_API_BASE", "http://localhost:8005")
+
+pytestmark = pytest.mark.live
 
 
 def test_trivia_game_saves_history_and_scoreboard():

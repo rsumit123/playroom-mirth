@@ -1,5 +1,6 @@
 import os
 import sys
+import urllib.request
 from pathlib import Path
 
 import pytest
@@ -22,6 +23,28 @@ from app.models.word import Word
 from app.models.friendship import Friendship
 from app.models.game_invite import GameInvite
 from app.models.game_history import GameHistory
+
+
+LIVE_API_BASE = os.getenv("LIVE_API_BASE", "http://localhost:8005")
+
+
+def _live_server_up() -> bool:
+    try:
+        urllib.request.urlopen(f"{LIVE_API_BASE}/docs", timeout=1)
+        return True
+    except Exception:
+        return False
+
+
+def pytest_collection_modifyitems(config, items):
+    # `live` tests talk to a real server; skip them rather than fail when
+    # none is running, so a plain `pytest` stays green on a laptop.
+    live = [item for item in items if "live" in item.keywords]
+    if not live or _live_server_up():
+        return
+    skip = pytest.mark.skip(reason=f"needs a running backend at {LIVE_API_BASE}")
+    for item in live:
+        item.add_marker(skip)
 
 
 @pytest.fixture(scope="session", autouse=True)

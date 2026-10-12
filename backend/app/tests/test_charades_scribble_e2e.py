@@ -3,11 +3,15 @@ E2E tests for charades and scribble game modes.
 Plays full games via Socket.IO against the running local server and
 verifies game flow, scoring, and scoreboard persistence.
 """
+import os
 import time
+import pytest
 import requests
 import socketio
 
-API = "http://localhost:8005"
+API = os.getenv("LIVE_API_BASE", "http://localhost:8005")
+
+pytestmark = pytest.mark.live
 
 
 def _drain(sio, timeout=0.3):
