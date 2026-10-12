@@ -79,6 +79,10 @@ docker logs charade-backend --tail 10
 curl -s -o /dev/null -w '%{http_code}' https://charade-api.skdev.one/docs
 ```
 
+> **After the October 2026 history rewrite**, the VM's clone cannot fast-forward.
+> Run this once on the VM instead of `git pull`:
+> `cd ~/charade-chat && git fetch origin && git reset --hard origin/main`
+
 ### One-liner (from local machine)
 
 ```bash
