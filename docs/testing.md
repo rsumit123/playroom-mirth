@@ -9,16 +9,27 @@ cd backend && .venv/bin/python -m pytest --tb=short -q
 # Frontend build check + unit tests (always run before committing)
 cd frontend && npm run build && npx vitest run
 
-# Backend E2E tests (require running server on port 8005)
-cd backend && .venv/bin/python -m uvicorn app.main:app --port 8005 &
-.venv/bin/python -m pytest app/tests/test_charades_scribble_e2e.py app/tests/test_play_again_rest.py app/tests/test_scoreboard.py --tb=short -v
+# Live backend tests (marked `live`; skipped unless a server is reachable on :8005)
+cd backend && ENVIRONMENT=test .venv/bin/python -m uvicorn app.main:app --port 8005 &
+cd backend && .venv/bin/python -m pytest -m live --tb=short -v
 
-# Frontend Playwright E2E tests (require both backend + frontend dev servers)
-# Start backend: cd backend && .venv/bin/python -m uvicorn app.main:app --port 8005 &
-# Start frontend: cd frontend && npm run dev &
-# Then run:
+# Frontend Playwright E2E tests (backend on :8005 with ENVIRONMENT=test;
+# Playwright starts the Vite dev server itself)
 cd frontend && npx playwright test --project "Mobile Chrome"
 ```
+
+## Continuous Integration
+
+`.github/workflows/ci.yml` runs on every push to `main` and every pull request:
+
+| Job | What it runs |
+|-----|-------------|
+| Backend tests | `pytest` on Python 3.13 (`live` tests skip) |
+| Frontend build and unit tests | `npm ci`, `npm run build`, `npx vitest run` on Node 22 |
+| End-to-end | Starts the backend with `ENVIRONMENT=test` on :8005, runs `pytest -m live`, then Playwright "Mobile Chrome" with `VITE_API_BASE`/`VITE_SOCKET_URL` pointed at it. Uploads the Playwright report on failure. |
+
+Playwright runs with one worker because the matchmaker is a single in-memory
+queue: parallel Quick Play specs would pair players across tests.
 
 ## Pre-Commit Checklist
 
@@ -48,9 +59,11 @@ If any test fails, **do not commit**. Fix the issue first.
 | `test_play_again.py` | Integration | Socket play-again voting flow | No |
 | `test_game_leave.py` | Integration | game:leave handler (mid-game quit) | No |
 | `test_grace_rotation.py` | Integration | Grace period describer rotation, reconnect | No |
-| `test_charades_scribble_e2e.py` | E2E | Full charades + scribble games | **Yes** |
-| `test_play_again_rest.py` | E2E | REST play-again flow end-to-end | **Yes** |
-| `test_scoreboard.py` | E2E | Trivia game + scoreboard persistence | **Yes** |
+| `test_charades_scribble_e2e.py` | E2E (`live`) | Full charades + scribble games | **Yes** |
+| `test_play_again_rest.py` | Integration | REST play-again flow | No |
+| `test_scoreboard.py` | E2E (`live`) | Trivia game + scoreboard persistence | **Yes** |
+
+Also covered (no server needed): friends, invites and presence; game history; trivia service, sockets, scoring and bot; matchmaker and Quick Play sockets; poker engine, evaluator, sockets and house players.
 
 ### Frontend (`frontend/src/`)
 
