@@ -111,7 +111,8 @@ npx cap sync android
 #    versionCode 3  →  versionCode 4
 #    versionName "1.2.0"  →  "1.3.0"
 
-# 4. Build signed release AAB
+# 4. Build signed release AAB (signing passwords come from the environment)
+export PLAYROOM_KEYSTORE_PASSWORD=... PLAYROOM_KEY_PASSWORD=...
 export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
 cd android && ./gradlew bundleRelease
 
@@ -132,7 +133,7 @@ cd android && ./gradlew bundleRelease
 ### Signing Key
 
 - **Keystore**: `frontend/android/keystore/playroom-release.jks` (gitignored, NEVER commit)
-- **Password**: `REDACTED`
+- **Password**: not stored in the repo. Export `PLAYROOM_KEYSTORE_PASSWORD` and `PLAYROOM_KEY_PASSWORD` before `./gradlew bundleRelease` (keep the values in a password manager)
 - **Alias**: `playroom`
 - **BACK THIS UP** — if lost, you can never update the app on Play Store
 

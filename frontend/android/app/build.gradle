@@ -19,9 +19,9 @@ android {
     signingConfigs {
         release {
             storeFile file('../keystore/playroom-release.jks')
-            storePassword System.getenv('PLAYROOM_KEYSTORE_PASSWORD') ?: 'REDACTED'
+            storePassword System.getenv('PLAYROOM_KEYSTORE_PASSWORD')
             keyAlias 'playroom'
-            keyPassword System.getenv('PLAYROOM_KEY_PASSWORD') ?: 'REDACTED'
+            keyPassword System.getenv('PLAYROOM_KEY_PASSWORD')
         }
     }
     buildTypes {
