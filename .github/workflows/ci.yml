@@ -110,7 +110,7 @@ jobs:
       - name: Backend log
         if: failure()
         working-directory: backend
-        run: tail -n 200 uvicorn.log
+        run: cat uvicorn.log
 
       - uses: actions/upload-artifact@v4
         if: failure()
